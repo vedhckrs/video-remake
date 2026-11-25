@@ -23,6 +23,10 @@ renders) never goes into Git - it stays in `C:\Users\VED\Documents\Local\Reverse
 6. open a pull request into `main` (`gh pr create`), with a summary and how it was checked
 7. Ved reviews and merges (Claude does not merge unless Ved says so)
 
-## Accounts (never mix)
-This repo uses its OWN GitHub account, set per repo (remote URL with the username + local user.name / user.email).
-Never the global identity (VED / vedhckrs) and never creative2-cyber (that one is only for `creative2-cyber/Remotion`).
+## Account
+`vedhckrs/video-remake` (private), allowed by Ved on 25 Nov 2026 as the ONLY vedhckrs repo Claude works in -
+everything else on vedhckrs (above all `vedhckrs/Remotion`) stays off-limits, and none of this goes into
+creative2-cyber. Set per repo: remote `https://vedhckrs@github.com/vedhckrs/video-remake.git`, local
+user.name `VED` / user.email `85392668+vedhckrs@users.noreply.github.com`. Pushes use the saved Git Credential
+Manager sign-in; GitHub CLI (`C:\Program Files\GitHub CLI\gh.exe`, logged in as vedhckrs) is used only for repo and
+pull-request commands - it must never become Git's credential helper (that would break the creative2-cyber pushes).
