@@ -80,7 +80,7 @@ Quick health check:
 | `scripts/camera_motion.py` | camera jiggle / reversal measurement from a render (used by qa_explainer) |
 | `scripts/safe_overlay.py` | draws the YouTube Shorts UI (top icons, right buttons, @name / description) over frames - before/after previews |
 | `scripts/safe_check.py` | OCR safe-area gate (run with `<VB>\envs\ocr`): no readable text in the bottom 15 % / top 8 % |
-| `scripts/upload_package.py` | step 10: `master` · `frames` · `cover` · `build` → verified YouTube + Instagram zips |
+| `scripts/upload_package.py` | step 10: `master` · `frames` · `cover` · `build` → one verified `<Name>_Final_Upload.zip` (video + thumbnail, `YouTube/`, `Instagram/`, README); `--layout split` for two zips |
 | `references/upload-package.md` | step 10 guide: cover prompt (GPT 2.6 Flare 9:16), guide checklists, platform facts |
 | `references/example-upload/` | the four upload guides + cover prompts/previews from the SSD and reanimate videos |
 | `scripts/rmcommon.py` | paths (VB_HOME, engine, earshot, core python) |
@@ -101,7 +101,7 @@ python compare.py <project>            (explainer: python qa_explainer.py <proje
 <VB>\envs\ocr\Scripts\python.exe safe_check.py <project>\out\<id>.mp4      (safe-area gate, must PASS)
 (after Ved approves)  python upload_package.py <project> master --name <Name> --title "<title>"
 (cover: GPT 2.6 Flare 9:16 on Magnific)  python upload_package.py <project> frames ; … cover <png> --frame <s>
-(write upload/UPLOAD_YOUTUBE.md + UPLOAD_INSTAGRAM.md)  python upload_package.py <project> build --dest <folder>
+(write upload/UPLOAD_YOUTUBE.md + UPLOAD_INSTAGRAM.md)  python upload_package.py <project> build --dest <folder> --note "<version>" --note "<QA>"
 ```
 
 ## 6. Known problems already solved (do not re-debug)
@@ -136,6 +136,10 @@ python compare.py <project>            (explainer: python qa_explainer.py <proje
   critique 0.923 → 0.974 after round-2 fixes (dissolve accents, sub layer, stereo width, EQ, major key).
 - 24 Nov — explainer style (Phase B/C), then world mode without presenter (v2), then the cinematic camera
   director + NanoZoom + camera smoothness QA (v3, QA 18/18) - see "Explainer style" below.
+- 25 Nov — one-zip upload package (Ved: "in one zip file", then "Yes, add to skill"): `build` now makes ONE
+  `<Name>_Final_Upload.zip` (video + thumbnail once, generated README, `YouTube/` and `Instagram/` folders),
+  `--note` rows for the README, `--layout split` for the old two zips; it refuses guides that name the other
+  layout's files. Tested on the fps video: same files as the hand-made package; split output unchanged.
 - 25 Nov — Shorts/Reels safe area (Ved): engine `project.safe` (focusY 0.50, zoom 0.82 by default, world + nano),
   captions 54 px, `safe_overlay.py` previews, `safe_check.py` OCR gate; fps video re-rendered with it.
 - 25 Nov — fps explainer: `tts.py --redo` (one-sentence re-voice), `plan_timeline.py` fixes (preview SFX use

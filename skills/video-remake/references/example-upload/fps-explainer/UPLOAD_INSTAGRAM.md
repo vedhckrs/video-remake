@@ -2,14 +2,22 @@
 
 Package made 25 Nov 2026. Everything here is ready to paste.
 
-## 1. What's in this folder
+## Quick start (about 5 minutes)
 
-| File | Use |
-|---|---|
-| `FPS-Explainer_1080x1920_60fps.mp4` | The Reel to upload (final master with the safe area, no watermark from any other app) |
-| `reel_cover_1080x1920.jpg` | Custom Reel cover (9:16) |
-| `grid_preview_1080x1440.jpg` | How the cover should look in your profile grid (3:4 crop), for matching the crop |
-| `UPLOAD_INSTAGRAM.md` | This guide |
+1. Instagram → **+** → **Reel** → pick `FPS-Explainer_1080x1920_60fps.mp4` (main folder). Add no music and no filters.
+2. Paste the caption (section 3), set the cover to `FPS-Explainer_Thumbnail_1080x1920.jpg` (main folder) and fix the grid crop.
+3. Turn the AI label **ON** and auto-captions **OFF**, then share and pin the comment.
+
+The full steps are below.
+
+## 1. Files you'll use
+
+| File | Where | Use |
+|---|---|---|
+| `FPS-Explainer_1080x1920_60fps.mp4` | main folder | The Reel to upload (final master with the safe area, no watermark from any other app) |
+| `FPS-Explainer_Thumbnail_1080x1920.jpg` | main folder | Custom Reel cover (9:16) |
+| `grid_preview_1080x1440.jpg` | this folder | How the cover should look in your profile grid (3:4 crop), for matching the crop |
+| `UPLOAD_INSTAGRAM.md` | this folder | This guide |
 
 **Video specs** (checked): 1080 × 1920 (9:16), 60 fps, H.264 High, BT.709, 100.5 s, about 9.6 Mbps (well under 4 GB).
 Audio is AAC-LC 320 kbps, 48 kHz, −14.6 LUFS.
@@ -22,7 +30,7 @@ Captions are burned into the video, and nothing readable sits under Instagram's 
 2. Instagram → **+** → **Reel** → pick `FPS-Explainer_1080x1920_60fps.mp4` → **Next**.
 3. **Don't add music or filters.** The Reel already has its own mixed voice, music and sound effects. Keep the original audio at 100%.
 4. Paste the **Caption** (section 3).
-5. Tap **Edit cover** → **Add from camera roll** → choose `reel_cover_1080x1920.jpg`.
+5. Tap **Edit cover** → **Add from camera roll** → choose `FPS-Explainer_Thumbnail_1080x1920.jpg`.
    - In the **Profile grid** crop, drag the image down so the whole face, the "60Hz vs 144Hz" headline and the phone all show. Match `grid_preview_1080x1440.jpg`.
    - Tap **Done**. **The cover can't be changed after posting**, so check it now.
 6. **Rename audio** (if offered): `How 60, 120 & 144 fps work`
@@ -67,7 +75,7 @@ Facts checked Nov 2026: frame time = 1000 ÷ Hz (16.7 / 8.3 / 6.9 ms) · LTPO sc
 ## 5. Pre-publish checklist
 
 - [ ] The file is `FPS-Explainer_1080x1920_60fps.mp4` (100 s, 9:16, original audio, no added music)
-- [ ] The custom cover is uploaded and the profile-grid crop matches `grid_preview_1080x1440.jpg`
+- [ ] The custom cover `FPS-Explainer_Thumbnail_1080x1920.jpg` is uploaded and the profile-grid crop matches `grid_preview_1080x1440.jpg`
 - [ ] The caption is pasted with exactly 5 hashtags
 - [ ] The AI label is **ON**
 - [ ] Auto-captions are **OFF** (if the toggle exists), because the captions are burned in

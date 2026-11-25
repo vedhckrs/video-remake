@@ -1,6 +1,6 @@
 ---
 name: video-remake
-description: Makes a NEW English video (1080x1920, 60 fps) that edits like a reference video - same pacing, shot lengths, transitions, captions, voice pace, music tempo and SFX - on Ved's topic - script, ElevenLabs voice, code-drawn Remotion scenes with real logos and screenshots, earshot sound, render, then a metric-by-metric compare with the reference (via video-blueprint). Also makes 2.5D code-drawn tech explainers from a topic alone (a visual change on every spoken word, smooth cinematic camera, nanoscopic zoom dives), and after approval builds the upload package - 1080p60 master, GPT Image 2.6 cover, captions, separate YouTube and Instagram zips with guides. Use whenever Ved says "make a video like this", "remake this format", "make an explainer on" a topic, "final render", "upload package", or gives a reel plus a new topic, repo or product - even without naming the skill. Not for a breakdown only (video-blueprint), an exact rebuild (reverse-any-video) or Hinglish AlphaTech Shorts (remotion-video-producer).
+description: Makes a NEW English video (1080x1920, 60 fps) that edits like a reference video - same pacing, shot lengths, transitions, captions, voice pace, music tempo and SFX - on Ved's topic - script, ElevenLabs voice, code-drawn Remotion scenes with real logos and screenshots, earshot sound, render, then a metric-by-metric compare with the reference (via video-blueprint). Also makes 2.5D code-drawn tech explainers from a topic alone (a visual change on every spoken word, smooth cinematic camera, nanoscopic zoom dives), and after approval builds the upload package - 1080p60 master, GPT Image 2.6 cover, captions, one zip with YouTube and Instagram folders and guides. Use whenever Ved says "make a video like this", "remake this format", "make an explainer on" a topic, "final render", "upload package", or gives a reel plus a new topic, repo or product - even without naming the skill. Not for a breakdown only (video-blueprint), an exact rebuild (reverse-any-video) or Hinglish AlphaTech Shorts (remotion-video-producer).
 ---
 
 # Video remake
@@ -170,13 +170,15 @@ spent, and the project folder for edits. Offer the upload package (step 10) when
 
 **10. Upload package** (after Ved approves the final cut - "good to go", "final render", "upload package").
 Read `references/upload-package.md` first; worked examples are in `references/example-upload/`. Per video,
-two verified zips - `<Name>_YouTube.zip` and `<Name>_Instagram.zip` - each with the same master MP4
-(1080x1920 60 fps, picture stream-copied, audio re-mastered at AAC 320k), the cover in that platform's sizes,
-its own detailed `UPLOAD_*.md` guide, and `captions_en.srt` for YouTube:
-`rm/upload_package <project> master --name <Name> --title "<title>"` → cover with **GPT Image 2.6 Flare, 9:16**
+ONE verified zip, `<Name>_Final_Upload.zip` (Ved, 25 Nov 2026): the master MP4 (1080x1920 60 fps, picture
+stream-copied, audio re-mastered at AAC 320k) and the final thumbnail once in the main folder, a generated
+`README.md`, and `YouTube/` (detailed `UPLOAD_YOUTUBE.md`, `captions_en.srt`, fallback frame) and `Instagram/`
+(detailed `UPLOAD_INSTAGRAM.md`, grid preview) folders. Separate zips only when Ved asks (`build --layout split`):
+`rm/upload_package <project> master --name <Name> --title "<title>"` → cover with **GPT Image 2.6, 9:16**
 on Magnific (`simulate_cost` first - 175 credits each at 2K High - tell Ved, note the balance before/after) →
 `frames` (pick a fallback frame) → `cover <png> --frame <sec>` → write the two guides into `<project>/upload/`
-→ `build --dest "<Ved's folder>"` (checks specs, loudness, faststart, captions, zip CRC + byte-identical round trip).
+with the one-zip file names → `build --dest "<Ved's folder>" --note "<version>" --note "<QA>"` (checks specs,
+loudness, faststart, captions, guide file names, zip CRC + byte-identical round trip).
 
 ## Rules
 - English only; Ved approves the script and the voice cost before generation; one voice take,
