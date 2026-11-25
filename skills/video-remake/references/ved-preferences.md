@@ -139,6 +139,7 @@ Quotes are Ved's words. Apply them every time without asking again.
 - The same review: "why above blank area and below my visual - I want shift all visual above". Visuals started at
   ~27 % of the height under a dark caption fade. Fix (per video, script.json): `caption_y: 0.115`, `safe: {focusY:
   0.44, zoom: 0.86, fadeTo: 0.21}`, no scene `chapter` labels (rail off) -> captions 11.5-18.5 %, visuals ~20-84 %.
-  He approved it from a before/after preview with the YouTube UI on top. Not yet the skill default: ask him.
+  He approved it from a before/after preview with the YouTube UI on top, and then said "Yes, make it default" -> it is
+  the plan_timeline default since 25 Nov 2026 (no need to set it per video; the rail is opt-in now).
 - A whip-cut hero montage reads as "jiggle" to `camera_motion.py` (1.54 rms with it, 0.47 without); it is allowed
   in the first ~2 s - say so in the hand-over rather than hiding it.
