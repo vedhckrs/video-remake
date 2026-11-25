@@ -128,3 +128,17 @@ Quotes are Ved's words. Apply them every time without asking again.
   changes: preview frame first, full render only after his OK.
 - `safe_check.py` (OCR) must PASS before delivery; text under the right-side buttons is reported, not failed
   (Ved has not asked to clear the right column; it would need zoom ~0.75).
+
+## Hook and higher framing - decided 25 Nov 2026 (six-agents video)
+- Ved on the first cut: "start 6 second no visual change, no powerful hook". The opening had a big "6" for 0.5 s,
+  then ONE 3x2 wall of small cards held for 5.5 s (only small pills/moon changed) and nothing filled the voice pauses.
+  Rule: in the first ~6 s a BIG picture change at least every 0.5-0.7 s (a full-screen hero per word, then a build,
+  a flip, a payoff), and every voice pause gets its own picture event. A layout that holds > 1 s in the hook is a fail
+  even if details inside it change. Approved hook: `projects/six-agents/worlds/frame_wall.tsx` (6 mascot slams ->
+  big wall -> night clock + "Done" ticks -> all cards flip "Works for you 24/7" -> price ladder FREE ... $100+/mo).
+- The same review: "why above blank area and below my visual - I want shift all visual above". Visuals started at
+  ~27 % of the height under a dark caption fade. Fix (per video, script.json): `caption_y: 0.115`, `safe: {focusY:
+  0.44, zoom: 0.86, fadeTo: 0.21}`, no scene `chapter` labels (rail off) -> captions 11.5-18.5 %, visuals ~20-84 %.
+  He approved it from a before/after preview with the YouTube UI on top. Not yet the skill default: ask him.
+- A whip-cut hero montage reads as "jiggle" to `camera_motion.py` (1.54 rms with it, 0.47 without); it is allowed
+  in the first ~2 s - say so in the hand-over rather than hiding it.

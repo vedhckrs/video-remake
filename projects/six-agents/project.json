@@ -1,0 +1,6334 @@
+{
+  "id": "six-agents",
+  "title": "6 AI agents that work for you 24/7: which one is yours?",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1080,
+    "height": 1920
+  },
+  "durationInFrames": 7244,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "six-agents/vo.mp3",
+    "voVolume": 1.0,
+    "music": {
+      "src": "six-agents/music.wav",
+      "volume": 0.104,
+      "fadeOutFrames": 60
+    },
+    "sfx": [
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 0,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 20,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 38,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 56,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 93,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/swish_1.wav",
+        "frame": 173,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "six-agents/sfx/glint_1.wav",
+        "frame": 268,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 347,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 365,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/swish_1.wav",
+        "frame": 400,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "six-agents/sfx/swish_1.wav",
+        "frame": 433,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 518,
+        "volume": 0.4,
+        "type": "whoosh_in"
+      },
+      {
+        "src": "six-agents/sfx/swish_1.wav",
+        "frame": 655,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 678,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 917,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/zip_1.wav",
+        "frame": 1170,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "six-agents/sfx/notify_1.wav",
+        "frame": 1288,
+        "volume": 0.4,
+        "type": "notify"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 1405,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 1594,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 1737,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 1793,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 2008,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/notify_1.wav",
+        "frame": 2090,
+        "volume": 0.4,
+        "type": "notify"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 2203,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/glint_1.wav",
+        "frame": 2315,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 2624,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 2683,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/click_1.wav",
+        "frame": 2851,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "six-agents/sfx/type_run_1.wav",
+        "frame": 2892,
+        "volume": 0.4,
+        "type": "type_run"
+      },
+      {
+        "src": "six-agents/sfx/notify_1.wav",
+        "frame": 3001,
+        "volume": 0.4,
+        "type": "notify"
+      },
+      {
+        "src": "six-agents/sfx/shutter_1.wav",
+        "frame": 3056,
+        "volume": 0.4,
+        "type": "shutter"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 3208,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 3368,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 3457,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/tap_1.wav",
+        "frame": 3676,
+        "volume": 0.4,
+        "type": "tap"
+      },
+      {
+        "src": "six-agents/sfx/zip_1.wav",
+        "frame": 3749,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "six-agents/sfx/tick_1.wav",
+        "frame": 3851,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "six-agents/sfx/tick_1.wav",
+        "frame": 3907,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 3996,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 4042,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/riser_1.wav",
+        "frame": 4421,
+        "volume": 0.4,
+        "type": "riser"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 4497,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/zip_1.wav",
+        "frame": 4641,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "six-agents/sfx/notify_1.wav",
+        "frame": 4862,
+        "volume": 0.4,
+        "type": "notify"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 4999,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/type_run_1.wav",
+        "frame": 5078,
+        "volume": 0.4,
+        "type": "type_run"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 5158,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 5194,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 5236,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 5447,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 5518,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/zip_1.wav",
+        "frame": 5559,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 5667,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/hit_1.wav",
+        "frame": 5772,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "six-agents/sfx/whoosh_in_1.wav",
+        "frame": 6008,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "six-agents/sfx/riser_1.wav",
+        "frame": 6059,
+        "volume": 0.4,
+        "type": "riser"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6207,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6303,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6411,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6618,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6765,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 6816,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "six-agents/sfx/click_1.wav",
+        "frame": 6878,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "six-agents/sfx/pop_1.wav",
+        "frame": 6947,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "six-agents/sfx/glint_1.wav",
+        "frame": 7041,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "six-agents/sfx/success_1.wav",
+        "frame": 7141,
+        "volume": 0.4,
+        "type": "success"
+      }
+    ]
+  },
+  "captions": {
+    "y": 0.115,
+    "size": 54,
+    "pages": [
+      {
+        "from": -1,
+        "to": 62,
+        "words": [
+          {
+            "w": "Six",
+            "frame": -1,
+            "style": "select"
+          },
+          {
+            "w": "AI",
+            "frame": 17,
+            "style": "normal"
+          },
+          {
+            "w": "agents",
+            "frame": 35,
+            "style": "normal"
+          },
+          {
+            "w": "now",
+            "frame": 53,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 63,
+        "to": 110,
+        "words": [
+          {
+            "w": "do",
+            "frame": 63,
+            "style": "normal"
+          },
+          {
+            "w": "real",
+            "frame": 75,
+            "style": "normal"
+          },
+          {
+            "w": "work",
+            "frame": 90,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 101,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 111,
+        "to": 136,
+        "words": [
+          {
+            "w": "you,",
+            "frame": 111,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 137,
+        "to": 248,
+        "words": [
+          {
+            "w": "even",
+            "frame": 137,
+            "style": "normal"
+          },
+          {
+            "w": "while",
+            "frame": 150,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 161,
+            "style": "normal"
+          },
+          {
+            "w": "sleep.",
+            "frame": 170,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 249,
+        "to": 326,
+        "words": [
+          {
+            "w": "Same",
+            "frame": 249,
+            "style": "normal"
+          },
+          {
+            "w": "promise.",
+            "frame": 265,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 327,
+        "to": 410,
+        "words": [
+          {
+            "w": "Very",
+            "frame": 327,
+            "style": "normal"
+          },
+          {
+            "w": "different",
+            "frame": 344,
+            "style": "select"
+          },
+          {
+            "w": "deals.",
+            "frame": 362,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 430,
+        "to": 468,
+        "words": [
+          {
+            "w": "Four",
+            "frame": 430,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 444,
+            "style": "normal"
+          },
+          {
+            "w": "them",
+            "frame": 449,
+            "style": "normal"
+          },
+          {
+            "w": "live",
+            "frame": 459,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 469,
+        "to": 514,
+        "words": [
+          {
+            "w": "in",
+            "frame": 469,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 473,
+            "style": "normal"
+          },
+          {
+            "w": "big",
+            "frame": 481,
+            "style": "normal"
+          },
+          {
+            "w": "company's",
+            "frame": 494,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 515,
+        "to": 549,
+        "words": [
+          {
+            "w": "cloud,",
+            "frame": 515,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 550,
+        "to": 651,
+        "words": [
+          {
+            "w": "on",
+            "frame": 550,
+            "style": "normal"
+          },
+          {
+            "w": "their",
+            "frame": 559,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 570,
+            "style": "normal"
+          },
+          {
+            "w": "computer.",
+            "frame": 579,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 652,
+        "to": 699,
+        "words": [
+          {
+            "w": "Two",
+            "frame": 652,
+            "style": "normal"
+          },
+          {
+            "w": "are",
+            "frame": 665,
+            "style": "normal"
+          },
+          {
+            "w": "free,",
+            "frame": 675,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 700,
+        "to": 740,
+        "words": [
+          {
+            "w": "open",
+            "frame": 700,
+            "style": "normal"
+          },
+          {
+            "w": "source,",
+            "frame": 719,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 741,
+        "to": 819,
+        "words": [
+          {
+            "w": "and",
+            "frame": 741,
+            "style": "normal"
+          },
+          {
+            "w": "run",
+            "frame": 752,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 760,
+            "style": "normal"
+          },
+          {
+            "w": "yours.",
+            "frame": 767,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 841,
+        "to": 875,
+        "words": [
+          {
+            "w": "First,",
+            "frame": 841,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 876,
+        "to": 1003,
+        "words": [
+          {
+            "w": "OpenAI's",
+            "frame": 876,
+            "style": "normal"
+          },
+          {
+            "w": "Dots.",
+            "frame": 914,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1004,
+        "to": 1050,
+        "words": [
+          {
+            "w": "Each",
+            "frame": 1004,
+            "style": "normal"
+          },
+          {
+            "w": "dot",
+            "frame": 1017,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 1030,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 1041,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1051,
+        "to": 1117,
+        "words": [
+          {
+            "w": "own",
+            "frame": 1051,
+            "style": "normal"
+          },
+          {
+            "w": "cloud",
+            "frame": 1066,
+            "style": "normal"
+          },
+          {
+            "w": "computer,",
+            "frame": 1081,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1118,
+        "to": 1166,
+        "words": [
+          {
+            "w": "links",
+            "frame": 1118,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 1131,
+            "style": "normal"
+          },
+          {
+            "w": "over",
+            "frame": 1139,
+            "style": "normal"
+          },
+          {
+            "w": "four",
+            "frame": 1152,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1167,
+        "to": 1228,
+        "words": [
+          {
+            "w": "thousand",
+            "frame": 1167,
+            "style": "select"
+          },
+          {
+            "w": "apps,",
+            "frame": 1190,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1229,
+        "to": 1259,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1229,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 1237,
+            "style": "normal"
+          },
+          {
+            "w": "can",
+            "frame": 1243,
+            "style": "normal"
+          },
+          {
+            "w": "even",
+            "frame": 1250,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1260,
+        "to": 1349,
+        "words": [
+          {
+            "w": "text",
+            "frame": 1260,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 1272,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 1277,
+            "style": "normal"
+          },
+          {
+            "w": "iMessage.",
+            "frame": 1285,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1350,
+        "to": 1401,
+        "words": [
+          {
+            "w": "It",
+            "frame": 1350,
+            "style": "normal"
+          },
+          {
+            "w": "asks",
+            "frame": 1360,
+            "style": "normal"
+          },
+          {
+            "w": "before",
+            "frame": 1376,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 1396,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1402,
+        "to": 1464,
+        "words": [
+          {
+            "w": "pays.",
+            "frame": 1402,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1465,
+        "to": 1538,
+        "words": [
+          {
+            "w": "It",
+            "frame": 1465,
+            "style": "normal"
+          },
+          {
+            "w": "comes",
+            "frame": 1473,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 1486,
+            "style": "normal"
+          },
+          {
+            "w": "ChatGPT",
+            "frame": 1497,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1539,
+        "to": 1576,
+        "words": [
+          {
+            "w": "Pro,",
+            "frame": 1539,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1577,
+        "to": 1620,
+        "words": [
+          {
+            "w": "from",
+            "frame": 1577,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1587,
+            "style": "normal"
+          },
+          {
+            "w": "hundred",
+            "frame": 1591,
+            "style": "select"
+          },
+          {
+            "w": "dollars",
+            "frame": 1605,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1621,
+        "to": 1654,
+        "words": [
+          {
+            "w": "a",
+            "frame": 1621,
+            "style": "normal"
+          },
+          {
+            "w": "month,",
+            "frame": 1625,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1655,
+        "to": 1690,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1655,
+            "style": "normal"
+          },
+          {
+            "w": "it's",
+            "frame": 1664,
+            "style": "normal"
+          },
+          {
+            "w": "not",
+            "frame": 1674,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 1685,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1691,
+        "to": 1749,
+        "words": [
+          {
+            "w": "Europe",
+            "frame": 1691,
+            "style": "normal"
+          },
+          {
+            "w": "yet.",
+            "frame": 1705,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1772,
+        "to": 1827,
+        "words": [
+          {
+            "w": "Meta's",
+            "frame": 1772,
+            "style": "normal"
+          },
+          {
+            "w": "Muse",
+            "frame": 1790,
+            "style": "select"
+          },
+          {
+            "w": "is",
+            "frame": 1810,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1817,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1828,
+        "to": 1884,
+        "words": [
+          {
+            "w": "everyday",
+            "frame": 1828,
+            "style": "normal"
+          },
+          {
+            "w": "helper.",
+            "frame": 1852,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1885,
+        "to": 1944,
+        "words": [
+          {
+            "w": "It",
+            "frame": 1885,
+            "style": "normal"
+          },
+          {
+            "w": "books",
+            "frame": 1894,
+            "style": "normal"
+          },
+          {
+            "w": "trips,",
+            "frame": 1908,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1945,
+        "to": 1991,
+        "words": [
+          {
+            "w": "shops,",
+            "frame": 1945,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1992,
+        "to": 2059,
+        "words": [
+          {
+            "w": "even",
+            "frame": 1992,
+            "style": "normal"
+          },
+          {
+            "w": "negotiates",
+            "frame": 2005,
+            "style": "select"
+          },
+          {
+            "w": "your",
+            "frame": 2032,
+            "style": "normal"
+          },
+          {
+            "w": "bills,",
+            "frame": 2040,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2060,
+        "to": 2139,
+        "words": [
+          {
+            "w": "right",
+            "frame": 2060,
+            "style": "normal"
+          },
+          {
+            "w": "inside",
+            "frame": 2072,
+            "style": "normal"
+          },
+          {
+            "w": "WhatsApp,",
+            "frame": 2087,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2140,
+        "to": 2178,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2140,
+            "style": "normal"
+          },
+          {
+            "w": "checks",
+            "frame": 2149,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 2163,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 2172,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2179,
+        "to": 2273,
+        "words": [
+          {
+            "w": "before",
+            "frame": 2179,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 2195,
+            "style": "normal"
+          },
+          {
+            "w": "spends.",
+            "frame": 2200,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2274,
+        "to": 2342,
+        "words": [
+          {
+            "w": "Most",
+            "frame": 2274,
+            "style": "normal"
+          },
+          {
+            "w": "tasks",
+            "frame": 2287,
+            "style": "normal"
+          },
+          {
+            "w": "are",
+            "frame": 2304,
+            "style": "normal"
+          },
+          {
+            "w": "free,",
+            "frame": 2312,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2343,
+        "to": 2390,
+        "words": [
+          {
+            "w": "with",
+            "frame": 2343,
+            "style": "normal"
+          },
+          {
+            "w": "twenty",
+            "frame": 2355,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 2371,
+            "style": "normal"
+          },
+          {
+            "w": "hundred",
+            "frame": 2377,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2391,
+        "to": 2475,
+        "words": [
+          {
+            "w": "dollar",
+            "frame": 2391,
+            "style": "normal"
+          },
+          {
+            "w": "plans.",
+            "frame": 2404,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2476,
+        "to": 2514,
+        "words": [
+          {
+            "w": "For",
+            "frame": 2476,
+            "style": "normal"
+          },
+          {
+            "w": "now,",
+            "frame": 2486,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2515,
+        "to": 2556,
+        "words": [
+          {
+            "w": "it's",
+            "frame": 2515,
+            "style": "normal"
+          },
+          {
+            "w": "only",
+            "frame": 2528,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 2544,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2549,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2557,
+        "to": 2636,
+        "words": [
+          {
+            "w": "US",
+            "frame": 2557,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 2575,
+            "style": "normal"
+          },
+          {
+            "w": "Singapore.",
+            "frame": 2583,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2652,
+        "to": 2715,
+        "words": [
+          {
+            "w": "xAI's",
+            "frame": 2652,
+            "style": "normal"
+          },
+          {
+            "w": "Grok",
+            "frame": 2680,
+            "style": "normal"
+          },
+          {
+            "w": "Bot",
+            "frame": 2697,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 2710,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2716,
+        "to": 2791,
+        "words": [
+          {
+            "w": "the",
+            "frame": 2716,
+            "style": "normal"
+          },
+          {
+            "w": "team",
+            "frame": 2723,
+            "style": "select"
+          },
+          {
+            "w": "player.",
+            "frame": 2735,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2792,
+        "to": 2839,
+        "words": [
+          {
+            "w": "Every",
+            "frame": 2792,
+            "style": "normal"
+          },
+          {
+            "w": "bot",
+            "frame": 2808,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 2821,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 2831,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2840,
+        "to": 2888,
+        "words": [
+          {
+            "w": "own",
+            "frame": 2840,
+            "style": "normal"
+          },
+          {
+            "w": "computer,",
+            "frame": 2848,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2889,
+        "to": 2940,
+        "words": [
+          {
+            "w": "signs",
+            "frame": 2889,
+            "style": "normal"
+          },
+          {
+            "w": "into",
+            "frame": 2908,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 2919,
+            "style": "normal"
+          },
+          {
+            "w": "work",
+            "frame": 2928,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2941,
+        "to": 2964,
+        "words": [
+          {
+            "w": "apps,",
+            "frame": 2941,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2965,
+        "to": 3031,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2965,
+            "style": "normal"
+          },
+          {
+            "w": "joins",
+            "frame": 2975,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 2990,
+            "style": "normal"
+          },
+          {
+            "w": "Slack,",
+            "frame": 2998,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3032,
+        "to": 3122,
+        "words": [
+          {
+            "w": "even",
+            "frame": 3032,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 3045,
+            "style": "normal"
+          },
+          {
+            "w": "Zoom",
+            "frame": 3053,
+            "style": "normal"
+          },
+          {
+            "w": "calls.",
+            "frame": 3065,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3123,
+        "to": 3170,
+        "words": [
+          {
+            "w": "It",
+            "frame": 3123,
+            "style": "normal"
+          },
+          {
+            "w": "comes",
+            "frame": 3132,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 3146,
+            "style": "normal"
+          },
+          {
+            "w": "X",
+            "frame": 3158,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3171,
+        "to": 3236,
+        "words": [
+          {
+            "w": "Premium",
+            "frame": 3171,
+            "style": "normal"
+          },
+          {
+            "w": "at",
+            "frame": 3195,
+            "style": "normal"
+          },
+          {
+            "w": "thirty",
+            "frame": 3205,
+            "style": "select"
+          },
+          {
+            "w": "dollars",
+            "frame": 3219,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3237,
+        "to": 3269,
+        "words": [
+          {
+            "w": "and",
+            "frame": 3237,
+            "style": "normal"
+          },
+          {
+            "w": "up,",
+            "frame": 3245,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3270,
+        "to": 3324,
+        "words": [
+          {
+            "w": "and",
+            "frame": 3270,
+            "style": "normal"
+          },
+          {
+            "w": "heavy",
+            "frame": 3281,
+            "style": "normal"
+          },
+          {
+            "w": "use",
+            "frame": 3295,
+            "style": "normal"
+          },
+          {
+            "w": "costs",
+            "frame": 3307,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3325,
+        "to": 3380,
+        "words": [
+          {
+            "w": "extra.",
+            "frame": 3325,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3403,
+        "to": 3478,
+        "words": [
+          {
+            "w": "Anthropic's",
+            "frame": 3403,
+            "style": "normal"
+          },
+          {
+            "w": "Claude",
+            "frame": 3437,
+            "style": "normal"
+          },
+          {
+            "w": "Duet",
+            "frame": 3454,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 3472,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3479,
+        "to": 3563,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3479,
+            "style": "normal"
+          },
+          {
+            "w": "careful",
+            "frame": 3485,
+            "style": "select"
+          },
+          {
+            "w": "one.",
+            "frame": 3505,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3564,
+        "to": 3606,
+        "words": [
+          {
+            "w": "It",
+            "frame": 3564,
+            "style": "normal"
+          },
+          {
+            "w": "briefs",
+            "frame": 3572,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 3587,
+            "style": "normal"
+          },
+          {
+            "w": "every",
+            "frame": 3594,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3607,
+        "to": 3633,
+        "words": [
+          {
+            "w": "morning,",
+            "frame": 3607,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3634,
+        "to": 3716,
+        "words": [
+          {
+            "w": "spots",
+            "frame": 3634,
+            "style": "normal"
+          },
+          {
+            "w": "unpaid",
+            "frame": 3654,
+            "style": "normal"
+          },
+          {
+            "w": "invoices,",
+            "frame": 3673,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3717,
+        "to": 3790,
+        "words": [
+          {
+            "w": "even",
+            "frame": 3717,
+            "style": "normal"
+          },
+          {
+            "w": "runs",
+            "frame": 3732,
+            "style": "normal"
+          },
+          {
+            "w": "payroll.",
+            "frame": 3746,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3791,
+        "to": 3847,
+        "words": [
+          {
+            "w": "Before",
+            "frame": 3791,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 3809,
+            "style": "normal"
+          },
+          {
+            "w": "sends,",
+            "frame": 3814,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3848,
+        "to": 3873,
+        "words": [
+          {
+            "w": "pays,",
+            "frame": 3848,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3874,
+        "to": 3955,
+        "words": [
+          {
+            "w": "signs",
+            "frame": 3874,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 3895,
+            "style": "normal"
+          },
+          {
+            "w": "deletes,",
+            "frame": 3904,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3956,
+        "to": 3992,
+        "words": [
+          {
+            "w": "it",
+            "frame": 3956,
+            "style": "normal"
+          },
+          {
+            "w": "shows",
+            "frame": 3965,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 3979,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 3986,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3993,
+        "to": 4022,
+        "words": [
+          {
+            "w": "waits,",
+            "frame": 3993,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4023,
+        "to": 4063,
+        "words": [
+          {
+            "w": "and",
+            "frame": 4023,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 4032,
+            "style": "normal"
+          },
+          {
+            "w": "never",
+            "frame": 4039,
+            "style": "select"
+          },
+          {
+            "w": "moves",
+            "frame": 4051,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4064,
+        "to": 4160,
+        "words": [
+          {
+            "w": "money",
+            "frame": 4064,
+            "style": "normal"
+          },
+          {
+            "w": "between",
+            "frame": 4076,
+            "style": "normal"
+          },
+          {
+            "w": "accounts.",
+            "frame": 4092,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4161,
+        "to": 4217,
+        "words": [
+          {
+            "w": "It's",
+            "frame": 4161,
+            "style": "normal"
+          },
+          {
+            "w": "included",
+            "frame": 4172,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 4193,
+            "style": "normal"
+          },
+          {
+            "w": "Claude",
+            "frame": 4200,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4218,
+        "to": 4270,
+        "words": [
+          {
+            "w": "Pro",
+            "frame": 4218,
+            "style": "normal"
+          },
+          {
+            "w": "at",
+            "frame": 4230,
+            "style": "normal"
+          },
+          {
+            "w": "twenty",
+            "frame": 4236,
+            "style": "select"
+          },
+          {
+            "w": "dollars,",
+            "frame": 4252,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4271,
+        "to": 4318,
+        "words": [
+          {
+            "w": "but",
+            "frame": 4271,
+            "style": "normal"
+          },
+          {
+            "w": "it's",
+            "frame": 4287,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4298,
+            "style": "normal"
+          },
+          {
+            "w": "US",
+            "frame": 4303,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4319,
+        "to": 4385,
+        "words": [
+          {
+            "w": "waitlist",
+            "frame": 4319,
+            "style": "normal"
+          },
+          {
+            "w": "preview.",
+            "frame": 4339,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4402,
+        "to": 4493,
+        "words": [
+          {
+            "w": "Now",
+            "frame": 4402,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4412,
+            "style": "normal"
+          },
+          {
+            "w": "free",
+            "frame": 4418,
+            "style": "select"
+          },
+          {
+            "w": "ones.",
+            "frame": 4429,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4494,
+        "to": 4526,
+        "words": [
+          {
+            "w": "OpenClaw,",
+            "frame": 4494,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4527,
+        "to": 4572,
+        "words": [
+          {
+            "w": "the",
+            "frame": 4527,
+            "style": "normal"
+          },
+          {
+            "w": "lobster,",
+            "frame": 4534,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4573,
+        "to": 4637,
+        "words": [
+          {
+            "w": "has",
+            "frame": 4573,
+            "style": "normal"
+          },
+          {
+            "w": "three",
+            "frame": 4583,
+            "style": "normal"
+          },
+          {
+            "w": "hundred",
+            "frame": 4597,
+            "style": "normal"
+          },
+          {
+            "w": "ninety-five",
+            "frame": 4612,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4638,
+        "to": 4736,
+        "words": [
+          {
+            "w": "thousand",
+            "frame": 4638,
+            "style": "normal"
+          },
+          {
+            "w": "GitHub",
+            "frame": 4657,
+            "style": "normal"
+          },
+          {
+            "w": "stars.",
+            "frame": 4672,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4737,
+        "to": 4770,
+        "words": [
+          {
+            "w": "It",
+            "frame": 4737,
+            "style": "normal"
+          },
+          {
+            "w": "runs",
+            "frame": 4745,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 4758,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 4763,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4771,
+        "to": 4821,
+        "words": [
+          {
+            "w": "own",
+            "frame": 4771,
+            "style": "normal"
+          },
+          {
+            "w": "computer,",
+            "frame": 4780,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4822,
+        "to": 4852,
+        "words": [
+          {
+            "w": "you",
+            "frame": 4822,
+            "style": "normal"
+          },
+          {
+            "w": "chat",
+            "frame": 4830,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 4840,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 4848,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4853,
+        "to": 4940,
+        "words": [
+          {
+            "w": "on",
+            "frame": 4853,
+            "style": "normal"
+          },
+          {
+            "w": "WhatsApp",
+            "frame": 4859,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 4886,
+            "style": "normal"
+          },
+          {
+            "w": "Telegram,",
+            "frame": 4893,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4941,
+        "to": 4995,
+        "words": [
+          {
+            "w": "and",
+            "frame": 4941,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4949,
+            "style": "normal"
+          },
+          {
+            "w": "software",
+            "frame": 4955,
+            "style": "normal"
+          },
+          {
+            "w": "costs",
+            "frame": 4980,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4996,
+        "to": 5043,
+        "words": [
+          {
+            "w": "nothing.",
+            "frame": 4996,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5044,
+        "to": 5074,
+        "words": [
+          {
+            "w": "But",
+            "frame": 5044,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 5054,
+            "style": "normal"
+          },
+          {
+            "w": "can",
+            "frame": 5058,
+            "style": "normal"
+          },
+          {
+            "w": "run",
+            "frame": 5065,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5075,
+        "to": 5125,
+        "words": [
+          {
+            "w": "commands",
+            "frame": 5075,
+            "style": "select"
+          },
+          {
+            "w": "on",
+            "frame": 5095,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 5100,
+            "style": "normal"
+          },
+          {
+            "w": "machine,",
+            "frame": 5107,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5126,
+        "to": 5206,
+        "words": [
+          {
+            "w": "so",
+            "frame": 5126,
+            "style": "normal"
+          },
+          {
+            "w": "lock",
+            "frame": 5137,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 5148,
+            "style": "normal"
+          },
+          {
+            "w": "down.",
+            "frame": 5155,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5233,
+        "to": 5268,
+        "words": [
+          {
+            "w": "Hermes,",
+            "frame": 5233,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5269,
+        "to": 5329,
+        "words": [
+          {
+            "w": "from",
+            "frame": 5269,
+            "style": "normal"
+          },
+          {
+            "w": "Nous",
+            "frame": 5281,
+            "style": "normal"
+          },
+          {
+            "w": "Research,",
+            "frame": 5294,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5330,
+        "to": 5407,
+        "words": [
+          {
+            "w": "is",
+            "frame": 5330,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 5341,
+            "style": "normal"
+          },
+          {
+            "w": "learner.",
+            "frame": 5347,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5408,
+        "to": 5465,
+        "words": [
+          {
+            "w": "After",
+            "frame": 5408,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 5425,
+            "style": "normal"
+          },
+          {
+            "w": "hard",
+            "frame": 5431,
+            "style": "normal"
+          },
+          {
+            "w": "task,",
+            "frame": 5444,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5466,
+        "to": 5505,
+        "words": [
+          {
+            "w": "it",
+            "frame": 5466,
+            "style": "normal"
+          },
+          {
+            "w": "writes",
+            "frame": 5472,
+            "style": "normal"
+          },
+          {
+            "w": "itself",
+            "frame": 5487,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 5501,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5506,
+        "to": 5530,
+        "words": [
+          {
+            "w": "new",
+            "frame": 5506,
+            "style": "normal"
+          },
+          {
+            "w": "skill,",
+            "frame": 5515,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5531,
+        "to": 5569,
+        "words": [
+          {
+            "w": "so",
+            "frame": 5531,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 5540,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 5545,
+            "style": "normal"
+          },
+          {
+            "w": "better",
+            "frame": 5556,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5570,
+        "to": 5606,
+        "words": [
+          {
+            "w": "the",
+            "frame": 5570,
+            "style": "normal"
+          },
+          {
+            "w": "more",
+            "frame": 5576,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 5586,
+            "style": "normal"
+          },
+          {
+            "w": "use",
+            "frame": 5594,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5607,
+        "to": 5652,
+        "words": [
+          {
+            "w": "it.",
+            "frame": 5607,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5653,
+        "to": 5691,
+        "words": [
+          {
+            "w": "It's",
+            "frame": 5653,
+            "style": "normal"
+          },
+          {
+            "w": "free",
+            "frame": 5664,
+            "style": "select"
+          },
+          {
+            "w": "with",
+            "frame": 5674,
+            "style": "normal"
+          },
+          {
+            "w": "any",
+            "frame": 5683,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5692,
+        "to": 5728,
+        "words": [
+          {
+            "w": "AI",
+            "frame": 5692,
+            "style": "normal"
+          },
+          {
+            "w": "model,",
+            "frame": 5710,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5729,
+        "to": 5782,
+        "words": [
+          {
+            "w": "or",
+            "frame": 5729,
+            "style": "normal"
+          },
+          {
+            "w": "hosted",
+            "frame": 5745,
+            "style": "normal"
+          },
+          {
+            "w": "from",
+            "frame": 5761,
+            "style": "normal"
+          },
+          {
+            "w": "twenty",
+            "frame": 5769,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5783,
+        "to": 5845,
+        "words": [
+          {
+            "w": "dollars",
+            "frame": 5783,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 5799,
+            "style": "normal"
+          },
+          {
+            "w": "month.",
+            "frame": 5802,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5846,
+        "to": 5901,
+        "words": [
+          {
+            "w": "The",
+            "frame": 5846,
+            "style": "normal"
+          },
+          {
+            "w": "catch:",
+            "frame": 5854,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5902,
+        "to": 5934,
+        "words": [
+          {
+            "w": "you",
+            "frame": 5902,
+            "style": "normal"
+          },
+          {
+            "w": "pick",
+            "frame": 5911,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 5921,
+            "style": "normal"
+          },
+          {
+            "w": "set",
+            "frame": 5927,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5935,
+        "to": 6023,
+        "words": [
+          {
+            "w": "up",
+            "frame": 5935,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 5941,
+            "style": "normal"
+          },
+          {
+            "w": "model",
+            "frame": 5947,
+            "style": "normal"
+          },
+          {
+            "w": "yourself.",
+            "frame": 5962,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6046,
+        "to": 6103,
+        "words": [
+          {
+            "w": "So",
+            "frame": 6046,
+            "style": "normal"
+          },
+          {
+            "w": "which",
+            "frame": 6056,
+            "style": "normal"
+          },
+          {
+            "w": "one?",
+            "frame": 6069,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6104,
+        "to": 6203,
+        "words": [
+          {
+            "w": "Busy",
+            "frame": 6104,
+            "style": "normal"
+          },
+          {
+            "w": "pro",
+            "frame": 6122,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 6133,
+            "style": "normal"
+          },
+          {
+            "w": "budget:",
+            "frame": 6143,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6204,
+        "to": 6253,
+        "words": [
+          {
+            "w": "Dots.",
+            "frame": 6204,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6254,
+        "to": 6299,
+        "words": [
+          {
+            "w": "Everyday",
+            "frame": 6254,
+            "style": "normal"
+          },
+          {
+            "w": "errands:",
+            "frame": 6275,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6300,
+        "to": 6346,
+        "words": [
+          {
+            "w": "Muse.",
+            "frame": 6300,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6347,
+        "to": 6391,
+        "words": [
+          {
+            "w": "A",
+            "frame": 6347,
+            "style": "normal"
+          },
+          {
+            "w": "whole",
+            "frame": 6354,
+            "style": "normal"
+          },
+          {
+            "w": "team:",
+            "frame": 6365,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6392,
+        "to": 6464,
+        "words": [
+          {
+            "w": "Grok",
+            "frame": 6392,
+            "style": "normal"
+          },
+          {
+            "w": "Bot.",
+            "frame": 6408,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6465,
+        "to": 6541,
+        "words": [
+          {
+            "w": "Approval",
+            "frame": 6465,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 6496,
+            "style": "normal"
+          },
+          {
+            "w": "every",
+            "frame": 6507,
+            "style": "normal"
+          },
+          {
+            "w": "risky",
+            "frame": 6523,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6542,
+        "to": 6597,
+        "words": [
+          {
+            "w": "step:",
+            "frame": 6542,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6598,
+        "to": 6676,
+        "words": [
+          {
+            "w": "Claude",
+            "frame": 6598,
+            "style": "normal"
+          },
+          {
+            "w": "Duet.",
+            "frame": 6615,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6677,
+        "to": 6717,
+        "words": [
+          {
+            "w": "Free",
+            "frame": 6677,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 6694,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 6702,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 6709,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6718,
+        "to": 6761,
+        "words": [
+          {
+            "w": "own",
+            "frame": 6718,
+            "style": "normal"
+          },
+          {
+            "w": "machine:",
+            "frame": 6727,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6762,
+        "to": 6862,
+        "words": [
+          {
+            "w": "OpenClaw",
+            "frame": 6762,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 6801,
+            "style": "normal"
+          },
+          {
+            "w": "Hermes.",
+            "frame": 6813,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6875,
+        "to": 6920,
+        "words": [
+          {
+            "w": "Save",
+            "frame": 6875,
+            "style": "select"
+          },
+          {
+            "w": "this",
+            "frame": 6890,
+            "style": "normal"
+          },
+          {
+            "w": "before",
+            "frame": 6900,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 6914,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6921,
+        "to": 7002,
+        "words": [
+          {
+            "w": "pay",
+            "frame": 6921,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 6930,
+            "style": "normal"
+          },
+          {
+            "w": "an",
+            "frame": 6939,
+            "style": "normal"
+          },
+          {
+            "w": "agent.",
+            "frame": 6944,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7003,
+        "to": 7037,
+        "words": [
+          {
+            "w": "Which",
+            "frame": 7003,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 7017,
+            "style": "normal"
+          },
+          {
+            "w": "would",
+            "frame": 7024,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 7032,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7038,
+        "to": 7119,
+        "words": [
+          {
+            "w": "trust",
+            "frame": 7038,
+            "style": "select"
+          },
+          {
+            "w": "with",
+            "frame": 7051,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 7060,
+            "style": "normal"
+          },
+          {
+            "w": "inbox?",
+            "frame": 7067,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7120,
+        "to": 7243,
+        "words": [
+          {
+            "w": "Tell",
+            "frame": 7120,
+            "style": "normal"
+          },
+          {
+            "w": "me",
+            "frame": 7132,
+            "style": "normal"
+          },
+          {
+            "w": "below.",
+            "frame": 7138,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 411,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 0.0,
+        "w:six": 0.0,
+        "i:1": 10.0,
+        "w:ai": 10.0,
+        "i:2": 19.0,
+        "w:agents": 19.0,
+        "i:3": 28.0,
+        "w:now": 28.0,
+        "i:4": 33.0,
+        "w:do": 33.0,
+        "i:5": 39.0,
+        "w:real": 39.0,
+        "i:6": 46.5,
+        "w:work": 46.5,
+        "i:7": 52.0,
+        "w:for": 52.0,
+        "i:8": 57.0,
+        "w:you": 57.0,
+        "i:9": 70.0,
+        "w:even": 70.0,
+        "i:10": 76.5,
+        "w:while": 76.5,
+        "i:11": 82.0,
+        "i:12": 86.5,
+        "w:sleep": 86.5,
+        "i:13": 126.0,
+        "w:same": 126.0,
+        "i:14": 134.0,
+        "w:promise": 134.0,
+        "i:15": 165.0,
+        "w:very": 165.0,
+        "i:16": 173.5,
+        "w:different": 173.5,
+        "i:17": 182.5,
+        "w:deals": 182.5
+      },
+      "beats": [
+        {
+          "t": -1.0,
+          "w": "Six",
+          "word": "six",
+          "kind": "number",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 9.0,
+          "w": "AI",
+          "word": "ai",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 18.0,
+          "w": "agents",
+          "word": "agents",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 27.0,
+          "w": "now",
+          "word": "now",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 38.0,
+          "w": "real",
+          "word": "real",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 45.5,
+          "w": "work",
+          "word": "work",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 59.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 69.0,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 75.5,
+          "w": "while",
+          "word": "while",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 85.5,
+          "w": "sleep.",
+          "word": "sleep",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 99.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 113.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 125.0,
+          "w": "Same",
+          "word": "same",
+          "kind": "state",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 133.0,
+          "w": "promise.",
+          "word": "promise",
+          "kind": "object",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 147.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 161.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 172.5,
+          "w": "different",
+          "word": "different",
+          "kind": "state",
+          "s": 3,
+          "i": 16
+        },
+        {
+          "t": 181.5,
+          "w": "deals.",
+          "word": "deals",
+          "kind": "object",
+          "s": 3,
+          "i": 17
+        },
+        {
+          "t": 195.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from": 411,
+      "to": 820,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 11.0,
+        "w:four": 11.0,
+        "i:1": 18.0,
+        "w:of": 18.0,
+        "i:2": 20.5,
+        "w:them": 20.5,
+        "i:3": 25.5,
+        "w:live": 25.5,
+        "i:4": 30.5,
+        "w:in": 30.5,
+        "i:5": 32.5,
+        "w:a": 32.5,
+        "i:6": 36.5,
+        "w:big": 36.5,
+        "i:7": 43.0,
+        "w:companys": 43.0,
+        "i:8": 53.5,
+        "w:cloud": 53.5,
+        "i:9": 71.0,
+        "w:on": 71.0,
+        "i:10": 75.5,
+        "w:their": 75.5,
+        "i:11": 81.0,
+        "w:own": 81.0,
+        "i:12": 85.5,
+        "w:computer": 85.5,
+        "i:13": 122.0,
+        "w:two": 122.0,
+        "i:14": 128.5,
+        "w:are": 128.5,
+        "i:15": 133.5,
+        "w:free": 133.5,
+        "i:16": 146.0,
+        "w:open": 146.0,
+        "i:17": 155.5,
+        "w:source": 155.5,
+        "i:18": 166.5,
+        "w:and": 166.5,
+        "i:19": 172.0,
+        "w:run": 172.0,
+        "i:20": 176.5,
+        "i:21": 179.5,
+        "w:yours": 179.5
+      },
+      "beats": [
+        {
+          "t": 10.0,
+          "w": "Four",
+          "word": "four",
+          "kind": "number",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 24.5,
+          "w": "live",
+          "word": "live",
+          "kind": "action",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 35.5,
+          "w": "big",
+          "word": "big",
+          "kind": "state",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 42.0,
+          "w": "company's",
+          "word": "company's",
+          "kind": "object",
+          "s": 2,
+          "i": 7
+        },
+        {
+          "t": 52.5,
+          "w": "cloud,",
+          "word": "cloud",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 66.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 80.0,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 84.5,
+          "w": "computer.",
+          "word": "computer",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 98.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 112.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 121.0,
+          "w": "Two",
+          "word": "two",
+          "kind": "number",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 132.5,
+          "w": "free,",
+          "word": "free",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 145.0,
+          "w": "open",
+          "word": "open",
+          "kind": "action",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 154.5,
+          "w": "source,",
+          "word": "source",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 171.0,
+          "w": "run",
+          "word": "run",
+          "kind": "action",
+          "s": 2,
+          "i": 19
+        },
+        {
+          "t": 178.5,
+          "w": "yours.",
+          "word": "yours",
+          "kind": "object",
+          "s": 3,
+          "i": 21
+        },
+        {
+          "t": 192.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from": 820,
+      "to": 1750,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 20,
+        "origin": [
+          0.3,
+          0.32
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.0,
+        "w:first": 12.0,
+        "i:1": 29.5,
+        "w:openais": 29.5,
+        "i:2": 48.5,
+        "w:dots": 48.5,
+        "i:3": 93.5,
+        "w:each": 93.5,
+        "i:4": 100.0,
+        "w:dot": 100.0,
+        "i:5": 106.5,
+        "w:gets": 106.5,
+        "i:6": 112.0,
+        "w:its": 112.0,
+        "i:7": 117.0,
+        "w:own": 117.0,
+        "i:8": 124.5,
+        "w:cloud": 124.5,
+        "i:9": 132.0,
+        "w:computer": 132.0,
+        "i:10": 150.5,
+        "w:links": 150.5,
+        "i:11": 157.0,
+        "w:to": 157.0,
+        "i:12": 161.0,
+        "w:over": 161.0,
+        "i:13": 167.5,
+        "w:four": 167.5,
+        "i:14": 175.0,
+        "w:thousand": 175.0,
+        "i:15": 186.5,
+        "w:apps": 186.5,
+        "i:16": 206.0,
+        "w:and": 206.0,
+        "i:17": 210.0,
+        "w:you": 210.0,
+        "i:18": 213.0,
+        "w:can": 213.0,
+        "i:19": 216.5,
+        "w:even": 216.5,
+        "i:20": 221.5,
+        "w:text": 221.5,
+        "i:21": 227.5,
+        "w:it": 227.5,
+        "i:22": 230.0,
+        "w:on": 230.0,
+        "i:23": 234.0,
+        "w:imessage": 234.0,
+        "i:24": 266.5,
+        "i:25": 271.5,
+        "w:asks": 271.5,
+        "i:26": 279.5,
+        "w:before": 279.5,
+        "i:27": 289.5,
+        "i:28": 292.5,
+        "w:pays": 292.5,
+        "i:29": 324.0,
+        "i:30": 328.0,
+        "w:comes": 328.0,
+        "i:31": 334.5,
+        "w:with": 334.5,
+        "i:32": 340.0,
+        "w:chatgpt": 340.0,
+        "i:33": 361.0,
+        "w:pro": 361.0,
+        "i:34": 380.0,
+        "w:from": 380.0,
+        "i:35": 385.0,
+        "w:a": 385.0,
+        "i:36": 387.0,
+        "w:hundred": 387.0,
+        "i:37": 394.0,
+        "w:dollars": 394.0,
+        "i:38": 402.0,
+        "i:39": 404.0,
+        "w:month": 404.0,
+        "i:40": 419.0,
+        "i:41": 423.5,
+        "i:42": 428.5,
+        "w:not": 428.5,
+        "i:43": 434.0,
+        "w:in": 434.0,
+        "i:44": 437.0,
+        "w:europe": 437.0,
+        "i:45": 444.0,
+        "w:yet": 444.0
+      },
+      "beats": [
+        {
+          "t": 11.0,
+          "w": "First,",
+          "word": "first",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 28.5,
+          "w": "OpenAI's",
+          "word": "openai's",
+          "kind": "object",
+          "s": 2,
+          "i": 1
+        },
+        {
+          "t": 42.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 47.5,
+          "w": "Dots.",
+          "word": "dots",
+          "kind": "object",
+          "s": 3,
+          "i": 2
+        },
+        {
+          "t": 61.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 75.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 92.5,
+          "w": "Each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 99.0,
+          "w": "dot",
+          "word": "dot",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 105.5,
+          "w": "gets",
+          "word": "gets",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 116.0,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 123.5,
+          "w": "cloud",
+          "word": "cloud",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 131.0,
+          "w": "computer,",
+          "word": "computer",
+          "kind": "object",
+          "s": 2,
+          "i": 9
+        },
+        {
+          "t": 145.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 149.5,
+          "w": "links",
+          "word": "links",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 166.5,
+          "w": "four",
+          "word": "four",
+          "kind": "number",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 174.0,
+          "w": "thousand",
+          "word": "thousand",
+          "kind": "number",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 185.5,
+          "w": "apps,",
+          "word": "apps",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 199.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 215.5,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 220.5,
+          "w": "text",
+          "word": "text",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 233.0,
+          "w": "iMessage.",
+          "word": "imessage",
+          "kind": "object",
+          "s": 3,
+          "i": 23
+        },
+        {
+          "t": 247.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 261.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 270.5,
+          "w": "asks",
+          "word": "asks",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 278.5,
+          "w": "before",
+          "word": "before",
+          "kind": "object",
+          "s": 1,
+          "i": 26
+        },
+        {
+          "t": 291.5,
+          "w": "pays.",
+          "word": "pays",
+          "kind": "object",
+          "s": 3,
+          "i": 28
+        },
+        {
+          "t": 305.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 319.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 327.0,
+          "w": "comes",
+          "word": "comes",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 339.0,
+          "w": "ChatGPT",
+          "word": "chatgpt",
+          "kind": "object",
+          "s": 2,
+          "i": 32
+        },
+        {
+          "t": 353.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 360.0,
+          "w": "Pro,",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 33
+        },
+        {
+          "t": 374.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 386.0,
+          "w": "hundred",
+          "word": "hundred",
+          "kind": "number",
+          "s": 3,
+          "i": 36
+        },
+        {
+          "t": 393.0,
+          "w": "dollars",
+          "word": "dollars",
+          "kind": "object",
+          "s": 2,
+          "i": 37
+        },
+        {
+          "t": 403.0,
+          "w": "month,",
+          "word": "month",
+          "kind": "object",
+          "s": 1,
+          "i": 39
+        },
+        {
+          "t": 417.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 427.5,
+          "w": "not",
+          "word": "not",
+          "kind": "object",
+          "s": 1,
+          "i": 42
+        },
+        {
+          "t": 436.0,
+          "w": "Europe",
+          "word": "europe",
+          "kind": "object",
+          "s": 1,
+          "i": 44
+        },
+        {
+          "t": 443.0,
+          "w": "yet.",
+          "word": "yet",
+          "kind": "object",
+          "s": 3,
+          "i": 45
+        },
+        {
+          "t": 457.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from": 1750,
+      "to": 2637,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.5,
+        "w:metas": 12.5,
+        "i:1": 21.5,
+        "w:muse": 21.5,
+        "i:2": 31.5,
+        "w:is": 31.5,
+        "i:3": 35.0,
+        "w:the": 35.0,
+        "i:4": 40.5,
+        "w:everyday": 40.5,
+        "i:5": 52.5,
+        "w:helper": 52.5,
+        "i:6": 69.0,
+        "w:it": 69.0,
+        "i:7": 74.0,
+        "w:books": 74.0,
+        "i:8": 80.5,
+        "w:trips": 80.5,
+        "i:9": 99.0,
+        "w:shops": 99.0,
+        "i:10": 122.5,
+        "w:even": 122.5,
+        "i:11": 129.0,
+        "w:negotiates": 129.0,
+        "i:12": 142.5,
+        "w:your": 142.5,
+        "i:13": 146.5,
+        "w:bills": 146.5,
+        "i:14": 156.5,
+        "w:right": 156.5,
+        "i:15": 162.5,
+        "w:inside": 162.5,
+        "i:16": 170.0,
+        "w:whatsapp": 170.0,
+        "i:17": 196.5,
+        "w:and": 196.5,
+        "i:18": 201.0,
+        "w:checks": 201.0,
+        "i:19": 208.0,
+        "w:with": 208.0,
+        "i:20": 212.5,
+        "w:you": 212.5,
+        "i:21": 216.0,
+        "w:before": 216.0,
+        "i:22": 224.0,
+        "i:23": 226.5,
+        "w:spends": 226.5,
+        "i:24": 263.5,
+        "w:most": 263.5,
+        "i:25": 270.0,
+        "w:tasks": 270.0,
+        "i:26": 278.5,
+        "w:are": 278.5,
+        "i:27": 282.5,
+        "w:free": 282.5,
+        "i:28": 298.0,
+        "i:29": 304.0,
+        "w:twenty": 304.0,
+        "i:30": 312.0,
+        "i:31": 315.0,
+        "w:hundred": 315.0,
+        "i:32": 322.0,
+        "w:dollar": 322.0,
+        "i:33": 328.5,
+        "w:plans": 328.5,
+        "i:34": 364.5,
+        "w:for": 364.5,
+        "i:35": 369.5,
+        "w:now": 369.5,
+        "i:36": 384.0,
+        "w:its": 384.0,
+        "i:37": 390.5,
+        "w:only": 390.5,
+        "i:38": 398.5,
+        "w:in": 398.5,
+        "i:39": 401.0,
+        "i:40": 405.0,
+        "w:us": 405.0,
+        "i:41": 414.0,
+        "i:42": 418.0,
+        "w:singapore": 418.0
+      },
+      "beats": [
+        {
+          "t": 11.5,
+          "w": "Meta's",
+          "word": "meta's",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 20.5,
+          "w": "Muse",
+          "word": "muse",
+          "kind": "object",
+          "s": 3,
+          "i": 1
+        },
+        {
+          "t": 34.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 39.5,
+          "w": "everyday",
+          "word": "everyday",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 51.5,
+          "w": "helper.",
+          "word": "helper",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 65.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 73.0,
+          "w": "books",
+          "word": "books",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 79.5,
+          "w": "trips,",
+          "word": "trips",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 93.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 98.0,
+          "w": "shops,",
+          "word": "shops",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 112.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 121.5,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 128.0,
+          "w": "negotiates",
+          "word": "negotiates",
+          "kind": "object",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 145.5,
+          "w": "bills,",
+          "word": "bills",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 155.5,
+          "w": "right",
+          "word": "right",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 161.5,
+          "w": "inside",
+          "word": "inside",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 169.0,
+          "w": "WhatsApp,",
+          "word": "whatsapp",
+          "kind": "object",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 183.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 200.0,
+          "w": "checks",
+          "word": "checks",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 215.0,
+          "w": "before",
+          "word": "before",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 225.5,
+          "w": "spends.",
+          "word": "spends",
+          "kind": "object",
+          "s": 3,
+          "i": 23
+        },
+        {
+          "t": 239.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 253.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 262.5,
+          "w": "Most",
+          "word": "most",
+          "kind": "object",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 269.0,
+          "w": "tasks",
+          "word": "tasks",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 281.5,
+          "w": "free,",
+          "word": "free",
+          "kind": "object",
+          "s": 3,
+          "i": 27
+        },
+        {
+          "t": 295.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 303.0,
+          "w": "twenty",
+          "word": "twenty",
+          "kind": "number",
+          "s": 3,
+          "i": 29
+        },
+        {
+          "t": 314.0,
+          "w": "hundred",
+          "word": "hundred",
+          "kind": "number",
+          "s": 3,
+          "i": 31
+        },
+        {
+          "t": 321.0,
+          "w": "dollar",
+          "word": "dollar",
+          "kind": "object",
+          "s": 1,
+          "i": 32
+        },
+        {
+          "t": 327.5,
+          "w": "plans.",
+          "word": "plans",
+          "kind": "object",
+          "s": 3,
+          "i": 33
+        },
+        {
+          "t": 341.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 355.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 368.5,
+          "w": "now,",
+          "word": "now",
+          "kind": "object",
+          "s": 1,
+          "i": 35
+        },
+        {
+          "t": 382.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 389.5,
+          "w": "only",
+          "word": "only",
+          "kind": "object",
+          "s": 1,
+          "i": 37
+        },
+        {
+          "t": 403.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 417.0,
+          "w": "Singapore.",
+          "word": "singapore",
+          "kind": "object",
+          "s": 3,
+          "i": 42
+        },
+        {
+          "t": 431.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "from": 2637,
+      "to": 3381,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:xais": 9.0,
+        "i:1": 23.0,
+        "w:grok": 23.0,
+        "i:2": 31.5,
+        "w:bot": 31.5,
+        "i:3": 38.0,
+        "w:is": 38.0,
+        "i:4": 41.0,
+        "w:the": 41.0,
+        "i:5": 44.5,
+        "w:team": 44.5,
+        "i:6": 50.5,
+        "w:player": 50.5,
+        "i:7": 79.0,
+        "w:every": 79.0,
+        "i:8": 87.0,
+        "i:9": 93.5,
+        "w:gets": 93.5,
+        "i:10": 98.5,
+        "w:its": 98.5,
+        "i:11": 103.0,
+        "w:own": 103.0,
+        "i:12": 107.0,
+        "w:computer": 107.0,
+        "i:13": 127.5,
+        "w:signs": 127.5,
+        "i:14": 137.0,
+        "w:into": 137.0,
+        "i:15": 142.5,
+        "w:your": 142.5,
+        "i:16": 147.0,
+        "w:work": 147.0,
+        "i:17": 153.5,
+        "w:apps": 153.5,
+        "i:18": 165.5,
+        "w:and": 165.5,
+        "i:19": 170.5,
+        "w:joins": 170.5,
+        "i:20": 178.0,
+        "i:21": 182.0,
+        "w:slack": 182.0,
+        "i:22": 199.0,
+        "w:even": 199.0,
+        "i:23": 205.5,
+        "i:24": 209.5,
+        "w:zoom": 209.5,
+        "i:25": 215.5,
+        "w:calls": 215.5,
+        "i:26": 244.5,
+        "w:it": 244.5,
+        "i:27": 249.0,
+        "w:comes": 249.0,
+        "i:28": 256.0,
+        "w:with": 256.0,
+        "i:29": 262.0,
+        "w:x": 262.0,
+        "i:30": 268.5,
+        "w:premium": 268.5,
+        "i:31": 280.5,
+        "w:at": 280.5,
+        "i:32": 285.5,
+        "w:thirty": 285.5,
+        "i:33": 292.5,
+        "w:dollars": 292.5,
+        "i:34": 301.5,
+        "i:35": 305.5,
+        "w:up": 305.5,
+        "i:36": 318.0,
+        "i:37": 323.5,
+        "w:heavy": 323.5,
+        "i:38": 330.5,
+        "w:use": 330.5,
+        "i:39": 336.5,
+        "w:costs": 336.5,
+        "i:40": 345.5,
+        "w:extra": 345.5
+      },
+      "beats": [
+        {
+          "t": 8.0,
+          "w": "xAI's",
+          "word": "xai's",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 22.0,
+          "w": "Grok",
+          "word": "grok",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 30.5,
+          "w": "Bot",
+          "word": "bot",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 43.5,
+          "w": "team",
+          "word": "team",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 49.5,
+          "w": "player.",
+          "word": "player",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 63.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 78.0,
+          "w": "Every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 86.0,
+          "w": "bot",
+          "word": "bot",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 92.5,
+          "w": "gets",
+          "word": "gets",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 102.0,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 106.0,
+          "w": "computer,",
+          "word": "computer",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 120.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 126.5,
+          "w": "signs",
+          "word": "signs",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 140.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 146.0,
+          "w": "work",
+          "word": "work",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 152.5,
+          "w": "apps,",
+          "word": "apps",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 169.5,
+          "w": "joins",
+          "word": "joins",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 181.0,
+          "w": "Slack,",
+          "word": "slack",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 198.0,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 208.5,
+          "w": "Zoom",
+          "word": "zoom",
+          "kind": "action",
+          "s": 2,
+          "i": 24
+        },
+        {
+          "t": 214.5,
+          "w": "calls.",
+          "word": "calls",
+          "kind": "object",
+          "s": 3,
+          "i": 25
+        },
+        {
+          "t": 228.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 242.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 248.0,
+          "w": "comes",
+          "word": "comes",
+          "kind": "object",
+          "s": 1,
+          "i": 27
+        },
+        {
+          "t": 261.0,
+          "w": "X",
+          "word": "x",
+          "kind": "object",
+          "s": 1,
+          "i": 29
+        },
+        {
+          "t": 267.5,
+          "w": "Premium",
+          "word": "premium",
+          "kind": "object",
+          "s": 2,
+          "i": 30
+        },
+        {
+          "t": 284.5,
+          "w": "thirty",
+          "word": "thirty",
+          "kind": "number",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 291.5,
+          "w": "dollars",
+          "word": "dollars",
+          "kind": "object",
+          "s": 2,
+          "i": 33
+        },
+        {
+          "t": 305.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 322.5,
+          "w": "heavy",
+          "word": "heavy",
+          "kind": "object",
+          "s": 1,
+          "i": 37
+        },
+        {
+          "t": 329.5,
+          "w": "use",
+          "word": "use",
+          "kind": "object",
+          "s": 1,
+          "i": 38
+        },
+        {
+          "t": 335.5,
+          "w": "costs",
+          "word": "costs",
+          "kind": "object",
+          "s": 1,
+          "i": 39
+        },
+        {
+          "t": 344.5,
+          "w": "extra.",
+          "word": "extra",
+          "kind": "object",
+          "s": 3,
+          "i": 40
+        },
+        {
+          "t": 358.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "from": 3381,
+      "to": 4386,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.5,
+        "w:anthropics": 12.5,
+        "i:1": 29.5,
+        "w:claude": 29.5,
+        "i:2": 38.0,
+        "w:duet": 38.0,
+        "i:3": 47.0,
+        "w:is": 47.0,
+        "i:4": 50.5,
+        "w:the": 50.5,
+        "i:5": 53.5,
+        "w:careful": 53.5,
+        "i:6": 63.5,
+        "w:one": 63.5,
+        "i:7": 93.0,
+        "w:it": 93.0,
+        "i:8": 97.0,
+        "w:briefs": 97.0,
+        "i:9": 104.5,
+        "w:you": 104.5,
+        "i:10": 108.0,
+        "w:every": 108.0,
+        "i:11": 114.5,
+        "w:morning": 114.5,
+        "i:12": 128.0,
+        "w:spots": 128.0,
+        "i:13": 138.0,
+        "w:unpaid": 138.0,
+        "i:14": 147.5,
+        "w:invoices": 147.5,
+        "i:15": 169.5,
+        "w:even": 169.5,
+        "i:16": 177.0,
+        "w:runs": 177.0,
+        "i:17": 184.0,
+        "w:payroll": 184.0,
+        "i:18": 206.5,
+        "w:before": 206.5,
+        "i:19": 215.5,
+        "i:20": 218.0,
+        "w:sends": 218.0,
+        "i:21": 235.0,
+        "w:pays": 235.0,
+        "i:22": 248.0,
+        "w:signs": 248.0,
+        "i:23": 258.5,
+        "w:or": 258.5,
+        "i:24": 263.0,
+        "w:deletes": 263.0,
+        "i:25": 289.0,
+        "i:26": 293.5,
+        "w:shows": 293.5,
+        "i:27": 300.5,
+        "i:28": 304.0,
+        "w:and": 304.0,
+        "i:29": 307.5,
+        "w:waits": 307.5,
+        "i:30": 322.5,
+        "i:31": 327.0,
+        "i:32": 330.5,
+        "w:never": 330.5,
+        "i:33": 336.5,
+        "w:moves": 336.5,
+        "i:34": 343.0,
+        "w:money": 343.0,
+        "i:35": 349.0,
+        "w:between": 349.0,
+        "i:36": 357.0,
+        "w:accounts": 357.0,
+        "i:37": 391.5,
+        "w:its": 391.5,
+        "i:38": 397.0,
+        "w:included": 397.0,
+        "i:39": 407.5,
+        "w:in": 407.5,
+        "i:40": 411.0,
+        "i:41": 420.0,
+        "w:pro": 420.0,
+        "i:42": 426.0,
+        "w:at": 426.0,
+        "i:43": 429.0,
+        "w:twenty": 429.0,
+        "i:44": 437.0,
+        "w:dollars": 437.0,
+        "i:45": 446.5,
+        "w:but": 446.5,
+        "i:46": 454.5,
+        "i:47": 460.0,
+        "w:a": 460.0,
+        "i:48": 462.5,
+        "w:us": 462.5,
+        "i:49": 470.5,
+        "w:waitlist": 470.5,
+        "i:50": 480.5,
+        "w:preview": 480.5
+      },
+      "beats": [
+        {
+          "t": 11.5,
+          "w": "Anthropic's",
+          "word": "anthropic's",
+          "kind": "object",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 28.5,
+          "w": "Claude",
+          "word": "claude",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 37.0,
+          "w": "Duet",
+          "word": "duet",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 52.5,
+          "w": "careful",
+          "word": "careful",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 62.5,
+          "w": "one.",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 76.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 90.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 96.0,
+          "w": "briefs",
+          "word": "briefs",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 107.0,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 113.5,
+          "w": "morning,",
+          "word": "morning",
+          "kind": "object",
+          "s": 2,
+          "i": 11
+        },
+        {
+          "t": 127.0,
+          "w": "spots",
+          "word": "spots",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 137.0,
+          "w": "unpaid",
+          "word": "unpaid",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 146.5,
+          "w": "invoices,",
+          "word": "invoices",
+          "kind": "object",
+          "s": 2,
+          "i": 14
+        },
+        {
+          "t": 160.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 168.5,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 176.0,
+          "w": "runs",
+          "word": "runs",
+          "kind": "action",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 183.0,
+          "w": "payroll.",
+          "word": "payroll",
+          "kind": "object",
+          "s": 3,
+          "i": 17
+        },
+        {
+          "t": 197.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 205.5,
+          "w": "Before",
+          "word": "before",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 217.0,
+          "w": "sends,",
+          "word": "sends",
+          "kind": "action",
+          "s": 2,
+          "i": 20
+        },
+        {
+          "t": 234.0,
+          "w": "pays,",
+          "word": "pays",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 247.0,
+          "w": "signs",
+          "word": "signs",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 262.0,
+          "w": "deletes,",
+          "word": "deletes",
+          "kind": "action",
+          "s": 2,
+          "i": 24
+        },
+        {
+          "t": 276.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 292.5,
+          "w": "shows",
+          "word": "shows",
+          "kind": "object",
+          "s": 1,
+          "i": 26
+        },
+        {
+          "t": 306.5,
+          "w": "waits,",
+          "word": "waits",
+          "kind": "object",
+          "s": 3,
+          "i": 29
+        },
+        {
+          "t": 320.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 329.5,
+          "w": "never",
+          "word": "never",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 335.5,
+          "w": "moves",
+          "word": "moves",
+          "kind": "action",
+          "s": 2,
+          "i": 33
+        },
+        {
+          "t": 342.0,
+          "w": "money",
+          "word": "money",
+          "kind": "object",
+          "s": 1,
+          "i": 34
+        },
+        {
+          "t": 348.0,
+          "w": "between",
+          "word": "between",
+          "kind": "object",
+          "s": 2,
+          "i": 35
+        },
+        {
+          "t": 356.0,
+          "w": "accounts.",
+          "word": "accounts",
+          "kind": "object",
+          "s": 3,
+          "i": 36
+        },
+        {
+          "t": 370.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 384.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 396.0,
+          "w": "included",
+          "word": "included",
+          "kind": "object",
+          "s": 2,
+          "i": 38
+        },
+        {
+          "t": 410.0,
+          "w": "Claude",
+          "word": "claude",
+          "kind": "object",
+          "s": 1,
+          "i": 40
+        },
+        {
+          "t": 419.0,
+          "w": "Pro",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 41
+        },
+        {
+          "t": 428.0,
+          "w": "twenty",
+          "word": "twenty",
+          "kind": "number",
+          "s": 3,
+          "i": 43
+        },
+        {
+          "t": 436.0,
+          "w": "dollars,",
+          "word": "dollars",
+          "kind": "object",
+          "s": 2,
+          "i": 44
+        },
+        {
+          "t": 450.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 464.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 469.5,
+          "w": "waitlist",
+          "word": "waitlist",
+          "kind": "object",
+          "s": 2,
+          "i": 49
+        },
+        {
+          "t": 479.5,
+          "w": "preview.",
+          "word": "preview",
+          "kind": "object",
+          "s": 3,
+          "i": 50
+        },
+        {
+          "t": 493.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "from": 4386,
+      "to": 5207,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.62
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.5,
+        "w:now": 9.5,
+        "i:1": 14.5,
+        "w:the": 14.5,
+        "i:2": 17.5,
+        "w:free": 17.5,
+        "i:3": 23.0,
+        "w:ones": 23.0,
+        "i:4": 55.5,
+        "w:openclaw": 55.5,
+        "i:5": 72.0,
+        "i:6": 75.5,
+        "w:lobster": 75.5,
+        "i:7": 95.0,
+        "w:has": 95.0,
+        "i:8": 100.0,
+        "w:three": 100.0,
+        "i:9": 107.0,
+        "w:hundred": 107.0,
+        "i:10": 114.5,
+        "w:ninety-five": 114.5,
+        "i:11": 127.5,
+        "w:thousand": 127.5,
+        "i:12": 137.0,
+        "w:github": 137.0,
+        "i:13": 145.0,
+        "w:stars": 145.0,
+        "i:14": 177.0,
+        "w:it": 177.0,
+        "i:15": 181.0,
+        "w:runs": 181.0,
+        "i:16": 187.5,
+        "w:on": 187.5,
+        "i:17": 190.0,
+        "w:your": 190.0,
+        "i:18": 194.0,
+        "w:own": 194.0,
+        "i:19": 198.5,
+        "w:computer": 198.5,
+        "i:20": 219.5,
+        "w:you": 219.5,
+        "i:21": 223.5,
+        "w:chat": 223.5,
+        "i:22": 228.5,
+        "w:with": 228.5,
+        "i:23": 232.5,
+        "i:24": 235.0,
+        "i:25": 238.0,
+        "w:whatsapp": 238.0,
+        "i:26": 251.5,
+        "w:or": 251.5,
+        "i:27": 255.0,
+        "w:telegram": 255.0,
+        "i:28": 279.0,
+        "w:and": 279.0,
+        "i:29": 283.0,
+        "i:30": 286.0,
+        "w:software": 286.0,
+        "i:31": 298.5,
+        "w:costs": 298.5,
+        "i:32": 306.5,
+        "w:nothing": 306.5,
+        "i:33": 331.0,
+        "w:but": 331.0,
+        "i:34": 335.5,
+        "i:35": 337.5,
+        "w:can": 337.5,
+        "i:36": 341.0,
+        "w:run": 341.0,
+        "i:37": 346.0,
+        "w:commands": 346.0,
+        "i:38": 356.0,
+        "i:39": 358.5,
+        "i:40": 362.0,
+        "w:machine": 362.0,
+        "i:41": 371.5,
+        "w:so": 371.5,
+        "i:42": 377.0,
+        "w:lock": 377.0,
+        "i:43": 382.5,
+        "i:44": 386.0,
+        "w:down": 386.0
+      },
+      "beats": [
+        {
+          "t": 8.5,
+          "w": "Now",
+          "word": "now",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 16.5,
+          "w": "free",
+          "word": "free",
+          "kind": "object",
+          "s": 3,
+          "i": 2
+        },
+        {
+          "t": 22.0,
+          "w": "ones.",
+          "word": "ones",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 36.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 50.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 54.5,
+          "w": "OpenClaw,",
+          "word": "openclaw",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 68.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 74.5,
+          "w": "lobster,",
+          "word": "lobster",
+          "kind": "object",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 88.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 99.0,
+          "w": "three",
+          "word": "three",
+          "kind": "number",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 106.0,
+          "w": "hundred",
+          "word": "hundred",
+          "kind": "number",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 113.5,
+          "w": "ninety-five",
+          "word": "ninetyfive",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 126.5,
+          "w": "thousand",
+          "word": "thousand",
+          "kind": "number",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 136.0,
+          "w": "GitHub",
+          "word": "github",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 144.0,
+          "w": "stars.",
+          "word": "stars",
+          "kind": "object",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 158.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 172.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 180.0,
+          "w": "runs",
+          "word": "runs",
+          "kind": "action",
+          "s": 2,
+          "i": 15
+        },
+        {
+          "t": 193.0,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 197.5,
+          "w": "computer,",
+          "word": "computer",
+          "kind": "object",
+          "s": 2,
+          "i": 19
+        },
+        {
+          "t": 211.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 222.5,
+          "w": "chat",
+          "word": "chat",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 237.0,
+          "w": "WhatsApp",
+          "word": "whatsapp",
+          "kind": "object",
+          "s": 2,
+          "i": 25
+        },
+        {
+          "t": 254.0,
+          "w": "Telegram,",
+          "word": "telegram",
+          "kind": "object",
+          "s": 2,
+          "i": 27
+        },
+        {
+          "t": 268.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 285.0,
+          "w": "software",
+          "word": "software",
+          "kind": "object",
+          "s": 2,
+          "i": 30
+        },
+        {
+          "t": 297.5,
+          "w": "costs",
+          "word": "costs",
+          "kind": "object",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 305.5,
+          "w": "nothing.",
+          "word": "nothing",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 319.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 333.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 340.0,
+          "w": "run",
+          "word": "run",
+          "kind": "action",
+          "s": 2,
+          "i": 36
+        },
+        {
+          "t": 345.0,
+          "w": "commands",
+          "word": "commands",
+          "kind": "object",
+          "s": 3,
+          "i": 37
+        },
+        {
+          "t": 361.0,
+          "w": "machine,",
+          "word": "machine",
+          "kind": "object",
+          "s": 2,
+          "i": 40
+        },
+        {
+          "t": 376.0,
+          "w": "lock",
+          "word": "lock",
+          "kind": "object",
+          "s": 1,
+          "i": 42
+        },
+        {
+          "t": 385.0,
+          "w": "down.",
+          "word": "down",
+          "kind": "object",
+          "s": 3,
+          "i": 44
+        },
+        {
+          "t": 399.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "from": 5207,
+      "to": 6024,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 14.5,
+        "w:hermes": 14.5,
+        "i:1": 32.5,
+        "w:from": 32.5,
+        "i:2": 38.5,
+        "w:nous": 38.5,
+        "i:3": 45.0,
+        "w:research": 45.0,
+        "i:4": 63.0,
+        "w:is": 63.0,
+        "i:5": 68.5,
+        "w:the": 68.5,
+        "i:6": 71.5,
+        "w:learner": 71.5,
+        "i:7": 102.0,
+        "w:after": 102.0,
+        "i:8": 110.5,
+        "w:a": 110.5,
+        "i:9": 113.5,
+        "w:hard": 113.5,
+        "i:10": 120.0,
+        "w:task": 120.0,
+        "i:11": 131.0,
+        "w:it": 131.0,
+        "i:12": 134.0,
+        "w:writes": 134.0,
+        "i:13": 141.5,
+        "w:itself": 141.5,
+        "i:14": 148.5,
+        "i:15": 151.0,
+        "w:new": 151.0,
+        "i:16": 155.5,
+        "w:skill": 155.5,
+        "i:17": 163.5,
+        "w:so": 163.5,
+        "i:18": 168.0,
+        "i:19": 170.5,
+        "w:gets": 170.5,
+        "i:20": 176.0,
+        "w:better": 176.0,
+        "i:21": 183.0,
+        "i:22": 186.0,
+        "w:more": 186.0,
+        "i:23": 191.0,
+        "w:you": 191.0,
+        "i:24": 195.0,
+        "w:use": 195.0,
+        "i:25": 201.5,
+        "i:26": 224.5,
+        "w:its": 224.5,
+        "i:27": 230.0,
+        "w:free": 230.0,
+        "i:28": 235.0,
+        "w:with": 235.0,
+        "i:29": 239.5,
+        "w:any": 239.5,
+        "i:30": 244.0,
+        "w:ai": 244.0,
+        "i:31": 253.0,
+        "w:model": 253.0,
+        "i:32": 262.5,
+        "w:or": 262.5,
+        "i:33": 270.5,
+        "w:hosted": 270.5,
+        "i:34": 278.5,
+        "i:35": 282.5,
+        "w:twenty": 282.5,
+        "i:36": 289.5,
+        "w:dollars": 289.5,
+        "i:37": 297.5,
+        "i:38": 299.0,
+        "w:month": 299.0,
+        "i:39": 321.0,
+        "i:40": 325.0,
+        "w:catch": 325.0,
+        "i:41": 349.0,
+        "i:42": 353.5,
+        "w:pick": 353.5,
+        "i:43": 358.5,
+        "w:and": 358.5,
+        "i:44": 361.5,
+        "w:set": 361.5,
+        "i:45": 365.5,
+        "w:up": 365.5,
+        "i:46": 368.5,
+        "i:47": 371.5,
+        "i:48": 379.0,
+        "w:yourself": 379.0
+      },
+      "beats": [
+        {
+          "t": 13.5,
+          "w": "Hermes,",
+          "word": "hermes",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 27.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 37.5,
+          "w": "Nous",
+          "word": "nous",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 44.0,
+          "w": "Research,",
+          "word": "research",
+          "kind": "object",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 58.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.5,
+          "w": "learner.",
+          "word": "learner",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 84.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 101.0,
+          "w": "After",
+          "word": "after",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 112.5,
+          "w": "hard",
+          "word": "hard",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 119.0,
+          "w": "task,",
+          "word": "task",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 133.0,
+          "w": "writes",
+          "word": "writes",
+          "kind": "action",
+          "s": 2,
+          "i": 12
+        },
+        {
+          "t": 140.5,
+          "w": "itself",
+          "word": "itself",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 150.0,
+          "w": "new",
+          "word": "new",
+          "kind": "state",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 154.5,
+          "w": "skill,",
+          "word": "skill",
+          "kind": "object",
+          "s": 3,
+          "i": 16
+        },
+        {
+          "t": 169.5,
+          "w": "gets",
+          "word": "gets",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 175.0,
+          "w": "better",
+          "word": "better",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 185.0,
+          "w": "more",
+          "word": "more",
+          "kind": "state",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 194.0,
+          "w": "use",
+          "word": "use",
+          "kind": "object",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 208.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 222.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 229.0,
+          "w": "free",
+          "word": "free",
+          "kind": "object",
+          "s": 3,
+          "i": 27
+        },
+        {
+          "t": 238.5,
+          "w": "any",
+          "word": "any",
+          "kind": "object",
+          "s": 1,
+          "i": 29
+        },
+        {
+          "t": 243.0,
+          "w": "AI",
+          "word": "ai",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 252.0,
+          "w": "model,",
+          "word": "model",
+          "kind": "object",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 269.5,
+          "w": "hosted",
+          "word": "hosted",
+          "kind": "object",
+          "s": 1,
+          "i": 33
+        },
+        {
+          "t": 281.5,
+          "w": "twenty",
+          "word": "twenty",
+          "kind": "number",
+          "s": 3,
+          "i": 35
+        },
+        {
+          "t": 288.5,
+          "w": "dollars",
+          "word": "dollars",
+          "kind": "object",
+          "s": 2,
+          "i": 36
+        },
+        {
+          "t": 298.0,
+          "w": "month.",
+          "word": "month",
+          "kind": "object",
+          "s": 3,
+          "i": 38
+        },
+        {
+          "t": 312.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 324.0,
+          "w": "catch:",
+          "word": "catch",
+          "kind": "object",
+          "s": 1,
+          "i": 40
+        },
+        {
+          "t": 338.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 352.5,
+          "w": "pick",
+          "word": "pick",
+          "kind": "object",
+          "s": 1,
+          "i": 42
+        },
+        {
+          "t": 360.5,
+          "w": "set",
+          "word": "set",
+          "kind": "object",
+          "s": 1,
+          "i": 44
+        },
+        {
+          "t": 370.5,
+          "w": "model",
+          "word": "model",
+          "kind": "object",
+          "s": 1,
+          "i": 47
+        },
+        {
+          "t": 378.0,
+          "w": "yourself.",
+          "word": "yourself",
+          "kind": "object",
+          "s": 3,
+          "i": 48
+        },
+        {
+          "t": 392.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "from": 6024,
+      "to": 6863,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 18,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.5,
+        "w:so": 12.5,
+        "i:1": 17.5,
+        "w:which": 17.5,
+        "i:2": 24.0,
+        "w:one": 24.0,
+        "i:3": 41.5,
+        "w:busy": 41.5,
+        "i:4": 50.5,
+        "w:pro": 50.5,
+        "i:5": 56.0,
+        "w:with": 56.0,
+        "i:6": 61.0,
+        "w:budget": 61.0,
+        "i:7": 91.5,
+        "w:dots": 91.5,
+        "i:8": 116.5,
+        "w:everyday": 116.5,
+        "i:9": 127.0,
+        "w:errands": 127.0,
+        "i:10": 139.5,
+        "w:muse": 139.5,
+        "i:11": 163.0,
+        "w:a": 163.0,
+        "i:12": 166.5,
+        "w:whole": 166.5,
+        "i:13": 172.0,
+        "w:team": 172.0,
+        "i:14": 185.5,
+        "w:grok": 185.5,
+        "i:15": 193.5,
+        "w:bot": 193.5,
+        "i:16": 222.0,
+        "w:approval": 222.0,
+        "i:17": 237.5,
+        "w:on": 237.5,
+        "i:18": 243.0,
+        "w:every": 243.0,
+        "i:19": 251.0,
+        "w:risky": 251.0,
+        "i:20": 260.0,
+        "w:step": 260.0,
+        "i:21": 288.5,
+        "w:claude": 288.5,
+        "i:22": 297.0,
+        "w:duet": 297.0,
+        "i:23": 328.0,
+        "w:free": 328.0,
+        "i:24": 336.5,
+        "w:and": 336.5,
+        "i:25": 340.5,
+        "i:26": 344.0,
+        "w:your": 344.0,
+        "i:27": 348.5,
+        "w:own": 348.5,
+        "i:28": 353.0,
+        "w:machine": 353.0,
+        "i:29": 370.5,
+        "w:openclaw": 370.5,
+        "i:30": 390.0,
+        "w:or": 390.0,
+        "i:31": 396.0,
+        "w:hermes": 396.0
+      },
+      "beats": [
+        {
+          "t": 16.5,
+          "w": "which",
+          "word": "which",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 23.0,
+          "w": "one?",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 2
+        },
+        {
+          "t": 40.5,
+          "w": "Busy",
+          "word": "busy",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 49.5,
+          "w": "pro",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 60.0,
+          "w": "budget:",
+          "word": "budget",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 74.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 90.5,
+          "w": "Dots.",
+          "word": "dots",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 104.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 115.5,
+          "w": "Everyday",
+          "word": "everyday",
+          "kind": "object",
+          "s": 2,
+          "i": 8
+        },
+        {
+          "t": 126.0,
+          "w": "errands:",
+          "word": "errands",
+          "kind": "object",
+          "s": 2,
+          "i": 9
+        },
+        {
+          "t": 138.5,
+          "w": "Muse.",
+          "word": "muse",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 152.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 165.5,
+          "w": "whole",
+          "word": "whole",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 171.0,
+          "w": "team:",
+          "word": "team",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 184.5,
+          "w": "Grok",
+          "word": "grok",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 192.5,
+          "w": "Bot.",
+          "word": "bot",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 206.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 221.0,
+          "w": "Approval",
+          "word": "approval",
+          "kind": "object",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 235.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 242.0,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 250.0,
+          "w": "risky",
+          "word": "risky",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 259.0,
+          "w": "step:",
+          "word": "step",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 273.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 287.5,
+          "w": "Claude",
+          "word": "claude",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 296.0,
+          "w": "Duet.",
+          "word": "duet",
+          "kind": "object",
+          "s": 3,
+          "i": 22
+        },
+        {
+          "t": 310.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 327.0,
+          "w": "Free",
+          "word": "free",
+          "kind": "object",
+          "s": 1,
+          "i": 23
+        },
+        {
+          "t": 341.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 347.5,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 27
+        },
+        {
+          "t": 352.0,
+          "w": "machine:",
+          "word": "machine",
+          "kind": "object",
+          "s": 2,
+          "i": 28
+        },
+        {
+          "t": 369.5,
+          "w": "OpenClaw",
+          "word": "openclaw",
+          "kind": "object",
+          "s": 2,
+          "i": 29
+        },
+        {
+          "t": 383.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 395.0,
+          "w": "Hermes.",
+          "word": "hermes",
+          "kind": "object",
+          "s": 3,
+          "i": 31
+        },
+        {
+          "t": 409.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "from": 6863,
+      "to": 7244,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 7.5,
+        "w:save": 7.5,
+        "i:1": 15.0,
+        "w:this": 15.0,
+        "i:2": 20.0,
+        "w:before": 20.0,
+        "i:3": 27.0,
+        "w:you": 27.0,
+        "i:4": 30.5,
+        "w:pay": 30.5,
+        "i:5": 35.0,
+        "w:for": 35.0,
+        "i:6": 39.5,
+        "w:an": 39.5,
+        "i:7": 42.0,
+        "w:agent": 42.0,
+        "i:8": 71.5,
+        "w:which": 71.5,
+        "i:9": 78.5,
+        "w:one": 78.5,
+        "i:10": 82.0,
+        "w:would": 82.0,
+        "i:11": 86.0,
+        "i:12": 89.0,
+        "w:trust": 89.0,
+        "i:13": 95.5,
+        "w:with": 95.5,
+        "i:14": 100.0,
+        "w:your": 100.0,
+        "i:15": 103.5,
+        "w:inbox": 103.5,
+        "i:16": 130.0,
+        "w:tell": 130.0,
+        "i:17": 136.0,
+        "w:me": 136.0,
+        "i:18": 139.0,
+        "w:below": 139.0
+      },
+      "beats": [
+        {
+          "t": 6.5,
+          "w": "Save",
+          "word": "save",
+          "kind": "action",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 19.0,
+          "w": "before",
+          "word": "before",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 29.5,
+          "w": "pay",
+          "word": "pay",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 41.0,
+          "w": "agent.",
+          "word": "agent",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 55.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.5,
+          "w": "Which",
+          "word": "which",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 77.5,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 88.0,
+          "w": "trust",
+          "word": "trust",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 102.5,
+          "w": "inbox?",
+          "word": "inbox",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 116.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 129.0,
+          "w": "Tell",
+          "word": "tell",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 138.0,
+          "w": "below.",
+          "word": "below",
+          "kind": "object",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 152.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 166.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 180.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    }
+  ],
+  "style": "explainer",
+  "safe": {
+    "focusY": 0.44,
+    "zoom": 0.86,
+    "fadeTo": 0.21
+  },
+  "beats": {
+    "count": 315,
+    "words": 227,
+    "per_s": 2.61
+  }
+}

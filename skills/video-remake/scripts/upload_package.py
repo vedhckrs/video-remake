@@ -402,7 +402,8 @@ def readme_text(st, top, files, thumb, notes):
             branch = "└──" if si == len(subs[p]) - 1 else "├──"
             tree.append(f"{'    ' if last else '│   '}{branch} {r.split('/', 1)[1].ljust(width - 4)}{what.get(r, '')}".rstrip())
     made = datetime.date.today().strftime("%d %b %Y").lstrip("0")
-    lines = [f"# {st.get('title', st['name'])}: final upload package", "",
+    head = st.get("title", st["name"]).rstrip(" ?!.:")   # "... which one is yours?" -> no "?:" in the heading
+    lines = [f"# {head}: final upload package", "",
              f"Made {made}. One package for both platforms. Start with the guide for the platform you're posting to.", "",
              "## What's inside", "", "```", *tree, "```", "",
              "The video and the thumbnail are kept once in the main folder (not copied into each platform folder) "

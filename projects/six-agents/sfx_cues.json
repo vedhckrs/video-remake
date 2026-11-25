@@ -1,0 +1,855 @@
+{
+  "fps": 60,
+  "cues": [
+    {
+      "t": 0.0,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S01 Six",
+      "db": -6.59,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 0.0,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S01",
+      "db": -13.55,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 0.1333,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S01 4",
+      "db": -9.52,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 0.3333,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S01 AI",
+      "db": -9.98,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 0.6333,
+      "role": "pop",
+      "file": "pop_3.wav",
+      "at": "onset",
+      "why": "S01 agents",
+      "db": -10.69,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 0.9333,
+      "role": "pop",
+      "file": "pop_4.wav",
+      "at": "onset",
+      "why": "S01 now",
+      "db": -9.77,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 1.55,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S01 work",
+      "db": -9.52,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 2.8833,
+      "role": "swish",
+      "file": "swish_1.wav",
+      "at": "onset",
+      "why": "S01 sleep.",
+      "db": -9.81,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 4.4667,
+      "role": "glint",
+      "file": "glint_1.wav",
+      "at": "onset",
+      "why": "S01 promise.",
+      "db": -15.63,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 5.7833,
+      "role": "hit",
+      "file": "hit_2.wav",
+      "at": "onset",
+      "why": "S01 different",
+      "db": -5.72,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 5.7833,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under hit S01",
+      "db": -13.68,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 6.0833,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S01 deals.",
+      "db": -6.42,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 6.0833,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S01",
+      "db": -13.73,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 6.85,
+      "role": "swish",
+      "file": "swish_2.wav",
+      "at": "peak",
+      "why": "dissolve into S02",
+      "db": -9.49,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 6.85,
+      "role": "accent",
+      "file": "accent_1.wav",
+      "at": "onset",
+      "why": "cut accent S02",
+      "db": -15.57,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 7.2167,
+      "role": "swish",
+      "file": "swish_3.wav",
+      "at": "onset",
+      "why": "S02 Four",
+      "db": -10.51,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 8.6333,
+      "role": "whoosh_in",
+      "file": "whoosh_in_1.wav",
+      "at": "onset",
+      "why": "S02 cloud,",
+      "db": -9.49,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 10.9167,
+      "role": "swish",
+      "file": "swish_4.wav",
+      "at": "onset",
+      "why": "S02 Two",
+      "db": -10.1,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 11.3,
+      "role": "success",
+      "file": "success_1.wav",
+      "at": "onset",
+      "why": "S02 free,",
+      "db": -10.33,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 13.6667,
+      "role": "whoosh_in",
+      "file": "whoosh_in_2.wav",
+      "at": "peak",
+      "why": "portal into S03",
+      "db": -7.34,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 13.7867,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "portal landing S03",
+      "db": -12.78,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 15.2833,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S03 Dots.",
+      "db": -9.93,
+      "pan": -0.447,
+      "rate": 1.023
+    },
+    {
+      "t": 19.5,
+      "role": "zip",
+      "file": "zip_1.wav",
+      "at": "onset",
+      "why": "S03 thousand",
+      "db": -15.16,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 21.4667,
+      "role": "notify",
+      "file": "notify_1.wav",
+      "at": "onset",
+      "why": "S03 iMessage.",
+      "db": -7.47,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 23.4167,
+      "role": "success",
+      "file": "success_2.wav",
+      "at": "onset",
+      "why": "S03 pays.",
+      "db": -11.55,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 26.5667,
+      "role": "hit",
+      "file": "hit_2.wav",
+      "at": "onset",
+      "why": "S03 hundred",
+      "db": -6.24,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 26.5667,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S03",
+      "db": -14.23,
+      "pan": -0.044,
+      "rate": 1.016
+    },
+    {
+      "t": 29.1667,
+      "role": "whoosh_in",
+      "file": "whoosh_in_1.wav",
+      "at": "peak",
+      "why": "push into S04",
+      "db": -9.56,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 29.8833,
+      "role": "pop",
+      "file": "pop_3.wav",
+      "at": "onset",
+      "why": "S04 Muse",
+      "db": -10.34,
+      "pan": 0.591,
+      "rate": 0.957
+    },
+    {
+      "t": 33.4667,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S04 negotiates",
+      "db": -5.57,
+      "pan": -0.044,
+      "rate": 1.016
+    },
+    {
+      "t": 33.4667,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under hit S04",
+      "db": -13.33,
+      "pan": -0.053,
+      "rate": 1.023
+    },
+    {
+      "t": 34.8333,
+      "role": "notify",
+      "file": "notify_1.wav",
+      "at": "onset",
+      "why": "S04 WhatsApp,",
+      "db": -8.09,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 36.7167,
+      "role": "success",
+      "file": "success_3.wav",
+      "at": "onset",
+      "why": "S04 spends.",
+      "db": -10.94,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 38.5833,
+      "role": "glint",
+      "file": "glint_2.wav",
+      "at": "onset",
+      "why": "S04 free,",
+      "db": -16.25,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 43.95,
+      "role": "whoosh_in",
+      "file": "whoosh_in_2.wav",
+      "at": "peak",
+      "why": "push into S05",
+      "db": -8.61,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 44.7167,
+      "role": "pop",
+      "file": "pop_4.wav",
+      "at": "onset",
+      "why": "S05 Grok",
+      "db": -9.51,
+      "pan": -0.624,
+      "rate": 1.041
+    },
+    {
+      "t": 47.5167,
+      "role": "click",
+      "file": "click_1.wav",
+      "at": "onset",
+      "why": "S05 computer,",
+      "db": -11.27,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 48.2,
+      "role": "type_run",
+      "file": "type_run_1.wav",
+      "at": "onset",
+      "why": "S05 signs",
+      "db": -19.67,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 50.0167,
+      "role": "notify",
+      "file": "notify_1.wav",
+      "at": "onset",
+      "why": "S05 Slack,",
+      "db": -7.6,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 50.9333,
+      "role": "shutter",
+      "file": "shutter_1.wav",
+      "at": "onset",
+      "why": "S05 Zoom",
+      "db": -11.42,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 53.4667,
+      "role": "hit",
+      "file": "hit_2.wav",
+      "at": "onset",
+      "why": "S05 thirty",
+      "db": -5.58,
+      "pan": -0.053,
+      "rate": 1.023
+    },
+    {
+      "t": 53.4667,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S05",
+      "db": -13.39,
+      "pan": 0.091,
+      "rate": 0.957
+    },
+    {
+      "t": 56.35,
+      "role": "whoosh_in",
+      "file": "whoosh_in_1.wav",
+      "at": "peak",
+      "why": "push into S06",
+      "db": -9.21,
+      "pan": -0.044,
+      "rate": 1.016
+    },
+    {
+      "t": 57.6167,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S06 Duet",
+      "db": -10.11,
+      "pan": 0.625,
+      "rate": 1.013
+    },
+    {
+      "t": 61.2667,
+      "role": "tap",
+      "file": "tap_1.wav",
+      "at": "onset",
+      "why": "S06 invoices,",
+      "db": -11.04,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 62.4833,
+      "role": "zip",
+      "file": "zip_2.wav",
+      "at": "onset",
+      "why": "S06 payroll.",
+      "db": -14.67,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 64.1833,
+      "role": "tick",
+      "file": "tick_1.wav",
+      "at": "onset",
+      "why": "S06 pays,",
+      "db": -15.79,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 65.1167,
+      "role": "tick",
+      "file": "tick_2.wav",
+      "at": "onset",
+      "why": "S06 deletes,",
+      "db": -16.59,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 66.6,
+      "role": "success",
+      "file": "success_1.wav",
+      "at": "onset",
+      "why": "S06 waits,",
+      "db": -10.86,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 67.3667,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S06 never",
+      "db": -6.03,
+      "pan": 0.091,
+      "rate": 0.957
+    },
+    {
+      "t": 67.3667,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under hit S06",
+      "db": -13.77,
+      "pan": 0.124,
+      "rate": 1.041
+    },
+    {
+      "t": 73.1,
+      "role": "whoosh_in",
+      "file": "whoosh_in_2.wav",
+      "at": "peak",
+      "why": "portal into S07",
+      "db": -8.46,
+      "pan": -0.053,
+      "rate": 1.023
+    },
+    {
+      "t": 73.22,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "portal landing S07",
+      "db": -12.39,
+      "pan": 0.125,
+      "rate": 1.013
+    },
+    {
+      "t": 73.6833,
+      "role": "riser",
+      "file": "riser_1.wav",
+      "at": "onset",
+      "why": "S07 free",
+      "db": -14.27,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 74.95,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S07 OpenClaw,",
+      "db": -9.42,
+      "pan": -0.44,
+      "rate": 0.986
+    },
+    {
+      "t": 77.35,
+      "role": "zip",
+      "file": "zip_1.wav",
+      "at": "onset",
+      "why": "S07 thousand",
+      "db": -15.25,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 81.0333,
+      "role": "notify",
+      "file": "notify_1.wav",
+      "at": "onset",
+      "why": "S07 WhatsApp",
+      "db": -7.31,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 83.3167,
+      "role": "success",
+      "file": "success_2.wav",
+      "at": "onset",
+      "why": "S07 nothing.",
+      "db": -11.08,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 84.6333,
+      "role": "type_run",
+      "file": "type_run_2.wav",
+      "at": "onset",
+      "why": "S07 commands",
+      "db": -19.24,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 85.9667,
+      "role": "hit",
+      "file": "hit_2.wav",
+      "at": "onset",
+      "why": "S07 down.",
+      "db": -5.61,
+      "pan": 0.124,
+      "rate": 1.041
+    },
+    {
+      "t": 85.9667,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under hit S07",
+      "db": -14.6,
+      "pan": -0.06,
+      "rate": 0.986
+    },
+    {
+      "t": 86.7833,
+      "role": "whoosh_in",
+      "file": "whoosh_in_1.wav",
+      "at": "peak",
+      "why": "push into S08",
+      "db": -9.55,
+      "pan": 0.091,
+      "rate": 0.957
+    },
+    {
+      "t": 87.2667,
+      "role": "pop",
+      "file": "pop_3.wav",
+      "at": "onset",
+      "why": "S08 Hermes,",
+      "db": -9.62,
+      "pan": 0.622,
+      "rate": 0.97
+    },
+    {
+      "t": 90.7833,
+      "role": "success",
+      "file": "success_3.wav",
+      "at": "onset",
+      "why": "S08 task,",
+      "db": -11.13,
+      "pan": -0.447,
+      "rate": 1.023
+    },
+    {
+      "t": 91.9667,
+      "role": "pop",
+      "file": "pop_4.wav",
+      "at": "onset",
+      "why": "S08 skill,",
+      "db": -10.24,
+      "pan": -0.476,
+      "rate": 1.029
+    },
+    {
+      "t": 92.65,
+      "role": "zip",
+      "file": "zip_2.wav",
+      "at": "onset",
+      "why": "S08 better",
+      "db": -15.05,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 94.45,
+      "role": "success",
+      "file": "success_1.wav",
+      "at": "onset",
+      "why": "S08 free",
+      "db": -11.37,
+      "pan": 0.591,
+      "rate": 0.957
+    },
+    {
+      "t": 96.2,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S08 twenty",
+      "db": -5.36,
+      "pan": 0.125,
+      "rate": 1.013
+    },
+    {
+      "t": 96.2,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S08",
+      "db": -14.41,
+      "pan": 0.122,
+      "rate": 0.97
+    },
+    {
+      "t": 100.36,
+      "role": "riser",
+      "file": "riser_2.wav",
+      "at": "end",
+      "why": "riser into S09",
+      "db": -14.06,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 100.4,
+      "role": "iris",
+      "file": "iris_1.wav",
+      "at": "peak",
+      "why": "iris into S09",
+      "db": -6.97,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 100.4,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under iris S09",
+      "db": -11.45,
+      "pan": -0.024,
+      "rate": 1.029
+    },
+    {
+      "t": 100.9833,
+      "role": "riser",
+      "file": "riser_1.wav",
+      "at": "onset",
+      "why": "S09 which",
+      "db": -14.05,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 103.45,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S09 Dots.",
+      "db": -10.62,
+      "pan": 0.536,
+      "rate": 0.984
+    },
+    {
+      "t": 105.05,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S09 Muse.",
+      "db": -9.66,
+      "pan": -0.37,
+      "rate": 1.021
+    },
+    {
+      "t": 106.85,
+      "role": "pop",
+      "file": "pop_3.wav",
+      "at": "onset",
+      "why": "S09 Bot.",
+      "db": -9.9,
+      "pan": 0.644,
+      "rate": 0.951
+    },
+    {
+      "t": 110.3,
+      "role": "pop",
+      "file": "pop_4.wav",
+      "at": "onset",
+      "why": "S09 Duet.",
+      "db": -9.41,
+      "pan": -0.393,
+      "rate": 0.956
+    },
+    {
+      "t": 112.75,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S09 OpenClaw",
+      "db": -9.54,
+      "pan": 0.613,
+      "rate": 1.009
+    },
+    {
+      "t": 113.6,
+      "role": "success",
+      "file": "success_2.wav",
+      "at": "onset",
+      "why": "S09 Hermes.",
+      "db": -11.42,
+      "pan": -0.624,
+      "rate": 1.041
+    },
+    {
+      "t": 114.3833,
+      "role": "whoosh_in",
+      "file": "whoosh_in_2.wav",
+      "at": "peak",
+      "why": "portal into S10",
+      "db": -8.45,
+      "pan": 0.124,
+      "rate": 1.041
+    },
+    {
+      "t": 114.5033,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "portal landing S10",
+      "db": -13.16,
+      "pan": 0.036,
+      "rate": 0.984
+    },
+    {
+      "t": 114.6333,
+      "role": "click",
+      "file": "click_2.wav",
+      "at": "onset",
+      "why": "S10 Save",
+      "db": -11.3,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 115.7833,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S10 agent.",
+      "db": -10.13,
+      "pan": -0.538,
+      "rate": 1.007
+    },
+    {
+      "t": 117.35,
+      "role": "glint",
+      "file": "glint_1.wav",
+      "at": "onset",
+      "why": "S10 trust",
+      "db": -15.66,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 119.0167,
+      "role": "success",
+      "file": "success_3.wav",
+      "at": "onset",
+      "why": "S10 below.",
+      "db": -10.28,
+      "pan": 0.625,
+      "rate": 1.013
+    }
+  ]
+}

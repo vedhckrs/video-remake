@@ -68,7 +68,7 @@ export type Project = {
   /** Shorts/Reels safe area (Ved, 25 Nov 2026): world cameras land their anchor at `focusY` of the height (default
    *  0.53; NanoZoom centre = focusY - 0.03) and draw everything `zoom` x smaller (default 1), so key content stays
    *  clear of the app's bottom overlay (username, description, music) and below the captions. */
-  safe?: {focusY?: number; zoom?: number};
+  safe?: {focusY?: number; zoom?: number; fadeTo?: number};
   scenes: SceneSpec[];
 };
 

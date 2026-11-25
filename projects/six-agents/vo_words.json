@@ -1,0 +1,1835 @@
+{
+  "text": "Six AI agents now do real work for you, even while you sleep. Same promise. Very different deals. Four of them live in a big company's cloud, on their own computer. Two are free, open source, and run on yours. First, OpenAI's Dots. Each dot gets its own cloud computer, links to over four thousand apps, and you can even text it on iMessage. It asks before it pays. It comes with ChatGPT Pro, from a hundred dollars a month, and it's not in Europe yet. Meta's Muse is the everyday helper. It books trips, shops, even negotiates your bills, right inside WhatsApp, and checks with you before it spends. Most tasks are free, with twenty and hundred dollar plans. For now, it's only in the US and Singapore. xAI's Grok Bot is the team player. Every bot gets its own computer, signs into your work apps, and joins your Slack, even your Zoom calls. It comes with X Premium at thirty dollars and up, and heavy use costs extra. Anthropic's Claude Duet is the careful one. It briefs you every morning, spots unpaid invoices, even runs payroll. Before it sends, pays, signs or deletes, it shows you and waits, and it never moves money between accounts. It's included in Claude Pro at twenty dollars, but it's a US waitlist preview. Now the free ones. OpenClaw, the lobster, has three hundred ninety-five thousand GitHub stars. It runs on your own computer, you chat with it on WhatsApp or Telegram, and the software costs nothing. But it can run commands on your machine, so lock it down. Hermes, from Nous Research, is the learner. After a hard task, it writes itself a new skill, so it gets better the more you use it. It's free with any AI model, or hosted from twenty dollars a month. The catch: you pick and set up the model yourself. So which one? Busy pro with budget: Dots. Everyday errands: Muse. A whole team: Grok Bot. Approval on every risky step: Claude Duet. Free and on your own machine: OpenClaw or Hermes. Save this before you pay for an agent. Which one would you trust with your inbox? Tell me below.",
+  "words": [
+    {
+      "w": "Six",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "w": "AI",
+      "start": 0.337,
+      "end": 0.557
+    },
+    {
+      "w": "agents",
+      "start": 0.627,
+      "end": 0.894
+    },
+    {
+      "w": "now",
+      "start": 0.929,
+      "end": 1.045
+    },
+    {
+      "w": "do",
+      "start": 1.103,
+      "end": 1.196
+    },
+    {
+      "w": "real",
+      "start": 1.3,
+      "end": 1.498
+    },
+    {
+      "w": "work",
+      "start": 1.544,
+      "end": 1.695
+    },
+    {
+      "w": "for",
+      "start": 1.741,
+      "end": 1.846
+    },
+    {
+      "w": "you,",
+      "start": 1.904,
+      "end": 2.125
+    },
+    {
+      "w": "even",
+      "start": 2.334,
+      "end": 2.519
+    },
+    {
+      "w": "while",
+      "start": 2.554,
+      "end": 2.717
+    },
+    {
+      "w": "you",
+      "start": 2.74,
+      "end": 2.821
+    },
+    {
+      "w": "sleep.",
+      "start": 2.879,
+      "end": 3.239
+    },
+    {
+      "w": "Same",
+      "start": 4.203,
+      "end": 4.435
+    },
+    {
+      "w": "promise.",
+      "start": 4.47,
+      "end": 4.899
+    },
+    {
+      "w": "Very",
+      "start": 5.503,
+      "end": 5.735
+    },
+    {
+      "w": "different",
+      "start": 5.782,
+      "end": 6.049
+    },
+    {
+      "w": "deals.",
+      "start": 6.084,
+      "end": 6.502
+    },
+    {
+      "w": "Four",
+      "start": 7.21,
+      "end": 7.407
+    },
+    {
+      "w": "of",
+      "start": 7.442,
+      "end": 7.5
+    },
+    {
+      "w": "them",
+      "start": 7.535,
+      "end": 7.651
+    },
+    {
+      "w": "live",
+      "start": 7.697,
+      "end": 7.837
+    },
+    {
+      "w": "in",
+      "start": 7.86,
+      "end": 7.906
+    },
+    {
+      "w": "a",
+      "start": 7.941,
+      "end": 7.964
+    },
+    {
+      "w": "big",
+      "start": 8.069,
+      "end": 8.22
+    },
+    {
+      "w": "company's",
+      "start": 8.278,
+      "end": 8.603
+    },
+    {
+      "w": "cloud,",
+      "start": 8.638,
+      "end": 9.067
+    },
+    {
+      "w": "on",
+      "start": 9.218,
+      "end": 9.334
+    },
+    {
+      "w": "their",
+      "start": 9.369,
+      "end": 9.52
+    },
+    {
+      "w": "own",
+      "start": 9.555,
+      "end": 9.648
+    },
+    {
+      "w": "computer.",
+      "start": 9.694,
+      "end": 10.205
+    },
+    {
+      "w": "Two",
+      "start": 10.913,
+      "end": 11.064
+    },
+    {
+      "w": "are",
+      "start": 11.134,
+      "end": 11.238
+    },
+    {
+      "w": "free,",
+      "start": 11.297,
+      "end": 11.656
+    },
+    {
+      "w": "open",
+      "start": 11.714,
+      "end": 11.958
+    },
+    {
+      "w": "source,",
+      "start": 12.04,
+      "end": 12.376
+    },
+    {
+      "w": "and",
+      "start": 12.399,
+      "end": 12.527
+    },
+    {
+      "w": "run",
+      "start": 12.585,
+      "end": 12.69
+    },
+    {
+      "w": "on",
+      "start": 12.725,
+      "end": 12.794
+    },
+    {
+      "w": "yours.",
+      "start": 12.829,
+      "end": 13.247
+    },
+    {
+      "w": "First,",
+      "start": 14.071,
+      "end": 14.501
+    },
+    {
+      "w": "OpenAI's",
+      "start": 14.652,
+      "end": 15.232
+    },
+    {
+      "w": "Dots.",
+      "start": 15.278,
+      "end": 15.824
+    },
+    {
+      "w": "Each",
+      "start": 16.788,
+      "end": 16.962
+    },
+    {
+      "w": "dot",
+      "start": 17.008,
+      "end": 17.182
+    },
+    {
+      "w": "gets",
+      "start": 17.217,
+      "end": 17.368
+    },
+    {
+      "w": "its",
+      "start": 17.403,
+      "end": 17.508
+    },
+    {
+      "w": "own",
+      "start": 17.566,
+      "end": 17.763
+    },
+    {
+      "w": "cloud",
+      "start": 17.821,
+      "end": 18.03
+    },
+    {
+      "w": "computer,",
+      "start": 18.065,
+      "end": 18.529
+    },
+    {
+      "w": "links",
+      "start": 18.68,
+      "end": 18.866
+    },
+    {
+      "w": "to",
+      "start": 18.901,
+      "end": 18.959
+    },
+    {
+      "w": "over",
+      "start": 19.028,
+      "end": 19.179
+    },
+    {
+      "w": "four",
+      "start": 19.249,
+      "end": 19.446
+    },
+    {
+      "w": "thousand",
+      "start": 19.493,
+      "end": 19.806
+    },
+    {
+      "w": "apps,",
+      "start": 19.888,
+      "end": 20.317
+    },
+    {
+      "w": "and",
+      "start": 20.526,
+      "end": 20.631
+    },
+    {
+      "w": "you",
+      "start": 20.665,
+      "end": 20.735
+    },
+    {
+      "w": "can",
+      "start": 20.77,
+      "end": 20.851
+    },
+    {
+      "w": "even",
+      "start": 20.886,
+      "end": 21.014
+    },
+    {
+      "w": "text",
+      "start": 21.049,
+      "end": 21.234
+    },
+    {
+      "w": "it",
+      "start": 21.258,
+      "end": 21.304
+    },
+    {
+      "w": "on",
+      "start": 21.339,
+      "end": 21.409
+    },
+    {
+      "w": "iMessage.",
+      "start": 21.467,
+      "end": 22.035
+    },
+    {
+      "w": "It",
+      "start": 22.558,
+      "end": 22.674
+    },
+    {
+      "w": "asks",
+      "start": 22.709,
+      "end": 22.941
+    },
+    {
+      "w": "before",
+      "start": 22.976,
+      "end": 23.278
+    },
+    {
+      "w": "it",
+      "start": 23.313,
+      "end": 23.382
+    },
+    {
+      "w": "pays.",
+      "start": 23.417,
+      "end": 23.858
+    },
+    {
+      "w": "It",
+      "start": 24.462,
+      "end": 24.566
+    },
+    {
+      "w": "comes",
+      "start": 24.601,
+      "end": 24.787
+    },
+    {
+      "w": "with",
+      "start": 24.822,
+      "end": 24.95
+    },
+    {
+      "w": "ChatGPT",
+      "start": 24.996,
+      "end": 25.588
+    },
+    {
+      "w": "Pro,",
+      "start": 25.693,
+      "end": 26.145
+    },
+    {
+      "w": "from",
+      "start": 26.331,
+      "end": 26.459
+    },
+    {
+      "w": "a",
+      "start": 26.494,
+      "end": 26.517
+    },
+    {
+      "w": "hundred",
+      "start": 26.563,
+      "end": 26.784
+    },
+    {
+      "w": "dollars",
+      "start": 26.807,
+      "end": 27.039
+    },
+    {
+      "w": "a",
+      "start": 27.074,
+      "end": 27.097
+    },
+    {
+      "w": "month,",
+      "start": 27.132,
+      "end": 27.446
+    },
+    {
+      "w": "and",
+      "start": 27.631,
+      "end": 27.736
+    },
+    {
+      "w": "it's",
+      "start": 27.782,
+      "end": 27.898
+    },
+    {
+      "w": "not",
+      "start": 27.945,
+      "end": 28.096
+    },
+    {
+      "w": "in",
+      "start": 28.131,
+      "end": 28.189
+    },
+    {
+      "w": "Europe",
+      "start": 28.235,
+      "end": 28.433
+    },
+    {
+      "w": "yet.",
+      "start": 28.467,
+      "end": 28.757
+    },
+    {
+      "w": "Meta's",
+      "start": 29.582,
+      "end": 29.826
+    },
+    {
+      "w": "Muse",
+      "start": 29.884,
+      "end": 30.174
+    },
+    {
+      "w": "is",
+      "start": 30.209,
+      "end": 30.302
+    },
+    {
+      "w": "the",
+      "start": 30.336,
+      "end": 30.406
+    },
+    {
+      "w": "everyday",
+      "start": 30.511,
+      "end": 30.859
+    },
+    {
+      "w": "helper.",
+      "start": 30.917,
+      "end": 31.312
+    },
+    {
+      "w": "It",
+      "start": 31.463,
+      "end": 31.579
+    },
+    {
+      "w": "books",
+      "start": 31.625,
+      "end": 31.811
+    },
+    {
+      "w": "trips,",
+      "start": 31.846,
+      "end": 32.31
+    },
+    {
+      "w": "shops,",
+      "start": 32.461,
+      "end": 32.972
+    },
+    {
+      "w": "even",
+      "start": 33.251,
+      "end": 33.425
+    },
+    {
+      "w": "negotiates",
+      "start": 33.46,
+      "end": 33.889
+    },
+    {
+      "w": "your",
+      "start": 33.924,
+      "end": 34.017
+    },
+    {
+      "w": "bills,",
+      "start": 34.052,
+      "end": 34.33
+    },
+    {
+      "w": "right",
+      "start": 34.377,
+      "end": 34.551
+    },
+    {
+      "w": "inside",
+      "start": 34.586,
+      "end": 34.806
+    },
+    {
+      "w": "WhatsApp,",
+      "start": 34.841,
+      "end": 35.387
+    },
+    {
+      "w": "and",
+      "start": 35.723,
+      "end": 35.84
+    },
+    {
+      "w": "checks",
+      "start": 35.874,
+      "end": 36.083
+    },
+    {
+      "w": "with",
+      "start": 36.107,
+      "end": 36.211
+    },
+    {
+      "w": "you",
+      "start": 36.246,
+      "end": 36.316
+    },
+    {
+      "w": "before",
+      "start": 36.374,
+      "end": 36.594
+    },
+    {
+      "w": "it",
+      "start": 36.629,
+      "end": 36.675
+    },
+    {
+      "w": "spends.",
+      "start": 36.71,
+      "end": 37.244
+    },
+    {
+      "w": "Most",
+      "start": 37.953,
+      "end": 38.138
+    },
+    {
+      "w": "tasks",
+      "start": 38.173,
+      "end": 38.417
+    },
+    {
+      "w": "are",
+      "start": 38.452,
+      "end": 38.556
+    },
+    {
+      "w": "free,",
+      "start": 38.591,
+      "end": 38.986
+    },
+    {
+      "w": "with",
+      "start": 39.102,
+      "end": 39.253
+    },
+    {
+      "w": "twenty",
+      "start": 39.299,
+      "end": 39.532
+    },
+    {
+      "w": "and",
+      "start": 39.566,
+      "end": 39.636
+    },
+    {
+      "w": "hundred",
+      "start": 39.671,
+      "end": 39.88
+    },
+    {
+      "w": "dollar",
+      "start": 39.903,
+      "end": 40.077
+    },
+    {
+      "w": "plans.",
+      "start": 40.112,
+      "end": 40.611
+    },
+    {
+      "w": "For",
+      "start": 41.319,
+      "end": 41.436
+    },
+    {
+      "w": "now,",
+      "start": 41.482,
+      "end": 41.854
+    },
+    {
+      "w": "it's",
+      "start": 41.97,
+      "end": 42.132
+    },
+    {
+      "w": "only",
+      "start": 42.19,
+      "end": 42.422
+    },
+    {
+      "w": "in",
+      "start": 42.457,
+      "end": 42.503
+    },
+    {
+      "w": "the",
+      "start": 42.538,
+      "end": 42.608
+    },
+    {
+      "w": "US",
+      "start": 42.666,
+      "end": 42.921
+    },
+    {
+      "w": "and",
+      "start": 42.968,
+      "end": 43.037
+    },
+    {
+      "w": "Singapore.",
+      "start": 43.095,
+      "end": 43.653
+    },
+    {
+      "w": "xAI's",
+      "start": 44.256,
+      "end": 44.663
+    },
+    {
+      "w": "Grok",
+      "start": 44.709,
+      "end": 44.953
+    },
+    {
+      "w": "Bot",
+      "start": 44.999,
+      "end": 45.174
+    },
+    {
+      "w": "is",
+      "start": 45.22,
+      "end": 45.29
+    },
+    {
+      "w": "the",
+      "start": 45.324,
+      "end": 45.394
+    },
+    {
+      "w": "team",
+      "start": 45.429,
+      "end": 45.58
+    },
+    {
+      "w": "player.",
+      "start": 45.626,
+      "end": 45.986
+    },
+    {
+      "w": "Every",
+      "start": 46.59,
+      "end": 46.822
+    },
+    {
+      "w": "bot",
+      "start": 46.857,
+      "end": 47.031
+    },
+    {
+      "w": "gets",
+      "start": 47.066,
+      "end": 47.205
+    },
+    {
+      "w": "its",
+      "start": 47.24,
+      "end": 47.345
+    },
+    {
+      "w": "own",
+      "start": 47.379,
+      "end": 47.484
+    },
+    {
+      "w": "computer,",
+      "start": 47.519,
+      "end": 48.018
+    },
+    {
+      "w": "signs",
+      "start": 48.204,
+      "end": 48.482
+    },
+    {
+      "w": "into",
+      "start": 48.517,
+      "end": 48.645
+    },
+    {
+      "w": "your",
+      "start": 48.703,
+      "end": 48.807
+    },
+    {
+      "w": "work",
+      "start": 48.842,
+      "end": 49.005
+    },
+    {
+      "w": "apps,",
+      "start": 49.074,
+      "end": 49.388
+    },
+    {
+      "w": "and",
+      "start": 49.469,
+      "end": 49.585
+    },
+    {
+      "w": "joins",
+      "start": 49.632,
+      "end": 49.841
+    },
+    {
+      "w": "your",
+      "start": 49.876,
+      "end": 49.98
+    },
+    {
+      "w": "Slack,",
+      "start": 50.015,
+      "end": 50.433
+    },
+    {
+      "w": "even",
+      "start": 50.584,
+      "end": 50.758
+    },
+    {
+      "w": "your",
+      "start": 50.793,
+      "end": 50.897
+    },
+    {
+      "w": "Zoom",
+      "start": 50.932,
+      "end": 51.071
+    },
+    {
+      "w": "calls.",
+      "start": 51.129,
+      "end": 51.501
+    },
+    {
+      "w": "It",
+      "start": 52.105,
+      "end": 52.209
+    },
+    {
+      "w": "comes",
+      "start": 52.256,
+      "end": 52.441
+    },
+    {
+      "w": "with",
+      "start": 52.476,
+      "end": 52.604
+    },
+    {
+      "w": "X",
+      "start": 52.685,
+      "end": 52.836
+    },
+    {
+      "w": "Premium",
+      "start": 52.906,
+      "end": 53.242
+    },
+    {
+      "w": "at",
+      "start": 53.301,
+      "end": 53.405
+    },
+    {
+      "w": "thirty",
+      "start": 53.463,
+      "end": 53.672
+    },
+    {
+      "w": "dollars",
+      "start": 53.707,
+      "end": 53.962
+    },
+    {
+      "w": "and",
+      "start": 53.997,
+      "end": 54.078
+    },
+    {
+      "w": "up,",
+      "start": 54.136,
+      "end": 54.392
+    },
+    {
+      "w": "and",
+      "start": 54.543,
+      "end": 54.67
+    },
+    {
+      "w": "heavy",
+      "start": 54.74,
+      "end": 54.914
+    },
+    {
+      "w": "use",
+      "start": 54.972,
+      "end": 55.135
+    },
+    {
+      "w": "costs",
+      "start": 55.17,
+      "end": 55.402
+    },
+    {
+      "w": "extra.",
+      "start": 55.46,
+      "end": 55.936
+    },
+    {
+      "w": "Anthropic's",
+      "start": 56.76,
+      "end": 57.271
+    },
+    {
+      "w": "Claude",
+      "start": 57.329,
+      "end": 57.596
+    },
+    {
+      "w": "Duet",
+      "start": 57.619,
+      "end": 57.886
+    },
+    {
+      "w": "is",
+      "start": 57.921,
+      "end": 57.991
+    },
+    {
+      "w": "the",
+      "start": 58.026,
+      "end": 58.095
+    },
+    {
+      "w": "careful",
+      "start": 58.13,
+      "end": 58.397
+    },
+    {
+      "w": "one.",
+      "start": 58.467,
+      "end": 58.734
+    },
+    {
+      "w": "It",
+      "start": 59.442,
+      "end": 59.547
+    },
+    {
+      "w": "briefs",
+      "start": 59.581,
+      "end": 59.79
+    },
+    {
+      "w": "you",
+      "start": 59.825,
+      "end": 59.907
+    },
+    {
+      "w": "every",
+      "start": 59.953,
+      "end": 60.116
+    },
+    {
+      "w": "morning,",
+      "start": 60.162,
+      "end": 60.533
+    },
+    {
+      "w": "spots",
+      "start": 60.615,
+      "end": 60.893
+    },
+    {
+      "w": "unpaid",
+      "start": 60.951,
+      "end": 61.23
+    },
+    {
+      "w": "invoices,",
+      "start": 61.265,
+      "end": 61.857
+    },
+    {
+      "w": "even",
+      "start": 62.008,
+      "end": 62.194
+    },
+    {
+      "w": "runs",
+      "start": 62.252,
+      "end": 62.438
+    },
+    {
+      "w": "payroll.",
+      "start": 62.484,
+      "end": 62.96
+    },
+    {
+      "w": "Before",
+      "start": 63.239,
+      "end": 63.494
+    },
+    {
+      "w": "it",
+      "start": 63.529,
+      "end": 63.587
+    },
+    {
+      "w": "sends,",
+      "start": 63.622,
+      "end": 64.051
+    },
+    {
+      "w": "pays,",
+      "start": 64.179,
+      "end": 64.562
+    },
+    {
+      "w": "signs",
+      "start": 64.609,
+      "end": 64.922
+    },
+    {
+      "w": "or",
+      "start": 64.968,
+      "end": 65.073
+    },
+    {
+      "w": "deletes,",
+      "start": 65.119,
+      "end": 65.653
+    },
+    {
+      "w": "it",
+      "start": 65.99,
+      "end": 66.095
+    },
+    {
+      "w": "shows",
+      "start": 66.129,
+      "end": 66.338
+    },
+    {
+      "w": "you",
+      "start": 66.373,
+      "end": 66.455
+    },
+    {
+      "w": "and",
+      "start": 66.489,
+      "end": 66.559
+    },
+    {
+      "w": "waits,",
+      "start": 66.605,
+      "end": 67.0
+    },
+    {
+      "w": "and",
+      "start": 67.105,
+      "end": 67.209
+    },
+    {
+      "w": "it",
+      "start": 67.244,
+      "end": 67.314
+    },
+    {
+      "w": "never",
+      "start": 67.36,
+      "end": 67.534
+    },
+    {
+      "w": "moves",
+      "start": 67.569,
+      "end": 67.743
+    },
+    {
+      "w": "money",
+      "start": 67.79,
+      "end": 67.952
+    },
+    {
+      "w": "between",
+      "start": 67.987,
+      "end": 68.231
+    },
+    {
+      "w": "accounts.",
+      "start": 68.254,
+      "end": 68.788
+    },
+    {
+      "w": "It's",
+      "start": 69.392,
+      "end": 69.543
+    },
+    {
+      "w": "included",
+      "start": 69.578,
+      "end": 69.903
+    },
+    {
+      "w": "in",
+      "start": 69.937,
+      "end": 70.007
+    },
+    {
+      "w": "Claude",
+      "start": 70.054,
+      "end": 70.321
+    },
+    {
+      "w": "Pro",
+      "start": 70.355,
+      "end": 70.518
+    },
+    {
+      "w": "at",
+      "start": 70.553,
+      "end": 70.622
+    },
+    {
+      "w": "twenty",
+      "start": 70.646,
+      "end": 70.878
+    },
+    {
+      "w": "dollars,",
+      "start": 70.913,
+      "end": 71.203
+    },
+    {
+      "w": "but",
+      "start": 71.226,
+      "end": 71.354
+    },
+    {
+      "w": "it's",
+      "start": 71.505,
+      "end": 71.656
+    },
+    {
+      "w": "a",
+      "start": 71.691,
+      "end": 71.714
+    },
+    {
+      "w": "US",
+      "start": 71.772,
+      "end": 71.981
+    },
+    {
+      "w": "waitlist",
+      "start": 72.039,
+      "end": 72.341
+    },
+    {
+      "w": "preview.",
+      "start": 72.364,
+      "end": 72.805
+    },
+    {
+      "w": "Now",
+      "start": 73.409,
+      "end": 73.537
+    },
+    {
+      "w": "the",
+      "start": 73.583,
+      "end": 73.653
+    },
+    {
+      "w": "free",
+      "start": 73.688,
+      "end": 73.838
+    },
+    {
+      "w": "ones.",
+      "start": 73.873,
+      "end": 74.245
+    },
+    {
+      "w": "OpenClaw,",
+      "start": 74.953,
+      "end": 75.464
+    },
+    {
+      "w": "the",
+      "start": 75.499,
+      "end": 75.568
+    },
+    {
+      "w": "lobster,",
+      "start": 75.615,
+      "end": 76.114
+    },
+    {
+      "w": "has",
+      "start": 76.265,
+      "end": 76.381
+    },
+    {
+      "w": "three",
+      "start": 76.439,
+      "end": 76.625
+    },
+    {
+      "w": "hundred",
+      "start": 76.66,
+      "end": 76.869
+    },
+    {
+      "w": "ninety-five",
+      "start": 76.915,
+      "end": 77.321
+    },
+    {
+      "w": "thousand",
+      "start": 77.356,
+      "end": 77.623
+    },
+    {
+      "w": "GitHub",
+      "start": 77.67,
+      "end": 77.89
+    },
+    {
+      "w": "stars.",
+      "start": 77.925,
+      "end": 78.39
+    },
+    {
+      "w": "It",
+      "start": 78.993,
+      "end": 79.098
+    },
+    {
+      "w": "runs",
+      "start": 79.133,
+      "end": 79.307
+    },
+    {
+      "w": "on",
+      "start": 79.342,
+      "end": 79.4
+    },
+    {
+      "w": "your",
+      "start": 79.434,
+      "end": 79.539
+    },
+    {
+      "w": "own",
+      "start": 79.574,
+      "end": 79.678
+    },
+    {
+      "w": "computer,",
+      "start": 79.713,
+      "end": 80.224
+    },
+    {
+      "w": "you",
+      "start": 80.41,
+      "end": 80.503
+    },
+    {
+      "w": "chat",
+      "start": 80.549,
+      "end": 80.688
+    },
+    {
+      "w": "with",
+      "start": 80.723,
+      "end": 80.816
+    },
+    {
+      "w": "it",
+      "start": 80.851,
+      "end": 80.897
+    },
+    {
+      "w": "on",
+      "start": 80.932,
+      "end": 80.99
+    },
+    {
+      "w": "WhatsApp",
+      "start": 81.025,
+      "end": 81.443
+    },
+    {
+      "w": "or",
+      "start": 81.478,
+      "end": 81.548
+    },
+    {
+      "w": "Telegram,",
+      "start": 81.594,
+      "end": 82.117
+    },
+    {
+      "w": "and",
+      "start": 82.395,
+      "end": 82.5
+    },
+    {
+      "w": "the",
+      "start": 82.534,
+      "end": 82.604
+    },
+    {
+      "w": "software",
+      "start": 82.627,
+      "end": 83.011
+    },
+    {
+      "w": "costs",
+      "start": 83.045,
+      "end": 83.278
+    },
+    {
+      "w": "nothing.",
+      "start": 83.324,
+      "end": 83.742
+    },
+    {
+      "w": "But",
+      "start": 84.125,
+      "end": 84.241
+    },
+    {
+      "w": "it",
+      "start": 84.276,
+      "end": 84.322
+    },
+    {
+      "w": "can",
+      "start": 84.357,
+      "end": 84.439
+    },
+    {
+      "w": "run",
+      "start": 84.473,
+      "end": 84.589
+    },
+    {
+      "w": "commands",
+      "start": 84.636,
+      "end": 84.926
+    },
+    {
+      "w": "on",
+      "start": 84.961,
+      "end": 85.019
+    },
+    {
+      "w": "your",
+      "start": 85.054,
+      "end": 85.147
+    },
+    {
+      "w": "machine,",
+      "start": 85.17,
+      "end": 85.46
+    },
+    {
+      "w": "so",
+      "start": 85.483,
+      "end": 85.6
+    },
+    {
+      "w": "lock",
+      "start": 85.669,
+      "end": 85.82
+    },
+    {
+      "w": "it",
+      "start": 85.855,
+      "end": 85.925
+    },
+    {
+      "w": "down.",
+      "start": 85.959,
+      "end": 86.296
+    },
+    {
+      "w": "Hermes,",
+      "start": 87.26,
+      "end": 87.782
+    },
+    {
+      "w": "from",
+      "start": 87.863,
+      "end": 88.014
+    },
+    {
+      "w": "Nous",
+      "start": 88.072,
+      "end": 88.235
+    },
+    {
+      "w": "Research,",
+      "start": 88.281,
+      "end": 88.757
+    },
+    {
+      "w": "is",
+      "start": 88.885,
+      "end": 89.024
+    },
+    {
+      "w": "the",
+      "start": 89.059,
+      "end": 89.129
+    },
+    {
+      "w": "learner.",
+      "start": 89.164,
+      "end": 89.582
+    },
+    {
+      "w": "After",
+      "start": 90.185,
+      "end": 90.406
+    },
+    {
+      "w": "a",
+      "start": 90.464,
+      "end": 90.499
+    },
+    {
+      "w": "hard",
+      "start": 90.569,
+      "end": 90.754
+    },
+    {
+      "w": "task,",
+      "start": 90.789,
+      "end": 91.126
+    },
+    {
+      "w": "it",
+      "start": 91.149,
+      "end": 91.219
+    },
+    {
+      "w": "writes",
+      "start": 91.254,
+      "end": 91.463
+    },
+    {
+      "w": "itself",
+      "start": 91.497,
+      "end": 91.706
+    },
+    {
+      "w": "a",
+      "start": 91.741,
+      "end": 91.764
+    },
+    {
+      "w": "new",
+      "start": 91.811,
+      "end": 91.915
+    },
+    {
+      "w": "skill,",
+      "start": 91.962,
+      "end": 92.217
+    },
+    {
+      "w": "so",
+      "start": 92.24,
+      "end": 92.322
+    },
+    {
+      "w": "it",
+      "start": 92.38,
+      "end": 92.426
+    },
+    {
+      "w": "gets",
+      "start": 92.461,
+      "end": 92.6
+    },
+    {
+      "w": "better",
+      "start": 92.647,
+      "end": 92.844
+    },
+    {
+      "w": "the",
+      "start": 92.879,
+      "end": 92.949
+    },
+    {
+      "w": "more",
+      "start": 92.984,
+      "end": 93.111
+    },
+    {
+      "w": "you",
+      "start": 93.146,
+      "end": 93.227
+    },
+    {
+      "w": "use",
+      "start": 93.285,
+      "end": 93.471
+    },
+    {
+      "w": "it.",
+      "start": 93.506,
+      "end": 93.738
+    },
+    {
+      "w": "It's",
+      "start": 94.261,
+      "end": 94.423
+    },
+    {
+      "w": "free",
+      "start": 94.458,
+      "end": 94.597
+    },
+    {
+      "w": "with",
+      "start": 94.621,
+      "end": 94.725
+    },
+    {
+      "w": "any",
+      "start": 94.76,
+      "end": 94.876
+    },
+    {
+      "w": "AI",
+      "start": 94.922,
+      "end": 95.155
+    },
+    {
+      "w": "model,",
+      "start": 95.213,
+      "end": 95.503
+    },
+    {
+      "w": "or",
+      "start": 95.526,
+      "end": 95.712
+    },
+    {
+      "w": "hosted",
+      "start": 95.793,
+      "end": 96.037
+    },
+    {
+      "w": "from",
+      "start": 96.06,
+      "end": 96.165
+    },
+    {
+      "w": "twenty",
+      "start": 96.2,
+      "end": 96.397
+    },
+    {
+      "w": "dollars",
+      "start": 96.432,
+      "end": 96.664
+    },
+    {
+      "w": "a",
+      "start": 96.699,
+      "end": 96.722
+    },
+    {
+      "w": "month.",
+      "start": 96.757,
+      "end": 97.093
+    },
+    {
+      "w": "The",
+      "start": 97.477,
+      "end": 97.569
+    },
+    {
+      "w": "catch:",
+      "start": 97.616,
+      "end": 98.034
+    },
+    {
+      "w": "you",
+      "start": 98.417,
+      "end": 98.51
+    },
+    {
+      "w": "pick",
+      "start": 98.568,
+      "end": 98.696
+    },
+    {
+      "w": "and",
+      "start": 98.73,
+      "end": 98.8
+    },
+    {
+      "w": "set",
+      "start": 98.835,
+      "end": 98.939
+    },
+    {
+      "w": "up",
+      "start": 98.974,
+      "end": 99.032
+    },
+    {
+      "w": "the",
+      "start": 99.067,
+      "end": 99.137
+    },
+    {
+      "w": "model",
+      "start": 99.172,
+      "end": 99.369
+    },
+    {
+      "w": "yourself.",
+      "start": 99.415,
+      "end": 99.996
+    },
+    {
+      "w": "So",
+      "start": 100.82,
+      "end": 100.948
+    },
+    {
+      "w": "which",
+      "start": 100.983,
+      "end": 101.145
+    },
+    {
+      "w": "one?",
+      "start": 101.203,
+      "end": 101.447
+    },
+    {
+      "w": "Busy",
+      "start": 101.784,
+      "end": 102.028
+    },
+    {
+      "w": "pro",
+      "start": 102.086,
+      "end": 102.237
+    },
+    {
+      "w": "with",
+      "start": 102.272,
+      "end": 102.399
+    },
+    {
+      "w": "budget:",
+      "start": 102.434,
+      "end": 102.84
+    },
+    {
+      "w": "Dots.",
+      "start": 103.444,
+      "end": 104.001
+    },
+    {
+      "w": "Everyday",
+      "start": 104.28,
+      "end": 104.605
+    },
+    {
+      "w": "errands:",
+      "start": 104.64,
+      "end": 105.011
+    },
+    {
+      "w": "Muse.",
+      "start": 105.058,
+      "end": 105.499
+    },
+    {
+      "w": "A",
+      "start": 105.836,
+      "end": 105.905
+    },
+    {
+      "w": "whole",
+      "start": 105.952,
+      "end": 106.114
+    },
+    {
+      "w": "team:",
+      "start": 106.138,
+      "end": 106.474
+    },
+    {
+      "w": "Grok",
+      "start": 106.579,
+      "end": 106.8
+    },
+    {
+      "w": "Bot.",
+      "start": 106.846,
+      "end": 107.195
+    },
+    {
+      "w": "Approval",
+      "start": 107.798,
+      "end": 108.239
+    },
+    {
+      "w": "on",
+      "start": 108.309,
+      "end": 108.414
+    },
+    {
+      "w": "every",
+      "start": 108.495,
+      "end": 108.704
+    },
+    {
+      "w": "risky",
+      "start": 108.774,
+      "end": 109.017
+    },
+    {
+      "w": "step:",
+      "start": 109.075,
+      "end": 109.493
+    },
+    {
+      "w": "Claude",
+      "start": 110.016,
+      "end": 110.283
+    },
+    {
+      "w": "Duet.",
+      "start": 110.306,
+      "end": 110.736
+    },
+    {
+      "w": "Free",
+      "start": 111.339,
+      "end": 111.583
+    },
+    {
+      "w": "and",
+      "start": 111.618,
+      "end": 111.688
+    },
+    {
+      "w": "on",
+      "start": 111.746,
+      "end": 111.839
+    },
+    {
+      "w": "your",
+      "start": 111.873,
+      "end": 111.989
+    },
+    {
+      "w": "own",
+      "start": 112.024,
+      "end": 112.129
+    },
+    {
+      "w": "machine:",
+      "start": 112.164,
+      "end": 112.558
+    },
+    {
+      "w": "OpenClaw",
+      "start": 112.744,
+      "end": 113.29
+    },
+    {
+      "w": "or",
+      "start": 113.406,
+      "end": 113.545
+    },
+    {
+      "w": "Hermes.",
+      "start": 113.603,
+      "end": 114.114
+    },
+    {
+      "w": "Save",
+      "start": 114.637,
+      "end": 114.857
+    },
+    {
+      "w": "this",
+      "start": 114.88,
+      "end": 115.008
+    },
+    {
+      "w": "before",
+      "start": 115.055,
+      "end": 115.252
+    },
+    {
+      "w": "you",
+      "start": 115.287,
+      "end": 115.356
+    },
+    {
+      "w": "pay",
+      "start": 115.403,
+      "end": 115.519
+    },
+    {
+      "w": "for",
+      "start": 115.554,
+      "end": 115.658
+    },
+    {
+      "w": "an",
+      "start": 115.693,
+      "end": 115.751
+    },
+    {
+      "w": "agent.",
+      "start": 115.786,
+      "end": 116.169
+    },
+    {
+      "w": "Which",
+      "start": 116.773,
+      "end": 116.959
+    },
+    {
+      "w": "one",
+      "start": 116.993,
+      "end": 117.086
+    },
+    {
+      "w": "would",
+      "start": 117.109,
+      "end": 117.226
+    },
+    {
+      "w": "you",
+      "start": 117.249,
+      "end": 117.318
+    },
+    {
+      "w": "trust",
+      "start": 117.353,
+      "end": 117.539
+    },
+    {
+      "w": "with",
+      "start": 117.574,
+      "end": 117.678
+    },
+    {
+      "w": "your",
+      "start": 117.713,
+      "end": 117.806
+    },
+    {
+      "w": "inbox?",
+      "start": 117.841,
+      "end": 118.34
+    },
+    {
+      "w": "Tell",
+      "start": 118.723,
+      "end": 118.874
+    },
+    {
+      "w": "me",
+      "start": 118.909,
+      "end": 118.979
+    },
+    {
+      "w": "below.",
+      "start": 119.014,
+      "end": 119.536
+    }
+  ]
+}

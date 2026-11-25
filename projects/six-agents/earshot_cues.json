@@ -1,0 +1,415 @@
+{
+ "fps": 60,
+ "events": [
+  {
+   "f": 0,
+   "kind": "hit",
+   "id": "S01 Six"
+  },
+  {
+   "f": 0,
+   "kind": "sub",
+   "id": "sub under hit S01"
+  },
+  {
+   "f": 8,
+   "kind": "pop",
+   "id": "S01 4"
+  },
+  {
+   "f": 20,
+   "kind": "pop",
+   "id": "S01 AI"
+  },
+  {
+   "f": 38,
+   "kind": "pop",
+   "id": "S01 agents"
+  },
+  {
+   "f": 56,
+   "kind": "pop",
+   "id": "S01 now"
+  },
+  {
+   "f": 93,
+   "kind": "pop",
+   "id": "S01 work"
+  },
+  {
+   "f": 173,
+   "kind": "swish",
+   "id": "S01 sleep."
+  },
+  {
+   "f": 268,
+   "kind": "glint",
+   "id": "S01 promise."
+  },
+  {
+   "f": 347,
+   "kind": "hit",
+   "id": "S01 different"
+  },
+  {
+   "f": 347,
+   "kind": "sub",
+   "id": "sub under hit S01"
+  },
+  {
+   "f": 365,
+   "kind": "hit",
+   "id": "S01 deals."
+  },
+  {
+   "f": 365,
+   "kind": "sub",
+   "id": "sub under hit S01"
+  },
+  {
+   "f": 411,
+   "kind": "swish",
+   "id": "dissolve into S02"
+  },
+  {
+   "f": 411,
+   "kind": "accent",
+   "id": "cut accent S02"
+  },
+  {
+   "f": 433,
+   "kind": "swish",
+   "id": "S02 Four"
+  },
+  {
+   "f": 518,
+   "kind": "whoosh_in",
+   "id": "S02 cloud,"
+  },
+  {
+   "f": 655,
+   "kind": "swish",
+   "id": "S02 Two"
+  },
+  {
+   "f": 678,
+   "kind": "success",
+   "id": "S02 free,"
+  },
+  {
+   "f": 820,
+   "kind": "whoosh_in",
+   "id": "portal into S03"
+  },
+  {
+   "f": 827,
+   "kind": "sub",
+   "id": "portal landing S03"
+  },
+  {
+   "f": 917,
+   "kind": "pop",
+   "id": "S03 Dots."
+  },
+  {
+   "f": 1170,
+   "kind": "zip",
+   "id": "S03 thousand"
+  },
+  {
+   "f": 1288,
+   "kind": "notify",
+   "id": "S03 iMessage."
+  },
+  {
+   "f": 1405,
+   "kind": "success",
+   "id": "S03 pays."
+  },
+  {
+   "f": 1594,
+   "kind": "hit",
+   "id": "S03 hundred"
+  },
+  {
+   "f": 1594,
+   "kind": "sub",
+   "id": "sub under hit S03"
+  },
+  {
+   "f": 1750,
+   "kind": "whoosh_in",
+   "id": "push into S04"
+  },
+  {
+   "f": 1793,
+   "kind": "pop",
+   "id": "S04 Muse"
+  },
+  {
+   "f": 2008,
+   "kind": "hit",
+   "id": "S04 negotiates"
+  },
+  {
+   "f": 2008,
+   "kind": "sub",
+   "id": "sub under hit S04"
+  },
+  {
+   "f": 2090,
+   "kind": "notify",
+   "id": "S04 WhatsApp,"
+  },
+  {
+   "f": 2203,
+   "kind": "success",
+   "id": "S04 spends."
+  },
+  {
+   "f": 2315,
+   "kind": "glint",
+   "id": "S04 free,"
+  },
+  {
+   "f": 2637,
+   "kind": "whoosh_in",
+   "id": "push into S05"
+  },
+  {
+   "f": 2683,
+   "kind": "pop",
+   "id": "S05 Grok"
+  },
+  {
+   "f": 2851,
+   "kind": "click",
+   "id": "S05 computer,"
+  },
+  {
+   "f": 2892,
+   "kind": "type_run",
+   "id": "S05 signs"
+  },
+  {
+   "f": 3001,
+   "kind": "notify",
+   "id": "S05 Slack,"
+  },
+  {
+   "f": 3056,
+   "kind": "shutter",
+   "id": "S05 Zoom"
+  },
+  {
+   "f": 3208,
+   "kind": "hit",
+   "id": "S05 thirty"
+  },
+  {
+   "f": 3208,
+   "kind": "sub",
+   "id": "sub under hit S05"
+  },
+  {
+   "f": 3381,
+   "kind": "whoosh_in",
+   "id": "push into S06"
+  },
+  {
+   "f": 3457,
+   "kind": "pop",
+   "id": "S06 Duet"
+  },
+  {
+   "f": 3676,
+   "kind": "tap",
+   "id": "S06 invoices,"
+  },
+  {
+   "f": 3749,
+   "kind": "zip",
+   "id": "S06 payroll."
+  },
+  {
+   "f": 3851,
+   "kind": "tick",
+   "id": "S06 pays,"
+  },
+  {
+   "f": 3907,
+   "kind": "tick",
+   "id": "S06 deletes,"
+  },
+  {
+   "f": 3996,
+   "kind": "success",
+   "id": "S06 waits,"
+  },
+  {
+   "f": 4042,
+   "kind": "hit",
+   "id": "S06 never"
+  },
+  {
+   "f": 4042,
+   "kind": "sub",
+   "id": "sub under hit S06"
+  },
+  {
+   "f": 4386,
+   "kind": "whoosh_in",
+   "id": "portal into S07"
+  },
+  {
+   "f": 4393,
+   "kind": "sub",
+   "id": "portal landing S07"
+  },
+  {
+   "f": 4497,
+   "kind": "pop",
+   "id": "S07 OpenClaw,"
+  },
+  {
+   "f": 4641,
+   "kind": "zip",
+   "id": "S07 thousand"
+  },
+  {
+   "f": 4862,
+   "kind": "notify",
+   "id": "S07 WhatsApp"
+  },
+  {
+   "f": 4999,
+   "kind": "success",
+   "id": "S07 nothing."
+  },
+  {
+   "f": 5078,
+   "kind": "type_run",
+   "id": "S07 commands"
+  },
+  {
+   "f": 5158,
+   "kind": "hit",
+   "id": "S07 down."
+  },
+  {
+   "f": 5158,
+   "kind": "sub",
+   "id": "sub under hit S07"
+  },
+  {
+   "f": 5207,
+   "kind": "whoosh_in",
+   "id": "push into S08"
+  },
+  {
+   "f": 5236,
+   "kind": "pop",
+   "id": "S08 Hermes,"
+  },
+  {
+   "f": 5447,
+   "kind": "success",
+   "id": "S08 task,"
+  },
+  {
+   "f": 5518,
+   "kind": "pop",
+   "id": "S08 skill,"
+  },
+  {
+   "f": 5559,
+   "kind": "zip",
+   "id": "S08 better"
+  },
+  {
+   "f": 5667,
+   "kind": "success",
+   "id": "S08 free"
+  },
+  {
+   "f": 5772,
+   "kind": "hit",
+   "id": "S08 twenty"
+  },
+  {
+   "f": 5772,
+   "kind": "sub",
+   "id": "sub under hit S08"
+  },
+  {
+   "f": 6024,
+   "kind": "iris",
+   "id": "iris into S09"
+  },
+  {
+   "f": 6024,
+   "kind": "sub",
+   "id": "sub under iris S09"
+  },
+  {
+   "f": 6207,
+   "kind": "pop",
+   "id": "S09 Dots."
+  },
+  {
+   "f": 6303,
+   "kind": "pop",
+   "id": "S09 Muse."
+  },
+  {
+   "f": 6411,
+   "kind": "pop",
+   "id": "S09 Bot."
+  },
+  {
+   "f": 6618,
+   "kind": "pop",
+   "id": "S09 Duet."
+  },
+  {
+   "f": 6765,
+   "kind": "pop",
+   "id": "S09 OpenClaw"
+  },
+  {
+   "f": 6816,
+   "kind": "success",
+   "id": "S09 Hermes."
+  },
+  {
+   "f": 6863,
+   "kind": "whoosh_in",
+   "id": "portal into S10"
+  },
+  {
+   "f": 6870,
+   "kind": "sub",
+   "id": "portal landing S10"
+  },
+  {
+   "f": 6878,
+   "kind": "click",
+   "id": "S10 Save"
+  },
+  {
+   "f": 6947,
+   "kind": "pop",
+   "id": "S10 agent."
+  },
+  {
+   "f": 7041,
+   "kind": "glint",
+   "id": "S10 trust"
+  },
+  {
+   "f": 7141,
+   "kind": "success",
+   "id": "S10 below."
+  }
+ ]
+}

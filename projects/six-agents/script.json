@@ -1,0 +1,453 @@
+{
+ "id": "six-agents",
+ "title": "6 AI agents that work for you 24/7: which one is yours?",
+ "style": "explainer",
+ "handle": null,
+ "output": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "voice": {
+  "name": "Liam",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "model": "eleven_multilingual_v2",
+  "stability": 0.4,
+  "similarity": 0.8,
+  "style": 0.35,
+  "speed": 1.15
+ },
+ "music": {
+  "key": "E major"
+ },
+ "facts_checked_2026_11_25": {
+  "dots": "openai.com/index/introducing-dots (29 Sep 2026, upd. 3 Nov): always-on agents, each on its own cloud computer + browser, 4,000+ apps via plugins; first dot included in Pro / Business Premium. chatgpt.com/pricing: Dots = Pro (3 usage tiers; Pro 100 / 200 / 500 per help.openai.com 'About ChatGPT Pro tiers'). Release notes: texting via iMessage/RCS beta (US Pro, 28 Oct); Wallet: review + Face ID/Touch ID before every purchase (13 Nov); Pro access excludes EEA, Switzerland, UK at launch.",
+  "muse": "about.fb.com/news/2026/09/introducing-muse-personal-ai-agent (8 Sep 2026, upd. 10 Nov): books travel, sends email, shops with Link by Stripe (purchase protections), negotiates a lower bill; checks with the person before purchases; chat in the Muse app or WhatsApp (ai.meta.com/muse). 'Free for most of what people need'; Meta Help Center 'About Muse subscriptions': Power $20/mo, Maximum $100/mo. Rolling out in the US; 'Muse Is Now Available in Singapore' (27 Oct).",
+  "grokbot": "x.ai/bot + docs.x.ai/x-subscription/grok-bot + x.ai/news/x-subscription (12 Oct 2026): out of beta; every bot has its own computer; signs in to your apps; Slack and Teams; joins Google Meet / Zoom / Teams calls; included on Premium $30, Super $100, Ultra $200 (not Free / Plus $8); weekly pool shared with Grok + Cursor, extra usage billed at API prices via top-ups.",
+  "duet": "claude.com/resources/articles/claude-duet (21 Oct 2026) + safety article (23 Oct): proactive agent app, morning brief, checks QuickBooks/Stripe for unpaid invoices, prepares and runs payroll in Gusto; shows the action and waits for approval before sending, paying, signing or deleting; never trades securities or moves money between accounts, even with approval. Research preview by waitlist, US, included in Pro, Max, Ultra. claude.com/pricing: Pro $20 monthly ($17/mo annual), Max $100, Ultra $200.",
+  "openclaw": "github.com/openclaw/openclaw (api.github.com, 25 Nov 2026 10:22 UTC): 395,174 stars, MIT. openclaw.ai + docs: runs on your own machine (macOS, Windows, Linux), chat from WhatsApp, Telegram, iMessage, Slack, Discord, Teams + 20 more; OpenClaw Foundation 501(c)(3) (8 Jul 2026), no paid tier / hosted tier / token; tools run on the host unless sandboxing is configured, sandboxing is off by default; models incl. local ones are plugins.",
+  "hermes": "github.com/NousResearch/hermes-agent (api.github.com, 25 Nov 2026): 265,993 stars, MIT. README: autonomous skill creation after complex tasks, skills self-improve during use, persistent memory, subagents, cron; Telegram, Discord, Slack, WhatsApp, Signal, email, CLI; 'Use any model you want'. portal.nousresearch.com: Free (pay as you go), Plus $20/mo with one Cloud agent, Super $100, Ultra $200."
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "section": "hook",
+   "bg": "dark",
+   "text": "Six AI agents now do real work for you, even while you sleep. Same promise. Very different deals.",
+   "keywords": {
+    "Six": "select",
+    "different": "select"
+   },
+   "hits": [
+    {
+     "frame": 4,
+     "sfx": "pop"
+    },
+    {
+     "word": "Six",
+     "sfx": "hit"
+    },
+    {
+     "word": "sleep.",
+     "sfx": "swish"
+    },
+    {
+     "word": "different",
+     "sfx": "hit"
+    },
+    {
+     "word": "AI",
+     "sfx": "pop"
+    },
+    {
+     "word": "agents",
+     "sfx": "pop"
+    },
+    {
+     "word": "now",
+     "sfx": "pop"
+    },
+    {
+     "word": "work",
+     "sfx": "pop"
+    },
+    {
+     "word": "promise.",
+     "sfx": "glint"
+    },
+    {
+     "word": "deals.",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "New hook (Ved 25 Nov: first 6 s had no visual change): each agent's real mascot slams in FULL-SCREEN with its name on 'Six AI agents now do real work' (Iggy, Muse, Grok Bot, Duet, lobster, Hermes), then all six snap into a big wall (90 % width) on 'for you'; 'sleep' -> lights out, a clock spins 11 PM -> 7 AM; pause -> tasks finish card by card; 'Same promise' -> all six flip to the same line 'Works for you 24/7'; pause -> cards shake; 'Very different deals' -> cards slam into a price ladder FREE -> $100+/mo."
+  },
+  {
+   "id": "S02",
+   "section": "promise",
+   "bg": "dark",
+   "transition": "dissolve",
+   "text": "Four of them live in a big company's cloud, on their own computer. Two are free, open source, and run on yours.",
+   "keywords": {
+    "Four": "select",
+    "free,": "select"
+   },
+   "hits": [
+    {
+     "word": "Four",
+     "sfx": "swish"
+    },
+    {
+     "word": "cloud,",
+     "sfx": "whoosh_in"
+    },
+    {
+     "word": "Two",
+     "sfx": "swish"
+    },
+    {
+     "word": "free,",
+     "sfx": "success"
+    }
+   ],
+   "visual": "World 'Cloud vs your PC': the wall splits - four cards (Dots, Muse, Grok Bot, Claude Duet) rise into a glowing cloud and each docks into its own small cloud computer; two cards (OpenClaw, Hermes) drop onto a desk laptop that lights up with an 'OPEN SOURCE · MIT · FREE' badge."
+  },
+  {
+   "id": "S03",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "portal",
+   "origin": [
+    0.3,
+    0.32
+   ],
+   "text": "First, OpenAI's Dots. Each dot gets its own cloud computer, links to over four thousand apps, and you can even text it on iMessage. It asks before it pays. It comes with ChatGPT Pro, from a hundred dollars a month, and it's not in Europe yet.",
+   "keywords": {
+    "Dots.": "select",
+    "thousand": "select",
+    "pays.": "select",
+    "hundred": "select"
+   },
+   "hits": [
+    {
+     "word": "Dots.",
+     "sfx": "pop"
+    },
+    {
+     "word": "thousand",
+     "sfx": "zip"
+    },
+    {
+     "word": "iMessage.",
+     "sfx": "notify"
+    },
+    {
+     "word": "pays.",
+     "sfx": "success"
+    },
+    {
+     "word": "hundred",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Dots studio' (OpenAI): the official Dots slide with Iggy, the pink headphone dot, peeking from its pastel card; Iggy pops up out of the card edge and bobs; OpenAI wordmark (captured from openai.com) + the dots ring logo; 'own cloud computer' -> a cloud desktop window opens behind; 'four thousand apps' -> DrumCounter 4,000+ with real app logo tiles rippling in (Gmail, Calendar, Shopify, HubSpot, Stripe); 'iMessage' -> phone with a text bubble from the dot; 'pays' -> Face ID approval sheet; price stamp '$100+/mo · ChatGPT Pro'; 'Europe' -> chip 'Not in EU / UK yet'. Other official dots (Alfred, Todd, Jojo) peek from card edges as accents."
+  },
+  {
+   "id": "S04",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "push",
+   "text": "Meta's Muse is the everyday helper. It books trips, shops, even negotiates your bills, right inside WhatsApp, and checks with you before it spends. Most tasks are free, with twenty and hundred dollar plans. For now, it's only in the US and Singapore.",
+   "keywords": {
+    "Muse": "select",
+    "negotiates": "select",
+    "free,": "select",
+    "Singapore.": "select"
+   },
+   "hits": [
+    {
+     "word": "Muse",
+     "sfx": "pop"
+    },
+    {
+     "word": "negotiates",
+     "sfx": "hit"
+    },
+    {
+     "word": "WhatsApp,",
+     "sfx": "notify"
+    },
+    {
+     "word": "spends.",
+     "sfx": "success"
+    },
+    {
+     "word": "free,",
+     "sfx": "glint"
+    }
+   ],
+   "visual": "World 'Muse day' (Meta): Meta logo + the official blue Muse 'm' app icon; the official fluffy Muse creature waves up from its rounded card (official art); WhatsApp chat bubbles stack in ('Book a weekend trip', 'Find me sneakers', 'Lower my phone bill'); a bill card gets slashed on 'negotiates'; cart -> 'Approve purchase?' sheet (Link by Stripe) on 'spends'; price chips FREE · $20 · $100; a globe with pins on the US and Singapore."
+  },
+  {
+   "id": "S05",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "push",
+   "text": "xAI's Grok Bot is the team player. Every bot gets its own computer, signs into your work apps, and joins your Slack, even your Zoom calls. It comes with X Premium at thirty dollars and up, and heavy use costs extra.",
+   "keywords": {
+    "team": "select",
+    "computer,": "select",
+    "thirty": "select",
+    "extra.": "select"
+   },
+   "hits": [
+    {
+     "word": "Grok",
+     "sfx": "pop"
+    },
+    {
+     "word": "computer,",
+     "sfx": "click"
+    },
+    {
+     "word": "signs",
+     "sfx": "type_run"
+    },
+    {
+     "word": "Slack,",
+     "sfx": "notify"
+    },
+    {
+     "word": "Zoom",
+     "sfx": "shutter"
+    },
+    {
+     "word": "thirty",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Bot office' (xAI): the nine official Grok Bot blobs bounce into a row (official art) under the Grok Bot logo (black round bot) + X logo; 'own computer' -> each bot hops onto its own little computer; 'signs into' -> login fields fill with dots; a team chat thread with human and bot avatars; 'Zoom calls' -> a video-call grid where a bot tile joins; price card 'X Premium $30 · Super $100 · Ultra $200'; 'costs extra' -> a weekly usage meter fills and a 'top-up' chip appears."
+  },
+  {
+   "id": "S06",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "push",
+   "text": "Anthropic's Claude Duet is the careful one. It briefs you every morning, spots unpaid invoices, even runs payroll. Before it sends, pays, signs or deletes, it shows you and waits, and it never moves money between accounts. It's included in Claude Pro at twenty dollars, but it's a US waitlist preview.",
+   "keywords": {
+    "careful": "select",
+    "waits,": "select",
+    "never": "select",
+    "twenty": "select"
+   },
+   "hits": [
+    {
+     "word": "Duet",
+     "sfx": "pop"
+    },
+    {
+     "word": "invoices,",
+     "sfx": "tap"
+    },
+    {
+     "word": "payroll.",
+     "sfx": "zip"
+    },
+    {
+     "word": "pays,",
+     "sfx": "tick"
+    },
+    {
+     "word": "deletes,",
+     "sfx": "tick"
+    },
+    {
+     "word": "waits,",
+     "sfx": "success"
+    },
+    {
+     "word": "never",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Duet desk' (Anthropic): the official Claude Duet app icon + Claude logo; a sunrise behind a phone showing 'Morning brief' with three items; an invoice card with Stripe / QuickBooks logos flagged UNPAID; a Gusto payroll card; a big approval sheet whose four icons (send, pay, sign, delete) light up one per word then 'Approve?' waits; a red stamp 'Never moves money between accounts'; price chip 'Included in Claude Pro $20 · US waitlist preview'."
+  },
+  {
+   "id": "S07",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "portal",
+   "origin": [
+    0.5,
+    0.62
+   ],
+   "text": "Now the free ones. OpenClaw, the lobster, has three hundred ninety-five thousand GitHub stars. It runs on your own computer, you chat with it on WhatsApp or Telegram, and the software costs nothing. But it can run commands on your machine, so lock it down.",
+   "keywords": {
+    "free": "select",
+    "ninety-five": "select",
+    "nothing.": "select",
+    "commands": "select"
+   },
+   "hits": [
+    {
+     "word": "free",
+     "sfx": "riser"
+    },
+    {
+     "word": "OpenClaw,",
+     "sfx": "pop"
+    },
+    {
+     "word": "thousand",
+     "sfx": "zip"
+    },
+    {
+     "word": "WhatsApp",
+     "sfx": "notify"
+    },
+    {
+     "word": "nothing.",
+     "sfx": "success"
+    },
+    {
+     "word": "commands",
+     "sfx": "type_run"
+    },
+    {
+     "word": "down.",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Lobster lab' (OpenClaw Foundation): the official red OpenClaw lobster mascot scuttles onto the desk laptop; the real GitHub repo header (screenshot) with a DrumCounter rolling to 395,174 stars (25 Nov 2026); WhatsApp, Telegram, iMessage and Discord logo bubbles fly into the laptop; badge 'MIT · FREE · no paid tier'; on 'commands' a terminal opens with a warning stripe 'sandbox OFF by default', on 'lock it down' a padlock snaps shut over it."
+  },
+  {
+   "id": "S08",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "push",
+   "text": "Hermes, from Nous Research, is the learner. After a hard task, it writes itself a new skill, so it gets better the more you use it. It's free with any AI model, or hosted from twenty dollars a month. The catch: you pick and set up the model yourself.",
+   "keywords": {
+    "learner.": "select",
+    "skill,": "select",
+    "free": "select",
+    "yourself.": "select"
+   },
+   "hits": [
+    {
+     "word": "Hermes,",
+     "sfx": "pop"
+    },
+    {
+     "word": "task,",
+     "sfx": "success"
+    },
+    {
+     "word": "skill,",
+     "sfx": "pop"
+    },
+    {
+     "word": "better",
+     "sfx": "zip"
+    },
+    {
+     "word": "free",
+     "sfx": "success"
+    },
+    {
+     "word": "twenty",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Hermes atelier' (Nous Research): the official Hermes hero line-art glows on Nous blue with the Hermes wing logo; a task card ticks 'done' and a new 'skill' leaf sprouts on a glowing skill tree, more leaves multiply on 'gets better'; GitHub stars 265,993; model chips plug in (OpenRouter, Ollama logos, 'your own endpoint'); price chips FREE (MIT) · Cloud from $20/mo; on 'catch' a setup checklist slides in."
+  },
+  {
+   "id": "S09",
+   "section": "payoff",
+   "bg": "dark",
+   "transition": "iris",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "text": "So which one? Busy pro with budget: Dots. Everyday errands: Muse. A whole team: Grok Bot. Approval on every risky step: Claude Duet. Free and on your own machine: OpenClaw or Hermes.",
+   "keywords": {
+    "Dots.": "select",
+    "Muse.": "select",
+    "Bot.": "select",
+    "Duet.": "select",
+    "Hermes.": "select"
+   },
+   "hits": [
+    {
+     "word": "which",
+     "sfx": "riser"
+    },
+    {
+     "word": "Dots.",
+     "sfx": "pop"
+    },
+    {
+     "word": "Muse.",
+     "sfx": "pop"
+    },
+    {
+     "word": "Bot.",
+     "sfx": "pop"
+    },
+    {
+     "word": "Duet.",
+     "sfx": "pop"
+    },
+    {
+     "word": "OpenClaw",
+     "sfx": "pop"
+    },
+    {
+     "word": "Hermes.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "World 'Pick board': the six mascot cards in a 2x3 grid with three columns of real data (Price · Runs on · Asks before acting); each spoken pick lights its row and pops its mascot forward with a label ('Busy pro -> Dots', 'Errands -> Muse', 'Team -> Grok Bot', 'Approvals -> Claude Duet', 'Free + local -> OpenClaw / Hermes')."
+  },
+  {
+   "id": "S10",
+   "section": "cta",
+   "bg": "dark",
+   "transition": "portal",
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "text": "Save this before you pay for an agent. Which one would you trust with your inbox? Tell me below.",
+   "keywords": {
+    "Save": "select",
+    "trust": "select"
+   },
+   "hits": [
+    {
+     "word": "Save",
+     "sfx": "click"
+    },
+    {
+     "word": "agent.",
+     "sfx": "pop"
+    },
+    {
+     "word": "trust",
+     "sfx": "glint"
+    },
+    {
+     "word": "below.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "Payoff (loop to the hook): the six cards fly back into the opening wall; a phone in the middle, a fingertip presses Save (bookmark fills), then a comment bubble 'Which one would you trust?' with the six mascots as reaction chips. No handle, no channel name."
+  }
+ ],
+ "caption_y": 0.115,
+ "safe": {
+  "focusY": 0.44,
+  "zoom": 0.86,
+  "fadeTo": 0.21
+ }
+}
