@@ -21,7 +21,10 @@ renders) never goes into Git - it stays in `C:\Users\VED\Documents\Local\Reverse
 4. commit with a clear message (what + why)
 5. `git push -u origin <branch>`
 6. open a pull request into `main` (`gh pr create`), with a summary and how it was checked
-7. Ved reviews and merges (Claude does not merge unless Ved says so)
+7. **merge it straight away** (`gh pr merge <n> --merge --delete-branch`) - Ved, 25 Nov 2026: "always merge and
+   update latest features up to date"
+8. bring everything current: `git switch main` + `git pull` (the live skills are this checkout),
+   `python tools/sync_projects.py`, and rebuild the skill zips in `C:\Users\VED\Documents\Local\Reverse\skill-zips`
 
 ## Account
 `vedhckrs/video-remake` (private), allowed by Ved on 25 Nov 2026 as the ONLY vedhckrs repo Claude works in -
