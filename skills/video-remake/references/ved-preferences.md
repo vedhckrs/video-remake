@@ -65,7 +65,9 @@ Quotes are Ved's words. Apply them every time without asking again.
   "Authenticate Git with your GitHub credentials?" answer n; check `git config --show-scope --get-all
   credential.https://github.com.helper` is empty.
 - Every feature/fix: branch `feat/...` or `fix/...` from main -> `python tools/sync_projects.py` if a video project
-  changed -> commit -> push -> PR into main (`gh pr create`). Ved merges; do not merge unless he says so.
+  changed -> commit -> push -> PR into main (`gh pr create`) -> **merge it straight away** (Ved, 25 Nov 2026: "always
+  merge and update latest features up to date") -> `git switch main` + `git pull` (live skills) -> rebuild the skill
+  zips in `C:\Users\VED\Documents\Local\Reverse\skill-zips`. Never leave a feature branch checked out at the end.
 - Tracks skills + per-video project code only; media (MP4/WAV/MP3/zips/renders) never goes into Git.
 
 ## Working style Ved asked for
