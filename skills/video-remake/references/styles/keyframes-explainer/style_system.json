@@ -1,0 +1,1177 @@
+{
+ "scene_templates": [
+  {
+   "id": "hook_hero",
+   "name": "Hook hero in motion",
+   "use_when": "First 2-6 s of every video. The claim must be visible before it is explained.",
+   "layout": "Hero object in the stage band (y 25-70%), caption in the top band, bottom band empty (no presenter yet). Optional honesty disclaimer at lower-left from frame 0.",
+   "layers": [
+    "Background (grid, vignette)",
+    "Glow or halo behind hero",
+    "Hero object(s)",
+    "Companion object or callout label",
+    "Disclaimer footnote",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Frame 0: object already moving (whip-in, pour, slide or fade completes within 12 frames @30)",
+    "0.5-1.2 s: first label, badge or callout pops",
+    "1.2-2.5 s: the transformation (shatter, morph, race result, wave flattening)",
+    "By 3 s: result state is on screen and the gap is open",
+    "Hand over to the presenter entry on the next sentence"
+   ],
+   "duration_s": [
+    2,
+    6
+   ],
+   "sfx": [
+    "ding at 0.3-0.6 s",
+    "whoosh on the transformation (the loudest hit of the opening)",
+    "pop per label"
+   ],
+   "frequency": "12/12 videos, once per video"
+  },
+  {
+   "id": "hero_callouts",
+   "name": "Hero object + leader-line callouts",
+   "use_when": "Naming the parts of a physical thing; any time a new object becomes the subject.",
+   "layout": "Object centred in the stage band at 45-80% of frame width; tracked-caps labels left or right with thin leader lines; footnote lower-left; presenter bottom.",
+   "layers": [
+    "Background",
+    "Contact shadow and glow",
+    "Object (L1 detail)",
+    "Leader lines",
+    "Label stacks (TITLE / spec / gloss)",
+    "Footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Object pops or slides in (8-12 frames @30)",
+    "Leader line draws on (6-10 frames)",
+    "Label fades in 4-5 frames after its line",
+    "Next callout staggers 6-8 frames later, one per spoken part",
+    "Optional single sheen sweep across the object"
+   ],
+   "duration_s": [
+    1,
+    5
+   ],
+   "sfx": [
+    "soft pop or beep per label",
+    "tick on leader draw (ours)"
+   ],
+   "frequency": "11/12 videos, 3-10 uses per video"
+  },
+  {
+   "id": "persistent_stage",
+   "name": "Persistent metaphor stage with state swaps",
+   "use_when": "The core explanation. One object or metaphor must hold a mental model for 5-25 s (longer if split by overlays).",
+   "layout": "Stage object fills y 28-70% (desk, map, rack, tile field, cross-section, keyboard). A measuring device is built into it (ruler, readout, counter). Callouts and a legend at the left.",
+   "layers": [
+    "Background",
+    "Stage object",
+    "Items or tokens placed on it",
+    "State badges ('?', check, X)",
+    "Embedded gauge or readout",
+    "Callouts and legend",
+    "Footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "One change per spoken noun, every 1-1.5 s",
+    "Each idea is a three-state swap on the same object: neutral, broken (red, grey, '?'), fixed (green, glow)",
+    "Non-focused groups dim to about 30%",
+    "The embedded gauge updates with every item and changes hue at thresholds",
+    "Reset to neutral before a second pass (new algorithm, new input)"
+   ],
+   "duration_s": [
+    5,
+    25
+   ],
+   "sfx": [
+    "pop or click per item landing",
+    "ding on a fixed state",
+    "low impact on a failed state",
+    "click when a frame or lock lands"
+   ],
+   "frequency": "11/12 videos, 1-3 stretches per video"
+  },
+  {
+   "id": "macro_zoom",
+   "name": "Macro zoom or zoom-through into a part",
+   "use_when": "The story changes scale: into a component, down to a cell, or back out to thousands.",
+   "layout": "Stage scales 2.8-8x toward the part; macro artwork fills the stage band; one label; 'magnified illustration' footnote. Captions and presenter stay locked.",
+   "layers": [
+    "Background",
+    "ZoomStack: wide art, then L2 macro art",
+    "Defocused foreground shapes",
+    "Top and bottom blur bands",
+    "One label with leader",
+    "Footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Push over 20-35 frames @30 (or a 5-8 frame punch)",
+    "Blur peaks mid-move; artwork tier swaps at the peak",
+    "Soft settle, then one label",
+    "Hold 0.6-1.5 s while internals animate",
+    "Return by reverse pull-out or continue into the next scene"
+   ],
+   "duration_s": [
+    1,
+    4
+   ],
+   "sfx": [
+    "whoosh on the move",
+    "click or soft impact on landing"
+   ],
+   "frequency": "9/12 videos, 1-4 uses per video"
+  },
+  {
+   "id": "big_number",
+   "name": "Big number or odometer with unit",
+   "use_when": "A spoken figure is the point of the sentence.",
+   "layout": "Numeral at 7-14% of frame height at the top or side of the stage; small unit label under or beside; optional tick bar or scale; proof card or dimmed stage beneath; source footnote.",
+   "layers": [
+    "Background",
+    "Dimmed stage or proof card",
+    "Numeral (tabular, extra-bold)",
+    "Unit label",
+    "Tick bar or scale",
+    "Source footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Count-up over 20-45 frames @30, easing out and landing on the spoken word",
+    "The roll passes through plausible intermediate values",
+    "Unit pops; footnote fades in 0.5-1 s later",
+    "Hold, then the number shrinks into a corner stat or thumbnail"
+   ],
+   "duration_s": [
+    1,
+    2.5
+   ],
+   "sfx": [
+    "tick roll under the count",
+    "impact or ding on landing",
+    "riser before the biggest number of the video"
+   ],
+   "frequency": "11/12 videos, 2-12 uses per video"
+  },
+  {
+   "id": "compare",
+   "name": "Side-by-side or before-after compare",
+   "use_when": "Two things must be judged against each other: old vs new, theirs vs yours, input A vs input B on the same rig.",
+   "layout": "Two columns (or two stacked rows), each with object, name and value. A winner marker, operator glyph or ratio stamp sits between or above.",
+   "layers": [
+    "Background",
+    "Object A and object B",
+    "Name and spec labels",
+    "Racing counters or bars",
+    "Winner marker (crown, check) or operator ('=', '>', 'xN')",
+    "Ratio stamp",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "A slides in; B follows 15-30 frames @30 later",
+    "Counters or bars race",
+    "Winner turns green; loser turns red or dims",
+    "Marker hops to the winner (10-12 frames, squash on landing)",
+    "Ratio stamp pops, tilted about -8 degrees"
+   ],
+   "duration_s": [
+    2,
+    8
+   ],
+   "sfx": [
+    "beeps on counters",
+    "pop on badges",
+    "chime or impact on the stamp"
+   ],
+   "frequency": "10/12 videos, 1-3 uses per video"
+  },
+  {
+   "id": "evidence_card",
+   "name": "Evidence card: document or real UI in a frame",
+   "use_when": "A claim needs a receipt: a quote, spec line, paper, release note or app screen.",
+   "layout": "Rounded card in y 45-72% (or centred over a dimmed stage) with header bar, body text and a source tag. Hero object may stay above it.",
+   "layers": [
+    "Stage (dimmed or shrunk)",
+    "Card with header bar and body",
+    "Highlighter rectangles behind key phrases",
+    "Cursor",
+    "Source tag or footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Card springs up or blurs in (8-10 frames @30)",
+    "Internal scroll to the line with vertical blur (8 frames)",
+    "Highlighter wipes from the left (8-10 frames)",
+    "Optional: other lines dim to 30%, the line lifts out as a chip",
+    "Card exits by slide or blur"
+   ],
+   "duration_s": [
+    1,
+    3.5
+   ],
+   "sfx": [
+    "click on card landing",
+    "soft swipe on the highlighter (ours)",
+    "ding on a date or name"
+   ],
+   "frequency": "11/12 videos, 2-8 uses per video"
+  },
+  {
+   "id": "device_meter",
+   "name": "Device with live screen + side meter",
+   "use_when": "Showing load, progress or failure on a product the viewer owns.",
+   "layout": "Front-on device centred; vertical pill meter in a narrow side column; magnified chrome strip floating above the screen.",
+   "layers": [
+    "Background",
+    "Device frame",
+    "Screen content (HTML UI)",
+    "Magnified strip with shadow",
+    "Pill meter with glow",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "A step every 1-1.5 s adds an item (pop, 8 frames @30)",
+    "Meter springs to the new fill; hue changes at thresholds",
+    "Failure: screen desaturates, spinner mounts, red glow behind the meter",
+    "Optional cross-fade of the deck to an x-ray"
+   ],
+   "duration_s": [
+    3,
+    8
+   ],
+   "sfx": [
+    "click per added item",
+    "beep per meter step, rising in pitch (ours)",
+    "low thud on the red state"
+   ],
+   "frequency": "6/12 videos"
+  },
+  {
+   "id": "exploded_xray",
+   "name": "Exploded view, x-ray reveal or layer peel",
+   "use_when": "The inside of an object, or its stack of layers, is the explanation.",
+   "layout": "Object centred; layers separate vertically or peel away; internals labelled one per second.",
+   "layers": [
+    "Background",
+    "Object layers (N)",
+    "Connector lines between layers",
+    "Glass shell and internals",
+    "Colour fills per part",
+    "Callouts",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Layers spring apart (12-20 frames @30) or peel 15 frames each",
+    "Opaque-to-glass material cross-fade (about 10 frames)",
+    "Sequential fills and labels, one per second",
+    "Collapse back to the solid object"
+   ],
+   "duration_s": [
+    2,
+    6
+   ],
+   "sfx": [
+    "ding on the explode",
+    "soft whoosh per peel",
+    "pop per label"
+   ],
+   "frequency": "7/12 videos"
+  },
+  {
+   "id": "flow_wires",
+   "name": "Flow or node-wire diagram with travelling packets",
+   "use_when": "Something moves between parts: requests, data, sound, current, couriers.",
+   "layout": "Source node at left or top, targets at right or bottom, 2-5 paths between; optional container frame around a group; labels at the ends.",
+   "layers": [
+    "Background",
+    "Container frame",
+    "Node cards",
+    "Wire or road paths",
+    "Packets (icons or dots)",
+    "State sockets or badges",
+    "Labels",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Wires draw on (12-18 frames @30, staggered 6)",
+    "Packets loop along the paths (15-30 frames per trip)",
+    "A state change recolours the wire (accent to grey or to green)",
+    "Container frame draws on while the layout reflows",
+    "Targets resolve with check pops"
+   ],
+   "duration_s": [
+    3,
+    25
+   ],
+   "sfx": [
+    "short ding per packet arrival",
+    "click when the frame closes",
+    "whoosh on reflow"
+   ],
+   "frequency": "6/12 videos"
+  },
+  {
+   "id": "chart_build",
+   "name": "Chart build: line, bars or timeline",
+   "use_when": "A trend, ranking or span of time; keep to two or three series.",
+   "layout": "Minimal axes in the stage band; value label rides the head of the line or the end of the bar; source footnote under the chart.",
+   "layers": [
+    "Background",
+    "Axes, baseline, gridlines (3 at most)",
+    "Series (path or bars)",
+    "Head marker or rider icon",
+    "Value labels",
+    "Bracket or stamp",
+    "Source footnote",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Line draws on (30-90 frames @30) with a counter tied to its head",
+    "Bars grow (12-45 frames) with a synced count-up",
+    "Markers and ticks drop in (4-6 frames)",
+    "Abnormal part recolours (red spike, hatched shortfall)",
+    "Stamp or bracket pops last"
+   ],
+   "duration_s": [
+    2,
+    7
+   ],
+   "sfx": [
+    "tick rising in pitch under the draw (ours)",
+    "impact on the peak",
+    "ding on a pass"
+   ],
+   "frequency": "10/12 videos"
+  },
+  {
+   "id": "unit_grid",
+   "name": "Unit grid: quantity as a picture",
+   "use_when": "A count or a share is easier to see than to read.",
+   "layout": "Grid of tiles, icons or thumbnails in the stage band; live counter above or below; optional legend.",
+   "layers": [
+    "Background",
+    "Grid items",
+    "Counter",
+    "Legend",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Items fly in or flip with a 1-frame stagger (20-45 frames @30 in total)",
+    "Counter equals the number of lit items",
+    "A subset recolours to show the share",
+    "Optional collapse of the previous scene into one tile"
+   ],
+   "duration_s": [
+    1.5,
+    4
+   ],
+   "sfx": [
+    "rapid ticks",
+    "impact when the count lands"
+   ],
+   "frequency": "8/12 videos"
+  },
+  {
+   "id": "focus_overlay",
+   "name": "Dimmed-stage overlay or pop-forward detail card",
+   "use_when": "One detail or one comparison must be read without leaving the main diagram.",
+   "layout": "Stage drops to 15-30% opacity with 9-15 px blur; overlay card or data rows on the centre axis.",
+   "layers": [
+    "Stage (dimmed and blurred)",
+    "Overlay card or rows",
+    "Stamp or multiplier",
+    "Credit line",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Dim in 6-8 frames @30",
+    "Element scales 1 to about 1.6 and moves to centre (12 frames)",
+    "Content types, flips or counts",
+    "Stamp lands",
+    "Element shrinks and docks; stage restores to 100%"
+   ],
+   "duration_s": [
+    2,
+    4
+   ],
+   "sfx": [
+    "whoosh in",
+    "thud on the stamp",
+    "click on dock"
+   ],
+   "frequency": "5/12 videos"
+  },
+  {
+   "id": "chapter_rail",
+   "name": "Chapter card + progress rail",
+   "use_when": "The video has 3-5 named steps. Ours: every video over 60 s.",
+   "layout": "Roadmap (map, rail or tokenised header) at y 27-31% or filling the stage for the card; active node lit; corner stat slot at the right end.",
+   "layers": [
+    "Background",
+    "Rail or roadmap with N nodes",
+    "Active accent and pulse ring",
+    "Corner stat",
+    "Presenter (showing N fingers)",
+    "Captions ('Step N, noun')"
+   ],
+   "motion_beats": [
+    "Nodes light in sequence, 4-5 frames @30 apart",
+    "Active node pulses (12 frames)",
+    "Finished nodes turn green",
+    "Big numbers shrink into the corner stat after their beat"
+   ],
+   "duration_s": [
+    1.3,
+    2
+   ],
+   "sfx": [
+    "impact on chapter landing",
+    "ding on chapter complete",
+    "riser before late chapters"
+   ],
+   "frequency": "3/12 videos; card repeats 4-5 times, rail persists"
+  },
+  {
+   "id": "terminal_type",
+   "name": "Terminal or typed input",
+   "use_when": "A command, search or keyword is the action.",
+   "layout": "Mono line under a title row inside a dark card; one token highlighted; result appears below.",
+   "layers": [
+    "Background or dimmed stage",
+    "Card with title row",
+    "Mono text and caret",
+    "Token highlight",
+    "Result card",
+    "Presenter (typing pose)",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Type 1-2 frames @30 per character",
+    "Caret blinks on a 15-frame cycle",
+    "One flag or token gets a highlight",
+    "Result card springs in"
+   ],
+   "duration_s": [
+    1,
+    3
+   ],
+   "sfx": [
+    "key clicks in bursts"
+   ],
+   "frequency": "4/12 videos"
+  },
+  {
+   "id": "thumbnail_callback",
+   "name": "Shrink-to-thumbnail carry-over",
+   "use_when": "A section ends but its diagram will be compared against later.",
+   "layout": "Old diagram scales to 20-25% and parks in a top or bottom corner; new hero takes the stage.",
+   "layers": [
+    "Background",
+    "Thumbnail of the previous diagram (may dim to 25%)",
+    "New hero",
+    "Callback label beside the thumbnail",
+    "Presenter",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Scale and translate to the corner in 10-14 frames @30",
+    "Thumbnail stays as a breadcrumb for 5-40 s",
+    "Callback label lands on the spoken comparison"
+   ],
+   "duration_s": [
+    0.3,
+    0.5
+   ],
+   "sfx": [
+    "soft whoosh"
+   ],
+   "frequency": "3/12 videos"
+  },
+  {
+   "id": "recap_list",
+   "name": "Recap accordion or checklist",
+   "use_when": "Before the twist or the CTA: restate the steps in one sentence.",
+   "layout": "3-4 rows on a left spine; the active row expands to a miniature of its scene or fills its check circle.",
+   "layers": [
+    "Background",
+    "Rows with spine",
+    "Miniature scene or check circle",
+    "Presenter (counting)",
+    "Captions"
+   ],
+   "motion_beats": [
+    "One row per clause, about 1.7 s each",
+    "Row height springs open (10-12 frames @30)",
+    "Check pops (5-6 frames)"
+   ],
+   "duration_s": [
+    6,
+    7
+   ],
+   "sfx": [
+    "pop per row or check"
+   ],
+   "frequency": "3/12 videos"
+  },
+  {
+   "id": "social_cta",
+   "name": "Acted-out social CTA",
+   "use_when": "The last 1.2-6 s. The ask is performed, not written on a card.",
+   "layout": "Previous scene scales down, dims or is trapped in a phone; a UI card (follow chip, share sheet, comment sheet, DM thread) sits at y 28-72%; cursor on top.",
+   "layers": [
+    "Previous scene (scaled or dimmed)",
+    "UI card",
+    "Cursor",
+    "Presenter (point at viewer, then wave)",
+    "Captions"
+   ],
+   "motion_beats": [
+    "Card slides up (10-12 frames @30)",
+    "Cursor moves (10-12 frames) and presses (3-frame squash)",
+    "State flips in 4-6 frames ('Follow' to 'Following', 'Send' to 'Sent')",
+    "Final state holds to the last frame (ours: at least 0.5 s)"
+   ],
+   "duration_s": [
+    1.2,
+    6
+   ],
+   "sfx": [
+    "click on the press",
+    "pop on the state flip",
+    "music lift"
+   ],
+   "frequency": "12/12 videos, once per video"
+  }
+ ],
+ "motion_tokens": {
+  "durations": {
+   "caption_word_in": {
+    "f30": [
+     3,
+     4
+    ],
+    "f60": [
+     6,
+     8
+    ]
+   },
+   "caption_phrase_out": {
+    "f30": [
+     2,
+     3
+    ],
+    "f60": [
+     4,
+     6
+    ]
+   },
+   "highlight_box_in": {
+    "f30": [
+     4,
+     5
+    ],
+    "f60": [
+     8,
+     10
+    ]
+   },
+   "highlight_box_travel": {
+    "f30": [
+     8,
+     8
+    ],
+    "f60": [
+     16,
+     16
+    ],
+    "note": "ours"
+   },
+   "pop_in": {
+    "f30": [
+     8,
+     10
+    ],
+    "f60": [
+     16,
+     20
+    ]
+   },
+   "card_slide_in": {
+    "f30": [
+     8,
+     12
+    ],
+    "f60": [
+     16,
+     24
+    ]
+   },
+   "slot_swap": {
+    "f30": [
+     6,
+     10
+    ],
+    "f60": [
+     12,
+     20
+    ]
+   },
+   "leader_draw": {
+    "f30": [
+     6,
+     10
+    ],
+    "f60": [
+     12,
+     20
+    ]
+   },
+   "label_fade_after_leader": {
+    "f30": [
+     4,
+     5
+    ],
+    "f60": [
+     8,
+     10
+    ]
+   },
+   "outline_trace": {
+    "f30": [
+     12,
+     20
+    ],
+    "f60": [
+     24,
+     40
+    ]
+   },
+   "chart_line_draw": {
+    "f30": [
+     30,
+     90
+    ],
+    "f60": [
+     60,
+     180
+    ]
+   },
+   "count_up": {
+    "f30": [
+     20,
+     45
+    ],
+    "f60": [
+     40,
+     90
+    ]
+   },
+   "bar_grow": {
+    "f30": [
+     12,
+     45
+    ],
+    "f60": [
+     24,
+     90
+    ]
+   },
+   "state_swap_check": {
+    "f30": [
+     5,
+     8
+    ],
+    "f60": [
+     10,
+     16
+    ]
+   },
+   "stamp": {
+    "f30": [
+     6,
+     8
+    ],
+    "f60": [
+     12,
+     16
+    ]
+   },
+   "glow_pulse": {
+    "f30": [
+     20,
+     30
+    ],
+    "f60": [
+     40,
+     60
+    ]
+   },
+   "focus_dim": {
+    "f30": [
+     6,
+     10
+    ],
+    "f60": [
+     12,
+     20
+    ]
+   },
+   "highlighter_wipe": {
+    "f30": [
+     8,
+     10
+    ],
+    "f60": [
+     16,
+     20
+    ]
+   },
+   "typewriter_per_char": {
+    "f30": [
+     1,
+     2
+    ],
+    "f60": [
+     2,
+     4
+    ]
+   },
+   "material_dissolve_xray": {
+    "f30": [
+     10,
+     12
+    ],
+    "f60": [
+     20,
+     24
+    ]
+   },
+   "card_flip": {
+    "f30": [
+     8,
+     10
+    ],
+    "f60": [
+     16,
+     20
+    ]
+   },
+   "sheen_sweep": {
+    "f30": [
+     12,
+     25
+    ],
+    "f60": [
+     24,
+     50
+    ]
+   },
+   "drop_and_settle": {
+    "f30": [
+     8,
+     11
+    ],
+    "f60": [
+     16,
+     22
+    ]
+   },
+   "packet_trip": {
+    "f30": [
+     15,
+     30
+    ],
+    "f60": [
+     30,
+     60
+    ]
+   },
+   "cursor_move": {
+    "f30": [
+     10,
+     12
+    ],
+    "f60": [
+     20,
+     24
+    ]
+   },
+   "click_squash": {
+    "f30": [
+     3,
+     3
+    ],
+    "f60": [
+     6,
+     6
+    ]
+   },
+   "ui_state_flip": {
+    "f30": [
+     4,
+     6
+    ],
+    "f60": [
+     8,
+     12
+    ]
+   },
+   "camera_reframe": {
+    "f30": [
+     8,
+     15
+    ],
+    "f60": [
+     16,
+     30
+    ]
+   },
+   "camera_macro_push": {
+    "f30": [
+     20,
+     35
+    ],
+    "f60": [
+     40,
+     70
+    ]
+   },
+   "zoom_through": {
+    "f30": [
+     4,
+     8
+    ],
+    "f60": [
+     8,
+     16
+    ]
+   },
+   "whip_push": {
+    "f30": [
+     3,
+     10
+    ],
+    "f60": [
+     6,
+     20
+    ]
+   },
+   "blur_dissolve": {
+    "f30": [
+     2,
+     5
+    ],
+    "f60": [
+     4,
+     10
+    ]
+   },
+   "theme_wipe": {
+    "f30": [
+     3,
+     7
+    ],
+    "f60": [
+     6,
+     14
+    ]
+   },
+   "shrink_to_thumbnail": {
+    "f30": [
+     10,
+     14
+    ],
+    "f60": [
+     20,
+     28
+    ]
+   },
+   "pose_change_reference": {
+    "f30": [
+     2,
+     6
+    ],
+    "f60": [
+     4,
+     12
+    ],
+    "note": "still swap or cross-fade"
+   },
+   "pose_change": {
+    "f30": [
+     6,
+     8
+    ],
+    "f60": [
+     12,
+     16
+    ],
+    "note": "ours: sprung joints"
+   },
+   "blink": {
+    "f30": [
+     3,
+     3
+    ],
+    "f60": [
+     6,
+     6
+    ],
+    "note": "ours"
+   },
+   "payoff_hold": {
+    "f30": [
+     12,
+     20
+    ],
+    "f60": [
+     24,
+     40
+    ],
+    "note": "ours: nothing new appears"
+   },
+   "hold_after_camera_move_s": [
+    0.6,
+    1.5
+   ]
+  },
+  "easings": {
+   "out_snap": "cubic-bezier(0.2, 0.8, 0.2, 1) - entrances, slides, count-ups",
+   "out_expo": "cubic-bezier(0.16, 1, 0.3, 1) - whip-ins and settles",
+   "in_out": "cubic-bezier(0.65, 0, 0.35, 1) - camera pushes, stroke traces, flips",
+   "in": "cubic-bezier(0.4, 0, 1, 1) - exits and the first half of a zoom-through",
+   "linear": "loops, typewriter, scan lines, packets, dissolves, idle drift",
+   "note": "curves are estimates; the dossiers could not measure easing"
+  },
+  "springs": {
+   "pop": {
+    "mass": 1,
+    "damping": 20,
+    "stiffness": 260,
+    "overshoot_pct": 8,
+    "use": "badges, checks, stamps, labels"
+   },
+   "settle": {
+    "mass": 1,
+    "damping": 21,
+    "stiffness": 200,
+    "overshoot_pct": 3,
+    "use": "cards, layout reflows"
+   },
+   "camera": {
+    "mass": 1,
+    "damping": 26,
+    "stiffness": 170,
+    "overshootClamping": true,
+    "overshoot_pct": 0,
+    "use": "stage moves"
+   },
+   "pose": {
+    "mass": 1,
+    "damping": 20,
+    "stiffness": 220,
+    "overshoot_pct": 6,
+    "use": "presenter joints"
+   },
+   "bouncy": {
+    "mass": 1,
+    "damping": 14,
+    "stiffness": 180,
+    "overshoot_pct": 15,
+    "use": "pin drops, bulges, gags"
+   },
+   "note": "guesses tuned to the overshoot the dossiers describe; their 'damping 12-14, stiffness 180' pair would overshoot 15-21%"
+  },
+  "stagger": {
+   "grid_items": {
+    "f30": 1,
+    "f60": 2
+   },
+   "rows_and_list_items": {
+    "f30": [
+     2,
+     4
+    ],
+    "f60": [
+     4,
+     8
+    ]
+   },
+   "callouts": {
+    "f30": [
+     6,
+     8
+    ],
+    "f60": [
+     12,
+     16
+    ]
+   },
+   "wires": {
+    "f30": 6,
+    "f60": 12
+   },
+   "sequence_lights": {
+    "f30": [
+     4,
+     5
+    ],
+    "f60": [
+     8,
+     10
+    ]
+   },
+   "second_object_in_compare": {
+    "f30": [
+     15,
+     30
+    ],
+    "f60": [
+     30,
+     60
+    ]
+   }
+  },
+  "overshoot": {
+   "pops_pct": 8,
+   "cards_and_reflows_pct": 3,
+   "camera_pct": 0,
+   "presenter_pose_pct": 6,
+   "captions_pct": 0,
+   "stamp_scale_path": [
+    1.4,
+    0.95,
+    1
+   ],
+   "pop_scale_path": [
+    0.8,
+    1.05,
+    1
+   ],
+   "rule": "overshoot only on small elements; never on camera moves or captions"
+  }
+ },
+ "sound_profile": {
+  "roles": {
+   "hook_first_object": "ding at 0.3-0.6 s",
+   "label_or_badge_pop": "bubble pop or soft beep",
+   "item_lands_on_stage": "click or pop, pitch rising as the stage fills",
+   "camera_move_or_reflow": "soft whoosh",
+   "zoom_through": "whoosh plus low impact on landing",
+   "count_up": "tick roll",
+   "big_number_lands": "impact or ding",
+   "state_success": "ding",
+   "state_failure": "low thud",
+   "chapter_change": "riser 0.5-1 s before, impact on landing",
+   "theme_wipe": "whoosh",
+   "stamp": "thud plus chime",
+   "typing": "key clicks per character burst",
+   "cursor_press": "click",
+   "button_state_flip": "pop",
+   "packet_arrival": "short ding",
+   "highlighter_wipe": "soft swipe",
+   "payoff_line": "music ducks 3-4 dB, then lifts"
+  },
+  "density_per_10s": {
+   "reference_mean": 2.8,
+   "reference_range": [
+    0.3,
+    7
+   ],
+   "target": [
+    4,
+    6
+   ],
+   "max_gap_without_sfx_s": 8
+  },
+  "music": {
+   "bpm": {
+    "target": 92,
+    "allowed": [
+     88,
+     100
+    ],
+    "reference": "undetected in 10 of 12; 90.9 in one; about 48 (possibly half-time of about 97) in one"
+   },
+   "mood": "low, steady, even-energy bed that sits behind the voice; reference keys are C# major (7), D# minor (3), E minor (2); ours adds a lift at each act change and at the CTA",
+   "level_vs_voice_db": {
+    "target": -18,
+    "extra_duck_under_key_lines_db": -3,
+    "lift_in_pauses_db": 3,
+    "reference": null
+   }
+  },
+  "loudness_lufs": {
+   "integrated_target": -14,
+   "true_peak_dbtp": -1,
+   "voice_bus": -16,
+   "sfx_routine_peak_dbfs": [
+    -30,
+    -22
+   ],
+   "sfx_hero_peak_dbfs": [
+    -16,
+    -12
+   ],
+   "reference": null,
+   "note": "targets are recommendations; the dossiers measured SFX at about -42 to -13 dB and did not measure programme loudness"
+  },
+  "beat_sync": "voice-led: captions and visual events follow word timestamps; only chapter changes and the 2-3 biggest reveals snap to bar lines"
+ },
+ "quality_gates": [
+  "Render is 1080x1920 at 60 fps and every animation is driven by the frame number (no CSS transitions or wall-clock timers).",
+  "Something is moving on frame 0 and the first caption word is visible by 0.2 s.",
+  "The stage shows at least 3 distinct visual states within the first 3.0 s.",
+  "No logo, intro card or greeting before the hook claim.",
+  "The hook's claim is demonstrated visually before 7 s.",
+  "Average visual beat rate is 0.7-1.2 changes per second across the video.",
+  "No span longer than 1.5 s without a visible change on the stage; payoff holds of up to 0.7 s keep ambient motion or drift.",
+  "Every scene change keeps at least 2 of the 3 bands (caption, stage, presenter) continuous.",
+  "Hard cuts are at most 1 per 30 s, and each one has caption and presenter running through plus a blur-in on the new hero.",
+  "Every zoom-through swaps artwork at the blur peak; no L0 art is ever scaled above 1.5x.",
+  "One ISO angle is used for all 3D objects in the video; flat modes are only PLAN, ELEVATION or CARD.",
+  "No outline strokes on solid objects; strokes appear only on annotations and x-ray shells.",
+  "Every 3D box uses the theme's three face tones with light from the top-left.",
+  "The presenter is absent during the hook, enters by 7 s and is visible for at least 80% of the runtime.",
+  "The presenter changes pose on phrase boundaries, at least once every 4 s and on average every 1-2 s.",
+  "No presenter pose change is a hard swap; each is a sprung move of 12-16 frames @60.",
+  "The presenter never overlaps data, labels or footnotes.",
+  "Caption words appear 2-5 frames @60 before their audio onset.",
+  "Captions never exceed 2 lines or 4 words per phrase, and stay inside y 15-25% and x 18-82%.",
+  "At most one highlight box per phrase, and only on a number, a proper noun or the contrast word.",
+  "No label is smaller than 30 px and no footnote smaller than 22 px.",
+  "No moment shows more than the caption plus two labels (footnote excluded).",
+  "Every spoken number has an on-screen readout that animates and lands within 2 frames @60 of the spoken word.",
+  "Every number carries a unit, and every sourced figure has a footnote on screen for at least 1.5 s.",
+  "Each accent colour has exactly one meaning in the video's accentMap, and every state is shown by colour plus an icon or motion.",
+  "The presenter's brand colour is not used for any state or data element.",
+  "At least one honesty element is present: an 'illustration' disclaimer, a stated limit or a caveat section.",
+  "Any open loop planted in the first 15 s is closed on screen before the CTA.",
+  "The payoff reuses the hook object or composition.",
+  "Narration runs at 195-205 wpm and each payoff is followed by a 24-40 frame @60 hold with no new text.",
+  "Each technical term is introduced after its picture and glossed in the same sentence.",
+  "SFX density is 4-6 events per 10 s with no gap longer than 8 s.",
+  "Every count-up, stamp, chapter change and cursor press has a mapped sound.",
+  "Master loudness is -14 LUFS integrated (plus or minus 1) with true peak at or below -1 dBTP, and music sits at least 15 dB under the voice.",
+  "The CTA is acted out as UI in 1.2-6 s and the final state holds for at least 0.5 s.",
+  "Videos longer than 60 s show a persistent progress rail or scoreboard.",
+  "No creator name, handle, mascot likeness, third-party logo or screenshot appears; all artwork is original vector."
+ ]
+}

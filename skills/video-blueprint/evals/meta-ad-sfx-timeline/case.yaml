@@ -1,0 +1,4 @@
+﻿schema_version: "1.1"
+name: meta-ad-sfx-timeline
+expected_outcome: |
+  A blueprint of the 48 s 1080x1920 Meta ad: shot list with transition types and times, an SFX list with times and families, music BPM, on-screen text with times, a Premiere-importable timeline file (FCP7 XML) and a report; claims that are guesses are marked as such.

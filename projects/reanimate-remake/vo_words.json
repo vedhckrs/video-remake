@@ -1,0 +1,580 @@
+{
+  "text": "This free Claude Code skill copies any animation you see online, frame by frame, and then proves the copy moves the same. It already has 2.4K stars on GitHub. It's called reanimate. Point it at a live site, a screen recording, a GIF or a Lottie file. It records the motion in a headless browser, writes a spec for every element, builds it in CSS, Framer Motion or GSAP, then films its own copy and measures the difference. On Vercel's toolbar it matched 417 of 417 frames. But don't stop at a copy. Ask it to clone this and add that, and build your own on top. Comment ANIMATE and I'll send you the link.",
+  "words": [
+    {
+      "w": "This",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "w": "free",
+      "start": 0.372,
+      "end": 0.639
+    },
+    {
+      "w": "Claude",
+      "start": 0.697,
+      "end": 1.01
+    },
+    {
+      "w": "Code",
+      "start": 1.033,
+      "end": 1.312
+    },
+    {
+      "w": "skill",
+      "start": 1.347,
+      "end": 1.625
+    },
+    {
+      "w": "copies",
+      "start": 1.707,
+      "end": 2.067
+    },
+    {
+      "w": "any",
+      "start": 2.136,
+      "end": 2.368
+    },
+    {
+      "w": "animation",
+      "start": 2.438,
+      "end": 2.902
+    },
+    {
+      "w": "you",
+      "start": 2.949,
+      "end": 3.03
+    },
+    {
+      "w": "see",
+      "start": 3.088,
+      "end": 3.228
+    },
+    {
+      "w": "online,",
+      "start": 3.274,
+      "end": 3.808
+    },
+    {
+      "w": "frame",
+      "start": 4.005,
+      "end": 4.307
+    },
+    {
+      "w": "by",
+      "start": 4.342,
+      "end": 4.458
+    },
+    {
+      "w": "frame,",
+      "start": 4.54,
+      "end": 5.039
+    },
+    {
+      "w": "and",
+      "start": 5.306,
+      "end": 5.445
+    },
+    {
+      "w": "then",
+      "start": 5.492,
+      "end": 5.619
+    },
+    {
+      "w": "proves",
+      "start": 5.689,
+      "end": 6.002
+    },
+    {
+      "w": "the",
+      "start": 6.037,
+      "end": 6.107
+    },
+    {
+      "w": "copy",
+      "start": 6.153,
+      "end": 6.444
+    },
+    {
+      "w": "moves",
+      "start": 6.502,
+      "end": 6.734
+    },
+    {
+      "w": "the",
+      "start": 6.78,
+      "end": 6.85
+    },
+    {
+      "w": "same.",
+      "start": 6.908,
+      "end": 7.279
+    },
+    {
+      "w": "It",
+      "start": 7.941,
+      "end": 8.081
+    },
+    {
+      "w": "already",
+      "start": 8.127,
+      "end": 8.394
+    },
+    {
+      "w": "has",
+      "start": 8.452,
+      "end": 8.615
+    },
+    {
+      "w": "2.4K",
+      "start": 8.731,
+      "end": 9.52
+    },
+    {
+      "w": "stars",
+      "start": 9.683,
+      "end": 9.996
+    },
+    {
+      "w": "on",
+      "start": 10.054,
+      "end": 10.124
+    },
+    {
+      "w": "GitHub.",
+      "start": 10.194,
+      "end": 10.693
+    },
+    {
+      "w": "It's",
+      "start": 11.273,
+      "end": 11.482
+    },
+    {
+      "w": "called",
+      "start": 11.517,
+      "end": 11.807
+    },
+    {
+      "w": "reanimate.",
+      "start": 11.97,
+      "end": 12.759
+    },
+    {
+      "w": "Point",
+      "start": 13.177,
+      "end": 13.444
+    },
+    {
+      "w": "it",
+      "start": 13.491,
+      "end": 13.56
+    },
+    {
+      "w": "at",
+      "start": 13.618,
+      "end": 13.711
+    },
+    {
+      "w": "a",
+      "start": 13.758,
+      "end": 13.781
+    },
+    {
+      "w": "live",
+      "start": 13.851,
+      "end": 14.118
+    },
+    {
+      "w": "site,",
+      "start": 14.164,
+      "end": 14.652
+    },
+    {
+      "w": "a",
+      "start": 14.768,
+      "end": 14.826
+    },
+    {
+      "w": "screen",
+      "start": 14.896,
+      "end": 15.151
+    },
+    {
+      "w": "recording,",
+      "start": 15.209,
+      "end": 15.766
+    },
+    {
+      "w": "a",
+      "start": 15.964,
+      "end": 16.034
+    },
+    {
+      "w": "GIF",
+      "start": 16.115,
+      "end": 16.37
+    },
+    {
+      "w": "or",
+      "start": 16.568,
+      "end": 16.73
+    },
+    {
+      "w": "a",
+      "start": 16.788,
+      "end": 16.812
+    },
+    {
+      "w": "Lottie",
+      "start": 16.87,
+      "end": 17.137
+    },
+    {
+      "w": "file.",
+      "start": 17.171,
+      "end": 17.589
+    },
+    {
+      "w": "It",
+      "start": 18.251,
+      "end": 18.39
+    },
+    {
+      "w": "records",
+      "start": 18.437,
+      "end": 18.808
+    },
+    {
+      "w": "the",
+      "start": 18.855,
+      "end": 18.925
+    },
+    {
+      "w": "motion",
+      "start": 18.994,
+      "end": 19.319
+    },
+    {
+      "w": "in",
+      "start": 19.366,
+      "end": 19.435
+    },
+    {
+      "w": "a",
+      "start": 19.47,
+      "end": 19.505
+    },
+    {
+      "w": "headless",
+      "start": 19.598,
+      "end": 19.969
+    },
+    {
+      "w": "browser,",
+      "start": 20.016,
+      "end": 20.62
+    },
+    {
+      "w": "writes",
+      "start": 20.782,
+      "end": 21.061
+    },
+    {
+      "w": "a",
+      "start": 21.107,
+      "end": 21.13
+    },
+    {
+      "w": "spec",
+      "start": 21.177,
+      "end": 21.409
+    },
+    {
+      "w": "for",
+      "start": 21.467,
+      "end": 21.56
+    },
+    {
+      "w": "every",
+      "start": 21.676,
+      "end": 21.966
+    },
+    {
+      "w": "element,",
+      "start": 22.024,
+      "end": 22.489
+    },
+    {
+      "w": "builds",
+      "start": 22.686,
+      "end": 22.988
+    },
+    {
+      "w": "it",
+      "start": 23.034,
+      "end": 23.104
+    },
+    {
+      "w": "in",
+      "start": 23.174,
+      "end": 23.29
+    },
+    {
+      "w": "CSS,",
+      "start": 23.406,
+      "end": 24.335
+    },
+    {
+      "w": "Framer",
+      "start": 24.497,
+      "end": 24.834
+    },
+    {
+      "w": "Motion",
+      "start": 24.892,
+      "end": 25.229
+    },
+    {
+      "w": "or",
+      "start": 25.31,
+      "end": 25.449
+    },
+    {
+      "w": "GSAP,",
+      "start": 25.531,
+      "end": 26.436
+    },
+    {
+      "w": "then",
+      "start": 26.75,
+      "end": 26.993
+    },
+    {
+      "w": "films",
+      "start": 27.086,
+      "end": 27.377
+    },
+    {
+      "w": "its",
+      "start": 27.423,
+      "end": 27.528
+    },
+    {
+      "w": "own",
+      "start": 27.562,
+      "end": 27.69
+    },
+    {
+      "w": "copy",
+      "start": 27.748,
+      "end": 28.12
+    },
+    {
+      "w": "and",
+      "start": 28.201,
+      "end": 28.317
+    },
+    {
+      "w": "measures",
+      "start": 28.398,
+      "end": 28.735
+    },
+    {
+      "w": "the",
+      "start": 28.781,
+      "end": 28.851
+    },
+    {
+      "w": "difference.",
+      "start": 28.886,
+      "end": 29.455
+    },
+    {
+      "w": "On",
+      "start": 30.117,
+      "end": 30.291
+    },
+    {
+      "w": "Vercel's",
+      "start": 30.349,
+      "end": 30.732
+    },
+    {
+      "w": "toolbar",
+      "start": 30.778,
+      "end": 31.254
+    },
+    {
+      "w": "it",
+      "start": 31.336,
+      "end": 31.428
+    },
+    {
+      "w": "matched",
+      "start": 31.51,
+      "end": 31.812
+    },
+    {
+      "w": "417",
+      "start": 31.881,
+      "end": 32.706
+    },
+    {
+      "w": "of",
+      "start": 32.787,
+      "end": 32.857
+    },
+    {
+      "w": "417",
+      "start": 32.973,
+      "end": 33.646
+    },
+    {
+      "w": "frames.",
+      "start": 33.728,
+      "end": 34.285
+    },
+    {
+      "w": "But",
+      "start": 34.773,
+      "end": 34.947
+    },
+    {
+      "w": "don't",
+      "start": 35.016,
+      "end": 35.237
+    },
+    {
+      "w": "stop",
+      "start": 35.272,
+      "end": 35.574
+    },
+    {
+      "w": "at",
+      "start": 35.632,
+      "end": 35.701
+    },
+    {
+      "w": "a",
+      "start": 35.736,
+      "end": 35.759
+    },
+    {
+      "w": "copy.",
+      "start": 35.817,
+      "end": 36.34
+    },
+    {
+      "w": "Ask",
+      "start": 36.7,
+      "end": 36.955
+    },
+    {
+      "w": "it",
+      "start": 37.002,
+      "end": 37.071
+    },
+    {
+      "w": "to",
+      "start": 37.095,
+      "end": 37.141
+    },
+    {
+      "w": "clone",
+      "start": 37.199,
+      "end": 37.501
+    },
+    {
+      "w": "this",
+      "start": 37.547,
+      "end": 37.721
+    },
+    {
+      "w": "and",
+      "start": 37.768,
+      "end": 37.838
+    },
+    {
+      "w": "add",
+      "start": 37.896,
+      "end": 38.128
+    },
+    {
+      "w": "that,",
+      "start": 38.174,
+      "end": 38.523
+    },
+    {
+      "w": "and",
+      "start": 38.639,
+      "end": 38.778
+    },
+    {
+      "w": "build",
+      "start": 38.836,
+      "end": 39.057
+    },
+    {
+      "w": "your",
+      "start": 39.115,
+      "end": 39.254
+    },
+    {
+      "w": "own",
+      "start": 39.312,
+      "end": 39.463
+    },
+    {
+      "w": "on",
+      "start": 39.533,
+      "end": 39.614
+    },
+    {
+      "w": "top.",
+      "start": 39.672,
+      "end": 40.125
+    },
+    {
+      "w": "Comment",
+      "start": 40.485,
+      "end": 40.891
+    },
+    {
+      "w": "ANIMATE",
+      "start": 40.961,
+      "end": 41.437
+    },
+    {
+      "w": "and",
+      "start": 41.471,
+      "end": 41.634
+    },
+    {
+      "w": "I'll",
+      "start": 41.727,
+      "end": 41.913
+    },
+    {
+      "w": "send",
+      "start": 41.959,
+      "end": 42.133
+    },
+    {
+      "w": "you",
+      "start": 42.18,
+      "end": 42.261
+    },
+    {
+      "w": "the",
+      "start": 42.319,
+      "end": 42.389
+    },
+    {
+      "w": "link.",
+      "start": 42.435,
+      "end": 43.004
+    }
+  ]
+}

@@ -1,0 +1,4336 @@
+{
+  "id": "ssd-explainer",
+  "title": "How does an SSD store your files?",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1080,
+    "height": 1920
+  },
+  "durationInFrames": 5479,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "ssd-explainer/vo.mp3",
+    "voVolume": 1.0,
+    "music": {
+      "src": "ssd-explainer/music.wav",
+      "volume": 0.104,
+      "fadeOutFrames": 60
+    },
+    "sfx": [
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 65,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 306,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 350,
+        "volume": 0.4,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 426,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 536,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 601,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 699,
+        "volume": 0.4,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/click.wav",
+        "frame": 890,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "ssd-explainer/sfx/click.wav",
+        "frame": 1100,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "ssd-explainer/sfx/click.wav",
+        "frame": 1129,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 1296,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 1315,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 1348,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 1542,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 1649,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 1719,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 1834,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 2113,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/riser.wav",
+        "frame": 2356,
+        "volume": 0.4,
+        "type": "riser"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 2508,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 2595,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/click.wav",
+        "frame": 2687,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 2865,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/pop.wav",
+        "frame": 2918,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 3117,
+        "volume": 0.4,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 3393,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 3501,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 3647,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 3864,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/tick.wav",
+        "frame": 4176,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 4251,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 4331,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/whoosh.wav",
+        "frame": 4747,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ssd-explainer/sfx/swish.wav",
+        "frame": 5184,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ssd-explainer/sfx/click.wav",
+        "frame": 5204,
+        "volume": 0.4,
+        "type": "click"
+      }
+    ]
+  },
+  "captions": {
+    "y": 0.165,
+    "size": 68,
+    "pages": [
+      {
+        "from": -1,
+        "to": 69,
+        "words": [
+          {
+            "w": "Your",
+            "frame": -1,
+            "style": "normal"
+          },
+          {
+            "w": "SSD",
+            "frame": 12,
+            "style": "normal"
+          },
+          {
+            "w": "has",
+            "frame": 44,
+            "style": "normal"
+          },
+          {
+            "w": "no",
+            "frame": 58,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 70,
+        "to": 128,
+        "words": [
+          {
+            "w": "moving",
+            "frame": 70,
+            "style": "normal"
+          },
+          {
+            "w": "parts.",
+            "frame": 87,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 129,
+        "to": 165,
+        "words": [
+          {
+            "w": "So",
+            "frame": 129,
+            "style": "normal"
+          },
+          {
+            "w": "where",
+            "frame": 141,
+            "style": "normal"
+          },
+          {
+            "w": "do",
+            "frame": 152,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 157,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 166,
+        "to": 266,
+        "words": [
+          {
+            "w": "files",
+            "frame": 166,
+            "style": "normal"
+          },
+          {
+            "w": "actually",
+            "frame": 186,
+            "style": "normal"
+          },
+          {
+            "w": "live?",
+            "frame": 215,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 267,
+        "to": 346,
+        "words": [
+          {
+            "w": "Inside",
+            "frame": 267,
+            "style": "normal"
+          },
+          {
+            "w": "billions",
+            "frame": 295,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 320,
+            "style": "normal"
+          },
+          {
+            "w": "tiny",
+            "frame": 327,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 347,
+        "to": 436,
+        "words": [
+          {
+            "w": "traps",
+            "frame": 347,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 369,
+            "style": "normal"
+          },
+          {
+            "w": "electrons.",
+            "frame": 378,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 452,
+        "to": 491,
+        "words": [
+          {
+            "w": "Let's",
+            "frame": 452,
+            "style": "normal"
+          },
+          {
+            "w": "open",
+            "frame": 465,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 477,
+            "style": "normal"
+          },
+          {
+            "w": "up",
+            "frame": 485,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 492,
+        "to": 532,
+        "words": [
+          {
+            "w": "and",
+            "frame": 492,
+            "style": "normal"
+          },
+          {
+            "w": "follow",
+            "frame": 499,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 513,
+            "style": "normal"
+          },
+          {
+            "w": "single",
+            "frame": 517,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 533,
+        "to": 569,
+        "words": [
+          {
+            "w": "photo",
+            "frame": 533,
+            "style": "select"
+          },
+          {
+            "w": "as",
+            "frame": 549,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 556,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 561,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 570,
+        "to": 617,
+        "words": [
+          {
+            "w": "saved.",
+            "frame": 570,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 636,
+        "to": 690,
+        "words": [
+          {
+            "w": "Every",
+            "frame": 636,
+            "style": "normal"
+          },
+          {
+            "w": "flash",
+            "frame": 653,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 672,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 685,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 691,
+        "to": 786,
+        "words": [
+          {
+            "w": "a",
+            "frame": 691,
+            "style": "normal"
+          },
+          {
+            "w": "grid",
+            "frame": 696,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 714,
+            "style": "normal"
+          },
+          {
+            "w": "cells.",
+            "frame": 721,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 787,
+        "to": 830,
+        "words": [
+          {
+            "w": "Think",
+            "frame": 787,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 800,
+            "style": "normal"
+          },
+          {
+            "w": "each",
+            "frame": 806,
+            "style": "normal"
+          },
+          {
+            "w": "cell",
+            "frame": 816,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 831,
+        "to": 874,
+        "words": [
+          {
+            "w": "as",
+            "frame": 831,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 838,
+            "style": "normal"
+          },
+          {
+            "w": "tiny",
+            "frame": 842,
+            "style": "normal"
+          },
+          {
+            "w": "bucket",
+            "frame": 859,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 875,
+        "to": 959,
+        "words": [
+          {
+            "w": "with",
+            "frame": 875,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 883,
+            "style": "normal"
+          },
+          {
+            "w": "gate.",
+            "frame": 887,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 960,
+        "to": 1015,
+        "words": [
+          {
+            "w": "Push",
+            "frame": 960,
+            "style": "normal"
+          },
+          {
+            "w": "electrons",
+            "frame": 974,
+            "style": "normal"
+          },
+          {
+            "w": "in,",
+            "frame": 999,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1016,
+        "to": 1081,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1016,
+            "style": "normal"
+          },
+          {
+            "w": "they",
+            "frame": 1024,
+            "style": "normal"
+          },
+          {
+            "w": "stay",
+            "frame": 1035,
+            "style": "normal"
+          },
+          {
+            "w": "trapped,",
+            "frame": 1048,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1082,
+        "to": 1125,
+        "words": [
+          {
+            "w": "even",
+            "frame": 1082,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 1095,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1102,
+            "style": "normal"
+          },
+          {
+            "w": "power",
+            "frame": 1109,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1126,
+        "to": 1192,
+        "words": [
+          {
+            "w": "off.",
+            "frame": 1126,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1193,
+        "to": 1242,
+        "words": [
+          {
+            "w": "A",
+            "frame": 1193,
+            "style": "normal"
+          },
+          {
+            "w": "full",
+            "frame": 1204,
+            "style": "normal"
+          },
+          {
+            "w": "bucket",
+            "frame": 1218,
+            "style": "select"
+          },
+          {
+            "w": "and",
+            "frame": 1236,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1243,
+        "to": 1292,
+        "words": [
+          {
+            "w": "an",
+            "frame": 1243,
+            "style": "normal"
+          },
+          {
+            "w": "empty",
+            "frame": 1250,
+            "style": "normal"
+          },
+          {
+            "w": "bucket",
+            "frame": 1264,
+            "style": "select"
+          },
+          {
+            "w": "mean",
+            "frame": 1280,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1293,
+        "to": 1358,
+        "words": [
+          {
+            "w": "one",
+            "frame": 1293,
+            "style": "select"
+          },
+          {
+            "w": "and",
+            "frame": 1305,
+            "style": "normal"
+          },
+          {
+            "w": "zero.",
+            "frame": 1312,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1374,
+        "to": 1433,
+        "words": [
+          {
+            "w": "But",
+            "frame": 1374,
+            "style": "normal"
+          },
+          {
+            "w": "modern",
+            "frame": 1386,
+            "style": "normal"
+          },
+          {
+            "w": "drives",
+            "frame": 1403,
+            "style": "normal"
+          },
+          {
+            "w": "are",
+            "frame": 1423,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1434,
+        "to": 1496,
+        "words": [
+          {
+            "w": "greedy.",
+            "frame": 1434,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1497,
+        "to": 1538,
+        "words": [
+          {
+            "w": "Fill",
+            "frame": 1497,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1509,
+            "style": "normal"
+          },
+          {
+            "w": "bucket",
+            "frame": 1515,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 1530,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1539,
+        "to": 1589,
+        "words": [
+          {
+            "w": "four",
+            "frame": 1539,
+            "style": "select"
+          },
+          {
+            "w": "different",
+            "frame": 1552,
+            "style": "normal"
+          },
+          {
+            "w": "levels,",
+            "frame": 1571,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1590,
+        "to": 1645,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1590,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 1601,
+            "style": "normal"
+          },
+          {
+            "w": "cell",
+            "frame": 1614,
+            "style": "normal"
+          },
+          {
+            "w": "holds",
+            "frame": 1631,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1646,
+        "to": 1715,
+        "words": [
+          {
+            "w": "two",
+            "frame": 1646,
+            "style": "normal"
+          },
+          {
+            "w": "bits.",
+            "frame": 1656,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1716,
+        "to": 1756,
+        "words": [
+          {
+            "w": "Eight",
+            "frame": 1716,
+            "style": "select"
+          },
+          {
+            "w": "levels,",
+            "frame": 1729,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1757,
+        "to": 1830,
+        "words": [
+          {
+            "w": "three",
+            "frame": 1757,
+            "style": "normal"
+          },
+          {
+            "w": "bits.",
+            "frame": 1771,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1831,
+        "to": 1884,
+        "words": [
+          {
+            "w": "Sixteen",
+            "frame": 1831,
+            "style": "select"
+          },
+          {
+            "w": "levels,",
+            "frame": 1855,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1885,
+        "to": 1956,
+        "words": [
+          {
+            "w": "four",
+            "frame": 1885,
+            "style": "select"
+          },
+          {
+            "w": "bits.",
+            "frame": 1897,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1957,
+        "to": 2007,
+        "words": [
+          {
+            "w": "That's",
+            "frame": 1957,
+            "style": "normal"
+          },
+          {
+            "w": "QLC,",
+            "frame": 1973,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2008,
+        "to": 2048,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2008,
+            "style": "normal"
+          },
+          {
+            "w": "it's",
+            "frame": 2017,
+            "style": "normal"
+          },
+          {
+            "w": "why",
+            "frame": 2025,
+            "style": "normal"
+          },
+          {
+            "w": "big",
+            "frame": 2039,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2049,
+        "to": 2129,
+        "words": [
+          {
+            "w": "drives",
+            "frame": 2049,
+            "style": "normal"
+          },
+          {
+            "w": "got",
+            "frame": 2064,
+            "style": "normal"
+          },
+          {
+            "w": "so",
+            "frame": 2074,
+            "style": "normal"
+          },
+          {
+            "w": "cheap.",
+            "frame": 2083,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2148,
+        "to": 2227,
+        "words": [
+          {
+            "w": "Then",
+            "frame": 2148,
+            "style": "normal"
+          },
+          {
+            "w": "engineers",
+            "frame": 2168,
+            "style": "normal"
+          },
+          {
+            "w": "stopped",
+            "frame": 2191,
+            "style": "normal"
+          },
+          {
+            "w": "building",
+            "frame": 2208,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2228,
+        "to": 2289,
+        "words": [
+          {
+            "w": "flat.",
+            "frame": 2228,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2290,
+        "to": 2341,
+        "words": [
+          {
+            "w": "They",
+            "frame": 2290,
+            "style": "normal"
+          },
+          {
+            "w": "stack",
+            "frame": 2302,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2319,
+            "style": "normal"
+          },
+          {
+            "w": "cells",
+            "frame": 2326,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2342,
+        "to": 2398,
+        "words": [
+          {
+            "w": "into",
+            "frame": 2342,
+            "style": "normal"
+          },
+          {
+            "w": "towers,",
+            "frame": 2353,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2399,
+        "to": 2488,
+        "words": [
+          {
+            "w": "over",
+            "frame": 2399,
+            "style": "normal"
+          },
+          {
+            "w": "300",
+            "frame": 2412,
+            "style": "select"
+          },
+          {
+            "w": "layers",
+            "frame": 2441,
+            "style": "normal"
+          },
+          {
+            "w": "high,",
+            "frame": 2456,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2489,
+        "to": 2534,
+        "words": [
+          {
+            "w": "on",
+            "frame": 2489,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 2498,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 2503,
+            "style": "normal"
+          },
+          {
+            "w": "smaller",
+            "frame": 2517,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2535,
+        "to": 2611,
+        "words": [
+          {
+            "w": "than",
+            "frame": 2535,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 2543,
+            "style": "normal"
+          },
+          {
+            "w": "fingernail.",
+            "frame": 2551,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2634,
+        "to": 2683,
+        "words": [
+          {
+            "w": "Your",
+            "frame": 2634,
+            "style": "normal"
+          },
+          {
+            "w": "photo",
+            "frame": 2646,
+            "style": "normal"
+          },
+          {
+            "w": "reaches",
+            "frame": 2661,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2678,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2684,
+        "to": 2717,
+        "words": [
+          {
+            "w": "controller,",
+            "frame": 2684,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2718,
+        "to": 2777,
+        "words": [
+          {
+            "w": "the",
+            "frame": 2718,
+            "style": "normal"
+          },
+          {
+            "w": "drive's",
+            "frame": 2725,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 2746,
+            "style": "normal"
+          },
+          {
+            "w": "tiny",
+            "frame": 2761,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2778,
+        "to": 2852,
+        "words": [
+          {
+            "w": "processor.",
+            "frame": 2778,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2853,
+        "to": 2901,
+        "words": [
+          {
+            "w": "It",
+            "frame": 2853,
+            "style": "normal"
+          },
+          {
+            "w": "splits",
+            "frame": 2862,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2880,
+            "style": "normal"
+          },
+          {
+            "w": "photo",
+            "frame": 2886,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2902,
+        "to": 2954,
+        "words": [
+          {
+            "w": "into",
+            "frame": 2902,
+            "style": "normal"
+          },
+          {
+            "w": "pages,",
+            "frame": 2915,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2955,
+        "to": 3020,
+        "words": [
+          {
+            "w": "spreads",
+            "frame": 2955,
+            "style": "normal"
+          },
+          {
+            "w": "them",
+            "frame": 2975,
+            "style": "normal"
+          },
+          {
+            "w": "across",
+            "frame": 2983,
+            "style": "normal"
+          },
+          {
+            "w": "every",
+            "frame": 3004,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3021,
+        "to": 3073,
+        "words": [
+          {
+            "w": "chip",
+            "frame": 3021,
+            "style": "normal"
+          },
+          {
+            "w": "at",
+            "frame": 3032,
+            "style": "normal"
+          },
+          {
+            "w": "once,",
+            "frame": 3040,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3074,
+        "to": 3113,
+        "words": [
+          {
+            "w": "and",
+            "frame": 3074,
+            "style": "normal"
+          },
+          {
+            "w": "writes",
+            "frame": 3083,
+            "style": "normal"
+          },
+          {
+            "w": "them",
+            "frame": 3098,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 3107,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3114,
+        "to": 3188,
+        "words": [
+          {
+            "w": "parallel.",
+            "frame": 3114,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3189,
+        "to": 3233,
+        "words": [
+          {
+            "w": "That's",
+            "frame": 3189,
+            "style": "normal"
+          },
+          {
+            "w": "how",
+            "frame": 3206,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3214,
+            "style": "normal"
+          },
+          {
+            "w": "fast",
+            "frame": 3219,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3234,
+        "to": 3322,
+        "words": [
+          {
+            "w": "drive",
+            "frame": 3234,
+            "style": "normal"
+          },
+          {
+            "w": "reads",
+            "frame": 3250,
+            "style": "normal"
+          },
+          {
+            "w": "over",
+            "frame": 3270,
+            "style": "normal"
+          },
+          {
+            "w": "7,000",
+            "frame": 3288,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3323,
+        "to": 3403,
+        "words": [
+          {
+            "w": "megabytes",
+            "frame": 3323,
+            "style": "normal"
+          },
+          {
+            "w": "per",
+            "frame": 3348,
+            "style": "normal"
+          },
+          {
+            "w": "second.",
+            "frame": 3359,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3417,
+        "to": 3497,
+        "words": [
+          {
+            "w": "Here's",
+            "frame": 3417,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3431,
+            "style": "normal"
+          },
+          {
+            "w": "catch.",
+            "frame": 3438,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3498,
+        "to": 3544,
+        "words": [
+          {
+            "w": "Every",
+            "frame": 3498,
+            "style": "normal"
+          },
+          {
+            "w": "time",
+            "frame": 3513,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3525,
+            "style": "normal"
+          },
+          {
+            "w": "bucket",
+            "frame": 3529,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3545,
+        "to": 3622,
+        "words": [
+          {
+            "w": "is",
+            "frame": 3545,
+            "style": "normal"
+          },
+          {
+            "w": "emptied",
+            "frame": 3552,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 3572,
+            "style": "normal"
+          },
+          {
+            "w": "refilled,",
+            "frame": 3582,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3623,
+        "to": 3660,
+        "words": [
+          {
+            "w": "its",
+            "frame": 3623,
+            "style": "normal"
+          },
+          {
+            "w": "gate",
+            "frame": 3633,
+            "style": "normal"
+          },
+          {
+            "w": "wears",
+            "frame": 3644,
+            "style": "select"
+          },
+          {
+            "w": "a",
+            "frame": 3658,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3661,
+        "to": 3715,
+        "words": [
+          {
+            "w": "little.",
+            "frame": 3661,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3716,
+        "to": 3760,
+        "words": [
+          {
+            "w": "After",
+            "frame": 3716,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 3732,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 3742,
+            "style": "normal"
+          },
+          {
+            "w": "three",
+            "frame": 3747,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3761,
+        "to": 3813,
+        "words": [
+          {
+            "w": "thousand",
+            "frame": 3761,
+            "style": "select"
+          },
+          {
+            "w": "rewrites,",
+            "frame": 3782,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3814,
+        "to": 3874,
+        "words": [
+          {
+            "w": "it",
+            "frame": 3814,
+            "style": "normal"
+          },
+          {
+            "w": "starts",
+            "frame": 3821,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 3837,
+            "style": "normal"
+          },
+          {
+            "w": "leak.",
+            "frame": 3844,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3881,
+        "to": 3987,
+        "words": [
+          {
+            "w": "So",
+            "frame": 3881,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3895,
+            "style": "normal"
+          },
+          {
+            "w": "controller",
+            "frame": 3901,
+            "style": "normal"
+          },
+          {
+            "w": "cheats.",
+            "frame": 3928,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3988,
+        "to": 4036,
+        "words": [
+          {
+            "w": "It",
+            "frame": 3988,
+            "style": "normal"
+          },
+          {
+            "w": "never",
+            "frame": 3997,
+            "style": "select"
+          },
+          {
+            "w": "rewrites",
+            "frame": 4010,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4031,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4037,
+        "to": 4095,
+        "words": [
+          {
+            "w": "same",
+            "frame": 4037,
+            "style": "normal"
+          },
+          {
+            "w": "cell.",
+            "frame": 4051,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4096,
+        "to": 4150,
+        "words": [
+          {
+            "w": "Every",
+            "frame": 4096,
+            "style": "normal"
+          },
+          {
+            "w": "new",
+            "frame": 4113,
+            "style": "normal"
+          },
+          {
+            "w": "write",
+            "frame": 4122,
+            "style": "normal"
+          },
+          {
+            "w": "goes",
+            "frame": 4138,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4151,
+        "to": 4188,
+        "words": [
+          {
+            "w": "to",
+            "frame": 4151,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4156,
+            "style": "normal"
+          },
+          {
+            "w": "least",
+            "frame": 4163,
+            "style": "select"
+          },
+          {
+            "w": "worn",
+            "frame": 4176,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4189,
+        "to": 4218,
+        "words": [
+          {
+            "w": "cell,",
+            "frame": 4189,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4219,
+        "to": 4263,
+        "words": [
+          {
+            "w": "and",
+            "frame": 4219,
+            "style": "normal"
+          },
+          {
+            "w": "old",
+            "frame": 4230,
+            "style": "normal"
+          },
+          {
+            "w": "data",
+            "frame": 4240,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 4253,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4264,
+        "to": 4309,
+        "words": [
+          {
+            "w": "moved",
+            "frame": 4264,
+            "style": "normal"
+          },
+          {
+            "w": "quietly",
+            "frame": 4278,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 4300,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4304,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4310,
+        "to": 4349,
+        "words": [
+          {
+            "w": "background.",
+            "frame": 4310,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4355,
+        "to": 4403,
+        "words": [
+          {
+            "w": "That's",
+            "frame": 4355,
+            "style": "normal"
+          },
+          {
+            "w": "why",
+            "frame": 4369,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4378,
+            "style": "normal"
+          },
+          {
+            "w": "typical",
+            "frame": 4383,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4404,
+        "to": 4479,
+        "words": [
+          {
+            "w": "one",
+            "frame": 4404,
+            "style": "normal"
+          },
+          {
+            "w": "terabyte",
+            "frame": 4414,
+            "style": "normal"
+          },
+          {
+            "w": "drive",
+            "frame": 4436,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 4469,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4480,
+        "to": 4551,
+        "words": [
+          {
+            "w": "rated",
+            "frame": 4480,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 4493,
+            "style": "normal"
+          },
+          {
+            "w": "600",
+            "frame": 4502,
+            "style": "select"
+          },
+          {
+            "w": "terabytes",
+            "frame": 4528,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4552,
+        "to": 4587,
+        "words": [
+          {
+            "w": "written.",
+            "frame": 4552,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4588,
+        "to": 4668,
+        "words": [
+          {
+            "w": "That's",
+            "frame": 4588,
+            "style": "normal"
+          },
+          {
+            "w": "over",
+            "frame": 4603,
+            "style": "normal"
+          },
+          {
+            "w": "300",
+            "frame": 4615,
+            "style": "select"
+          },
+          {
+            "w": "gigabytes",
+            "frame": 4642,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4669,
+        "to": 4715,
+        "words": [
+          {
+            "w": "every",
+            "frame": 4669,
+            "style": "normal"
+          },
+          {
+            "w": "single",
+            "frame": 4684,
+            "style": "normal"
+          },
+          {
+            "w": "day",
+            "frame": 4699,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 4707,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4716,
+        "to": 4763,
+        "words": [
+          {
+            "w": "five",
+            "frame": 4716,
+            "style": "normal"
+          },
+          {
+            "w": "years.",
+            "frame": 4730,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4768,
+        "to": 4832,
+        "words": [
+          {
+            "w": "So",
+            "frame": 4768,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 4796,
+            "style": "normal"
+          },
+          {
+            "w": "photo",
+            "frame": 4806,
+            "style": "normal"
+          },
+          {
+            "w": "isn't",
+            "frame": 4822,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4833,
+        "to": 4901,
+        "words": [
+          {
+            "w": "stored",
+            "frame": 4833,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 4847,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 4854,
+            "style": "normal"
+          },
+          {
+            "w": "place.",
+            "frame": 4863,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4902,
+        "to": 4959,
+        "words": [
+          {
+            "w": "It's",
+            "frame": 4902,
+            "style": "normal"
+          },
+          {
+            "w": "charge,",
+            "frame": 4914,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4960,
+        "to": 5018,
+        "words": [
+          {
+            "w": "spread",
+            "frame": 4960,
+            "style": "normal"
+          },
+          {
+            "w": "across",
+            "frame": 4974,
+            "style": "normal"
+          },
+          {
+            "w": "towers",
+            "frame": 4991,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 5013,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5019,
+        "to": 5073,
+        "words": [
+          {
+            "w": "tiny",
+            "frame": 5019,
+            "style": "normal"
+          },
+          {
+            "w": "buckets,",
+            "frame": 5033,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5074,
+        "to": 5138,
+        "words": [
+          {
+            "w": "constantly",
+            "frame": 5074,
+            "style": "normal"
+          },
+          {
+            "w": "shuffled",
+            "frame": 5104,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 5124,
+            "style": "normal"
+          },
+          {
+            "w": "keep",
+            "frame": 5129,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5139,
+        "to": 5194,
+        "words": [
+          {
+            "w": "your",
+            "frame": 5139,
+            "style": "normal"
+          },
+          {
+            "w": "drive",
+            "frame": 5147,
+            "style": "normal"
+          },
+          {
+            "w": "alive.",
+            "frame": 5160,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5201,
+        "to": 5290,
+        "words": [
+          {
+            "w": "Follow",
+            "frame": 5201,
+            "style": "select"
+          },
+          {
+            "w": "for",
+            "frame": 5231,
+            "style": "normal"
+          },
+          {
+            "w": "part",
+            "frame": 5241,
+            "style": "normal"
+          },
+          {
+            "w": "two:",
+            "frame": 5254,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5291,
+        "to": 5334,
+        "words": [
+          {
+            "w": "what",
+            "frame": 5291,
+            "style": "normal"
+          },
+          {
+            "w": "happens",
+            "frame": 5302,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 5320,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 5328,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5335,
+        "to": 5478,
+        "words": [
+          {
+            "w": "hit",
+            "frame": 5335,
+            "style": "normal"
+          },
+          {
+            "w": "delete.",
+            "frame": 5344,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 437,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 0.0,
+        "w:your": 0.0,
+        "i:1": 7.5,
+        "w:ssd": 7.5,
+        "i:2": 23.5,
+        "w:has": 23.5,
+        "i:3": 30.5,
+        "w:no": 30.5,
+        "i:4": 36.5,
+        "w:moving": 36.5,
+        "i:5": 45.0,
+        "w:parts": 45.0,
+        "i:6": 66.0,
+        "w:so": 66.0,
+        "i:7": 72.0,
+        "w:where": 72.0,
+        "i:8": 77.5,
+        "w:do": 77.5,
+        "i:9": 80.0,
+        "i:10": 84.5,
+        "w:files": 84.5,
+        "i:11": 94.5,
+        "w:actually": 94.5,
+        "i:12": 109.0,
+        "w:live": 109.0,
+        "i:13": 135.0,
+        "w:inside": 135.0,
+        "i:14": 149.0,
+        "w:billions": 149.0,
+        "i:15": 161.0,
+        "w:of": 161.0,
+        "i:16": 165.0,
+        "w:tiny": 165.0,
+        "i:17": 175.0,
+        "w:traps": 175.0,
+        "i:18": 186.0,
+        "w:for": 186.0,
+        "i:19": 190.5,
+        "w:electrons": 190.5
+      }
+    },
+    {
+      "id": "S02",
+      "from": 437,
+      "to": 618,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:lets": 9.0,
+        "i:1": 15.5,
+        "w:open": 15.5,
+        "i:2": 21.5,
+        "w:one": 21.5,
+        "i:3": 25.5,
+        "w:up": 25.5,
+        "i:4": 29.0,
+        "w:and": 29.0,
+        "i:5": 32.5,
+        "w:follow": 32.5,
+        "i:6": 39.5,
+        "w:a": 39.5,
+        "i:7": 41.5,
+        "w:single": 41.5,
+        "i:8": 49.5,
+        "w:photo": 49.5,
+        "i:9": 57.5,
+        "w:as": 57.5,
+        "i:10": 61.0,
+        "w:it": 61.0,
+        "i:11": 63.5,
+        "w:gets": 63.5,
+        "i:12": 68.0,
+        "w:saved": 68.0
+      }
+    },
+    {
+      "id": "S03",
+      "from": 618,
+      "to": 1359,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "zoom",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.5,
+        "w:every": 10.5,
+        "i:1": 19.0,
+        "w:flash": 19.0,
+        "i:2": 28.5,
+        "w:chip": 28.5,
+        "i:3": 35.0,
+        "w:is": 35.0,
+        "i:4": 38.0,
+        "w:a": 38.0,
+        "i:5": 40.5,
+        "w:grid": 40.5,
+        "i:6": 49.5,
+        "w:of": 49.5,
+        "i:7": 53.0,
+        "w:cells": 53.0,
+        "i:8": 86.0,
+        "w:think": 86.0,
+        "i:9": 92.5,
+        "i:10": 95.5,
+        "w:each": 95.5,
+        "i:11": 100.5,
+        "w:cell": 100.5,
+        "i:12": 108.0,
+        "w:as": 108.0,
+        "i:13": 111.5,
+        "i:14": 113.5,
+        "w:tiny": 113.5,
+        "i:15": 122.0,
+        "w:bucket": 122.0,
+        "i:16": 130.0,
+        "w:with": 130.0,
+        "i:17": 134.0,
+        "i:18": 136.0,
+        "w:gate": 136.0,
+        "i:19": 172.5,
+        "w:push": 172.5,
+        "i:20": 179.5,
+        "w:electrons": 179.5,
+        "i:21": 192.0,
+        "w:in": 192.0,
+        "i:22": 200.5,
+        "w:and": 200.5,
+        "i:23": 205.0,
+        "w:they": 205.0,
+        "i:24": 210.0,
+        "w:stay": 210.0,
+        "i:25": 216.5,
+        "w:trapped": 216.5,
+        "i:26": 233.5,
+        "w:even": 233.5,
+        "i:27": 240.0,
+        "i:28": 244.0,
+        "w:the": 244.0,
+        "i:29": 247.0,
+        "w:power": 247.0,
+        "i:30": 255.5,
+        "w:off": 255.5,
+        "i:31": 289.0,
+        "i:32": 294.5,
+        "w:full": 294.5,
+        "i:33": 301.5,
+        "i:34": 310.5,
+        "i:35": 314.0,
+        "w:an": 314.0,
+        "i:36": 317.0,
+        "w:empty": 317.0,
+        "i:37": 324.5,
+        "i:38": 332.5,
+        "w:mean": 332.5,
+        "i:39": 339.0,
+        "w:one": 339.0,
+        "i:40": 345.0,
+        "i:41": 348.5,
+        "w:zero": 348.5
+      }
+    },
+    {
+      "id": "S04",
+      "from": 1359,
+      "to": 2130,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:but": 9.0,
+        "i:1": 15.0,
+        "w:modern": 15.0,
+        "i:2": 23.5,
+        "w:drives": 23.5,
+        "i:3": 33.5,
+        "w:are": 33.5,
+        "i:4": 39.0,
+        "w:greedy": 39.0,
+        "i:5": 70.5,
+        "w:fill": 70.5,
+        "i:6": 76.5,
+        "w:the": 76.5,
+        "i:7": 79.5,
+        "w:bucket": 79.5,
+        "i:8": 87.0,
+        "w:to": 87.0,
+        "i:9": 91.5,
+        "w:four": 91.5,
+        "i:10": 98.0,
+        "w:different": 98.0,
+        "i:11": 107.5,
+        "w:levels": 107.5,
+        "i:12": 117.0,
+        "w:and": 117.0,
+        "i:13": 122.5,
+        "w:one": 122.5,
+        "i:14": 129.0,
+        "w:cell": 129.0,
+        "i:15": 137.5,
+        "w:holds": 137.5,
+        "i:16": 145.0,
+        "w:two": 145.0,
+        "i:17": 150.0,
+        "w:bits": 150.0,
+        "i:18": 180.0,
+        "w:eight": 180.0,
+        "i:19": 186.5,
+        "i:20": 200.5,
+        "w:three": 200.5,
+        "i:21": 207.5,
+        "i:22": 237.5,
+        "w:sixteen": 237.5,
+        "i:23": 249.5,
+        "i:24": 264.5,
+        "i:25": 270.5,
+        "i:26": 300.5,
+        "w:thats": 300.5,
+        "i:27": 308.5,
+        "w:qlc": 308.5,
+        "i:28": 326.0,
+        "i:29": 330.5,
+        "w:its": 330.5,
+        "i:30": 334.5,
+        "w:why": 334.5,
+        "i:31": 341.5,
+        "w:big": 341.5,
+        "i:32": 346.5,
+        "i:33": 354.0,
+        "w:got": 354.0,
+        "i:34": 359.0,
+        "w:so": 359.0,
+        "i:35": 363.5,
+        "w:cheap": 363.5
+      }
+    },
+    {
+      "id": "S05",
+      "from": 2130,
+      "to": 2612,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.5,
+        "w:then": 10.5,
+        "i:1": 20.5,
+        "w:engineers": 20.5,
+        "i:2": 32.0,
+        "w:stopped": 32.0,
+        "i:3": 40.5,
+        "w:building": 40.5,
+        "i:4": 50.0,
+        "w:flat": 50.0,
+        "i:5": 81.5,
+        "w:they": 81.5,
+        "i:6": 87.5,
+        "w:stack": 87.5,
+        "i:7": 96.0,
+        "w:the": 96.0,
+        "i:8": 99.5,
+        "w:cells": 99.5,
+        "i:9": 107.5,
+        "w:into": 107.5,
+        "i:10": 113.0,
+        "w:towers": 113.0,
+        "i:11": 136.0,
+        "w:over": 136.0,
+        "i:12": 142.5,
+        "w:300": 142.5,
+        "i:13": 157.0,
+        "w:layers": 157.0,
+        "i:14": 164.5,
+        "w:high": 164.5,
+        "i:15": 181.0,
+        "w:on": 181.0,
+        "i:16": 185.5,
+        "w:a": 185.5,
+        "i:17": 188.0,
+        "w:chip": 188.0,
+        "i:18": 195.0,
+        "w:smaller": 195.0,
+        "i:19": 204.0,
+        "w:than": 204.0,
+        "i:20": 208.0,
+        "w:your": 208.0,
+        "i:21": 212.0,
+        "w:fingernail": 212.0
+      }
+    },
+    {
+      "id": "S06",
+      "from": 2612,
+      "to": 3404,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.5,
+        "w:your": 12.5,
+        "i:1": 18.5,
+        "w:photo": 18.5,
+        "i:2": 26.0,
+        "w:reaches": 26.0,
+        "i:3": 34.5,
+        "w:the": 34.5,
+        "i:4": 37.5,
+        "w:controller": 37.5,
+        "i:5": 54.5,
+        "i:6": 58.0,
+        "w:drives": 58.0,
+        "i:7": 68.5,
+        "w:own": 68.5,
+        "i:8": 76.0,
+        "w:tiny": 76.0,
+        "i:9": 84.5,
+        "w:processor": 84.5,
+        "i:10": 122.0,
+        "w:it": 122.0,
+        "i:11": 126.5,
+        "w:splits": 126.5,
+        "i:12": 135.5,
+        "i:13": 138.5,
+        "i:14": 147.0,
+        "w:into": 147.0,
+        "i:15": 153.0,
+        "w:pages": 153.0,
+        "i:16": 173.0,
+        "w:spreads": 173.0,
+        "i:17": 183.0,
+        "w:them": 183.0,
+        "i:18": 187.0,
+        "w:across": 187.0,
+        "i:19": 197.5,
+        "w:every": 197.5,
+        "i:20": 206.0,
+        "w:chip": 206.0,
+        "i:21": 211.5,
+        "w:at": 211.5,
+        "i:22": 215.5,
+        "w:once": 215.5,
+        "i:23": 232.5,
+        "w:and": 232.5,
+        "i:24": 237.0,
+        "w:writes": 237.0,
+        "i:25": 244.5,
+        "i:26": 249.0,
+        "w:in": 249.0,
+        "i:27": 252.5,
+        "w:parallel": 252.5,
+        "i:28": 290.0,
+        "w:thats": 290.0,
+        "i:29": 298.5,
+        "w:how": 298.5,
+        "i:30": 302.5,
+        "w:a": 302.5,
+        "i:31": 305.0,
+        "w:fast": 305.0,
+        "i:32": 312.5,
+        "w:drive": 312.5,
+        "i:33": 320.5,
+        "w:reads": 320.5,
+        "i:34": 330.5,
+        "w:over": 330.5,
+        "i:35": 339.5,
+        "w:7000": 339.5,
+        "i:36": 357.0,
+        "w:megabytes": 357.0,
+        "i:37": 369.5,
+        "w:per": 369.5,
+        "i:38": 375.0,
+        "w:second": 375.0
+      }
+    },
+    {
+      "id": "S07",
+      "from": 3404,
+      "to": 3875,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.0,
+        "w:heres": 8.0,
+        "i:1": 15.0,
+        "w:the": 15.0,
+        "i:2": 18.5,
+        "w:catch": 18.5,
+        "i:3": 48.5,
+        "w:every": 48.5,
+        "i:4": 56.0,
+        "w:time": 56.0,
+        "i:5": 62.0,
+        "w:a": 62.0,
+        "i:6": 64.0,
+        "w:bucket": 64.0,
+        "i:7": 72.0,
+        "w:is": 72.0,
+        "i:8": 75.5,
+        "w:emptied": 75.5,
+        "i:9": 85.5,
+        "w:and": 85.5,
+        "i:10": 90.5,
+        "w:refilled": 90.5,
+        "i:11": 111.0,
+        "w:its": 111.0,
+        "i:12": 116.0,
+        "w:gate": 116.0,
+        "i:13": 121.5,
+        "w:wears": 121.5,
+        "i:14": 128.5,
+        "i:15": 130.0,
+        "w:little": 130.0,
+        "i:16": 157.5,
+        "w:after": 157.5,
+        "i:17": 165.5,
+        "w:one": 165.5,
+        "i:18": 170.5,
+        "w:to": 170.5,
+        "i:19": 173.0,
+        "w:three": 173.0,
+        "i:20": 180.0,
+        "w:thousand": 180.0,
+        "i:21": 190.5,
+        "w:rewrites": 190.5,
+        "i:22": 206.5,
+        "w:it": 206.5,
+        "i:23": 210.0,
+        "w:starts": 210.0,
+        "i:24": 218.0,
+        "i:25": 221.5,
+        "w:leak": 221.5
+      }
+    },
+    {
+      "id": "S08",
+      "from": 3875,
+      "to": 4350,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 4.5,
+        "w:so": 4.5,
+        "i:1": 11.5,
+        "w:the": 11.5,
+        "i:2": 14.5,
+        "w:controller": 14.5,
+        "i:3": 28.0,
+        "w:cheats": 28.0,
+        "i:4": 58.0,
+        "w:it": 58.0,
+        "i:5": 62.5,
+        "w:never": 62.5,
+        "i:6": 69.0,
+        "w:rewrites": 69.0,
+        "i:7": 79.5,
+        "i:8": 82.5,
+        "w:same": 82.5,
+        "i:9": 89.5,
+        "w:cell": 89.5,
+        "i:10": 112.5,
+        "w:every": 112.5,
+        "i:11": 120.5,
+        "w:new": 120.5,
+        "i:12": 125.0,
+        "w:write": 125.0,
+        "i:13": 133.0,
+        "w:goes": 133.0,
+        "i:14": 139.5,
+        "w:to": 139.5,
+        "i:15": 142.0,
+        "i:16": 145.5,
+        "w:least": 145.5,
+        "i:17": 152.0,
+        "w:worn": 152.0,
+        "i:18": 158.5,
+        "i:19": 173.5,
+        "w:and": 173.5,
+        "i:20": 179.0,
+        "w:old": 179.0,
+        "i:21": 184.0,
+        "w:data": 184.0,
+        "i:22": 190.5,
+        "w:gets": 190.5,
+        "i:23": 196.0,
+        "w:moved": 196.0,
+        "i:24": 203.0,
+        "w:quietly": 203.0,
+        "i:25": 214.0,
+        "w:in": 214.0,
+        "i:26": 216.0,
+        "i:27": 219.0,
+        "w:background": 219.0
+      }
+    },
+    {
+      "id": "S09",
+      "from": 4350,
+      "to": 4764,
+      "bg": "light",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 24,
+        "origin": [
+          0.5,
+          0.45
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 4.0,
+        "w:thats": 4.0,
+        "i:1": 11.0,
+        "w:why": 11.0,
+        "i:2": 15.5,
+        "w:a": 15.5,
+        "i:3": 18.0,
+        "w:typical": 18.0,
+        "i:4": 28.5,
+        "w:one": 28.5,
+        "i:5": 33.5,
+        "w:terabyte": 33.5,
+        "i:6": 44.5,
+        "w:drive": 44.5,
+        "i:7": 61.0,
+        "w:is": 61.0,
+        "i:8": 66.5,
+        "w:rated": 66.5,
+        "i:9": 73.0,
+        "w:for": 73.0,
+        "i:10": 77.5,
+        "w:600": 77.5,
+        "i:11": 90.5,
+        "w:terabytes": 90.5,
+        "i:12": 102.5,
+        "w:written": 102.5,
+        "i:13": 120.5,
+        "i:14": 128.0,
+        "w:over": 128.0,
+        "i:15": 134.0,
+        "w:300": 134.0,
+        "i:16": 147.5,
+        "w:gigabytes": 147.5,
+        "i:17": 161.0,
+        "w:every": 161.0,
+        "i:18": 168.5,
+        "w:single": 168.5,
+        "i:19": 176.0,
+        "w:day": 176.0,
+        "i:20": 180.0,
+        "i:21": 184.5,
+        "w:five": 184.5,
+        "i:22": 191.5,
+        "w:years": 191.5
+      }
+    },
+    {
+      "id": "S10",
+      "from": 4764,
+      "to": 5195,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "zoom",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 3.5,
+        "w:so": 3.5,
+        "i:1": 17.5,
+        "w:your": 17.5,
+        "i:2": 22.5,
+        "w:photo": 22.5,
+        "i:3": 30.5,
+        "w:isnt": 30.5,
+        "i:4": 36.0,
+        "w:stored": 36.0,
+        "i:5": 43.0,
+        "w:in": 43.0,
+        "i:6": 46.5,
+        "w:one": 46.5,
+        "i:7": 51.0,
+        "w:place": 51.0,
+        "i:8": 70.5,
+        "w:its": 70.5,
+        "i:9": 76.5,
+        "w:charge": 76.5,
+        "i:10": 99.5,
+        "w:spread": 99.5,
+        "i:11": 106.5,
+        "w:across": 106.5,
+        "i:12": 115.0,
+        "w:towers": 115.0,
+        "i:13": 126.0,
+        "w:of": 126.0,
+        "i:14": 129.0,
+        "w:tiny": 129.0,
+        "i:15": 136.0,
+        "w:buckets": 136.0,
+        "i:16": 157.0,
+        "w:constantly": 157.0,
+        "i:17": 171.5,
+        "w:shuffled": 171.5,
+        "i:18": 181.5,
+        "w:to": 181.5,
+        "i:19": 184.0,
+        "w:keep": 184.0,
+        "i:20": 189.0,
+        "i:21": 193.0,
+        "w:drive": 193.0,
+        "i:22": 199.5,
+        "w:alive": 199.5
+      }
+    },
+    {
+      "id": "S11",
+      "from": 5195,
+      "to": 5479,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 4.5,
+        "w:follow": 4.5,
+        "i:1": 19.5,
+        "w:for": 19.5,
+        "i:2": 24.5,
+        "w:part": 24.5,
+        "i:3": 31.0,
+        "w:two": 31.0,
+        "i:4": 49.5,
+        "w:what": 49.5,
+        "i:5": 55.0,
+        "w:happens": 55.0,
+        "i:6": 64.0,
+        "w:when": 64.0,
+        "i:7": 68.0,
+        "w:you": 68.0,
+        "i:8": 71.5,
+        "w:hit": 71.5,
+        "i:9": 76.0,
+        "w:delete": 76.0
+      }
+    }
+  ],
+  "style": "explainer",
+  "presenter": {
+    "enter": 90.0,
+    "cues": [
+      {
+        "t": 90.0,
+        "pose": "wave"
+      },
+      {
+        "t": 132.0,
+        "pose": "arms_wide"
+      },
+      {
+        "t": 172.0,
+        "pose": "hands_on_cheeks"
+      },
+      {
+        "t": 224.5,
+        "pose": "count_1"
+      },
+      {
+        "t": 265.0,
+        "pose": "hold_prop"
+      },
+      {
+        "t": 316.5,
+        "pose": "open_palm"
+      },
+      {
+        "t": 392.0,
+        "pose": "point_up_left"
+      },
+      {
+        "t": 414.0,
+        "pose": "pinch"
+      },
+      {
+        "t": 478.5,
+        "pose": "level_hand"
+      },
+      {
+        "t": 539.5,
+        "pose": "point_up_right"
+      },
+      {
+        "t": 595.0,
+        "pose": "listen"
+      },
+      {
+        "t": 645.0,
+        "pose": "count_1"
+      },
+      {
+        "t": 685.5,
+        "pose": "point_left"
+      },
+      {
+        "t": 747.0,
+        "pose": "chop"
+      },
+      {
+        "t": 768.0,
+        "pose": "count_4"
+      },
+      {
+        "t": 793.5,
+        "pose": "count_1"
+      },
+      {
+        "t": 821.5,
+        "pose": "count_2"
+      },
+      {
+        "t": 877.0,
+        "pose": "count_3"
+      },
+      {
+        "t": 914.0,
+        "pose": "point_right"
+      },
+      {
+        "t": 977.0,
+        "pose": "open_palm"
+      },
+      {
+        "t": 1002.5,
+        "pose": "chin_rub"
+      },
+      {
+        "t": 1072.5,
+        "pose": "point_up_left"
+      },
+      {
+        "t": 1112.5,
+        "pose": "level_hand"
+      },
+      {
+        "t": 1169.5,
+        "pose": "arms_wide"
+      },
+      {
+        "t": 1243.0,
+        "pose": "pinch"
+      },
+      {
+        "t": 1266.0,
+        "pose": "point_viewer"
+      },
+      {
+        "t": 1340.5,
+        "pose": "point_up_right"
+      },
+      {
+        "t": 1357.5,
+        "pose": "pinch"
+      },
+      {
+        "t": 1425.0,
+        "pose": "listen"
+      },
+      {
+        "t": 1476.0,
+        "pose": "point_left"
+      },
+      {
+        "t": 1535.5,
+        "pose": "chop"
+      },
+      {
+        "t": 1593.0,
+        "pose": "chin_rub"
+      },
+      {
+        "t": 1660.0,
+        "pose": "count_2"
+      },
+      {
+        "t": 1707.0,
+        "pose": "stop_palm"
+      },
+      {
+        "t": 1747.5,
+        "pose": "wrist_tap"
+      },
+      {
+        "t": 1810.0,
+        "pose": "point_right"
+      },
+      {
+        "t": 1829.0,
+        "pose": "pinch"
+      },
+      {
+        "t": 1856.5,
+        "pose": "count_1"
+      },
+      {
+        "t": 1905.5,
+        "pose": "grimace"
+      },
+      {
+        "t": 1939.0,
+        "pose": "wink"
+      },
+      {
+        "t": 1992.5,
+        "pose": "stop_palm"
+      },
+      {
+        "t": 2046.5,
+        "pose": "open_palm"
+      },
+      {
+        "t": 2093.0,
+        "pose": "point_up_left"
+      },
+      {
+        "t": 2130.5,
+        "pose": "level_hand"
+      },
+      {
+        "t": 2176.0,
+        "pose": "chin_rub"
+      },
+      {
+        "t": 2200.5,
+        "pose": "count_1"
+      },
+      {
+        "t": 2238.5,
+        "pose": "point_up_right"
+      },
+      {
+        "t": 2274.5,
+        "pose": "listen"
+      },
+      {
+        "t": 2333.0,
+        "pose": "point_left"
+      },
+      {
+        "t": 2356.5,
+        "pose": "count_5"
+      },
+      {
+        "t": 2382.5,
+        "pose": "point_viewer"
+      },
+      {
+        "t": 2415.0,
+        "pose": "count_1"
+      },
+      {
+        "t": 2478.5,
+        "pose": "chop"
+      },
+      {
+        "t": 2508.0,
+        "pose": "pinch"
+      },
+      {
+        "t": 2568.0,
+        "pose": "point_viewer"
+      },
+      {
+        "t": 2599.0,
+        "pose": "count_2"
+      },
+      {
+        "t": 2644.0,
+        "pose": "chin_rub"
+      },
+      {
+        "t": 2666.0,
+        "pose": "point_viewer"
+      },
+      {
+        "t": 2671.5,
+        "pose": "wave"
+      }
+    ],
+    "anchor": "center",
+    "widthFrac": 0.56,
+    "talk": [
+      [
+        0.0,
+        6.5
+      ],
+      [
+        7.5,
+        19.0
+      ],
+      [
+        23.5,
+        27.0
+      ],
+      [
+        30.5,
+        34.0
+      ],
+      [
+        36.5,
+        43.0
+      ],
+      [
+        45.0,
+        59.0
+      ],
+      [
+        66.0,
+        70.5
+      ],
+      [
+        72.0,
+        77.0
+      ],
+      [
+        77.5,
+        79.0
+      ],
+      [
+        80.0,
+        83.0
+      ],
+      [
+        84.5,
+        92.5
+      ],
+      [
+        94.5,
+        107.5
+      ],
+      [
+        109.0,
+        119.0
+      ],
+      [
+        135.0,
+        147.5
+      ],
+      [
+        149.0,
+        160.0
+      ],
+      [
+        161.0,
+        163.5
+      ],
+      [
+        165.0,
+        173.5
+      ],
+      [
+        175.0,
+        185.0
+      ],
+      [
+        186.0,
+        189.0
+      ],
+      [
+        190.5,
+        209.5
+      ],
+      [
+        227.5,
+        233.0
+      ],
+      [
+        234.0,
+        238.5
+      ],
+      [
+        240.0,
+        243.0
+      ],
+      [
+        244.0,
+        246.0
+      ],
+      [
+        247.5,
+        249.5
+      ],
+      [
+        251.0,
+        256.5
+      ],
+      [
+        258.0,
+        259.0
+      ],
+      [
+        260.0,
+        267.0
+      ],
+      [
+        268.0,
+        274.5
+      ],
+      [
+        276.0,
+        278.5
+      ],
+      [
+        279.5,
+        281.0
+      ],
+      [
+        282.0,
+        286.0
+      ],
+      [
+        286.5,
+        298.5
+      ],
+      [
+        319.5,
+        326.5
+      ],
+      [
+        328.0,
+        336.5
+      ],
+      [
+        337.5,
+        342.5
+      ],
+      [
+        344.0,
+        346.0
+      ],
+      [
+        347.0,
+        348.0
+      ],
+      [
+        349.5,
+        357.5
+      ],
+      [
+        358.5,
+        360.0
+      ],
+      [
+        362.0,
+        377.0
+      ],
+      [
+        395.0,
+        400.5
+      ],
+      [
+        401.5,
+        403.5
+      ],
+      [
+        404.5,
+        408.5
+      ],
+      [
+        409.5,
+        415.5
+      ],
+      [
+        417.0,
+        419.0
+      ],
+      [
+        420.5,
+        421.0
+      ],
+      [
+        422.5,
+        429.5
+      ],
+      [
+        431.0,
+        438.0
+      ],
+      [
+        439.0,
+        442.0
+      ],
+      [
+        443.0,
+        443.5
+      ],
+      [
+        445.0,
+        456.5
+      ],
+      [
+        481.5,
+        487.5
+      ],
+      [
+        488.5,
+        500.0
+      ],
+      [
+        501.0,
+        508.0
+      ],
+      [
+        509.5,
+        512.5
+      ],
+      [
+        514.0,
+        517.0
+      ],
+      [
+        519.0,
+        524.0
+      ],
+      [
+        525.5,
+        537.0
+      ],
+      [
+        542.5,
+        548.0
+      ],
+      [
+        549.0,
+        552.0
+      ],
+      [
+        553.0,
+        555.0
+      ],
+      [
+        556.0,
+        563.0
+      ],
+      [
+        564.5,
+        573.5
+      ],
+      [
+        598.0,
+        600.5
+      ],
+      [
+        603.5,
+        609.0
+      ],
+      [
+        610.5,
+        618.0
+      ],
+      [
+        619.5,
+        622.0
+      ],
+      [
+        623.0,
+        625.0
+      ],
+      [
+        626.0,
+        632.0
+      ],
+      [
+        633.5,
+        640.5
+      ],
+      [
+        641.5,
+        645.5
+      ],
+      [
+        648.0,
+        653.0
+      ],
+      [
+        654.0,
+        656.0
+      ],
+      [
+        657.5,
+        670.5
+      ],
+      [
+        688.5,
+        693.0
+      ],
+      [
+        694.5,
+        702.0
+      ],
+      [
+        703.0,
+        711.5
+      ],
+      [
+        713.0,
+        717.5
+      ],
+      [
+        718.5,
+        732.0
+      ],
+      [
+        750.0,
+        755.0
+      ],
+      [
+        756.0,
+        758.0
+      ],
+      [
+        759.0,
+        765.5
+      ],
+      [
+        766.5,
+        768.5
+      ],
+      [
+        771.0,
+        776.5
+      ],
+      [
+        777.5,
+        786.0
+      ],
+      [
+        787.0,
+        796.0
+      ],
+      [
+        796.5,
+        799.5
+      ],
+      [
+        802.0,
+        807.5
+      ],
+      [
+        808.5,
+        815.0
+      ],
+      [
+        817.0,
+        823.5
+      ],
+      [
+        824.5,
+        828.5
+      ],
+      [
+        829.5,
+        841.5
+      ],
+      [
+        859.5,
+        865.0
+      ],
+      [
+        866.0,
+        877.5
+      ],
+      [
+        880.0,
+        886.0
+      ],
+      [
+        887.0,
+        899.0
+      ],
+      [
+        917.0,
+        928.0
+      ],
+      [
+        929.0,
+        940.5
+      ],
+      [
+        944.0,
+        949.0
+      ],
+      [
+        950.0,
+        962.0
+      ],
+      [
+        980.0,
+        987.0
+      ],
+      [
+        988.0,
+        1004.5
+      ],
+      [
+        1005.5,
+        1009.0
+      ],
+      [
+        1010.0,
+        1013.0
+      ],
+      [
+        1014.0,
+        1017.5
+      ],
+      [
+        1021.0,
+        1025.0
+      ],
+      [
+        1026.0,
+        1032.5
+      ],
+      [
+        1033.5,
+        1037.0
+      ],
+      [
+        1038.5,
+        1041.5
+      ],
+      [
+        1043.0,
+        1054.5
+      ],
+      [
+        1075.5,
+        1082.0
+      ],
+      [
+        1085.5,
+        1096.0
+      ],
+      [
+        1097.0,
+        1104.5
+      ],
+      [
+        1105.5,
+        1113.5
+      ],
+      [
+        1115.0,
+        1128.5
+      ],
+      [
+        1146.5,
+        1151.0
+      ],
+      [
+        1152.5,
+        1160.0
+      ],
+      [
+        1161.0,
+        1163.5
+      ],
+      [
+        1164.5,
+        1171.5
+      ],
+      [
+        1172.5,
+        1176.0
+      ],
+      [
+        1178.0,
+        1195.5
+      ],
+      [
+        1201.0,
+        1206.0
+      ],
+      [
+        1207.5,
+        1221.0
+      ],
+      [
+        1222.0,
+        1228.0
+      ],
+      [
+        1229.5,
+        1240.5
+      ],
+      [
+        1246.0,
+        1249.5
+      ],
+      [
+        1250.5,
+        1251.5
+      ],
+      [
+        1253.0,
+        1258.5
+      ],
+      [
+        1260.0,
+        1268.0
+      ],
+      [
+        1269.0,
+        1272.0
+      ],
+      [
+        1273.0,
+        1276.0
+      ],
+      [
+        1277.0,
+        1293.5
+      ],
+      [
+        1318.5,
+        1323.0
+      ],
+      [
+        1324.5,
+        1330.5
+      ],
+      [
+        1332.0,
+        1339.5
+      ],
+      [
+        1340.5,
+        1342.5
+      ],
+      [
+        1343.5,
+        1359.0
+      ],
+      [
+        1360.5,
+        1363.0
+      ],
+      [
+        1364.0,
+        1372.5
+      ],
+      [
+        1374.5,
+        1380.5
+      ],
+      [
+        1382.0,
+        1389.0
+      ],
+      [
+        1390.5,
+        1410.0
+      ],
+      [
+        1428.0,
+        1431.5
+      ],
+      [
+        1432.5,
+        1440.5
+      ],
+      [
+        1441.5,
+        1443.5
+      ],
+      [
+        1444.5,
+        1451.0
+      ],
+      [
+        1453.0,
+        1457.0
+      ],
+      [
+        1459.0,
+        1474.5
+      ],
+      [
+        1479.0,
+        1488.0
+      ],
+      [
+        1489.0,
+        1492.0
+      ],
+      [
+        1493.0,
+        1501.5
+      ],
+      [
+        1503.5,
+        1511.0
+      ],
+      [
+        1512.0,
+        1516.5
+      ],
+      [
+        1517.5,
+        1519.5
+      ],
+      [
+        1521.5,
+        1532.0
+      ],
+      [
+        1538.5,
+        1541.5
+      ],
+      [
+        1543.0,
+        1549.5
+      ],
+      [
+        1550.5,
+        1554.0
+      ],
+      [
+        1555.0,
+        1557.0
+      ],
+      [
+        1558.5,
+        1574.5
+      ],
+      [
+        1596.0,
+        1603.5
+      ],
+      [
+        1604.5,
+        1607.5
+      ],
+      [
+        1608.5,
+        1609.0
+      ],
+      [
+        1611.0,
+        1618.0
+      ],
+      [
+        1618.5,
+        1625.5
+      ],
+      [
+        1626.5,
+        1634.0
+      ],
+      [
+        1636.5,
+        1642.0
+      ],
+      [
+        1645.5,
+        1661.5
+      ],
+      [
+        1663.0,
+        1674.0
+      ],
+      [
+        1675.5,
+        1679.0
+      ],
+      [
+        1681.0,
+        1694.0
+      ],
+      [
+        1710.0,
+        1716.0
+      ],
+      [
+        1717.0,
+        1719.0
+      ],
+      [
+        1720.5,
+        1732.5
+      ],
+      [
+        1750.5,
+        1757.0
+      ],
+      [
+        1758.0,
+        1762.5
+      ],
+      [
+        1764.0,
+        1764.5
+      ],
+      [
+        1766.0,
+        1773.0
+      ],
+      [
+        1774.0,
+        1776.0
+      ],
+      [
+        1777.5,
+        1786.0
+      ],
+      [
+        1787.5,
+        1791.0
+      ],
+      [
+        1792.5,
+        1808.5
+      ],
+      [
+        1813.0,
+        1817.0
+      ],
+      [
+        1818.0,
+        1822.5
+      ],
+      [
+        1823.5,
+        1829.5
+      ],
+      [
+        1830.5,
+        1831.0
+      ],
+      [
+        1832.0,
+        1841.5
+      ],
+      [
+        1859.5,
+        1866.0
+      ],
+      [
+        1867.5,
+        1872.0
+      ],
+      [
+        1872.5,
+        1874.0
+      ],
+      [
+        1875.0,
+        1881.0
+      ],
+      [
+        1882.0,
+        1891.0
+      ],
+      [
+        1892.5,
+        1906.5
+      ],
+      [
+        1908.5,
+        1911.0
+      ],
+      [
+        1912.0,
+        1919.0
+      ],
+      [
+        1920.0,
+        1922.0
+      ],
+      [
+        1923.5,
+        1933.5
+      ],
+      [
+        1942.0,
+        1947.5
+      ],
+      [
+        1949.0,
+        1951.0
+      ],
+      [
+        1952.0,
+        1964.0
+      ],
+      [
+        1965.5,
+        1979.5
+      ],
+      [
+        1995.5,
+        1998.5
+      ],
+      [
+        2000.0,
+        2005.0
+      ],
+      [
+        2006.5,
+        2016.0
+      ],
+      [
+        2017.0,
+        2019.0
+      ],
+      [
+        2020.0,
+        2026.0
+      ],
+      [
+        2027.0,
+        2039.5
+      ],
+      [
+        2050.0,
+        2056.0
+      ],
+      [
+        2058.0,
+        2061.0
+      ],
+      [
+        2062.5,
+        2069.0
+      ],
+      [
+        2070.5,
+        2076.0
+      ],
+      [
+        2077.0,
+        2078.5
+      ],
+      [
+        2079.5,
+        2082.0
+      ],
+      [
+        2083.0,
+        2088.0
+      ],
+      [
+        2089.5,
+        2095.0
+      ],
+      [
+        2096.0,
+        2106.5
+      ],
+      [
+        2111.0,
+        2114.5
+      ],
+      [
+        2116.5,
+        2120.0
+      ],
+      [
+        2121.5,
+        2126.5
+      ],
+      [
+        2128.0,
+        2132.5
+      ],
+      [
+        2133.5,
+        2139.0
+      ],
+      [
+        2140.5,
+        2150.5
+      ],
+      [
+        2151.5,
+        2153.0
+      ],
+      [
+        2153.5,
+        2155.5
+      ],
+      [
+        2156.5,
+        2170.5
+      ],
+      [
+        2179.0,
+        2185.0
+      ],
+      [
+        2186.0,
+        2189.0
+      ],
+      [
+        2190.5,
+        2191.5
+      ],
+      [
+        2193.0,
+        2201.0
+      ],
+      [
+        2203.5,
+        2207.5
+      ],
+      [
+        2208.5,
+        2219.0
+      ],
+      [
+        2219.5,
+        2230.0
+      ],
+      [
+        2236.0,
+        2240.0
+      ],
+      [
+        2241.5,
+        2247.0
+      ],
+      [
+        2248.0,
+        2250.5
+      ],
+      [
+        2252.5,
+        2264.5
+      ],
+      [
+        2265.5,
+        2276.5
+      ],
+      [
+        2277.5,
+        2288.0
+      ],
+      [
+        2295.5,
+        2302.0
+      ],
+      [
+        2303.0,
+        2307.0
+      ],
+      [
+        2309.0,
+        2321.0
+      ],
+      [
+        2322.5,
+        2334.0
+      ],
+      [
+        2336.0,
+        2342.5
+      ],
+      [
+        2343.5,
+        2350.0
+      ],
+      [
+        2351.0,
+        2354.0
+      ],
+      [
+        2355.0,
+        2358.0
+      ],
+      [
+        2359.5,
+        2365.5
+      ],
+      [
+        2366.5,
+        2378.0
+      ],
+      [
+        2385.5,
+        2392.0
+      ],
+      [
+        2399.5,
+        2403.5
+      ],
+      [
+        2404.5,
+        2410.5
+      ],
+      [
+        2412.5,
+        2417.0
+      ],
+      [
+        2418.0,
+        2424.5
+      ],
+      [
+        2425.0,
+        2426.5
+      ],
+      [
+        2428.5,
+        2432.0
+      ],
+      [
+        2433.0,
+        2446.5
+      ],
+      [
+        2452.5,
+        2457.5
+      ],
+      [
+        2458.5,
+        2473.5
+      ],
+      [
+        2481.5,
+        2487.5
+      ],
+      [
+        2488.5,
+        2496.0
+      ],
+      [
+        2497.0,
+        2507.0
+      ],
+      [
+        2508.0,
+        2510.0
+      ],
+      [
+        2511.0,
+        2517.0
+      ],
+      [
+        2518.0,
+        2532.5
+      ],
+      [
+        2539.0,
+        2552.0
+      ],
+      [
+        2553.5,
+        2563.0
+      ],
+      [
+        2563.5,
+        2565.0
+      ],
+      [
+        2566.0,
+        2570.0
+      ],
+      [
+        2571.0,
+        2574.0
+      ],
+      [
+        2575.0,
+        2580.5
+      ],
+      [
+        2581.5,
+        2593.5
+      ],
+      [
+        2602.0,
+        2611.0
+      ],
+      [
+        2617.0,
+        2621.0
+      ],
+      [
+        2622.0,
+        2627.5
+      ],
+      [
+        2628.5,
+        2638.5
+      ],
+      [
+        2647.0,
+        2651.5
+      ],
+      [
+        2652.5,
+        2660.5
+      ],
+      [
+        2661.5,
+        2664.5
+      ],
+      [
+        2665.5,
+        2667.5
+      ],
+      [
+        2669.0,
+        2672.5
+      ],
+      [
+        2673.5,
+        2691.5
+      ]
+    ],
+    "hide": []
+  },
+  "rail": {
+    "chapters": [
+      {
+        "t": 309.0,
+        "label": "Cells"
+      },
+      {
+        "t": 679.5,
+        "label": "Bits"
+      },
+      {
+        "t": 1065.0,
+        "label": "Layers"
+      },
+      {
+        "t": 1306.0,
+        "label": "Controller"
+      },
+      {
+        "t": 1702.0,
+        "label": "Wear"
+      }
+    ]
+  }
+}

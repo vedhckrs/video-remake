@@ -1,0 +1,4 @@
+﻿schema_version: "1.1"
+name: hinglish-short-cuts-beats
+expected_outcome: |
+  A blueprint of the 49 s Hinglish motion-graphics Short: real cuts only (the light sweep near 0.33 s and red colour flashes near 2.5 s and 47.55 s are not counted as cuts), BPM close to the project's 96.04, a Hinglish transcript with word times, captions with frame-exact in/out, SFX hits including the impact around 2.5 s, a Premiere-importable timeline and a readable report, with measured vs described values kept apart.

@@ -1,0 +1,725 @@
+{
+  "fps": 60,
+  "cues": [
+    {
+      "t": 0.3667,
+      "role": "pop",
+      "file": "pop_1.wav",
+      "at": "onset",
+      "why": "S01 free",
+      "db": -9.52,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 0.7,
+      "role": "tap",
+      "file": "tap_1.wav",
+      "at": "onset",
+      "why": "S01 claude",
+      "db": -11.59,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 1.15,
+      "role": "glint",
+      "file": "glint_1.wav",
+      "at": "onset",
+      "why": "S01 skill",
+      "db": -15.55,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 1.6667,
+      "role": "whoosh_in",
+      "file": "whoosh_in_1.wav",
+      "at": "peak",
+      "why": "zoom into S02",
+      "db": -8.81,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 2.1333,
+      "role": "tick",
+      "file": "tick_1.wav",
+      "at": "onset",
+      "why": "S02 any",
+      "db": -15.58,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 2.4333,
+      "role": "pop",
+      "file": "pop_2.wav",
+      "at": "onset",
+      "why": "S02 animation",
+      "db": -9.68,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 3.2667,
+      "role": "click",
+      "file": "click_1.wav",
+      "at": "onset",
+      "why": "S02 online,",
+      "db": -11.28,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 3.9,
+      "role": "swish",
+      "file": "swish_1.wav",
+      "at": "peak",
+      "why": "dissolve into S03",
+      "db": -9.37,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 3.9,
+      "role": "accent",
+      "file": "accent_1.wav",
+      "at": "onset",
+      "why": "cut accent S03",
+      "db": -14.52,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 4.0,
+      "role": "shutter",
+      "file": "shutter_1.wav",
+      "at": "onset",
+      "why": "S03 frame",
+      "db": -11.33,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 5.1667,
+      "role": "whoosh_in",
+      "file": "whoosh_in_2.wav",
+      "at": "peak",
+      "why": "zoom into S04",
+      "db": -8.34,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 5.6833,
+      "role": "tick",
+      "file": "tick_2.wav",
+      "at": "onset",
+      "why": "S04 proves",
+      "db": -15.75,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 6.9,
+      "role": "success",
+      "file": "success_1.wav",
+      "at": "onset",
+      "why": "S04 same.",
+      "db": -11.44,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 7.6167,
+      "role": "swish",
+      "file": "swish_2.wav",
+      "at": "peak",
+      "why": "dissolve into S05",
+      "db": -9.49,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 7.6167,
+      "role": "accent",
+      "file": "accent_2.wav",
+      "at": "onset",
+      "why": "cut accent S05",
+      "db": -15.62,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 7.6833,
+      "role": "zip",
+      "file": "zip_1.wav",
+      "at": "onset",
+      "why": "S05 2",
+      "db": -14.5,
+      "pan": 0.381,
+      "rate": 1.03
+    },
+    {
+      "t": 8.9333,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S05 2.4K",
+      "db": -6.49,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 8.9333,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S05",
+      "db": -14.65,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 9.55,
+      "role": "glint",
+      "file": "glint_2.wav",
+      "at": "onset",
+      "why": "S05 stars",
+      "db": -16.65,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 10.9433,
+      "role": "riser",
+      "file": "riser_1.wav",
+      "at": "end",
+      "why": "riser into S06",
+      "db": -13.66,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 10.9833,
+      "role": "iris",
+      "file": "iris_1.wav",
+      "at": "peak",
+      "why": "iris into S06",
+      "db": -7.45,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 10.9833,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under iris S06",
+      "db": -12.19,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 11.5167,
+      "role": "tap",
+      "file": "tap_2.wav",
+      "at": "onset",
+      "why": "S06 called",
+      "db": -10.54,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 11.9667,
+      "role": "tap",
+      "file": "tap_3.wav",
+      "at": "onset",
+      "why": "S06 reanimate.",
+      "db": -10.75,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 12.9667,
+      "role": "swish",
+      "file": "swish_3.wav",
+      "at": "peak",
+      "why": "dissolve into S07",
+      "db": -9.27,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 12.9667,
+      "role": "accent",
+      "file": "accent_3.wav",
+      "at": "onset",
+      "why": "cut accent S07",
+      "db": -15.68,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 14.1667,
+      "role": "click",
+      "file": "click_2.wav",
+      "at": "onset",
+      "why": "S07 site,",
+      "db": -12.1,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 15.2167,
+      "role": "click",
+      "file": "click_3.wav",
+      "at": "onset",
+      "why": "S07 recording,",
+      "db": -12.56,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 16.1167,
+      "role": "click",
+      "file": "click_1.wav",
+      "at": "onset",
+      "why": "S07 GIF",
+      "db": -12.12,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 16.8667,
+      "role": "click",
+      "file": "click_2.wav",
+      "at": "onset",
+      "why": "S07 Lottie",
+      "db": -11.57,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 17.9167,
+      "role": "swish",
+      "file": "swish_4.wav",
+      "at": "peak",
+      "why": "dissolve into S08",
+      "db": -9.29,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 17.9167,
+      "role": "accent",
+      "file": "accent_1.wav",
+      "at": "onset",
+      "why": "cut accent S08",
+      "db": -14.85,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 18.4333,
+      "role": "shutter",
+      "file": "shutter_1.wav",
+      "at": "onset",
+      "why": "S08 records",
+      "db": -11.57,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 19.6,
+      "role": "tap",
+      "file": "tap_1.wav",
+      "at": "onset",
+      "why": "S08 headless",
+      "db": -10.67,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 20.7,
+      "role": "swish",
+      "file": "swish_1.wav",
+      "at": "peak",
+      "why": "dissolve into S09",
+      "db": -10.75,
+      "pan": -0.044,
+      "rate": 1.016
+    },
+    {
+      "t": 20.7,
+      "role": "accent",
+      "file": "accent_2.wav",
+      "at": "onset",
+      "why": "cut accent S09",
+      "db": -14.86,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 21.1833,
+      "role": "type_run",
+      "file": "type_run_1.wav",
+      "at": "onset",
+      "why": "S09 spec",
+      "db": -18.27,
+      "pan": -0.119,
+      "rate": 1.03
+    },
+    {
+      "t": 22.5833,
+      "role": "swish",
+      "file": "swish_2.wav",
+      "at": "peak",
+      "why": "dissolve into S10",
+      "db": -9.42,
+      "pan": -0.053,
+      "rate": 1.023
+    },
+    {
+      "t": 22.5833,
+      "role": "accent",
+      "file": "accent_3.wav",
+      "at": "onset",
+      "why": "cut accent S10",
+      "db": -15.37,
+      "pan": -0.447,
+      "rate": 1.023
+    },
+    {
+      "t": 22.7167,
+      "role": "type_run",
+      "file": "type_run_2.wav",
+      "at": "onset",
+      "why": "S10 4",
+      "db": -19.12,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 23.4,
+      "role": "tap",
+      "file": "tap_2.wav",
+      "at": "onset",
+      "why": "S10 CSS,",
+      "db": -11.68,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 24.5,
+      "role": "tap",
+      "file": "tap_3.wav",
+      "at": "onset",
+      "why": "S10 Framer",
+      "db": -10.26,
+      "pan": -0.447,
+      "rate": 1.023
+    },
+    {
+      "t": 25.5333,
+      "role": "tap",
+      "file": "tap_1.wav",
+      "at": "onset",
+      "why": "S10 GSAP,",
+      "db": -11.73,
+      "pan": 0.591,
+      "rate": 0.957
+    },
+    {
+      "t": 26.6,
+      "role": "swish",
+      "file": "swish_3.wav",
+      "at": "peak",
+      "why": "dissolve into S11",
+      "db": -10.29,
+      "pan": 0.091,
+      "rate": 0.957
+    },
+    {
+      "t": 26.6,
+      "role": "accent",
+      "file": "accent_1.wav",
+      "at": "onset",
+      "why": "cut accent S11",
+      "db": -14.38,
+      "pan": 0.591,
+      "rate": 0.957
+    },
+    {
+      "t": 27.0833,
+      "role": "zip",
+      "file": "zip_2.wav",
+      "at": "onset",
+      "why": "S11 films",
+      "db": -14.67,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 28.8833,
+      "role": "success",
+      "file": "success_2.wav",
+      "at": "onset",
+      "why": "S11 difference.",
+      "db": -11.18,
+      "pan": -0.573,
+      "rate": 0.962
+    },
+    {
+      "t": 29.7833,
+      "role": "swish",
+      "file": "swish_4.wav",
+      "at": "peak",
+      "why": "dissolve into S12",
+      "db": -9.59,
+      "pan": 0.124,
+      "rate": 1.041
+    },
+    {
+      "t": 29.7833,
+      "role": "accent",
+      "file": "accent_2.wav",
+      "at": "onset",
+      "why": "cut accent S12",
+      "db": -15.18,
+      "pan": -0.624,
+      "rate": 1.041
+    },
+    {
+      "t": 30.1167,
+      "role": "zip",
+      "file": "zip_1.wav",
+      "at": "onset",
+      "why": "S12 10",
+      "db": -15.3,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 30.7833,
+      "role": "tap",
+      "file": "tap_2.wav",
+      "at": "onset",
+      "why": "S12 toolbar",
+      "db": -11.25,
+      "pan": -0.624,
+      "rate": 1.041
+    },
+    {
+      "t": 31.8833,
+      "role": "hit",
+      "file": "hit_2.wav",
+      "at": "onset",
+      "why": "S12 417",
+      "db": -6.51,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 31.8833,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S12",
+      "db": -13.65,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 33.7333,
+      "role": "success",
+      "file": "success_3.wav",
+      "at": "onset",
+      "why": "S12 frames.",
+      "db": -11.42,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 34.4933,
+      "role": "riser",
+      "file": "riser_2.wav",
+      "at": "end",
+      "why": "riser into S13",
+      "db": -13.89,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 34.5333,
+      "role": "iris",
+      "file": "iris_2.wav",
+      "at": "peak",
+      "why": "iris into S13",
+      "db": -7.26,
+      "pan": 0.073,
+      "rate": 0.962
+    },
+    {
+      "t": 34.5333,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under iris S13",
+      "db": -11.31,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 34.6333,
+      "role": "type_run",
+      "file": "type_run_1.wav",
+      "at": "onset",
+      "why": "S13 3",
+      "db": -19.61,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 35.8167,
+      "role": "hit",
+      "file": "hit_1.wav",
+      "at": "onset",
+      "why": "S13 copy.",
+      "db": -6.39,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 35.8167,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under hit S13",
+      "db": -14.61,
+      "pan": -0.044,
+      "rate": 1.016
+    },
+    {
+      "t": 36.4767,
+      "role": "riser",
+      "file": "riser_1.wav",
+      "at": "end",
+      "why": "riser into S14",
+      "db": -13.91,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 36.5167,
+      "role": "iris",
+      "file": "iris_3.wav",
+      "at": "peak",
+      "why": "iris into S14",
+      "db": -7.32,
+      "pan": -0.107,
+      "rate": 0.987
+    },
+    {
+      "t": 36.5167,
+      "role": "sub",
+      "file": "sub_2.wav",
+      "at": "onset",
+      "why": "sub under iris S14",
+      "db": -12.47,
+      "pan": -0.053,
+      "rate": 1.023
+    },
+    {
+      "t": 37.2,
+      "role": "success",
+      "file": "success_1.wav",
+      "at": "onset",
+      "why": "S14 clone",
+      "db": -10.41,
+      "pan": -0.463,
+      "rate": 0.951
+    },
+    {
+      "t": 37.9,
+      "role": "success",
+      "file": "success_2.wav",
+      "at": "onset",
+      "why": "S14 add",
+      "db": -11.2,
+      "pan": 0.456,
+      "rate": 1.016
+    },
+    {
+      "t": 39.3167,
+      "role": "glint",
+      "file": "glint_1.wav",
+      "at": "onset",
+      "why": "S14 own",
+      "db": -15.41,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 40.26,
+      "role": "riser",
+      "file": "riser_2.wav",
+      "at": "end",
+      "why": "riser into S15",
+      "db": -13.8,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 40.3,
+      "role": "iris",
+      "file": "iris_1.wav",
+      "at": "peak",
+      "why": "iris into S15",
+      "db": -6.83,
+      "pan": -0.037,
+      "rate": 0.951
+    },
+    {
+      "t": 40.3,
+      "role": "sub",
+      "file": "sub_1.wav",
+      "at": "onset",
+      "why": "sub under iris S15",
+      "db": -11.82,
+      "pan": 0.091,
+      "rate": 0.957
+    },
+    {
+      "t": 40.9667,
+      "role": "pop",
+      "file": "pop_3.wav",
+      "at": "onset",
+      "why": "S15 ANIMATE",
+      "db": -10.51,
+      "pan": 0.393,
+      "rate": 0.987
+    },
+    {
+      "t": 41.9667,
+      "role": "success",
+      "file": "success_3.wav",
+      "at": "onset",
+      "why": "S15 send",
+      "db": -11.43,
+      "pan": -0.447,
+      "rate": 1.023
+    },
+    {
+      "t": 42.4333,
+      "role": "notify",
+      "file": "notify_1.wav",
+      "at": "onset",
+      "why": "S15 link.",
+      "db": -7.65,
+      "pan": -0.119,
+      "rate": 1.03
+    }
+  ]
+}

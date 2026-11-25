@@ -1,0 +1,345 @@
+{
+ "fps": 60,
+ "events": [
+  {
+   "f": 22,
+   "kind": "pop",
+   "id": "S01 free"
+  },
+  {
+   "f": 42,
+   "kind": "tap",
+   "id": "S01 claude"
+  },
+  {
+   "f": 69,
+   "kind": "glint",
+   "id": "S01 skill"
+  },
+  {
+   "f": 100,
+   "kind": "whoosh_in",
+   "id": "zoom into S02"
+  },
+  {
+   "f": 128,
+   "kind": "tick",
+   "id": "S02 any"
+  },
+  {
+   "f": 146,
+   "kind": "pop",
+   "id": "S02 animation"
+  },
+  {
+   "f": 196,
+   "kind": "click",
+   "id": "S02 online,"
+  },
+  {
+   "f": 234,
+   "kind": "swish",
+   "id": "dissolve into S03"
+  },
+  {
+   "f": 234,
+   "kind": "accent",
+   "id": "cut accent S03"
+  },
+  {
+   "f": 240,
+   "kind": "shutter",
+   "id": "S03 frame"
+  },
+  {
+   "f": 310,
+   "kind": "whoosh_in",
+   "id": "zoom into S04"
+  },
+  {
+   "f": 341,
+   "kind": "tick",
+   "id": "S04 proves"
+  },
+  {
+   "f": 414,
+   "kind": "success",
+   "id": "S04 same."
+  },
+  {
+   "f": 457,
+   "kind": "swish",
+   "id": "dissolve into S05"
+  },
+  {
+   "f": 457,
+   "kind": "accent",
+   "id": "cut accent S05"
+  },
+  {
+   "f": 461,
+   "kind": "zip",
+   "id": "S05 2"
+  },
+  {
+   "f": 536,
+   "kind": "hit",
+   "id": "S05 2.4K"
+  },
+  {
+   "f": 536,
+   "kind": "sub",
+   "id": "sub under hit S05"
+  },
+  {
+   "f": 573,
+   "kind": "glint",
+   "id": "S05 stars"
+  },
+  {
+   "f": 659,
+   "kind": "iris",
+   "id": "iris into S06"
+  },
+  {
+   "f": 659,
+   "kind": "sub",
+   "id": "sub under iris S06"
+  },
+  {
+   "f": 691,
+   "kind": "tap",
+   "id": "S06 called"
+  },
+  {
+   "f": 718,
+   "kind": "tap",
+   "id": "S06 reanimate."
+  },
+  {
+   "f": 778,
+   "kind": "swish",
+   "id": "dissolve into S07"
+  },
+  {
+   "f": 778,
+   "kind": "accent",
+   "id": "cut accent S07"
+  },
+  {
+   "f": 850,
+   "kind": "click",
+   "id": "S07 site,"
+  },
+  {
+   "f": 913,
+   "kind": "click",
+   "id": "S07 recording,"
+  },
+  {
+   "f": 967,
+   "kind": "click",
+   "id": "S07 GIF"
+  },
+  {
+   "f": 1012,
+   "kind": "click",
+   "id": "S07 Lottie"
+  },
+  {
+   "f": 1075,
+   "kind": "swish",
+   "id": "dissolve into S08"
+  },
+  {
+   "f": 1075,
+   "kind": "accent",
+   "id": "cut accent S08"
+  },
+  {
+   "f": 1106,
+   "kind": "shutter",
+   "id": "S08 records"
+  },
+  {
+   "f": 1176,
+   "kind": "tap",
+   "id": "S08 headless"
+  },
+  {
+   "f": 1242,
+   "kind": "swish",
+   "id": "dissolve into S09"
+  },
+  {
+   "f": 1242,
+   "kind": "accent",
+   "id": "cut accent S09"
+  },
+  {
+   "f": 1271,
+   "kind": "type_run",
+   "id": "S09 spec"
+  },
+  {
+   "f": 1355,
+   "kind": "swish",
+   "id": "dissolve into S10"
+  },
+  {
+   "f": 1355,
+   "kind": "accent",
+   "id": "cut accent S10"
+  },
+  {
+   "f": 1363,
+   "kind": "type_run",
+   "id": "S10 4"
+  },
+  {
+   "f": 1404,
+   "kind": "tap",
+   "id": "S10 CSS,"
+  },
+  {
+   "f": 1470,
+   "kind": "tap",
+   "id": "S10 Framer"
+  },
+  {
+   "f": 1532,
+   "kind": "tap",
+   "id": "S10 GSAP,"
+  },
+  {
+   "f": 1596,
+   "kind": "swish",
+   "id": "dissolve into S11"
+  },
+  {
+   "f": 1596,
+   "kind": "accent",
+   "id": "cut accent S11"
+  },
+  {
+   "f": 1625,
+   "kind": "zip",
+   "id": "S11 films"
+  },
+  {
+   "f": 1733,
+   "kind": "success",
+   "id": "S11 difference."
+  },
+  {
+   "f": 1787,
+   "kind": "swish",
+   "id": "dissolve into S12"
+  },
+  {
+   "f": 1787,
+   "kind": "accent",
+   "id": "cut accent S12"
+  },
+  {
+   "f": 1807,
+   "kind": "zip",
+   "id": "S12 10"
+  },
+  {
+   "f": 1847,
+   "kind": "tap",
+   "id": "S12 toolbar"
+  },
+  {
+   "f": 1913,
+   "kind": "hit",
+   "id": "S12 417"
+  },
+  {
+   "f": 1913,
+   "kind": "sub",
+   "id": "sub under hit S12"
+  },
+  {
+   "f": 2024,
+   "kind": "success",
+   "id": "S12 frames."
+  },
+  {
+   "f": 2072,
+   "kind": "iris",
+   "id": "iris into S13"
+  },
+  {
+   "f": 2072,
+   "kind": "sub",
+   "id": "sub under iris S13"
+  },
+  {
+   "f": 2078,
+   "kind": "type_run",
+   "id": "S13 3"
+  },
+  {
+   "f": 2149,
+   "kind": "hit",
+   "id": "S13 copy."
+  },
+  {
+   "f": 2149,
+   "kind": "sub",
+   "id": "sub under hit S13"
+  },
+  {
+   "f": 2191,
+   "kind": "iris",
+   "id": "iris into S14"
+  },
+  {
+   "f": 2191,
+   "kind": "sub",
+   "id": "sub under iris S14"
+  },
+  {
+   "f": 2232,
+   "kind": "success",
+   "id": "S14 clone"
+  },
+  {
+   "f": 2274,
+   "kind": "success",
+   "id": "S14 add"
+  },
+  {
+   "f": 2359,
+   "kind": "glint",
+   "id": "S14 own"
+  },
+  {
+   "f": 2418,
+   "kind": "iris",
+   "id": "iris into S15"
+  },
+  {
+   "f": 2418,
+   "kind": "sub",
+   "id": "sub under iris S15"
+  },
+  {
+   "f": 2458,
+   "kind": "pop",
+   "id": "S15 ANIMATE"
+  },
+  {
+   "f": 2518,
+   "kind": "success",
+   "id": "S15 send"
+  },
+  {
+   "f": 2546,
+   "kind": "notify",
+   "id": "S15 link."
+  }
+ ]
+}

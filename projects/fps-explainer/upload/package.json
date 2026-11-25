@@ -1,0 +1,26 @@
+{
+ "name": "FPS-Explainer",
+ "title": "How 60, 120 & 144 fps actually work",
+ "master": "FPS-Explainer_1080x1920_60fps.mp4",
+ "duration": 100.483,
+ "lufs": -14.6,
+ "true_peak": -1.8,
+ "video_mbps": 9.58,
+ "audio": "audio re-mastered from the mix WAV at AAC 320k",
+ "captions": {
+  "cues": 56,
+  "longest": 37,
+  "matches_voice": true
+ },
+ "cover_master": "cover_master_1520x2688.png",
+ "headline_top": 802,
+ "grid_top": 30,
+ "frame_pick": "frame_pick_0m42s.jpg",
+ "built": {
+  "dest": "C:\\Users\\VED\\Desktop\\Reverse\\upload-packages",
+  "zips": [
+   "C:\\Users\\VED\\Desktop\\Reverse\\upload-packages\\FPS-Explainer_YouTube.zip",
+   "C:\\Users\\VED\\Desktop\\Reverse\\upload-packages\\FPS-Explainer_Instagram.zip"
+  ]
+ }
+}

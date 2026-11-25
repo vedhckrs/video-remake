@@ -1,0 +1,390 @@
+{
+ "fps": 60,
+ "events": [
+  {
+   "f": 8,
+   "kind": "pop",
+   "id": "S01 4"
+  },
+  {
+   "f": 115,
+   "kind": "swish",
+   "id": "S01 flipping"
+  },
+  {
+   "f": 206,
+   "kind": "tick",
+   "id": "S01 60,"
+  },
+  {
+   "f": 235,
+   "kind": "tick",
+   "id": "S01 120,"
+  },
+  {
+   "f": 313,
+   "kind": "hit",
+   "id": "S01 144"
+  },
+  {
+   "f": 313,
+   "kind": "sub",
+   "id": "sub under hit S01"
+  },
+  {
+   "f": 414,
+   "kind": "swish",
+   "id": "dissolve into S02"
+  },
+  {
+   "f": 414,
+   "kind": "accent",
+   "id": "cut accent S02"
+  },
+  {
+   "f": 432,
+   "kind": "pop",
+   "id": "S02 Two"
+  },
+  {
+   "f": 582,
+   "kind": "click",
+   "id": "S02 Frames"
+  },
+  {
+   "f": 729,
+   "kind": "zip",
+   "id": "S02 draws"
+  },
+  {
+   "f": 809,
+   "kind": "click",
+   "id": "S02 Hertz:"
+  },
+  {
+   "f": 938,
+   "kind": "glint",
+   "id": "S02 refreshes."
+  },
+  {
+   "f": 1000,
+   "kind": "swish",
+   "id": "dissolve into S03"
+  },
+  {
+   "f": 1000,
+   "kind": "accent",
+   "id": "cut accent S03"
+  },
+  {
+   "f": 1106,
+   "kind": "tick",
+   "id": "S03 16.7"
+  },
+  {
+   "f": 1285,
+   "kind": "tick",
+   "id": "S03 8.3."
+  },
+  {
+   "f": 1413,
+   "kind": "hit",
+   "id": "S03 seven."
+  },
+  {
+   "f": 1413,
+   "kind": "sub",
+   "id": "sub under hit S03"
+  },
+  {
+   "f": 1453,
+   "kind": "whoosh_in",
+   "id": "portal into S04"
+  },
+  {
+   "f": 1460,
+   "kind": "sub",
+   "id": "portal landing S04"
+  },
+  {
+   "f": 1546,
+   "kind": "zip",
+   "id": "S04 redraws"
+  },
+  {
+   "f": 1702,
+   "kind": "swish",
+   "id": "S04 pixel,"
+  },
+  {
+   "f": 1739,
+   "kind": "click",
+   "id": "S04 transistors"
+  },
+  {
+   "f": 1769,
+   "kind": "hit",
+   "id": "S04 hold"
+  },
+  {
+   "f": 1769,
+   "kind": "sub",
+   "id": "sub under hit S04"
+  },
+  {
+   "f": 1902,
+   "kind": "swish",
+   "id": "dissolve into S05"
+  },
+  {
+   "f": 1902,
+   "kind": "accent",
+   "id": "cut accent S05"
+  },
+  {
+   "f": 2040,
+   "kind": "whoosh_in",
+   "id": "S05 slow"
+  },
+  {
+   "f": 2232,
+   "kind": "pop",
+   "id": "S05 jumps"
+  },
+  {
+   "f": 2412,
+   "kind": "pop",
+   "id": "S05 half"
+  },
+  {
+   "f": 2504,
+   "kind": "success",
+   "id": "S05 smoother."
+  },
+  {
+   "f": 2549,
+   "kind": "whoosh_in",
+   "id": "push into S06"
+  },
+  {
+   "f": 2620,
+   "kind": "sub",
+   "id": "S06 drains"
+  },
+  {
+   "f": 2713,
+   "kind": "glint",
+   "id": "S06 cheat."
+  },
+  {
+   "f": 3017,
+   "kind": "zip",
+   "id": "S06 scroll,"
+  },
+  {
+   "f": 3057,
+   "kind": "swish",
+   "id": "S06 slower"
+  },
+  {
+   "f": 3147,
+   "kind": "hit",
+   "id": "S06 1"
+  },
+  {
+   "f": 3147,
+   "kind": "sub",
+   "id": "sub under hit S06"
+  },
+  {
+   "f": 3254,
+   "kind": "swish",
+   "id": "dissolve into S07"
+  },
+  {
+   "f": 3254,
+   "kind": "accent",
+   "id": "cut accent S07"
+  },
+  {
+   "f": 3332,
+   "kind": "tick",
+   "id": "S07 144"
+  },
+  {
+   "f": 3396,
+   "kind": "hit",
+   "id": "S07 165"
+  },
+  {
+   "f": 3396,
+   "kind": "sub",
+   "id": "sub under hit S07"
+  },
+  {
+   "f": 3494,
+   "kind": "tap",
+   "id": "S07 touch"
+  },
+  {
+   "f": 3570,
+   "kind": "zip",
+   "id": "S07 thousands"
+  },
+  {
+   "f": 3668,
+   "kind": "whoosh_in",
+   "id": "push into S08"
+  },
+  {
+   "f": 3700,
+   "kind": "click",
+   "id": "S08 PC,"
+  },
+  {
+   "f": 3869,
+   "kind": "tick",
+   "id": "S08 90"
+  },
+  {
+   "f": 3979,
+   "kind": "tick",
+   "id": "S08 monitor."
+  },
+  {
+   "f": 4165,
+   "kind": "swish",
+   "id": "S08 next."
+  },
+  {
+   "f": 4243,
+   "kind": "hit",
+   "id": "S08 tearing."
+  },
+  {
+   "f": 4243,
+   "kind": "sub",
+   "id": "sub under hit S08"
+  },
+  {
+   "f": 4286,
+   "kind": "swish",
+   "id": "dissolve into S09"
+  },
+  {
+   "f": 4286,
+   "kind": "accent",
+   "id": "cut accent S09"
+  },
+  {
+   "f": 4310,
+   "kind": "glint",
+   "id": "S09 fix"
+  },
+  {
+   "f": 4415,
+   "kind": "tap",
+   "id": "S09 G-Sync"
+  },
+  {
+   "f": 4459,
+   "kind": "tap",
+   "id": "S09 FreeSync."
+  },
+  {
+   "f": 4557,
+   "kind": "tick",
+   "id": "S09 waits"
+  },
+  {
+   "f": 4685,
+   "kind": "success",
+   "id": "S09 lands."
+  },
+  {
+   "f": 4728,
+   "kind": "iris",
+   "id": "iris into S10"
+  },
+  {
+   "f": 4728,
+   "kind": "sub",
+   "id": "sub under iris S10"
+  },
+  {
+   "f": 4736,
+   "kind": "pop",
+   "id": "S10 4"
+  },
+  {
+   "f": 4788,
+   "kind": "sub",
+   "id": "S10 less."
+  },
+  {
+   "f": 4925,
+   "kind": "tick",
+   "id": "S10 8"
+  },
+  {
+   "f": 5147,
+   "kind": "tick",
+   "id": "S10 half."
+  },
+  {
+   "f": 5284,
+   "kind": "hit",
+   "id": "S10 600."
+  },
+  {
+   "f": 5284,
+   "kind": "sub",
+   "id": "sub under hit S10"
+  },
+  {
+   "f": 5333,
+   "kind": "whoosh_in",
+   "id": "portal into S11"
+  },
+  {
+   "f": 5340,
+   "kind": "sub",
+   "id": "portal landing S11"
+  },
+  {
+   "f": 5522,
+   "kind": "pop",
+   "id": "S11 made."
+  },
+  {
+   "f": 5641,
+   "kind": "pop",
+   "id": "S11 shown."
+  },
+  {
+   "f": 5735,
+   "kind": "success",
+   "id": "S11 match."
+  },
+  {
+   "f": 5777,
+   "kind": "swish",
+   "id": "dissolve into S12"
+  },
+  {
+   "f": 5777,
+   "kind": "accent",
+   "id": "cut accent S12"
+  },
+  {
+   "f": 5793,
+   "kind": "click",
+   "id": "S12 Follow"
+  },
+  {
+   "f": 5898,
+   "kind": "pop",
+   "id": "S12 lag"
+  }
+ ]
+}

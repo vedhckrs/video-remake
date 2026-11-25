@@ -1,0 +1,375 @@
+{
+ "fps": 60,
+ "events": [
+  {
+   "f": 15,
+   "kind": "success",
+   "id": "S01 SSD"
+  },
+  {
+   "f": 65,
+   "kind": "pop",
+   "id": "S01 no"
+  },
+  {
+   "f": 157,
+   "kind": "tap",
+   "id": "S01 files"
+  },
+  {
+   "f": 306,
+   "kind": "pop",
+   "id": "S01 billions"
+  },
+  {
+   "f": 350,
+   "kind": "whoosh_in",
+   "id": "S01 traps"
+  },
+  {
+   "f": 437,
+   "kind": "swish",
+   "id": "dissolve into S02"
+  },
+  {
+   "f": 437,
+   "kind": "accent",
+   "id": "cut accent S02"
+  },
+  {
+   "f": 536,
+   "kind": "pop",
+   "id": "S02 photo"
+  },
+  {
+   "f": 618,
+   "kind": "swish",
+   "id": "dissolve into S03"
+  },
+  {
+   "f": 618,
+   "kind": "accent",
+   "id": "cut accent S03"
+  },
+  {
+   "f": 699,
+   "kind": "whoosh_in",
+   "id": "S03 grid"
+  },
+  {
+   "f": 890,
+   "kind": "click",
+   "id": "S03 gate."
+  },
+  {
+   "f": 1051,
+   "kind": "hit",
+   "id": "S03 trapped,"
+  },
+  {
+   "f": 1051,
+   "kind": "sub",
+   "id": "sub under hit S03"
+  },
+  {
+   "f": 1100,
+   "kind": "click",
+   "id": "S03 power"
+  },
+  {
+   "f": 1129,
+   "kind": "click",
+   "id": "S03 off"
+  },
+  {
+   "f": 1296,
+   "kind": "pop",
+   "id": "S03 one"
+  },
+  {
+   "f": 1315,
+   "kind": "pop",
+   "id": "S03 zero"
+  },
+  {
+   "f": 1359,
+   "kind": "swish",
+   "id": "dissolve into S04"
+  },
+  {
+   "f": 1359,
+   "kind": "accent",
+   "id": "cut accent S04"
+  },
+  {
+   "f": 1542,
+   "kind": "tick",
+   "id": "S04 four"
+  },
+  {
+   "f": 1649,
+   "kind": "pop",
+   "id": "S04 two"
+  },
+  {
+   "f": 1719,
+   "kind": "tick",
+   "id": "S04 Eight"
+  },
+  {
+   "f": 1834,
+   "kind": "tick",
+   "id": "S04 Sixteen"
+  },
+  {
+   "f": 1976,
+   "kind": "hit",
+   "id": "S04 QLC,"
+  },
+  {
+   "f": 1976,
+   "kind": "sub",
+   "id": "sub under hit S04"
+  },
+  {
+   "f": 2080,
+   "kind": "hit",
+   "id": "S04 cheap."
+  },
+  {
+   "f": 2080,
+   "kind": "sub",
+   "id": "sub under hit S04"
+  },
+  {
+   "f": 2130,
+   "kind": "whoosh_in",
+   "id": "portal into S05"
+  },
+  {
+   "f": 2137,
+   "kind": "sub",
+   "id": "portal landing S05"
+  },
+  {
+   "f": 2230,
+   "kind": "tap",
+   "id": "S05 flat."
+  },
+  {
+   "f": 2415,
+   "kind": "hit",
+   "id": "S05 300"
+  },
+  {
+   "f": 2415,
+   "kind": "sub",
+   "id": "sub under hit S05"
+  },
+  {
+   "f": 2508,
+   "kind": "swish",
+   "id": "S05 smaller"
+  },
+  {
+   "f": 2612,
+   "kind": "whoosh_in",
+   "id": "push into S06"
+  },
+  {
+   "f": 2687,
+   "kind": "click",
+   "id": "S06 controller,"
+  },
+  {
+   "f": 2865,
+   "kind": "pop",
+   "id": "S06 splits"
+  },
+  {
+   "f": 2918,
+   "kind": "pop",
+   "id": "S06 pages,"
+  },
+  {
+   "f": 2958,
+   "kind": "zip",
+   "id": "S06 spreads"
+  },
+  {
+   "f": 3117,
+   "kind": "whoosh_in",
+   "id": "S06 parallel."
+  },
+  {
+   "f": 3241,
+   "kind": "zip",
+   "id": "S06 reads"
+  },
+  {
+   "f": 3291,
+   "kind": "hit",
+   "id": "S06 7,000"
+  },
+  {
+   "f": 3291,
+   "kind": "sub",
+   "id": "sub under hit S06"
+  },
+  {
+   "f": 3404,
+   "kind": "swish",
+   "id": "dissolve into S07"
+  },
+  {
+   "f": 3404,
+   "kind": "accent",
+   "id": "cut accent S07"
+  },
+  {
+   "f": 3441,
+   "kind": "hit",
+   "id": "S07 catch."
+  },
+  {
+   "f": 3441,
+   "kind": "sub",
+   "id": "sub under hit S07"
+  },
+  {
+   "f": 3501,
+   "kind": "tick",
+   "id": "S07 every"
+  },
+  {
+   "f": 3647,
+   "kind": "tick",
+   "id": "S07 wears"
+  },
+  {
+   "f": 3785,
+   "kind": "zip",
+   "id": "S07 rewrites,"
+  },
+  {
+   "f": 3847,
+   "kind": "sub",
+   "id": "S07 leak."
+  },
+  {
+   "f": 3875,
+   "kind": "swish",
+   "id": "dissolve into S08"
+  },
+  {
+   "f": 3875,
+   "kind": "accent",
+   "id": "cut accent S08"
+  },
+  {
+   "f": 3931,
+   "kind": "glint",
+   "id": "S08 cheats."
+  },
+  {
+   "f": 4040,
+   "kind": "hit",
+   "id": "S08 never"
+  },
+  {
+   "f": 4040,
+   "kind": "sub",
+   "id": "sub under hit S08"
+  },
+  {
+   "f": 4166,
+   "kind": "success",
+   "id": "S08 least"
+  },
+  {
+   "f": 4176,
+   "kind": "tick",
+   "id": "S08 least"
+  },
+  {
+   "f": 4251,
+   "kind": "swish",
+   "id": "S08 moved"
+  },
+  {
+   "f": 4350,
+   "kind": "iris",
+   "id": "iris into S09"
+  },
+  {
+   "f": 4350,
+   "kind": "sub",
+   "id": "sub under iris S09"
+  },
+  {
+   "f": 4358,
+   "kind": "pop",
+   "id": "S09 4"
+  },
+  {
+   "f": 4505,
+   "kind": "hit",
+   "id": "S09 600"
+  },
+  {
+   "f": 4505,
+   "kind": "sub",
+   "id": "sub under hit S09"
+  },
+  {
+   "f": 4598,
+   "kind": "zip",
+   "id": "S09 over"
+  },
+  {
+   "f": 4672,
+   "kind": "zip",
+   "id": "S09 every"
+  },
+  {
+   "f": 4764,
+   "kind": "whoosh_in",
+   "id": "portal into S10"
+  },
+  {
+   "f": 4771,
+   "kind": "sub",
+   "id": "portal landing S10"
+  },
+  {
+   "f": 4917,
+   "kind": "glint",
+   "id": "S10 charge,"
+  },
+  {
+   "f": 5163,
+   "kind": "success",
+   "id": "S10 alive."
+  },
+  {
+   "f": 5195,
+   "kind": "swish",
+   "id": "dissolve into S11"
+  },
+  {
+   "f": 5195,
+   "kind": "accent",
+   "id": "cut accent S11"
+  },
+  {
+   "f": 5204,
+   "kind": "click",
+   "id": "S11 Follow"
+  },
+  {
+   "f": 5251,
+   "kind": "pop",
+   "id": "S11 28"
+  }
+ ]
+}

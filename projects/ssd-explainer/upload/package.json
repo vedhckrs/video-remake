@@ -1,0 +1,26 @@
+{
+ "name": "SSD-Explainer",
+ "title": "How an SSD stores your files",
+ "master": "SSD-Explainer_1080x1920_60fps.mp4",
+ "duration": 91.317,
+ "lufs": -14.8,
+ "true_peak": -1.9,
+ "video_mbps": 14.83,
+ "audio": "audio re-mastered from the mix WAV at AAC 320k",
+ "captions": {
+  "cues": 61,
+  "longest": 37,
+  "matches_voice": true
+ },
+ "cover_master": "cover_master_1520x2688.png",
+ "headline_top": 250,
+ "grid_top": 180,
+ "frame_pick": "frame_pick_0m56s.jpg",
+ "built": {
+  "dest": "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest",
+  "zips": [
+   "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest\\SSD-Explainer_YouTube.zip",
+   "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest\\SSD-Explainer_Instagram.zip"
+  ]
+ }
+}

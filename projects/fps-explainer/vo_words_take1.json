@@ -1,0 +1,1340 @@
+{
+  "text": "Your screen isn't playing a video. It's flipping still pictures. 60, 120, even 144 every second. Two numbers decide how smooth it feels. Frames per second: how fast your chip draws pictures. Hertz: how often your screen refreshes. At 60, each picture gets 16.7 milliseconds. At 120, just 8.3. At 144, under seven. Every refresh, the screen redraws itself row by row. Inside each pixel, tiny transistors hold its color until the next refresh. This video only plays at 60, so let's slow time down. At 60 hertz, a moving ball jumps in big steps. At 120, the steps are half as big, so motion looks smoother. But fast refresh drains battery, so phones cheat. LTPO screens shift speed on the fly: 120 when you scroll, slower when you read, 1 hertz on the lock screen. Gaming phones push to 144 or 165 hertz, with touch sensors checking your finger thousands of times a second. On a PC, the graphics card must keep up. Say it makes 90 frames for a 144 hertz monitor. The screen catches half of one frame and half of the next. That's tearing. The fix is variable refresh, like G-Sync or FreeSync. The monitor waits for each new frame, and refreshes the moment it lands. And each jump gives less. 60 to 120 saves 8 milliseconds a frame. 120 to 144, under one and a half. Yet esports monitors now hit 600. So, frames per second is how fast pictures are made. Hertz is how fast they're shown. Smooth is when they match. Follow for part two: what input lag really is.",
+  "words": [
+    {
+      "w": "Your",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "w": "screen",
+      "start": 0.232,
+      "end": 0.453
+    },
+    {
+      "w": "isn't",
+      "start": 0.488,
+      "end": 0.639
+    },
+    {
+      "w": "playing",
+      "start": 0.662,
+      "end": 0.882
+    },
+    {
+      "w": "a",
+      "start": 0.917,
+      "end": 0.94
+    },
+    {
+      "w": "video.",
+      "start": 0.987,
+      "end": 1.474
+    },
+    {
+      "w": "It's",
+      "start": 1.718,
+      "end": 1.869
+    },
+    {
+      "w": "flipping",
+      "start": 1.916,
+      "end": 2.206
+    },
+    {
+      "w": "still",
+      "start": 2.252,
+      "end": 2.426
+    },
+    {
+      "w": "pictures.",
+      "start": 2.473,
+      "end": 2.995
+    },
+    {
+      "w": "60,",
+      "start": 3.437,
+      "end": 3.843
+    },
+    {
+      "w": "120,",
+      "start": 3.913,
+      "end": 4.772
+    },
+    {
+      "w": "even",
+      "start": 4.923,
+      "end": 5.132
+    },
+    {
+      "w": "144",
+      "start": 5.213,
+      "end": 5.875
+    },
+    {
+      "w": "every",
+      "start": 5.933,
+      "end": 6.107
+    },
+    {
+      "w": "second.",
+      "start": 6.153,
+      "end": 6.594
+    },
+    {
+      "w": "Two",
+      "start": 7.198,
+      "end": 7.349
+    },
+    {
+      "w": "numbers",
+      "start": 7.407,
+      "end": 7.663
+    },
+    {
+      "w": "decide",
+      "start": 7.709,
+      "end": 8.022
+    },
+    {
+      "w": "how",
+      "start": 8.057,
+      "end": 8.162
+    },
+    {
+      "w": "smooth",
+      "start": 8.266,
+      "end": 8.522
+    },
+    {
+      "w": "it",
+      "start": 8.557,
+      "end": 8.626
+    },
+    {
+      "w": "feels.",
+      "start": 8.661,
+      "end": 9.102
+    },
+    {
+      "w": "Frames",
+      "start": 9.706,
+      "end": 10.054
+    },
+    {
+      "w": "per",
+      "start": 10.101,
+      "end": 10.205
+    },
+    {
+      "w": "second:",
+      "start": 10.252,
+      "end": 10.716
+    },
+    {
+      "w": "how",
+      "start": 11.32,
+      "end": 11.436
+    },
+    {
+      "w": "fast",
+      "start": 11.517,
+      "end": 11.761
+    },
+    {
+      "w": "your",
+      "start": 11.796,
+      "end": 11.912
+    },
+    {
+      "w": "chip",
+      "start": 11.947,
+      "end": 12.109
+    },
+    {
+      "w": "draws",
+      "start": 12.144,
+      "end": 12.33
+    },
+    {
+      "w": "pictures.",
+      "start": 12.376,
+      "end": 12.887
+    },
+    {
+      "w": "Hertz:",
+      "start": 13.491,
+      "end": 14.013
+    },
+    {
+      "w": "how",
+      "start": 14.617,
+      "end": 14.756
+    },
+    {
+      "w": "often",
+      "start": 14.838,
+      "end": 15.105
+    },
+    {
+      "w": "your",
+      "start": 15.139,
+      "end": 15.256
+    },
+    {
+      "w": "screen",
+      "start": 15.302,
+      "end": 15.569
+    },
+    {
+      "w": "refreshes.",
+      "start": 15.627,
+      "end": 16.37
+    },
+    {
+      "w": "At",
+      "start": 16.974,
+      "end": 17.125
+    },
+    {
+      "w": "60,",
+      "start": 17.195,
+      "end": 17.659
+    },
+    {
+      "w": "each",
+      "start": 17.81,
+      "end": 17.972
+    },
+    {
+      "w": "picture",
+      "start": 18.007,
+      "end": 18.24
+    },
+    {
+      "w": "gets",
+      "start": 18.274,
+      "end": 18.414
+    },
+    {
+      "w": "16.7",
+      "start": 18.437,
+      "end": 19.25
+    },
+    {
+      "w": "milliseconds.",
+      "start": 19.308,
+      "end": 19.993
+    },
+    {
+      "w": "At",
+      "start": 20.329,
+      "end": 20.445
+    },
+    {
+      "w": "120,",
+      "start": 20.492,
+      "end": 21.061
+    },
+    {
+      "w": "just",
+      "start": 21.188,
+      "end": 21.351
+    },
+    {
+      "w": "8.3.",
+      "start": 21.421,
+      "end": 22.129
+    },
+    {
+      "w": "At",
+      "start": 22.28,
+      "end": 22.384
+    },
+    {
+      "w": "144,",
+      "start": 22.431,
+      "end": 23.174
+    },
+    {
+      "w": "under",
+      "start": 23.325,
+      "end": 23.51
+    },
+    {
+      "w": "seven.",
+      "start": 23.545,
+      "end": 23.917
+    },
+    {
+      "w": "Every",
+      "start": 24.521,
+      "end": 24.764
+    },
+    {
+      "w": "refresh,",
+      "start": 24.822,
+      "end": 25.264
+    },
+    {
+      "w": "the",
+      "start": 25.368,
+      "end": 25.449
+    },
+    {
+      "w": "screen",
+      "start": 25.484,
+      "end": 25.716
+    },
+    {
+      "w": "redraws",
+      "start": 25.774,
+      "end": 26.111
+    },
+    {
+      "w": "itself",
+      "start": 26.146,
+      "end": 26.425
+    },
+    {
+      "w": "row",
+      "start": 26.529,
+      "end": 26.703
+    },
+    {
+      "w": "by",
+      "start": 26.761,
+      "end": 26.843
+    },
+    {
+      "w": "row.",
+      "start": 26.924,
+      "end": 27.272
+    },
+    {
+      "w": "Inside",
+      "start": 27.795,
+      "end": 28.178
+    },
+    {
+      "w": "each",
+      "start": 28.201,
+      "end": 28.329
+    },
+    {
+      "w": "pixel,",
+      "start": 28.363,
+      "end": 28.688
+    },
+    {
+      "w": "tiny",
+      "start": 28.723,
+      "end": 28.956
+    },
+    {
+      "w": "transistors",
+      "start": 28.99,
+      "end": 29.443
+    },
+    {
+      "w": "hold",
+      "start": 29.49,
+      "end": 29.652
+    },
+    {
+      "w": "its",
+      "start": 29.687,
+      "end": 29.791
+    },
+    {
+      "w": "color",
+      "start": 29.838,
+      "end": 30.117
+    },
+    {
+      "w": "until",
+      "start": 30.267,
+      "end": 30.453
+    },
+    {
+      "w": "the",
+      "start": 30.488,
+      "end": 30.558
+    },
+    {
+      "w": "next",
+      "start": 30.604,
+      "end": 30.79
+    },
+    {
+      "w": "refresh.",
+      "start": 30.848,
+      "end": 31.347
+    },
+    {
+      "w": "This",
+      "start": 32.055,
+      "end": 32.218
+    },
+    {
+      "w": "video",
+      "start": 32.276,
+      "end": 32.52
+    },
+    {
+      "w": "only",
+      "start": 32.589,
+      "end": 32.763
+    },
+    {
+      "w": "plays",
+      "start": 32.81,
+      "end": 33.007
+    },
+    {
+      "w": "at",
+      "start": 33.042,
+      "end": 33.112
+    },
+    {
+      "w": "60,",
+      "start": 33.181,
+      "end": 33.518
+    },
+    {
+      "w": "so",
+      "start": 33.553,
+      "end": 33.646
+    },
+    {
+      "w": "let's",
+      "start": 33.692,
+      "end": 33.866
+    },
+    {
+      "w": "slow",
+      "start": 33.994,
+      "end": 34.238
+    },
+    {
+      "w": "time",
+      "start": 34.273,
+      "end": 34.459
+    },
+    {
+      "w": "down.",
+      "start": 34.493,
+      "end": 34.853
+    },
+    {
+      "w": "At",
+      "start": 35.457,
+      "end": 35.573
+    },
+    {
+      "w": "60",
+      "start": 35.643,
+      "end": 35.933
+    },
+    {
+      "w": "hertz,",
+      "start": 36.014,
+      "end": 36.374
+    },
+    {
+      "w": "a",
+      "start": 36.525,
+      "end": 36.583
+    },
+    {
+      "w": "moving",
+      "start": 36.688,
+      "end": 36.931
+    },
+    {
+      "w": "ball",
+      "start": 36.978,
+      "end": 37.129
+    },
+    {
+      "w": "jumps",
+      "start": 37.199,
+      "end": 37.384
+    },
+    {
+      "w": "in",
+      "start": 37.419,
+      "end": 37.489
+    },
+    {
+      "w": "big",
+      "start": 37.593,
+      "end": 37.791
+    },
+    {
+      "w": "steps.",
+      "start": 37.849,
+      "end": 38.336
+    },
+    {
+      "w": "At",
+      "start": 38.94,
+      "end": 39.044
+    },
+    {
+      "w": "120,",
+      "start": 39.114,
+      "end": 39.671
+    },
+    {
+      "w": "the",
+      "start": 39.695,
+      "end": 39.764
+    },
+    {
+      "w": "steps",
+      "start": 39.799,
+      "end": 40.02
+    },
+    {
+      "w": "are",
+      "start": 40.055,
+      "end": 40.159
+    },
+    {
+      "w": "half",
+      "start": 40.205,
+      "end": 40.368
+    },
+    {
+      "w": "as",
+      "start": 40.414,
+      "end": 40.484
+    },
+    {
+      "w": "big,",
+      "start": 40.554,
+      "end": 40.867
+    },
+    {
+      "w": "so",
+      "start": 40.995,
+      "end": 41.111
+    },
+    {
+      "w": "motion",
+      "start": 41.181,
+      "end": 41.413
+    },
+    {
+      "w": "looks",
+      "start": 41.448,
+      "end": 41.622
+    },
+    {
+      "w": "smoother.",
+      "start": 41.726,
+      "end": 42.226
+    },
+    {
+      "w": "But",
+      "start": 42.748,
+      "end": 42.887
+    },
+    {
+      "w": "fast",
+      "start": 42.945,
+      "end": 43.201
+    },
+    {
+      "w": "refresh",
+      "start": 43.259,
+      "end": 43.619
+    },
+    {
+      "w": "drains",
+      "start": 43.665,
+      "end": 44.025
+    },
+    {
+      "w": "battery,",
+      "start": 44.072,
+      "end": 44.513
+    },
+    {
+      "w": "so",
+      "start": 44.664,
+      "end": 44.815
+    },
+    {
+      "w": "phones",
+      "start": 44.873,
+      "end": 45.163
+    },
+    {
+      "w": "cheat.",
+      "start": 45.209,
+      "end": 45.569
+    },
+    {
+      "w": "LTPO",
+      "start": 46.173,
+      "end": 46.73
+    },
+    {
+      "w": "screens",
+      "start": 46.835,
+      "end": 47.183
+    },
+    {
+      "w": "shift",
+      "start": 47.241,
+      "end": 47.462
+    },
+    {
+      "w": "speed",
+      "start": 47.508,
+      "end": 47.775
+    },
+    {
+      "w": "on",
+      "start": 47.857,
+      "end": 47.973
+    },
+    {
+      "w": "the",
+      "start": 48.008,
+      "end": 48.077
+    },
+    {
+      "w": "fly:",
+      "start": 48.112,
+      "end": 48.53
+    },
+    {
+      "w": "120",
+      "start": 49.134,
+      "end": 49.273
+    },
+    {
+      "w": "when",
+      "start": 49.308,
+      "end": 49.412
+    },
+    {
+      "w": "you",
+      "start": 49.436,
+      "end": 49.505
+    },
+    {
+      "w": "scroll,",
+      "start": 49.563,
+      "end": 50.074
+    },
+    {
+      "w": "slower",
+      "start": 50.353,
+      "end": 50.632
+    },
+    {
+      "w": "when",
+      "start": 50.666,
+      "end": 50.771
+    },
+    {
+      "w": "you",
+      "start": 50.806,
+      "end": 50.875
+    },
+    {
+      "w": "read,",
+      "start": 50.933,
+      "end": 51.27
+    },
+    {
+      "w": "1",
+      "start": 51.607,
+      "end": 51.758
+    },
+    {
+      "w": "hertz",
+      "start": 51.862,
+      "end": 52.06
+    },
+    {
+      "w": "on",
+      "start": 52.106,
+      "end": 52.176
+    },
+    {
+      "w": "the",
+      "start": 52.21,
+      "end": 52.28
+    },
+    {
+      "w": "lock",
+      "start": 52.315,
+      "end": 52.478
+    },
+    {
+      "w": "screen.",
+      "start": 52.524,
+      "end": 52.895
+    },
+    {
+      "w": "Gaming",
+      "start": 53.499,
+      "end": 53.755
+    },
+    {
+      "w": "phones",
+      "start": 53.789,
+      "end": 54.091
+    },
+    {
+      "w": "push",
+      "start": 54.149,
+      "end": 54.312
+    },
+    {
+      "w": "to",
+      "start": 54.347,
+      "end": 54.416
+    },
+    {
+      "w": "144",
+      "start": 54.521,
+      "end": 55.159
+    },
+    {
+      "w": "or",
+      "start": 55.31,
+      "end": 55.484
+    },
+    {
+      "w": "165",
+      "start": 55.589,
+      "end": 56.39
+    },
+    {
+      "w": "hertz,",
+      "start": 56.46,
+      "end": 56.866
+    },
+    {
+      "w": "with",
+      "start": 57.017,
+      "end": 57.168
+    },
+    {
+      "w": "touch",
+      "start": 57.214,
+      "end": 57.4
+    },
+    {
+      "w": "sensors",
+      "start": 57.435,
+      "end": 57.737
+    },
+    {
+      "w": "checking",
+      "start": 57.772,
+      "end": 58.027
+    },
+    {
+      "w": "your",
+      "start": 58.062,
+      "end": 58.166
+    },
+    {
+      "w": "finger",
+      "start": 58.201,
+      "end": 58.41
+    },
+    {
+      "w": "thousands",
+      "start": 58.491,
+      "end": 58.886
+    },
+    {
+      "w": "of",
+      "start": 58.921,
+      "end": 58.967
+    },
+    {
+      "w": "times",
+      "start": 59.014,
+      "end": 59.258
+    },
+    {
+      "w": "a",
+      "start": 59.293,
+      "end": 59.327
+    },
+    {
+      "w": "second.",
+      "start": 59.362,
+      "end": 59.815
+    },
+    {
+      "w": "On",
+      "start": 60.419,
+      "end": 60.546
+    },
+    {
+      "w": "a",
+      "start": 60.581,
+      "end": 60.604
+    },
+    {
+      "w": "PC,",
+      "start": 60.651,
+      "end": 60.999
+    },
+    {
+      "w": "the",
+      "start": 61.034,
+      "end": 61.104
+    },
+    {
+      "w": "graphics",
+      "start": 61.139,
+      "end": 61.452
+    },
+    {
+      "w": "card",
+      "start": 61.487,
+      "end": 61.673
+    },
+    {
+      "w": "must",
+      "start": 61.731,
+      "end": 61.928
+    },
+    {
+      "w": "keep",
+      "start": 61.986,
+      "end": 62.149
+    },
+    {
+      "w": "up.",
+      "start": 62.207,
+      "end": 62.451
+    },
+    {
+      "w": "Say",
+      "start": 62.892,
+      "end": 63.055
+    },
+    {
+      "w": "it",
+      "start": 63.089,
+      "end": 63.147
+    },
+    {
+      "w": "makes",
+      "start": 63.182,
+      "end": 63.356
+    },
+    {
+      "w": "90",
+      "start": 63.461,
+      "end": 63.682
+    },
+    {
+      "w": "frames",
+      "start": 63.751,
+      "end": 63.995
+    },
+    {
+      "w": "for",
+      "start": 64.03,
+      "end": 64.134
+    },
+    {
+      "w": "a",
+      "start": 64.169,
+      "end": 64.192
+    },
+    {
+      "w": "144",
+      "start": 64.274,
+      "end": 65.017
+    },
+    {
+      "w": "hertz",
+      "start": 65.063,
+      "end": 65.26
+    },
+    {
+      "w": "monitor.",
+      "start": 65.295,
+      "end": 65.702
+    },
+    {
+      "w": "The",
+      "start": 66.305,
+      "end": 66.398
+    },
+    {
+      "w": "screen",
+      "start": 66.433,
+      "end": 66.642
+    },
+    {
+      "w": "catches",
+      "start": 66.689,
+      "end": 66.944
+    },
+    {
+      "w": "half",
+      "start": 67.002,
+      "end": 67.176
+    },
+    {
+      "w": "of",
+      "start": 67.223,
+      "end": 67.281
+    },
+    {
+      "w": "one",
+      "start": 67.385,
+      "end": 67.548
+    },
+    {
+      "w": "frame",
+      "start": 67.594,
+      "end": 67.861
+    },
+    {
+      "w": "and",
+      "start": 67.896,
+      "end": 67.989
+    },
+    {
+      "w": "half",
+      "start": 68.047,
+      "end": 68.186
+    },
+    {
+      "w": "of",
+      "start": 68.221,
+      "end": 68.267
+    },
+    {
+      "w": "the",
+      "start": 68.302,
+      "end": 68.372
+    },
+    {
+      "w": "next.",
+      "start": 68.407,
+      "end": 68.813
+    },
+    {
+      "w": "That's",
+      "start": 69.417,
+      "end": 69.649
+    },
+    {
+      "w": "tearing.",
+      "start": 69.695,
+      "end": 70.148
+    },
+    {
+      "w": "The",
+      "start": 70.671,
+      "end": 70.764
+    },
+    {
+      "w": "fix",
+      "start": 70.822,
+      "end": 70.996
+    },
+    {
+      "w": "is",
+      "start": 71.054,
+      "end": 71.124
+    },
+    {
+      "w": "variable",
+      "start": 71.228,
+      "end": 71.646
+    },
+    {
+      "w": "refresh,",
+      "start": 71.681,
+      "end": 72.134
+    },
+    {
+      "w": "like",
+      "start": 72.168,
+      "end": 72.424
+    },
+    {
+      "w": "G-Sync",
+      "start": 72.575,
+      "end": 73.097
+    },
+    {
+      "w": "or",
+      "start": 73.155,
+      "end": 73.237
+    },
+    {
+      "w": "FreeSync.",
+      "start": 73.306,
+      "end": 73.875
+    },
+    {
+      "w": "The",
+      "start": 74.479,
+      "end": 74.572
+    },
+    {
+      "w": "monitor",
+      "start": 74.618,
+      "end": 74.885
+    },
+    {
+      "w": "waits",
+      "start": 74.932,
+      "end": 75.106
+    },
+    {
+      "w": "for",
+      "start": 75.141,
+      "end": 75.245
+    },
+    {
+      "w": "each",
+      "start": 75.303,
+      "end": 75.466
+    },
+    {
+      "w": "new",
+      "start": 75.524,
+      "end": 75.628
+    },
+    {
+      "w": "frame,",
+      "start": 75.686,
+      "end": 75.976
+    },
+    {
+      "w": "and",
+      "start": 75.999,
+      "end": 76.092
+    },
+    {
+      "w": "refreshes",
+      "start": 76.15,
+      "end": 76.533
+    },
+    {
+      "w": "the",
+      "start": 76.568,
+      "end": 76.638
+    },
+    {
+      "w": "moment",
+      "start": 76.684,
+      "end": 76.916
+    },
+    {
+      "w": "it",
+      "start": 76.951,
+      "end": 77.021
+    },
+    {
+      "w": "lands.",
+      "start": 77.067,
+      "end": 77.613
+    },
+    {
+      "w": "And",
+      "start": 77.95,
+      "end": 78.066
+    },
+    {
+      "w": "each",
+      "start": 78.101,
+      "end": 78.24
+    },
+    {
+      "w": "jump",
+      "start": 78.31,
+      "end": 78.495
+    },
+    {
+      "w": "gives",
+      "start": 78.542,
+      "end": 78.728
+    },
+    {
+      "w": "less.",
+      "start": 78.786,
+      "end": 79.238
+    },
+    {
+      "w": "60",
+      "start": 79.761,
+      "end": 80.039
+    },
+    {
+      "w": "to",
+      "start": 80.109,
+      "end": 80.179
+    },
+    {
+      "w": "120",
+      "start": 80.237,
+      "end": 80.69
+    },
+    {
+      "w": "saves",
+      "start": 80.724,
+      "end": 80.98
+    },
+    {
+      "w": "8",
+      "start": 81.061,
+      "end": 81.189
+    },
+    {
+      "w": "milliseconds",
+      "start": 81.247,
+      "end": 81.723
+    },
+    {
+      "w": "a",
+      "start": 81.758,
+      "end": 81.781
+    },
+    {
+      "w": "frame.",
+      "start": 81.827,
+      "end": 82.187
+    },
+    {
+      "w": "120",
+      "start": 82.466,
+      "end": 82.919
+    },
+    {
+      "w": "to",
+      "start": 82.977,
+      "end": 83.058
+    },
+    {
+      "w": "144,",
+      "start": 83.186,
+      "end": 84.068
+    },
+    {
+      "w": "under",
+      "start": 84.219,
+      "end": 84.393
+    },
+    {
+      "w": "one",
+      "start": 84.451,
+      "end": 84.567
+    },
+    {
+      "w": "and",
+      "start": 84.591,
+      "end": 84.66
+    },
+    {
+      "w": "a",
+      "start": 84.695,
+      "end": 84.718
+    },
+    {
+      "w": "half.",
+      "start": 84.765,
+      "end": 85.148
+    },
+    {
+      "w": "Yet",
+      "start": 85.752,
+      "end": 85.914
+    },
+    {
+      "w": "esports",
+      "start": 85.972,
+      "end": 86.355
+    },
+    {
+      "w": "monitors",
+      "start": 86.402,
+      "end": 86.692
+    },
+    {
+      "w": "now",
+      "start": 86.727,
+      "end": 86.831
+    },
+    {
+      "w": "hit",
+      "start": 86.889,
+      "end": 86.994
+    },
+    {
+      "w": "600.",
+      "start": 87.052,
+      "end": 87.702
+    },
+    {
+      "w": "So,",
+      "start": 88.039,
+      "end": 88.526
+    },
+    {
+      "w": "frames",
+      "start": 88.712,
+      "end": 89.014
+    },
+    {
+      "w": "per",
+      "start": 89.072,
+      "end": 89.2
+    },
+    {
+      "w": "second",
+      "start": 89.304,
+      "end": 89.699
+    },
+    {
+      "w": "is",
+      "start": 89.85,
+      "end": 90.001
+    },
+    {
+      "w": "how",
+      "start": 90.047,
+      "end": 90.152
+    },
+    {
+      "w": "fast",
+      "start": 90.256,
+      "end": 90.512
+    },
+    {
+      "w": "pictures",
+      "start": 90.57,
+      "end": 90.86
+    },
+    {
+      "w": "are",
+      "start": 90.895,
+      "end": 90.988
+    },
+    {
+      "w": "made.",
+      "start": 91.023,
+      "end": 91.324
+    },
+    {
+      "w": "Hertz",
+      "start": 91.708,
+      "end": 92.044
+    },
+    {
+      "w": "is",
+      "start": 92.23,
+      "end": 92.369
+    },
+    {
+      "w": "how",
+      "start": 92.416,
+      "end": 92.508
+    },
+    {
+      "w": "fast",
+      "start": 92.578,
+      "end": 92.775
+    },
+    {
+      "w": "they're",
+      "start": 92.81,
+      "end": 92.984
+    },
+    {
+      "w": "shown.",
+      "start": 93.008,
+      "end": 93.426
+    },
+    {
+      "w": "Smooth",
+      "start": 93.809,
+      "end": 94.145
+    },
+    {
+      "w": "is",
+      "start": 94.18,
+      "end": 94.238
+    },
+    {
+      "w": "when",
+      "start": 94.273,
+      "end": 94.389
+    },
+    {
+      "w": "they",
+      "start": 94.412,
+      "end": 94.517
+    },
+    {
+      "w": "match.",
+      "start": 94.563,
+      "end": 95.005
+    },
+    {
+      "w": "Follow",
+      "start": 95.527,
+      "end": 95.771
+    },
+    {
+      "w": "for",
+      "start": 95.806,
+      "end": 95.899
+    },
+    {
+      "w": "part",
+      "start": 95.933,
+      "end": 96.096
+    },
+    {
+      "w": "two:",
+      "start": 96.131,
+      "end": 96.502
+    },
+    {
+      "w": "what",
+      "start": 96.711,
+      "end": 96.885
+    },
+    {
+      "w": "input",
+      "start": 96.955,
+      "end": 97.245
+    },
+    {
+      "w": "lag",
+      "start": 97.28,
+      "end": 97.466
+    },
+    {
+      "w": "really",
+      "start": 97.512,
+      "end": 97.721
+    },
+    {
+      "w": "is.",
+      "start": 97.779,
+      "end": 98.267
+    }
+  ]
+}

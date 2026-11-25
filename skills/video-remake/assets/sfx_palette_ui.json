@@ -1,0 +1,23 @@
+{
+  "_about": "Sound roles for UI-mockup / product-explainer reels. For each role earshot renders every candidate design, ranks them against `want` by ear, and the winner is rendered as `takes` variations (role_1..n). Designs come from earshot's catalogue (`earshot sounds --search <words>`). Ved's rule: real-action and product-UI designs; no long chimes or bells as effects.",
+  "roles": {
+    "pop":        {"want": "a soft round low pop as a card appears on screen",                  "candidates": ["pro_pop_in/airy", "pro_pop_in/deep", "ui_pop/soft", "pop/soft"], "takes": 4, "level_db": -10},
+    "tap":        {"want": "a soft low tap as an app icon lands",                               "candidates": ["pro_tap/soft", "tap/glass", "pro_pop/thup", "tap/soft"], "takes": 3, "level_db": -11},
+    "click":      {"want": "a crisp clean interface click as a button is pressed",              "candidates": ["pro_click/soft", "click/soft", "click/cursor", "pro_click/glass"], "takes": 3, "level_db": -12},
+    "tick":       {"want": "a tiny airy digital tick for a list item appearing",                "candidates": ["pro_hover_tick/air", "pro_typing_key/blip", "hover_tick/air", "tick/soft"], "takes": 4, "level_db": -16},
+    "type_run":   {"want": "a quick run of soft digital typing ticks as text types on",          "candidates": ["pro_typing_run/blip", "pro_typing_run/double", "type/run"], "takes": 2, "level_db": -19},
+    "swish":      {"want": "a soft short swish of air as one screen blurs into the next",       "candidates": ["whoosh/soft", "whoosh/sweep", "swipe/glide", "swish/soft"], "takes": 4, "level_db": -10},
+    "accent":     {"want": "a tiny soft tick marking a scene change under a voice-over",       "candidates": ["pro_hover_tick/soft", "pro_click/soft", "tick/soft", "pro_tap/finger"], "takes": 3, "level_db": -15},
+    "sub":        {"want": "a deep sub bass boom under a reveal, felt more than heard",        "candidates": ["boom/deep", "kick/deep", "sub/swell", "whoosh_big/thump_deep"], "takes": 2, "level_db": -12},
+    "whoosh_in":  {"want": "a fast crisp whoosh as a card zooms toward the camera",             "candidates": ["swoosh/in", "whoosh_fast/crisp", "whoosh/fast"], "takes": 2, "level_db": -9},
+    "iris":       {"want": "a big airy whoosh transition into a new scene",                      "candidates": ["whoosh_big/thump_airy", "whoosh_big/cape", "whoosh_big/swell", "sting/reveal"], "takes": 3, "level_db": -7},
+    "riser":      {"want": "a short digital riser building into a cut",                          "candidates": ["pro_riser/air_gate", "riser/snatch", "rise/reverse", "rise/breath"], "takes": 2, "level_db": -14},
+    "hit":        {"want": "a low punchy hit as a big number or title lands",                    "candidates": ["slam/title", "thump/door", "boom/short", "hit/drop"], "takes": 2, "level_db": -6},
+    "success":    {"want": "a small satisfying confirmation click when a check mark appears",   "candidates": ["success/click", "success/shutter", "pro_click/snap", "menu/select"], "takes": 3, "level_db": -11},
+    "notify":     {"want": "a soft phone notification as a message banner drops in",            "candidates": ["notify/pop", "notify/knock", "receive/cork", "pro_pop_in/double"], "takes": 1, "level_db": -8},
+    "glint":      {"want": "a short bright glint as a light sweeps across a card",              "candidates": ["shine/air", "shine/glint", "sparkle/burst", "shine/match"], "takes": 2, "level_db": -16},
+    "zip":        {"want": "a quick tonal zip as a counter rolls up",                            "candidates": ["pro_zip/up", "pro_zip/arc", "pro_zip/up_hi"], "takes": 2, "level_db": -15},
+    "shutter":    {"want": "a quick camera shutter click as recording starts",                  "candidates": ["shutter/quick", "shutter/snap", "camera/shutter"], "takes": 1, "level_db": -12}
+  },
+  "aliases": {"ding": "success", "bell": "notify", "impact": "hit", "whoosh": "whoosh_in", "rec": "shutter", "typing": "type_run"}
+}

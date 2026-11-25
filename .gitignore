@@ -1,0 +1,31 @@
+# Code and docs only - media, renders and packages stay in the work folders (too big for Git).
+__pycache__/
+*.pyc
+node_modules/
+.remotion/
+out/
+frames/
+
+# media and archives
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.zip
+*.7z
+*.png
+*.psd
+
+# allow the small reference images the skills use as examples
+!skills/**/references/**/*.png
+!skills/**/assets/**/*.png
+
+# local secrets / settings never go to GitHub
+.env
+*.key
+api_key
+token
+.claude/settings.local.json

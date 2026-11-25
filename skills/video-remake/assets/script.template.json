@@ -1,0 +1,27 @@
+{
+  "id": "my-remake",
+  "title": "Working title",
+  "handle": "@yourhandle",
+  "voice": {
+    "name": "Liam",
+    "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+    "model": "eleven_multilingual_v2",
+    "stability": 0.4,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 1.05
+  },
+  "theme": {},
+  "scenes": [
+    {
+      "id": "S01",
+      "section": "hook",
+      "bg": "dark",
+      "text": "One sentence of voice-over for this scene.",
+      "keywords": {"voice-over": "select", "sentence": "bold"},
+      "hits": [{"word": "sentence", "sfx": "pop"}],
+      "visual": "What the scene shows, in one line (the scene component draws this).",
+      "props": {}
+    }
+  ]
+}

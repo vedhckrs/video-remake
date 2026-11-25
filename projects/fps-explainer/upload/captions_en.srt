@@ -1,0 +1,223 @@
+1
+00:00:00,000 --> 00:00:01,698
+Your screen isn't playing a video.
+
+2
+00:00:01,718 --> 00:00:03,245
+It's flipping still pictures.
+
+3
+00:00:03,437 --> 00:00:06,844
+60, 120, even 144 every second.
+
+4
+00:00:07,198 --> 00:00:08,246
+Two numbers decide how
+
+5
+00:00:08,266 --> 00:00:09,352
+smooth it feels.
+
+6
+00:00:09,706 --> 00:00:10,966
+Frames per second:
+
+7
+00:00:11,320 --> 00:00:13,137
+how fast your chip draws pictures.
+
+8
+00:00:13,491 --> 00:00:14,263
+Hertz:
+
+9
+00:00:14,617 --> 00:00:16,620
+how often your screen refreshes.
+
+10
+00:00:16,974 --> 00:00:18,417
+At 60, each picture gets
+
+11
+00:00:18,437 --> 00:00:20,243
+16.7 milliseconds.
+
+12
+00:00:20,329 --> 00:00:22,260
+At 120, just 8.3.
+
+13
+00:00:22,280 --> 00:00:24,167
+At 144, under seven.
+
+14
+00:00:24,521 --> 00:00:25,348
+Every refresh,
+
+15
+00:00:25,368 --> 00:00:27,522
+the screen redraws itself row by row.
+
+16
+00:00:27,795 --> 00:00:28,703
+Inside each pixel,
+
+17
+00:00:28,723 --> 00:00:30,247
+tiny transistors hold its color
+
+18
+00:00:30,267 --> 00:00:31,597
+until the next refresh.
+
+19
+00:00:32,055 --> 00:00:33,533
+This video only plays at 60,
+
+20
+00:00:33,553 --> 00:00:35,103
+so let's slow time down.
+
+21
+00:00:35,457 --> 00:00:37,179
+At 60 hertz, a moving ball
+
+22
+00:00:37,199 --> 00:00:38,586
+jumps in big steps.
+
+23
+00:00:38,940 --> 00:00:40,975
+At 120, the steps are half as big,
+
+24
+00:00:40,995 --> 00:00:42,476
+so motion looks smoother.
+
+25
+00:00:42,748 --> 00:00:44,644
+But fast refresh drains battery,
+
+26
+00:00:44,664 --> 00:00:45,819
+so phones cheat.
+
+27
+00:00:46,173 --> 00:00:48,664
+LTPO screens shift speed on the fly:
+
+28
+00:00:48,936 --> 00:00:50,925
+up to 120 when you scroll,
+
+29
+00:00:50,945 --> 00:00:52,100
+slower when you read,
+
+30
+00:00:52,233 --> 00:00:54,200
+just 1 hertz on the lock screen.
+
+31
+00:00:54,515 --> 00:00:55,517
+Gaming phones push to
+
+32
+00:00:55,537 --> 00:00:58,013
+144 or 165 hertz,
+
+33
+00:00:58,033 --> 00:00:59,197
+with touch sensors checking your
+
+34
+00:00:59,217 --> 00:01:01,081
+finger thousands of times a second.
+
+35
+00:01:01,435 --> 00:01:02,483
+On a PC, the graphics
+
+36
+00:01:02,503 --> 00:01:03,717
+card must keep up.
+
+37
+00:01:03,908 --> 00:01:05,165
+Say it makes 90 frames for
+
+38
+00:01:05,185 --> 00:01:06,968
+a 144 hertz monitor.
+
+39
+00:01:07,321 --> 00:01:08,590
+The screen catches half of one
+
+40
+00:01:08,610 --> 00:01:10,079
+frame and half of the next.
+
+41
+00:01:10,433 --> 00:01:11,414
+That's tearing.
+
+42
+00:01:11,687 --> 00:01:13,164
+The fix is variable refresh,
+
+43
+00:01:13,184 --> 00:01:15,141
+like G-Sync or FreeSync.
+
+44
+00:01:15,495 --> 00:01:16,995
+The monitor waits for each new frame,
+
+45
+00:01:17,015 --> 00:01:18,879
+and refreshes the moment it lands.
+
+46
+00:01:18,966 --> 00:01:20,504
+And each jump gives less.
+
+47
+00:01:20,777 --> 00:01:22,243
+60 to 120 saves 8
+
+48
+00:01:22,263 --> 00:01:23,453
+milliseconds a frame.
+
+49
+00:01:23,482 --> 00:01:26,414
+120 to 144, under one and a half.
+
+50
+00:01:26,768 --> 00:01:28,968
+Yet esports monitors now hit 600.
+
+51
+00:01:29,055 --> 00:01:31,252
+So, frames per second is how
+
+52
+00:01:31,272 --> 00:01:32,590
+fast pictures are made.
+
+53
+00:01:32,724 --> 00:01:34,692
+Hertz is how fast they're shown.
+
+54
+00:01:34,825 --> 00:01:36,271
+Smooth is when they match.
+
+55
+00:01:36,543 --> 00:01:37,707
+Follow for part two:
+
+56
+00:01:37,727 --> 00:01:39,533
+what input lag really is.

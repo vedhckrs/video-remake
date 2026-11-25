@@ -1,0 +1,473 @@
+{
+ "id": "ssd-explainer",
+ "title": "How does an SSD store your files?",
+ "style": "explainer",
+ "handle": null,
+ "output": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "voice": {
+  "name": "Liam",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "model": "eleven_multilingual_v2",
+  "stability": 0.4,
+  "similarity": 0.8,
+  "style": 0.35,
+  "speed": 1.15
+ },
+ "music": {
+  "key": "C# major"
+ },
+ "presenter": {
+  "enter_pose": "wave",
+  "outro_pose": "wave"
+ },
+ "facts_checked_2026_11_24": {
+  "layers": "SK hynix mass-produces 321-layer NAND (TrendForce / TechSpot, 2026) -> 'over 300 layers'",
+  "speed": "Samsung 990 PRO 1TB (PCIe 4.0 x4) reads up to 7,450 MB/s (samsung.com) -> 'over 7,000 megabytes per second'",
+  "endurance": "1 TB TLC drives rated 600 TBW: Samsung 980 PRO 1TB, WD Blue SN580 1TB, Corsair MP600 Elite 1TB; 600 TB / 5 years = 329 GB per day",
+  "wear": "TLC about 1,000-3,000 program/erase cycles (TechTarget) -> 'after one to three thousand rewrites'"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "section": "hook",
+   "bg": "dark",
+   "text": "Your SSD has no moving parts. So where do your files actually live? Inside billions of tiny traps for electrons.",
+   "keywords": {
+    "no": "select",
+    "billions": "select"
+   },
+   "poses": [
+    {
+     "word": "electrons.",
+     "pose": "hands_on_cheeks"
+    }
+   ],
+   "hits": [
+    {
+     "word": "SSD",
+     "sfx": "success"
+    },
+    {
+     "word": "traps",
+     "sfx": "whoosh"
+    },
+    {
+     "word": "no",
+     "sfx": "pop",
+     "offset": 2
+    },
+    {
+     "word": "files",
+     "sfx": "tap",
+     "offset": -6
+    },
+    {
+     "word": "billions",
+     "sfx": "pop",
+     "offset": 4
+    }
+   ],
+   "visual": "Hook hero: full-bleed M.2 SSD (board, gold fingers, controller, NAND, SMD parts) tilts from top-down into 3D on frame 0; on 'traps' the NAND goes x-ray and its cells light up blue."
+  },
+  {
+   "id": "S02",
+   "section": "promise",
+   "bg": "dark",
+   "text": "Let's open one up and follow a single photo as it gets saved.",
+   "keywords": {
+    "photo": "select"
+   },
+   "poses": [
+    {
+     "word": "photo",
+     "pose": "hold_prop"
+    }
+   ],
+   "hits": [
+    {
+     "word": "photo",
+     "sfx": "pop"
+    }
+   ],
+   "visual": "Camera pushes onto the drive; a photo card (glass card with a landscape thumbnail, 'photo.jpg 4.2 MB') drops in above it - the object we follow."
+  },
+  {
+   "id": "S03",
+   "section": "basics",
+   "chapter": "Cells",
+   "bg": "dark",
+   "text": "Every flash chip is a grid of cells. Think of each cell as a tiny bucket with a gate. Push electrons in, and they stay trapped, even with the power off. A full bucket and an empty bucket mean one and zero.",
+   "keywords": {
+    "grid": "select",
+    "bucket": "select",
+    "trapped,": "select",
+    "one": "select"
+   },
+   "hits": [
+    {
+     "word": "grid",
+     "sfx": "whoosh"
+    },
+    {
+     "word": "gate.",
+     "sfx": "click"
+    },
+    {
+     "word": "trapped,",
+     "sfx": "hit"
+    },
+    {
+     "word": "one",
+     "sfx": "pop"
+    },
+    {
+     "word": "power",
+     "sfx": "click",
+     "offset": -6
+    },
+    {
+     "word": "off",
+     "sfx": "click"
+    },
+    {
+     "word": "zero",
+     "sfx": "pop"
+    }
+   ],
+   "visual": "Zoom-through into the NAND chip -> macro cell field; then one cell drawn as a 3D bucket with a gate on top: electron dots fall in and stay when a 'power' switch flips off; two buckets side by side labelled 1 (full) and 0 (empty).",
+   "transition": "zoom",
+   "transition_frames": 10
+  },
+  {
+   "id": "S04",
+   "section": "mechanism",
+   "chapter": "Bits",
+   "bg": "dark",
+   "text": "But modern drives are greedy. Fill the bucket to four different levels, and one cell holds two bits. Eight levels, three bits. Sixteen levels, four bits. That's QLC, and it's why big drives got so cheap.",
+   "keywords": {
+    "greedy.": "select",
+    "four": "select",
+    "Eight": "select",
+    "Sixteen": "select",
+    "cheap.": "select"
+   },
+   "poses": [
+    {
+     "word": "two",
+     "pose": "count_2"
+    },
+    {
+     "word": "three",
+     "pose": "count_3"
+    },
+    {
+     "word": "four",
+     "pose": "count_4"
+    }
+   ],
+   "hits": [
+    {
+     "word": "four",
+     "sfx": "tick"
+    },
+    {
+     "word": "Eight",
+     "sfx": "tick"
+    },
+    {
+     "word": "Sixteen",
+     "sfx": "tick"
+    },
+    {
+     "word": "QLC,",
+     "sfx": "hit"
+    },
+    {
+     "word": "two",
+     "sfx": "pop"
+    },
+    {
+     "word": "cheap.",
+     "sfx": "hit",
+     "offset": -3
+    }
+   ],
+   "visual": "The bucket gets level marks: 4, 8, 16 levels appear as glowing lines; drum counter of levels; then a 3D bar chart SLC 1 / MLC 2 / TLC 3 / QLC 4 bits with QLC highlighted."
+  },
+  {
+   "id": "S05",
+   "section": "mechanism",
+   "chapter": "Layers",
+   "bg": "dark",
+   "text": "Then engineers stopped building flat. They stack the cells into towers, over 300 layers high, on a chip smaller than your fingernail.",
+   "keywords": {
+    "flat.": "select",
+    "300": "select",
+    "fingernail.": "select"
+   },
+   "poses": [
+    {
+     "word": "towers,",
+     "pose": "arms_wide"
+    },
+    {
+     "word": "smaller",
+     "pose": "pinch"
+    }
+   ],
+   "hits": [
+    {
+     "word": "towers,",
+     "sfx": "riser"
+    },
+    {
+     "word": "300",
+     "sfx": "hit"
+    },
+    {
+     "word": "flat.",
+     "sfx": "tap"
+    },
+    {
+     "word": "smaller",
+     "sfx": "swish",
+     "offset": -6
+    }
+   ],
+   "visual": "A flat tile field of cells lifts into a tall exploded stack of layers (springing apart); drum counter runs to 300+ layers; a fingertip silhouette beside the chip for scale.",
+   "transition": "push",
+   "transition_frames": 10
+  },
+  {
+   "id": "S06",
+   "section": "mechanism",
+   "chapter": "Controller",
+   "bg": "dark",
+   "text": "Your photo reaches the controller, the drive's own tiny processor. It splits the photo into pages, spreads them across every chip at once, and writes them in parallel. That's how a fast drive reads over 7,000 megabytes per second.",
+   "keywords": {
+    "controller,": "select",
+    "pages,": "select",
+    "parallel.": "select",
+    "7,000": "select"
+   },
+   "hits": [
+    {
+     "word": "controller,",
+     "sfx": "click"
+    },
+    {
+     "word": "pages,",
+     "sfx": "pop"
+    },
+    {
+     "word": "parallel.",
+     "sfx": "whoosh"
+    },
+    {
+     "word": "7,000",
+     "sfx": "hit"
+    },
+    {
+     "word": "splits",
+     "sfx": "pop"
+    },
+    {
+     "word": "spreads",
+     "sfx": "zip"
+    },
+    {
+     "word": "reads",
+     "sfx": "zip",
+     "offset": -6
+    }
+   ],
+   "visual": "Controller chip in the centre with wires to 8 NAND packages; the photo card splits into page tiles that fly down the wires simultaneously (packets); then a drum counter lands on 7,450 MB/s.",
+   "transition": "push",
+   "transition_frames": 10
+  },
+  {
+   "id": "S07",
+   "section": "caveat",
+   "chapter": "Wear",
+   "bg": "dark",
+   "text": "Here's the catch. Every time a bucket is emptied and refilled, its gate wears a little. After one to three thousand rewrites, it starts to leak.",
+   "keywords": {
+    "catch.": "select",
+    "wears": "select",
+    "thousand": "select",
+    "leak.": "select"
+   },
+   "poses": [
+    {
+     "word": "catch.",
+     "pose": "stop_palm"
+    },
+    {
+     "word": "leak.",
+     "pose": "grimace"
+    }
+   ],
+   "hits": [
+    {
+     "word": "catch.",
+     "sfx": "hit"
+    },
+    {
+     "word": "rewrites,",
+     "sfx": "zip"
+    },
+    {
+     "word": "leak.",
+     "sfx": "sub"
+    },
+    {
+     "word": "every",
+     "sfx": "tick"
+    },
+    {
+     "word": "wears",
+     "sfx": "tick"
+    }
+   ],
+   "visual": "One bucket cycles fill/empty fast with a cycle counter rolling; a wear meter steps green -> amber -> red; at 'leak' electrons drip out of the gate."
+  },
+  {
+   "id": "S08",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "So the controller cheats. It never rewrites the same cell. Every new write goes to the least worn cell, and old data gets moved quietly in the background.",
+   "keywords": {
+    "cheats.": "select",
+    "never": "select",
+    "least": "select"
+   },
+   "poses": [
+    {
+     "word": "cheats.",
+     "pose": "wink"
+    }
+   ],
+   "hits": [
+    {
+     "word": "cheats.",
+     "sfx": "glint"
+    },
+    {
+     "word": "least",
+     "sfx": "success"
+    },
+    {
+     "word": "never",
+     "sfx": "hit",
+     "offset": 20
+    },
+    {
+     "word": "least",
+     "sfx": "tick",
+     "offset": 5
+    },
+    {
+     "word": "moved",
+     "sfx": "swish",
+     "offset": -8
+    }
+   ],
+   "visual": "3D tile field as a wear heat map (cool blue -> hot amber); each new write drops onto the coolest tile; a few tiles slide their data to fresh tiles in the background."
+  },
+  {
+   "id": "S09",
+   "section": "proof",
+   "bg": "light",
+   "text": "That's why a typical one terabyte drive is rated for 600 terabytes written. That's over 300 gigabytes every single day for five years.",
+   "keywords": {
+    "600": "select",
+    "300": "select"
+   },
+   "poses": [
+    {
+     "word": "five",
+     "pose": "count_5"
+    }
+   ],
+   "hits": [
+    {
+     "word": "600",
+     "sfx": "hit"
+    },
+    {
+     "word": "every",
+     "sfx": "zip"
+    },
+    {
+     "frame": 4,
+     "sfx": "pop"
+    },
+    {
+     "word": "over",
+     "sfx": "zip",
+     "offset": -4
+    }
+   ],
+   "visual": "Light act: evidence card 'Endurance rating - 600 TBW (1 TB model)' with a marker sweep; drum counter 329 GB / day; footnote 'typical 1 TB TLC drives, manufacturer spec sheets'.",
+   "transition": "iris",
+   "transition_frames": 12,
+   "origin": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "S10",
+   "section": "payoff",
+   "bg": "dark",
+   "text": "So your photo isn't stored in one place. It's charge, spread across towers of tiny buckets, constantly shuffled to keep your drive alive.",
+   "keywords": {
+    "charge,": "select",
+    "alive.": "select"
+   },
+   "hits": [
+    {
+     "word": "charge,",
+     "sfx": "glint"
+    },
+    {
+     "word": "alive.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "Callback to the hook: the same full-bleed SSD, now x-ray across every NAND package, the photo's pages glowing in scattered cells across the layers.",
+   "transition": "zoom",
+   "transition_frames": 10
+  },
+  {
+   "id": "S11",
+   "section": "cta",
+   "bg": "dark",
+   "text": "Follow for part two: what happens when you hit delete.",
+   "keywords": {
+    "Follow": "select"
+   },
+   "poses": [
+    {
+     "word": "delete.",
+     "pose": "point_viewer"
+    }
+   ],
+   "hits": [
+    {
+     "word": "Follow",
+     "sfx": "click"
+    },
+    {
+     "frame": 28,
+     "sfx": "pop"
+    }
+   ],
+   "visual": "Phone CTA: fingertip presses Follow, it flips to Following; hold the last frame."
+  }
+ ]
+}

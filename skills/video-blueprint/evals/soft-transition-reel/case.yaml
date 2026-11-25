@@ -1,0 +1,4 @@
+﻿schema_version: "1.1"
+name: soft-transition-reel
+expected_outcome: |
+  A blueprint of the 43 s English screen-recording reel: it recognises there are (almost) no hard cuts and that the edit uses soft transitions (blur dissolves, circle iris wipes, zoom morphs), gives about 14-16 shots, the English transcript, BPM near 100, caption style and timing relative to the voice, SFX pattern, the narrative (hook, proof, reveal, example, advice, comment-to-DM CTA), a Premiere/Resolve timeline and a report.

@@ -1,0 +1,268 @@
+{
+  "reference": {
+    "file": "C:\\Users\\VED\\Downloads\\Video\\Comment REPO and Ill DM you the link 📩This free GitHub repo has 100+ AI projects you can bui.mp4",
+    "duration_s": 43.220042,
+    "blueprint": "D:\\VideoBlueprint\\jobs\\repo-reel\\blueprint.json"
+  },
+  "canvas": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30
+  },
+  "length_s": 43.22,
+  "pacing": {
+    "shots": 15,
+    "avg_shot_s": 2.87,
+    "median_shot_s": 3.1,
+    "min_shot_s": 0.63,
+    "max_shot_s": 5.87,
+    "shot_lengths_s": [
+      1.67,
+      1.8,
+      0.63,
+      0.87,
+      1.2,
+      3.47,
+      4.63,
+      4.1,
+      3.83,
+      4.23,
+      1.2,
+      5.23,
+      1.27,
+      5.87,
+      3.1
+    ],
+    "transitions_follow": "voice"
+  },
+  "transitions": {
+    "sequence": [
+      {
+        "type": "zoom",
+        "ref_type": "zoom",
+        "frames": 10,
+        "bg_change": false,
+        "pos": 0.035,
+        "looks_like": "scale-down: repo card shrinks/moves up while the icon grid grows (zoom-out morph)"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 9,
+        "bg_change": false,
+        "pos": 0.076,
+        "looks_like": "gaussian-blur dissolve"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 8,
+        "bg_change": false,
+        "pos": 0.092,
+        "looks_like": "gaussian-blur dissolve"
+      },
+      {
+        "type": "zoom",
+        "ref_type": "zoom",
+        "frames": 10,
+        "bg_change": false,
+        "pos": 0.11,
+        "looks_like": "card scales/flips into the resume card (zoom morph)"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 8,
+        "bg_change": false,
+        "pos": 0.14,
+        "looks_like": "blur dissolve, resume card fades into stars widget"
+      },
+      {
+        "type": "iris",
+        "ref_type": "wipe",
+        "frames": 9,
+        "bg_change": true,
+        "pos": 0.219,
+        "looks_like": "circle iris wipe: a cream circle grows from the star icon to fill the frame (black act -> light act)"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 6,
+        "bg_change": false,
+        "pos": 0.328,
+        "looks_like": "blur dissolve"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 7,
+        "bg_change": false,
+        "pos": 0.422,
+        "looks_like": "blur dissolve"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 10,
+        "bg_change": false,
+        "pos": 0.51,
+        "looks_like": "blur dissolve"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 16,
+        "bg_change": false,
+        "pos": 0.605,
+        "looks_like": "blur dissolve"
+      },
+      {
+        "type": "dissolve",
+        "ref_type": "dissolve",
+        "frames": 10,
+        "bg_change": false,
+        "pos": 0.636,
+        "looks_like": "blur dissolve"
+      },
+      {
+        "type": "iris",
+        "ref_type": "wipe",
+        "frames": 11,
+        "bg_change": true,
+        "pos": 0.756,
+        "looks_like": "black circle iris wipe grows from a dot (light -> terminal)"
+      },
+      {
+        "type": "iris",
+        "ref_type": "wipe",
+        "frames": 7,
+        "bg_change": true,
+        "pos": 0.787,
+        "looks_like": "cream circle iris wipe from top centre (terminal -> stepper panel)"
+      },
+      {
+        "type": "iris",
+        "ref_type": "wipe",
+        "frames": 6,
+        "bg_change": true,
+        "pos": 0.923,
+        "looks_like": "black circle iris wipe into the dark CTA"
+      }
+    ],
+    "counts": {
+      "zoom": 2,
+      "dissolve": 8,
+      "iris": 4
+    },
+    "median_frames": {
+      "zoom": 10,
+      "dissolve": 8,
+      "iris": 8
+    },
+    "hard_cuts": 0,
+    "rule": "iris wipes where the background flips dark<->light; dissolves inside an act"
+  },
+  "acts": {
+    "bg_sequence": [
+      "dark",
+      "dark",
+      "dark",
+      "dark",
+      "dark",
+      "dark",
+      "light",
+      "light",
+      "light",
+      "light",
+      "light",
+      "light",
+      "dark",
+      "light",
+      "dark"
+    ],
+    "dark_bg": "#07090B",
+    "light_bg": "#E6E7DD"
+  },
+  "captions": {
+    "y": 0.144,
+    "height_frac": 0.0375,
+    "size_px": 46,
+    "lead_ms": 48,
+    "word_by_word": true,
+    "style": "caption line at the top centre in a light grey geometric sans (Inter/SF-like), one keyword per line highlighted: either bold black, or italic serif set inside a blue text-selection box with corner handles (Figma-style selection) - e.g. 'free', 'resume', 'evals', 'researches', 'DMs'"
+  },
+  "voice": {
+    "language": "en",
+    "pace_wpm": 159.8,
+    "register": "mid",
+    "pitch_hz": 148.9,
+    "tone": "conversational, confident creator voice at a brisk 160 wpm; mid register (~149 Hz), lifts on keywords (free, called, Awesome, every, team, multi-agent, don't); short pauses between list items (manual/heuristic) (manual/heuristic)",
+    "words": 113
+  },
+  "music": {
+    "bpm": 100.0,
+    "key": "C minor (estimate, r=0.375)",
+    "level_vs_voice": 0.735,
+    "mood": "low, steady 100 BPM electronic/lo-fi bed kept well under the voice; no drops - one long section (low confidence) (vision/heuristic, low confidence)"
+  },
+  "sfx": {
+    "count": 25,
+    "per_10s": 5.78,
+    "families": {
+      "ding": 12,
+      "click": 3,
+      "riser": 7,
+      "impact": 2,
+      "whoosh": 1
+    },
+    "transitions_with_sfx": 0.5,
+    "median_offset_ms_vs_transition": -253
+  },
+  "narrative": [
+    {
+      "section": "hook",
+      "share": 0.143,
+      "purpose": "promise: free GitHub repo, 100+ AI projects you can build and put on your resume"
+    },
+    {
+      "section": "social proof",
+      "share": 0.08,
+      "purpose": "143K GitHub stars counter"
+    },
+    {
+      "section": "reveal",
+      "share": 0.202,
+      "purpose": "name the repo (awesome-llm-apps), full code, categories: agents, RAG, voice agents, MCP"
+    },
+    {
+      "section": "example",
+      "share": 0.335,
+      "purpose": "favourite project walkthrough: AI Legal Agent Team (upload contract -> agents research, review, flag risks) -> what it teaches"
+    },
+    {
+      "section": "advice",
+      "share": 0.165,
+      "purpose": "don't just clone: plug in your use case, add evals, deploy -> interviews"
+    },
+    {
+      "section": "cta",
+      "share": 0.072,
+      "purpose": "comment REPO, get the link by DM (shown as a mock comment + DM notification)"
+    }
+  ],
+  "look": {
+    "look": "clean product-UI mock-ups floating on a soft vignette; act 1 on near-black (#07090B) with a faint dot grid, acts 2-3 on warm off-white (#E6E7DD), back to black for the CTA; heavy use of gaussian blur for depth and transitions",
+    "typography_system": "caption line at the top centre in a light grey geometric sans (Inter/SF-like), one keyword per line highlighted: either bold black, or italic serif set inside a blue text-selection box with corner handles (Figma-style selection) - e.g. 'free', 'resume', 'evals', 'researches', 'DMs'",
+    "colour_story": "monochrome base (black act, then paper-white act) with one accent per moment: GitHub green FREE tag, gold star/chart line, coral/red agent icons, blue selection highlight",
+    "brand_marks": "@princegupta.ai handle centred near the bottom on every shot"
+  },
+  "video_type": "9:16 faceless tech-explainer Reel: animated UI/screen-recording mock-ups + kinetic captions + English VO, comment-to-DM CTA (creator @princegupta.ai)",
+  "rules_inferred": [
+    "2/14 cuts land within ±40 ms of a beat",
+    "median |cut - nearest beat| = 103 ms",
+    "7/14 cuts carry an SFX hit; median SFX offset -253 ms vs the cut",
+    "on-screen words appear 48 ms before the spoken word (median of 108 matches)",
+    "average shot 2.87 s (median 3.10, min 0.63, max 5.87) over 15 shots"
+  ]
+}

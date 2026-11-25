@@ -1,0 +1,497 @@
+{
+ "id": "templates-v2",
+ "title": "Templates v2 showcase",
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "baseFps": 30,
+ "durationInFrames": 768,
+ "theme": {
+  "dark": {
+   "bg": "#0E0F11",
+   "fg": "#FFFFFF",
+   "mute": "#8E9196",
+   "grid": "rgba(255,255,255,0.045)",
+   "card": "#1A1C21",
+   "cardBorder": "rgba(255,255,255,0.08)"
+  },
+  "light": {
+   "bg": "#F6F7F9",
+   "fg": "#0E0F11",
+   "mute": "#6B6E73",
+   "grid": "rgba(14,15,17,0.06)",
+   "card": "#FFFFFF",
+   "cardBorder": "rgba(14,15,17,0.08)"
+  },
+  "accent": "#3B8CFF",
+  "accent2": "#DC1E30",
+  "select": {
+   "fill": "rgba(59,140,255,0.18)",
+   "border": "#3B8CFF"
+  },
+  "fontSans": "Inter",
+  "fontSerif": "Instrument Serif",
+  "fontMono": "JetBrains Mono"
+ },
+ "audio": {
+  "sfx": []
+ },
+ "captions": {
+  "y": 0.165,
+  "size": 64,
+  "mode": "explainer",
+  "pages": [
+   {
+    "from": 4,
+    "to": 94,
+    "words": [
+     {
+      "w": "Zoom",
+      "frame": 4,
+      "style": "normal"
+     },
+     {
+      "w": "into",
+      "frame": 9,
+      "style": "normal"
+     },
+     {
+      "w": "the",
+      "frame": 14,
+      "style": "normal"
+     },
+     {
+      "w": "die.",
+      "frame": 19,
+      "style": "select"
+     }
+    ]
+   },
+   {
+    "from": 100,
+    "to": 190,
+    "words": [
+     {
+      "w": "7,450",
+      "frame": 100,
+      "style": "select"
+     },
+     {
+      "w": "megabytes",
+      "frame": 105,
+      "style": "normal"
+     },
+     {
+      "w": "per",
+      "frame": 110,
+      "style": "normal"
+     },
+     {
+      "w": "second.",
+      "frame": 115,
+      "style": "normal"
+     }
+    ]
+   },
+   {
+    "from": 196,
+    "to": 286,
+    "words": [
+     {
+      "w": "More",
+      "frame": 196,
+      "style": "normal"
+     },
+     {
+      "w": "bits",
+      "frame": 201,
+      "style": "select"
+     },
+     {
+      "w": "per",
+      "frame": 206,
+      "style": "normal"
+     },
+     {
+      "w": "cell,",
+      "frame": 211,
+      "style": "normal"
+     }
+    ]
+   },
+   {
+    "from": 292,
+    "to": 382,
+    "words": [
+     {
+      "w": "billions",
+      "frame": 292,
+      "style": "normal"
+     },
+     {
+      "w": "of",
+      "frame": 297,
+      "style": "normal"
+     },
+     {
+      "w": "cells,",
+      "frame": 302,
+      "style": "select"
+     }
+    ]
+   },
+   {
+    "from": 388,
+    "to": 478,
+    "words": [
+     {
+      "w": "SSD",
+      "frame": 388,
+      "style": "select"
+     },
+     {
+      "w": "versus",
+      "frame": 393,
+      "style": "normal"
+     },
+     {
+      "w": "hard",
+      "frame": 398,
+      "style": "normal"
+     },
+     {
+      "w": "drive.",
+      "frame": 403,
+      "style": "normal"
+     }
+    ]
+   },
+   {
+    "from": 484,
+    "to": 574,
+    "words": [
+     {
+      "w": "Rated",
+      "frame": 484,
+      "style": "normal"
+     },
+     {
+      "w": "for",
+      "frame": 489,
+      "style": "normal"
+     },
+     {
+      "w": "600",
+      "frame": 494,
+      "style": "select"
+     },
+     {
+      "w": "terabytes.",
+      "frame": 499,
+      "style": "normal"
+     }
+    ]
+   },
+   {
+    "from": 580,
+    "to": 670,
+    "words": [
+     {
+      "w": "Step",
+      "frame": 580,
+      "style": "normal"
+     },
+     {
+      "w": "two:",
+      "frame": 585,
+      "style": "select"
+     },
+     {
+      "w": "wear",
+      "frame": 590,
+      "style": "normal"
+     },
+     {
+      "w": "levelling",
+      "frame": 595,
+      "style": "normal"
+     }
+    ]
+   },
+   {
+    "from": 676,
+    "to": 766,
+    "words": [
+     {
+      "w": "Follow",
+      "frame": 676,
+      "style": "select"
+     },
+     {
+      "w": "for",
+      "frame": 681,
+      "style": "normal"
+     },
+     {
+      "w": "part",
+      "frame": 686,
+      "style": "normal"
+     },
+     {
+      "w": "two.",
+      "frame": 691,
+      "style": "normal"
+     }
+    ]
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "id": "macro",
+   "from": 0,
+   "to": 96,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "cut",
+    "frames": 0
+   }
+  },
+  {
+   "id": "number",
+   "from": 96,
+   "to": 192,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "bars",
+   "from": 192,
+   "to": 288,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "tiles",
+   "from": 288,
+   "to": 384,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "compare",
+   "from": 384,
+   "to": 480,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "evidence",
+   "from": 480,
+   "to": 576,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "chapter",
+   "from": 576,
+   "to": 672,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  },
+  {
+   "id": "cta",
+   "from": 672,
+   "to": 768,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "dissolve",
+    "frames": 8
+   }
+  }
+ ],
+ "style": "explainer",
+ "presenter": {
+  "enter": 0,
+  "cues": [
+   {
+    "t": 2,
+    "pose": "point_up_left"
+   },
+   {
+    "t": 98,
+    "pose": "count_1"
+   },
+   {
+    "t": 194,
+    "pose": "level_hand"
+   },
+   {
+    "t": 290,
+    "pose": "arms_wide"
+   },
+   {
+    "t": 386,
+    "pose": "double_thumbs"
+   },
+   {
+    "t": 482,
+    "pose": "point_up_right"
+   },
+   {
+    "t": 578,
+    "pose": "count_2"
+   },
+   {
+    "t": 674,
+    "pose": "wave"
+   }
+  ],
+  "talk": [
+   [
+    4,
+    9
+   ],
+   [
+    9,
+    14
+   ],
+   [
+    14,
+    19
+   ],
+   [
+    19,
+    24
+   ],
+   [
+    100,
+    105
+   ],
+   [
+    105,
+    110
+   ],
+   [
+    110,
+    115
+   ],
+   [
+    115,
+    120
+   ],
+   [
+    196,
+    201
+   ],
+   [
+    201,
+    206
+   ],
+   [
+    206,
+    211
+   ],
+   [
+    211,
+    216
+   ],
+   [
+    292,
+    297
+   ],
+   [
+    297,
+    302
+   ],
+   [
+    302,
+    307
+   ],
+   [
+    388,
+    393
+   ],
+   [
+    393,
+    398
+   ],
+   [
+    398,
+    403
+   ],
+   [
+    403,
+    408
+   ],
+   [
+    484,
+    489
+   ],
+   [
+    489,
+    494
+   ],
+   [
+    494,
+    499
+   ],
+   [
+    499,
+    504
+   ],
+   [
+    580,
+    585
+   ],
+   [
+    585,
+    590
+   ],
+   [
+    590,
+    595
+   ],
+   [
+    595,
+    600
+   ],
+   [
+    676,
+    681
+   ],
+   [
+    681,
+    686
+   ],
+   [
+    686,
+    691
+   ],
+   [
+    691,
+    696
+   ]
+  ]
+ }
+}

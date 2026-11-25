@@ -1,0 +1,459 @@
+{
+ "id": "fps-explainer",
+ "title": "How 60, 120 & 144 fps actually work",
+ "style": "explainer",
+ "handle": null,
+ "output": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "voice": {
+  "name": "Liam",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "model": "eleven_multilingual_v2",
+  "stability": 0.4,
+  "similarity": 0.8,
+  "style": 0.35,
+  "speed": 1.15
+ },
+ "music": {
+  "key": "D major"
+ },
+ "facts_checked_2026_11_25": {
+  "frame_time": "1000 ms / rate: 60 -> 16.67 ms, 120 -> 8.33 ms, 144 -> 6.94 ms ('under seven'); 60->120 saves 8.33 ms, 120->144 saves 1.39 ms ('under one and a half')",
+  "ltpo": "LTPO OLED backplanes (LTPS + oxide TFTs) vary refresh from 120 Hz down to 1 Hz for static content / always-on display (Android Authority, Digital Trends, How-To Geek); base iPhone 17 ships 1-120 Hz ProMotion (Engadget, PhoneArena, Sep 2025) - generic in the script",
+  "gaming_phones": "RedMagic 11S Pro 144 Hz, claims 3,000 Hz touch sampling (TechRadar, Jun 2026); ROG Phone 9 Pro 165 Hz (GSMArena) -> '144 or 165 hertz', 'thousands of times a second'",
+  "monitors": "ZOWIE XL2586X+ rated 600 Hz (BenQ/ZOWIE product page, 2026; PC Gamer, RTINGS lists) -> 'esports monitors now hit 600'; unverified 1,100 Hz claim not used",
+  "tearing_vrr": "tearing = buffer swap during scan-out when frame rate and refresh are not in sync; G-Sync / FreeSync (VRR) make the display refresh when each frame is ready, within its range",
+  "pixels": "active-matrix panels redraw line by line; each pixel's TFT circuit with a storage capacitor holds its drive level until the next refresh (sample-and-hold)",
+  "platform_note": "YouTube and Instagram play at most 60 fps, so 120/144 are shown slowed down (said in S05)"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "section": "hook",
+   "bg": "dark",
+   "text": "Your screen isn't playing a video. It's flipping still pictures. 60, 120, even 144 every second.",
+   "keywords": {
+    "flipping": "select",
+    "144": "select"
+   },
+   "hits": [
+    {
+     "frame": 4,
+     "sfx": "pop"
+    },
+    {
+     "word": "flipping",
+     "sfx": "swish"
+    },
+    {
+     "word": "60,",
+     "sfx": "tick"
+    },
+    {
+     "word": "120,",
+     "sfx": "tick"
+    },
+    {
+     "word": "144",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "Hook world 'Flipbook': a premium smartphone full-bleed, tilted in 3D, already moving on frame 0; on 'flipping' its screen lifts off and fans out into a stack of glowing frame cards that riffle like a flipbook (each card the same neon ball a step further along); a big counter lands 60 -> 120 -> 144 on the numbers."
+  },
+  {
+   "id": "S02",
+   "section": "promise",
+   "bg": "dark",
+   "text": "Two numbers decide how smooth it feels. Frames per second: how fast your chip draws pictures. Hertz: how often your screen refreshes.",
+   "keywords": {
+    "Frames": "select",
+    "Hertz:": "select"
+   },
+   "hits": [
+    {
+     "word": "Two",
+     "sfx": "pop"
+    },
+    {
+     "word": "Frames",
+     "sfx": "click"
+    },
+    {
+     "word": "draws",
+     "sfx": "zip"
+    },
+    {
+     "word": "Hertz:",
+     "sfx": "click"
+    },
+    {
+     "word": "refreshes.",
+     "sfx": "glint"
+    }
+   ],
+   "visual": "World 'Two machines': a graphics chip as a frame factory printing frame cards onto a glowing conveyor (gauge 'FPS'), feeding a screen drawn as a window with a refresh shutter that blinks (gauge 'Hz'); 'Frames' lights the factory, 'Hertz' lights the screen.",
+   "transition": "dissolve",
+   "transition_frames": 10
+  },
+  {
+   "id": "S03",
+   "section": "basics",
+   "chapter": "Frame time",
+   "bg": "dark",
+   "text": "At 60, each picture gets 16.7 milliseconds. At 120, just 8.3. At 144, under seven.",
+   "keywords": {
+    "16.7": "select",
+    "8.3.": "select",
+    "seven.": "select"
+   },
+   "hits": [
+    {
+     "word": "16.7",
+     "sfx": "tick"
+    },
+    {
+     "word": "8.3.",
+     "sfx": "tick"
+    },
+    {
+     "word": "seven.",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Time lanes': three glowing lanes labelled 60, 120, 144 Hz; in each a light bar sized to one frame's time (16.7 ms, 8.3 ms, 6.9 ms) with a stopwatch ring sweeping; each lane's bar snaps to its size on its number.",
+   "transition": "dissolve",
+   "transition_frames": 8
+  },
+  {
+   "id": "S04",
+   "section": "mechanism",
+   "chapter": "Inside the screen",
+   "bg": "dark",
+   "text": "Every refresh, the screen redraws itself row by row. Inside each pixel, tiny transistors hold its color until the next refresh.",
+   "keywords": {
+    "row": "select",
+    "transistors": "select"
+   },
+   "hits": [
+    {
+     "word": "redraws",
+     "sfx": "zip"
+    },
+    {
+     "word": "pixel,",
+     "sfx": "swish"
+    },
+    {
+     "word": "transistors",
+     "sfx": "click"
+    },
+    {
+     "word": "hold",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "One continuous NanoZoom into the screen: phone screen -> display stack (cover glass, touch layer, OLED) -> pixel grid with a bright scan line redrawing row by row -> one pixel (red, green, blue subpixels) -> its tiny transistor and storage capacitor glowing as they hold the color until the scan line passes again.",
+   "transition": "portal",
+   "transition_frames": 16,
+   "origin": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "S05",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "This video only plays at 60, so let's slow time down. At 60 hertz, a moving ball jumps in big steps. At 120, the steps are half as big, so motion looks smoother.",
+   "keywords": {
+    "slow": "select",
+    "big": "select",
+    "half": "select"
+   },
+   "hits": [
+    {
+     "word": "slow",
+     "sfx": "whoosh"
+    },
+    {
+     "word": "jumps",
+     "sfx": "pop"
+    },
+    {
+     "word": "half",
+     "sfx": "pop"
+    },
+    {
+     "word": "smoother.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "World 'Slow time': a clock face slows inside time-warp rings ('slowed 8x' tag); a ball arcs along two tracks leaving ghost dots where each refresh shows it: the 60 Hz track has a few big gaps, the 120 Hz track twice as many dots; on 'smoother' the 120 track's trail turns into one fluid line.",
+   "transition": "dissolve",
+   "transition_frames": 8
+  },
+  {
+   "id": "S06",
+   "section": "mechanism",
+   "chapter": "Phones",
+   "bg": "dark",
+   "text": "But fast refresh drains battery, so phones cheat. LTPO screens shift speed on the fly: up to 120 when you scroll, slower when you read, just 1 hertz on the lock screen.",
+   "keywords": {
+    "cheat.": "select",
+    "LTPO": "select",
+    "1": "select"
+   },
+   "hits": [
+    {
+     "word": "drains",
+     "sfx": "sub"
+    },
+    {
+     "word": "cheat.",
+     "sfx": "glint"
+    },
+    {
+     "word": "scroll,",
+     "sfx": "zip"
+    },
+    {
+     "word": "slower",
+     "sfx": "swish"
+    },
+    {
+     "word": "1",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Gearbox phone': a phone with a refresh dial / gear lever beside it; it shifts 120 (a fast-scrolling feed) -> lower (an article being read) -> 1 Hz (always-on lock-screen clock), and a battery gauge drains slower with each shift down. Generic phone, no brand.",
+   "transition": "push",
+   "transition_frames": 10
+  },
+  {
+   "id": "S07",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "Gaming phones push to 144 or 165 hertz, with touch sensors checking your finger thousands of times a second.",
+   "keywords": {
+    "165": "select",
+    "thousands": "select"
+   },
+   "hits": [
+    {
+     "word": "144",
+     "sfx": "tick"
+    },
+    {
+     "word": "165",
+     "sfx": "hit"
+    },
+    {
+     "word": "touch",
+     "sfx": "tap"
+    },
+    {
+     "word": "thousands",
+     "sfx": "zip"
+    }
+   ],
+   "visual": "World 'Touch grid': a gaming phone in landscape with shoulder-trigger glow; a fingertip on the glass, the capacitive grid beneath it pulsing rings outward; badges 144 Hz and 165 Hz; a touch-scan counter rolls into the thousands per second.",
+   "transition": "dissolve",
+   "transition_frames": 6
+  },
+  {
+   "id": "S08",
+   "section": "caveat",
+   "chapter": "Gaming",
+   "bg": "dark",
+   "text": "On a PC, the graphics card must keep up. Say it makes 90 frames for a 144 hertz monitor. The screen catches half of one frame and half of the next. That's tearing.",
+   "keywords": {
+    "90": "select",
+    "tearing.": "select"
+   },
+   "hits": [
+    {
+     "word": "PC,",
+     "sfx": "click"
+    },
+    {
+     "word": "90",
+     "sfx": "tick"
+    },
+    {
+     "word": "monitor.",
+     "sfx": "tick"
+    },
+    {
+     "word": "next.",
+     "sfx": "swish"
+    },
+    {
+     "word": "tearing.",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "World 'Tear': a PC graphics card printing frames at 90 per second beside a 144 Hz monitor whose scan line sweeps faster; out of step, a game scene (neon spaceship over a city) splits along a horizontal tear line where the new frame starts mid-scan; the tear is highlighted on 'tearing'.",
+   "transition": "push",
+   "transition_frames": 10
+  },
+  {
+   "id": "S09",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "The fix is variable refresh, like G-Sync or FreeSync. The monitor waits for each new frame, and refreshes the moment it lands.",
+   "keywords": {
+    "variable": "select",
+    "waits": "select"
+   },
+   "hits": [
+    {
+     "word": "fix",
+     "sfx": "glint"
+    },
+    {
+     "word": "G-Sync",
+     "sfx": "tap"
+    },
+    {
+     "word": "FreeSync.",
+     "sfx": "tap"
+    },
+    {
+     "word": "waits",
+     "sfx": "tick"
+    },
+    {
+     "word": "lands.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "World 'Sync': the same monitor and card; the scan line now waits at a gate; each frame card lands, a green sync light flashes and the scan runs; G-Sync and FreeSync shown as two labelled badges; the spaceship scene glides with no tear.",
+   "transition": "dissolve",
+   "transition_frames": 8
+  },
+  {
+   "id": "S10",
+   "section": "proof",
+   "chapter": "Limits",
+   "bg": "light",
+   "text": "And each jump gives less. 60 to 120 saves 8 milliseconds a frame. 120 to 144, under one and a half. Yet esports monitors now hit 600.",
+   "keywords": {
+    "less.": "select",
+    "8": "select",
+    "600.": "select"
+   },
+   "hits": [
+    {
+     "frame": 4,
+     "sfx": "pop"
+    },
+    {
+     "word": "less.",
+     "sfx": "sub"
+    },
+    {
+     "word": "8",
+     "sfx": "tick"
+    },
+    {
+     "word": "half.",
+     "sfx": "tick"
+    },
+    {
+     "word": "600.",
+     "sfx": "hit"
+    }
+   ],
+   "visual": "Light act 'Diminishing stairs': an evidence card with two steps - '60 -> 120: -8.3 ms per frame' (a big step) and '120 -> 144: -1.4 ms' (a tiny step) with a marker sweep; footnote 'frame time = 1000 / Hz'; on '600' a sleek esports monitor badge '600 Hz' rises at the top.",
+   "transition": "iris",
+   "transition_frames": 12,
+   "origin": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "id": "S11",
+   "section": "payoff",
+   "bg": "dark",
+   "text": "So, frames per second is how fast pictures are made. Hertz is how fast they're shown. Smooth is when they match.",
+   "keywords": {
+    "made.": "select",
+    "shown.": "select",
+    "match.": "select"
+   },
+   "hits": [
+    {
+     "word": "made.",
+     "sfx": "pop"
+    },
+    {
+     "word": "shown.",
+     "sfx": "pop"
+    },
+    {
+     "word": "match.",
+     "sfx": "success"
+    }
+   ],
+   "visual": "Callback to the hook: the FPS gauge and the Hz gauge swing to the same number and lock together with a click; the flipbook from the hook now plays perfectly smooth on the phone.",
+   "transition": "portal",
+   "transition_frames": 16,
+   "origin": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "id": "S12",
+   "section": "cta",
+   "bg": "dark",
+   "text": "Follow for part two: what input lag really is.",
+   "keywords": {
+    "Follow": "select"
+   },
+   "hits": [
+    {
+     "word": "Follow",
+     "sfx": "click"
+    },
+    {
+     "word": "lag",
+     "sfx": "pop"
+    }
+   ],
+   "visual": "Phone CTA: fingertip presses Follow, it flips to Following; a small 'Part 2: Input lag' card slides up; hold the last frame.",
+   "transition": "dissolve",
+   "transition_frames": 8,
+   "beats": [
+    {
+     "word": "part",
+     "camera": "hold"
+    },
+    {
+     "word": "two:",
+     "camera": "hold"
+    },
+    {
+     "word": "what",
+     "camera": "hold"
+    },
+    {
+     "word": "input",
+     "camera": "hold"
+    },
+    {
+     "word": "lag",
+     "camera": "hold"
+    },
+    {
+     "word": "really",
+     "camera": "hold"
+    }
+   ]
+  }
+ ]
+}

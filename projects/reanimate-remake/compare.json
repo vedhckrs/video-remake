@@ -1,0 +1,100 @@
+{
+  "passed": 10,
+  "total": 11,
+  "rows": [
+    {
+      "metric": "length s",
+      "reference": 43.22,
+      "remake": 44.1,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "shots",
+      "reference": 15,
+      "remake": 17,
+      "pass": true,
+      "note": "detector count on the render - soft transitions can merge shots"
+    },
+    {
+      "metric": "avg shot s",
+      "reference": 2.87,
+      "remake": 2.59,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "transition mix (raw detector, both)",
+      "reference": {
+        "iris": 4,
+        "dissolve": 3,
+        "zoom": 2,
+        "push": 1,
+        "cut": 1
+      },
+      "remake": {
+        "cut": 3,
+        "iris": 10,
+        "dissolve": 3
+      },
+      "pass": false,
+      "note": "reviewed reference: {'zoom': 2, 'dissolve': 8, 'iris': 4}"
+    },
+    {
+      "metric": "hard cuts (raw detector, both)",
+      "reference": 1,
+      "remake": 3,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "transitions follow",
+      "reference": "voice",
+      "remake": "voice",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "caption y",
+      "reference": 0.144,
+      "remake": 0.146,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "caption lead ms",
+      "reference": 48,
+      "remake": 23,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "voice wpm",
+      "reference": 159.8,
+      "remake": 162.5,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "music BPM",
+      "reference": 100.0,
+      "remake": 100.0,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "sfx per 10 s",
+      "reference": 5.78,
+      "remake": 5.44,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "metric": "act pattern",
+      "reference": "DDDDDDLLLLLLDLD",
+      "remake": "DDDDDDDLLLLLLDLDD",
+      "pass": true,
+      "note": "for reading, not scored"
+    }
+  ]
+}

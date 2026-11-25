@@ -1,0 +1,394 @@
+{
+  "id": "reanimate-remake",
+  "title": "This free Claude Code skill copies any animation",
+  "handle": null,
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60
+  },
+  "sources": [
+    "https://github.com/NiazMorshed2007/reanimate (README + repo page, read 2026-11-23: 2.3k stars; re-checked 2026-11-24: 2.4k stars, 212 forks, MIT, Claude Code skill, record/spec/build/verify loop, CSS/Framer Motion/GSAP/three.js, Vercel Toolbar 417 of 417 frames identical, inputs: live site, screen recording, mp4, gif, Lottie, 'clone X and add Y')"
+  ],
+  "voice": {
+    "name": "Liam",
+    "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+    "model": "eleven_multilingual_v2",
+    "stability": 0.4,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 1.05
+  },
+  "theme": {},
+  "scenes": [
+    {
+      "id": "S01",
+      "section": "hook",
+      "bg": "dark",
+      "text": "This free Claude Code skill",
+      "keywords": {
+        "free": "select"
+      },
+      "hits": [
+        {
+          "word": "free",
+          "sfx": "pop"
+        },
+        {
+          "word": "claude",
+          "sfx": "tap"
+        },
+        {
+          "word": "skill",
+          "sfx": "glint",
+          "offset": -6
+        }
+      ],
+      "visual": "Skill card (repo-style: owner/reanimate, 'A Claude Code skill') with a green FREE sticker popping on 'free'; cursor drifts to the Star button."
+    },
+    {
+      "id": "S02",
+      "section": "hook",
+      "bg": "dark",
+      "text": "copies any animation you see online,",
+      "transition": "zoom",
+      "keywords": {
+        "animation": "bold"
+      },
+      "hits": [
+        {
+          "word": "any",
+          "sfx": "tick"
+        },
+        {
+          "word": "animation",
+          "sfx": "pop"
+        },
+        {
+          "word": "online,",
+          "sfx": "click"
+        }
+      ],
+      "visual": "Card shrinks up (zoom morph) while a grid of small animated UI tiles ripples in: spinners, toggles, cards, bouncing dots."
+    },
+    {
+      "id": "S03",
+      "section": "hook",
+      "bg": "dark",
+      "text": "frame by frame,",
+      "transition": "dissolve",
+      "keywords": {
+        "frame": "select"
+      },
+      "visual": "Film strip of 6 frames of one card animation sliding left, each frame numbered f1..f6.",
+      "hits": [
+        {
+          "word": "frame",
+          "sfx": "shutter"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "section": "hook",
+      "bg": "dark",
+      "text": "and then proves the copy moves the same.",
+      "transition": "zoom",
+      "keywords": {
+        "proves": "select",
+        "same.": "bold"
+      },
+      "hits": [
+        {
+          "word": "proves",
+          "sfx": "tick"
+        },
+        {
+          "word": "same.",
+          "sfx": "success"
+        }
+      ],
+      "visual": "stripe.com original and reanimate copy as two full cards side by side (real README demo), tilting identically under the same pointer path; delta 0.4 px badge and MOVES THE SAME on same."
+    },
+    {
+      "id": "S05",
+      "section": "proof",
+      "bg": "dark",
+      "text": "It already has 2.4K stars on GitHub.",
+      "keywords": {
+        "2.4K": "select"
+      },
+      "hits": [
+        {
+          "frame": 2,
+          "sfx": "zip"
+        },
+        {
+          "word": "2.4K",
+          "sfx": "hit",
+          "offset": 6
+        },
+        {
+          "word": "stars",
+          "sfx": "glint",
+          "offset": -4
+        }
+      ],
+      "visual": "Dark 'GitHub stars' widget: counter rolls 0 -> 2.4K landing on the word, gold line chart rising to a glowing dot."
+    },
+    {
+      "id": "S06",
+      "section": "reveal",
+      "bg": "light",
+      "text": "It's called reanimate.",
+      "origin": [
+        0.82,
+        0.37
+      ],
+      "keywords": {
+        "reanimate.": "select"
+      },
+      "hits": [
+        {
+          "word": "called",
+          "sfx": "tap"
+        },
+        {
+          "word": "reanimate.",
+          "sfx": "tap"
+        }
+      ],
+      "visual": "Light act opens with an iris from the star: repo card 'NiazMorshed2007 / reanimate', description, tags claude-code, animation, motion, MIT."
+    },
+    {
+      "id": "S07",
+      "section": "reveal",
+      "bg": "light",
+      "text": "Point it at a live site, a screen recording, a GIF or a Lottie file.",
+      "keywords": {
+        "GIF": "bold",
+        "Lottie": "select"
+      },
+      "hits": [
+        {
+          "word": "site,",
+          "sfx": "click"
+        },
+        {
+          "word": "recording,",
+          "sfx": "click"
+        },
+        {
+          "word": "GIF",
+          "sfx": "click"
+        },
+        {
+          "word": "Lottie",
+          "sfx": "click"
+        }
+      ],
+      "visual": "2x2 input cards (Live site, Screen recording, GIF, Lottie) - each lights up with a coral outline and tick on its word."
+    },
+    {
+      "id": "S08",
+      "section": "how",
+      "bg": "light",
+      "text": "It records the motion in a headless browser,",
+      "keywords": {
+        "records": "select"
+      },
+      "visual": "Browser window with a red REC dot; below it a strip of captured frames filling in left to right.",
+      "hits": [
+        {
+          "word": "records",
+          "sfx": "shutter"
+        },
+        {
+          "word": "headless",
+          "sfx": "tap"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "section": "how",
+      "bg": "light",
+      "text": "writes a spec for every element,",
+      "keywords": {
+        "spec": "select"
+      },
+      "hits": [
+        {
+          "word": "spec",
+          "sfx": "type_run"
+        }
+      ],
+      "visual": "Spec table: rows element / property / from -> to / easing (card, opacity, 0 -> 1, ease-out ...) typing in row by row."
+    },
+    {
+      "id": "S10",
+      "section": "how",
+      "bg": "light",
+      "text": "builds it in CSS, Framer Motion or GSAP,",
+      "keywords": {
+        "CSS,": "bold",
+        "GSAP,": "select"
+      },
+      "hits": [
+        {
+          "frame": 4,
+          "sfx": "type_run"
+        },
+        {
+          "word": "CSS,",
+          "sfx": "tap"
+        },
+        {
+          "word": "Framer",
+          "sfx": "tap"
+        },
+        {
+          "word": "GSAP,",
+          "sfx": "tap"
+        }
+      ],
+      "visual": "Code editor typing a keyframes block; three pills CSS, Framer Motion, GSAP pop on their words."
+    },
+    {
+      "id": "S11",
+      "section": "how",
+      "bg": "light",
+      "text": "then films its own copy and measures the difference.",
+      "keywords": {
+        "measures": "select"
+      },
+      "hits": [
+        {
+          "word": "films",
+          "sfx": "zip"
+        },
+        {
+          "word": "difference.",
+          "sfx": "success"
+        }
+      ],
+      "visual": "Before/after slider wiping between the original and the copy card (real README demo) over a pixel-difference meter counting 12.4% -> 0.0%."
+    },
+    {
+      "id": "S12",
+      "section": "example",
+      "bg": "light",
+      "text": "On Vercel's toolbar it matched 417 of 417 frames.",
+      "keywords": {
+        "417": "bold",
+        "frames.": "select"
+      },
+      "hits": [
+        {
+          "word": "toolbar",
+          "sfx": "tap"
+        },
+        {
+          "frame": 10,
+          "sfx": "zip"
+        },
+        {
+          "word": "417",
+          "sfx": "hit"
+        },
+        {
+          "word": "frames.",
+          "sfx": "success"
+        }
+      ],
+      "visual": "Big counter '417 / 417 frames identical' with a frame-by-frame check grid filling green."
+    },
+    {
+      "id": "S13",
+      "section": "advice",
+      "bg": "dark",
+      "text": "But don't stop at a copy.",
+      "origin": [
+        0.5,
+        0.72
+      ],
+      "keywords": {
+        "don't": "bold",
+        "copy.": "select"
+      },
+      "visual": "Black iris into a dark terminal: '/reanimate the hero on stripe.com' typed, then struck through with a red X badge.",
+      "hits": [
+        {
+          "frame": 3,
+          "sfx": "type_run"
+        },
+        {
+          "word": "copy.",
+          "sfx": "hit"
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "section": "advice",
+      "bg": "light",
+      "text": "Ask it to clone this and add that, and build your own on top.",
+      "origin": [
+        0.87,
+        0.37
+      ],
+      "keywords": {
+        "own": "select",
+        "add": "bold"
+      },
+      "hits": [
+        {
+          "word": "clone",
+          "sfx": "success"
+        },
+        {
+          "word": "add",
+          "sfx": "success"
+        },
+        {
+          "word": "own",
+          "sfx": "glint"
+        }
+      ],
+      "visual": "Cream iris: stepper Clone -> Add your twist -> Ship, with three prompt chips: 'clone this', 'match it exactly', 'clone X and add Y'."
+    },
+    {
+      "id": "S15",
+      "section": "cta",
+      "bg": "dark",
+      "text": "Comment ANIMATE and I'll send you the link.",
+      "origin": [
+        0.5,
+        0.74
+      ],
+      "keywords": {
+        "ANIMATE": "select",
+        "link.": "bold"
+      },
+      "hits": [
+        {
+          "word": "ANIMATE",
+          "sfx": "pop"
+        },
+        {
+          "word": "send",
+          "sfx": "success"
+        },
+        {
+          "word": "link.",
+          "sfx": "notify"
+        }
+      ],
+      "visual": "Dark profile card + comments sheet: a comment 'ANIMATE' pops in, reply 'Sent! Check your DMs', DM notification drops in with github.com/NiazMorshed2007/reanimate."
+    }
+  ],
+  "music": {
+    "key": "Eb major",
+    "why": "uplifting product film; earshot read the C minor score as sad"
+  }
+}

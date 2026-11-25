@@ -1,0 +1,1415 @@
+{
+  "text": "Your SSD has no moving parts. So where do your files actually live? Inside billions of tiny traps for electrons. Let's open one up and follow a single photo as it gets saved. Every flash chip is a grid of cells. Think of each cell as a tiny bucket with a gate. Push electrons in, and they stay trapped, even with the power off. A full bucket and an empty bucket mean one and zero. But modern drives are greedy. Fill the bucket to four different levels, and one cell holds two bits. Eight levels, three bits. Sixteen levels, four bits. That's QLC, and it's why big drives got so cheap. Then engineers stopped building flat. They stack the cells into towers, over 300 layers high, on a chip smaller than your fingernail. Your photo reaches the controller, the drive's own tiny processor. It splits the photo into pages, spreads them across every chip at once, and writes them in parallel. That's how a fast drive reads over 7,000 megabytes per second. Here's the catch. Every time a bucket is emptied and refilled, its gate wears a little. After one to three thousand rewrites, it starts to leak. So the controller cheats. It never rewrites the same cell. Every new write goes to the least worn cell, and old data gets moved quietly in the background. That's why a typical one terabyte drive is rated for 600 terabytes written. That's over 300 gigabytes every single day for five years. So your photo isn't stored in one place. It's charge, spread across towers of tiny buckets, constantly shuffled to keep your drive alive. Follow for part two: what happens when you hit delete.",
+  "words": [
+    {
+      "w": "Your",
+      "start": 0.0,
+      "end": 0.209
+    },
+    {
+      "w": "SSD",
+      "start": 0.255,
+      "end": 0.627
+    },
+    {
+      "w": "has",
+      "start": 0.778,
+      "end": 0.906
+    },
+    {
+      "w": "no",
+      "start": 1.01,
+      "end": 1.138
+    },
+    {
+      "w": "moving",
+      "start": 1.219,
+      "end": 1.44
+    },
+    {
+      "w": "parts.",
+      "start": 1.498,
+      "end": 1.962
+    },
+    {
+      "w": "So",
+      "start": 2.206,
+      "end": 2.345
+    },
+    {
+      "w": "where",
+      "start": 2.392,
+      "end": 2.566
+    },
+    {
+      "w": "do",
+      "start": 2.589,
+      "end": 2.635
+    },
+    {
+      "w": "your",
+      "start": 2.67,
+      "end": 2.775
+    },
+    {
+      "w": "files",
+      "start": 2.821,
+      "end": 3.077
+    },
+    {
+      "w": "actually",
+      "start": 3.158,
+      "end": 3.576
+    },
+    {
+      "w": "live?",
+      "start": 3.634,
+      "end": 3.971
+    },
+    {
+      "w": "Inside",
+      "start": 4.493,
+      "end": 4.923
+    },
+    {
+      "w": "billions",
+      "start": 4.969,
+      "end": 5.341
+    },
+    {
+      "w": "of",
+      "start": 5.375,
+      "end": 5.445
+    },
+    {
+      "w": "tiny",
+      "start": 5.503,
+      "end": 5.782
+    },
+    {
+      "w": "traps",
+      "start": 5.84,
+      "end": 6.165
+    },
+    {
+      "w": "for",
+      "start": 6.2,
+      "end": 6.304
+    },
+    {
+      "w": "electrons.",
+      "start": 6.351,
+      "end": 6.978
+    },
+    {
+      "w": "Let's",
+      "start": 7.581,
+      "end": 7.767
+    },
+    {
+      "w": "open",
+      "start": 7.802,
+      "end": 7.953
+    },
+    {
+      "w": "one",
+      "start": 7.999,
+      "end": 8.104
+    },
+    {
+      "w": "up",
+      "start": 8.139,
+      "end": 8.208
+    },
+    {
+      "w": "and",
+      "start": 8.243,
+      "end": 8.313
+    },
+    {
+      "w": "follow",
+      "start": 8.359,
+      "end": 8.557
+    },
+    {
+      "w": "a",
+      "start": 8.603,
+      "end": 8.626
+    },
+    {
+      "w": "single",
+      "start": 8.673,
+      "end": 8.905
+    },
+    {
+      "w": "photo",
+      "start": 8.928,
+      "end": 9.149
+    },
+    {
+      "w": "as",
+      "start": 9.207,
+      "end": 9.276
+    },
+    {
+      "w": "it",
+      "start": 9.311,
+      "end": 9.369
+    },
+    {
+      "w": "gets",
+      "start": 9.404,
+      "end": 9.532
+    },
+    {
+      "w": "saved.",
+      "start": 9.555,
+      "end": 9.95
+    },
+    {
+      "w": "Every",
+      "start": 10.658,
+      "end": 10.879
+    },
+    {
+      "w": "flash",
+      "start": 10.937,
+      "end": 11.215
+    },
+    {
+      "w": "chip",
+      "start": 11.25,
+      "end": 11.413
+    },
+    {
+      "w": "is",
+      "start": 11.459,
+      "end": 11.529
+    },
+    {
+      "w": "a",
+      "start": 11.575,
+      "end": 11.598
+    },
+    {
+      "w": "grid",
+      "start": 11.656,
+      "end": 11.912
+    },
+    {
+      "w": "of",
+      "start": 11.947,
+      "end": 12.005
+    },
+    {
+      "w": "cells.",
+      "start": 12.063,
+      "end": 12.562
+    },
+    {
+      "w": "Think",
+      "start": 13.166,
+      "end": 13.351
+    },
+    {
+      "w": "of",
+      "start": 13.386,
+      "end": 13.444
+    },
+    {
+      "w": "each",
+      "start": 13.479,
+      "end": 13.619
+    },
+    {
+      "w": "cell",
+      "start": 13.654,
+      "end": 13.851
+    },
+    {
+      "w": "as",
+      "start": 13.897,
+      "end": 13.967
+    },
+    {
+      "w": "a",
+      "start": 14.014,
+      "end": 14.037
+    },
+    {
+      "w": "tiny",
+      "start": 14.083,
+      "end": 14.315
+    },
+    {
+      "w": "bucket",
+      "start": 14.373,
+      "end": 14.606
+    },
+    {
+      "w": "with",
+      "start": 14.629,
+      "end": 14.733
+    },
+    {
+      "w": "a",
+      "start": 14.768,
+      "end": 14.791
+    },
+    {
+      "w": "gate.",
+      "start": 14.838,
+      "end": 15.221
+    },
+    {
+      "w": "Push",
+      "start": 16.045,
+      "end": 16.254
+    },
+    {
+      "w": "electrons",
+      "start": 16.289,
+      "end": 16.661
+    },
+    {
+      "w": "in,",
+      "start": 16.707,
+      "end": 16.928
+    },
+    {
+      "w": "and",
+      "start": 16.986,
+      "end": 17.09
+    },
+    {
+      "w": "they",
+      "start": 17.125,
+      "end": 17.241
+    },
+    {
+      "w": "stay",
+      "start": 17.299,
+      "end": 17.473
+    },
+    {
+      "w": "trapped,",
+      "start": 17.52,
+      "end": 17.903
+    },
+    {
+      "w": "even",
+      "start": 18.089,
+      "end": 18.263
+    },
+    {
+      "w": "with",
+      "start": 18.298,
+      "end": 18.402
+    },
+    {
+      "w": "the",
+      "start": 18.425,
+      "end": 18.495
+    },
+    {
+      "w": "power",
+      "start": 18.53,
+      "end": 18.762
+    },
+    {
+      "w": "off.",
+      "start": 18.82,
+      "end": 19.11
+    },
+    {
+      "w": "A",
+      "start": 19.935,
+      "end": 20.016
+    },
+    {
+      "w": "full",
+      "start": 20.12,
+      "end": 20.306
+    },
+    {
+      "w": "bucket",
+      "start": 20.353,
+      "end": 20.608
+    },
+    {
+      "w": "and",
+      "start": 20.654,
+      "end": 20.736
+    },
+    {
+      "w": "an",
+      "start": 20.771,
+      "end": 20.829
+    },
+    {
+      "w": "empty",
+      "start": 20.875,
+      "end": 21.072
+    },
+    {
+      "w": "bucket",
+      "start": 21.119,
+      "end": 21.351
+    },
+    {
+      "w": "mean",
+      "start": 21.386,
+      "end": 21.514
+    },
+    {
+      "w": "one",
+      "start": 21.595,
+      "end": 21.769
+    },
+    {
+      "w": "and",
+      "start": 21.804,
+      "end": 21.874
+    },
+    {
+      "w": "zero.",
+      "start": 21.92,
+      "end": 22.35
+    },
+    {
+      "w": "But",
+      "start": 22.953,
+      "end": 23.104
+    },
+    {
+      "w": "modern",
+      "start": 23.151,
+      "end": 23.406
+    },
+    {
+      "w": "drives",
+      "start": 23.441,
+      "end": 23.72
+    },
+    {
+      "w": "are",
+      "start": 23.766,
+      "end": 23.917
+    },
+    {
+      "w": "greedy.",
+      "start": 23.952,
+      "end": 24.393
+    },
+    {
+      "w": "Fill",
+      "start": 24.997,
+      "end": 25.159
+    },
+    {
+      "w": "the",
+      "start": 25.194,
+      "end": 25.264
+    },
+    {
+      "w": "bucket",
+      "start": 25.298,
+      "end": 25.519
+    },
+    {
+      "w": "to",
+      "start": 25.554,
+      "end": 25.612
+    },
+    {
+      "w": "four",
+      "start": 25.693,
+      "end": 25.879
+    },
+    {
+      "w": "different",
+      "start": 25.914,
+      "end": 26.192
+    },
+    {
+      "w": "levels,",
+      "start": 26.227,
+      "end": 26.529
+    },
+    {
+      "w": "and",
+      "start": 26.552,
+      "end": 26.657
+    },
+    {
+      "w": "one",
+      "start": 26.726,
+      "end": 26.924
+    },
+    {
+      "w": "cell",
+      "start": 26.958,
+      "end": 27.167
+    },
+    {
+      "w": "holds",
+      "start": 27.237,
+      "end": 27.446
+    },
+    {
+      "w": "two",
+      "start": 27.481,
+      "end": 27.609
+    },
+    {
+      "w": "bits.",
+      "start": 27.655,
+      "end": 28.05
+    },
+    {
+      "w": "Eight",
+      "start": 28.653,
+      "end": 28.839
+    },
+    {
+      "w": "levels,",
+      "start": 28.874,
+      "end": 29.257
+    },
+    {
+      "w": "three",
+      "start": 29.327,
+      "end": 29.536
+    },
+    {
+      "w": "bits.",
+      "start": 29.571,
+      "end": 29.965
+    },
+    {
+      "w": "Sixteen",
+      "start": 30.569,
+      "end": 30.929
+    },
+    {
+      "w": "levels,",
+      "start": 30.964,
+      "end": 31.347
+    },
+    {
+      "w": "four",
+      "start": 31.463,
+      "end": 31.637
+    },
+    {
+      "w": "bits.",
+      "start": 31.672,
+      "end": 32.067
+    },
+    {
+      "w": "That's",
+      "start": 32.671,
+      "end": 32.903
+    },
+    {
+      "w": "QLC,",
+      "start": 32.938,
+      "end": 33.483
+    },
+    {
+      "w": "and",
+      "start": 33.518,
+      "end": 33.634
+    },
+    {
+      "w": "it's",
+      "start": 33.669,
+      "end": 33.773
+    },
+    {
+      "w": "why",
+      "start": 33.808,
+      "end": 33.924
+    },
+    {
+      "w": "big",
+      "start": 34.029,
+      "end": 34.168
+    },
+    {
+      "w": "drives",
+      "start": 34.203,
+      "end": 34.424
+    },
+    {
+      "w": "got",
+      "start": 34.458,
+      "end": 34.575
+    },
+    {
+      "w": "so",
+      "start": 34.609,
+      "end": 34.714
+    },
+    {
+      "w": "cheap.",
+      "start": 34.772,
+      "end": 35.143
+    },
+    {
+      "w": "Then",
+      "start": 35.852,
+      "end": 36.072
+    },
+    {
+      "w": "engineers",
+      "start": 36.177,
+      "end": 36.537
+    },
+    {
+      "w": "stopped",
+      "start": 36.571,
+      "end": 36.815
+    },
+    {
+      "w": "building",
+      "start": 36.85,
+      "end": 37.117
+    },
+    {
+      "w": "flat.",
+      "start": 37.175,
+      "end": 37.616
+    },
+    {
+      "w": "They",
+      "start": 38.22,
+      "end": 38.359
+    },
+    {
+      "w": "stack",
+      "start": 38.417,
+      "end": 38.661
+    },
+    {
+      "w": "the",
+      "start": 38.708,
+      "end": 38.777
+    },
+    {
+      "w": "cells",
+      "start": 38.812,
+      "end": 39.044
+    },
+    {
+      "w": "into",
+      "start": 39.079,
+      "end": 39.207
+    },
+    {
+      "w": "towers,",
+      "start": 39.265,
+      "end": 39.845
+    },
+    {
+      "w": "over",
+      "start": 40.031,
+      "end": 40.194
+    },
+    {
+      "w": "300",
+      "start": 40.252,
+      "end": 40.693
+    },
+    {
+      "w": "layers",
+      "start": 40.728,
+      "end": 40.937
+    },
+    {
+      "w": "high,",
+      "start": 40.983,
+      "end": 41.343
+    },
+    {
+      "w": "on",
+      "start": 41.529,
+      "end": 41.645
+    },
+    {
+      "w": "a",
+      "start": 41.68,
+      "end": 41.714
+    },
+    {
+      "w": "chip",
+      "start": 41.761,
+      "end": 41.947
+    },
+    {
+      "w": "smaller",
+      "start": 41.993,
+      "end": 42.272
+    },
+    {
+      "w": "than",
+      "start": 42.307,
+      "end": 42.399
+    },
+    {
+      "w": "your",
+      "start": 42.434,
+      "end": 42.527
+    },
+    {
+      "w": "fingernail.",
+      "start": 42.562,
+      "end": 43.119
+    },
+    {
+      "w": "Your",
+      "start": 43.944,
+      "end": 44.106
+    },
+    {
+      "w": "photo",
+      "start": 44.153,
+      "end": 44.35
+    },
+    {
+      "w": "reaches",
+      "start": 44.408,
+      "end": 44.652
+    },
+    {
+      "w": "the",
+      "start": 44.687,
+      "end": 44.756
+    },
+    {
+      "w": "controller,",
+      "start": 44.791,
+      "end": 45.302
+    },
+    {
+      "w": "the",
+      "start": 45.348,
+      "end": 45.43
+    },
+    {
+      "w": "drive's",
+      "start": 45.465,
+      "end": 45.755
+    },
+    {
+      "w": "own",
+      "start": 45.824,
+      "end": 46.022
+    },
+    {
+      "w": "tiny",
+      "start": 46.068,
+      "end": 46.3
+    },
+    {
+      "w": "processor.",
+      "start": 46.347,
+      "end": 46.997
+    },
+    {
+      "w": "It",
+      "start": 47.601,
+      "end": 47.717
+    },
+    {
+      "w": "splits",
+      "start": 47.752,
+      "end": 48.019
+    },
+    {
+      "w": "the",
+      "start": 48.054,
+      "end": 48.123
+    },
+    {
+      "w": "photo",
+      "start": 48.158,
+      "end": 48.367
+    },
+    {
+      "w": "into",
+      "start": 48.425,
+      "end": 48.564
+    },
+    {
+      "w": "pages,",
+      "start": 48.634,
+      "end": 49.156
+    },
+    {
+      "w": "spreads",
+      "start": 49.307,
+      "end": 49.598
+    },
+    {
+      "w": "them",
+      "start": 49.632,
+      "end": 49.737
+    },
+    {
+      "w": "across",
+      "start": 49.772,
+      "end": 50.05
+    },
+    {
+      "w": "every",
+      "start": 50.12,
+      "end": 50.364
+    },
+    {
+      "w": "chip",
+      "start": 50.399,
+      "end": 50.55
+    },
+    {
+      "w": "at",
+      "start": 50.585,
+      "end": 50.654
+    },
+    {
+      "w": "once,",
+      "start": 50.724,
+      "end": 51.072
+    },
+    {
+      "w": "and",
+      "start": 51.281,
+      "end": 51.386
+    },
+    {
+      "w": "writes",
+      "start": 51.432,
+      "end": 51.653
+    },
+    {
+      "w": "them",
+      "start": 51.687,
+      "end": 51.804
+    },
+    {
+      "w": "in",
+      "start": 51.838,
+      "end": 51.896
+    },
+    {
+      "w": "parallel.",
+      "start": 51.943,
+      "end": 52.489
+    },
+    {
+      "w": "That's",
+      "start": 53.197,
+      "end": 53.452
+    },
+    {
+      "w": "how",
+      "start": 53.487,
+      "end": 53.58
+    },
+    {
+      "w": "a",
+      "start": 53.615,
+      "end": 53.638
+    },
+    {
+      "w": "fast",
+      "start": 53.696,
+      "end": 53.928
+    },
+    {
+      "w": "drive",
+      "start": 53.951,
+      "end": 54.184
+    },
+    {
+      "w": "reads",
+      "start": 54.219,
+      "end": 54.474
+    },
+    {
+      "w": "over",
+      "start": 54.555,
+      "end": 54.741
+    },
+    {
+      "w": "7,000",
+      "start": 54.846,
+      "end": 55.391
+    },
+    {
+      "w": "megabytes",
+      "start": 55.438,
+      "end": 55.798
+    },
+    {
+      "w": "per",
+      "start": 55.856,
+      "end": 55.972
+    },
+    {
+      "w": "second.",
+      "start": 56.041,
+      "end": 56.471
+    },
+    {
+      "w": "Here's",
+      "start": 56.993,
+      "end": 57.202
+    },
+    {
+      "w": "the",
+      "start": 57.237,
+      "end": 57.307
+    },
+    {
+      "w": "catch.",
+      "start": 57.342,
+      "end": 57.748
+    },
+    {
+      "w": "Every",
+      "start": 58.352,
+      "end": 58.572
+    },
+    {
+      "w": "time",
+      "start": 58.607,
+      "end": 58.758
+    },
+    {
+      "w": "a",
+      "start": 58.793,
+      "end": 58.816
+    },
+    {
+      "w": "bucket",
+      "start": 58.874,
+      "end": 59.095
+    },
+    {
+      "w": "is",
+      "start": 59.13,
+      "end": 59.199
+    },
+    {
+      "w": "emptied",
+      "start": 59.257,
+      "end": 59.536
+    },
+    {
+      "w": "and",
+      "start": 59.582,
+      "end": 59.699
+    },
+    {
+      "w": "refilled,",
+      "start": 59.757,
+      "end": 60.279
+    },
+    {
+      "w": "its",
+      "start": 60.43,
+      "end": 60.569
+    },
+    {
+      "w": "gate",
+      "start": 60.604,
+      "end": 60.755
+    },
+    {
+      "w": "wears",
+      "start": 60.79,
+      "end": 60.976
+    },
+    {
+      "w": "a",
+      "start": 61.011,
+      "end": 61.034
+    },
+    {
+      "w": "little.",
+      "start": 61.069,
+      "end": 61.382
+    },
+    {
+      "w": "After",
+      "start": 61.986,
+      "end": 62.195
+    },
+    {
+      "w": "one",
+      "start": 62.253,
+      "end": 62.392
+    },
+    {
+      "w": "to",
+      "start": 62.415,
+      "end": 62.462
+    },
+    {
+      "w": "three",
+      "start": 62.508,
+      "end": 62.706
+    },
+    {
+      "w": "thousand",
+      "start": 62.74,
+      "end": 63.031
+    },
+    {
+      "w": "rewrites,",
+      "start": 63.077,
+      "end": 63.553
+    },
+    {
+      "w": "it",
+      "start": 63.623,
+      "end": 63.704
+    },
+    {
+      "w": "starts",
+      "start": 63.739,
+      "end": 63.959
+    },
+    {
+      "w": "to",
+      "start": 63.994,
+      "end": 64.064
+    },
+    {
+      "w": "leak.",
+      "start": 64.122,
+      "end": 64.447
+    },
+    {
+      "w": "So",
+      "start": 64.726,
+      "end": 64.911
+    },
+    {
+      "w": "the",
+      "start": 64.97,
+      "end": 65.039
+    },
+    {
+      "w": "controller",
+      "start": 65.074,
+      "end": 65.469
+    },
+    {
+      "w": "cheats.",
+      "start": 65.515,
+      "end": 65.991
+    },
+    {
+      "w": "It",
+      "start": 66.514,
+      "end": 66.618
+    },
+    {
+      "w": "never",
+      "start": 66.665,
+      "end": 66.839
+    },
+    {
+      "w": "rewrites",
+      "start": 66.885,
+      "end": 67.199
+    },
+    {
+      "w": "the",
+      "start": 67.234,
+      "end": 67.303
+    },
+    {
+      "w": "same",
+      "start": 67.338,
+      "end": 67.536
+    },
+    {
+      "w": "cell.",
+      "start": 67.571,
+      "end": 67.988
+    },
+    {
+      "w": "Every",
+      "start": 68.325,
+      "end": 68.534
+    },
+    {
+      "w": "new",
+      "start": 68.592,
+      "end": 68.708
+    },
+    {
+      "w": "write",
+      "start": 68.743,
+      "end": 68.975
+    },
+    {
+      "w": "goes",
+      "start": 69.01,
+      "end": 69.196
+    },
+    {
+      "w": "to",
+      "start": 69.231,
+      "end": 69.289
+    },
+    {
+      "w": "the",
+      "start": 69.324,
+      "end": 69.393
+    },
+    {
+      "w": "least",
+      "start": 69.428,
+      "end": 69.602
+    },
+    {
+      "w": "worn",
+      "start": 69.649,
+      "end": 69.834
+    },
+    {
+      "w": "cell,",
+      "start": 69.869,
+      "end": 70.218
+    },
+    {
+      "w": "and",
+      "start": 70.369,
+      "end": 70.485
+    },
+    {
+      "w": "old",
+      "start": 70.543,
+      "end": 70.67
+    },
+    {
+      "w": "data",
+      "start": 70.717,
+      "end": 70.891
+    },
+    {
+      "w": "gets",
+      "start": 70.937,
+      "end": 71.077
+    },
+    {
+      "w": "moved",
+      "start": 71.123,
+      "end": 71.297
+    },
+    {
+      "w": "quietly",
+      "start": 71.344,
+      "end": 71.68
+    },
+    {
+      "w": "in",
+      "start": 71.715,
+      "end": 71.762
+    },
+    {
+      "w": "the",
+      "start": 71.785,
+      "end": 71.855
+    },
+    {
+      "w": "background.",
+      "start": 71.889,
+      "end": 72.354
+    },
+    {
+      "w": "That's",
+      "start": 72.632,
+      "end": 72.83
+    },
+    {
+      "w": "why",
+      "start": 72.865,
+      "end": 72.969
+    },
+    {
+      "w": "a",
+      "start": 73.016,
+      "end": 73.05
+    },
+    {
+      "w": "typical",
+      "start": 73.097,
+      "end": 73.364
+    },
+    {
+      "w": "one",
+      "start": 73.445,
+      "end": 73.584
+    },
+    {
+      "w": "terabyte",
+      "start": 73.619,
+      "end": 73.968
+    },
+    {
+      "w": "drive",
+      "start": 73.991,
+      "end": 74.339
+    },
+    {
+      "w": "is",
+      "start": 74.525,
+      "end": 74.664
+    },
+    {
+      "w": "rated",
+      "start": 74.722,
+      "end": 74.896
+    },
+    {
+      "w": "for",
+      "start": 74.931,
+      "end": 75.024
+    },
+    {
+      "w": "600",
+      "start": 75.082,
+      "end": 75.477
+    },
+    {
+      "w": "terabytes",
+      "start": 75.512,
+      "end": 75.883
+    },
+    {
+      "w": "written.",
+      "start": 75.918,
+      "end": 76.266
+    },
+    {
+      "w": "That's",
+      "start": 76.51,
+      "end": 76.731
+    },
+    {
+      "w": "over",
+      "start": 76.766,
+      "end": 76.893
+    },
+    {
+      "w": "300",
+      "start": 76.963,
+      "end": 77.369
+    },
+    {
+      "w": "gigabytes",
+      "start": 77.416,
+      "end": 77.799
+    },
+    {
+      "w": "every",
+      "start": 77.869,
+      "end": 78.078
+    },
+    {
+      "w": "single",
+      "start": 78.112,
+      "end": 78.333
+    },
+    {
+      "w": "day",
+      "start": 78.367,
+      "end": 78.472
+    },
+    {
+      "w": "for",
+      "start": 78.507,
+      "end": 78.6
+    },
+    {
+      "w": "five",
+      "start": 78.646,
+      "end": 78.855
+    },
+    {
+      "w": "years.",
+      "start": 78.89,
+      "end": 79.273
+    },
+    {
+      "w": "So",
+      "start": 79.517,
+      "end": 79.737
+    },
+    {
+      "w": "your",
+      "start": 79.981,
+      "end": 80.121
+    },
+    {
+      "w": "photo",
+      "start": 80.155,
+      "end": 80.353
+    },
+    {
+      "w": "isn't",
+      "start": 80.411,
+      "end": 80.573
+    },
+    {
+      "w": "stored",
+      "start": 80.608,
+      "end": 80.817
+    },
+    {
+      "w": "in",
+      "start": 80.84,
+      "end": 80.887
+    },
+    {
+      "w": "one",
+      "start": 80.945,
+      "end": 81.073
+    },
+    {
+      "w": "place.",
+      "start": 81.107,
+      "end": 81.549
+    },
+    {
+      "w": "It's",
+      "start": 81.758,
+      "end": 81.909
+    },
+    {
+      "w": "charge,",
+      "start": 81.955,
+      "end": 82.443
+    },
+    {
+      "w": "spread",
+      "start": 82.721,
+      "end": 82.919
+    },
+    {
+      "w": "across",
+      "start": 82.953,
+      "end": 83.197
+    },
+    {
+      "w": "towers",
+      "start": 83.232,
+      "end": 83.569
+    },
+    {
+      "w": "of",
+      "start": 83.604,
+      "end": 83.662
+    },
+    {
+      "w": "tiny",
+      "start": 83.696,
+      "end": 83.894
+    },
+    {
+      "w": "buckets,",
+      "start": 83.94,
+      "end": 84.416
+    },
+    {
+      "w": "constantly",
+      "start": 84.625,
+      "end": 85.066
+    },
+    {
+      "w": "shuffled",
+      "start": 85.124,
+      "end": 85.426
+    },
+    {
+      "w": "to",
+      "start": 85.45,
+      "end": 85.496
+    },
+    {
+      "w": "keep",
+      "start": 85.531,
+      "end": 85.67
+    },
+    {
+      "w": "your",
+      "start": 85.705,
+      "end": 85.798
+    },
+    {
+      "w": "drive",
+      "start": 85.833,
+      "end": 86.018
+    },
+    {
+      "w": "alive.",
+      "start": 86.053,
+      "end": 86.448
+    },
+    {
+      "w": "Follow",
+      "start": 86.727,
+      "end": 87.04
+    },
+    {
+      "w": "for",
+      "start": 87.226,
+      "end": 87.365
+    },
+    {
+      "w": "part",
+      "start": 87.4,
+      "end": 87.586
+    },
+    {
+      "w": "two:",
+      "start": 87.609,
+      "end": 87.957
+    },
+    {
+      "w": "what",
+      "start": 88.236,
+      "end": 88.387
+    },
+    {
+      "w": "happens",
+      "start": 88.422,
+      "end": 88.677
+    },
+    {
+      "w": "when",
+      "start": 88.712,
+      "end": 88.816
+    },
+    {
+      "w": "you",
+      "start": 88.851,
+      "end": 88.921
+    },
+    {
+      "w": "hit",
+      "start": 88.967,
+      "end": 89.083
+    },
+    {
+      "w": "delete.",
+      "start": 89.118,
+      "end": 89.722
+    }
+  ]
+}

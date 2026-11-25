@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VideoBlueprint",
+  "description": "Production blueprint reverse-engineered from a finished video. Times are seconds from PTS; t_out exclusive, frame_out inclusive. Extended from the November 2026 toolchain review schema with effects, hints, provenance and review fields.",
+  "type": "object",
+  "required": ["source", "timebase", "shots", "transitions", "audio", "rhythm"],
+  "properties": {
+    "source": {"type": "object", "required": ["file", "duration_s", "fps"], "properties": {
+      "file": {"type": "string"}, "duration_s": {"type": "number"}, "fps": {"type": "number"},
+      "fps_fraction": {"type": "string"}, "vfr": {"type": "boolean"}, "resolution": {"type": "string"},
+      "frames": {"type": "integer"}, "has_audio": {"type": "boolean"}}},
+    "timebase": {"type": "object", "properties": {"clock": {"const": "pts_seconds"}, "frame_rule": {"type": "string"}}},
+    "video_type": {"type": ["string", "null"]},
+    "overall_style": {"type": ["object", "null"]},
+    "narrative": {"type": "array", "items": {"type": "object", "properties": {
+      "section": {"type": "string"}, "t_in": {"type": ["number", "null"]}, "t_out": {"type": ["number", "null"]},
+      "purpose": {"type": ["string", "null"]}}}},
+    "shots": {"type": "array", "items": {"type": "object",
+      "required": ["id", "t_in", "t_out", "frame_in", "frame_out"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^S[0-9]{2,}$"},
+        "t_in": {"type": "number"}, "t_out": {"type": "number"},
+        "frame_in": {"type": "integer"}, "frame_out": {"type": "integer"}, "duration_s": {"type": "number"},
+        "shot_scale": {"enum": [null, "extreme_wide", "wide", "medium_wide", "medium", "medium_close", "close_up",
+                                "extreme_close_up", "insert", "graphic_fullscreen", "screen_recording", "split_screen"]},
+        "description": {"type": ["string", "null"]},
+        "composition": {"type": "object"}, "subjects": {"type": "array"},
+        "palette": {"type": "array", "items": {"type": "object", "properties": {
+          "hex": {"type": "string", "pattern": "^#[0-9A-F]{6}$"}, "share": {"type": "number"}}}},
+        "grade": {"type": "object"}, "lighting": {"type": "object"},
+        "camera": {"type": "object", "properties": {
+          "movement": {"type": "array"}, "focal_px": {"type": "number"}, "focal_mm_35eq_est": {"type": "number"},
+          "dof": {"type": "string"}, "shake_rms_px": {"type": ["number", "null"]}, "semantic": {"type": "string"}}},
+        "text_layers": {"type": "array", "items": {"type": "object", "required": ["text", "t_in", "t_out"], "properties": {
+          "text": {"type": "string"}, "t_in": {"type": "number"}, "t_out": {"type": "number"},
+          "bbox_norm": {"type": "array", "minItems": 4, "maxItems": 4},
+          "font_guess": {"type": ["string", "null"]}, "font_confirmed": {"type": "boolean"},
+          "reveal": {"type": "string"}, "steps": {"type": "array"}, "anim": {"type": "object"}}}},
+        "graphic_layers": {"type": "array"},
+        "effects": {"type": "array", "items": {"type": "object", "properties": {"type": {"type": "string"}, "t": {"type": "number"}}}},
+        "frames": {"type": "array", "items": {"type": "object", "properties": {
+          "f": {"type": "integer"}, "t": {"type": "number"}, "objects": {"type": "array"}, "text": {"type": "array"},
+          "camera_pose": {"type": "array"}}}},
+        "provenance": {"type": "object", "additionalProperties": {"type": "string"}}
+      }}},
+    "transitions": {"type": "array", "items": {"type": "object", "required": ["from", "to", "type", "t_start"], "properties": {
+      "id": {"type": "string"}, "from": {"type": "string"}, "to": {"type": "string"},
+      "type": {"enum": ["cut", "sudden_jump", "dissolve", "fade", "wipe", "push", "slide", "zoom", "doorway",
+                        "whip_pan", "match_cut", "glitch", "flash", "light_leak", "other"]},
+      "t_start": {"type": "number"}, "t_end": {"type": "number"}, "duration_frames": {"type": "integer"},
+      "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "source": {"type": "string"},
+      "hints": {"type": "object"}}}},
+    "audio": {"type": "object", "properties": {
+      "voiceover": {"type": "object"}, "music": {"type": "object"}, "sfx": {"type": "array"}, "stems": {"type": ["object", "null"]}}},
+    "rhythm": {"type": "object"},
+    "unresolved": {"type": "array", "items": {"type": "string"}}
+  }
+}

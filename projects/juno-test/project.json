@@ -1,0 +1,60 @@
+{
+ "id": "juno-test",
+ "title": "Juno pose test",
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "baseFps": 30,
+ "durationInFrames": 578,
+ "theme": {
+  "dark": {
+   "bg": "#0E0F11",
+   "fg": "#FFFFFF",
+   "mute": "#8E9196",
+   "grid": "rgba(255,255,255,0.045)",
+   "card": "#1A1C21",
+   "cardBorder": "rgba(255,255,255,0.08)"
+  },
+  "light": {
+   "bg": "#F6F7F9",
+   "fg": "#0E0F11",
+   "mute": "#6B6E73",
+   "grid": "rgba(14,15,17,0.06)",
+   "card": "#FFFFFF",
+   "cardBorder": "rgba(14,15,17,0.08)"
+  },
+  "accent": "#3B8CFF",
+  "accent2": "#DC1E30",
+  "select": {
+   "fill": "rgba(59,140,255,0.18)",
+   "border": "#3B8CFF"
+  },
+  "fontSans": "Inter",
+  "fontSerif": "Instrument Serif",
+  "fontMono": "JetBrains Mono"
+ },
+ "audio": {
+  "sfx": []
+ },
+ "captions": {
+  "y": 0.165,
+  "size": 68,
+  "mode": "explainer",
+  "pages": []
+ },
+ "scenes": [
+  {
+   "id": "poses",
+   "from": 0,
+   "to": 578,
+   "bg": "dark",
+   "transitionIn": {
+    "type": "cut",
+    "frames": 0
+   }
+  }
+ ],
+ "style": "explainer"
+}

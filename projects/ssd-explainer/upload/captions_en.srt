@@ -1,0 +1,243 @@
+1
+00:00:00,000 --> 00:00:02,186
+Your SSD has no moving parts.
+
+2
+00:00:02,206 --> 00:00:04,221
+So where do your files actually live?
+
+3
+00:00:04,493 --> 00:00:05,820
+Inside billions of tiny
+
+4
+00:00:05,840 --> 00:00:07,228
+traps for electrons.
+
+5
+00:00:07,581 --> 00:00:08,653
+Let's open one up and follow a
+
+6
+00:00:08,673 --> 00:00:10,200
+single photo as it gets saved.
+
+7
+00:00:10,658 --> 00:00:12,812
+Every flash chip is a grid of cells.
+
+8
+00:00:13,166 --> 00:00:14,353
+Think of each cell as a tiny
+
+9
+00:00:14,373 --> 00:00:15,471
+bucket with a gate.
+
+10
+00:00:16,045 --> 00:00:16,966
+Push electrons in,
+
+11
+00:00:16,986 --> 00:00:18,069
+and they stay trapped,
+
+12
+00:00:18,089 --> 00:00:19,360
+even with the power off.
+
+13
+00:00:19,935 --> 00:00:21,099
+A full bucket and an empty
+
+14
+00:00:21,119 --> 00:00:22,600
+bucket mean one and zero.
+
+15
+00:00:22,953 --> 00:00:24,643
+But modern drives are greedy.
+
+16
+00:00:24,997 --> 00:00:25,894
+Fill the bucket to four
+
+17
+00:00:25,914 --> 00:00:26,532
+different levels,
+
+18
+00:00:26,552 --> 00:00:28,300
+and one cell holds two bits.
+
+19
+00:00:28,653 --> 00:00:30,215
+Eight levels, three bits.
+
+20
+00:00:30,569 --> 00:00:31,443
+Sixteen levels,
+
+21
+00:00:31,463 --> 00:00:32,317
+four bits.
+
+22
+00:00:32,671 --> 00:00:34,183
+That's QLC, and it's why big
+
+23
+00:00:34,203 --> 00:00:35,393
+drives got so cheap.
+
+24
+00:00:35,852 --> 00:00:37,866
+Then engineers stopped building flat.
+
+25
+00:00:38,220 --> 00:00:40,011
+They stack the cells into towers,
+
+26
+00:00:40,031 --> 00:00:41,509
+over 300 layers high,
+
+27
+00:00:41,529 --> 00:00:42,414
+on a chip smaller than
+
+28
+00:00:42,434 --> 00:00:43,369
+your fingernail.
+
+29
+00:00:43,944 --> 00:00:45,328
+Your photo reaches the controller,
+
+30
+00:00:45,348 --> 00:00:47,247
+the drive's own tiny processor.
+
+31
+00:00:47,601 --> 00:00:49,287
+It splits the photo into pages,
+
+32
+00:00:49,307 --> 00:00:50,100
+spreads them across
+
+33
+00:00:50,120 --> 00:00:51,261
+every chip at once,
+
+34
+00:00:51,281 --> 00:00:52,739
+and writes them in parallel.
+
+35
+00:00:53,197 --> 00:00:54,826
+That's how a fast drive reads over
+
+36
+00:00:54,846 --> 00:00:56,721
+7,000 megabytes per second.
+
+37
+00:00:56,993 --> 00:00:57,998
+Here's the catch.
+
+38
+00:00:58,352 --> 00:00:59,237
+Every time a bucket is
+
+39
+00:00:59,257 --> 00:01:00,410
+emptied and refilled,
+
+40
+00:01:00,430 --> 00:01:01,632
+its gate wears a little.
+
+41
+00:01:01,986 --> 00:01:03,603
+After one to three thousand rewrites,
+
+42
+00:01:03,623 --> 00:01:04,697
+it starts to leak.
+
+43
+00:01:04,726 --> 00:01:06,241
+So the controller cheats.
+
+44
+00:01:06,514 --> 00:01:08,238
+It never rewrites the same cell.
+
+45
+00:01:08,325 --> 00:01:09,304
+Every new write goes to
+
+46
+00:01:09,324 --> 00:01:10,349
+the least worn cell,
+
+47
+00:01:10,369 --> 00:01:11,324
+and old data gets moved
+
+48
+00:01:11,344 --> 00:01:12,604
+quietly in the background.
+
+49
+00:01:12,632 --> 00:01:13,599
+That's why a typical one
+
+50
+00:01:13,619 --> 00:01:15,062
+terabyte drive is rated for
+
+51
+00:01:15,082 --> 00:01:16,490
+600 terabytes written.
+
+52
+00:01:16,510 --> 00:01:18,092
+That's over 300 gigabytes every
+
+53
+00:01:18,112 --> 00:01:19,497
+single day for five years.
+
+54
+00:01:19,517 --> 00:01:20,588
+So your photo isn't
+
+55
+00:01:20,608 --> 00:01:21,738
+stored in one place.
+
+56
+00:01:21,758 --> 00:01:23,212
+It's charge, spread across
+
+57
+00:01:23,232 --> 00:01:24,605
+towers of tiny buckets,
+
+58
+00:01:24,625 --> 00:01:25,511
+constantly shuffled to
+
+59
+00:01:25,531 --> 00:01:26,698
+keep your drive alive.
+
+60
+00:01:26,727 --> 00:01:28,207
+Follow for part two:
+
+61
+00:01:28,236 --> 00:01:29,972
+what happens when you hit delete.

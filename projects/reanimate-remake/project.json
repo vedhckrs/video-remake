@@ -1,0 +1,1415 @@
+{
+  "id": "reanimate-remake",
+  "title": "This free Claude Code skill copies any animation",
+  "canvas": {
+    "width": 720,
+    "height": 1280,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1080,
+    "height": 1920
+  },
+  "durationInFrames": 2652,
+  "theme": {
+    "dark": {
+      "bg": "#07090B",
+      "fg": "#F2F2F0",
+      "mute": "#6E7074",
+      "grid": "#2A2C31",
+      "card": "#15171B",
+      "cardBorder": "#2A2D33"
+    },
+    "light": {
+      "bg": "#E6E7DD",
+      "fg": "#18181A",
+      "mute": "#9A9B94",
+      "grid": "#C9CBBF",
+      "card": "#FBFBF7",
+      "cardBorder": "#D9DBD0"
+    },
+    "accent": "#22A55B",
+    "accent2": "#E5484D",
+    "select": {
+      "fill": "#C8D3E1",
+      "border": "#4468BA"
+    },
+    "fontSans": "Inter",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "handle": null,
+  "audio": {
+    "vo": "reanimate-remake/vo.mp3",
+    "voVolume": 1.0,
+    "music": {
+      "src": "reanimate-remake/music.wav",
+      "volume": 0.35,
+      "fadeOutFrames": 60
+    },
+    "sfx": [
+      {
+        "src": "reanimate-remake/sfx/pop.wav",
+        "frame": 22,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 75,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/tick.wav",
+        "frame": 128,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "reanimate-remake/sfx/pop.wav",
+        "frame": 146,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "reanimate-remake/sfx/click.wav",
+        "frame": 196,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 211,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 285,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/tick.wav",
+        "frame": 341,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 434,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 636,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 755,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/click.wav",
+        "frame": 850,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "reanimate-remake/sfx/click.wav",
+        "frame": 913,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "reanimate-remake/sfx/click.wav",
+        "frame": 967,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "reanimate-remake/sfx/click.wav",
+        "frame": 1012,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 1052,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 1219,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 1332,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 1573,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/swish.wav",
+        "frame": 1764,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 2049,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 2168,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/whoosh.wav",
+        "frame": 2395,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "reanimate-remake/sfx/pop.wav",
+        "frame": 2458,
+        "volume": 0.4,
+        "type": "pop"
+      }
+    ]
+  },
+  "captions": {
+    "y": 0.144,
+    "size": 46,
+    "pages": [
+      {
+        "from": -1,
+        "to": 99,
+        "words": [
+          {
+            "w": "This",
+            "frame": -1,
+            "style": "normal"
+          },
+          {
+            "w": "free",
+            "frame": 19,
+            "style": "select"
+          },
+          {
+            "w": "Claude",
+            "frame": 39,
+            "style": "normal"
+          },
+          {
+            "w": "Code",
+            "frame": 59,
+            "style": "normal"
+          },
+          {
+            "w": "skill",
+            "frame": 78,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 100,
+        "to": 233,
+        "words": [
+          {
+            "w": "copies",
+            "frame": 100,
+            "style": "normal"
+          },
+          {
+            "w": "any",
+            "frame": 125,
+            "style": "normal"
+          },
+          {
+            "w": "animation",
+            "frame": 143,
+            "style": "bold"
+          },
+          {
+            "w": "you",
+            "frame": 174,
+            "style": "normal"
+          },
+          {
+            "w": "see",
+            "frame": 182,
+            "style": "normal"
+          },
+          {
+            "w": "online,",
+            "frame": 194,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 237,
+        "to": 309,
+        "words": [
+          {
+            "w": "frame",
+            "frame": 237,
+            "style": "select"
+          },
+          {
+            "w": "by",
+            "frame": 258,
+            "style": "normal"
+          },
+          {
+            "w": "frame,",
+            "frame": 270,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 315,
+        "to": 403,
+        "words": [
+          {
+            "w": "and",
+            "frame": 315,
+            "style": "normal"
+          },
+          {
+            "w": "then",
+            "frame": 327,
+            "style": "normal"
+          },
+          {
+            "w": "proves",
+            "frame": 338,
+            "style": "select"
+          },
+          {
+            "w": "the",
+            "frame": 359,
+            "style": "normal"
+          },
+          {
+            "w": "copy",
+            "frame": 366,
+            "style": "normal"
+          },
+          {
+            "w": "moves",
+            "frame": 387,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 404,
+        "to": 456,
+        "words": [
+          {
+            "w": "the",
+            "frame": 404,
+            "style": "normal"
+          },
+          {
+            "w": "same.",
+            "frame": 412,
+            "style": "bold"
+          }
+        ]
+      },
+      {
+        "from": 474,
+        "to": 608,
+        "words": [
+          {
+            "w": "It",
+            "frame": 474,
+            "style": "normal"
+          },
+          {
+            "w": "already",
+            "frame": 485,
+            "style": "normal"
+          },
+          {
+            "w": "has",
+            "frame": 504,
+            "style": "normal"
+          },
+          {
+            "w": "2.4K",
+            "frame": 521,
+            "style": "select"
+          },
+          {
+            "w": "stars",
+            "frame": 578,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 600,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 609,
+        "to": 658,
+        "words": [
+          {
+            "w": "GitHub.",
+            "frame": 609,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 674,
+        "to": 777,
+        "words": [
+          {
+            "w": "It's",
+            "frame": 674,
+            "style": "normal"
+          },
+          {
+            "w": "called",
+            "frame": 688,
+            "style": "normal"
+          },
+          {
+            "w": "reanimate.",
+            "frame": 715,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 788,
+        "to": 882,
+        "words": [
+          {
+            "w": "Point",
+            "frame": 788,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 807,
+            "style": "normal"
+          },
+          {
+            "w": "at",
+            "frame": 814,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 823,
+            "style": "normal"
+          },
+          {
+            "w": "live",
+            "frame": 828,
+            "style": "normal"
+          },
+          {
+            "w": "site,",
+            "frame": 847,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 883,
+        "to": 954,
+        "words": [
+          {
+            "w": "a",
+            "frame": 883,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 891,
+            "style": "normal"
+          },
+          {
+            "w": "recording,",
+            "frame": 910,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 955,
+        "to": 1074,
+        "words": [
+          {
+            "w": "a",
+            "frame": 955,
+            "style": "normal"
+          },
+          {
+            "w": "GIF",
+            "frame": 964,
+            "style": "bold"
+          },
+          {
+            "w": "or",
+            "frame": 991,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1004,
+            "style": "normal"
+          },
+          {
+            "w": "Lottie",
+            "frame": 1009,
+            "style": "select"
+          },
+          {
+            "w": "file.",
+            "frame": 1027,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1092,
+        "to": 1172,
+        "words": [
+          {
+            "w": "It",
+            "frame": 1092,
+            "style": "normal"
+          },
+          {
+            "w": "records",
+            "frame": 1103,
+            "style": "select"
+          },
+          {
+            "w": "the",
+            "frame": 1128,
+            "style": "normal"
+          },
+          {
+            "w": "motion",
+            "frame": 1137,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 1159,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1165,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1173,
+        "to": 1241,
+        "words": [
+          {
+            "w": "headless",
+            "frame": 1173,
+            "style": "normal"
+          },
+          {
+            "w": "browser,",
+            "frame": 1198,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1244,
+        "to": 1354,
+        "words": [
+          {
+            "w": "writes",
+            "frame": 1244,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1264,
+            "style": "normal"
+          },
+          {
+            "w": "spec",
+            "frame": 1268,
+            "style": "select"
+          },
+          {
+            "w": "for",
+            "frame": 1285,
+            "style": "normal"
+          },
+          {
+            "w": "every",
+            "frame": 1298,
+            "style": "normal"
+          },
+          {
+            "w": "element,",
+            "frame": 1319,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1358,
+        "to": 1466,
+        "words": [
+          {
+            "w": "builds",
+            "frame": 1358,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 1379,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 1388,
+            "style": "normal"
+          },
+          {
+            "w": "CSS,",
+            "frame": 1401,
+            "style": "bold"
+          }
+        ]
+      },
+      {
+        "from": 1467,
+        "to": 1595,
+        "words": [
+          {
+            "w": "Framer",
+            "frame": 1467,
+            "style": "normal"
+          },
+          {
+            "w": "Motion",
+            "frame": 1491,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 1516,
+            "style": "normal"
+          },
+          {
+            "w": "GSAP,",
+            "frame": 1529,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1602,
+        "to": 1700,
+        "words": [
+          {
+            "w": "then",
+            "frame": 1602,
+            "style": "normal"
+          },
+          {
+            "w": "films",
+            "frame": 1622,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 1642,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 1651,
+            "style": "normal"
+          },
+          {
+            "w": "copy",
+            "frame": 1662,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 1689,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1701,
+        "to": 1786,
+        "words": [
+          {
+            "w": "measures",
+            "frame": 1701,
+            "style": "select"
+          },
+          {
+            "w": "the",
+            "frame": 1724,
+            "style": "normal"
+          },
+          {
+            "w": "difference.",
+            "frame": 1730,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1804,
+        "to": 1963,
+        "words": [
+          {
+            "w": "On",
+            "frame": 1804,
+            "style": "normal"
+          },
+          {
+            "w": "Vercel's",
+            "frame": 1818,
+            "style": "normal"
+          },
+          {
+            "w": "toolbar",
+            "frame": 1844,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 1877,
+            "style": "normal"
+          },
+          {
+            "w": "matched",
+            "frame": 1888,
+            "style": "normal"
+          },
+          {
+            "w": "417",
+            "frame": 1910,
+            "style": "bold"
+          }
+        ]
+      },
+      {
+        "from": 1964,
+        "to": 2071,
+        "words": [
+          {
+            "w": "of",
+            "frame": 1964,
+            "style": "normal"
+          },
+          {
+            "w": "417",
+            "frame": 1975,
+            "style": "bold"
+          },
+          {
+            "w": "frames.",
+            "frame": 2021,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2084,
+        "to": 2190,
+        "words": [
+          {
+            "w": "But",
+            "frame": 2084,
+            "style": "normal"
+          },
+          {
+            "w": "don't",
+            "frame": 2098,
+            "style": "bold"
+          },
+          {
+            "w": "stop",
+            "frame": 2113,
+            "style": "normal"
+          },
+          {
+            "w": "at",
+            "frame": 2135,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 2141,
+            "style": "normal"
+          },
+          {
+            "w": "copy.",
+            "frame": 2146,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2199,
+        "to": 2270,
+        "words": [
+          {
+            "w": "Ask",
+            "frame": 2199,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 2217,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 2223,
+            "style": "normal"
+          },
+          {
+            "w": "clone",
+            "frame": 2229,
+            "style": "normal"
+          },
+          {
+            "w": "this",
+            "frame": 2250,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 2263,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2271,
+        "to": 2314,
+        "words": [
+          {
+            "w": "add",
+            "frame": 2271,
+            "style": "bold"
+          },
+          {
+            "w": "that,",
+            "frame": 2288,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2315,
+        "to": 2417,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2315,
+            "style": "normal"
+          },
+          {
+            "w": "build",
+            "frame": 2327,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 2344,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 2356,
+            "style": "select"
+          },
+          {
+            "w": "on",
+            "frame": 2369,
+            "style": "normal"
+          },
+          {
+            "w": "top.",
+            "frame": 2377,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2426,
+        "to": 2535,
+        "words": [
+          {
+            "w": "Comment",
+            "frame": 2426,
+            "style": "normal"
+          },
+          {
+            "w": "ANIMATE",
+            "frame": 2455,
+            "style": "select"
+          },
+          {
+            "w": "and",
+            "frame": 2485,
+            "style": "normal"
+          },
+          {
+            "w": "I'll",
+            "frame": 2501,
+            "style": "normal"
+          },
+          {
+            "w": "send",
+            "frame": 2515,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 2528,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2536,
+        "to": 2651,
+        "words": [
+          {
+            "w": "the",
+            "frame": 2536,
+            "style": "normal"
+          },
+          {
+            "w": "link.",
+            "frame": 2543,
+            "style": "bold"
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 100,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 0.0,
+        "w:this": 0.0,
+        "i:1": 11.0,
+        "w:free": 11.0,
+        "i:2": 21.0,
+        "w:claude": 21.0,
+        "i:3": 31.0,
+        "w:code": 31.0,
+        "i:4": 40.5,
+        "w:skill": 40.5
+      }
+    },
+    {
+      "id": "S02",
+      "from": 100,
+      "to": 234,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "zoom",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 1.0,
+        "w:copies": 1.0,
+        "i:1": 14.0,
+        "w:any": 14.0,
+        "i:2": 23.0,
+        "w:animation": 23.0,
+        "i:3": 38.5,
+        "w:you": 38.5,
+        "i:4": 42.5,
+        "w:see": 42.5,
+        "i:5": 48.0,
+        "w:online": 48.0
+      }
+    },
+    {
+      "id": "S03",
+      "from": 234,
+      "to": 310,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 3.0,
+        "w:frame": 3.0,
+        "i:1": 13.5,
+        "w:by": 13.5,
+        "i:2": 19.0
+      }
+    },
+    {
+      "id": "S04",
+      "from": 310,
+      "to": 457,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "zoom",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 4.0,
+        "w:and": 4.0,
+        "i:1": 10.0,
+        "w:then": 10.0,
+        "i:2": 15.5,
+        "w:proves": 15.5,
+        "i:3": 26.0,
+        "w:the": 26.0,
+        "i:4": 29.5,
+        "w:copy": 29.5,
+        "i:5": 40.0,
+        "w:moves": 40.0,
+        "i:6": 48.5,
+        "i:7": 52.0,
+        "w:same": 52.0
+      }
+    },
+    {
+      "id": "S05",
+      "from": 457,
+      "to": 659,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.5,
+        "w:it": 9.5,
+        "i:1": 15.5,
+        "w:already": 15.5,
+        "i:2": 25.0,
+        "w:has": 25.0,
+        "i:3": 33.5,
+        "w:2.4k": 33.5,
+        "i:4": 62.0,
+        "w:stars": 62.0,
+        "i:5": 73.0,
+        "w:on": 73.0,
+        "i:6": 77.5,
+        "w:github": 77.5
+      }
+    },
+    {
+      "id": "S06",
+      "from": 659,
+      "to": 778,
+      "bg": "light",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 16,
+        "origin": [
+          0.82,
+          0.37
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.5,
+        "w:its": 8.5,
+        "i:1": 16.0,
+        "w:called": 16.0,
+        "i:2": 29.5,
+        "w:reanimate": 29.5
+      }
+    },
+    {
+      "id": "S07",
+      "from": 778,
+      "to": 1075,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 6.5,
+        "w:point": 6.5,
+        "i:1": 15.5,
+        "w:it": 15.5,
+        "i:2": 19.5,
+        "w:at": 19.5,
+        "i:3": 23.5,
+        "w:a": 23.5,
+        "i:4": 26.5,
+        "w:live": 26.5,
+        "i:5": 36.0,
+        "w:site": 36.0,
+        "i:6": 54.0,
+        "i:7": 58.0,
+        "w:screen": 58.0,
+        "i:8": 67.5,
+        "w:recording": 67.5,
+        "i:9": 90.0,
+        "i:10": 94.5,
+        "w:gif": 94.5,
+        "i:11": 108.0,
+        "w:or": 108.0,
+        "i:12": 114.5,
+        "i:13": 117.0,
+        "w:lottie": 117.0,
+        "i:14": 126.0,
+        "w:file": 126.0
+      }
+    },
+    {
+      "id": "S08",
+      "from": 1075,
+      "to": 1242,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.0,
+        "w:it": 10.0,
+        "i:1": 15.5,
+        "w:records": 15.5,
+        "i:2": 28.0,
+        "w:the": 28.0,
+        "i:3": 32.5,
+        "w:motion": 32.5,
+        "i:4": 43.5,
+        "w:in": 43.5,
+        "i:5": 46.5,
+        "w:a": 46.5,
+        "i:6": 50.5,
+        "w:headless": 50.5,
+        "i:7": 63.0,
+        "w:browser": 63.0
+      }
+    },
+    {
+      "id": "S09",
+      "from": 1242,
+      "to": 1355,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 2.5,
+        "w:writes": 2.5,
+        "i:1": 12.0,
+        "w:a": 12.0,
+        "i:2": 14.5,
+        "w:spec": 14.5,
+        "i:3": 23.0,
+        "w:for": 23.0,
+        "i:4": 29.5,
+        "w:every": 29.5,
+        "i:5": 39.5,
+        "w:element": 39.5
+      }
+    },
+    {
+      "id": "S10",
+      "from": 1355,
+      "to": 1596,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 3.0,
+        "w:builds": 3.0,
+        "i:1": 13.5,
+        "w:it": 13.5,
+        "i:2": 17.5,
+        "w:in": 17.5,
+        "i:3": 24.5,
+        "w:css": 24.5,
+        "i:4": 57.5,
+        "w:framer": 57.5,
+        "i:5": 69.5,
+        "w:motion": 69.5,
+        "i:6": 82.0,
+        "w:or": 82.0,
+        "i:7": 88.5,
+        "w:gsap": 88.5
+      }
+    },
+    {
+      "id": "S11",
+      "from": 1596,
+      "to": 1787,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 4.5,
+        "w:then": 4.5,
+        "i:1": 14.5,
+        "w:films": 14.5,
+        "i:2": 24.5,
+        "w:its": 24.5,
+        "i:3": 29.0,
+        "w:own": 29.0,
+        "i:4": 34.5,
+        "w:copy": 34.5,
+        "i:5": 48.0,
+        "w:and": 48.0,
+        "i:6": 54.0,
+        "w:measures": 54.0,
+        "i:7": 65.5,
+        "w:the": 65.5,
+        "i:8": 68.5,
+        "w:difference": 68.5
+      }
+    },
+    {
+      "id": "S12",
+      "from": 1787,
+      "to": 2072,
+      "bg": "light",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.0,
+        "w:on": 10.0,
+        "i:1": 17.0,
+        "w:vercels": 17.0,
+        "i:2": 30.0,
+        "w:toolbar": 30.0,
+        "i:3": 46.5,
+        "w:it": 46.5,
+        "i:4": 52.0,
+        "w:matched": 52.0,
+        "i:5": 63.0,
+        "w:417": 63.0,
+        "i:6": 90.0,
+        "w:of": 90.0,
+        "i:7": 95.5,
+        "i:8": 118.5,
+        "w:frames": 118.5
+      }
+    },
+    {
+      "id": "S13",
+      "from": 2072,
+      "to": 2191,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.72
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 7.0,
+        "w:but": 7.0,
+        "i:1": 14.5,
+        "w:dont": 14.5,
+        "i:2": 22.0,
+        "w:stop": 22.0,
+        "i:3": 33.0,
+        "w:at": 33.0,
+        "i:4": 36.0,
+        "w:a": 36.0,
+        "i:5": 38.5,
+        "w:copy": 38.5
+      }
+    },
+    {
+      "id": "S14",
+      "from": 2191,
+      "to": 2418,
+      "bg": "light",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 16,
+        "origin": [
+          0.87,
+          0.37
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.5,
+        "w:ask": 5.5,
+        "i:1": 14.5,
+        "w:it": 14.5,
+        "i:2": 17.5,
+        "w:to": 17.5,
+        "i:3": 20.5,
+        "w:clone": 20.5,
+        "i:4": 31.0,
+        "w:this": 31.0,
+        "i:5": 37.5,
+        "w:and": 37.5,
+        "i:6": 41.5,
+        "w:add": 41.5,
+        "i:7": 49.5,
+        "w:that": 49.5,
+        "i:8": 63.5,
+        "i:9": 69.5,
+        "w:build": 69.5,
+        "i:10": 78.0,
+        "w:your": 78.0,
+        "i:11": 84.0,
+        "w:own": 84.0,
+        "i:12": 90.5,
+        "w:on": 90.5,
+        "i:13": 94.5,
+        "w:top": 94.5
+      }
+    },
+    {
+      "id": "S15",
+      "from": 2418,
+      "to": 2652,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.74
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.5,
+        "w:comment": 5.5,
+        "i:1": 20.0,
+        "w:animate": 20.0,
+        "i:2": 35.0,
+        "w:and": 35.0,
+        "i:3": 43.0,
+        "w:ill": 43.0,
+        "i:4": 50.0,
+        "w:send": 50.0,
+        "i:5": 56.5,
+        "w:you": 56.5,
+        "i:6": 60.5,
+        "w:the": 60.5,
+        "i:7": 64.0,
+        "w:link": 64.0
+      }
+    }
+  ]
+}

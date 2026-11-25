@@ -1,0 +1,5115 @@
+{
+  "id": "fps-explainer",
+  "title": "How 60, 120 & 144 fps actually work",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1080,
+    "height": 1920
+  },
+  "durationInFrames": 6029,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "fps-explainer/vo.mp3",
+    "voVolume": 1.0,
+    "music": {
+      "src": "fps-explainer/music.wav",
+      "volume": 0.104,
+      "fadeOutFrames": 60
+    },
+    "sfx": [
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 115,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 206,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 235,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 313,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 397,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 432,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "fps-explainer/sfx/click_1.wav",
+        "frame": 582,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "fps-explainer/sfx/zip_1.wav",
+        "frame": 729,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "fps-explainer/sfx/click_1.wav",
+        "frame": 809,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "fps-explainer/sfx/glint_1.wav",
+        "frame": 938,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 985,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 1106,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 1285,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 1413,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/zip_1.wav",
+        "frame": 1546,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 1702,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/click_1.wav",
+        "frame": 1739,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 1769,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 1887,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/whoosh_in_1.wav",
+        "frame": 2040,
+        "volume": 0.4,
+        "type": "whoosh"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 2232,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 2412,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "fps-explainer/sfx/success_1.wav",
+        "frame": 2504,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "fps-explainer/sfx/whoosh_in_1.wav",
+        "frame": 2532,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "fps-explainer/sfx/sub_1.wav",
+        "frame": 2620,
+        "volume": 0.4,
+        "type": "sub"
+      },
+      {
+        "src": "fps-explainer/sfx/glint_1.wav",
+        "frame": 2713,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "fps-explainer/sfx/zip_1.wav",
+        "frame": 3017,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 3057,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 3147,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 3241,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 3332,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 3396,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/tap_1.wav",
+        "frame": 3494,
+        "volume": 0.4,
+        "type": "tap"
+      },
+      {
+        "src": "fps-explainer/sfx/zip_1.wav",
+        "frame": 3570,
+        "volume": 0.4,
+        "type": "zip"
+      },
+      {
+        "src": "fps-explainer/sfx/whoosh_in_1.wav",
+        "frame": 3651,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "fps-explainer/sfx/click_1.wav",
+        "frame": 3700,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 3869,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 3979,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 4165,
+        "volume": 0.4,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 4243,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 4271,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/glint_1.wav",
+        "frame": 4310,
+        "volume": 0.4,
+        "type": "glint"
+      },
+      {
+        "src": "fps-explainer/sfx/tap_1.wav",
+        "frame": 4415,
+        "volume": 0.4,
+        "type": "tap"
+      },
+      {
+        "src": "fps-explainer/sfx/tap_1.wav",
+        "frame": 4459,
+        "volume": 0.4,
+        "type": "tap"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 4557,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/success_1.wav",
+        "frame": 4685,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "fps-explainer/sfx/whoosh_in_1.wav",
+        "frame": 4709,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "fps-explainer/sfx/sub_1.wav",
+        "frame": 4788,
+        "volume": 0.4,
+        "type": "sub"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 4925,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/tick_1.wav",
+        "frame": 5147,
+        "volume": 0.4,
+        "type": "tick"
+      },
+      {
+        "src": "fps-explainer/sfx/hit_1.wav",
+        "frame": 5284,
+        "volume": 0.4,
+        "type": "hit"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 5522,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 5641,
+        "volume": 0.4,
+        "type": "pop"
+      },
+      {
+        "src": "fps-explainer/sfx/success_1.wav",
+        "frame": 5735,
+        "volume": 0.4,
+        "type": "success"
+      },
+      {
+        "src": "fps-explainer/sfx/swish_1.wav",
+        "frame": 5762,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "fps-explainer/sfx/click_1.wav",
+        "frame": 5793,
+        "volume": 0.4,
+        "type": "click"
+      },
+      {
+        "src": "fps-explainer/sfx/pop_1.wav",
+        "frame": 5898,
+        "volume": 0.4,
+        "type": "pop"
+      }
+    ]
+  },
+  "captions": {
+    "y": 0.165,
+    "size": 54,
+    "pages": [
+      {
+        "from": -1,
+        "to": 51,
+        "words": [
+          {
+            "w": "Your",
+            "frame": -1,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 11,
+            "style": "normal"
+          },
+          {
+            "w": "isn't",
+            "frame": 26,
+            "style": "normal"
+          },
+          {
+            "w": "playing",
+            "frame": 37,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 52,
+        "to": 99,
+        "words": [
+          {
+            "w": "a",
+            "frame": 52,
+            "style": "normal"
+          },
+          {
+            "w": "video.",
+            "frame": 56,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 100,
+        "to": 202,
+        "words": [
+          {
+            "w": "It's",
+            "frame": 100,
+            "style": "normal"
+          },
+          {
+            "w": "flipping",
+            "frame": 112,
+            "style": "select"
+          },
+          {
+            "w": "still",
+            "frame": 132,
+            "style": "normal"
+          },
+          {
+            "w": "pictures.",
+            "frame": 145,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 203,
+        "to": 231,
+        "words": [
+          {
+            "w": "60,",
+            "frame": 203,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 232,
+        "to": 291,
+        "words": [
+          {
+            "w": "120,",
+            "frame": 232,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 292,
+        "to": 413,
+        "words": [
+          {
+            "w": "even",
+            "frame": 292,
+            "style": "normal"
+          },
+          {
+            "w": "144",
+            "frame": 310,
+            "style": "select"
+          },
+          {
+            "w": "every",
+            "frame": 353,
+            "style": "normal"
+          },
+          {
+            "w": "second.",
+            "frame": 366,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 429,
+        "to": 492,
+        "words": [
+          {
+            "w": "Two",
+            "frame": 429,
+            "style": "normal"
+          },
+          {
+            "w": "numbers",
+            "frame": 441,
+            "style": "normal"
+          },
+          {
+            "w": "decide",
+            "frame": 460,
+            "style": "normal"
+          },
+          {
+            "w": "how",
+            "frame": 480,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 493,
+        "to": 578,
+        "words": [
+          {
+            "w": "smooth",
+            "frame": 493,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 510,
+            "style": "normal"
+          },
+          {
+            "w": "feels.",
+            "frame": 517,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 579,
+        "to": 675,
+        "words": [
+          {
+            "w": "Frames",
+            "frame": 579,
+            "style": "select"
+          },
+          {
+            "w": "per",
+            "frame": 603,
+            "style": "normal"
+          },
+          {
+            "w": "second:",
+            "frame": 612,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 676,
+        "to": 725,
+        "words": [
+          {
+            "w": "how",
+            "frame": 676,
+            "style": "normal"
+          },
+          {
+            "w": "fast",
+            "frame": 688,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 705,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 714,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 726,
+        "to": 805,
+        "words": [
+          {
+            "w": "draws",
+            "frame": 726,
+            "style": "normal"
+          },
+          {
+            "w": "pictures.",
+            "frame": 740,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 806,
+        "to": 873,
+        "words": [
+          {
+            "w": "Hertz:",
+            "frame": 806,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 874,
+        "to": 934,
+        "words": [
+          {
+            "w": "how",
+            "frame": 874,
+            "style": "normal"
+          },
+          {
+            "w": "often",
+            "frame": 887,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 905,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 915,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 935,
+        "to": 999,
+        "words": [
+          {
+            "w": "refreshes.",
+            "frame": 935,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1015,
+        "to": 1065,
+        "words": [
+          {
+            "w": "At",
+            "frame": 1015,
+            "style": "normal"
+          },
+          {
+            "w": "60,",
+            "frame": 1029,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1066,
+        "to": 1154,
+        "words": [
+          {
+            "w": "each",
+            "frame": 1066,
+            "style": "normal"
+          },
+          {
+            "w": "picture",
+            "frame": 1077,
+            "style": "normal"
+          },
+          {
+            "w": "gets",
+            "frame": 1093,
+            "style": "normal"
+          },
+          {
+            "w": "16.7",
+            "frame": 1103,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1155,
+        "to": 1216,
+        "words": [
+          {
+            "w": "milliseconds.",
+            "frame": 1155,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1217,
+        "to": 1267,
+        "words": [
+          {
+            "w": "At",
+            "frame": 1217,
+            "style": "normal"
+          },
+          {
+            "w": "120,",
+            "frame": 1227,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1268,
+        "to": 1333,
+        "words": [
+          {
+            "w": "just",
+            "frame": 1268,
+            "style": "normal"
+          },
+          {
+            "w": "8.3.",
+            "frame": 1282,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1334,
+        "to": 1395,
+        "words": [
+          {
+            "w": "At",
+            "frame": 1334,
+            "style": "normal"
+          },
+          {
+            "w": "144,",
+            "frame": 1343,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1396,
+        "to": 1452,
+        "words": [
+          {
+            "w": "under",
+            "frame": 1396,
+            "style": "normal"
+          },
+          {
+            "w": "seven.",
+            "frame": 1410,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1468,
+        "to": 1518,
+        "words": [
+          {
+            "w": "Every",
+            "frame": 1468,
+            "style": "normal"
+          },
+          {
+            "w": "refresh,",
+            "frame": 1486,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1519,
+        "to": 1588,
+        "words": [
+          {
+            "w": "the",
+            "frame": 1519,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 1526,
+            "style": "normal"
+          },
+          {
+            "w": "redraws",
+            "frame": 1543,
+            "style": "normal"
+          },
+          {
+            "w": "itself",
+            "frame": 1566,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1589,
+        "to": 1664,
+        "words": [
+          {
+            "w": "row",
+            "frame": 1589,
+            "style": "select"
+          },
+          {
+            "w": "by",
+            "frame": 1603,
+            "style": "normal"
+          },
+          {
+            "w": "row.",
+            "frame": 1612,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1665,
+        "to": 1719,
+        "words": [
+          {
+            "w": "Inside",
+            "frame": 1665,
+            "style": "normal"
+          },
+          {
+            "w": "each",
+            "frame": 1689,
+            "style": "normal"
+          },
+          {
+            "w": "pixel,",
+            "frame": 1699,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1720,
+        "to": 1786,
+        "words": [
+          {
+            "w": "tiny",
+            "frame": 1720,
+            "style": "normal"
+          },
+          {
+            "w": "transistors",
+            "frame": 1736,
+            "style": "select"
+          },
+          {
+            "w": "hold",
+            "frame": 1766,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 1778,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1787,
+        "to": 1847,
+        "words": [
+          {
+            "w": "color",
+            "frame": 1787,
+            "style": "normal"
+          },
+          {
+            "w": "until",
+            "frame": 1813,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1826,
+            "style": "normal"
+          },
+          {
+            "w": "next",
+            "frame": 1833,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1848,
+        "to": 1901,
+        "words": [
+          {
+            "w": "refresh.",
+            "frame": 1848,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1920,
+        "to": 1979,
+        "words": [
+          {
+            "w": "This",
+            "frame": 1920,
+            "style": "normal"
+          },
+          {
+            "w": "video",
+            "frame": 1934,
+            "style": "normal"
+          },
+          {
+            "w": "only",
+            "frame": 1952,
+            "style": "normal"
+          },
+          {
+            "w": "plays",
+            "frame": 1966,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1980,
+        "to": 2009,
+        "words": [
+          {
+            "w": "at",
+            "frame": 1980,
+            "style": "normal"
+          },
+          {
+            "w": "60,",
+            "frame": 1988,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2010,
+        "to": 2066,
+        "words": [
+          {
+            "w": "so",
+            "frame": 2010,
+            "style": "normal"
+          },
+          {
+            "w": "let's",
+            "frame": 2019,
+            "style": "normal"
+          },
+          {
+            "w": "slow",
+            "frame": 2037,
+            "style": "select"
+          },
+          {
+            "w": "time",
+            "frame": 2053,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2067,
+        "to": 2123,
+        "words": [
+          {
+            "w": "down.",
+            "frame": 2067,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2124,
+        "to": 2187,
+        "words": [
+          {
+            "w": "At",
+            "frame": 2124,
+            "style": "normal"
+          },
+          {
+            "w": "60",
+            "frame": 2136,
+            "style": "normal"
+          },
+          {
+            "w": "hertz,",
+            "frame": 2158,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2188,
+        "to": 2241,
+        "words": [
+          {
+            "w": "a",
+            "frame": 2188,
+            "style": "normal"
+          },
+          {
+            "w": "moving",
+            "frame": 2198,
+            "style": "normal"
+          },
+          {
+            "w": "ball",
+            "frame": 2216,
+            "style": "normal"
+          },
+          {
+            "w": "jumps",
+            "frame": 2229,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2242,
+        "to": 2332,
+        "words": [
+          {
+            "w": "in",
+            "frame": 2242,
+            "style": "normal"
+          },
+          {
+            "w": "big",
+            "frame": 2253,
+            "style": "select"
+          },
+          {
+            "w": "steps.",
+            "frame": 2268,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2333,
+        "to": 2378,
+        "words": [
+          {
+            "w": "At",
+            "frame": 2333,
+            "style": "normal"
+          },
+          {
+            "w": "120,",
+            "frame": 2344,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2379,
+        "to": 2421,
+        "words": [
+          {
+            "w": "the",
+            "frame": 2379,
+            "style": "normal"
+          },
+          {
+            "w": "steps",
+            "frame": 2385,
+            "style": "normal"
+          },
+          {
+            "w": "are",
+            "frame": 2400,
+            "style": "normal"
+          },
+          {
+            "w": "half",
+            "frame": 2409,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2422,
+        "to": 2456,
+        "words": [
+          {
+            "w": "as",
+            "frame": 2422,
+            "style": "normal"
+          },
+          {
+            "w": "big,",
+            "frame": 2430,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2457,
+        "to": 2548,
+        "words": [
+          {
+            "w": "so",
+            "frame": 2457,
+            "style": "normal"
+          },
+          {
+            "w": "motion",
+            "frame": 2468,
+            "style": "normal"
+          },
+          {
+            "w": "looks",
+            "frame": 2484,
+            "style": "normal"
+          },
+          {
+            "w": "smoother.",
+            "frame": 2501,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2562,
+        "to": 2640,
+        "words": [
+          {
+            "w": "But",
+            "frame": 2562,
+            "style": "normal"
+          },
+          {
+            "w": "fast",
+            "frame": 2574,
+            "style": "normal"
+          },
+          {
+            "w": "refresh",
+            "frame": 2593,
+            "style": "normal"
+          },
+          {
+            "w": "drains",
+            "frame": 2617,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2641,
+        "to": 2676,
+        "words": [
+          {
+            "w": "battery,",
+            "frame": 2641,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2677,
+        "to": 2766,
+        "words": [
+          {
+            "w": "so",
+            "frame": 2677,
+            "style": "normal"
+          },
+          {
+            "w": "phones",
+            "frame": 2689,
+            "style": "normal"
+          },
+          {
+            "w": "cheat.",
+            "frame": 2710,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2767,
+        "to": 2864,
+        "words": [
+          {
+            "w": "LTPO",
+            "frame": 2767,
+            "style": "select"
+          },
+          {
+            "w": "screens",
+            "frame": 2812,
+            "style": "normal"
+          },
+          {
+            "w": "shift",
+            "frame": 2835,
+            "style": "normal"
+          },
+          {
+            "w": "speed",
+            "frame": 2850,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2865,
+        "to": 2932,
+        "words": [
+          {
+            "w": "on",
+            "frame": 2865,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2870,
+            "style": "normal"
+          },
+          {
+            "w": "fly:",
+            "frame": 2877,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2933,
+        "to": 3005,
+        "words": [
+          {
+            "w": "up",
+            "frame": 2933,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 2942,
+            "style": "normal"
+          },
+          {
+            "w": "120",
+            "frame": 2951,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 2997,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3006,
+        "to": 3053,
+        "words": [
+          {
+            "w": "you",
+            "frame": 3006,
+            "style": "normal"
+          },
+          {
+            "w": "scroll,",
+            "frame": 3014,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3054,
+        "to": 3130,
+        "words": [
+          {
+            "w": "slower",
+            "frame": 3054,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 3072,
+            "style": "normal"
+          },
+          {
+            "w": "you",
+            "frame": 3081,
+            "style": "normal"
+          },
+          {
+            "w": "read,",
+            "frame": 3089,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3131,
+        "to": 3192,
+        "words": [
+          {
+            "w": "just",
+            "frame": 3131,
+            "style": "normal"
+          },
+          {
+            "w": "1",
+            "frame": 3144,
+            "style": "select"
+          },
+          {
+            "w": "hertz",
+            "frame": 3160,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 3183,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3193,
+        "to": 3253,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3193,
+            "style": "normal"
+          },
+          {
+            "w": "lock",
+            "frame": 3200,
+            "style": "normal"
+          },
+          {
+            "w": "screen.",
+            "frame": 3213,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3268,
+        "to": 3328,
+        "words": [
+          {
+            "w": "Gaming",
+            "frame": 3268,
+            "style": "normal"
+          },
+          {
+            "w": "phones",
+            "frame": 3285,
+            "style": "normal"
+          },
+          {
+            "w": "push",
+            "frame": 3307,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 3319,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3329,
+        "to": 3478,
+        "words": [
+          {
+            "w": "144",
+            "frame": 3329,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 3377,
+            "style": "normal"
+          },
+          {
+            "w": "165",
+            "frame": 3393,
+            "style": "select"
+          },
+          {
+            "w": "hertz,",
+            "frame": 3446,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3479,
+        "to": 3541,
+        "words": [
+          {
+            "w": "with",
+            "frame": 3479,
+            "style": "normal"
+          },
+          {
+            "w": "touch",
+            "frame": 3491,
+            "style": "normal"
+          },
+          {
+            "w": "sensors",
+            "frame": 3504,
+            "style": "normal"
+          },
+          {
+            "w": "checking",
+            "frame": 3524,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3542,
+        "to": 3598,
+        "words": [
+          {
+            "w": "your",
+            "frame": 3542,
+            "style": "normal"
+          },
+          {
+            "w": "finger",
+            "frame": 3550,
+            "style": "normal"
+          },
+          {
+            "w": "thousands",
+            "frame": 3567,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 3593,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3599,
+        "to": 3667,
+        "words": [
+          {
+            "w": "times",
+            "frame": 3599,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3616,
+            "style": "normal"
+          },
+          {
+            "w": "second.",
+            "frame": 3620,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3683,
+        "to": 3719,
+        "words": [
+          {
+            "w": "On",
+            "frame": 3683,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3693,
+            "style": "normal"
+          },
+          {
+            "w": "PC,",
+            "frame": 3697,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3720,
+        "to": 3776,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3720,
+            "style": "normal"
+          },
+          {
+            "w": "graphics",
+            "frame": 3726,
+            "style": "normal"
+          },
+          {
+            "w": "card",
+            "frame": 3747,
+            "style": "normal"
+          },
+          {
+            "w": "must",
+            "frame": 3762,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3777,
+        "to": 3830,
+        "words": [
+          {
+            "w": "keep",
+            "frame": 3777,
+            "style": "normal"
+          },
+          {
+            "w": "up.",
+            "frame": 3790,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3831,
+        "to": 3882,
+        "words": [
+          {
+            "w": "Say",
+            "frame": 3831,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 3843,
+            "style": "normal"
+          },
+          {
+            "w": "makes",
+            "frame": 3849,
+            "style": "normal"
+          },
+          {
+            "w": "90",
+            "frame": 3866,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3883,
+        "to": 3961,
+        "words": [
+          {
+            "w": "frames",
+            "frame": 3883,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 3900,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3908,
+            "style": "normal"
+          },
+          {
+            "w": "144",
+            "frame": 3914,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3962,
+        "to": 4035,
+        "words": [
+          {
+            "w": "hertz",
+            "frame": 3962,
+            "style": "normal"
+          },
+          {
+            "w": "monitor.",
+            "frame": 3976,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4036,
+        "to": 4090,
+        "words": [
+          {
+            "w": "The",
+            "frame": 4036,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 4044,
+            "style": "normal"
+          },
+          {
+            "w": "catches",
+            "frame": 4059,
+            "style": "normal"
+          },
+          {
+            "w": "half",
+            "frame": 4078,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4091,
+        "to": 4140,
+        "words": [
+          {
+            "w": "of",
+            "frame": 4091,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 4101,
+            "style": "normal"
+          },
+          {
+            "w": "frame",
+            "frame": 4114,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 4132,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4141,
+        "to": 4222,
+        "words": [
+          {
+            "w": "half",
+            "frame": 4141,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 4151,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4156,
+            "style": "normal"
+          },
+          {
+            "w": "next.",
+            "frame": 4162,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4223,
+        "to": 4285,
+        "words": [
+          {
+            "w": "That's",
+            "frame": 4223,
+            "style": "normal"
+          },
+          {
+            "w": "tearing.",
+            "frame": 4240,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4298,
+        "to": 4358,
+        "words": [
+          {
+            "w": "The",
+            "frame": 4298,
+            "style": "normal"
+          },
+          {
+            "w": "fix",
+            "frame": 4307,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 4321,
+            "style": "normal"
+          },
+          {
+            "w": "variable",
+            "frame": 4332,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4359,
+        "to": 4387,
+        "words": [
+          {
+            "w": "refresh,",
+            "frame": 4359,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4388,
+        "to": 4526,
+        "words": [
+          {
+            "w": "like",
+            "frame": 4388,
+            "style": "normal"
+          },
+          {
+            "w": "G-Sync",
+            "frame": 4412,
+            "style": "normal"
+          },
+          {
+            "w": "or",
+            "frame": 4447,
+            "style": "normal"
+          },
+          {
+            "w": "FreeSync.",
+            "frame": 4456,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4527,
+        "to": 4575,
+        "words": [
+          {
+            "w": "The",
+            "frame": 4527,
+            "style": "normal"
+          },
+          {
+            "w": "monitor",
+            "frame": 4535,
+            "style": "normal"
+          },
+          {
+            "w": "waits",
+            "frame": 4554,
+            "style": "select"
+          },
+          {
+            "w": "for",
+            "frame": 4566,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4576,
+        "to": 4617,
+        "words": [
+          {
+            "w": "each",
+            "frame": 4576,
+            "style": "normal"
+          },
+          {
+            "w": "new",
+            "frame": 4589,
+            "style": "normal"
+          },
+          {
+            "w": "frame,",
+            "frame": 4599,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4618,
+        "to": 4674,
+        "words": [
+          {
+            "w": "and",
+            "frame": 4618,
+            "style": "normal"
+          },
+          {
+            "w": "refreshes",
+            "frame": 4627,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4652,
+            "style": "normal"
+          },
+          {
+            "w": "moment",
+            "frame": 4659,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4675,
+        "to": 4727,
+        "words": [
+          {
+            "w": "it",
+            "frame": 4675,
+            "style": "normal"
+          },
+          {
+            "w": "lands.",
+            "frame": 4682,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4735,
+        "to": 4784,
+        "words": [
+          {
+            "w": "And",
+            "frame": 4735,
+            "style": "normal"
+          },
+          {
+            "w": "each",
+            "frame": 4744,
+            "style": "normal"
+          },
+          {
+            "w": "jump",
+            "frame": 4757,
+            "style": "normal"
+          },
+          {
+            "w": "gives",
+            "frame": 4770,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4785,
+        "to": 4843,
+        "words": [
+          {
+            "w": "less.",
+            "frame": 4785,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4844,
+        "to": 4921,
+        "words": [
+          {
+            "w": "60",
+            "frame": 4844,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 4864,
+            "style": "normal"
+          },
+          {
+            "w": "120",
+            "frame": 4872,
+            "style": "normal"
+          },
+          {
+            "w": "saves",
+            "frame": 4901,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4922,
+        "to": 5005,
+        "words": [
+          {
+            "w": "8",
+            "frame": 4922,
+            "style": "select"
+          },
+          {
+            "w": "milliseconds",
+            "frame": 4933,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4963,
+            "style": "normal"
+          },
+          {
+            "w": "frame.",
+            "frame": 4968,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5006,
+        "to": 5110,
+        "words": [
+          {
+            "w": "120",
+            "frame": 5006,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 5037,
+            "style": "normal"
+          },
+          {
+            "w": "144,",
+            "frame": 5049,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5111,
+        "to": 5143,
+        "words": [
+          {
+            "w": "under",
+            "frame": 5111,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 5125,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 5133,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 5140,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5144,
+        "to": 5202,
+        "words": [
+          {
+            "w": "half.",
+            "frame": 5144,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5203,
+        "to": 5270,
+        "words": [
+          {
+            "w": "Yet",
+            "frame": 5203,
+            "style": "normal"
+          },
+          {
+            "w": "esports",
+            "frame": 5216,
+            "style": "normal"
+          },
+          {
+            "w": "monitors",
+            "frame": 5242,
+            "style": "normal"
+          },
+          {
+            "w": "now",
+            "frame": 5262,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5271,
+        "to": 5332,
+        "words": [
+          {
+            "w": "hit",
+            "frame": 5271,
+            "style": "normal"
+          },
+          {
+            "w": "600.",
+            "frame": 5281,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5340,
+        "to": 5380,
+        "words": [
+          {
+            "w": "So,",
+            "frame": 5340,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5381,
+        "to": 5460,
+        "words": [
+          {
+            "w": "frames",
+            "frame": 5381,
+            "style": "normal"
+          },
+          {
+            "w": "per",
+            "frame": 5402,
+            "style": "normal"
+          },
+          {
+            "w": "second",
+            "frame": 5416,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 5449,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5461,
+        "to": 5518,
+        "words": [
+          {
+            "w": "how",
+            "frame": 5461,
+            "style": "normal"
+          },
+          {
+            "w": "fast",
+            "frame": 5473,
+            "style": "normal"
+          },
+          {
+            "w": "pictures",
+            "frame": 5492,
+            "style": "normal"
+          },
+          {
+            "w": "are",
+            "frame": 5512,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5519,
+        "to": 5559,
+        "words": [
+          {
+            "w": "made.",
+            "frame": 5519,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5560,
+        "to": 5626,
+        "words": [
+          {
+            "w": "Hertz",
+            "frame": 5560,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 5592,
+            "style": "normal"
+          },
+          {
+            "w": "how",
+            "frame": 5603,
+            "style": "normal"
+          },
+          {
+            "w": "fast",
+            "frame": 5613,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5627,
+        "to": 5685,
+        "words": [
+          {
+            "w": "they're",
+            "frame": 5627,
+            "style": "normal"
+          },
+          {
+            "w": "shown.",
+            "frame": 5638,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5686,
+        "to": 5731,
+        "words": [
+          {
+            "w": "Smooth",
+            "frame": 5686,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 5709,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 5714,
+            "style": "normal"
+          },
+          {
+            "w": "they",
+            "frame": 5723,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5732,
+        "to": 5776,
+        "words": [
+          {
+            "w": "match.",
+            "frame": 5732,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5790,
+        "to": 5860,
+        "words": [
+          {
+            "w": "Follow",
+            "frame": 5790,
+            "style": "select"
+          },
+          {
+            "w": "for",
+            "frame": 5806,
+            "style": "normal"
+          },
+          {
+            "w": "part",
+            "frame": 5814,
+            "style": "normal"
+          },
+          {
+            "w": "two:",
+            "frame": 5826,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5861,
+        "to": 5924,
+        "words": [
+          {
+            "w": "what",
+            "frame": 5861,
+            "style": "normal"
+          },
+          {
+            "w": "input",
+            "frame": 5875,
+            "style": "normal"
+          },
+          {
+            "w": "lag",
+            "frame": 5895,
+            "style": "normal"
+          },
+          {
+            "w": "really",
+            "frame": 5909,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5925,
+        "to": 6028,
+        "words": [
+          {
+            "w": "is.",
+            "frame": 5925,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 414,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 0.0,
+        "w:your": 0.0,
+        "i:1": 7.0,
+        "w:screen": 7.0,
+        "i:2": 14.5,
+        "w:isnt": 14.5,
+        "i:3": 20.0,
+        "w:playing": 20.0,
+        "i:4": 27.5,
+        "w:a": 27.5,
+        "i:5": 29.5,
+        "w:video": 29.5,
+        "i:6": 51.5,
+        "w:its": 51.5,
+        "i:7": 57.5,
+        "w:flipping": 57.5,
+        "i:8": 67.5,
+        "w:still": 67.5,
+        "i:9": 74.0,
+        "w:pictures": 74.0,
+        "i:10": 103.0,
+        "w:60": 103.0,
+        "i:11": 117.5,
+        "w:120": 117.5,
+        "i:12": 147.5,
+        "w:even": 147.5,
+        "i:13": 156.5,
+        "w:144": 156.5,
+        "i:14": 178.0,
+        "w:every": 178.0,
+        "i:15": 184.5,
+        "w:second": 184.5
+      },
+      "beats": [
+        {
+          "t": 6.0,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 13.5,
+          "w": "isn't",
+          "word": "isn't",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 19.0,
+          "w": "playing",
+          "word": "playing",
+          "kind": "object",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 28.5,
+          "w": "video.",
+          "word": "video",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 42.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 56.5,
+          "w": "flipping",
+          "word": "flipping",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 66.5,
+          "w": "still",
+          "word": "still",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 73.0,
+          "w": "pictures.",
+          "word": "pictures",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 87.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 102.0,
+          "w": "60,",
+          "word": "60",
+          "kind": "number",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 116.5,
+          "w": "120,",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 130.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 146.5,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 155.5,
+          "w": "144",
+          "word": "144",
+          "kind": "number",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 169.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 177.0,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 183.5,
+          "w": "second.",
+          "word": "second",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 197.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from": 414,
+      "to": 1000,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:two": 9.0,
+        "i:1": 15.0,
+        "w:numbers": 15.0,
+        "i:2": 24.5,
+        "w:decide": 24.5,
+        "i:3": 34.5,
+        "w:how": 34.5,
+        "i:4": 41.0,
+        "w:smooth": 41.0,
+        "i:5": 49.5,
+        "w:it": 49.5,
+        "i:6": 53.0,
+        "w:feels": 53.0,
+        "i:7": 84.0,
+        "w:frames": 84.0,
+        "i:8": 96.0,
+        "w:per": 96.0,
+        "i:9": 100.5,
+        "w:second": 100.5,
+        "i:10": 132.5,
+        "i:11": 138.5,
+        "w:fast": 138.5,
+        "i:12": 147.0,
+        "w:your": 147.0,
+        "i:13": 151.5,
+        "w:chip": 151.5,
+        "i:14": 157.5,
+        "w:draws": 157.5,
+        "i:15": 164.5,
+        "w:pictures": 164.5,
+        "i:16": 197.5,
+        "w:hertz": 197.5,
+        "i:17": 231.5,
+        "i:18": 238.0,
+        "w:often": 238.0,
+        "i:19": 247.0,
+        "i:20": 252.0,
+        "w:screen": 252.0,
+        "i:21": 262.0,
+        "w:refreshes": 262.0
+      },
+      "beats": [
+        {
+          "t": 8.0,
+          "w": "Two",
+          "word": "two",
+          "kind": "number",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 14.0,
+          "w": "numbers",
+          "word": "numbers",
+          "kind": "object",
+          "s": 2,
+          "i": 1
+        },
+        {
+          "t": 23.5,
+          "w": "decide",
+          "word": "decide",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 33.5,
+          "w": "how",
+          "word": "how",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 40.0,
+          "w": "smooth",
+          "word": "smooth",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 52.0,
+          "w": "feels.",
+          "word": "feels",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 66.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 83.0,
+          "w": "Frames",
+          "word": "frames",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 95.0,
+          "w": "per",
+          "word": "per",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 99.5,
+          "w": "second:",
+          "word": "second",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 113.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 131.5,
+          "w": "how",
+          "word": "how",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 137.5,
+          "w": "fast",
+          "word": "fast",
+          "kind": "state",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 150.5,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 156.5,
+          "w": "draws",
+          "word": "draws",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 163.5,
+          "w": "pictures.",
+          "word": "pictures",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 177.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 191.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 196.5,
+          "w": "Hertz:",
+          "word": "hertz",
+          "kind": "object",
+          "s": 3,
+          "i": 16
+        },
+        {
+          "t": 210.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 224.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 230.5,
+          "w": "how",
+          "word": "how",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 237.0,
+          "w": "often",
+          "word": "often",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 251.0,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 261.0,
+          "w": "refreshes.",
+          "word": "refreshes",
+          "kind": "object",
+          "s": 3,
+          "i": 21
+        },
+        {
+          "t": 275.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from": 1000,
+      "to": 1453,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:at": 9.0,
+        "i:1": 16.0,
+        "w:60": 16.0,
+        "i:2": 34.5,
+        "w:each": 34.5,
+        "i:3": 40.0,
+        "w:picture": 40.0,
+        "i:4": 48.0,
+        "w:gets": 48.0,
+        "i:5": 53.0,
+        "w:16.7": 53.0,
+        "i:6": 79.0,
+        "w:milliseconds": 79.0,
+        "i:7": 110.0,
+        "i:8": 115.0,
+        "w:120": 115.0,
+        "i:9": 135.5,
+        "w:just": 135.5,
+        "i:10": 142.5,
+        "w:8.3": 142.5,
+        "i:11": 168.5,
+        "i:12": 173.0,
+        "w:144": 173.0,
+        "i:13": 200.0,
+        "w:under": 200.0,
+        "i:14": 206.5,
+        "w:seven": 206.5
+      },
+      "beats": [
+        {
+          "t": 15.0,
+          "w": "60,",
+          "word": "60",
+          "kind": "number",
+          "s": 3,
+          "i": 1
+        },
+        {
+          "t": 29.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 33.5,
+          "w": "each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 39.0,
+          "w": "picture",
+          "word": "picture",
+          "kind": "object",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 47.0,
+          "w": "gets",
+          "word": "gets",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 52.0,
+          "w": "16.7",
+          "word": "167",
+          "kind": "number",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 66.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 78.0,
+          "w": "milliseconds.",
+          "word": "milliseconds",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 92.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 106.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 114.0,
+          "w": "120,",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 128.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 141.5,
+          "w": "8.3.",
+          "word": "83",
+          "kind": "number",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 155.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 172.0,
+          "w": "144,",
+          "word": "144",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 186.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 199.0,
+          "w": "under",
+          "word": "under",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 205.5,
+          "w": "seven.",
+          "word": "seven",
+          "kind": "number",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 219.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from": 1453,
+      "to": 1902,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 32,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:every": 9.0,
+        "i:1": 18.0,
+        "w:refresh": 18.0,
+        "i:2": 34.5,
+        "w:the": 34.5,
+        "i:3": 38.0,
+        "w:screen": 38.0,
+        "i:4": 46.5,
+        "w:redraws": 46.5,
+        "i:5": 58.0,
+        "w:itself": 58.0,
+        "i:6": 69.5,
+        "w:row": 69.5,
+        "i:7": 76.5,
+        "w:by": 76.5,
+        "i:8": 81.0,
+        "i:9": 107.5,
+        "w:inside": 107.5,
+        "i:10": 119.5,
+        "w:each": 119.5,
+        "i:11": 124.5,
+        "w:pixel": 124.5,
+        "i:12": 135.0,
+        "w:tiny": 135.0,
+        "i:13": 143.0,
+        "w:transistors": 143.0,
+        "i:14": 158.0,
+        "w:hold": 158.0,
+        "i:15": 164.0,
+        "w:its": 164.0,
+        "i:16": 168.5,
+        "w:color": 168.5,
+        "i:17": 181.5,
+        "w:until": 181.5,
+        "i:18": 188.0,
+        "i:19": 191.5,
+        "w:next": 191.5,
+        "i:20": 199.0
+      },
+      "beats": [
+        {
+          "t": 8.0,
+          "w": "Every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 17.0,
+          "w": "refresh,",
+          "word": "refresh",
+          "kind": "object",
+          "s": 2,
+          "i": 1
+        },
+        {
+          "t": 31.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 37.0,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 45.5,
+          "w": "redraws",
+          "word": "redraws",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 57.0,
+          "w": "itself",
+          "word": "itself",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 68.5,
+          "w": "row",
+          "word": "row",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 80.0,
+          "w": "row.",
+          "word": "row",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 94.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 106.5,
+          "w": "Inside",
+          "word": "inside",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 118.5,
+          "w": "each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 123.5,
+          "w": "pixel,",
+          "word": "pixel",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 134.0,
+          "w": "tiny",
+          "word": "tiny",
+          "kind": "state",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 142.0,
+          "w": "transistors",
+          "word": "transistors",
+          "kind": "object",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 157.0,
+          "w": "hold",
+          "word": "hold",
+          "kind": "action",
+          "s": 2,
+          "i": 14
+        },
+        {
+          "t": 167.5,
+          "w": "color",
+          "word": "color",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 180.5,
+          "w": "until",
+          "word": "until",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 190.5,
+          "w": "next",
+          "word": "next",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 198.0,
+          "w": "refresh.",
+          "word": "refresh",
+          "kind": "object",
+          "s": 3,
+          "i": 20
+        },
+        {
+          "t": 212.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "from": 1902,
+      "to": 2549,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.5,
+        "w:this": 10.5,
+        "i:1": 17.5,
+        "w:video": 17.5,
+        "i:2": 26.5,
+        "w:only": 26.5,
+        "i:3": 33.5,
+        "w:plays": 33.5,
+        "i:4": 40.5,
+        "w:at": 40.5,
+        "i:5": 44.5,
+        "w:60": 44.5,
+        "i:6": 55.5,
+        "w:so": 55.5,
+        "i:7": 60.0,
+        "w:lets": 60.0,
+        "i:8": 69.0,
+        "w:slow": 69.0,
+        "i:9": 77.0,
+        "w:time": 77.0,
+        "i:10": 84.0,
+        "w:down": 84.0,
+        "i:11": 112.5,
+        "i:12": 118.5,
+        "i:13": 129.5,
+        "w:hertz": 129.5,
+        "i:14": 145.0,
+        "w:a": 145.0,
+        "i:15": 149.5,
+        "w:moving": 149.5,
+        "i:16": 158.5,
+        "w:ball": 158.5,
+        "i:17": 165.0,
+        "w:jumps": 165.0,
+        "i:18": 171.5,
+        "w:in": 171.5,
+        "i:19": 177.0,
+        "w:big": 177.0,
+        "i:20": 184.5,
+        "w:steps": 184.5,
+        "i:21": 217.0,
+        "i:22": 222.5,
+        "w:120": 222.5,
+        "i:23": 240.0,
+        "w:the": 240.0,
+        "i:24": 243.0,
+        "i:25": 250.5,
+        "w:are": 250.5,
+        "i:26": 255.0,
+        "w:half": 255.0,
+        "i:27": 261.5,
+        "w:as": 261.5,
+        "i:28": 265.5,
+        "i:29": 279.0,
+        "i:30": 284.5,
+        "w:motion": 284.5,
+        "i:31": 292.5,
+        "w:looks": 292.5,
+        "i:32": 301.0,
+        "w:smoother": 301.0
+      },
+      "beats": [
+        {
+          "t": 16.5,
+          "w": "video",
+          "word": "video",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 25.5,
+          "w": "only",
+          "word": "only",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 32.5,
+          "w": "plays",
+          "word": "plays",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 43.5,
+          "w": "60,",
+          "word": "60",
+          "kind": "number",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 57.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 68.0,
+          "w": "slow",
+          "word": "slow",
+          "kind": "state",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 76.0,
+          "w": "time",
+          "word": "time",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 83.0,
+          "w": "down.",
+          "word": "down",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 97.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 111.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 117.5,
+          "w": "60",
+          "word": "60",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 128.5,
+          "w": "hertz,",
+          "word": "hertz",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 142.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 148.5,
+          "w": "moving",
+          "word": "moving",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 157.5,
+          "w": "ball",
+          "word": "ball",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 164.0,
+          "w": "jumps",
+          "word": "jumps",
+          "kind": "action",
+          "s": 2,
+          "i": 17
+        },
+        {
+          "t": 176.0,
+          "w": "big",
+          "word": "big",
+          "kind": "state",
+          "s": 3,
+          "i": 19
+        },
+        {
+          "t": 183.5,
+          "w": "steps.",
+          "word": "steps",
+          "kind": "object",
+          "s": 3,
+          "i": 20
+        },
+        {
+          "t": 197.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 211.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 221.5,
+          "w": "120,",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 22
+        },
+        {
+          "t": 235.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 242.0,
+          "w": "steps",
+          "word": "steps",
+          "kind": "object",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 254.0,
+          "w": "half",
+          "word": "half",
+          "kind": "number",
+          "s": 3,
+          "i": 26
+        },
+        {
+          "t": 264.5,
+          "w": "big,",
+          "word": "big",
+          "kind": "state",
+          "s": 3,
+          "i": 28
+        },
+        {
+          "t": 278.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 283.5,
+          "w": "motion",
+          "word": "motion",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 291.5,
+          "w": "looks",
+          "word": "looks",
+          "kind": "action",
+          "s": 2,
+          "i": 31
+        },
+        {
+          "t": 300.0,
+          "w": "smoother.",
+          "word": "smoother",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 314.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "from": 2549,
+      "to": 3254,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.0,
+        "w:but": 8.0,
+        "i:1": 14.0,
+        "w:fast": 14.0,
+        "i:2": 23.5,
+        "w:refresh": 23.5,
+        "i:3": 35.5,
+        "w:drains": 35.5,
+        "i:4": 47.5,
+        "w:battery": 47.5,
+        "i:5": 65.5,
+        "w:so": 65.5,
+        "i:6": 71.5,
+        "w:phones": 71.5,
+        "i:7": 82.0,
+        "w:cheat": 82.0,
+        "i:8": 110.5,
+        "w:ltpo": 110.5,
+        "i:9": 133.0,
+        "w:screens": 133.0,
+        "i:10": 144.5,
+        "w:shift": 144.5,
+        "i:11": 152.0,
+        "w:speed": 152.0,
+        "i:12": 159.5,
+        "w:on": 159.5,
+        "i:13": 162.0,
+        "w:the": 162.0,
+        "i:14": 165.5,
+        "w:fly": 165.5,
+        "i:15": 193.5,
+        "w:up": 193.5,
+        "i:16": 197.5,
+        "w:to": 197.5,
+        "i:17": 202.5,
+        "w:120": 202.5,
+        "i:18": 225.5,
+        "w:when": 225.5,
+        "i:19": 230.0,
+        "w:you": 230.0,
+        "i:20": 234.0,
+        "w:scroll": 234.0,
+        "i:21": 254.0,
+        "w:slower": 254.0,
+        "i:22": 263.0,
+        "i:23": 267.5,
+        "i:24": 271.5,
+        "w:read": 271.5,
+        "i:25": 292.5,
+        "w:just": 292.5,
+        "i:26": 299.0,
+        "w:1": 299.0,
+        "i:27": 307.0,
+        "w:hertz": 307.0,
+        "i:28": 318.5,
+        "i:29": 323.5,
+        "i:30": 327.0,
+        "w:lock": 327.0,
+        "i:31": 333.5,
+        "w:screen": 333.5
+      },
+      "beats": [
+        {
+          "t": 13.0,
+          "w": "fast",
+          "word": "fast",
+          "kind": "state",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 22.5,
+          "w": "refresh",
+          "word": "refresh",
+          "kind": "object",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 34.5,
+          "w": "drains",
+          "word": "drains",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 46.5,
+          "w": "battery,",
+          "word": "battery",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 60.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.5,
+          "w": "phones",
+          "word": "phones",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 81.0,
+          "w": "cheat.",
+          "word": "cheat",
+          "kind": "action",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 95.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 109.5,
+          "w": "LTPO",
+          "word": "ltpo",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 123.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 132.0,
+          "w": "screens",
+          "word": "screens",
+          "kind": "object",
+          "s": 2,
+          "i": 9
+        },
+        {
+          "t": 143.5,
+          "w": "shift",
+          "word": "shift",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 151.0,
+          "w": "speed",
+          "word": "speed",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 164.5,
+          "w": "fly:",
+          "word": "fly",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 178.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 192.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 201.5,
+          "w": "120",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 17
+        },
+        {
+          "t": 215.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 224.5,
+          "w": "when",
+          "word": "when",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 233.0,
+          "w": "scroll,",
+          "word": "scroll",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 247.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 253.0,
+          "w": "slower",
+          "word": "slower",
+          "kind": "state",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 262.0,
+          "w": "when",
+          "word": "when",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 270.5,
+          "w": "read,",
+          "word": "read",
+          "kind": "action",
+          "s": 2,
+          "i": 24
+        },
+        {
+          "t": 284.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 298.0,
+          "w": "1",
+          "word": "1",
+          "kind": "number",
+          "s": 3,
+          "i": 26
+        },
+        {
+          "t": 306.0,
+          "w": "hertz",
+          "word": "hertz",
+          "kind": "object",
+          "s": 1,
+          "i": 27
+        },
+        {
+          "t": 320.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 326.0,
+          "w": "lock",
+          "word": "lock",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 332.5,
+          "w": "screen.",
+          "word": "screen",
+          "kind": "object",
+          "s": 3,
+          "i": 31
+        },
+        {
+          "t": 346.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "from": 3254,
+      "to": 3668,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.5,
+        "w:gaming": 8.5,
+        "i:1": 17.0,
+        "w:phones": 17.0,
+        "i:2": 28.0,
+        "w:push": 28.0,
+        "i:3": 34.0,
+        "w:to": 34.0,
+        "i:4": 39.0,
+        "w:144": 39.0,
+        "i:5": 63.0,
+        "w:or": 63.0,
+        "i:6": 71.0,
+        "w:165": 71.0,
+        "i:7": 97.5,
+        "w:hertz": 97.5,
+        "i:8": 114.0,
+        "w:with": 114.0,
+        "i:9": 120.0,
+        "w:touch": 120.0,
+        "i:10": 126.5,
+        "w:sensors": 126.5,
+        "i:11": 136.5,
+        "w:checking": 136.5,
+        "i:12": 145.5,
+        "w:your": 145.5,
+        "i:13": 149.5,
+        "w:finger": 149.5,
+        "i:14": 158.0,
+        "w:thousands": 158.0,
+        "i:15": 171.0,
+        "w:of": 171.0,
+        "i:16": 174.0,
+        "w:times": 174.0,
+        "i:17": 182.5,
+        "w:a": 182.5,
+        "i:18": 184.5,
+        "w:second": 184.5
+      },
+      "beats": [
+        {
+          "t": 7.5,
+          "w": "Gaming",
+          "word": "gaming",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 16.0,
+          "w": "phones",
+          "word": "phones",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 27.0,
+          "w": "push",
+          "word": "push",
+          "kind": "action",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 38.0,
+          "w": "144",
+          "word": "144",
+          "kind": "number",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 52.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.0,
+          "w": "165",
+          "word": "165",
+          "kind": "number",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 84.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 96.5,
+          "w": "hertz,",
+          "word": "hertz",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 110.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 119.0,
+          "w": "touch",
+          "word": "touch",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 125.5,
+          "w": "sensors",
+          "word": "sensors",
+          "kind": "object",
+          "s": 2,
+          "i": 10
+        },
+        {
+          "t": 135.5,
+          "w": "checking",
+          "word": "checking",
+          "kind": "object",
+          "s": 2,
+          "i": 11
+        },
+        {
+          "t": 148.5,
+          "w": "finger",
+          "word": "finger",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 157.0,
+          "w": "thousands",
+          "word": "thousands",
+          "kind": "number",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 173.0,
+          "w": "times",
+          "word": "times",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 183.5,
+          "w": "second.",
+          "word": "second",
+          "kind": "object",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 197.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "from": 3668,
+      "to": 4286,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:on": 9.0,
+        "i:1": 14.0,
+        "w:a": 14.0,
+        "i:2": 16.0,
+        "w:pc": 16.0,
+        "i:3": 27.5,
+        "w:the": 27.5,
+        "i:4": 30.5,
+        "w:graphics": 30.5,
+        "i:5": 41.0,
+        "w:card": 41.0,
+        "i:6": 48.5,
+        "w:must": 48.5,
+        "i:7": 56.0,
+        "w:keep": 56.0,
+        "i:8": 62.5,
+        "w:up": 62.5,
+        "i:9": 83.0,
+        "w:say": 83.0,
+        "i:10": 89.0,
+        "w:it": 89.0,
+        "i:11": 92.0,
+        "w:makes": 92.0,
+        "i:12": 100.5,
+        "w:90": 100.5,
+        "i:13": 109.0,
+        "w:frames": 109.0,
+        "i:14": 117.5,
+        "w:for": 117.5,
+        "i:15": 121.5,
+        "i:16": 124.5,
+        "w:144": 124.5,
+        "i:17": 148.5,
+        "w:hertz": 148.5,
+        "i:18": 155.5,
+        "w:monitor": 155.5,
+        "i:19": 185.5,
+        "i:20": 189.5,
+        "w:screen": 189.5,
+        "i:21": 197.0,
+        "w:catches": 197.0,
+        "i:22": 206.5,
+        "w:half": 206.5,
+        "i:23": 213.0,
+        "w:of": 213.0,
+        "i:24": 218.0,
+        "w:one": 218.0,
+        "i:25": 224.5,
+        "w:frame": 224.5,
+        "i:26": 233.5,
+        "w:and": 233.5,
+        "i:27": 238.0,
+        "i:28": 243.0,
+        "i:29": 245.5,
+        "i:30": 248.5,
+        "w:next": 248.5,
+        "i:31": 279.0,
+        "w:thats": 279.0,
+        "i:32": 287.5,
+        "w:tearing": 287.5
+      },
+      "beats": [
+        {
+          "t": 15.0,
+          "w": "PC,",
+          "word": "pc",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 29.5,
+          "w": "graphics",
+          "word": "graphics",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 40.0,
+          "w": "card",
+          "word": "card",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 47.5,
+          "w": "must",
+          "word": "must",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 55.0,
+          "w": "keep",
+          "word": "keep",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 69.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 82.0,
+          "w": "Say",
+          "word": "say",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 91.0,
+          "w": "makes",
+          "word": "makes",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 99.5,
+          "w": "90",
+          "word": "90",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 108.0,
+          "w": "frames",
+          "word": "frames",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 123.5,
+          "w": "144",
+          "word": "144",
+          "kind": "number",
+          "s": 3,
+          "i": 16
+        },
+        {
+          "t": 137.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 147.5,
+          "w": "hertz",
+          "word": "hertz",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 154.5,
+          "w": "monitor.",
+          "word": "monitor",
+          "kind": "object",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 168.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 182.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 188.5,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 196.0,
+          "w": "catches",
+          "word": "catches",
+          "kind": "object",
+          "s": 2,
+          "i": 21
+        },
+        {
+          "t": 205.5,
+          "w": "half",
+          "word": "half",
+          "kind": "number",
+          "s": 3,
+          "i": 22
+        },
+        {
+          "t": 217.0,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 24
+        },
+        {
+          "t": 223.5,
+          "w": "frame",
+          "word": "frame",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 237.0,
+          "w": "half",
+          "word": "half",
+          "kind": "number",
+          "s": 3,
+          "i": 27
+        },
+        {
+          "t": 247.5,
+          "w": "next.",
+          "word": "next",
+          "kind": "object",
+          "s": 3,
+          "i": 30
+        },
+        {
+          "t": 261.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 275.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 286.5,
+          "w": "tearing.",
+          "word": "tearing",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 300.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "from": 4286,
+      "to": 4728,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 7.5,
+        "w:the": 7.5,
+        "i:1": 12.0,
+        "w:fix": 12.0,
+        "i:2": 19.0,
+        "w:is": 19.0,
+        "i:3": 24.5,
+        "w:variable": 24.5,
+        "i:4": 38.0,
+        "w:refresh": 38.0,
+        "i:5": 52.5,
+        "w:like": 52.5,
+        "i:6": 64.5,
+        "w:g-sync": 64.5,
+        "i:7": 82.0,
+        "w:or": 82.0,
+        "i:8": 86.5,
+        "w:freesync": 86.5,
+        "i:9": 122.0,
+        "i:10": 126.0,
+        "w:monitor": 126.0,
+        "i:11": 135.5,
+        "w:waits": 135.5,
+        "i:12": 141.5,
+        "w:for": 141.5,
+        "i:13": 146.5,
+        "w:each": 146.5,
+        "i:14": 153.0,
+        "w:new": 153.0,
+        "i:15": 158.0,
+        "w:frame": 158.0,
+        "i:16": 167.5,
+        "w:and": 167.5,
+        "i:17": 172.0,
+        "w:refreshes": 172.0,
+        "i:18": 184.5,
+        "i:19": 188.0,
+        "w:moment": 188.0,
+        "i:20": 196.0,
+        "w:it": 196.0,
+        "i:21": 199.5,
+        "w:lands": 199.5
+      },
+      "beats": [
+        {
+          "t": 11.0,
+          "w": "fix",
+          "word": "fix",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 23.5,
+          "w": "variable",
+          "word": "variable",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 37.0,
+          "w": "refresh,",
+          "word": "refresh",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 51.5,
+          "w": "like",
+          "word": "like",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 63.5,
+          "w": "G-Sync",
+          "word": "gsync",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 77.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 85.5,
+          "w": "FreeSync.",
+          "word": "freesync",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 99.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 113.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 125.0,
+          "w": "monitor",
+          "word": "monitor",
+          "kind": "object",
+          "s": 2,
+          "i": 10
+        },
+        {
+          "t": 134.5,
+          "w": "waits",
+          "word": "waits",
+          "kind": "object",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 145.5,
+          "w": "each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 152.0,
+          "w": "new",
+          "word": "new",
+          "kind": "state",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 157.0,
+          "w": "frame,",
+          "word": "frame",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 171.0,
+          "w": "refreshes",
+          "word": "refreshes",
+          "kind": "object",
+          "s": 2,
+          "i": 17
+        },
+        {
+          "t": 187.0,
+          "w": "moment",
+          "word": "moment",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 198.5,
+          "w": "lands.",
+          "word": "lands",
+          "kind": "object",
+          "s": 3,
+          "i": 21
+        },
+        {
+          "t": 212.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "from": 4728,
+      "to": 5333,
+      "bg": "light",
+      "transitionIn": {
+        "type": "iris",
+        "frames": 24,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.0,
+        "w:and": 5.0,
+        "i:1": 9.5,
+        "w:each": 9.5,
+        "i:2": 16.0,
+        "w:jump": 16.0,
+        "i:3": 22.5,
+        "w:gives": 22.5,
+        "i:4": 30.0,
+        "w:less": 30.0,
+        "i:5": 59.5,
+        "w:60": 59.5,
+        "i:6": 70.0,
+        "w:to": 70.0,
+        "i:7": 73.5,
+        "w:120": 73.5,
+        "i:8": 88.0,
+        "w:saves": 88.0,
+        "i:9": 98.5,
+        "w:8": 98.5,
+        "i:10": 104.0,
+        "w:milliseconds": 104.0,
+        "i:11": 119.0,
+        "w:a": 119.0,
+        "i:12": 121.5,
+        "w:frame": 121.5,
+        "i:13": 140.5,
+        "i:14": 156.0,
+        "i:15": 162.0,
+        "w:144": 162.0,
+        "i:16": 193.0,
+        "w:under": 193.0,
+        "i:17": 200.0,
+        "w:one": 200.0,
+        "i:18": 204.0,
+        "i:19": 207.5,
+        "i:20": 209.5,
+        "w:half": 209.5,
+        "i:21": 239.0,
+        "w:yet": 239.0,
+        "i:22": 245.5,
+        "w:esports": 245.5,
+        "i:23": 258.5,
+        "w:monitors": 258.5,
+        "i:24": 268.5,
+        "w:now": 268.5,
+        "i:25": 273.0,
+        "w:hit": 273.0,
+        "i:26": 278.0,
+        "w:600": 278.0
+      },
+      "beats": [
+        {
+          "t": 8.5,
+          "w": "each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 15.0,
+          "w": "jump",
+          "word": "jump",
+          "kind": "action",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 21.5,
+          "w": "gives",
+          "word": "gives",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 29.0,
+          "w": "less.",
+          "word": "less",
+          "kind": "state",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 43.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 58.5,
+          "w": "60",
+          "word": "60",
+          "kind": "number",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 72.5,
+          "w": "120",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 87.0,
+          "w": "saves",
+          "word": "saves",
+          "kind": "action",
+          "s": 2,
+          "i": 8
+        },
+        {
+          "t": 97.5,
+          "w": "8",
+          "word": "8",
+          "kind": "number",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 103.0,
+          "w": "milliseconds",
+          "word": "milliseconds",
+          "kind": "object",
+          "s": 2,
+          "i": 10
+        },
+        {
+          "t": 120.5,
+          "w": "frame.",
+          "word": "frame",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 134.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 139.5,
+          "w": "120",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 153.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 161.0,
+          "w": "144,",
+          "word": "144",
+          "kind": "number",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 175.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 192.0,
+          "w": "under",
+          "word": "under",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 199.0,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 17
+        },
+        {
+          "t": 208.5,
+          "w": "half.",
+          "word": "half",
+          "kind": "number",
+          "s": 3,
+          "i": 20
+        },
+        {
+          "t": 222.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 238.0,
+          "w": "Yet",
+          "word": "yet",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 244.5,
+          "w": "esports",
+          "word": "esports",
+          "kind": "object",
+          "s": 2,
+          "i": 22
+        },
+        {
+          "t": 257.5,
+          "w": "monitors",
+          "word": "monitors",
+          "kind": "object",
+          "s": 2,
+          "i": 23
+        },
+        {
+          "t": 267.5,
+          "w": "now",
+          "word": "now",
+          "kind": "object",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 272.0,
+          "w": "hit",
+          "word": "hit",
+          "kind": "action",
+          "s": 2,
+          "i": 25
+        },
+        {
+          "t": 277.0,
+          "w": "600.",
+          "word": "600",
+          "kind": "number",
+          "s": 3,
+          "i": 26
+        },
+        {
+          "t": 291.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "from": 5333,
+      "to": 5777,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 32,
+        "origin": [
+          0.5,
+          0.45
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.0,
+        "w:so": 5.0,
+        "i:1": 25.5,
+        "w:frames": 25.5,
+        "i:2": 36.0,
+        "w:per": 36.0,
+        "i:3": 43.0,
+        "w:second": 43.0,
+        "i:4": 59.5,
+        "w:is": 59.5,
+        "i:5": 65.5,
+        "w:how": 65.5,
+        "i:6": 71.5,
+        "w:fast": 71.5,
+        "i:7": 81.0,
+        "w:pictures": 81.0,
+        "i:8": 91.0,
+        "w:are": 91.0,
+        "i:9": 94.5,
+        "w:made": 94.5,
+        "i:10": 115.0,
+        "w:hertz": 115.0,
+        "i:11": 131.0,
+        "i:12": 136.5,
+        "i:13": 141.5,
+        "i:14": 148.5,
+        "w:theyre": 148.5,
+        "i:15": 154.0,
+        "w:shown": 154.0,
+        "i:16": 178.5,
+        "w:smooth": 178.5,
+        "i:17": 189.5,
+        "i:18": 192.0,
+        "w:when": 192.0,
+        "i:19": 196.5,
+        "w:they": 196.5,
+        "i:20": 201.0,
+        "w:match": 201.0
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 24.5,
+          "w": "frames",
+          "word": "frames",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 35.0,
+          "w": "per",
+          "word": "per",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 42.0,
+          "w": "second",
+          "word": "second",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 56.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 64.5,
+          "w": "how",
+          "word": "how",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 70.5,
+          "w": "fast",
+          "word": "fast",
+          "kind": "state",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 80.0,
+          "w": "pictures",
+          "word": "pictures",
+          "kind": "object",
+          "s": 2,
+          "i": 7
+        },
+        {
+          "t": 93.5,
+          "w": "made.",
+          "word": "made",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 107.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 114.0,
+          "w": "Hertz",
+          "word": "hertz",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 128.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 135.5,
+          "w": "how",
+          "word": "how",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 140.5,
+          "w": "fast",
+          "word": "fast",
+          "kind": "state",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 147.5,
+          "w": "they're",
+          "word": "they're",
+          "kind": "object",
+          "s": 2,
+          "i": 14
+        },
+        {
+          "t": 153.0,
+          "w": "shown.",
+          "word": "shown",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 167.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 177.5,
+          "w": "Smooth",
+          "word": "smooth",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 191.0,
+          "w": "when",
+          "word": "when",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 200.0,
+          "w": "match.",
+          "word": "match",
+          "kind": "object",
+          "s": 3,
+          "i": 20
+        },
+        {
+          "t": 214.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "from": 5777,
+      "to": 6029,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 16,
+        "origin": [
+          0.5,
+          0.42
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.0,
+        "w:follow": 8.0,
+        "i:1": 16.0,
+        "w:for": 16.0,
+        "i:2": 20.0,
+        "w:part": 20.0,
+        "i:3": 26.0,
+        "w:two": 26.0,
+        "i:4": 43.5,
+        "w:what": 43.5,
+        "i:5": 50.5,
+        "w:input": 50.5,
+        "i:6": 60.5,
+        "w:lag": 60.5,
+        "i:7": 67.5,
+        "w:really": 67.5,
+        "i:8": 75.5,
+        "w:is": 75.5
+      },
+      "beats": [
+        {
+          "t": 7.0,
+          "w": "Follow",
+          "word": "follow",
+          "kind": "action",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 19.0,
+          "w": "part",
+          "word": "part",
+          "kind": "object",
+          "s": 1,
+          "i": 2,
+          "camera": "hold"
+        },
+        {
+          "t": 25.0,
+          "w": "two:",
+          "word": "two",
+          "kind": "number",
+          "s": 3,
+          "i": 3,
+          "camera": "hold"
+        },
+        {
+          "t": 42.5,
+          "w": "what",
+          "word": "what",
+          "kind": "object",
+          "s": 1,
+          "i": 4,
+          "camera": "hold"
+        },
+        {
+          "t": 49.5,
+          "w": "input",
+          "word": "input",
+          "kind": "object",
+          "s": 1,
+          "i": 5,
+          "camera": "hold"
+        },
+        {
+          "t": 59.5,
+          "w": "lag",
+          "word": "lag",
+          "kind": "object",
+          "s": 1,
+          "i": 6,
+          "camera": "hold"
+        },
+        {
+          "t": 66.5,
+          "w": "really",
+          "word": "really",
+          "kind": "object",
+          "s": 1,
+          "i": 7,
+          "camera": "hold"
+        },
+        {
+          "t": 80.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 94.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 108.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    }
+  ],
+  "style": "explainer",
+  "safe": {
+    "focusY": 0.5,
+    "zoom": 0.82
+  },
+  "beats": {
+    "count": 264,
+    "words": 192,
+    "per_s": 2.63
+  },
+  "rail": {
+    "chapters": [
+      {
+        "t": 500.0,
+        "label": "Frame time"
+      },
+      {
+        "t": 726.5,
+        "label": "Inside the screen"
+      },
+      {
+        "t": 1274.5,
+        "label": "Phones"
+      },
+      {
+        "t": 1834.0,
+        "label": "Gaming"
+      },
+      {
+        "t": 2364.0,
+        "label": "Limits"
+      }
+    ]
+  }
+}

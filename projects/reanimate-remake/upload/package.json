@@ -1,0 +1,26 @@
+{
+ "name": "Reanimate",
+ "title": "This free Claude Code skill copies any animation",
+ "master": "Reanimate_1080x1920_60fps.mp4",
+ "duration": 44.2,
+ "lufs": -14.5,
+ "true_peak": -1.9,
+ "video_mbps": 3.03,
+ "audio": "audio re-mastered from the mix WAV at AAC 320k",
+ "captions": {
+  "cues": 24,
+  "longest": 36,
+  "matches_voice": true
+ },
+ "cover_master": "cover_master_1520x2688.png",
+ "headline_top": 242,
+ "grid_top": 172,
+ "frame_pick": "frame_pick_0m34s.jpg",
+ "built": {
+  "dest": "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest",
+  "zips": [
+   "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest\\Reanimate_YouTube.zip",
+   "C:\\Users\\VED\\AppData\\Local\\Temp\\claude\\f971ced555e22cd5\\189efb46-e71d-4b07-a148-c1bb9d98467c\\scratchpad\\pkgtest\\Reanimate_Instagram.zip"
+  ]
+ }
+}
