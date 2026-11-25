@@ -202,7 +202,7 @@ const Foreground: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Requ
 // ---- Shorts/Reels safe area (project.safe, provided by Remake.tsx) -------------------------------------------------
 /** Where the camera lands its anchor (fraction of the height) and an extra zoom-out of the whole world layer.
  *  The defaults keep the original framing (anchor at 53 %, zoom 1). */
-export const SafeFrame = React.createContext<{focusY: number; zoom: number}>({focusY: 0.53, zoom: 1});
+export const SafeFrame = React.createContext<{focusY: number; zoom: number; fadeTo?: number}>({focusY: 0.53, zoom: 1, fadeTo: 0.30});
 
 // ---- the World component ------------------------------------------------------------------------------------------
 
@@ -250,7 +250,7 @@ export const World: React.FC<{def: WorldDef; t: number; dur: number; beats: Beat
       {O ? <O {...props} toScreen={toScreen} /> : null}
       {/* caption readability + vignette */}
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none',
-                   background: `linear-gradient(180deg, ${pal.bg0}E6 0%, ${pal.bg0}99 16%, ${pal.bg0}00 30%, ${pal.bg0}00 82%, ${pal.bg0}AA 100%)`}} />
+                   background: `linear-gradient(180deg, ${pal.bg0}E6 0%, ${pal.bg0}99 ${((safe.fadeTo ?? 0.3) * 53.3).toFixed(1)}%, ${pal.bg0}00 ${((safe.fadeTo ?? 0.3) * 100).toFixed(1)}%, ${pal.bg0}00 82%, ${pal.bg0}AA 100%)`}} />
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none',
                    background: `radial-gradient(ellipse 75% 60% at 50% 55%, transparent 55%, ${light ? 'rgba(40,50,70,0.10)' : 'rgba(0,0,0,0.55)'} 100%)`}} />
     </div>

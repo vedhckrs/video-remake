@@ -1,0 +1,26 @@
+{
+ "name": "Six-AI-Agents",
+ "title": "6 AI agents that work for you 24/7: which one is yours?",
+ "master": "Six-AI-Agents_1080x1920_60fps.mp4",
+ "duration": 120.733,
+ "lufs": -14.7,
+ "true_peak": -1.8,
+ "video_mbps": 7.15,
+ "audio": "audio re-mastered from the mix WAV at AAC 320k",
+ "captions": {
+  "cues": 82,
+  "longest": 38,
+  "matches_voice": true
+ },
+ "cover_master": "cover_master_1520x2688.png",
+ "headline_top": 494,
+ "grid_top": 40,
+ "frame_pick": "frame_pick_0m06s.jpg",
+ "built": {
+  "dest": "C:\\Users\\VED\\Documents\\Local\\Reverse\\upload-packages",
+  "layout": "combined",
+  "zips": [
+   "C:\\Users\\VED\\Documents\\Local\\Reverse\\upload-packages\\Six-AI-Agents_Final_Upload.zip"
+  ]
+ }
+}

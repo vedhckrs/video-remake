@@ -186,3 +186,14 @@ right action column (x 86-98 %, y 50-86 %: like, comment, share, remix).
 - **Checks:** `safe_overlay.py` draws the YouTube UI over frames for a visual check (before/after previews for Ved);
   `safe_check.py` (OCR env) fails on readable text (>= 1.6 % of the frame tall) in the bottom 15 % or top 8 % and
   lists text under the right buttons. Calibration: the pre-safe-area fps video failed with 75 sightings.
+- **Higher framing (Ved, 25 Nov 2026, six-agents: "shift all visual above"):** per video in script.json -
+  `"caption_y": 0.115`, `"safe": {"focusY": 0.44, "zoom": 0.86, "fadeTo": 0.21}` and no `chapter` labels (the rail
+  would collide with the higher captions). `fadeTo` = where the dark top caption fade ends (default 0.30, which keeps
+  older videos identical). Result: captions 11.5-18.5 %, visuals ~20-84 %. After changing it, re-check side clipping
+  in stills and run `safe_check.py`: the bigger zoom pulled decorative tiles into the bottom zone once.
+
+### Hook (Ved, 25 Nov 2026: "start 6 second no visual change, no powerful hook")
+In the first ~6 s the picture must change BIG at least every 0.5-0.7 s - a full-screen hero per word, then a build,
+a flip, a payoff - and every pause in the voice gets its own picture event. One layout holding > 1 s is a fail even
+if details inside it move. Worked example: `six-agents` `frame_wall.tsx`. A whip-cut montage in the first ~2 s is
+allowed; `camera_motion.py` will read it as jiggle - report that number with and without the montage.

@@ -87,7 +87,7 @@ export const Remake: React.FC<{project: Project; scenes: Record<string, React.FC
   const base = project.baseFps ?? fps;
   const k = fps / base; // output frames per design frame (2 at 60 fps output, 30 fps design)
 
-  const safe = {focusY: project.safe?.focusY ?? 0.53, zoom: project.safe?.zoom ?? 1};
+  const safe = {focusY: project.safe?.focusY ?? 0.53, zoom: project.safe?.zoom ?? 1, fadeTo: project.safe?.fadeTo ?? 0.30};
 
   return (
     <SafeFrame.Provider value={safe}>

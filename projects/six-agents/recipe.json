@@ -1,0 +1,132 @@
+{
+ "reference": {
+  "style_library": "keyframes-explainer",
+  "source": "12 reference videos, D:/VideoBlueprint/jobs/kf01..kf12 + kf_style/style_system.md"
+ },
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30
+ },
+ "length_s": 90,
+ "pacing": {
+  "avg_shot_s": 19.1,
+  "transitions_follow": "voice",
+  "visual_beats_per_s": [
+   0.7,
+   1.2
+  ],
+  "max_static_s": 1.5,
+  "note": "few stages (scenes), constant in-scene change: element swaps, callouts, camera steps, pose changes"
+ },
+ "transitions": {
+  "counts": {
+   "dissolve": 19,
+   "cut": 10,
+   "push": 8,
+   "zoom": 5,
+   "slide": 3
+  },
+  "median_frames": {
+   "dissolve": 4,
+   "push": 6,
+   "zoom": 8,
+   "slide": 8,
+   "iris": 9
+  },
+  "hard_cuts": 10,
+  "rule": "element swap is the default; zoom-through when scale changes; push when place/chapter changes; blur-dissolve for an unrelated reset; hard cut only in fast montage"
+ },
+ "acts": {
+  "dark_bg": "#0E0F11",
+  "light_bg": "#F6F7F9",
+  "rule": "one dark act by default; light acts only for tangible work / document evidence / practical tips"
+ },
+ "captions": {
+  "y": 0.165,
+  "size_px": 68,
+  "lead_ms": 50,
+  "max_words": 4,
+  "word_by_word": true,
+  "style": "Poppins phrases of 2-4 words, active word bold white, spoken words grey regular, one corner-bracket keyword box per sentence that springs between keywords"
+ },
+ "voice": {
+  "language": "en",
+  "pace_wpm": 200,
+  "target_wpm": [
+   195,
+   205
+  ],
+  "tone": "energetic, curious, second person, short sentences; payoff holds of 24-40 frames @60"
+ },
+ "music": {
+  "bpm": 92,
+  "key": "C# major",
+  "level_vs_voice": 0.13,
+  "mood": "light, steady electronic bed 18 dB under the voice; lifts at act changes and CTA"
+ },
+ "sfx": {
+  "per_10s": 5,
+  "target_per_10s": [
+   4,
+   6
+  ],
+  "max_gap_s": 8,
+  "transitions_with_sfx": 0.5,
+  "median_offset_ms_vs_transition": -120,
+  "families": {
+   "pop": 30,
+   "click": 20,
+   "whoosh": 15,
+   "ding": 15,
+   "tick": 10,
+   "impact": 6,
+   "riser": 4
+  }
+ },
+ "narrative": [
+  {
+   "section": "hook",
+   "share": 0.06
+  },
+  {
+   "section": "promise",
+   "share": 0.06
+  },
+  {
+   "section": "basics",
+   "share": 0.2
+  },
+  {
+   "section": "mechanism",
+   "share": 0.4
+  },
+  {
+   "section": "caveat",
+   "share": 0.1
+  },
+  {
+   "section": "proof",
+   "share": 0.07
+  },
+  {
+   "section": "payoff",
+   "share": 0.06
+  },
+  {
+   "section": "cta",
+   "share": 0.05
+  }
+ ],
+ "look": {
+  "look": "single dark stage with faint 60 px grid + vignette; flat SVG objects drawn 2.5D (ISO 30 deg, 3 face tones, contact shadows, AO, edge highlights); caption band top, stage middle, presenter bust bottom",
+  "typography_system": "Poppins captions 68 px; uppercase tracked labels >= 30 px; tabular extra-bold hero numbers; JetBrains Mono for code/specs"
+ },
+ "video_type": "9:16 code-drawn 2.5D tech explainer with an original presenter bust",
+ "rules_inferred": [
+  "caption words lead the voice by ~50 ms",
+  "visual events land on stressed words; nothing cut to the beat",
+  "presenter enters 3-7 s, changes pose every 1-2 s on phrase boundaries",
+  "every spoken number has an animated readout"
+ ]
+}

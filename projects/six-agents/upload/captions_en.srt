@@ -1,0 +1,327 @@
+1
+00:00:00,000 --> 00:00:01,280
+Six AI agents now do
+
+2
+00:00:01,300 --> 00:00:02,314
+real work for you,
+
+3
+00:00:02,334 --> 00:00:03,489
+even while you sleep.
+
+4
+00:00:04,203 --> 00:00:05,149
+Same promise.
+
+5
+00:00:05,503 --> 00:00:06,752
+Very different deals.
+
+6
+00:00:07,210 --> 00:00:08,049
+Four of them live in a
+
+7
+00:00:08,069 --> 00:00:09,198
+big company's cloud,
+
+8
+00:00:09,218 --> 00:00:10,455
+on their own computer.
+
+9
+00:00:10,913 --> 00:00:12,379
+Two are free, open source,
+
+10
+00:00:12,399 --> 00:00:13,497
+and run on yours.
+
+11
+00:00:14,071 --> 00:00:16,074
+First, OpenAI's Dots.
+
+12
+00:00:16,788 --> 00:00:18,660
+Each dot gets its own cloud computer,
+
+13
+00:00:18,680 --> 00:00:20,506
+links to over four thousand apps,
+
+14
+00:00:20,526 --> 00:00:22,285
+and you can even text it on iMessage.
+
+15
+00:00:22,558 --> 00:00:24,108
+It asks before it pays.
+
+16
+00:00:24,462 --> 00:00:26,311
+It comes with ChatGPT Pro,
+
+17
+00:00:26,331 --> 00:00:27,611
+from a hundred dollars a month,
+
+18
+00:00:27,631 --> 00:00:29,007
+and it's not in Europe yet.
+
+19
+00:00:29,582 --> 00:00:31,443
+Meta's Muse is the everyday helper.
+
+20
+00:00:31,463 --> 00:00:32,441
+It books trips,
+
+21
+00:00:32,461 --> 00:00:34,357
+shops, even negotiates your bills,
+
+22
+00:00:34,377 --> 00:00:35,637
+right inside WhatsApp,
+
+23
+00:00:35,723 --> 00:00:37,494
+and checks with you before it spends.
+
+24
+00:00:37,953 --> 00:00:39,082
+Most tasks are free,
+
+25
+00:00:39,102 --> 00:00:40,861
+with twenty and hundred dollar plans.
+
+26
+00:00:41,319 --> 00:00:42,646
+For now, it's only in the
+
+27
+00:00:42,666 --> 00:00:43,903
+US and Singapore.
+
+28
+00:00:44,256 --> 00:00:46,236
+xAI's Grok Bot is the team player.
+
+29
+00:00:46,590 --> 00:00:48,184
+Every bot gets its own computer,
+
+30
+00:00:48,204 --> 00:00:49,449
+signs into your work apps,
+
+31
+00:00:49,469 --> 00:00:50,564
+and joins your Slack,
+
+32
+00:00:50,584 --> 00:00:51,751
+even your Zoom calls.
+
+33
+00:00:52,105 --> 00:00:53,443
+It comes with X Premium at
+
+34
+00:00:53,463 --> 00:00:54,523
+thirty dollars and up,
+
+35
+00:00:54,543 --> 00:00:56,186
+and heavy use costs extra.
+
+36
+00:00:56,760 --> 00:00:57,901
+Anthropic's Claude Duet
+
+37
+00:00:57,921 --> 00:00:58,984
+is the careful one.
+
+38
+00:00:59,442 --> 00:01:00,595
+It briefs you every morning,
+
+39
+00:01:00,615 --> 00:01:01,988
+spots unpaid invoices,
+
+40
+00:01:02,008 --> 00:01:03,210
+even runs payroll.
+
+41
+00:01:03,239 --> 00:01:04,159
+Before it sends,
+
+42
+00:01:04,179 --> 00:01:05,903
+pays, signs or deletes,
+
+43
+00:01:05,990 --> 00:01:07,085
+it shows you and waits,
+
+44
+00:01:07,105 --> 00:01:07,967
+and it never moves money
+
+45
+00:01:07,987 --> 00:01:09,038
+between accounts.
+
+46
+00:01:09,392 --> 00:01:10,533
+It's included in Claude Pro
+
+47
+00:01:10,553 --> 00:01:11,206
+at twenty dollars,
+
+48
+00:01:11,226 --> 00:01:13,055
+but it's a US waitlist preview.
+
+49
+00:01:13,409 --> 00:01:14,495
+Now the free ones.
+
+50
+00:01:14,953 --> 00:01:16,245
+OpenClaw, the lobster,
+
+51
+00:01:16,265 --> 00:01:17,336
+has three hundred ninety-five
+
+52
+00:01:17,356 --> 00:01:18,640
+thousand GitHub stars.
+
+53
+00:01:18,993 --> 00:01:20,390
+It runs on your own computer,
+
+54
+00:01:20,410 --> 00:01:21,005
+you chat with it on
+
+55
+00:01:21,025 --> 00:01:22,367
+WhatsApp or Telegram,
+
+56
+00:01:22,395 --> 00:01:23,992
+and the software costs nothing.
+
+57
+00:01:24,125 --> 00:01:24,941
+But it can run commands
+
+58
+00:01:24,961 --> 00:01:25,463
+on your machine,
+
+59
+00:01:25,483 --> 00:01:26,546
+so lock it down.
+
+60
+00:01:27,260 --> 00:01:28,865
+Hermes, from Nous Research,
+
+61
+00:01:28,885 --> 00:01:29,832
+is the learner.
+
+62
+00:01:30,185 --> 00:01:31,129
+After a hard task,
+
+63
+00:01:31,149 --> 00:01:32,220
+it writes itself a new skill,
+
+64
+00:01:32,240 --> 00:01:33,988
+so it gets better the more you use it.
+
+65
+00:01:34,261 --> 00:01:35,506
+It's free with any AI model,
+
+66
+00:01:35,526 --> 00:01:37,343
+or hosted from twenty dollars a month.
+
+67
+00:01:37,477 --> 00:01:38,954
+The catch: you pick and set
+
+68
+00:01:38,974 --> 00:01:40,246
+up the model yourself.
+
+69
+00:01:40,820 --> 00:01:41,697
+So which one?
+
+70
+00:01:41,784 --> 00:01:43,090
+Busy pro with budget:
+
+71
+00:01:43,444 --> 00:01:44,251
+Dots.
+
+72
+00:01:44,280 --> 00:01:45,038
+Everyday errands:
+
+73
+00:01:45,058 --> 00:01:45,758
+Muse.
+
+74
+00:01:45,836 --> 00:01:47,445
+A whole team: Grok Bot.
+
+75
+00:01:47,798 --> 00:01:49,743
+Approval on every risky step:
+
+76
+00:01:50,016 --> 00:01:50,986
+Claude Duet.
+
+77
+00:01:51,339 --> 00:01:52,724
+Free and on your own machine:
+
+78
+00:01:52,744 --> 00:01:54,364
+OpenClaw or Hermes.
+
+79
+00:01:54,637 --> 00:01:56,419
+Save this before you pay for an agent.
+
+80
+00:01:56,773 --> 00:01:57,554
+Which one would you trust
+
+81
+00:01:57,574 --> 00:01:58,590
+with your inbox?
+
+82
+00:01:58,723 --> 00:01:59,786
+Tell me below.
