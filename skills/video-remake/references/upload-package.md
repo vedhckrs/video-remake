@@ -5,10 +5,31 @@ Added 24 Nov 2026 after Ved approved the SSD v3 and reanimate videos:
 > Magnific, .md upload file detailed, both platforms separate in zip file"
 > then: "generate image using gpt 2.6 flare 9:16 ratio"
 
+Changed 25 Nov 2026 to ONE zip (Ved, on the fps video):
+> "give me proper zip file for this video ... final video mp4 file 1080p with updated thumbnail and both separate
+> folder Instagram and YouTube .md upload detailed ... in one zip file", then "Yes, add to skill"
+
 **When:** only after Ved approves the final cut ("good to go", "final render", "upload package", "ready to post").
-**Deliverable per video:** two zips, `<Name>_YouTube.zip` and `<Name>_Instagram.zip`. Each holds the same master MP4, the cover in that platform's sizes, its own `UPLOAD_*.md` guide, and (YouTube only) `captions_en.srt`.
+**Deliverable per video (default):** ONE zip, `<Name>_Final_Upload.zip`:
+```
+<Name>_Final_Upload/
+├── README.md                              written by `build`: the tree, the specs, before-you-upload steps
+├── <Name>_1080x1920_60fps.mp4             the final video, ONCE, for both platforms
+├── <Name>_Thumbnail_1080x1920.jpg         the final thumbnail / cover
+├── <Name>_Thumbnail_master_<WxH>.png      the untouched full-size original
+├── YouTube/
+│   ├── UPLOAD_YOUTUBE.md
+│   ├── captions_en.srt
+│   └── frame_pick_<m>m<ss>s.jpg
+└── Instagram/
+    ├── UPLOAD_INSTAGRAM.md
+    └── grid_preview_1080x1440.jpg
+```
+The video and the thumbnail sit once in the main folder, so the zip is half the size of two self-contained zips.
+**Only when Ved asks for separate zips:** `build --layout split` makes the older `<Name>_YouTube.zip` and
+`<Name>_Instagram.zip`, each with its own copy of the video and its platform's cover name.
 **Where:** the folder Ved names. In Nov 2026 that was `C:\Users\VED\Documents\Local\Reverse\upload-packages` (pass `--dest`); the default is `<VB>\upload-packages`.
-**Worked examples:** `references/example-upload/` (both videos' four guides, the cover prompts and preview images). Copy their structure, not their facts.
+**Worked examples:** `references/example-upload/` (the guides, the cover prompts and preview images). Copy their structure, not their facts. `fps-explainer/` is the one-zip layout (with its README); `ssd-explainer/` and `reanimate/` are the older split layout, so their file names differ.
 
 Run with core python: `rm/upload_package <project> <command>` (see the script's docstring).
 
@@ -30,17 +51,33 @@ Run with core python: `rm/upload_package <project> <command>` (see the script's 
    - `frame_pick_<m>m<ss>s.jpg`.
 
    It warns if the headline starts inside the top 12% (app buttons).
-6. **Write the two guides** into `<project>/upload/UPLOAD_YOUTUBE.md` and `UPLOAD_INSTAGRAM.md` (checklists below). `build` refuses guides that still contain template markers (`{{`, `TODO`, `TBD`, `<<`…).
-7. **Build:** `rm/upload_package <project> build --dest "<folder>"` (add `--force` to replace an earlier build).
-   - It makes the `<Name>_YouTube/` and `<Name>_Instagram/` folders and their zips.
+6. **Write the two guides** into `<project>/upload/UPLOAD_YOUTUBE.md` and `UPLOAD_INSTAGRAM.md` (checklists below), using the file names of the layout you will build (next section). Give each guide a short **Quick start** (3 steps) at the top. `build` refuses guides that still contain template markers (`{{`, `TODO`, `TBD`, `<<`…) or that name the other layout's files.
+7. **Build:** `rm/upload_package <project> build --dest "<folder>" --note "<version line>" --note "<QA line>"` (add `--force` to replace an earlier build).
+   - It makes the `<Name>_Final_Upload/` folder (above) and its zip, and writes `README.md` from the master's specs. Each `--note` adds a row to the README's video table, e.g. `"v2, the final: the safe-area version Ved approved on 25 Nov"` and `"QA 17/18 with 0 hard fails; safe-area text check PASS"`.
+   - `--layout split` makes the two older zips instead (only when Ved asks).
    - Media files go in stored, text files deflated.
-   - It verifies each zip: CRC test, every file extracted and SHA-256-compared with its source, the MP4 re-probed, and text files decoded as UTF-8.
+   - It verifies each zip: CRC test, exactly the expected files, every file extracted and SHA-256-compared with its source, the MP4 re-probed, and text files decoded as UTF-8.
 8. **Hand over:**
-   - a table of zips (size and contents) and the specs line (resolution, fps, codec, Mbps, LUFS, true peak);
+   - the zip path, its size, the tree of its contents, and the specs line (resolution, fps, codec, Mbps, LUFS, true peak);
    - the credits spent, with the balance before and after;
    - the cover images sent with SendUserFile;
    - the steps only Ved can do: posting, the comment-to-DM tool, the cover crop;
    - no "done" claim for anything unverified.
+
+## File names in the guides (checked by `build`)
+
+The guides must name the files exactly as they appear in the zip, and say where each one is.
+
+| | One zip (default) | `--layout split` |
+|---|---|---|
+| Video | `<Name>_1080x1920_60fps.mp4`, "main folder" | same name, in each platform folder |
+| Thumbnail / cover | `<Name>_Thumbnail_1080x1920.jpg`, "main folder", in BOTH guides | YouTube `thumbnail_shorts_1080x1920.jpg`, Instagram `reel_cover_1080x1920.jpg` |
+| Full-size thumbnail | `<Name>_Thumbnail_master_<WxH>.png`, "main folder" | YouTube `thumbnail_master_<WxH>.png` |
+| Captions, fallback frame | `captions_en.srt`, `frame_pick_*.jpg`, "this folder" (YouTube) | same names |
+| Grid preview | `grid_preview_1080x1440.jpg`, "this folder" (Instagram) | same name |
+
+In the one-zip layout the "Files you'll use" table gets a **Where** column ("main folder" / "this folder").
+`build` stops when a guide never names the master MP4 or its thumbnail, or still names the other layout's thumbnail.
 
 ## Cover: GPT Image 2.6, photoreal VIRAL style, 9:16 (Ved, updated 25 Nov 2026)
 
@@ -105,7 +142,7 @@ In practice GPT 2.6 put the headline top at about y = 245 (of 1920) even when as
 
 ## YouTube guide checklist (`UPLOAD_YOUTUBE.md`)
 
-1. **Folder table**, the specs line, and that a vertical video ≤ 3 min becomes a Short automatically.
+1. **Quick start** (3 steps), then the **files table** (with a Where column in the one-zip layout), the specs line, and that a vertical video ≤ 3 min becomes a Short automatically.
 2. **Upload flow: phone first, then desktop Studio.**
    - Desktop Studio can't change a Short's thumbnail. In the app, the ✏️ on the thumbnail allows an image upload where it's rolled out; otherwise use the fallback frame at m:ss.
    - Upload as Private, finish the details on desktop, upload the captions (Subtitles → English → Upload file → **With timing**), check on the phone, then go Public or Scheduled ("When your viewers are on YouTube" in Analytics → Audience; never invent a "best time").
@@ -137,7 +174,7 @@ In practice GPT 2.6 put the headline top at about y = 245 (of 1920) even when as
 
 ## Instagram guide checklist (`UPLOAD_INSTAGRAM.md`)
 
-1. **Folder table**, the specs line (Reels up to 3 min; burned-in captions inside the safe zone), and "no other app's watermark".
+1. **Quick start** (3 steps), then the **files table** (with a Where column in the one-zip layout), the specs line (Reels up to 3 min; burned-in captions inside the safe zone), and "no other app's watermark".
 2. **Comment-keyword promise** (if the CTA uses one): set up the comment-to-DM automation **before** posting. Give:
    - ManyChat (free plan, Instagram professional account) steps: trigger "comments on post/reel", the keyword, a public reply and the DM text;
    - a test from a second account;

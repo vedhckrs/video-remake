@@ -2,16 +2,24 @@
 
 Package made 25 Nov 2026. Everything here is ready to paste.
 
-## 1. What's in this folder
+## Quick start (about 10 minutes)
 
-| File | Use |
-|---|---|
-| `FPS-Explainer_1080x1920_60fps.mp4` | The video to upload (final master, with the Shorts/Reels safe area) |
-| `thumbnail_shorts_1080x1920.jpg` | Shorts thumbnail / cover (9:16) |
-| `thumbnail_master_1520x2688.png` | Full-size original of the thumbnail (keep for edits or reposts) |
-| `frame_pick_0m42s.jpg` | Fallback: the frame to pick if the app only lets you choose a frame |
-| `captions_en.srt` | English subtitles with exact timing (56 cues, word for word with the voiceover) |
-| `UPLOAD_YOUTUBE.md` | This guide |
+1. Phone: upload `FPS-Explainer_1080x1920_60fps.mp4` (main folder), set the thumbnail to `FPS-Explainer_Thumbnail_1080x1920.jpg` (main folder), paste the title, and keep it **Private**.
+2. Desktop Studio: paste the description and tags, set the settings in section 4, and upload `captions_en.srt`.
+3. Check it once on the phone, then make it **Public** (or schedule it) and pin the comment.
+
+The full steps are below.
+
+## 1. Files you'll use
+
+| File | Where | Use |
+|---|---|---|
+| `FPS-Explainer_1080x1920_60fps.mp4` | main folder | The video to upload (final master, with the Shorts/Reels safe area) |
+| `FPS-Explainer_Thumbnail_1080x1920.jpg` | main folder | Shorts thumbnail / cover (9:16) |
+| `FPS-Explainer_Thumbnail_master_1520x2688.png` | main folder | Full-size original of the thumbnail (keep for edits or reposts) |
+| `captions_en.srt` | this folder | English subtitles with exact timing (56 cues, word for word with the voiceover) |
+| `frame_pick_0m42s.jpg` | this folder | Fallback: the frame to pick if the app only lets you choose a frame |
+| `UPLOAD_YOUTUBE.md` | this folder | This guide |
 
 **Video specs** (checked): 1080 × 1920 vertical, 60 fps, H.264 High, BT.709, 100.5 s, about 9.6 Mbps.
 Audio is AAC-LC 320 kbps, 48 kHz stereo, −14.6 LUFS, true peak −1.8 dB, with faststart.
@@ -25,7 +33,7 @@ YouTube Studio on desktop can't change a Short's thumbnail, so set the thumbnail
 
 1. **Phone, YouTube app**: **+** → **Upload a video** → `FPS-Explainer_1080x1920_60fps.mp4` → **Next**. Copy the file to the phone first; don't use a WhatsApp copy. Don't add music: the video already has its own mixed music and sound effects.
 2. On the details screen, tap the ✏️ pencil on the thumbnail:
-   - If you see an option to **add/upload an image**, choose `thumbnail_shorts_1080x1920.jpg`.
+   - If you see an option to **add/upload an image**, choose `FPS-Explainer_Thumbnail_1080x1920.jpg`.
    - If you can only pick a frame, scrub to **0:42**, the 60 Hz vs 120 Hz lanes with the smooth trail (see `frame_pick_0m42s.jpg`).
 3. Paste the **Title**, set **Visibility: Private** for now, and upload.
 4. **Desktop, studio.youtube.com** → Content → open the Short → **Details**:
@@ -116,14 +124,14 @@ Replying to comments in the first hour helps the Short get shown to more people.
 Made on Magnific with **GPT Image 2.6 · Sunburst** (photoreal; you asked for a real, viral look instead of the first AI-looking cover): 9:16, 2K, Quality High, Thinking High, 1 image, **175 credits**. The whole image is generated; the person is not a real individual.
 - A young man faces the camera and **shows** a phone (screen toward the viewer) at chest height, pointing at the smooth half. The screen shows one racing-game frame split in two: stuttering ghost copies vs razor-sharp.
 - The headline "60Hz vs 144Hz" sits just above the phone, with a red ✗ and a green ✓. No logos and no real brands; the car badge is invented.
-- `thumbnail_master_1520x2688.png` is the original; the 1080 × 1920 JPG is a resized copy. The image was downloaded and then deleted from Magnific.
+- `FPS-Explainer_Thumbnail_master_1520x2688.png` (main folder) is the original; the 1080 × 1920 JPG is a resized copy. The image was downloaded and then deleted from Magnific.
 
 Prompt summary (to regenerate a variation): a real photograph (35mm, f/2.8, skin texture, film grain) of a young man in a black hoodie in a magenta/cyan-lit gaming room, waist up, facing the camera. He holds a phone sideways at arm's length with the screen facing the viewer and points at its right half, looking into the camera excited. The screen is split: left blurry ghost copies of a car, right a sharp car with motion streaks. Text: "60Hz" red / "vs" / "144Hz" green above the phone, with ✗ and ✓.
 
 ## 7. Pre-publish checklist
 
 - [ ] The uploaded file is `FPS-Explainer_1080x1920_60fps.mp4` (100 s, vertical, plays with sound)
-- [ ] The thumbnail is set (custom image, or the frame at 0:42)
+- [ ] The thumbnail is set (`FPS-Explainer_Thumbnail_1080x1920.jpg`, or the frame at 0:42)
 - [ ] The title, description and tags are pasted, with #Shorts at the end of the description
 - [ ] Made for kids: **No** · Category: **Science & Technology** · Language: **English**
 - [ ] `captions_en.srt` is uploaded under English, With timing

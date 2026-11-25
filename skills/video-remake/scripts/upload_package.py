@@ -1,19 +1,30 @@
 """Upload packages for a finished remake (Ved, 24 Nov 2026: "final render 1080p 60 fps with proper YouTube and
-Instagram upload package, thumbnail from Magnific, .md upload guide, both platforms separate zip").
+Instagram upload package, thumbnail from Magnific, .md upload guide"; 25 Nov 2026: "final video mp4 file 1080p with
+updated thumbnail and both separate folder Instagram and YouTube .md upload detailed ... in one zip file").
 
-One master MP4 that suits both YouTube Shorts and Instagram Reels, English captions, the cover in the sizes each
-platform needs, and two verified zips (<Name>_YouTube.zip / <Name>_Instagram.zip) each with its own upload guide.
-The whole step (cover prompt for GPT Image 2.6 Flare, guide templates, platform rules) is in
+One master MP4 that suits both YouTube Shorts and Instagram Reels, English captions, the cover, and by default ONE
+verified zip, <Name>_Final_Upload.zip:
+  <Name>_Final_Upload/
+    README.md                                  what's inside, specs, before-you-upload steps (written by `build`)
+    <Name>_1080x1920_60fps.mp4                 the final video, once, for both platforms
+    <Name>_Thumbnail_1080x1920.jpg             the final thumbnail / cover
+    <Name>_Thumbnail_master_<WxH>.png          the untouched full-size original
+    YouTube/    UPLOAD_YOUTUBE.md, captions_en.srt, frame_pick_<m>m<ss>s.jpg
+    Instagram/  UPLOAD_INSTAGRAM.md, grid_preview_1080x1440.jpg
+`build --layout split` makes the older two zips instead (<Name>_YouTube.zip / <Name>_Instagram.zip, each with its
+own copy of the video). The whole step (cover prompt for GPT Image 2.6, guide checklists, platform rules) is in
 references/upload-package.md - read it first.
 
 usage (core python):
   upload_package.py <project> master [--name NAME] [--title TEXT]   # master MP4 + captions_en.srt + checks
   upload_package.py <project> frames [--every 3]                    # contact sheet for picking a fallback frame
   upload_package.py <project> cover <image> [--frame SEC]           # 1080x1920 cover, 3:4 grid preview, frame pick
-  upload_package.py <project> build [--dest DIR] [--force]          # both folders + zips, verified
+  upload_package.py <project> build [--dest DIR] [--force] [--layout combined|split] [--note TEXT ...]
+                                                                    # the zip(s), verified
 Everything is written to <project>/upload/ until `build` copies it to --dest (default <VB>/upload-packages).
 """
 import argparse
+import datetime
 import hashlib
 import json
 import shutil
@@ -343,6 +354,118 @@ def cmd_cover(P, a):
 
 # ------------------------------------------------------------------------------------------------ build
 GUIDE_MARKERS = ("{{", "}}", "<<", ">>", "TODO", "TBD", "XXX")
+SPLIT_THUMB = {"YouTube": "thumbnail_shorts_1080x1920.jpg", "Instagram": "reel_cover_1080x1920.jpg"}
+GUIDES = {"YouTube": "UPLOAD_YOUTUBE.md", "Instagram": "UPLOAD_INSTAGRAM.md"}
+
+
+def check_guides(up, st, layout, thumb):
+    """Refuse guides with template markers, or guides that name the other layout's files (on 25 Nov the combined
+    package was first assembled by hand and both guides still pointed at the split layout's thumbnail names)."""
+    for plat, g in GUIDES.items():
+        txt = (up / g).read_text(encoding="utf-8")
+        bad = [m for m in GUIDE_MARKERS if m in txt]
+        if bad:
+            die(f"{g} still has template markers {bad} - fill them in")
+        cover = thumb if layout == "combined" else SPLIT_THUMB[plat]
+        stale = list(SPLIT_THUMB.values()) + ["thumbnail_master_"] if layout == "combined" else [thumb.rsplit("_", 1)[0]]
+        missing = [f for f in (st["master"], cover) if f not in txt]
+        wrong = [f for f in stale if f in txt]
+        if missing or wrong:
+            die(f"{g} does not match the {layout} layout: " + "; ".join(
+                ([f"it never names {missing}"] if missing else []) + ([f"it still names {wrong}"] if wrong else []))
+                + " - see references/upload-package.md 'File names in the guides'")
+
+
+def readme_text(st, top, files, thumb, notes):
+    """README.md at the top of the combined package: the tree, the specs, before-you-upload steps."""
+    what = {st["master"]: "THE FINAL VIDEO (upload this to both platforms)",
+            thumb: "THE FINAL THUMBNAIL / COVER (9:16, upload this)",
+            "YouTube/UPLOAD_YOUTUBE.md": "step-by-step YouTube Shorts guide + copy-paste title, description, tags",
+            "YouTube/captions_en.srt": f"English subtitles with exact timing ({(st.get('captions') or {}).get('cues', '?')} lines)",
+            "Instagram/UPLOAD_INSTAGRAM.md": "step-by-step Instagram Reels guide + copy-paste caption",
+            "Instagram/grid_preview_1080x1440.jpg": "how the cover should look in your profile grid (3:4 crop)"}
+    for rel in files:
+        if "_Thumbnail_master_" in rel:
+            what[rel] = "full-size original of the thumbnail (keep for edits)"
+        if rel.startswith("YouTube/frame_pick_"):
+            what[rel] = "the frame to pick if YouTube only lets you choose a frame"
+    tops = ["README.md"] + [r for r in files if "/" not in r]
+    plats = ("YouTube", "Instagram")
+    subs = {p: [r for r in files if r.startswith(p + "/")] for p in plats}
+    width = max([len(r) for r in tops] + [len(r.split("/", 1)[1]) + 4 for p in plats for r in subs[p]]) + 2
+    what["README.md"] = "this file"
+    tree = [f"{top}/"] + [f"├── {r.ljust(width)}{what.get(r, '')}".rstrip() for r in tops]
+    for pi, p in enumerate(plats):
+        last = pi == len(plats) - 1
+        tree.append(f"{'└──' if last else '├──'} {p}/")
+        for si, r in enumerate(subs[p]):
+            branch = "└──" if si == len(subs[p]) - 1 else "├──"
+            tree.append(f"{'    ' if last else '│   '}{branch} {r.split('/', 1)[1].ljust(width - 4)}{what.get(r, '')}".rstrip())
+    made = datetime.date.today().strftime("%d %b %Y").lstrip("0")
+    lines = [f"# {st.get('title', st['name'])}: final upload package", "",
+             f"Made {made}. One package for both platforms. Start with the guide for the platform you're posting to.", "",
+             "## What's inside", "", "```", *tree, "```", "",
+             "The video and the thumbnail are kept once in the main folder (not copied into each platform folder) "
+             "so the zip stays small. Both guides point to them.", "",
+             "## The final video", "", "| | |", "|---|---|", f"| File | `{st['master']}` |",
+             f"| Picture | {W} × {H} vertical (9:16), 60 fps, H.264, about {st.get('video_mbps', '?')} Mbps |",
+             f"| Length | {st.get('duration', 0):.1f} seconds |",
+             f"| Sound | {st.get('lufs')} LUFS, true peak {st.get('true_peak')} dB; {st.get('audio', '')} |"]
+    lines += [f"| Note | {n} |" for n in notes]
+    lines += ["", "## Before you upload", "",
+              "1. Copy the MP4 and the thumbnail JPG to your phone by AirDrop, Google Drive or USB. **Don't send them "
+              "through WhatsApp**, because it recompresses the video and the image.",
+              "2. Don't add music or filters on either app. The video already has its own mixed sound.",
+              "3. Open `YouTube/UPLOAD_YOUTUBE.md` or `Instagram/UPLOAD_INSTAGRAM.md` and follow it top to bottom. "
+              "Each one ends with a checklist.", ""]
+    return "\n".join(lines)
+
+
+def pack(dest, top, files, master_rel, force):
+    """Write dest/top/ and dest/top.zip from {relative path: source Path | generated text}, then verify the zip:
+    CRC, every file extracted and SHA-256-compared, the video re-probed, text files decoded as UTF-8."""
+    folder, zp = dest / top, dest / f"{top}.zip"
+    if folder.exists() or zp.exists():
+        if not force:
+            die(f"{folder} or its zip exists - pass --force to replace them")
+        if folder.exists():
+            shutil.rmtree(folder)
+        if zp.exists():
+            zp.unlink()
+    folder.mkdir()
+    for rel, src in files.items():
+        out = folder / rel
+        out.parent.mkdir(parents=True, exist_ok=True)
+        if isinstance(src, str):
+            out.write_text(src, encoding="utf-8", newline="\n")
+        else:
+            shutil.copy2(src, out)
+    with zipfile.ZipFile(zp, "w") as z:
+        for rel in sorted(files):
+            comp = zipfile.ZIP_DEFLATED if rel.endswith((".md", ".srt")) else zipfile.ZIP_STORED
+            z.write(folder / rel, arcname=f"{top}/{rel}", compress_type=comp)
+    with zipfile.ZipFile(zp) as z:
+        crc = z.testzip()
+        names = set(z.namelist())
+        tmp = Path(tempfile.mkdtemp())
+        z.extractall(tmp)
+    try:
+        complete = names == {f"{top}/{rel}" for rel in files}
+        same = complete and all(sha(folder / rel) == sha(tmp / top / rel) for rel in files)
+        v, au, _ = probe(tmp / top / master_rel)
+        vid_ok = bool(v and v["codec_name"] == "h264" and (int(v["width"]), int(v["height"])) == (W, H) and au)
+        for rel in files:
+            if rel.endswith((".md", ".srt")):
+                (tmp / top / rel).read_text(encoding="utf-8")
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    ok = crc is None and same and vid_ok
+    print(f"{'OK ' if ok else 'BAD'} {zp}  {zp.stat().st_size / 1e6:.1f} MB  {len(files)} files:")
+    for rel in sorted(files):
+        print(f"      {top}/{rel}")
+    if not ok:
+        die(f"verification failed for {zp} (crc={crc}, all files present={complete}, identical={same}, video={vid_ok})")
+    return zp
 
 
 def cmd_build(P, a):
@@ -353,63 +476,43 @@ def cmd_build(P, a):
     for k, fn in need.items():
         if not fn or not (up / fn).exists():
             die(f"missing {k} in {up} - run master / cover and write the two guides (references/upload-package.md)")
-    for g in ("UPLOAD_YOUTUBE.md", "UPLOAD_INSTAGRAM.md"):
-        txt = (up / g).read_text(encoding="utf-8")
-        bad = [m for m in GUIDE_MARKERS if m in txt]
-        if bad:
-            die(f"{g} still has template markers {bad} - fill them in")
     name = st["name"]
+    thumb = f"{name}_Thumbnail_1080x1920.jpg"
+    check_guides(up, st, a.layout, thumb)
     dest = Path(a.dest) if a.dest else VB_HOME / "upload-packages"
     dest.mkdir(parents=True, exist_ok=True)
-    yt = {st["master"]: up / st["master"], "thumbnail_shorts_1080x1920.jpg": up / "cover_1080x1920.jpg",
-          "UPLOAD_YOUTUBE.md": up / "UPLOAD_YOUTUBE.md"}
-    if st.get("cover_master"):
-        cm = up / st["cover_master"]
-        yt[cm.name.replace("cover_master_", "thumbnail_master_")] = cm
-    if st.get("frame_pick") and (up / st["frame_pick"]).exists():
-        yt[st["frame_pick"]] = up / st["frame_pick"]
-    if (up / "captions_en.srt").exists():
-        yt["captions_en.srt"] = up / "captions_en.srt"
-    ig = {st["master"]: up / st["master"], "reel_cover_1080x1920.jpg": up / "cover_1080x1920.jpg",
-          "grid_preview_1080x1440.jpg": up / "grid_preview_1080x1440.jpg", "UPLOAD_INSTAGRAM.md": up / "UPLOAD_INSTAGRAM.md"}
-    report = []
-    for plat, files in (("YouTube", yt), ("Instagram", ig)):
-        folder = dest / f"{name}_{plat}"
-        zp = dest / f"{name}_{plat}.zip"
-        if folder.exists() or zp.exists():
-            if not a.force:
-                die(f"{folder} or its zip exists - pass --force to replace them")
-            if folder.exists():
-                shutil.rmtree(folder)
-            if zp.exists():
-                zp.unlink()
-        folder.mkdir()
-        for fn, src in files.items():
-            shutil.copy2(src, folder / fn)
-        with zipfile.ZipFile(zp, "w") as z:
-            for fn in sorted(files):
-                comp = zipfile.ZIP_DEFLATED if fn.endswith((".md", ".srt")) else zipfile.ZIP_STORED
-                z.write(folder / fn, arcname=f"{folder.name}/{fn}", compress_type=comp)
-        # verify: CRC, byte-identical round trip, the video still probes right, text files are UTF-8
-        with zipfile.ZipFile(zp) as z:
-            crc = z.testzip()
-            tmp = Path(tempfile.mkdtemp())
-            z.extractall(tmp)
-        try:
-            same = all(sha(folder / fn) == sha(tmp / folder.name / fn) for fn in files)
-            v, au, fm = probe(tmp / folder.name / st["master"])
-            vid_ok = bool(v and v["codec_name"] == "h264" and (int(v["width"]), int(v["height"])) == (W, H) and au)
-            for fn in files:
-                if fn.endswith((".md", ".srt")):
-                    (tmp / folder.name / fn).read_text(encoding="utf-8")
-        finally:
-            shutil.rmtree(tmp, ignore_errors=True)
-        ok = crc is None and same and vid_ok
-        report.append((zp, len(files), zp.stat().st_size, ok))
-        print(f"{'OK ' if ok else 'BAD'} {zp}  {zp.stat().st_size / 1e6:.1f} MB  {len(files)} files: {', '.join(sorted(files))}")
-        if not ok:
-            die(f"verification failed for {zp} (crc={crc}, identical={same}, video={vid_ok})")
-    st["built"] = {"dest": str(dest), "zips": [str(r[0]) for r in report]}
+    cm = up / st["cover_master"] if st.get("cover_master") and (up / st["cover_master"]).exists() else None
+    fp = up / st["frame_pick"] if st.get("frame_pick") and (up / st["frame_pick"]).exists() else None
+    srt = up / "captions_en.srt" if (up / "captions_en.srt").exists() else None
+    zips = []
+    if a.layout == "combined":
+        files = {st["master"]: up / st["master"], thumb: up / "cover_1080x1920.jpg"}
+        if cm:
+            files[cm.name.replace("cover_master_", f"{name}_Thumbnail_master_")] = cm
+        files["YouTube/UPLOAD_YOUTUBE.md"] = up / "UPLOAD_YOUTUBE.md"
+        if srt:
+            files["YouTube/captions_en.srt"] = srt
+        if fp:
+            files[f"YouTube/{fp.name}"] = fp
+        files["Instagram/UPLOAD_INSTAGRAM.md"] = up / "UPLOAD_INSTAGRAM.md"
+        files["Instagram/grid_preview_1080x1440.jpg"] = up / "grid_preview_1080x1440.jpg"
+        top = f"{name}_Final_Upload"
+        files = {"README.md": readme_text(st, top, files, thumb, a.note or []), **files}
+        zips.append(pack(dest, top, files, st["master"], a.force))
+    else:
+        yt = {st["master"]: up / st["master"], SPLIT_THUMB["YouTube"]: up / "cover_1080x1920.jpg",
+              "UPLOAD_YOUTUBE.md": up / "UPLOAD_YOUTUBE.md"}
+        if cm:
+            yt[cm.name.replace("cover_master_", "thumbnail_master_")] = cm
+        if fp:
+            yt[fp.name] = fp
+        if srt:
+            yt["captions_en.srt"] = srt
+        ig = {st["master"]: up / st["master"], SPLIT_THUMB["Instagram"]: up / "cover_1080x1920.jpg",
+              "grid_preview_1080x1440.jpg": up / "grid_preview_1080x1440.jpg", "UPLOAD_INSTAGRAM.md": up / "UPLOAD_INSTAGRAM.md"}
+        for plat, files in (("YouTube", yt), ("Instagram", ig)):
+            zips.append(pack(dest, f"{name}_{plat}", files, st["master"], a.force))
+    st["built"] = {"dest": str(dest), "layout": a.layout, "zips": [str(z) for z in zips]}
     save_state(P, st)
 
 
@@ -429,6 +532,11 @@ def main():
     b = sub.add_parser("build")
     b.add_argument("--dest", help="output folder (default <VB>/upload-packages)")
     b.add_argument("--force", action="store_true", help="replace existing package folders/zips of this project")
+    b.add_argument("--layout", choices=("combined", "split"), default="combined",
+                   help="combined (default, Ved 25 Nov 2026): ONE <Name>_Final_Upload.zip with the video + thumbnail "
+                        "once and YouTube/ + Instagram/ folders; split: <Name>_YouTube.zip + <Name>_Instagram.zip")
+    b.add_argument("--note", action="append", help="extra line for the README specs table (combined), e.g. "
+                   "'v2, the final: the safe-area version Ved approved' or 'QA 17/18, safe-area check PASS'")
     a = ap.parse_args()
     P = project_paths(a.project)
     {"master": cmd_master, "frames": cmd_frames, "cover": cmd_cover, "build": cmd_build}[a.cmd](P, a)
