@@ -84,9 +84,13 @@ def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps):
     # world framing lifted + zoomed out so key content sits between the captions and 85 % of the height (the bottom
     # 15 % carries the app's username / description / music). Override in script.json: "caption_size", "safe".
     project["captions"]["size"] = int(round(script.get("caption_size") or 54 * W / 1080))
-    project["captions"]["y"] = script.get("caption_y", 0.165)
-    # 0.50 / 0.82 checked on all 12 fps-explainer scenes with safe_overlay.py: content ~26-84 % of the height
-    project["safe"] = script.get("safe") or {"focusY": 0.50, "zoom": 0.82}
+    # Higher framing - the default since 25 Nov 2026 (Ved on six-agents v1: "why above blank area ... shift all visual
+    # above", then "Yes, make it default"): captions start at 11.5 % (end ~18.5 %), worlds land their anchor at 44 % of
+    # the height, 0.86x, and the dark top caption fade ends at 21 % -> visuals ~20-84 % of the height, bottom 15 % clear.
+    # Was caption_y 0.165 + safe {0.50, 0.82} (content ~26-84 %). Override per video in script.json ("caption_y",
+    # "safe" - partial dicts are merged over these defaults).
+    project["captions"]["y"] = script.get("caption_y", 0.115)
+    project["safe"] = {"focusY": 0.44, "zoom": 0.86, "fadeTo": 0.21, **(script.get("safe") or {})}
     project.pop("handle", None)
     words = [w for ws in scenes_w for w in ws]
     add_beats(project, script, scenes_w, F, TS)
@@ -156,6 +160,11 @@ def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps):
 
 
 def _rail(project, script, D, total, fps):
+    # The progress rail (HUD line at 10.5 % of the height) is OFF by default since 25 Nov 2026: with the higher
+    # captions (11.5 %) it would sit on top of them, and every world shows its own subject. Opt in with
+    # "rail": true in script.json (and move the captions back down, e.g. "caption_y": 0.165).
+    if not script.get("rail"):
+        return
     chapters = [{"t": D(project["scenes"][i]["from"]), "label": sc["chapter"]}
                 for i, sc in enumerate(script["scenes"]) if sc.get("chapter")]
     if chapters and total / fps > 60:

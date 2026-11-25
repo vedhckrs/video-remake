@@ -173,24 +173,28 @@ Ved: "bottom part ... YouTube username and description come - safe area - shift 
 caption make 20 % decrease size so top area also safe". The apps draw over three zones of a 9:16 frame:
 top 0-8 % (back / search / menu icons), bottom 85-100 % (avatar, @name, Subscribe, title/description, music) and a
 right action column (x 86-98 %, y 50-86 %: like, comment, share, remix).
-- **Engine default (explainer style):** `project.safe = {focusY: 0.50, zoom: 0.82}` (plan_timeline writes it; override
-  with `"safe"` in script.json). World cameras land their anchor at 50 % of the height (was 53 %) and the whole world
-  layer is drawn 0.82x; NanoZoom dives centre at focusY - 0.03 and zoom the same. Worlds keep their own coordinates.
-- **Captions 54 px** (was 68; `"caption_size"` overrides): two lines end at ~23.5 % of the height. The progress rail
-  sits at 10.5 % (below the top icons) - leave it there.
-- **Result checked on all 12 fps-explainer scenes:** key content between ~26 % and ~84 % of the height.
+- **Engine default (explainer style) - the HIGHER framing since 25 Nov 2026** (Ved on six-agents v1: "why above blank
+  area ... shift all visual above", then "Yes, make it default"): plan_timeline writes `project.safe = {focusY: 0.44,
+  zoom: 0.86, fadeTo: 0.21}` and caption `y` 0.115. World cameras land their anchor at 44 % of the height and the
+  whole world layer is drawn 0.86x; NanoZoom dives centre at focusY - 0.03 and zoom the same; `fadeTo` is where the
+  dark top caption fade ends. Override per video in script.json (`"caption_y"`, `"safe"` - partial dicts merge over the
+  defaults). The first safe-area default (focusY 0.50, zoom 0.82, captions at 16.5 %, fade to 30 %) is what the fps
+  video shipped with; set those values in script.json to reproduce it.
+- **Captions 54 px** (was 68; `"caption_size"` overrides), starting at 11.5 %: two lines end at ~18.5 % of the height.
+- **No progress rail by default** (its HUD line at 10.5 % would sit on the higher captions; every world shows its own
+  subject). Opt in with `"rail": true` + scene `chapter` labels, and move the captions back down (`"caption_y": 0.165`).
+- **Result checked on all 10 six-agents scenes:** captions 11.5-18.5 %, key content ~20-84 % of the height.
 - **Design rule for world artists** (the stills they render already include the safe transform): keep text, numbers
-  and hero objects between 26 % and 84 % of the frame; nothing readable in the bottom 15 % or the top 8 %; prefer
+  and hero objects between 20 % and 84 % of the frame; nothing readable in the bottom 15 % or the top 8 %; prefer
   no key text in the right 14 % below the middle (the like/comment/share column) - fixing that globally would need
-  zoom ~0.75.
+  zoom ~0.75. Worlds drawn 1 world px = 1 screen px use anchor zoom `1/0.86`.
 - **Checks:** `safe_overlay.py` draws the YouTube UI over frames for a visual check (before/after previews for Ved);
   `safe_check.py` (OCR env) fails on readable text (>= 1.6 % of the frame tall) in the bottom 15 % or top 8 % and
   lists text under the right buttons. Calibration: the pre-safe-area fps video failed with 75 sightings.
-- **Higher framing (Ved, 25 Nov 2026, six-agents: "shift all visual above"):** per video in script.json -
-  `"caption_y": 0.115`, `"safe": {"focusY": 0.44, "zoom": 0.86, "fadeTo": 0.21}` and no `chapter` labels (the rail
-  would collide with the higher captions). `fadeTo` = where the dark top caption fade ends (default 0.30, which keeps
-  older videos identical). Result: captions 11.5-18.5 %, visuals ~20-84 %. After changing it, re-check side clipping
-  in stills and run `safe_check.py`: the bigger zoom pulled decorative tiles into the bottom zone once.
+- **After any framing change** re-check side clipping in stills and run `safe_check.py`: on six-agents the bigger zoom
+  pulled decorative tiles into the bottom zone once. (Projects planned before 25 Nov keep their own `project.json`
+  framing; only a new plan_timeline run applies the new defaults - pin the old values in script.json if a re-plan
+  must not move anything. The engine's own fallback without `project.safe.fadeTo` stays 0.30.)
 
 ### Hook (Ved, 25 Nov 2026: "start 6 second no visual change, no powerful hook")
 In the first ~6 s the picture must change BIG at least every 0.5-0.7 s - a full-screen hero per word, then a build,

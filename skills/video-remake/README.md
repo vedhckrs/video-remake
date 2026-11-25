@@ -140,8 +140,13 @@ python compare.py <project>            (explainer: python qa_explainer.py <proje
   `<Name>_Final_Upload.zip` (video + thumbnail once, generated README, `YouTube/` and `Instagram/` folders),
   `--note` rows for the README, `--layout split` for the old two zips; it refuses guides that name the other
   layout's files. Tested on the fps video: same files as the hand-made package; split output unchanged.
-- 25 Nov — Shorts/Reels safe area (Ved): engine `project.safe` (focusY 0.50, zoom 0.82 by default, world + nano),
-  captions 54 px, `safe_overlay.py` previews, `safe_check.py` OCR gate; fps video re-rendered with it.
+- 25 Nov (evening) — six-agents video: higher framing is now the DEFAULT (Ved: "Yes, make it default"):
+  plan_timeline writes caption y 0.115 and `safe {focusY 0.44, zoom 0.86, fadeTo 0.21}` (visuals ~20-84 %), the
+  progress rail is opt-in (`"rail": true`), partial `"safe"` overrides merge over the defaults; engine kit option
+  `project.safe.fadeTo` (top caption fade end, fallback 0.30). Hook rule: a big picture change every 0.5-0.7 s in
+  the first ~6 s. Tested: defaults reproduce the approved six-agents v2 framing exactly, scene frames unchanged.
+- 25 Nov — Shorts/Reels safe area (Ved): engine `project.safe` (focusY 0.50, zoom 0.82 then the default, world +
+  nano), captions 54 px, `safe_overlay.py` previews, `safe_check.py` OCR gate; fps video re-rendered with it.
 - 25 Nov — fps explainer: `tts.py --redo` (one-sentence re-voice), `plan_timeline.py` fixes (preview SFX use
   earshot takes `<role>_1.wav` - a missing file made Remotion fail with a 404; at most one keyword box per phrase).
 - 24 Nov — step 10 upload package: `upload_package.py`, `references/upload-package.md`, examples; covers with

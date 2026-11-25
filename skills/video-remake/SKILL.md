@@ -39,9 +39,11 @@ ends with `rm/qa_explainer <id>` (37 gates: measured ones must pass, manual ones
 camera director changes the picture on every spoken word (`spec.beats`); worlds connect with portal zoom-throughs.
 See "World mode" in the style guide. **Camera:** smooth cinematic moves only to named things (one per phrase), never per-word
 jumps or shake; continuous dives into small things use `NanoZoom` (style guide: "Camera rules after Ved's v2 review").
-**Safe area (25 Nov 2026):** the YouTube/Instagram UI covers the bottom 15 % (username, description) and the top 8 %:
-the engine lifts and zooms worlds out (`project.safe`, default focusY 0.50 / zoom 0.82) and captions are 54 px;
+**Safe area (25 Nov 2026):** the YouTube/Instagram UI covers the bottom 15 % (username, description) and the top 8 %.
+Default framing = the higher one Ved made default on 25 Nov: captions 54 px at 11.5 % of the height, worlds lifted to
+`project.safe` focusY 0.44 / zoom 0.86 (top fade ends at 21 %), no progress rail - visuals ~20-84 % of the height;
 check previews with `rm/safe_overlay` and pass `safe_check.py` (OCR env) before delivery (style guide: "Shorts/Reels safe area").
+**Hook:** in the first ~6 s a BIG picture change every 0.5-0.7 s and every voice pause filled (style guide: "Hook").
 
 ## The loop
 
