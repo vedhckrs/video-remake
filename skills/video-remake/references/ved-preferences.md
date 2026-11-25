@@ -54,10 +54,16 @@ Quotes are Ved's words. Apply them every time without asking again.
   upload-packages, skill-zips, and the git repo `video-remake\` live there.
 - **The two skills live in that repo** (`video-remake\skills\video-remake`, `...\video-blueprint`) and are linked into
   `%USERPROFILE%\.claude\skills\` as junctions (same pattern as the Remotion skills). Edit them in place.
-- Ved: "connect github for every new feature update - push, branch, PR, commit and all". Repo `video-remake`,
-  **private**, on a **new GitHub account of its own** (not vedhckrs, not creative2-cyber), set per repo exactly like
-  the creative2-cyber clone: remote `https://<user>@github.com/<user>/video-remake.git` + local user.name/user.email
-  (`<id>+<user>@users.noreply.github.com`). Never change the global identity (VED / vedhckrs).
+- Ved: "connect github for every new feature update - push, branch, PR, commit and all". Repo
+  **`vedhckrs/video-remake`, private** (https://github.com/vedhckrs/video-remake) - Ved chose vedhckrs and added the
+  exception to his global CLAUDE.md: this is the ONLY vedhckrs repo to work in; `vedhckrs/Remotion` and everything
+  else on vedhckrs stay off-limits, and none of this goes into creative2-cyber. Per-repo remote
+  `https://vedhckrs@github.com/vedhckrs/video-remake.git`, local user VED / `85392668+vedhckrs@users.noreply.github.com`.
+  Never change the global identity or the saved sign-ins.
+- GitHub CLI (`C:\Program Files\GitHub CLI\gh.exe`, logged in as vedhckrs) is only for `gh repo` / `gh pr`. It must
+  NOT be Git's credential helper (it would take over github.com and break the creative2-cyber pushes): at
+  "Authenticate Git with your GitHub credentials?" answer n; check `git config --show-scope --get-all
+  credential.https://github.com.helper` is empty.
 - Every feature/fix: branch `feat/...` or `fix/...` from main -> `python tools/sync_projects.py` if a video project
   changed -> commit -> push -> PR into main (`gh pr create`). Ved merges; do not merge unless he says so.
 - Tracks skills + per-video project code only; media (MP4/WAV/MP3/zips/renders) never goes into Git.
