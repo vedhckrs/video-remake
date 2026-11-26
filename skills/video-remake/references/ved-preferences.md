@@ -184,3 +184,6 @@ Quotes are Ved's words. Apply them every time without asking again.
   Previews `06`-`10` replaced; the first versions are kept as `06_v1.png` / `07_v1.png`. Still waiting for his OK.
   New times (1920x1080, same flags): transistor switching 360 frames in 58 s (0.16 s a frame), deep cut-away 360 in
   77 s (0.21), field 120 in 56 s, single still 0.8-0.9 s.
+- 26 Nov 2026: Ved asked for a code-built 3D MacBook Air M1 from his six reference images ("as per this image create 3d
+  model of macbook air m1 ... and replace"; no purchased model) - built as cine3d `MacShot`. 3D now covers the phone,
+  the transistor and this laptop only.

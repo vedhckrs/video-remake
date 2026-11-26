@@ -155,12 +155,14 @@ lines={[...]} reveal={[cue frames]} accent="#F2B56B" />`. Nothing is drawn over 
 The landscape caption scrim is now a long soft fade (strength 0.5), never a solid band.
 
 ## cine3d (real 3D) (`src/kit/cine3d/`, 26 Nov 2026)
-**The rule: real 3D (three.js) is ONLY for the real iPhone 18 Pro model and the hero transistor.** Boards, chips,
+**The rule: real 3D (three.js) is ONLY for the real iPhone 18 Pro model, the hero transistor and the code-built
+MacBook Air M1 (`MacShot`, added 26 Nov 2026).** Boards, chips,
 dies, packages, diagrams and everything else stay 2D code (silicon kit, iso kit). Ved approved this as the one
 exception to "no three.js" after rejecting the code-drawn phones and the flat transistor.
 
 Files: `core.tsx` (camera keys, projection, canvas, studio light), `phone.tsx` (PhoneShot, phoneView), `innards.tsx`
-(the 2D inside of the phone), `transistor.tsx` (Transistor3D, fetView), `index.ts`. Import from `src/kit/cine3d`.
+(the 2D inside of the phone), `transistor.tsx` (Transistor3D, fetView), `macbook.tsx` + `macinnards.tsx` (MacShot, macView,
+MacInnards), `index.ts`. Import from `src/kit/cine3d`.
 Everything is a pure function of the design frame `t` (fractional at 60 fps). The GLB / HDRI load is held with
 delayRender by `<ThreeCanvas>`. There are no clocks, timers or `Math.random`.
 
@@ -270,6 +272,48 @@ v.point('gate')
 - No labels are drawn in 3D: add `Callout`s at the anchors and always an "illustration" tag.
 - A custom shot with `TransistorModel` needs `<Stage3D clipping>` (the cut uses a clipping plane).
 - `TransistorModel`, `PhoneModel`, `PhoneFloor`, `Stage3D` and `Studio` are exported for a custom shot.
+
+### MacShot (26 Nov 2026: the MacBook Air M1 2020, built in code from Ved's reference photos - no model file)
+```tsx
+<MacShot t={t} W={W} H={H} cam={CAM} lid={112} finish="spaceGrey" screen={<MyDesktop />} screenOn={1}
+         shell={macXray(x, {backlight: 1})} interior={<MacInnards lit={1} m1={{glow: 0.8}} />} floor={{shadow: 0.6}} />
+const v = macView({t, cam: CAM, lid: 112, W, H});   // pure maths; pass the SAME lid angle as the shot
+v.point('chip')   // px of a named point, or of any [x, y, z] in base-space mm (2nd argument true = lid space)
+```
+- Files `macbook.tsx` (model, `MacShot`, `macView`, `MacModel`, `MacDesktop` / `MacWallpaper`) and `macinnards.tsx`
+  (`MacInnards`, `macInnardsPoint`). Fully procedural: lofted rounded-rectangle bodies with a machined chamfer, the
+  wedge (11.0 mm at the hinge to 2.2 mm at the lip, standing on its feet so the deck leans 2.6 degrees), 79 separate
+  dished keycaps (instanced per size) with one legend atlas drawn in code (US layout; Inter, loaded behind
+  delayRender), drilled speaker grilles, glass trackpad in a hairline groove, thumb scoop, two USB-C + jack, feet,
+  hinge barrel, black-bezel display with camera dot and wordmark, mirror Apple mark from Simple Icons `siApple`.
+  The 2020 model has a HALF-height function row with a small square Touch ID key (as in Ved's photos).
+- World: 1 unit = 15 mm (the phone's scale), floor y = 0, the Mac stands at the origin facing +z: **yaw 0 = the
+  user's seat, yaw 180 = behind the lid**. About 20.3 units wide, 14.2 deep, 14 tall with the lid open. Geometry is
+  written in mm: base space (x right, y out of the deck, z toward the user, deck plane y = 0) and lid space (origin
+  on the hinge axis, z along the lid, y out of its back).
+- `lid` = degrees, a plain number the scene animates (0 closed, about 110 in use, 135 max). The lid, its barrel, the
+  glass and the logo turn about the real hinge axis (`MAC.hinge`), so nothing collides at any angle.
+- `finish`: `spaceGrey` (default), `silver`, `gold`. `pose` keys as for the phone.
+- **Screen** (`screen`, box `screenPx` default 1440 x 900; default content `MacDesktop`, our own colour-ribbon
+  wallpaper, not Apple's): same method as the phone - the display's four corners are projected and the box is laid on
+  them with CSS `matrix3d` under the canvas; the glass has a real opening, drawn as a hole in the canvas alpha plus a
+  soft mirror of the studio. `screenOn` 0..1 fades it up from black. Not blurred by depth of field.
+- **Shell** (`shell`): groups `deck` (top case, keyboard, trackpad, grilles), `body` (rim, hinge trough, ports),
+  `bottom`, `lid`, each `{opacity, glass}`; `backlight` 0..1 lights the legends and the glow round the keys.
+  `macXray(x)` ghosts the deck (key outlines stay as bright glass edges); `macXray(x, {bottom: true})` the underside.
+- **Inside view** (`interior`): 2D content on the plane just under the keyboard (`MAC.interior`, 290 x 196.9 mm =
+  1740 x 1181 px, rear-left origin), shown from above while the deck is ghosted or fading; a depth-only mask hides
+  the underside and the floor shadow behind it. `<MacInnards t lit m1 sweep light accent />` draws a fanless
+  interior (illustration: logic board with the M1 from the silicon kit, four battery cells, speakers, trackpad
+  plate). `macInnardsPoint('m1' | 'dram1' | 'nand' ...)` gives base-space points; `v.interior.point(ix, iy)`.
+- Named points (`MAC_POINTS`): screenTL / TR / BR / BL, screenCentre, camera, wordmark, lidLogo, lidTop, hinge,
+  keyboard, trackpad, touchId, speakerL / R, usbC1, usbC2, jack, front, centre, **chip** (the M1 on the board).
+  `v.screenFacing` > 0 = the display faces the camera, `v.above` > 0 = the camera looks down on the deck.
+- Limits: no floor mirror (contact shadow only); bead-blast grain is a fine normal map that only shows in a macro;
+  the inside board is a flat plane; key legends are one texture laid over the caps (crisp to about 12 px per mm).
+- Render: about 1.1 s per 1920x1080 frame as a still (the model is rebuilt per still), GPU backend needed as above.
+  Proof: `projects/macbook-demo` (own `stills.mjs`), previews `previews/cine3d-demo/11_mac_*.png` .. `18_*`,
+  `strip_mac_lid_open.jpg`.
 
 Proof project: `projects/cine3d-demo` (10 scenes, previews in `previews/cine3d-demo/`). Render cost: see the cine3d
 entry in `ved-preferences.md`.
