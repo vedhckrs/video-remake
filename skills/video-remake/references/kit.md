@@ -85,3 +85,63 @@ and `import {siGithub} from 'simple-icons';`. Images: `IMG = n => '<id>/img/' + 
 - In-scene morphs (a card shrinking to make room) are `map(t, [a, b], [1, 0.7])` on scale/position.
 - Dark acts: light cards (`#15171B` on `#08090B`); light acts: white cards with soft shadow.
 - Do not draw captions, transitions, backdrop or the handle - the engine does.
+
+## Silicon kit (`src/kit/explainer/silicon.tsx`, 26 Nov 2026) - detailed chips, boards, dies, transistors
+Ved rejected the first hardware look ("flat and poor, not detailed"). Every chip / board shot now uses this kit: real-scale
+parts in plan **millimetres**, one shared light, materials that read differently (mold, bare silicon, tin, gold, copper,
+ceramic, solder mask), fake depth of field. Pure SVG, seeded, every frame a function of props; a dense board frame renders
+in about 1 s at 1920x1080. One import: `import {...} from '../../../src/kit/explainer/silicon'`. Worked example:
+engine project `silicon-demo` (`worlds/common.tsx` `BoardShot`, `board.tsx`, `package.tsx`, `nano.tsx`, `rf.tsx`);
+previews in `previews/silicon-demo/`.
+
+**Scene** - `<SiScene id width height u origin tilt light sweep>`: wraps `IsoScene` (kit `IsoBox` works inside). `u` = px per
+mm, `tilt` 0 = flat top-down, 1 = kit iso, **0.55-0.6 = the 3/4 product angle for 16:9** (0.96 for exploded stacks).
+`light` = partial `SiLight` (`angle`, `ambient`, `sweepAngle`, `sweepWidth`, `envX/envY/envR`, `rim`). `sweep` = position of
+the travelling specular band: `sweepAcross(p 0..1, x0, y0, x1, y1)`; only one gradient changes, the art stays memoised.
+Two scenes on screen together need different `id`s. Anchors: `siPoint(u, tilt, origin, x, y, z)` -> px;
+`boardPartPoint(id, u, tilt, origin)`; `boardPartTop(id)` -> `[x, y, z]`. Animating `u` / `tilt` is allowed (one eased
+ramp, never per word) but re-renders all the art on those frames.
+
+**Board** - `<LogicBoard layout? seed? density? explode parts focus dim passives>` (children drawn last, same plan space).
+Default layout `boardLayout(7)` = 72 x 40 mm L-shaped phone board with a stacked upper board on an interposer.
+Part ids: `soc modem wireless transceiver rf1 fem1 fem2 can1 can2 pmic charger audio nfc enclave uwb rf2`, connectors
+`j1..j6`, standoffs `so1..so5`, under the upper board `nand pmic2 dram2`. `parts={{soc: {lift (mm), glow, glowColor, xray,
+dieActive, explode, explodeGap, highlight, highlightColor, opacity, open, mark, kind, hide}}}`; `explode` 0..1 lifts the
+upper board off its interposer; `focus="soc" dim={0.5}` darkens the rest. `<SiChassis layer="back" />` before and
+`layer="front"` after the board = phone interior (frame rail, camera can, battery, speaker) so full-bleed shots have no
+empty black. Own layouts: build a `BoardLayout` the way `iphoneBoard` does (parts + `add()` passive clusters).
+
+**Chips** - `<SiChip x y w d z role|kind mark lift glow xray explode highlight opacity open perf sticker>`.
+Kinds: `pop` (SoC, memory on top; `explode` -> `PackageStack`), `mold`, `nand`, `pmic`, `enclave`, `wlcsp` (bare silicon
+mirror), `module` (shielded, etched lid), `shield` (can: `perf`, `sticker`, `open`), `lid` (copper-toned metal lid with an
+outlined Apple mark + one edge line - the iPhone 18 Pro SoC as photographed). Roles (`SI_ROLES`): soc modem wireless pmic
+nand dram rf transceiver uwb nfc audio charger enclave fem shield. **Markings are small etched code lines**, never big role
+words; the defaults are generic placeholders - pass sourced text with `mark={{logo: 'apple'|null, title, top: [], lines: [],
+layout: 'center'|'left', rot}}` and name the chip with a `Callout`. The Apple mark is Simple Icons `siApple`.
+`<PackageStack x y w d z h spread gap mark dieActive layerOpacity>`: balls / rdl / die / memory / lid, `spread` 0..1
+(spring-ready); `packageZ(spread, z, h, gap)` -> z per layer for callouts. Generic stacks: `stackZ(layers, spread, z0)` /
+`<SiStack>`. Small parts: `SiPassives` (batched cluster: cap capDark res ind indTan xtal ic icSi), `SiConnector` (`plugged`,
+`flex`, `gold`), `SiWall` (fence), `SiStandoff`, `SiClip`, `SiPatch` (graphite / foam / tape). Primitives: `SiPrism`,
+`SiExtrude`, `SiTop` (plan-space group at height z), `SiText`, `SiGlow`, `rr` / `dot` path helpers, `SI` palette.
+
+**Inside the chip** (plain `<g>` fragments, usable in a World svg, a NanoZoom level or on a chip top):
+- `<DieFloorplan x y w h detail={0|1|2} active={{pcore1: 1}} dim labels labelScale labelOpacity shift bumps id>` - decapped
+  SoC (aspect 1.5-1.6). Blocks (`SOC_FLOORPLAN`): gpu pcore1 pcore2 l2p ecores l2e slc npu isp media ddr aon usb sep pll;
+  `dieBlockCentre(id)` in die units (1600 x 1000). `labels` takes a list of ids - show 6-9, not all 15. Illustrative
+  floorplan, not a trace of a real die.
+- `<CellFabric w h rowH sram t pulse lite>` - standard-cell rows + SRAM bit cells (the level between a core and one
+  transistor), centred on (0,0).
+- `<NanosheetFET cx cy scale gate t cut metal floor labels lite>` - gate-all-around nanosheet transistor cut-away;
+  `gate` 0..1 switches it (channels glow, electrons flow with `t`), `cut` 0 = closed gate. `fetPoint(name, scale, cx, cy)`
+  for callouts (source drain gate channel contact substrate). `<NanosheetField cols rows scale dim floor>` with the hero
+  as its child = the pull-back.
+
+**Lens** - `<SiLens W H t focus={[0.3, 0.72]} blur={7} vignette grain dust tint />` in screen space (World `Overlay`, or
+after a NanoZoom): tilt-shift blur toward the top / bottom edges, vignette, film grain, bokeh dust.
+
+**Rules learnt on the demo**
+- Macro shots: `u` 30 (whole board) to 66 (one package); sweep the light once as the shot opens and once on the named part.
+- Exploded stack: ease `tilt` to ~0.96 and `u` down in ONE ramp, `explodeGap` ~2.7, so every layer shows its face.
+- NanoZoom: size each level so the next lands exactly (`depth = log10(next px / this px)`); the package level is a
+  `SiScene tilt={0}` with `soc.xray` driven by the level `scale`; the die level draws its own surroundings.
+- Fine patterns shimmer when their pitch drops under ~2 px: use `detail={1}` for small dies and keep `SiLens` blur on the far band.
