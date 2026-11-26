@@ -1,0 +1,491 @@
+{
+ "text": "The real iPhone eighteen Pro, with a live feed on its screen. Turn it around: the back, and the camera plateau. Push in on the lenses, with real depth of field. The back turns to glass: the A twenty Pro sits here. Lift the back away and move in on the board. Inside that chip: one nanosheet transistor. The gate switches on, and electrons stream through every sheet. Pull back: billions of them, side by side. The same transistor, through a lens over the package. Cut it open: every layer of the gate, wrapped round each sheet.",
+ "fake": true,
+ "words": [
+  {
+   "w": "The",
+   "start": 0.4,
+   "end": 0.767
+  },
+  {
+   "w": "real",
+   "start": 0.858,
+   "end": 1.225
+  },
+  {
+   "w": "iPhone",
+   "start": 1.317,
+   "end": 1.683
+  },
+  {
+   "w": "eighteen",
+   "start": 1.775,
+   "end": 2.142
+  },
+  {
+   "w": "Pro,",
+   "start": 2.233,
+   "end": 2.6
+  },
+  {
+   "w": "with",
+   "start": 2.692,
+   "end": 3.058
+  },
+  {
+   "w": "a",
+   "start": 3.15,
+   "end": 3.517
+  },
+  {
+   "w": "live",
+   "start": 3.608,
+   "end": 3.975
+  },
+  {
+   "w": "feed",
+   "start": 4.067,
+   "end": 4.433
+  },
+  {
+   "w": "on",
+   "start": 4.525,
+   "end": 4.892
+  },
+  {
+   "w": "its",
+   "start": 4.983,
+   "end": 5.35
+  },
+  {
+   "w": "screen.",
+   "start": 5.442,
+   "end": 5.808
+  },
+  {
+   "w": "Turn",
+   "start": 6.9,
+   "end": 7.389
+  },
+  {
+   "w": "it",
+   "start": 7.511,
+   "end": 8.0
+  },
+  {
+   "w": "around:",
+   "start": 8.122,
+   "end": 8.611
+  },
+  {
+   "w": "the",
+   "start": 8.733,
+   "end": 9.222
+  },
+  {
+   "w": "back,",
+   "start": 9.344,
+   "end": 9.833
+  },
+  {
+   "w": "and",
+   "start": 9.956,
+   "end": 10.444
+  },
+  {
+   "w": "the",
+   "start": 10.567,
+   "end": 11.056
+  },
+  {
+   "w": "camera",
+   "start": 11.178,
+   "end": 11.667
+  },
+  {
+   "w": "plateau.",
+   "start": 11.789,
+   "end": 12.278
+  },
+  {
+   "w": "Push",
+   "start": 13.4,
+   "end": 13.76
+  },
+  {
+   "w": "in",
+   "start": 13.85,
+   "end": 14.21
+  },
+  {
+   "w": "on",
+   "start": 14.3,
+   "end": 14.66
+  },
+  {
+   "w": "the",
+   "start": 14.75,
+   "end": 15.11
+  },
+  {
+   "w": "lenses,",
+   "start": 15.2,
+   "end": 15.56
+  },
+  {
+   "w": "with",
+   "start": 15.65,
+   "end": 16.01
+  },
+  {
+   "w": "real",
+   "start": 16.1,
+   "end": 16.46
+  },
+  {
+   "w": "depth",
+   "start": 16.55,
+   "end": 16.91
+  },
+  {
+   "w": "of",
+   "start": 17.0,
+   "end": 17.36
+  },
+  {
+   "w": "field.",
+   "start": 17.45,
+   "end": 17.81
+  },
+  {
+   "w": "The",
+   "start": 18.9,
+   "end": 19.3
+  },
+  {
+   "w": "back",
+   "start": 19.4,
+   "end": 19.8
+  },
+  {
+   "w": "turns",
+   "start": 19.9,
+   "end": 20.3
+  },
+  {
+   "w": "to",
+   "start": 20.4,
+   "end": 20.8
+  },
+  {
+   "w": "glass:",
+   "start": 20.9,
+   "end": 21.3
+  },
+  {
+   "w": "the",
+   "start": 21.4,
+   "end": 21.8
+  },
+  {
+   "w": "A",
+   "start": 21.9,
+   "end": 22.3
+  },
+  {
+   "w": "twenty",
+   "start": 22.4,
+   "end": 22.8
+  },
+  {
+   "w": "Pro",
+   "start": 22.9,
+   "end": 23.3
+  },
+  {
+   "w": "sits",
+   "start": 23.4,
+   "end": 23.8
+  },
+  {
+   "w": "here.",
+   "start": 23.9,
+   "end": 24.3
+  },
+  {
+   "w": "Lift",
+   "start": 25.4,
+   "end": 25.84
+  },
+  {
+   "w": "the",
+   "start": 25.95,
+   "end": 26.39
+  },
+  {
+   "w": "back",
+   "start": 26.5,
+   "end": 26.94
+  },
+  {
+   "w": "away",
+   "start": 27.05,
+   "end": 27.49
+  },
+  {
+   "w": "and",
+   "start": 27.6,
+   "end": 28.04
+  },
+  {
+   "w": "move",
+   "start": 28.15,
+   "end": 28.59
+  },
+  {
+   "w": "in",
+   "start": 28.7,
+   "end": 29.14
+  },
+  {
+   "w": "on",
+   "start": 29.25,
+   "end": 29.69
+  },
+  {
+   "w": "the",
+   "start": 29.8,
+   "end": 30.24
+  },
+  {
+   "w": "board.",
+   "start": 30.35,
+   "end": 30.79
+  },
+  {
+   "w": "Inside",
+   "start": 31.9,
+   "end": 32.567
+  },
+  {
+   "w": "that",
+   "start": 32.733,
+   "end": 33.4
+  },
+  {
+   "w": "chip:",
+   "start": 33.567,
+   "end": 34.233
+  },
+  {
+   "w": "one",
+   "start": 34.4,
+   "end": 35.067
+  },
+  {
+   "w": "nanosheet",
+   "start": 35.233,
+   "end": 35.9
+  },
+  {
+   "w": "transistor.",
+   "start": 36.067,
+   "end": 36.733
+  },
+  {
+   "w": "The",
+   "start": 37.9,
+   "end": 38.38
+  },
+  {
+   "w": "gate",
+   "start": 38.5,
+   "end": 38.98
+  },
+  {
+   "w": "switches",
+   "start": 39.1,
+   "end": 39.58
+  },
+  {
+   "w": "on,",
+   "start": 39.7,
+   "end": 40.18
+  },
+  {
+   "w": "and",
+   "start": 40.3,
+   "end": 40.78
+  },
+  {
+   "w": "electrons",
+   "start": 40.9,
+   "end": 41.38
+  },
+  {
+   "w": "stream",
+   "start": 41.5,
+   "end": 41.98
+  },
+  {
+   "w": "through",
+   "start": 42.1,
+   "end": 42.58
+  },
+  {
+   "w": "every",
+   "start": 42.7,
+   "end": 43.18
+  },
+  {
+   "w": "sheet.",
+   "start": 43.3,
+   "end": 43.78
+  },
+  {
+   "w": "Pull",
+   "start": 44.9,
+   "end": 45.45
+  },
+  {
+   "w": "back:",
+   "start": 45.587,
+   "end": 46.137
+  },
+  {
+   "w": "billions",
+   "start": 46.275,
+   "end": 46.825
+  },
+  {
+   "w": "of",
+   "start": 46.962,
+   "end": 47.512
+  },
+  {
+   "w": "them,",
+   "start": 47.65,
+   "end": 48.2
+  },
+  {
+   "w": "side",
+   "start": 48.337,
+   "end": 48.887
+  },
+  {
+   "w": "by",
+   "start": 49.025,
+   "end": 49.575
+  },
+  {
+   "w": "side.",
+   "start": 49.712,
+   "end": 50.262
+  },
+  {
+   "w": "The",
+   "start": 51.4,
+   "end": 51.8
+  },
+  {
+   "w": "same",
+   "start": 51.9,
+   "end": 52.3
+  },
+  {
+   "w": "transistor,",
+   "start": 52.4,
+   "end": 52.8
+  },
+  {
+   "w": "through",
+   "start": 52.9,
+   "end": 53.3
+  },
+  {
+   "w": "a",
+   "start": 53.4,
+   "end": 53.8
+  },
+  {
+   "w": "lens",
+   "start": 53.9,
+   "end": 54.3
+  },
+  {
+   "w": "over",
+   "start": 54.4,
+   "end": 54.8
+  },
+  {
+   "w": "the",
+   "start": 54.9,
+   "end": 55.3
+  },
+  {
+   "w": "package.",
+   "start": 55.4,
+   "end": 55.8
+  },
+  {
+   "w": "Cut",
+   "start": 56.9,
+   "end": 57.267
+  },
+  {
+   "w": "it",
+   "start": 57.358,
+   "end": 57.725
+  },
+  {
+   "w": "open:",
+   "start": 57.817,
+   "end": 58.183
+  },
+  {
+   "w": "every",
+   "start": 58.275,
+   "end": 58.642
+  },
+  {
+   "w": "layer",
+   "start": 58.733,
+   "end": 59.1
+  },
+  {
+   "w": "of",
+   "start": 59.192,
+   "end": 59.558
+  },
+  {
+   "w": "the",
+   "start": 59.65,
+   "end": 60.017
+  },
+  {
+   "w": "gate,",
+   "start": 60.108,
+   "end": 60.475
+  },
+  {
+   "w": "wrapped",
+   "start": 60.567,
+   "end": 60.933
+  },
+  {
+   "w": "round",
+   "start": 61.025,
+   "end": 61.392
+  },
+  {
+   "w": "each",
+   "start": 61.483,
+   "end": 61.85
+  },
+  {
+   "w": "sheet.",
+   "start": 61.942,
+   "end": 62.308
+  }
+ ]
+}

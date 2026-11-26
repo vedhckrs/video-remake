@@ -1,0 +1,76 @@
+{
+  "id": "silicon-demo",
+  "title": "Silicon kit demo (engine test, no voice)",
+  "handle": null,
+  "style": "explainer",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "_note": "Hand-made test for the silicon kit (26 Nov 2026): fake word timings in vo_words.json, silent vo.mp3. Chip markings are generic placeholders.",
+  "scenes": [
+    {
+      "id": "S01",
+      "section": "hook",
+      "bg": "dark",
+      "text": "This is the logic board of an iPhone, and one chip does all the thinking.",
+      "keywords": {
+        "chip": "select",
+        "board": "select"
+      },
+      "visual": "Board hero: full-bleed macro of the dense logic board (silicon kit LogicBoard in the phone chassis), light sweep, camera drifts to the SoC on 'chip'."
+    },
+    {
+      "id": "S02",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "The processor is a package: memory stacked on the silicon, sitting on hundreds of solder balls.",
+      "keywords": {
+        "package:": "select",
+        "memory": "select"
+      },
+      "visual": "SoC package macro with etched marking; lifts on 'package', explodes into lid / memory / RDL / die / substrate / balls on 'stacked'.",
+      "transition": "dissolve",
+      "transition_frames": 12,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S03",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "Dive into the die, past the cores and the cache, down to one transistor switching.",
+      "keywords": {
+        "die,": "select",
+        "transistor": "select"
+      },
+      "visual": "NanoZoom: package -> die floorplan -> core cell fabric -> one gate-all-around nanosheet transistor switching.",
+      "transition": "portal",
+      "transition_frames": 12,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S04",
+      "section": "proof",
+      "bg": "dark",
+      "text": "Next door, the modem and the wireless chip keep it connected.",
+      "keywords": {
+        "modem": "select",
+        "wireless": "select"
+      },
+      "visual": "Upper board: modem + wireless chips with RF rings, camera eases modem -> wireless.",
+      "transition": "portal",
+      "transition_frames": 12,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    }
+  ]
+}

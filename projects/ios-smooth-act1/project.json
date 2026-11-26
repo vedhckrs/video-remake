@@ -1,0 +1,5914 @@
+{
+  "id": "ios-smooth-act1",
+  "title": "Why iOS feels so smooth - Act 1: The feeling",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1920,
+    "height": 1080
+  },
+  "durationInFrames": 7835,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "ios-smooth-act1/vo.mp3",
+    "voVolume": 1.0,
+    "music": {
+      "src": "ios-smooth-act1/music.wav",
+      "volume": 0.104,
+      "fadeOutFrames": 60
+    },
+    "sfx": [
+      {
+        "src": "ios-smooth-act1/sfx/swish_1.wav",
+        "frame": 2444,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ios-smooth-act1/sfx/swish_1.wav",
+        "frame": 3412,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ios-smooth-act1/sfx/whoosh_in_1.wav",
+        "frame": 4881,
+        "volume": 0.32,
+        "type": "whoosh"
+      },
+      {
+        "src": "ios-smooth-act1/sfx/swish_1.wav",
+        "frame": 6426,
+        "volume": 0.22,
+        "type": "swish"
+      },
+      {
+        "src": "ios-smooth-act1/sfx/swish_1.wav",
+        "frame": 7298,
+        "volume": 0.22,
+        "type": "swish"
+      }
+    ]
+  },
+  "captions": {
+    "y": 0.84,
+    "size": 36,
+    "pages": [
+      {
+        "from": -1,
+        "to": 96,
+        "words": [
+          {
+            "w": "Watch",
+            "frame": -1,
+            "style": "normal"
+          },
+          {
+            "w": "this",
+            "frame": 19,
+            "style": "normal"
+          },
+          {
+            "w": "scroll.",
+            "frame": 30,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 97,
+        "to": 166,
+        "words": [
+          {
+            "w": "One",
+            "frame": 97,
+            "style": "normal"
+          },
+          {
+            "w": "frame",
+            "frame": 112,
+            "style": "normal"
+          },
+          {
+            "w": "just",
+            "frame": 129,
+            "style": "normal"
+          },
+          {
+            "w": "arrived",
+            "frame": 143,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 167,
+        "to": 263,
+        "words": [
+          {
+            "w": "8",
+            "frame": 167,
+            "style": "select"
+          },
+          {
+            "w": "milliseconds",
+            "frame": 181,
+            "style": "normal"
+          },
+          {
+            "w": "late.",
+            "frame": 217,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 264,
+        "to": 352,
+        "words": [
+          {
+            "w": "You",
+            "frame": 264,
+            "style": "normal"
+          },
+          {
+            "w": "can't",
+            "frame": 273,
+            "style": "normal"
+          },
+          {
+            "w": "see",
+            "frame": 287,
+            "style": "normal"
+          },
+          {
+            "w": "it.",
+            "frame": 299,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 353,
+        "to": 397,
+        "words": [
+          {
+            "w": "But",
+            "frame": 353,
+            "style": "normal"
+          },
+          {
+            "w": "your",
+            "frame": 363,
+            "style": "normal"
+          },
+          {
+            "w": "thumb",
+            "frame": 372,
+            "style": "normal"
+          },
+          {
+            "w": "can",
+            "frame": 387,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 398,
+        "to": 470,
+        "words": [
+          {
+            "w": "feel",
+            "frame": 398,
+            "style": "select"
+          },
+          {
+            "w": "it.",
+            "frame": 413,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 471,
+        "to": 516,
+        "words": [
+          {
+            "w": "On",
+            "frame": 471,
+            "style": "normal"
+          },
+          {
+            "w": "an",
+            "frame": 483,
+            "style": "normal"
+          },
+          {
+            "w": "iPhone,",
+            "frame": 489,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 517,
+        "to": 622,
+        "words": [
+          {
+            "w": "that",
+            "frame": 517,
+            "style": "normal"
+          },
+          {
+            "w": "almost",
+            "frame": 531,
+            "style": "normal"
+          },
+          {
+            "w": "never",
+            "frame": 553,
+            "style": "select"
+          },
+          {
+            "w": "happens.",
+            "frame": 568,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 639,
+        "to": 735,
+        "words": [
+          {
+            "w": "That",
+            "frame": 639,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 657,
+            "style": "normal"
+          },
+          {
+            "w": "not",
+            "frame": 665,
+            "style": "normal"
+          },
+          {
+            "w": "luck.",
+            "frame": 676,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 736,
+        "to": 781,
+        "words": [
+          {
+            "w": "To",
+            "frame": 736,
+            "style": "normal"
+          },
+          {
+            "w": "make",
+            "frame": 744,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 756,
+            "style": "normal"
+          },
+          {
+            "w": "scroll",
+            "frame": 762,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 782,
+        "to": 832,
+        "words": [
+          {
+            "w": "this",
+            "frame": 782,
+            "style": "normal"
+          },
+          {
+            "w": "smooth,",
+            "frame": 793,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 833,
+        "to": 899,
+        "words": [
+          {
+            "w": "Apple",
+            "frame": 833,
+            "style": "normal"
+          },
+          {
+            "w": "designed",
+            "frame": 852,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 874,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 885,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 900,
+        "to": 928,
+        "words": [
+          {
+            "w": "chips,",
+            "frame": 900,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 929,
+        "to": 989,
+        "words": [
+          {
+            "w": "its",
+            "frame": 929,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 941,
+            "style": "normal"
+          },
+          {
+            "w": "modem",
+            "frame": 951,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 977,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 990,
+        "to": 1056,
+        "words": [
+          {
+            "w": "its",
+            "frame": 990,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 1001,
+            "style": "normal"
+          },
+          {
+            "w": "software,",
+            "frame": 1015,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1057,
+        "to": 1155,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1057,
+            "style": "normal"
+          },
+          {
+            "w": "spent",
+            "frame": 1068,
+            "style": "normal"
+          },
+          {
+            "w": "125",
+            "frame": 1087,
+            "style": "select"
+          },
+          {
+            "w": "million",
+            "frame": 1138,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1156,
+        "to": 1221,
+        "words": [
+          {
+            "w": "dollars",
+            "frame": 1156,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1176,
+            "style": "normal"
+          },
+          {
+            "w": "day",
+            "frame": 1181,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 1206,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1222,
+        "to": 1317,
+        "words": [
+          {
+            "w": "research",
+            "frame": 1222,
+            "style": "normal"
+          },
+          {
+            "w": "last",
+            "frame": 1247,
+            "style": "normal"
+          },
+          {
+            "w": "year.",
+            "frame": 1261,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1318,
+        "to": 1363,
+        "words": [
+          {
+            "w": "So",
+            "frame": 1318,
+            "style": "normal"
+          },
+          {
+            "w": "let's",
+            "frame": 1329,
+            "style": "normal"
+          },
+          {
+            "w": "open",
+            "frame": 1341,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 1357,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1364,
+        "to": 1381,
+        "words": [
+          {
+            "w": "up,",
+            "frame": 1364,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1382,
+        "to": 1454,
+        "words": [
+          {
+            "w": "layer",
+            "frame": 1382,
+            "style": "normal"
+          },
+          {
+            "w": "by",
+            "frame": 1401,
+            "style": "normal"
+          },
+          {
+            "w": "layer,",
+            "frame": 1410,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1455,
+        "to": 1501,
+        "words": [
+          {
+            "w": "all",
+            "frame": 1455,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1470,
+            "style": "normal"
+          },
+          {
+            "w": "way",
+            "frame": 1477,
+            "style": "normal"
+          },
+          {
+            "w": "down",
+            "frame": 1487,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1502,
+        "to": 1606,
+        "words": [
+          {
+            "w": "to",
+            "frame": 1502,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1511,
+            "style": "normal"
+          },
+          {
+            "w": "single",
+            "frame": 1519,
+            "style": "normal"
+          },
+          {
+            "w": "transistor.",
+            "frame": 1541,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1624,
+        "to": 1704,
+        "words": [
+          {
+            "w": "Start",
+            "frame": 1624,
+            "style": "normal"
+          },
+          {
+            "w": "with",
+            "frame": 1640,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1647,
+            "style": "normal"
+          },
+          {
+            "w": "screen.",
+            "frame": 1653,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1705,
+        "to": 1790,
+        "words": [
+          {
+            "w": "It",
+            "frame": 1705,
+            "style": "normal"
+          },
+          {
+            "w": "can",
+            "frame": 1715,
+            "style": "normal"
+          },
+          {
+            "w": "redraw",
+            "frame": 1725,
+            "style": "normal"
+          },
+          {
+            "w": "120",
+            "frame": 1755,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1791,
+        "to": 1878,
+        "words": [
+          {
+            "w": "times",
+            "frame": 1791,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 1808,
+            "style": "normal"
+          },
+          {
+            "w": "second.",
+            "frame": 1813,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1879,
+        "to": 1935,
+        "words": [
+          {
+            "w": "So",
+            "frame": 1879,
+            "style": "normal"
+          },
+          {
+            "w": "every",
+            "frame": 1892,
+            "style": "normal"
+          },
+          {
+            "w": "frame",
+            "frame": 1909,
+            "style": "normal"
+          },
+          {
+            "w": "has",
+            "frame": 1926,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1936,
+        "to": 1980,
+        "words": [
+          {
+            "w": "a",
+            "frame": 1936,
+            "style": "normal"
+          },
+          {
+            "w": "deadline:",
+            "frame": 1941,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1981,
+        "to": 2122,
+        "words": [
+          {
+            "w": "about",
+            "frame": 1981,
+            "style": "normal"
+          },
+          {
+            "w": "8.3",
+            "frame": 2003,
+            "style": "select"
+          },
+          {
+            "w": "milliseconds.",
+            "frame": 2046,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2123,
+        "to": 2160,
+        "words": [
+          {
+            "w": "Miss",
+            "frame": 2123,
+            "style": "normal"
+          },
+          {
+            "w": "it,",
+            "frame": 2140,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2161,
+        "to": 2210,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2161,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2172,
+            "style": "normal"
+          },
+          {
+            "w": "old",
+            "frame": 2179,
+            "style": "normal"
+          },
+          {
+            "w": "picture",
+            "frame": 2192,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2211,
+        "to": 2269,
+        "words": [
+          {
+            "w": "stays",
+            "frame": 2211,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 2228,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 2240,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 2259,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2270,
+        "to": 2350,
+        "words": [
+          {
+            "w": "one",
+            "frame": 2270,
+            "style": "normal"
+          },
+          {
+            "w": "more",
+            "frame": 2283,
+            "style": "normal"
+          },
+          {
+            "w": "beat.",
+            "frame": 2296,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2351,
+        "to": 2410,
+        "words": [
+          {
+            "w": "Engineers",
+            "frame": 2351,
+            "style": "normal"
+          },
+          {
+            "w": "call",
+            "frame": 2384,
+            "style": "normal"
+          },
+          {
+            "w": "that",
+            "frame": 2396,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 2407,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2411,
+        "to": 2454,
+        "words": [
+          {
+            "w": "hitch.",
+            "frame": 2411,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2469,
+        "to": 2557,
+        "words": [
+          {
+            "w": "Here",
+            "frame": 2469,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 2481,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2488,
+            "style": "normal"
+          },
+          {
+            "w": "race.",
+            "frame": 2496,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2558,
+        "to": 2620,
+        "words": [
+          {
+            "w": "Your",
+            "frame": 2558,
+            "style": "normal"
+          },
+          {
+            "w": "finger",
+            "frame": 2569,
+            "style": "normal"
+          },
+          {
+            "w": "moves,",
+            "frame": 2587,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2621,
+        "to": 2667,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2621,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2632,
+            "style": "normal"
+          },
+          {
+            "w": "touch",
+            "frame": 2639,
+            "style": "normal"
+          },
+          {
+            "w": "goes",
+            "frame": 2656,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2668,
+        "to": 2738,
+        "words": [
+          {
+            "w": "to",
+            "frame": 2668,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 2675,
+            "style": "normal"
+          },
+          {
+            "w": "app.",
+            "frame": 2682,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2739,
+        "to": 2784,
+        "words": [
+          {
+            "w": "The",
+            "frame": 2739,
+            "style": "normal"
+          },
+          {
+            "w": "app",
+            "frame": 2749,
+            "style": "select"
+          },
+          {
+            "w": "works",
+            "frame": 2760,
+            "style": "normal"
+          },
+          {
+            "w": "out",
+            "frame": 2774,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2785,
+        "to": 2846,
+        "words": [
+          {
+            "w": "what",
+            "frame": 2785,
+            "style": "normal"
+          },
+          {
+            "w": "should",
+            "frame": 2796,
+            "style": "normal"
+          },
+          {
+            "w": "change,",
+            "frame": 2811,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2847,
+        "to": 2938,
+        "words": [
+          {
+            "w": "then",
+            "frame": 2847,
+            "style": "normal"
+          },
+          {
+            "w": "hands",
+            "frame": 2864,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 2880,
+            "style": "normal"
+          },
+          {
+            "w": "over.",
+            "frame": 2885,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2939,
+        "to": 3017,
+        "words": [
+          {
+            "w": "A",
+            "frame": 2939,
+            "style": "normal"
+          },
+          {
+            "w": "separate",
+            "frame": 2949,
+            "style": "normal"
+          },
+          {
+            "w": "system",
+            "frame": 2971,
+            "style": "normal"
+          },
+          {
+            "w": "process,",
+            "frame": 2990,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3018,
+        "to": 3075,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3018,
+            "style": "normal"
+          },
+          {
+            "w": "render",
+            "frame": 3026,
+            "style": "select"
+          },
+          {
+            "w": "server,",
+            "frame": 3044,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3076,
+        "to": 3152,
+        "words": [
+          {
+            "w": "prepares",
+            "frame": 3076,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3103,
+            "style": "normal"
+          },
+          {
+            "w": "frame.",
+            "frame": 3109,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3153,
+        "to": 3235,
+        "words": [
+          {
+            "w": "The",
+            "frame": 3153,
+            "style": "normal"
+          },
+          {
+            "w": "graphics",
+            "frame": 3163,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 3190,
+            "style": "normal"
+          },
+          {
+            "w": "paints",
+            "frame": 3212,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3236,
+        "to": 3269,
+        "words": [
+          {
+            "w": "it.",
+            "frame": 3236,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3270,
+        "to": 3329,
+        "words": [
+          {
+            "w": "And",
+            "frame": 3270,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3282,
+            "style": "normal"
+          },
+          {
+            "w": "display",
+            "frame": 3288,
+            "style": "normal"
+          },
+          {
+            "w": "shows",
+            "frame": 3315,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3330,
+        "to": 3366,
+        "words": [
+          {
+            "w": "it",
+            "frame": 3330,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 3336,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3342,
+            "style": "normal"
+          },
+          {
+            "w": "very",
+            "frame": 3350,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3367,
+        "to": 3422,
+        "words": [
+          {
+            "w": "next",
+            "frame": 3367,
+            "style": "normal"
+          },
+          {
+            "w": "tick.",
+            "frame": 3382,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3437,
+        "to": 3472,
+        "words": [
+          {
+            "w": "And",
+            "frame": 3437,
+            "style": "normal"
+          },
+          {
+            "w": "here",
+            "frame": 3449,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 3460,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3467,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3473,
+        "to": 3549,
+        "words": [
+          {
+            "w": "clever",
+            "frame": 3473,
+            "style": "select"
+          },
+          {
+            "w": "part.",
+            "frame": 3492,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3550,
+        "to": 3643,
+        "words": [
+          {
+            "w": "Animations",
+            "frame": 3550,
+            "style": "normal"
+          },
+          {
+            "w": "run",
+            "frame": 3591,
+            "style": "normal"
+          },
+          {
+            "w": "inside",
+            "frame": 3607,
+            "style": "normal"
+          },
+          {
+            "w": "that",
+            "frame": 3633,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3644,
+        "to": 3698,
+        "words": [
+          {
+            "w": "render",
+            "frame": 3644,
+            "style": "normal"
+          },
+          {
+            "w": "server,",
+            "frame": 3662,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3699,
+        "to": 3788,
+        "words": [
+          {
+            "w": "outside",
+            "frame": 3699,
+            "style": "select"
+          },
+          {
+            "w": "the",
+            "frame": 3723,
+            "style": "normal"
+          },
+          {
+            "w": "app.",
+            "frame": 3731,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3789,
+        "to": 3827,
+        "words": [
+          {
+            "w": "So",
+            "frame": 3789,
+            "style": "normal"
+          },
+          {
+            "w": "even",
+            "frame": 3800,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 3812,
+            "style": "normal"
+          },
+          {
+            "w": "an",
+            "frame": 3821,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3828,
+        "to": 3889,
+        "words": [
+          {
+            "w": "app",
+            "frame": 3828,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 3841,
+            "style": "normal"
+          },
+          {
+            "w": "busy,",
+            "frame": 3850,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 3890,
+        "to": 3948,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3890,
+            "style": "normal"
+          },
+          {
+            "w": "motion",
+            "frame": 3900,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 3921,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 3929,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3949,
+        "to": 4016,
+        "words": [
+          {
+            "w": "can",
+            "frame": 3949,
+            "style": "normal"
+          },
+          {
+            "w": "keep",
+            "frame": 3958,
+            "style": "normal"
+          },
+          {
+            "w": "going.",
+            "frame": 3972,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4017,
+        "to": 4094,
+        "words": [
+          {
+            "w": "And",
+            "frame": 4017,
+            "style": "normal"
+          },
+          {
+            "w": "when",
+            "frame": 4028,
+            "style": "normal"
+          },
+          {
+            "w": "nothing",
+            "frame": 4041,
+            "style": "normal"
+          },
+          {
+            "w": "moves,",
+            "frame": 4062,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4095,
+        "to": 4176,
+        "words": [
+          {
+            "w": "ProMotion",
+            "frame": 4095,
+            "style": "select"
+          },
+          {
+            "w": "slows",
+            "frame": 4129,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 4149,
+            "style": "normal"
+          },
+          {
+            "w": "screen",
+            "frame": 4155,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4177,
+        "to": 4226,
+        "words": [
+          {
+            "w": "right",
+            "frame": 4177,
+            "style": "normal"
+          },
+          {
+            "w": "down",
+            "frame": 4193,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 4205,
+            "style": "normal"
+          },
+          {
+            "w": "save",
+            "frame": 4211,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4227,
+        "to": 4270,
+        "words": [
+          {
+            "w": "battery.",
+            "frame": 4227,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4278,
+        "to": 4369,
+        "words": [
+          {
+            "w": "But",
+            "frame": 4278,
+            "style": "normal"
+          },
+          {
+            "w": "software",
+            "frame": 4292,
+            "style": "normal"
+          },
+          {
+            "w": "alone",
+            "frame": 4320,
+            "style": "normal"
+          },
+          {
+            "w": "cannot",
+            "frame": 4340,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4370,
+        "to": 4477,
+        "words": [
+          {
+            "w": "win",
+            "frame": 4370,
+            "style": "normal"
+          },
+          {
+            "w": "that",
+            "frame": 4383,
+            "style": "normal"
+          },
+          {
+            "w": "race",
+            "frame": 4395,
+            "style": "normal"
+          },
+          {
+            "w": "7,200",
+            "frame": 4411,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4478,
+        "to": 4539,
+        "words": [
+          {
+            "w": "times",
+            "frame": 4478,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4496,
+            "style": "normal"
+          },
+          {
+            "w": "minute.",
+            "frame": 4500,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4540,
+        "to": 4589,
+        "words": [
+          {
+            "w": "It",
+            "frame": 4540,
+            "style": "normal"
+          },
+          {
+            "w": "needs",
+            "frame": 4551,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4567,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 4573,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4590,
+        "to": 4659,
+        "words": [
+          {
+            "w": "built",
+            "frame": 4590,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 4606,
+            "style": "normal"
+          },
+          {
+            "w": "exactly",
+            "frame": 4616,
+            "style": "normal"
+          },
+          {
+            "w": "this",
+            "frame": 4651,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4660,
+        "to": 4710,
+        "words": [
+          {
+            "w": "software.",
+            "frame": 4660,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4711,
+        "to": 4775,
+        "words": [
+          {
+            "w": "And",
+            "frame": 4711,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 4723,
+            "style": "normal"
+          },
+          {
+            "w": "2008,",
+            "frame": 4730,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 4776,
+        "to": 4842,
+        "words": [
+          {
+            "w": "Apple",
+            "frame": 4776,
+            "style": "normal"
+          },
+          {
+            "w": "did",
+            "frame": 4795,
+            "style": "normal"
+          },
+          {
+            "w": "not",
+            "frame": 4808,
+            "style": "normal"
+          },
+          {
+            "w": "design",
+            "frame": 4822,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4843,
+        "to": 4893,
+        "words": [
+          {
+            "w": "a",
+            "frame": 4843,
+            "style": "normal"
+          },
+          {
+            "w": "single",
+            "frame": 4847,
+            "style": "normal"
+          },
+          {
+            "w": "one.",
+            "frame": 4868,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4896,
+        "to": 4940,
+        "words": [
+          {
+            "w": "So",
+            "frame": 4896,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 4915,
+            "style": "normal"
+          },
+          {
+            "w": "bought",
+            "frame": 4925,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 4937,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4941,
+        "to": 4995,
+        "words": [
+          {
+            "w": "small",
+            "frame": 4941,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 4959,
+            "style": "normal"
+          },
+          {
+            "w": "company,",
+            "frame": 4973,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 4996,
+        "to": 5016,
+        "words": [
+          {
+            "w": "P.A.",
+            "frame": 4996,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5017,
+        "to": 5053,
+        "words": [
+          {
+            "w": "Semi,",
+            "frame": 5017,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5054,
+        "to": 5239,
+        "words": [
+          {
+            "w": "for",
+            "frame": 5054,
+            "style": "normal"
+          },
+          {
+            "w": "278",
+            "frame": 5070,
+            "style": "select"
+          },
+          {
+            "w": "million",
+            "frame": 5133,
+            "style": "normal"
+          },
+          {
+            "w": "dollars.",
+            "frame": 5157,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5240,
+        "to": 5301,
+        "words": [
+          {
+            "w": "Two",
+            "frame": 5240,
+            "style": "normal"
+          },
+          {
+            "w": "years",
+            "frame": 5254,
+            "style": "normal"
+          },
+          {
+            "w": "later",
+            "frame": 5269,
+            "style": "normal"
+          },
+          {
+            "w": "came",
+            "frame": 5287,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5302,
+        "to": 5350,
+        "words": [
+          {
+            "w": "the",
+            "frame": 5302,
+            "style": "normal"
+          },
+          {
+            "w": "A4,",
+            "frame": 5313,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 5351,
+        "to": 5408,
+        "words": [
+          {
+            "w": "the",
+            "frame": 5351,
+            "style": "normal"
+          },
+          {
+            "w": "first",
+            "frame": 5359,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 5377,
+            "style": "normal"
+          },
+          {
+            "w": "Apple",
+            "frame": 5391,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5409,
+        "to": 5496,
+        "words": [
+          {
+            "w": "designed",
+            "frame": 5409,
+            "style": "normal"
+          },
+          {
+            "w": "itself.",
+            "frame": 5429,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5497,
+        "to": 5551,
+        "words": [
+          {
+            "w": "In",
+            "frame": 5497,
+            "style": "normal"
+          },
+          {
+            "w": "2013,",
+            "frame": 5508,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5552,
+        "to": 5613,
+        "words": [
+          {
+            "w": "the",
+            "frame": 5552,
+            "style": "normal"
+          },
+          {
+            "w": "A7",
+            "frame": 5559,
+            "style": "normal"
+          },
+          {
+            "w": "became",
+            "frame": 5587,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 5607,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5614,
+        "to": 5687,
+        "words": [
+          {
+            "w": "first",
+            "frame": 5614,
+            "style": "normal"
+          },
+          {
+            "w": "64-bit",
+            "frame": 5630,
+            "style": "select"
+          },
+          {
+            "w": "chip",
+            "frame": 5669,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 5683,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5688,
+        "to": 5753,
+        "words": [
+          {
+            "w": "a",
+            "frame": 5688,
+            "style": "normal"
+          },
+          {
+            "w": "phone.",
+            "frame": 5692,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5754,
+        "to": 5836,
+        "words": [
+          {
+            "w": "In",
+            "frame": 5754,
+            "style": "normal"
+          },
+          {
+            "w": "2017,",
+            "frame": 5764,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5837,
+        "to": 5898,
+        "words": [
+          {
+            "w": "the",
+            "frame": 5837,
+            "style": "normal"
+          },
+          {
+            "w": "A11",
+            "frame": 5848,
+            "style": "normal"
+          },
+          {
+            "w": "added",
+            "frame": 5876,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 5894,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5899,
+        "to": 5967,
+        "words": [
+          {
+            "w": "Neural",
+            "frame": 5899,
+            "style": "select"
+          },
+          {
+            "w": "Engine",
+            "frame": 5919,
+            "style": "normal"
+          },
+          {
+            "w": "for",
+            "frame": 5937,
+            "style": "normal"
+          },
+          {
+            "w": "machine",
+            "frame": 5946,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 5968,
+        "to": 6035,
+        "words": [
+          {
+            "w": "learning.",
+            "frame": 5968,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6036,
+        "to": 6104,
+        "words": [
+          {
+            "w": "And",
+            "frame": 6036,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 6049,
+            "style": "normal"
+          },
+          {
+            "w": "2020,",
+            "frame": 6057,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6105,
+        "to": 6164,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6105,
+            "style": "normal"
+          },
+          {
+            "w": "same",
+            "frame": 6113,
+            "style": "normal"
+          },
+          {
+            "w": "idea,",
+            "frame": 6130,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6165,
+        "to": 6205,
+        "words": [
+          {
+            "w": "scaled",
+            "frame": 6165,
+            "style": "normal"
+          },
+          {
+            "w": "up,",
+            "frame": 6188,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6206,
+        "to": 6286,
+        "words": [
+          {
+            "w": "became",
+            "frame": 6206,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 6228,
+            "style": "normal"
+          },
+          {
+            "w": "M1,",
+            "frame": 6238,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6287,
+        "to": 6374,
+        "words": [
+          {
+            "w": "and",
+            "frame": 6287,
+            "style": "normal"
+          },
+          {
+            "w": "replaced",
+            "frame": 6299,
+            "style": "normal"
+          },
+          {
+            "w": "Intel",
+            "frame": 6326,
+            "style": "normal"
+          },
+          {
+            "w": "inside",
+            "frame": 6351,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6375,
+        "to": 6436,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6375,
+            "style": "normal"
+          },
+          {
+            "w": "Mac.",
+            "frame": 6381,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6464,
+        "to": 6520,
+        "words": [
+          {
+            "w": "Then",
+            "frame": 6464,
+            "style": "normal"
+          },
+          {
+            "w": "Apple",
+            "frame": 6479,
+            "style": "normal"
+          },
+          {
+            "w": "went",
+            "frame": 6497,
+            "style": "normal"
+          },
+          {
+            "w": "after",
+            "frame": 6507,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6521,
+        "to": 6591,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6521,
+            "style": "normal"
+          },
+          {
+            "w": "chips",
+            "frame": 6527,
+            "style": "normal"
+          },
+          {
+            "w": "around",
+            "frame": 6543,
+            "style": "normal"
+          },
+          {
+            "w": "it.",
+            "frame": 6561,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6592,
+        "to": 6641,
+        "words": [
+          {
+            "w": "Its",
+            "frame": 6592,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 6606,
+            "style": "normal"
+          },
+          {
+            "w": "modem,",
+            "frame": 6621,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6642,
+        "to": 6683,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6642,
+            "style": "normal"
+          },
+          {
+            "w": "C1,",
+            "frame": 6650,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6684,
+        "to": 6761,
+        "words": [
+          {
+            "w": "in",
+            "frame": 6684,
+            "style": "normal"
+          },
+          {
+            "w": "2025.",
+            "frame": 6693,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6762,
+        "to": 6839,
+        "words": [
+          {
+            "w": "Its",
+            "frame": 6762,
+            "style": "normal"
+          },
+          {
+            "w": "own",
+            "frame": 6775,
+            "style": "normal"
+          },
+          {
+            "w": "wireless",
+            "frame": 6791,
+            "style": "normal"
+          },
+          {
+            "w": "chip,",
+            "frame": 6819,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6840,
+        "to": 6900,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6840,
+            "style": "normal"
+          },
+          {
+            "w": "N1,",
+            "frame": 6851,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 6901,
+        "to": 6981,
+        "words": [
+          {
+            "w": "the",
+            "frame": 6901,
+            "style": "normal"
+          },
+          {
+            "w": "same",
+            "frame": 6910,
+            "style": "normal"
+          },
+          {
+            "w": "year.",
+            "frame": 6927,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 6982,
+        "to": 7027,
+        "words": [
+          {
+            "w": "And",
+            "frame": 6982,
+            "style": "normal"
+          },
+          {
+            "w": "now,",
+            "frame": 6995,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7028,
+        "to": 7091,
+        "words": [
+          {
+            "w": "in",
+            "frame": 7028,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 7037,
+            "style": "normal"
+          },
+          {
+            "w": "iPhone",
+            "frame": 7044,
+            "style": "normal"
+          },
+          {
+            "w": "18",
+            "frame": 7070,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7092,
+        "to": 7115,
+        "words": [
+          {
+            "w": "Pro,",
+            "frame": 7092,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7116,
+        "to": 7191,
+        "words": [
+          {
+            "w": "the",
+            "frame": 7116,
+            "style": "normal"
+          },
+          {
+            "w": "A20",
+            "frame": 7128,
+            "style": "select"
+          },
+          {
+            "w": "Pro:",
+            "frame": 7156,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7192,
+        "to": 7276,
+        "words": [
+          {
+            "w": "Apple's",
+            "frame": 7192,
+            "style": "normal"
+          },
+          {
+            "w": "first",
+            "frame": 7214,
+            "style": "normal"
+          },
+          {
+            "w": "2",
+            "frame": 7236,
+            "style": "select"
+          },
+          {
+            "w": "nanometer",
+            "frame": 7249,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7277,
+        "to": 7308,
+        "words": [
+          {
+            "w": "chip.",
+            "frame": 7277,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7317,
+        "to": 7423,
+        "words": [
+          {
+            "w": "Eighteen",
+            "frame": 7317,
+            "style": "select"
+          },
+          {
+            "w": "years",
+            "frame": 7345,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 7362,
+            "style": "normal"
+          },
+          {
+            "w": "work,",
+            "frame": 7369,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7424,
+        "to": 7482,
+        "words": [
+          {
+            "w": "for",
+            "frame": 7424,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 7436,
+            "style": "normal"
+          },
+          {
+            "w": "feeling",
+            "frame": 7452,
+            "style": "select"
+          },
+          {
+            "w": "under",
+            "frame": 7472,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7483,
+        "to": 7539,
+        "words": [
+          {
+            "w": "your",
+            "frame": 7483,
+            "style": "normal"
+          },
+          {
+            "w": "thumb.",
+            "frame": 7494,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7540,
+        "to": 7594,
+        "words": [
+          {
+            "w": "So",
+            "frame": 7540,
+            "style": "normal"
+          },
+          {
+            "w": "where",
+            "frame": 7561,
+            "style": "normal"
+          },
+          {
+            "w": "does",
+            "frame": 7576,
+            "style": "normal"
+          },
+          {
+            "w": "all",
+            "frame": 7586,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7595,
+        "to": 7691,
+        "words": [
+          {
+            "w": "of",
+            "frame": 7595,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 7600,
+            "style": "normal"
+          },
+          {
+            "w": "actually",
+            "frame": 7606,
+            "style": "normal"
+          },
+          {
+            "w": "sit?",
+            "frame": 7630,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 7692,
+        "to": 7834,
+        "words": [
+          {
+            "w": "Let's",
+            "frame": 7692,
+            "style": "normal"
+          },
+          {
+            "w": "open",
+            "frame": 7706,
+            "style": "select"
+          },
+          {
+            "w": "the",
+            "frame": 7720,
+            "style": "normal"
+          },
+          {
+            "w": "phone.",
+            "frame": 7726,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer",
+    "anchor": "bottom"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 623,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 0.0,
+        "w:watch": 0.0,
+        "i:1": 11.0,
+        "w:this": 11.0,
+        "i:2": 16.5,
+        "w:scroll": 16.5,
+        "i:3": 50.0,
+        "w:one": 50.0,
+        "i:4": 57.5,
+        "w:frame": 57.5,
+        "i:5": 66.0,
+        "w:just": 66.0,
+        "i:6": 73.0,
+        "w:arrived": 73.0,
+        "i:7": 85.0,
+        "w:8": 85.0,
+        "i:8": 92.0,
+        "w:milliseconds": 92.0,
+        "i:9": 110.0,
+        "w:late": 110.0,
+        "i:10": 133.5,
+        "w:you": 133.5,
+        "i:11": 138.0,
+        "w:cant": 138.0,
+        "i:12": 145.0,
+        "w:see": 145.0,
+        "i:13": 151.0,
+        "w:it": 151.0,
+        "i:14": 178.0,
+        "w:but": 178.0,
+        "i:15": 183.0,
+        "w:your": 183.0,
+        "i:16": 187.5,
+        "w:thumb": 187.5,
+        "i:17": 195.0,
+        "w:can": 195.0,
+        "i:18": 200.5,
+        "w:feel": 200.5,
+        "i:19": 208.0,
+        "i:20": 237.0,
+        "w:on": 237.0,
+        "i:21": 243.0,
+        "w:an": 243.0,
+        "i:22": 246.0,
+        "w:iphone": 246.0,
+        "i:23": 260.0,
+        "w:that": 260.0,
+        "i:24": 267.0,
+        "w:almost": 267.0,
+        "i:25": 278.0,
+        "w:never": 278.0,
+        "i:26": 285.5,
+        "w:happens": 285.5
+      },
+      "beats": [
+        {
+          "t": -1.0,
+          "w": "Watch",
+          "word": "watch",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 15.5,
+          "w": "scroll.",
+          "word": "scroll",
+          "kind": "object",
+          "s": 3,
+          "i": 2
+        },
+        {
+          "t": 29.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 43.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 49.0,
+          "w": "One",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 56.5,
+          "w": "frame",
+          "word": "frame",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 72.0,
+          "w": "arrived",
+          "word": "arrived",
+          "kind": "object",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 84.0,
+          "w": "8",
+          "word": "8",
+          "kind": "number",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 91.0,
+          "w": "milliseconds",
+          "word": "milliseconds",
+          "kind": "object",
+          "s": 2,
+          "i": 8
+        },
+        {
+          "t": 109.0,
+          "w": "late.",
+          "word": "late",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 123.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 137.0,
+          "w": "can't",
+          "word": "can't",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 144.0,
+          "w": "see",
+          "word": "see",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 158.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 172.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 186.5,
+          "w": "thumb",
+          "word": "thumb",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 199.5,
+          "w": "feel",
+          "word": "feel",
+          "kind": "object",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 213.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 227.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 245.0,
+          "w": "iPhone,",
+          "word": "iphone",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 259.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 266.0,
+          "w": "almost",
+          "word": "almost",
+          "kind": "object",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 277.0,
+          "w": "never",
+          "word": "never",
+          "kind": "object",
+          "s": 3,
+          "i": 25
+        },
+        {
+          "t": 284.5,
+          "w": "happens.",
+          "word": "happens",
+          "kind": "object",
+          "s": 3,
+          "i": 26
+        },
+        {
+          "t": 298.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from": 623,
+      "to": 1607,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.5,
+        "w:that": 9.5,
+        "i:1": 18.5,
+        "w:is": 18.5,
+        "i:2": 22.5,
+        "w:not": 22.5,
+        "i:3": 28.0,
+        "w:luck": 28.0,
+        "i:4": 58.0,
+        "w:to": 58.0,
+        "i:5": 62.0,
+        "w:make": 62.0,
+        "i:6": 68.0,
+        "w:a": 68.0,
+        "i:7": 71.0,
+        "w:scroll": 71.0,
+        "i:8": 81.0,
+        "w:this": 81.0,
+        "i:9": 86.5,
+        "w:smooth": 86.5,
+        "i:10": 106.5,
+        "w:apple": 106.5,
+        "i:11": 116.0,
+        "w:designed": 116.0,
+        "i:12": 127.0,
+        "w:its": 127.0,
+        "i:13": 132.5,
+        "w:own": 132.5,
+        "i:14": 140.0,
+        "w:chips": 140.0,
+        "i:15": 154.5,
+        "i:16": 160.5,
+        "i:17": 165.5,
+        "w:modem": 165.5,
+        "i:18": 178.5,
+        "w:and": 178.5,
+        "i:19": 185.0,
+        "i:20": 190.5,
+        "i:21": 197.5,
+        "w:software": 197.5,
+        "i:22": 218.5,
+        "i:23": 224.0,
+        "w:spent": 224.0,
+        "i:24": 233.5,
+        "w:125": 233.5,
+        "i:25": 259.0,
+        "w:million": 259.0,
+        "i:26": 268.0,
+        "w:dollars": 268.0,
+        "i:27": 278.0,
+        "i:28": 280.5,
+        "w:day": 280.5,
+        "i:29": 293.0,
+        "w:on": 293.0,
+        "i:30": 301.0,
+        "w:research": 301.0,
+        "i:31": 313.5,
+        "w:last": 313.5,
+        "i:32": 320.5,
+        "w:year": 320.5,
+        "i:33": 349.5,
+        "w:so": 349.5,
+        "i:34": 354.5,
+        "w:lets": 354.5,
+        "i:35": 360.5,
+        "w:open": 360.5,
+        "i:36": 368.5,
+        "w:it": 368.5,
+        "i:37": 372.0,
+        "w:up": 372.0,
+        "i:38": 381.0,
+        "w:layer": 381.0,
+        "i:39": 390.5,
+        "w:by": 390.5,
+        "i:40": 395.0,
+        "i:41": 417.5,
+        "w:all": 417.5,
+        "i:42": 425.0,
+        "w:the": 425.0,
+        "i:43": 428.5,
+        "w:way": 428.5,
+        "i:44": 433.5,
+        "w:down": 433.5,
+        "i:45": 441.0,
+        "i:46": 445.5,
+        "i:47": 449.5,
+        "w:single": 449.5,
+        "i:48": 460.5,
+        "w:transistor": 460.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 21.5,
+          "w": "not",
+          "word": "not",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 27.0,
+          "w": "luck.",
+          "word": "luck",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 41.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 55.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 61.0,
+          "w": "make",
+          "word": "make",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 70.0,
+          "w": "scroll",
+          "word": "scroll",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 85.5,
+          "w": "smooth,",
+          "word": "smooth",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 99.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 105.5,
+          "w": "Apple",
+          "word": "apple",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 115.0,
+          "w": "designed",
+          "word": "designed",
+          "kind": "object",
+          "s": 2,
+          "i": 11
+        },
+        {
+          "t": 131.5,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 139.0,
+          "w": "chips,",
+          "word": "chips",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 153.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 159.5,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 164.5,
+          "w": "modem",
+          "word": "modem",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 178.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 189.5,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 196.5,
+          "w": "software,",
+          "word": "software",
+          "kind": "object",
+          "s": 2,
+          "i": 21
+        },
+        {
+          "t": 210.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 223.0,
+          "w": "spent",
+          "word": "spent",
+          "kind": "object",
+          "s": 1,
+          "i": 23
+        },
+        {
+          "t": 232.5,
+          "w": "125",
+          "word": "125",
+          "kind": "number",
+          "s": 3,
+          "i": 24
+        },
+        {
+          "t": 246.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 258.0,
+          "w": "million",
+          "word": "million",
+          "kind": "number",
+          "s": 3,
+          "i": 25
+        },
+        {
+          "t": 267.0,
+          "w": "dollars",
+          "word": "dollars",
+          "kind": "object",
+          "s": 2,
+          "i": 26
+        },
+        {
+          "t": 279.5,
+          "w": "day",
+          "word": "day",
+          "kind": "object",
+          "s": 1,
+          "i": 28
+        },
+        {
+          "t": 293.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 300.0,
+          "w": "research",
+          "word": "research",
+          "kind": "object",
+          "s": 2,
+          "i": 30
+        },
+        {
+          "t": 312.5,
+          "w": "last",
+          "word": "last",
+          "kind": "object",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 319.5,
+          "w": "year.",
+          "word": "year",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 333.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 347.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 359.5,
+          "w": "open",
+          "word": "open",
+          "kind": "action",
+          "s": 2,
+          "i": 35
+        },
+        {
+          "t": 373.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 380.0,
+          "w": "layer",
+          "word": "layer",
+          "kind": "object",
+          "s": 1,
+          "i": 38
+        },
+        {
+          "t": 394.0,
+          "w": "layer,",
+          "word": "layer",
+          "kind": "object",
+          "s": 1,
+          "i": 40
+        },
+        {
+          "t": 408.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 416.5,
+          "w": "all",
+          "word": "all",
+          "kind": "object",
+          "s": 1,
+          "i": 41
+        },
+        {
+          "t": 427.5,
+          "w": "way",
+          "word": "way",
+          "kind": "object",
+          "s": 1,
+          "i": 43
+        },
+        {
+          "t": 432.5,
+          "w": "down",
+          "word": "down",
+          "kind": "object",
+          "s": 1,
+          "i": 44
+        },
+        {
+          "t": 448.5,
+          "w": "single",
+          "word": "single",
+          "kind": "state",
+          "s": 1,
+          "i": 47
+        },
+        {
+          "t": 459.5,
+          "w": "transistor.",
+          "word": "transistor",
+          "kind": "object",
+          "s": 3,
+          "i": 48
+        },
+        {
+          "t": 473.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 487.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from": 1607,
+      "to": 2455,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 10.0,
+        "w:start": 10.0,
+        "i:1": 18.0,
+        "w:with": 18.0,
+        "i:2": 21.5,
+        "w:the": 21.5,
+        "i:3": 24.5,
+        "w:screen": 24.5,
+        "i:4": 50.5,
+        "w:it": 50.5,
+        "i:5": 55.5,
+        "w:can": 55.5,
+        "i:6": 60.5,
+        "w:redraw": 60.5,
+        "i:7": 75.5,
+        "w:120": 75.5,
+        "i:8": 93.5,
+        "w:times": 93.5,
+        "i:9": 102.0,
+        "w:a": 102.0,
+        "i:10": 104.5,
+        "w:second": 104.5,
+        "i:11": 137.5,
+        "w:so": 137.5,
+        "i:12": 144.0,
+        "w:every": 144.0,
+        "i:13": 152.5,
+        "w:frame": 152.5,
+        "i:14": 161.0,
+        "w:has": 161.0,
+        "i:15": 166.0,
+        "i:16": 168.5,
+        "w:deadline": 168.5,
+        "i:17": 188.5,
+        "w:about": 188.5,
+        "i:18": 199.5,
+        "w:8.3": 199.5,
+        "i:19": 221.0,
+        "w:milliseconds": 221.0,
+        "i:20": 259.5,
+        "w:miss": 259.5,
+        "i:21": 268.0,
+        "i:22": 278.5,
+        "w:and": 278.5,
+        "i:23": 284.0,
+        "i:24": 287.5,
+        "w:old": 287.5,
+        "i:25": 294.0,
+        "w:picture": 294.0,
+        "i:26": 303.5,
+        "w:stays": 303.5,
+        "i:27": 311.5,
+        "w:on": 311.5,
+        "i:28": 318.0,
+        "i:29": 327.5,
+        "w:for": 327.5,
+        "i:30": 333.0,
+        "w:one": 333.0,
+        "i:31": 339.5,
+        "w:more": 339.5,
+        "i:32": 346.0,
+        "w:beat": 346.0,
+        "i:33": 373.5,
+        "w:engineers": 373.5,
+        "i:34": 390.0,
+        "w:call": 390.0,
+        "i:35": 396.0,
+        "w:that": 396.0,
+        "i:36": 401.5,
+        "i:37": 403.5,
+        "w:hitch": 403.5
+      },
+      "beats": [
+        {
+          "t": 9.0,
+          "w": "Start",
+          "word": "start",
+          "kind": "action",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 23.5,
+          "w": "screen.",
+          "word": "screen",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 37.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 51.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 59.5,
+          "w": "redraw",
+          "word": "redraw",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 74.5,
+          "w": "120",
+          "word": "120",
+          "kind": "number",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 92.5,
+          "w": "times",
+          "word": "times",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 103.5,
+          "w": "second.",
+          "word": "second",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 117.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 131.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 143.0,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 151.5,
+          "w": "frame",
+          "word": "frame",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 167.5,
+          "w": "deadline:",
+          "word": "deadline",
+          "kind": "object",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 181.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 198.5,
+          "w": "8.3",
+          "word": "83",
+          "kind": "number",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 212.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 220.0,
+          "w": "milliseconds.",
+          "word": "milliseconds",
+          "kind": "object",
+          "s": 3,
+          "i": 19
+        },
+        {
+          "t": 234.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 248.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 258.5,
+          "w": "Miss",
+          "word": "miss",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 272.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 286.5,
+          "w": "old",
+          "word": "old",
+          "kind": "state",
+          "s": 1,
+          "i": 24
+        },
+        {
+          "t": 293.0,
+          "w": "picture",
+          "word": "picture",
+          "kind": "object",
+          "s": 2,
+          "i": 25
+        },
+        {
+          "t": 302.5,
+          "w": "stays",
+          "word": "stays",
+          "kind": "object",
+          "s": 1,
+          "i": 26
+        },
+        {
+          "t": 317.0,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 28
+        },
+        {
+          "t": 332.0,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 30
+        },
+        {
+          "t": 338.5,
+          "w": "more",
+          "word": "more",
+          "kind": "state",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 345.0,
+          "w": "beat.",
+          "word": "beat",
+          "kind": "object",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 359.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 372.5,
+          "w": "Engineers",
+          "word": "engineers",
+          "kind": "object",
+          "s": 2,
+          "i": 33
+        },
+        {
+          "t": 389.0,
+          "w": "call",
+          "word": "call",
+          "kind": "object",
+          "s": 1,
+          "i": 34
+        },
+        {
+          "t": 402.5,
+          "w": "hitch.",
+          "word": "hitch",
+          "kind": "object",
+          "s": 3,
+          "i": 37
+        },
+        {
+          "t": 416.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from": 2455,
+      "to": 3423,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.5,
+        "w:here": 8.5,
+        "i:1": 14.5,
+        "w:is": 14.5,
+        "i:2": 18.0,
+        "w:the": 18.0,
+        "i:3": 22.0,
+        "w:race": 22.0,
+        "i:4": 53.0,
+        "w:your": 53.0,
+        "i:5": 58.5,
+        "w:finger": 58.5,
+        "i:6": 67.5,
+        "w:moves": 67.5,
+        "i:7": 84.5,
+        "w:and": 84.5,
+        "i:8": 90.0,
+        "i:9": 93.5,
+        "w:touch": 93.5,
+        "i:10": 102.0,
+        "w:goes": 102.0,
+        "i:11": 108.0,
+        "w:to": 108.0,
+        "i:12": 111.5,
+        "i:13": 115.0,
+        "w:app": 115.0,
+        "i:14": 143.5,
+        "i:15": 148.5,
+        "i:16": 154.0,
+        "w:works": 154.0,
+        "i:17": 161.0,
+        "w:out": 161.0,
+        "i:18": 166.5,
+        "w:what": 166.5,
+        "i:19": 172.0,
+        "w:should": 172.0,
+        "i:20": 179.5,
+        "w:change": 179.5,
+        "i:21": 197.5,
+        "w:then": 197.5,
+        "i:22": 206.0,
+        "w:hands": 206.0,
+        "i:23": 214.0,
+        "w:it": 214.0,
+        "i:24": 216.5,
+        "w:over": 216.5,
+        "i:25": 243.5,
+        "w:a": 243.5,
+        "i:26": 248.5,
+        "w:separate": 248.5,
+        "i:27": 259.5,
+        "w:system": 259.5,
+        "i:28": 269.0,
+        "w:process": 269.0,
+        "i:29": 283.0,
+        "i:30": 287.0,
+        "w:render": 287.0,
+        "i:31": 296.0,
+        "w:server": 296.0,
+        "i:32": 312.0,
+        "w:prepares": 312.0,
+        "i:33": 325.5,
+        "i:34": 328.5,
+        "w:frame": 328.5,
+        "i:35": 350.5,
+        "i:36": 355.5,
+        "w:graphics": 355.5,
+        "i:37": 369.0,
+        "w:chip": 369.0,
+        "i:38": 380.0,
+        "w:paints": 380.0,
+        "i:39": 391.5,
+        "i:40": 409.0,
+        "i:41": 415.0,
+        "i:42": 418.0,
+        "w:display": 418.0,
+        "i:43": 431.5,
+        "w:shows": 431.5,
+        "i:44": 439.0,
+        "i:45": 442.0,
+        "w:on": 442.0,
+        "i:46": 445.0,
+        "i:47": 449.0,
+        "w:very": 449.0,
+        "i:48": 457.5,
+        "w:next": 457.5,
+        "i:49": 465.5,
+        "w:tick": 465.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 21.0,
+          "w": "race.",
+          "word": "race",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 35.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 49.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 57.5,
+          "w": "finger",
+          "word": "finger",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 66.5,
+          "w": "moves,",
+          "word": "moves",
+          "kind": "action",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 80.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 92.5,
+          "w": "touch",
+          "word": "touch",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 101.0,
+          "w": "goes",
+          "word": "goes",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 114.0,
+          "w": "app.",
+          "word": "app",
+          "kind": "object",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 128.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 142.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 147.5,
+          "w": "app",
+          "word": "app",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 153.0,
+          "w": "works",
+          "word": "works",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 165.5,
+          "w": "what",
+          "word": "what",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 178.5,
+          "w": "change,",
+          "word": "change",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 192.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 205.0,
+          "w": "hands",
+          "word": "hands",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 219.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 233.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 247.5,
+          "w": "separate",
+          "word": "separate",
+          "kind": "object",
+          "s": 2,
+          "i": 26
+        },
+        {
+          "t": 258.5,
+          "w": "system",
+          "word": "system",
+          "kind": "object",
+          "s": 1,
+          "i": 27
+        },
+        {
+          "t": 268.0,
+          "w": "process,",
+          "word": "process",
+          "kind": "object",
+          "s": 2,
+          "i": 28
+        },
+        {
+          "t": 286.0,
+          "w": "render",
+          "word": "render",
+          "kind": "object",
+          "s": 3,
+          "i": 30
+        },
+        {
+          "t": 295.0,
+          "w": "server,",
+          "word": "server",
+          "kind": "object",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 311.0,
+          "w": "prepares",
+          "word": "prepares",
+          "kind": "object",
+          "s": 2,
+          "i": 32
+        },
+        {
+          "t": 327.5,
+          "w": "frame.",
+          "word": "frame",
+          "kind": "object",
+          "s": 3,
+          "i": 34
+        },
+        {
+          "t": 341.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 354.5,
+          "w": "graphics",
+          "word": "graphics",
+          "kind": "object",
+          "s": 2,
+          "i": 36
+        },
+        {
+          "t": 368.0,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 37
+        },
+        {
+          "t": 379.0,
+          "w": "paints",
+          "word": "paints",
+          "kind": "object",
+          "s": 3,
+          "i": 38
+        },
+        {
+          "t": 393.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 407.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 417.0,
+          "w": "display",
+          "word": "display",
+          "kind": "object",
+          "s": 2,
+          "i": 42
+        },
+        {
+          "t": 430.5,
+          "w": "shows",
+          "word": "shows",
+          "kind": "object",
+          "s": 1,
+          "i": 43
+        },
+        {
+          "t": 444.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 456.5,
+          "w": "next",
+          "word": "next",
+          "kind": "object",
+          "s": 1,
+          "i": 48
+        },
+        {
+          "t": 464.5,
+          "w": "tick.",
+          "word": "tick",
+          "kind": "object",
+          "s": 3,
+          "i": 49
+        },
+        {
+          "t": 478.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "from": 3423,
+      "to": 4271,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 8.5,
+        "w:and": 8.5,
+        "i:1": 14.5,
+        "w:here": 14.5,
+        "i:2": 20.0,
+        "w:is": 20.0,
+        "i:3": 23.5,
+        "w:the": 23.5,
+        "i:4": 26.5,
+        "w:clever": 26.5,
+        "i:5": 36.0,
+        "w:part": 36.0,
+        "i:6": 65.0,
+        "w:animations": 65.0,
+        "i:7": 85.5,
+        "w:run": 85.5,
+        "i:8": 93.5,
+        "w:inside": 93.5,
+        "i:9": 106.5,
+        "w:that": 106.5,
+        "i:10": 112.0,
+        "w:render": 112.0,
+        "i:11": 121.0,
+        "w:server": 121.0,
+        "i:12": 139.5,
+        "w:outside": 139.5,
+        "i:13": 151.5,
+        "i:14": 155.5,
+        "w:app": 155.5,
+        "i:15": 184.5,
+        "w:so": 184.5,
+        "i:16": 190.0,
+        "w:even": 190.0,
+        "i:17": 196.0,
+        "w:when": 196.0,
+        "i:18": 200.5,
+        "w:an": 200.5,
+        "i:19": 204.0,
+        "i:20": 210.5,
+        "i:21": 215.0,
+        "w:busy": 215.0,
+        "i:22": 235.0,
+        "i:23": 240.0,
+        "w:motion": 240.0,
+        "i:24": 250.5,
+        "w:on": 250.5,
+        "i:25": 254.5,
+        "w:screen": 254.5,
+        "i:26": 264.5,
+        "w:can": 264.5,
+        "i:27": 269.0,
+        "w:keep": 269.0,
+        "i:28": 276.0,
+        "w:going": 276.0,
+        "i:29": 298.5,
+        "i:30": 304.0,
+        "i:31": 310.5,
+        "w:nothing": 310.5,
+        "i:32": 321.0,
+        "w:moves": 321.0,
+        "i:33": 337.5,
+        "w:promotion": 337.5,
+        "i:34": 354.5,
+        "w:slows": 354.5,
+        "i:35": 364.5,
+        "i:36": 367.5,
+        "i:37": 378.5,
+        "w:right": 378.5,
+        "i:38": 386.5,
+        "w:down": 386.5,
+        "i:39": 392.5,
+        "w:to": 392.5,
+        "i:40": 395.5,
+        "w:save": 395.5,
+        "i:41": 403.5,
+        "w:battery": 403.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 25.5,
+          "w": "clever",
+          "word": "clever",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 35.0,
+          "w": "part.",
+          "word": "part",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 49.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 64.0,
+          "w": "Animations",
+          "word": "animations",
+          "kind": "object",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 78.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 84.5,
+          "w": "run",
+          "word": "run",
+          "kind": "action",
+          "s": 2,
+          "i": 7
+        },
+        {
+          "t": 92.5,
+          "w": "inside",
+          "word": "inside",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 106.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 111.0,
+          "w": "render",
+          "word": "render",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 120.0,
+          "w": "server,",
+          "word": "server",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 134.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 138.5,
+          "w": "outside",
+          "word": "outside",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 154.5,
+          "w": "app.",
+          "word": "app",
+          "kind": "object",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 168.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 182.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 189.0,
+          "w": "even",
+          "word": "even",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 195.0,
+          "w": "when",
+          "word": "when",
+          "kind": "object",
+          "s": 1,
+          "i": 17
+        },
+        {
+          "t": 203.0,
+          "w": "app",
+          "word": "app",
+          "kind": "object",
+          "s": 1,
+          "i": 19
+        },
+        {
+          "t": 214.0,
+          "w": "busy,",
+          "word": "busy",
+          "kind": "object",
+          "s": 3,
+          "i": 21
+        },
+        {
+          "t": 228.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 239.0,
+          "w": "motion",
+          "word": "motion",
+          "kind": "object",
+          "s": 1,
+          "i": 23
+        },
+        {
+          "t": 253.5,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 268.0,
+          "w": "keep",
+          "word": "keep",
+          "kind": "object",
+          "s": 1,
+          "i": 27
+        },
+        {
+          "t": 275.0,
+          "w": "going.",
+          "word": "going",
+          "kind": "object",
+          "s": 3,
+          "i": 28
+        },
+        {
+          "t": 289.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 303.0,
+          "w": "when",
+          "word": "when",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 309.5,
+          "w": "nothing",
+          "word": "nothing",
+          "kind": "object",
+          "s": 2,
+          "i": 31
+        },
+        {
+          "t": 320.0,
+          "w": "moves,",
+          "word": "moves",
+          "kind": "action",
+          "s": 2,
+          "i": 32
+        },
+        {
+          "t": 336.5,
+          "w": "ProMotion",
+          "word": "promotion",
+          "kind": "object",
+          "s": 3,
+          "i": 33
+        },
+        {
+          "t": 353.5,
+          "w": "slows",
+          "word": "slows",
+          "kind": "object",
+          "s": 1,
+          "i": 34
+        },
+        {
+          "t": 366.5,
+          "w": "screen",
+          "word": "screen",
+          "kind": "object",
+          "s": 1,
+          "i": 36
+        },
+        {
+          "t": 377.5,
+          "w": "right",
+          "word": "right",
+          "kind": "object",
+          "s": 1,
+          "i": 37
+        },
+        {
+          "t": 385.5,
+          "w": "down",
+          "word": "down",
+          "kind": "object",
+          "s": 1,
+          "i": 38
+        },
+        {
+          "t": 394.5,
+          "w": "save",
+          "word": "save",
+          "kind": "action",
+          "s": 2,
+          "i": 40
+        },
+        {
+          "t": 402.5,
+          "w": "battery.",
+          "word": "battery",
+          "kind": "object",
+          "s": 3,
+          "i": 41
+        },
+        {
+          "t": 416.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "from": 4271,
+      "to": 4894,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.0,
+        "w:but": 5.0,
+        "i:1": 12.0,
+        "w:software": 12.0,
+        "i:2": 26.0,
+        "w:alone": 26.0,
+        "i:3": 36.0,
+        "w:cannot": 36.0,
+        "i:4": 51.0,
+        "w:win": 51.0,
+        "i:5": 57.5,
+        "w:that": 57.5,
+        "i:6": 63.5,
+        "w:race": 63.5,
+        "i:7": 71.5,
+        "w:7200": 71.5,
+        "i:8": 104.5,
+        "w:times": 104.5,
+        "i:9": 114.0,
+        "w:a": 114.0,
+        "i:10": 116.0,
+        "w:minute": 116.0,
+        "i:11": 136.0,
+        "w:it": 136.0,
+        "i:12": 141.5,
+        "w:needs": 141.5,
+        "i:13": 149.5,
+        "i:14": 152.5,
+        "w:chip": 152.5,
+        "i:15": 161.0,
+        "w:built": 161.0,
+        "i:16": 169.0,
+        "w:for": 169.0,
+        "i:17": 174.0,
+        "w:exactly": 174.0,
+        "i:18": 191.5,
+        "w:this": 191.5,
+        "i:19": 196.0,
+        "i:20": 221.5,
+        "w:and": 221.5,
+        "i:21": 227.5,
+        "w:in": 227.5,
+        "i:22": 231.0,
+        "w:2008": 231.0,
+        "i:23": 254.0,
+        "w:apple": 254.0,
+        "i:24": 263.5,
+        "w:did": 263.5,
+        "i:25": 270.0,
+        "w:not": 270.0,
+        "i:26": 277.0,
+        "w:design": 277.0,
+        "i:27": 287.5,
+        "i:28": 289.5,
+        "w:single": 289.5,
+        "i:29": 300.0,
+        "w:one": 300.0
+      },
+      "beats": [
+        {
+          "t": 11.0,
+          "w": "software",
+          "word": "software",
+          "kind": "object",
+          "s": 2,
+          "i": 1
+        },
+        {
+          "t": 25.0,
+          "w": "alone",
+          "word": "alone",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 35.0,
+          "w": "cannot",
+          "word": "cannot",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 50.0,
+          "w": "win",
+          "word": "win",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 62.5,
+          "w": "race",
+          "word": "race",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 70.5,
+          "w": "7,200",
+          "word": "7200",
+          "kind": "number",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 84.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 98.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 103.5,
+          "w": "times",
+          "word": "times",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 115.0,
+          "w": "minute.",
+          "word": "minute",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 129.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 140.5,
+          "w": "needs",
+          "word": "needs",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 151.5,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 160.0,
+          "w": "built",
+          "word": "built",
+          "kind": "action",
+          "s": 2,
+          "i": 15
+        },
+        {
+          "t": 173.0,
+          "w": "exactly",
+          "word": "exactly",
+          "kind": "object",
+          "s": 2,
+          "i": 17
+        },
+        {
+          "t": 187.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 195.0,
+          "w": "software.",
+          "word": "software",
+          "kind": "object",
+          "s": 3,
+          "i": 19
+        },
+        {
+          "t": 209.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 223.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 230.0,
+          "w": "2008,",
+          "word": "2008",
+          "kind": "number",
+          "s": 3,
+          "i": 22
+        },
+        {
+          "t": 244.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 253.0,
+          "w": "Apple",
+          "word": "apple",
+          "kind": "object",
+          "s": 1,
+          "i": 23
+        },
+        {
+          "t": 269.0,
+          "w": "not",
+          "word": "not",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 276.0,
+          "w": "design",
+          "word": "design",
+          "kind": "object",
+          "s": 1,
+          "i": 26
+        },
+        {
+          "t": 288.5,
+          "w": "single",
+          "word": "single",
+          "kind": "state",
+          "s": 1,
+          "i": 28
+        },
+        {
+          "t": 299.0,
+          "w": "one.",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 29
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "from": 4894,
+      "to": 6437,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "push",
+        "frames": 12,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 2.5,
+        "w:so": 2.5,
+        "i:1": 12.0,
+        "w:it": 12.0,
+        "i:2": 17.0,
+        "w:bought": 17.0,
+        "i:3": 23.0,
+        "w:a": 23.0,
+        "i:4": 25.0,
+        "w:small": 25.0,
+        "i:5": 34.0,
+        "w:chip": 34.0,
+        "i:6": 41.0,
+        "w:company": 41.0,
+        "i:7": 53.0,
+        "w:p.a": 53.0,
+        "i:8": 63.0,
+        "w:semi": 63.0,
+        "i:9": 81.5,
+        "w:for": 81.5,
+        "i:10": 89.5,
+        "w:278": 89.5,
+        "i:11": 121.0,
+        "w:million": 121.0,
+        "i:12": 133.0,
+        "w:dollars": 133.0,
+        "i:13": 174.5,
+        "w:two": 174.5,
+        "i:14": 181.5,
+        "w:years": 181.5,
+        "i:15": 189.0,
+        "w:later": 189.0,
+        "i:16": 198.0,
+        "w:came": 198.0,
+        "i:17": 205.5,
+        "w:the": 205.5,
+        "i:18": 211.0,
+        "w:a4": 211.0,
+        "i:19": 230.0,
+        "i:20": 234.0,
+        "w:first": 234.0,
+        "i:21": 243.0,
+        "i:22": 250.0,
+        "w:apple": 250.0,
+        "i:23": 259.0,
+        "w:designed": 259.0,
+        "i:24": 269.0,
+        "w:itself": 269.0,
+        "i:25": 303.0,
+        "w:in": 303.0,
+        "i:26": 308.5,
+        "w:2013": 308.5,
+        "i:27": 330.5,
+        "i:28": 334.0,
+        "w:a7": 334.0,
+        "i:29": 348.0,
+        "w:became": 348.0,
+        "i:30": 358.0,
+        "i:31": 361.5,
+        "i:32": 369.5,
+        "w:64-bit": 369.5,
+        "i:33": 389.0,
+        "i:34": 396.0,
+        "i:35": 398.5,
+        "i:36": 400.5,
+        "w:phone": 400.5,
+        "i:37": 431.5,
+        "i:38": 436.5,
+        "w:2017": 436.5,
+        "i:39": 473.0,
+        "i:40": 478.5,
+        "w:a11": 478.5,
+        "i:41": 492.5,
+        "w:added": 492.5,
+        "i:42": 501.5,
+        "i:43": 504.0,
+        "w:neural": 504.0,
+        "i:44": 514.0,
+        "w:engine": 514.0,
+        "i:45": 523.0,
+        "i:46": 527.5,
+        "w:machine": 527.5,
+        "i:47": 538.5,
+        "w:learning": 538.5,
+        "i:48": 572.5,
+        "w:and": 572.5,
+        "i:49": 579.0,
+        "i:50": 583.0,
+        "w:2020": 583.0,
+        "i:51": 607.0,
+        "i:52": 611.0,
+        "w:same": 611.0,
+        "i:53": 619.5,
+        "w:idea": 619.5,
+        "i:54": 637.0,
+        "w:scaled": 637.0,
+        "i:55": 648.5,
+        "w:up": 648.5,
+        "i:56": 657.5,
+        "i:57": 668.5,
+        "i:58": 673.5,
+        "w:m1": 673.5,
+        "i:59": 698.0,
+        "i:60": 704.0,
+        "w:replaced": 704.0,
+        "i:61": 717.5,
+        "w:intel": 717.5,
+        "i:62": 730.0,
+        "w:inside": 730.0,
+        "i:63": 742.0,
+        "i:64": 745.0,
+        "w:mac": 745.0
+      },
+      "beats": [
+        {
+          "t": 16.0,
+          "w": "bought",
+          "word": "bought",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 24.0,
+          "w": "small",
+          "word": "small",
+          "kind": "state",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 33.0,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 40.0,
+          "w": "company,",
+          "word": "company",
+          "kind": "object",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 52.0,
+          "w": "P.A.",
+          "word": "pa",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 62.0,
+          "w": "Semi,",
+          "word": "semi",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 76.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 88.5,
+          "w": "278",
+          "word": "278",
+          "kind": "number",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 102.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 120.0,
+          "w": "million",
+          "word": "million",
+          "kind": "number",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 132.0,
+          "w": "dollars.",
+          "word": "dollars",
+          "kind": "object",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 146.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 160.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 173.5,
+          "w": "Two",
+          "word": "two",
+          "kind": "number",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 180.5,
+          "w": "years",
+          "word": "years",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 188.0,
+          "w": "later",
+          "word": "later",
+          "kind": "object",
+          "s": 1,
+          "i": 15
+        },
+        {
+          "t": 197.0,
+          "w": "came",
+          "word": "came",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 210.0,
+          "w": "A4,",
+          "word": "a4",
+          "kind": "number",
+          "s": 3,
+          "i": 18
+        },
+        {
+          "t": 224.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 233.0,
+          "w": "first",
+          "word": "first",
+          "kind": "object",
+          "s": 1,
+          "i": 20
+        },
+        {
+          "t": 242.0,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 21
+        },
+        {
+          "t": 249.0,
+          "w": "Apple",
+          "word": "apple",
+          "kind": "object",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 258.0,
+          "w": "designed",
+          "word": "designed",
+          "kind": "object",
+          "s": 2,
+          "i": 23
+        },
+        {
+          "t": 268.0,
+          "w": "itself.",
+          "word": "itself",
+          "kind": "object",
+          "s": 3,
+          "i": 24
+        },
+        {
+          "t": 282.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 296.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 307.5,
+          "w": "2013,",
+          "word": "2013",
+          "kind": "number",
+          "s": 3,
+          "i": 26
+        },
+        {
+          "t": 321.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 333.0,
+          "w": "A7",
+          "word": "a7",
+          "kind": "number",
+          "s": 3,
+          "i": 28
+        },
+        {
+          "t": 347.0,
+          "w": "became",
+          "word": "became",
+          "kind": "object",
+          "s": 1,
+          "i": 29
+        },
+        {
+          "t": 360.5,
+          "w": "first",
+          "word": "first",
+          "kind": "object",
+          "s": 1,
+          "i": 31
+        },
+        {
+          "t": 368.5,
+          "w": "64-bit",
+          "word": "64bit",
+          "kind": "number",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 382.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 388.0,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 33
+        },
+        {
+          "t": 399.5,
+          "w": "phone.",
+          "word": "phone",
+          "kind": "object",
+          "s": 3,
+          "i": 36
+        },
+        {
+          "t": 413.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 427.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 435.5,
+          "w": "2017,",
+          "word": "2017",
+          "kind": "number",
+          "s": 3,
+          "i": 38
+        },
+        {
+          "t": 449.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 463.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 477.5,
+          "w": "A11",
+          "word": "a11",
+          "kind": "number",
+          "s": 3,
+          "i": 40
+        },
+        {
+          "t": 491.5,
+          "w": "added",
+          "word": "added",
+          "kind": "object",
+          "s": 1,
+          "i": 41
+        },
+        {
+          "t": 503.0,
+          "w": "Neural",
+          "word": "neural",
+          "kind": "object",
+          "s": 3,
+          "i": 43
+        },
+        {
+          "t": 513.0,
+          "w": "Engine",
+          "word": "engine",
+          "kind": "object",
+          "s": 1,
+          "i": 44
+        },
+        {
+          "t": 526.5,
+          "w": "machine",
+          "word": "machine",
+          "kind": "object",
+          "s": 2,
+          "i": 46
+        },
+        {
+          "t": 537.5,
+          "w": "learning.",
+          "word": "learning",
+          "kind": "object",
+          "s": 3,
+          "i": 47
+        },
+        {
+          "t": 551.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 565.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 582.0,
+          "w": "2020,",
+          "word": "2020",
+          "kind": "number",
+          "s": 3,
+          "i": 50
+        },
+        {
+          "t": 596.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 610.0,
+          "w": "same",
+          "word": "same",
+          "kind": "state",
+          "s": 1,
+          "i": 52
+        },
+        {
+          "t": 618.5,
+          "w": "idea,",
+          "word": "idea",
+          "kind": "object",
+          "s": 1,
+          "i": 53
+        },
+        {
+          "t": 636.0,
+          "w": "scaled",
+          "word": "scaled",
+          "kind": "object",
+          "s": 1,
+          "i": 54
+        },
+        {
+          "t": 650.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 656.5,
+          "w": "became",
+          "word": "became",
+          "kind": "object",
+          "s": 1,
+          "i": 56
+        },
+        {
+          "t": 672.5,
+          "w": "M1,",
+          "word": "m1",
+          "kind": "number",
+          "s": 3,
+          "i": 58
+        },
+        {
+          "t": 686.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 703.0,
+          "w": "replaced",
+          "word": "replaced",
+          "kind": "object",
+          "s": 2,
+          "i": 60
+        },
+        {
+          "t": 716.5,
+          "w": "Intel",
+          "word": "intel",
+          "kind": "object",
+          "s": 1,
+          "i": 61
+        },
+        {
+          "t": 729.0,
+          "w": "inside",
+          "word": "inside",
+          "kind": "object",
+          "s": 1,
+          "i": 62
+        },
+        {
+          "t": 744.0,
+          "w": "Mac.",
+          "word": "mac",
+          "kind": "object",
+          "s": 3,
+          "i": 64
+        },
+        {
+          "t": 758.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "from": 6437,
+      "to": 7309,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 15.0,
+        "w:then": 15.0,
+        "i:1": 22.5,
+        "w:apple": 22.5,
+        "i:2": 31.5,
+        "w:went": 31.5,
+        "i:3": 36.5,
+        "w:after": 36.5,
+        "i:4": 43.5,
+        "w:the": 43.5,
+        "i:5": 46.5,
+        "w:chips": 46.5,
+        "i:6": 54.5,
+        "w:around": 54.5,
+        "i:7": 63.5,
+        "w:it": 63.5,
+        "i:8": 79.0,
+        "w:its": 79.0,
+        "i:9": 86.0,
+        "w:own": 86.0,
+        "i:10": 93.5,
+        "w:modem": 93.5,
+        "i:11": 104.0,
+        "i:12": 107.5,
+        "w:c1": 107.5,
+        "i:13": 125.0,
+        "w:in": 125.0,
+        "i:14": 129.5,
+        "w:2025": 129.5,
+        "i:15": 164.0,
+        "i:16": 170.5,
+        "i:17": 178.5,
+        "w:wireless": 178.5,
+        "i:18": 192.5,
+        "w:chip": 192.5,
+        "i:19": 203.0,
+        "i:20": 208.5,
+        "w:n1": 208.5,
+        "i:21": 233.5,
+        "i:22": 238.0,
+        "w:same": 238.0,
+        "i:23": 246.5,
+        "w:year": 246.5,
+        "i:24": 274.0,
+        "w:and": 274.0,
+        "i:25": 280.5,
+        "w:now": 280.5,
+        "i:26": 297.0,
+        "i:27": 301.5,
+        "i:28": 305.0,
+        "w:iphone": 305.0,
+        "i:29": 318.0,
+        "w:18": 318.0,
+        "i:30": 329.0,
+        "w:pro": 329.0,
+        "i:31": 341.0,
+        "i:32": 347.0,
+        "w:a20": 347.0,
+        "i:33": 361.0,
+        "i:34": 379.0,
+        "w:apples": 379.0,
+        "i:35": 390.0,
+        "w:first": 390.0,
+        "i:36": 401.0,
+        "w:2": 401.0,
+        "i:37": 407.5,
+        "w:nanometer": 407.5,
+        "i:38": 421.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 21.5,
+          "w": "Apple",
+          "word": "apple",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 30.5,
+          "w": "went",
+          "word": "went",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 35.5,
+          "w": "after",
+          "word": "after",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 45.5,
+          "w": "chips",
+          "word": "chips",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 53.5,
+          "w": "around",
+          "word": "around",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 67.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 85.0,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 92.5,
+          "w": "modem,",
+          "word": "modem",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 106.5,
+          "w": "C1,",
+          "word": "c1",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 120.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 128.5,
+          "w": "2025.",
+          "word": "2025",
+          "kind": "number",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 142.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 156.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 169.5,
+          "w": "own",
+          "word": "own",
+          "kind": "object",
+          "s": 1,
+          "i": 16
+        },
+        {
+          "t": 177.5,
+          "w": "wireless",
+          "word": "wireless",
+          "kind": "object",
+          "s": 2,
+          "i": 17
+        },
+        {
+          "t": 191.5,
+          "w": "chip,",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 18
+        },
+        {
+          "t": 207.5,
+          "w": "N1,",
+          "word": "n1",
+          "kind": "number",
+          "s": 3,
+          "i": 20
+        },
+        {
+          "t": 221.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 237.0,
+          "w": "same",
+          "word": "same",
+          "kind": "state",
+          "s": 1,
+          "i": 22
+        },
+        {
+          "t": 245.5,
+          "w": "year.",
+          "word": "year",
+          "kind": "object",
+          "s": 3,
+          "i": 23
+        },
+        {
+          "t": 259.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 273.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 279.5,
+          "w": "now,",
+          "word": "now",
+          "kind": "object",
+          "s": 1,
+          "i": 25
+        },
+        {
+          "t": 293.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 304.0,
+          "w": "iPhone",
+          "word": "iphone",
+          "kind": "object",
+          "s": 1,
+          "i": 28
+        },
+        {
+          "t": 317.0,
+          "w": "18",
+          "word": "18",
+          "kind": "number",
+          "s": 3,
+          "i": 29
+        },
+        {
+          "t": 328.0,
+          "w": "Pro,",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 30
+        },
+        {
+          "t": 346.0,
+          "w": "A20",
+          "word": "a20",
+          "kind": "number",
+          "s": 3,
+          "i": 32
+        },
+        {
+          "t": 360.0,
+          "w": "Pro:",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 33
+        },
+        {
+          "t": 378.0,
+          "w": "Apple's",
+          "word": "apple's",
+          "kind": "object",
+          "s": 2,
+          "i": 34
+        },
+        {
+          "t": 389.0,
+          "w": "first",
+          "word": "first",
+          "kind": "object",
+          "s": 1,
+          "i": 35
+        },
+        {
+          "t": 400.0,
+          "w": "2",
+          "word": "2",
+          "kind": "number",
+          "s": 3,
+          "i": 36
+        },
+        {
+          "t": 406.5,
+          "w": "nanometer",
+          "word": "nanometer",
+          "kind": "object",
+          "s": 2,
+          "i": 37
+        },
+        {
+          "t": 420.5,
+          "w": "chip.",
+          "word": "chip",
+          "kind": "object",
+          "s": 3,
+          "i": 38
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "from": 7309,
+      "to": 7835,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 8,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 5.5,
+        "w:eighteen": 5.5,
+        "i:1": 19.5,
+        "w:years": 19.5,
+        "i:2": 28.0,
+        "w:of": 28.0,
+        "i:3": 31.5,
+        "w:work": 31.5,
+        "i:4": 59.0,
+        "w:for": 59.0,
+        "i:5": 65.0,
+        "w:one": 65.0,
+        "i:6": 73.0,
+        "w:feeling": 73.0,
+        "i:7": 83.0,
+        "w:under": 83.0,
+        "i:8": 88.5,
+        "w:your": 88.5,
+        "i:9": 94.0,
+        "w:thumb": 94.0,
+        "i:10": 117.0,
+        "w:so": 117.0,
+        "i:11": 127.5,
+        "w:where": 127.5,
+        "i:12": 135.0,
+        "w:does": 135.0,
+        "i:13": 140.0,
+        "w:all": 140.0,
+        "i:14": 144.5,
+        "i:15": 147.0,
+        "w:it": 147.0,
+        "i:16": 150.0,
+        "w:actually": 150.0,
+        "i:17": 162.0,
+        "w:sit": 162.0,
+        "i:18": 193.0,
+        "w:lets": 193.0,
+        "i:19": 200.0,
+        "w:open": 200.0,
+        "i:20": 207.0,
+        "w:the": 207.0,
+        "i:21": 210.0,
+        "w:phone": 210.0
+      },
+      "beats": [
+        {
+          "t": 4.5,
+          "w": "Eighteen",
+          "word": "eighteen",
+          "kind": "object",
+          "s": 3,
+          "i": 0
+        },
+        {
+          "t": 18.5,
+          "w": "years",
+          "word": "years",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 30.5,
+          "w": "work,",
+          "word": "work",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 44.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 58.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 64.0,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 72.0,
+          "w": "feeling",
+          "word": "feeling",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 82.0,
+          "w": "under",
+          "word": "under",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 93.0,
+          "w": "thumb.",
+          "word": "thumb",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 107.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 121.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 126.5,
+          "w": "where",
+          "word": "where",
+          "kind": "object",
+          "s": 1,
+          "i": 11
+        },
+        {
+          "t": 139.0,
+          "w": "all",
+          "word": "all",
+          "kind": "object",
+          "s": 1,
+          "i": 13
+        },
+        {
+          "t": 149.0,
+          "w": "actually",
+          "word": "actually",
+          "kind": "object",
+          "s": 2,
+          "i": 16
+        },
+        {
+          "t": 161.0,
+          "w": "sit?",
+          "word": "sit",
+          "kind": "object",
+          "s": 3,
+          "i": 17
+        },
+        {
+          "t": 175.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 189.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 199.0,
+          "w": "open",
+          "word": "open",
+          "kind": "action",
+          "s": 3,
+          "i": 19
+        },
+        {
+          "t": 209.0,
+          "w": "phone.",
+          "word": "phone",
+          "kind": "object",
+          "s": 3,
+          "i": 21
+        },
+        {
+          "t": 223.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 237.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 251.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    }
+  ],
+  "style": "explainer",
+  "safe": {
+    "focusY": 0.5,
+    "zoom": 1,
+    "fadeTo": 0
+  },
+  "beats": {
+    "count": 323,
+    "words": 220,
+    "per_s": 2.47
+  },
+  "gl": "angle"
+}

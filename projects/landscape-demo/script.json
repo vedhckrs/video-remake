@@ -1,0 +1,58 @@
+{
+ "id": "landscape-demo",
+ "title": "Landscape 16:9 demo (engine test, no voice)",
+ "handle": null,
+ "style": "explainer",
+ "output": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 60
+ },
+ "_note": "Hand-made test for the landscape mode (26 Nov 2026): fake word timings in vo_words.json, silent vo.mp3, placeholder photo made with PIL. The 'Apple Newsroom' credit is sample text only.",
+ "scenes": [
+  {
+   "id": "S01",
+   "section": "hook",
+   "bg": "dark",
+   "text": "This board runs your whole phone, and one chip does all the thinking.",
+   "keywords": {
+    "chip": "select",
+    "board": "select"
+   },
+   "visual": "Dark logic-board world (kit hardware): camera eases to the SoC when 'chip' is spoken; lower-third captions + keyword box."
+  },
+  {
+   "id": "S02",
+   "section": "mechanism",
+   "bg": "dark",
+   "transition": "portal",
+   "transition_frames": 12,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "text": "Dive inside the package and billions of transistors appear.",
+   "keywords": {
+    "billions": "select"
+   },
+   "visual": "NanoZoom: package -> die -> transistor grid, one continuous dive centred on the frame."
+  },
+  {
+   "id": "S03",
+   "section": "proof",
+   "bg": "dark",
+   "transition": "portal",
+   "transition_frames": 12,
+   "origin": [
+    0.5,
+    0.5
+   ],
+   "credit": "Raimond Spekking / Wikimedia Commons, CC BY-SA 4.0",
+   "text": "Apple showed its first one on stage in twenty ten.",
+   "keywords": {
+    "first": "select"
+   },
+   "visual": "Photo (placeholder) full-bleed with a slow Ken-Burns push, then a framed print; Source credit bottom-right."
+  }
+ ]
+}

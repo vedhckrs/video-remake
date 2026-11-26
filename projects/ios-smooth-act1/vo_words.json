@@ -1,0 +1,1815 @@
+{
+  "text": "Watch this scroll. One frame just arrived 8 milliseconds late. You can't see it. But your thumb can feel it. On an iPhone, that almost never happens. That is not luck. To make a scroll this smooth, Apple designed its own chips, its own modem and its own software, and spent 125 million dollars a day on research last year. So let's open it up, layer by layer, all the way down to a single transistor. Start with the screen. It can redraw 120 times a second. So every frame has a deadline: about 8.3 milliseconds. Miss it, and the old picture stays on screen for one more beat. Engineers call that a hitch. Here is the race. Your finger moves, and the touch goes to the app. The app works out what should change, then hands it over. A separate system process, the render server, prepares the frame. The graphics chip paints it. And the display shows it on the very next tick. And here is the clever part. Animations run inside that render server, outside the app. So even when an app is busy, the motion on screen can keep going. And when nothing moves, ProMotion slows the screen right down to save battery. But software alone cannot win that race 7,200 times a minute. It needs a chip built for exactly this software. And in 2008, Apple did not design a single one. So it bought a small chip company, P.A. Semi, for 278 million dollars. Two years later came the A4, the first chip Apple designed itself. In 2013, the A7 became the first 64-bit chip in a phone. In 2017, the A11 added a Neural Engine for machine learning. And in 2020, the same idea, scaled up, became the M1, and replaced Intel inside the Mac. Then Apple went after the chips around it. Its own modem, the C1, in 2025. Its own wireless chip, the N1, the same year. And now, in the iPhone 18 Pro, the A20 Pro: Apple's first 2 nanometer chip. Eighteen years of work, for one feeling under your thumb. So where does all of it actually sit? Let's open the phone.",
+  "words": [
+    {
+      "w": "Watch",
+      "start": 0.0,
+      "end": 0.313
+    },
+    {
+      "w": "this",
+      "start": 0.36,
+      "end": 0.499
+    },
+    {
+      "w": "scroll.",
+      "start": 0.546,
+      "end": 1.022
+    },
+    {
+      "w": "One",
+      "start": 1.66,
+      "end": 1.869
+    },
+    {
+      "w": "frame",
+      "start": 1.916,
+      "end": 2.159
+    },
+    {
+      "w": "just",
+      "start": 2.206,
+      "end": 2.38
+    },
+    {
+      "w": "arrived",
+      "start": 2.426,
+      "end": 2.763
+    },
+    {
+      "w": "8",
+      "start": 2.833,
+      "end": 2.995
+    },
+    {
+      "w": "milliseconds",
+      "start": 3.065,
+      "end": 3.611
+    },
+    {
+      "w": "late.",
+      "start": 3.669,
+      "end": 4.04
+    },
+    {
+      "w": "You",
+      "start": 4.447,
+      "end": 4.551
+    },
+    {
+      "w": "can't",
+      "start": 4.598,
+      "end": 4.783
+    },
+    {
+      "w": "see",
+      "start": 4.83,
+      "end": 4.992
+    },
+    {
+      "w": "it.",
+      "start": 5.039,
+      "end": 5.294
+    },
+    {
+      "w": "But",
+      "start": 5.933,
+      "end": 6.072
+    },
+    {
+      "w": "your",
+      "start": 6.107,
+      "end": 6.211
+    },
+    {
+      "w": "thumb",
+      "start": 6.258,
+      "end": 6.455
+    },
+    {
+      "w": "can",
+      "start": 6.502,
+      "end": 6.618
+    },
+    {
+      "w": "feel",
+      "start": 6.676,
+      "end": 6.873
+    },
+    {
+      "w": "it.",
+      "start": 6.931,
+      "end": 7.152
+    },
+    {
+      "w": "On",
+      "start": 7.895,
+      "end": 8.057
+    },
+    {
+      "w": "an",
+      "start": 8.104,
+      "end": 8.162
+    },
+    {
+      "w": "iPhone,",
+      "start": 8.208,
+      "end": 8.638
+    },
+    {
+      "w": "that",
+      "start": 8.673,
+      "end": 8.847
+    },
+    {
+      "w": "almost",
+      "start": 8.905,
+      "end": 9.207
+    },
+    {
+      "w": "never",
+      "start": 9.265,
+      "end": 9.451
+    },
+    {
+      "w": "happens.",
+      "start": 9.509,
+      "end": 10.066
+    },
+    {
+      "w": "That",
+      "start": 10.704,
+      "end": 10.948
+    },
+    {
+      "w": "is",
+      "start": 11.006,
+      "end": 11.076
+    },
+    {
+      "w": "not",
+      "start": 11.134,
+      "end": 11.273
+    },
+    {
+      "w": "luck.",
+      "start": 11.32,
+      "end": 11.68
+    },
+    {
+      "w": "To",
+      "start": 12.318,
+      "end": 12.411
+    },
+    {
+      "w": "make",
+      "start": 12.457,
+      "end": 12.632
+    },
+    {
+      "w": "a",
+      "start": 12.655,
+      "end": 12.69
+    },
+    {
+      "w": "scroll",
+      "start": 12.748,
+      "end": 13.038
+    },
+    {
+      "w": "this",
+      "start": 13.084,
+      "end": 13.212
+    },
+    {
+      "w": "smooth,",
+      "start": 13.259,
+      "end": 13.746
+    },
+    {
+      "w": "Apple",
+      "start": 13.932,
+      "end": 14.211
+    },
+    {
+      "w": "designed",
+      "start": 14.245,
+      "end": 14.571
+    },
+    {
+      "w": "its",
+      "start": 14.617,
+      "end": 14.745
+    },
+    {
+      "w": "own",
+      "start": 14.803,
+      "end": 14.988
+    },
+    {
+      "w": "chips,",
+      "start": 15.047,
+      "end": 15.476
+    },
+    {
+      "w": "its",
+      "start": 15.535,
+      "end": 15.685
+    },
+    {
+      "w": "own",
+      "start": 15.732,
+      "end": 15.86
+    },
+    {
+      "w": "modem",
+      "start": 15.906,
+      "end": 16.173
+    },
+    {
+      "w": "and",
+      "start": 16.336,
+      "end": 16.498
+    },
+    {
+      "w": "its",
+      "start": 16.556,
+      "end": 16.672
+    },
+    {
+      "w": "own",
+      "start": 16.73,
+      "end": 16.916
+    },
+    {
+      "w": "software,",
+      "start": 16.974,
+      "end": 17.555
+    },
+    {
+      "w": "and",
+      "start": 17.659,
+      "end": 17.798
+    },
+    {
+      "w": "spent",
+      "start": 17.845,
+      "end": 18.089
+    },
+    {
+      "w": "125",
+      "start": 18.17,
+      "end": 18.936
+    },
+    {
+      "w": "million",
+      "start": 19.018,
+      "end": 19.285
+    },
+    {
+      "w": "dollars",
+      "start": 19.319,
+      "end": 19.61
+    },
+    {
+      "w": "a",
+      "start": 19.656,
+      "end": 19.679
+    },
+    {
+      "w": "day",
+      "start": 19.737,
+      "end": 19.923
+    },
+    {
+      "w": "on",
+      "start": 20.144,
+      "end": 20.306
+    },
+    {
+      "w": "research",
+      "start": 20.411,
+      "end": 20.782
+    },
+    {
+      "w": "last",
+      "start": 20.84,
+      "end": 21.026
+    },
+    {
+      "w": "year.",
+      "start": 21.072,
+      "end": 21.386
+    },
+    {
+      "w": "So",
+      "start": 22.025,
+      "end": 22.141
+    },
+    {
+      "w": "let's",
+      "start": 22.199,
+      "end": 22.35
+    },
+    {
+      "w": "open",
+      "start": 22.408,
+      "end": 22.605
+    },
+    {
+      "w": "it",
+      "start": 22.663,
+      "end": 22.721
+    },
+    {
+      "w": "up,",
+      "start": 22.779,
+      "end": 22.977
+    },
+    {
+      "w": "layer",
+      "start": 23.081,
+      "end": 23.336
+    },
+    {
+      "w": "by",
+      "start": 23.394,
+      "end": 23.499
+    },
+    {
+      "w": "layer,",
+      "start": 23.557,
+      "end": 24.01
+    },
+    {
+      "w": "all",
+      "start": 24.3,
+      "end": 24.509
+    },
+    {
+      "w": "the",
+      "start": 24.555,
+      "end": 24.625
+    },
+    {
+      "w": "way",
+      "start": 24.672,
+      "end": 24.776
+    },
+    {
+      "w": "down",
+      "start": 24.834,
+      "end": 25.043
+    },
+    {
+      "w": "to",
+      "start": 25.09,
+      "end": 25.159
+    },
+    {
+      "w": "a",
+      "start": 25.24,
+      "end": 25.264
+    },
+    {
+      "w": "single",
+      "start": 25.368,
+      "end": 25.705
+    },
+    {
+      "w": "transistor.",
+      "start": 25.728,
+      "end": 26.471
+    },
+    {
+      "w": "Start",
+      "start": 27.11,
+      "end": 27.353
+    },
+    {
+      "w": "with",
+      "start": 27.388,
+      "end": 27.481
+    },
+    {
+      "w": "the",
+      "start": 27.504,
+      "end": 27.574
+    },
+    {
+      "w": "screen.",
+      "start": 27.597,
+      "end": 28.062
+    },
+    {
+      "w": "It",
+      "start": 28.468,
+      "end": 28.584
+    },
+    {
+      "w": "can",
+      "start": 28.631,
+      "end": 28.747
+    },
+    {
+      "w": "redraw",
+      "start": 28.805,
+      "end": 29.199
+    },
+    {
+      "w": "120",
+      "start": 29.304,
+      "end": 29.85
+    },
+    {
+      "w": "times",
+      "start": 29.896,
+      "end": 30.14
+    },
+    {
+      "w": "a",
+      "start": 30.186,
+      "end": 30.221
+    },
+    {
+      "w": "second.",
+      "start": 30.267,
+      "end": 30.72
+    },
+    {
+      "w": "So",
+      "start": 31.359,
+      "end": 31.498
+    },
+    {
+      "w": "every",
+      "start": 31.579,
+      "end": 31.811
+    },
+    {
+      "w": "frame",
+      "start": 31.869,
+      "end": 32.113
+    },
+    {
+      "w": "has",
+      "start": 32.148,
+      "end": 32.264
+    },
+    {
+      "w": "a",
+      "start": 32.311,
+      "end": 32.334
+    },
+    {
+      "w": "deadline:",
+      "start": 32.392,
+      "end": 32.88
+    },
+    {
+      "w": "about",
+      "start": 33.065,
+      "end": 33.332
+    },
+    {
+      "w": "8.3",
+      "start": 33.437,
+      "end": 34.075
+    },
+    {
+      "w": "milliseconds.",
+      "start": 34.145,
+      "end": 34.888
+    },
+    {
+      "w": "Miss",
+      "start": 35.434,
+      "end": 35.666
+    },
+    {
+      "w": "it,",
+      "start": 35.712,
+      "end": 35.875
+    },
+    {
+      "w": "and",
+      "start": 36.061,
+      "end": 36.2
+    },
+    {
+      "w": "the",
+      "start": 36.246,
+      "end": 36.316
+    },
+    {
+      "w": "old",
+      "start": 36.374,
+      "end": 36.537
+    },
+    {
+      "w": "picture",
+      "start": 36.583,
+      "end": 36.873
+    },
+    {
+      "w": "stays",
+      "start": 36.897,
+      "end": 37.117
+    },
+    {
+      "w": "on",
+      "start": 37.175,
+      "end": 37.326
+    },
+    {
+      "w": "screen",
+      "start": 37.384,
+      "end": 37.651
+    },
+    {
+      "w": "for",
+      "start": 37.698,
+      "end": 37.814
+    },
+    {
+      "w": "one",
+      "start": 37.883,
+      "end": 38.069
+    },
+    {
+      "w": "more",
+      "start": 38.104,
+      "end": 38.267
+    },
+    {
+      "w": "beat.",
+      "start": 38.313,
+      "end": 38.685
+    },
+    {
+      "w": "Engineers",
+      "start": 39.23,
+      "end": 39.718
+    },
+    {
+      "w": "call",
+      "start": 39.776,
+      "end": 39.927
+    },
+    {
+      "w": "that",
+      "start": 39.985,
+      "end": 40.113
+    },
+    {
+      "w": "a",
+      "start": 40.159,
+      "end": 40.182
+    },
+    {
+      "w": "hitch.",
+      "start": 40.24,
+      "end": 40.647
+    },
+    {
+      "w": "Here",
+      "start": 41.192,
+      "end": 41.366
+    },
+    {
+      "w": "is",
+      "start": 41.401,
+      "end": 41.471
+    },
+    {
+      "w": "the",
+      "start": 41.517,
+      "end": 41.587
+    },
+    {
+      "w": "race.",
+      "start": 41.645,
+      "end": 42.04
+    },
+    {
+      "w": "Your",
+      "start": 42.678,
+      "end": 42.829
+    },
+    {
+      "w": "finger",
+      "start": 42.864,
+      "end": 43.108
+    },
+    {
+      "w": "moves,",
+      "start": 43.166,
+      "end": 43.596
+    },
+    {
+      "w": "and",
+      "start": 43.735,
+      "end": 43.874
+    },
+    {
+      "w": "the",
+      "start": 43.921,
+      "end": 43.99
+    },
+    {
+      "w": "touch",
+      "start": 44.037,
+      "end": 44.257
+    },
+    {
+      "w": "goes",
+      "start": 44.315,
+      "end": 44.489
+    },
+    {
+      "w": "to",
+      "start": 44.524,
+      "end": 44.582
+    },
+    {
+      "w": "the",
+      "start": 44.629,
+      "end": 44.698
+    },
+    {
+      "w": "app.",
+      "start": 44.757,
+      "end": 45.058
+    },
+    {
+      "w": "The",
+      "start": 45.697,
+      "end": 45.813
+    },
+    {
+      "w": "app",
+      "start": 45.86,
+      "end": 45.999
+    },
+    {
+      "w": "works",
+      "start": 46.045,
+      "end": 46.254
+    },
+    {
+      "w": "out",
+      "start": 46.289,
+      "end": 46.417
+    },
+    {
+      "w": "what",
+      "start": 46.463,
+      "end": 46.591
+    },
+    {
+      "w": "should",
+      "start": 46.649,
+      "end": 46.858
+    },
+    {
+      "w": "change,",
+      "start": 46.905,
+      "end": 47.346
+    },
+    {
+      "w": "then",
+      "start": 47.508,
+      "end": 47.729
+    },
+    {
+      "w": "hands",
+      "start": 47.787,
+      "end": 48.008
+    },
+    {
+      "w": "it",
+      "start": 48.042,
+      "end": 48.1
+    },
+    {
+      "w": "over.",
+      "start": 48.135,
+      "end": 48.495
+    },
+    {
+      "w": "A",
+      "start": 49.041,
+      "end": 49.099
+    },
+    {
+      "w": "separate",
+      "start": 49.203,
+      "end": 49.54
+    },
+    {
+      "w": "system",
+      "start": 49.563,
+      "end": 49.842
+    },
+    {
+      "w": "process,",
+      "start": 49.888,
+      "end": 50.318
+    },
+    {
+      "w": "the",
+      "start": 50.353,
+      "end": 50.422
+    },
+    {
+      "w": "render",
+      "start": 50.48,
+      "end": 50.724
+    },
+    {
+      "w": "server,",
+      "start": 50.782,
+      "end": 51.212
+    },
+    {
+      "w": "prepares",
+      "start": 51.316,
+      "end": 51.723
+    },
+    {
+      "w": "the",
+      "start": 51.769,
+      "end": 51.839
+    },
+    {
+      "w": "frame.",
+      "start": 51.874,
+      "end": 52.257
+    },
+    {
+      "w": "The",
+      "start": 52.605,
+      "end": 52.721
+    },
+    {
+      "w": "graphics",
+      "start": 52.768,
+      "end": 53.174
+    },
+    {
+      "w": "chip",
+      "start": 53.22,
+      "end": 53.441
+    },
+    {
+      "w": "paints",
+      "start": 53.58,
+      "end": 53.917
+    },
+    {
+      "w": "it.",
+      "start": 53.975,
+      "end": 54.207
+    },
+    {
+      "w": "And",
+      "start": 54.556,
+      "end": 54.706
+    },
+    {
+      "w": "the",
+      "start": 54.753,
+      "end": 54.823
+    },
+    {
+      "w": "display",
+      "start": 54.857,
+      "end": 55.241
+    },
+    {
+      "w": "shows",
+      "start": 55.299,
+      "end": 55.519
+    },
+    {
+      "w": "it",
+      "start": 55.554,
+      "end": 55.612
+    },
+    {
+      "w": "on",
+      "start": 55.647,
+      "end": 55.717
+    },
+    {
+      "w": "the",
+      "start": 55.751,
+      "end": 55.821
+    },
+    {
+      "w": "very",
+      "start": 55.879,
+      "end": 56.111
+    },
+    {
+      "w": "next",
+      "start": 56.169,
+      "end": 56.39
+    },
+    {
+      "w": "tick.",
+      "start": 56.425,
+      "end": 56.785
+    },
+    {
+      "w": "And",
+      "start": 57.33,
+      "end": 57.47
+    },
+    {
+      "w": "here",
+      "start": 57.528,
+      "end": 57.667
+    },
+    {
+      "w": "is",
+      "start": 57.713,
+      "end": 57.783
+    },
+    {
+      "w": "the",
+      "start": 57.83,
+      "end": 57.899
+    },
+    {
+      "w": "clever",
+      "start": 57.934,
+      "end": 58.189
+    },
+    {
+      "w": "part.",
+      "start": 58.247,
+      "end": 58.584
+    },
+    {
+      "w": "Animations",
+      "start": 59.223,
+      "end": 59.838
+    },
+    {
+      "w": "run",
+      "start": 59.896,
+      "end": 60.059
+    },
+    {
+      "w": "inside",
+      "start": 60.163,
+      "end": 60.581
+    },
+    {
+      "w": "that",
+      "start": 60.604,
+      "end": 60.732
+    },
+    {
+      "w": "render",
+      "start": 60.79,
+      "end": 61.022
+    },
+    {
+      "w": "server,",
+      "start": 61.08,
+      "end": 61.51
+    },
+    {
+      "w": "outside",
+      "start": 61.696,
+      "end": 62.067
+    },
+    {
+      "w": "the",
+      "start": 62.102,
+      "end": 62.172
+    },
+    {
+      "w": "app.",
+      "start": 62.241,
+      "end": 62.555
+    },
+    {
+      "w": "So",
+      "start": 63.193,
+      "end": 63.31
+    },
+    {
+      "w": "even",
+      "start": 63.379,
+      "end": 63.542
+    },
+    {
+      "w": "when",
+      "start": 63.577,
+      "end": 63.704
+    },
+    {
+      "w": "an",
+      "start": 63.739,
+      "end": 63.797
+    },
+    {
+      "w": "app",
+      "start": 63.855,
+      "end": 64.006
+    },
+    {
+      "w": "is",
+      "start": 64.064,
+      "end": 64.145
+    },
+    {
+      "w": "busy,",
+      "start": 64.215,
+      "end": 64.668
+    },
+    {
+      "w": "the",
+      "start": 64.888,
+      "end": 64.993
+    },
+    {
+      "w": "motion",
+      "start": 65.051,
+      "end": 65.353
+    },
+    {
+      "w": "on",
+      "start": 65.399,
+      "end": 65.469
+    },
+    {
+      "w": "screen",
+      "start": 65.527,
+      "end": 65.806
+    },
+    {
+      "w": "can",
+      "start": 65.864,
+      "end": 65.968
+    },
+    {
+      "w": "keep",
+      "start": 66.015,
+      "end": 66.189
+    },
+    {
+      "w": "going.",
+      "start": 66.247,
+      "end": 66.653
+    },
+    {
+      "w": "And",
+      "start": 67.002,
+      "end": 67.129
+    },
+    {
+      "w": "when",
+      "start": 67.187,
+      "end": 67.338
+    },
+    {
+      "w": "nothing",
+      "start": 67.396,
+      "end": 67.686
+    },
+    {
+      "w": "moves,",
+      "start": 67.745,
+      "end": 68.162
+    },
+    {
+      "w": "ProMotion",
+      "start": 68.302,
+      "end": 68.801
+    },
+    {
+      "w": "slows",
+      "start": 68.859,
+      "end": 69.161
+    },
+    {
+      "w": "the",
+      "start": 69.207,
+      "end": 69.277
+    },
+    {
+      "w": "screen",
+      "start": 69.3,
+      "end": 69.591
+    },
+    {
+      "w": "right",
+      "start": 69.672,
+      "end": 69.881
+    },
+    {
+      "w": "down",
+      "start": 69.927,
+      "end": 70.101
+    },
+    {
+      "w": "to",
+      "start": 70.136,
+      "end": 70.183
+    },
+    {
+      "w": "save",
+      "start": 70.241,
+      "end": 70.473
+    },
+    {
+      "w": "battery.",
+      "start": 70.508,
+      "end": 71.007
+    },
+    {
+      "w": "But",
+      "start": 71.355,
+      "end": 71.518
+    },
+    {
+      "w": "software",
+      "start": 71.576,
+      "end": 72.029
+    },
+    {
+      "w": "alone",
+      "start": 72.052,
+      "end": 72.33
+    },
+    {
+      "w": "cannot",
+      "start": 72.376,
+      "end": 72.841
+    },
+    {
+      "w": "win",
+      "start": 72.887,
+      "end": 73.038
+    },
+    {
+      "w": "that",
+      "start": 73.096,
+      "end": 73.236
+    },
+    {
+      "w": "race",
+      "start": 73.294,
+      "end": 73.514
+    },
+    {
+      "w": "7,200",
+      "start": 73.572,
+      "end": 74.629
+    },
+    {
+      "w": "times",
+      "start": 74.675,
+      "end": 74.931
+    },
+    {
+      "w": "a",
+      "start": 74.977,
+      "end": 75.0
+    },
+    {
+      "w": "minute.",
+      "start": 75.047,
+      "end": 75.43
+    },
+    {
+      "w": "It",
+      "start": 75.72,
+      "end": 75.859
+    },
+    {
+      "w": "needs",
+      "start": 75.906,
+      "end": 76.115
+    },
+    {
+      "w": "a",
+      "start": 76.173,
+      "end": 76.208
+    },
+    {
+      "w": "chip",
+      "start": 76.266,
+      "end": 76.498
+    },
+    {
+      "w": "built",
+      "start": 76.556,
+      "end": 76.765
+    },
+    {
+      "w": "for",
+      "start": 76.823,
+      "end": 76.928
+    },
+    {
+      "w": "exactly",
+      "start": 76.986,
+      "end": 77.508
+    },
+    {
+      "w": "this",
+      "start": 77.566,
+      "end": 77.682
+    },
+    {
+      "w": "software.",
+      "start": 77.717,
+      "end": 78.274
+    },
+    {
+      "w": "And",
+      "start": 78.565,
+      "end": 78.704
+    },
+    {
+      "w": "in",
+      "start": 78.762,
+      "end": 78.82
+    },
+    {
+      "w": "2008,",
+      "start": 78.878,
+      "end": 79.586
+    },
+    {
+      "w": "Apple",
+      "start": 79.644,
+      "end": 79.935
+    },
+    {
+      "w": "did",
+      "start": 79.969,
+      "end": 80.109
+    },
+    {
+      "w": "not",
+      "start": 80.178,
+      "end": 80.376
+    },
+    {
+      "w": "design",
+      "start": 80.422,
+      "end": 80.712
+    },
+    {
+      "w": "a",
+      "start": 80.759,
+      "end": 80.782
+    },
+    {
+      "w": "single",
+      "start": 80.84,
+      "end": 81.13
+    },
+    {
+      "w": "one.",
+      "start": 81.188,
+      "end": 81.467
+    },
+    {
+      "w": "So",
+      "start": 81.653,
+      "end": 81.827
+    },
+    {
+      "w": "it",
+      "start": 81.966,
+      "end": 82.082
+    },
+    {
+      "w": "bought",
+      "start": 82.129,
+      "end": 82.315
+    },
+    {
+      "w": "a",
+      "start": 82.338,
+      "end": 82.361
+    },
+    {
+      "w": "small",
+      "start": 82.408,
+      "end": 82.64
+    },
+    {
+      "w": "chip",
+      "start": 82.698,
+      "end": 82.872
+    },
+    {
+      "w": "company,",
+      "start": 82.93,
+      "end": 83.29
+    },
+    {
+      "w": "P.A.",
+      "start": 83.325,
+      "end": 83.615
+    },
+    {
+      "w": "Semi,",
+      "start": 83.661,
+      "end": 84.103
+    },
+    {
+      "w": "for",
+      "start": 84.288,
+      "end": 84.439
+    },
+    {
+      "w": "278",
+      "start": 84.544,
+      "end": 85.496
+    },
+    {
+      "w": "million",
+      "start": 85.6,
+      "end": 85.949
+    },
+    {
+      "w": "dollars.",
+      "start": 85.995,
+      "end": 86.506
+    },
+    {
+      "w": "Two",
+      "start": 87.377,
+      "end": 87.551
+    },
+    {
+      "w": "years",
+      "start": 87.609,
+      "end": 87.806
+    },
+    {
+      "w": "later",
+      "start": 87.864,
+      "end": 88.108
+    },
+    {
+      "w": "came",
+      "start": 88.166,
+      "end": 88.386
+    },
+    {
+      "w": "the",
+      "start": 88.421,
+      "end": 88.526
+    },
+    {
+      "w": "A4,",
+      "start": 88.607,
+      "end": 89.199
+    },
+    {
+      "w": "the",
+      "start": 89.234,
+      "end": 89.315
+    },
+    {
+      "w": "first",
+      "start": 89.373,
+      "end": 89.617
+    },
+    {
+      "w": "chip",
+      "start": 89.664,
+      "end": 89.849
+    },
+    {
+      "w": "Apple",
+      "start": 89.907,
+      "end": 90.174
+    },
+    {
+      "w": "designed",
+      "start": 90.198,
+      "end": 90.499
+    },
+    {
+      "w": "itself.",
+      "start": 90.534,
+      "end": 91.034
+    },
+    {
+      "w": "In",
+      "start": 91.672,
+      "end": 91.8
+    },
+    {
+      "w": "2013,",
+      "start": 91.858,
+      "end": 92.554
+    },
+    {
+      "w": "the",
+      "start": 92.578,
+      "end": 92.647
+    },
+    {
+      "w": "A7",
+      "start": 92.705,
+      "end": 93.1
+    },
+    {
+      "w": "became",
+      "start": 93.17,
+      "end": 93.46
+    },
+    {
+      "w": "the",
+      "start": 93.495,
+      "end": 93.565
+    },
+    {
+      "w": "first",
+      "start": 93.611,
+      "end": 93.832
+    },
+    {
+      "w": "64-bit",
+      "start": 93.878,
+      "end": 94.493
+    },
+    {
+      "w": "chip",
+      "start": 94.54,
+      "end": 94.726
+    },
+    {
+      "w": "in",
+      "start": 94.76,
+      "end": 94.818
+    },
+    {
+      "w": "a",
+      "start": 94.853,
+      "end": 94.876
+    },
+    {
+      "w": "phone.",
+      "start": 94.923,
+      "end": 95.399
+    },
+    {
+      "w": "In",
+      "start": 95.945,
+      "end": 96.072
+    },
+    {
+      "w": "2017,",
+      "start": 96.119,
+      "end": 97.222
+    },
+    {
+      "w": "the",
+      "start": 97.338,
+      "end": 97.454
+    },
+    {
+      "w": "A11",
+      "start": 97.524,
+      "end": 97.907
+    },
+    {
+      "w": "added",
+      "start": 97.976,
+      "end": 98.232
+    },
+    {
+      "w": "a",
+      "start": 98.278,
+      "end": 98.301
+    },
+    {
+      "w": "Neural",
+      "start": 98.371,
+      "end": 98.638
+    },
+    {
+      "w": "Engine",
+      "start": 98.696,
+      "end": 98.963
+    },
+    {
+      "w": "for",
+      "start": 98.998,
+      "end": 99.091
+    },
+    {
+      "w": "machine",
+      "start": 99.149,
+      "end": 99.486
+    },
+    {
+      "w": "learning.",
+      "start": 99.52,
+      "end": 99.915
+    },
+    {
+      "w": "And",
+      "start": 100.658,
+      "end": 100.809
+    },
+    {
+      "w": "in",
+      "start": 100.867,
+      "end": 100.937
+    },
+    {
+      "w": "2020,",
+      "start": 100.995,
+      "end": 101.75
+    },
+    {
+      "w": "the",
+      "start": 101.796,
+      "end": 101.877
+    },
+    {
+      "w": "same",
+      "start": 101.935,
+      "end": 102.179
+    },
+    {
+      "w": "idea,",
+      "start": 102.214,
+      "end": 102.632
+    },
+    {
+      "w": "scaled",
+      "start": 102.794,
+      "end": 103.131
+    },
+    {
+      "w": "up,",
+      "start": 103.189,
+      "end": 103.41
+    },
+    {
+      "w": "became",
+      "start": 103.491,
+      "end": 103.816
+    },
+    {
+      "w": "the",
+      "start": 103.851,
+      "end": 103.955
+    },
+    {
+      "w": "M1,",
+      "start": 104.013,
+      "end": 104.582
+    },
+    {
+      "w": "and",
+      "start": 104.838,
+      "end": 104.977
+    },
+    {
+      "w": "replaced",
+      "start": 105.035,
+      "end": 105.418
+    },
+    {
+      "w": "Intel",
+      "start": 105.476,
+      "end": 105.813
+    },
+    {
+      "w": "inside",
+      "start": 105.894,
+      "end": 106.277
+    },
+    {
+      "w": "the",
+      "start": 106.3,
+      "end": 106.37
+    },
+    {
+      "w": "Mac.",
+      "start": 106.405,
+      "end": 106.776
+    },
+    {
+      "w": "Then",
+      "start": 107.786,
+      "end": 107.972
+    },
+    {
+      "w": "Apple",
+      "start": 108.03,
+      "end": 108.297
+    },
+    {
+      "w": "went",
+      "start": 108.332,
+      "end": 108.46
+    },
+    {
+      "w": "after",
+      "start": 108.495,
+      "end": 108.68
+    },
+    {
+      "w": "the",
+      "start": 108.727,
+      "end": 108.797
+    },
+    {
+      "w": "chips",
+      "start": 108.831,
+      "end": 109.064
+    },
+    {
+      "w": "around",
+      "start": 109.098,
+      "end": 109.354
+    },
+    {
+      "w": "it.",
+      "start": 109.4,
+      "end": 109.621
+    },
+    {
+      "w": "Its",
+      "start": 109.911,
+      "end": 110.085
+    },
+    {
+      "w": "own",
+      "start": 110.155,
+      "end": 110.341
+    },
+    {
+      "w": "modem,",
+      "start": 110.399,
+      "end": 110.724
+    },
+    {
+      "w": "the",
+      "start": 110.747,
+      "end": 110.817
+    },
+    {
+      "w": "C1,",
+      "start": 110.875,
+      "end": 111.409
+    },
+    {
+      "w": "in",
+      "start": 111.444,
+      "end": 111.536
+    },
+    {
+      "w": "2025.",
+      "start": 111.595,
+      "end": 112.488
+    },
+    {
+      "w": "Its",
+      "start": 112.744,
+      "end": 112.906
+    },
+    {
+      "w": "own",
+      "start": 112.964,
+      "end": 113.173
+    },
+    {
+      "w": "wireless",
+      "start": 113.232,
+      "end": 113.661
+    },
+    {
+      "w": "chip,",
+      "start": 113.708,
+      "end": 113.998
+    },
+    {
+      "w": "the",
+      "start": 114.056,
+      "end": 114.172
+    },
+    {
+      "w": "N1,",
+      "start": 114.23,
+      "end": 114.776
+    },
+    {
+      "w": "the",
+      "start": 115.066,
+      "end": 115.17
+    },
+    {
+      "w": "same",
+      "start": 115.217,
+      "end": 115.461
+    },
+    {
+      "w": "year.",
+      "start": 115.507,
+      "end": 115.879
+    },
+    {
+      "w": "And",
+      "start": 116.424,
+      "end": 116.575
+    },
+    {
+      "w": "now,",
+      "start": 116.633,
+      "end": 117.005
+    },
+    {
+      "w": "in",
+      "start": 117.191,
+      "end": 117.295
+    },
+    {
+      "w": "the",
+      "start": 117.33,
+      "end": 117.399
+    },
+    {
+      "w": "iPhone",
+      "start": 117.446,
+      "end": 117.829
+    },
+    {
+      "w": "18",
+      "start": 117.876,
+      "end": 118.189
+    },
+    {
+      "w": "Pro,",
+      "start": 118.247,
+      "end": 118.595
+    },
+    {
+      "w": "the",
+      "start": 118.642,
+      "end": 118.781
+    },
+    {
+      "w": "A20",
+      "start": 118.851,
+      "end": 119.257
+    },
+    {
+      "w": "Pro:",
+      "start": 119.315,
+      "end": 119.733
+    },
+    {
+      "w": "Apple's",
+      "start": 119.919,
+      "end": 120.244
+    },
+    {
+      "w": "first",
+      "start": 120.29,
+      "end": 120.546
+    },
+    {
+      "w": "2",
+      "start": 120.65,
+      "end": 120.813
+    },
+    {
+      "w": "nanometer",
+      "start": 120.871,
+      "end": 121.277
+    },
+    {
+      "w": "chip.",
+      "start": 121.335,
+      "end": 121.648
+    },
+    {
+      "w": "Eighteen",
+      "start": 121.997,
+      "end": 122.415
+    },
+    {
+      "w": "years",
+      "start": 122.473,
+      "end": 122.693
+    },
+    {
+      "w": "of",
+      "start": 122.751,
+      "end": 122.809
+    },
+    {
+      "w": "work,",
+      "start": 122.868,
+      "end": 123.239
+    },
+    {
+      "w": "for",
+      "start": 123.785,
+      "end": 123.924
+    },
+    {
+      "w": "one",
+      "start": 123.982,
+      "end": 124.191
+    },
+    {
+      "w": "feeling",
+      "start": 124.249,
+      "end": 124.539
+    },
+    {
+      "w": "under",
+      "start": 124.586,
+      "end": 124.725
+    },
+    {
+      "w": "your",
+      "start": 124.772,
+      "end": 124.888
+    },
+    {
+      "w": "thumb.",
+      "start": 124.946,
+      "end": 125.317
+    },
+    {
+      "w": "So",
+      "start": 125.724,
+      "end": 125.933
+    },
+    {
+      "w": "where",
+      "start": 126.072,
+      "end": 126.281
+    },
+    {
+      "w": "does",
+      "start": 126.316,
+      "end": 126.432
+    },
+    {
+      "w": "all",
+      "start": 126.478,
+      "end": 126.606
+    },
+    {
+      "w": "of",
+      "start": 126.641,
+      "end": 126.687
+    },
+    {
+      "w": "it",
+      "start": 126.722,
+      "end": 126.78
+    },
+    {
+      "w": "actually",
+      "start": 126.815,
+      "end": 127.163
+    },
+    {
+      "w": "sit?",
+      "start": 127.221,
+      "end": 127.604
+    },
+    {
+      "w": "Let's",
+      "start": 128.243,
+      "end": 128.44
+    },
+    {
+      "w": "open",
+      "start": 128.487,
+      "end": 128.684
+    },
+    {
+      "w": "the",
+      "start": 128.719,
+      "end": 128.789
+    },
+    {
+      "w": "phone.",
+      "start": 128.812,
+      "end": 129.381
+    }
+  ]
+}

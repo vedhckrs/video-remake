@@ -1,0 +1,2100 @@
+{
+  "id": "cine3d-demo",
+  "title": "cine3d demo: real 3D phone + transistor (engine test, no voice)",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1920,
+    "height": 1080
+  },
+  "durationInFrames": 3810,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "cine3d-demo/vo.mp3",
+    "voVolume": 1.0,
+    "sfx": []
+  },
+  "captions": {
+    "y": 0.84,
+    "size": 36,
+    "pages": [
+      {
+        "from": 21,
+        "to": 130,
+        "words": [
+          {
+            "w": "The",
+            "frame": 21,
+            "style": "normal"
+          },
+          {
+            "w": "real",
+            "frame": 48,
+            "style": "select"
+          },
+          {
+            "w": "iPhone",
+            "frame": 76,
+            "style": "normal"
+          },
+          {
+            "w": "eighteen",
+            "frame": 103,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 131,
+        "to": 158,
+        "words": [
+          {
+            "w": "Pro,",
+            "frame": 131,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 159,
+        "to": 268,
+        "words": [
+          {
+            "w": "with",
+            "frame": 159,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 186,
+            "style": "normal"
+          },
+          {
+            "w": "live",
+            "frame": 213,
+            "style": "normal"
+          },
+          {
+            "w": "feed",
+            "frame": 241,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 269,
+        "to": 380,
+        "words": [
+          {
+            "w": "on",
+            "frame": 269,
+            "style": "normal"
+          },
+          {
+            "w": "its",
+            "frame": 296,
+            "style": "normal"
+          },
+          {
+            "w": "screen.",
+            "frame": 324,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 411,
+        "to": 520,
+        "words": [
+          {
+            "w": "Turn",
+            "frame": 411,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 448,
+            "style": "normal"
+          },
+          {
+            "w": "around:",
+            "frame": 484,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 521,
+        "to": 593,
+        "words": [
+          {
+            "w": "the",
+            "frame": 521,
+            "style": "normal"
+          },
+          {
+            "w": "back,",
+            "frame": 558,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 594,
+        "to": 769,
+        "words": [
+          {
+            "w": "and",
+            "frame": 594,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 631,
+            "style": "normal"
+          },
+          {
+            "w": "camera",
+            "frame": 668,
+            "style": "normal"
+          },
+          {
+            "w": "plateau.",
+            "frame": 704,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 801,
+        "to": 908,
+        "words": [
+          {
+            "w": "Push",
+            "frame": 801,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 828,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 855,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 882,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 909,
+        "to": 935,
+        "words": [
+          {
+            "w": "lenses,",
+            "frame": 909,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 936,
+        "to": 1043,
+        "words": [
+          {
+            "w": "with",
+            "frame": 936,
+            "style": "normal"
+          },
+          {
+            "w": "real",
+            "frame": 963,
+            "style": "normal"
+          },
+          {
+            "w": "depth",
+            "frame": 990,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 1017,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1044,
+        "to": 1100,
+        "words": [
+          {
+            "w": "field.",
+            "frame": 1044,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1131,
+        "to": 1250,
+        "words": [
+          {
+            "w": "The",
+            "frame": 1131,
+            "style": "normal"
+          },
+          {
+            "w": "back",
+            "frame": 1161,
+            "style": "normal"
+          },
+          {
+            "w": "turns",
+            "frame": 1191,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 1221,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1251,
+        "to": 1280,
+        "words": [
+          {
+            "w": "glass:",
+            "frame": 1251,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1281,
+        "to": 1400,
+        "words": [
+          {
+            "w": "the",
+            "frame": 1281,
+            "style": "normal"
+          },
+          {
+            "w": "A",
+            "frame": 1311,
+            "style": "normal"
+          },
+          {
+            "w": "twenty",
+            "frame": 1341,
+            "style": "normal"
+          },
+          {
+            "w": "Pro",
+            "frame": 1371,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1401,
+        "to": 1490,
+        "words": [
+          {
+            "w": "sits",
+            "frame": 1401,
+            "style": "normal"
+          },
+          {
+            "w": "here.",
+            "frame": 1431,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1521,
+        "to": 1652,
+        "words": [
+          {
+            "w": "Lift",
+            "frame": 1521,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1554,
+            "style": "normal"
+          },
+          {
+            "w": "back",
+            "frame": 1587,
+            "style": "normal"
+          },
+          {
+            "w": "away",
+            "frame": 1620,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1653,
+        "to": 1784,
+        "words": [
+          {
+            "w": "and",
+            "frame": 1653,
+            "style": "normal"
+          },
+          {
+            "w": "move",
+            "frame": 1686,
+            "style": "normal"
+          },
+          {
+            "w": "in",
+            "frame": 1719,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 1752,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1785,
+        "to": 1880,
+        "words": [
+          {
+            "w": "the",
+            "frame": 1785,
+            "style": "normal"
+          },
+          {
+            "w": "board.",
+            "frame": 1818,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1911,
+        "to": 2060,
+        "words": [
+          {
+            "w": "Inside",
+            "frame": 1911,
+            "style": "normal"
+          },
+          {
+            "w": "that",
+            "frame": 1961,
+            "style": "normal"
+          },
+          {
+            "w": "chip:",
+            "frame": 2011,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2061,
+        "to": 2238,
+        "words": [
+          {
+            "w": "one",
+            "frame": 2061,
+            "style": "normal"
+          },
+          {
+            "w": "nanosheet",
+            "frame": 2111,
+            "style": "normal"
+          },
+          {
+            "w": "transistor.",
+            "frame": 2161,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 2271,
+        "to": 2414,
+        "words": [
+          {
+            "w": "The",
+            "frame": 2271,
+            "style": "normal"
+          },
+          {
+            "w": "gate",
+            "frame": 2307,
+            "style": "select"
+          },
+          {
+            "w": "switches",
+            "frame": 2343,
+            "style": "normal"
+          },
+          {
+            "w": "on,",
+            "frame": 2379,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2415,
+        "to": 2558,
+        "words": [
+          {
+            "w": "and",
+            "frame": 2415,
+            "style": "normal"
+          },
+          {
+            "w": "electrons",
+            "frame": 2451,
+            "style": "select"
+          },
+          {
+            "w": "stream",
+            "frame": 2487,
+            "style": "normal"
+          },
+          {
+            "w": "through",
+            "frame": 2523,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2559,
+        "to": 2659,
+        "words": [
+          {
+            "w": "every",
+            "frame": 2559,
+            "style": "normal"
+          },
+          {
+            "w": "sheet.",
+            "frame": 2595,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2691,
+        "to": 2773,
+        "words": [
+          {
+            "w": "Pull",
+            "frame": 2691,
+            "style": "normal"
+          },
+          {
+            "w": "back:",
+            "frame": 2732,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2774,
+        "to": 2896,
+        "words": [
+          {
+            "w": "billions",
+            "frame": 2774,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 2815,
+            "style": "normal"
+          },
+          {
+            "w": "them,",
+            "frame": 2856,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2897,
+        "to": 3049,
+        "words": [
+          {
+            "w": "side",
+            "frame": 2897,
+            "style": "normal"
+          },
+          {
+            "w": "by",
+            "frame": 2938,
+            "style": "normal"
+          },
+          {
+            "w": "side.",
+            "frame": 2980,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3081,
+        "to": 3170,
+        "words": [
+          {
+            "w": "The",
+            "frame": 3081,
+            "style": "normal"
+          },
+          {
+            "w": "same",
+            "frame": 3111,
+            "style": "normal"
+          },
+          {
+            "w": "transistor,",
+            "frame": 3141,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3171,
+        "to": 3290,
+        "words": [
+          {
+            "w": "through",
+            "frame": 3171,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 3201,
+            "style": "normal"
+          },
+          {
+            "w": "lens",
+            "frame": 3231,
+            "style": "select"
+          },
+          {
+            "w": "over",
+            "frame": 3261,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3291,
+        "to": 3380,
+        "words": [
+          {
+            "w": "the",
+            "frame": 3291,
+            "style": "normal"
+          },
+          {
+            "w": "package.",
+            "frame": 3321,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3411,
+        "to": 3493,
+        "words": [
+          {
+            "w": "Cut",
+            "frame": 3411,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 3438,
+            "style": "normal"
+          },
+          {
+            "w": "open:",
+            "frame": 3466,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3494,
+        "to": 3602,
+        "words": [
+          {
+            "w": "every",
+            "frame": 3494,
+            "style": "normal"
+          },
+          {
+            "w": "layer",
+            "frame": 3521,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 3549,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 3576,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3603,
+        "to": 3630,
+        "words": [
+          {
+            "w": "gate,",
+            "frame": 3603,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 3631,
+        "to": 3809,
+        "words": [
+          {
+            "w": "wrapped",
+            "frame": 3631,
+            "style": "normal"
+          },
+          {
+            "w": "round",
+            "frame": 3658,
+            "style": "normal"
+          },
+          {
+            "w": "each",
+            "frame": 3686,
+            "style": "normal"
+          },
+          {
+            "w": "sheet.",
+            "frame": 3714,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer",
+    "anchor": "bottom"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 381,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 12.0,
+        "w:the": 12.0,
+        "i:1": 25.5,
+        "w:real": 25.5,
+        "i:2": 39.5,
+        "w:iphone": 39.5,
+        "i:3": 53.0,
+        "w:eighteen": 53.0,
+        "i:4": 67.0,
+        "w:pro": 67.0,
+        "i:5": 81.0,
+        "w:with": 81.0,
+        "i:6": 94.5,
+        "w:a": 94.5,
+        "i:7": 108.0,
+        "w:live": 108.0,
+        "i:8": 122.0,
+        "w:feed": 122.0,
+        "i:9": 136.0,
+        "w:on": 136.0,
+        "i:10": 149.5,
+        "w:its": 149.5,
+        "i:11": 163.5,
+        "w:screen": 163.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 24.5,
+          "w": "real",
+          "word": "real",
+          "kind": "object",
+          "s": 3,
+          "i": 1
+        },
+        {
+          "t": 38.5,
+          "w": "iPhone",
+          "word": "iphone",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 52.0,
+          "w": "eighteen",
+          "word": "eighteen",
+          "kind": "object",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 66.0,
+          "w": "Pro,",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 80.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 94.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 107.0,
+          "w": "live",
+          "word": "live",
+          "kind": "action",
+          "s": 2,
+          "i": 7
+        },
+        {
+          "t": 121.0,
+          "w": "feed",
+          "word": "feed",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 135.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 149.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 162.5,
+          "w": "screen.",
+          "word": "screen",
+          "kind": "object",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 176.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from": 381,
+      "to": 770,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 16.5,
+        "w:turn": 16.5,
+        "i:1": 35.0,
+        "w:it": 35.0,
+        "i:2": 53.0,
+        "w:around": 53.0,
+        "i:3": 71.5,
+        "w:the": 71.5,
+        "i:4": 90.0,
+        "w:back": 90.0,
+        "i:5": 108.0,
+        "w:and": 108.0,
+        "i:6": 126.5,
+        "i:7": 145.0,
+        "w:camera": 145.0,
+        "i:8": 163.0,
+        "w:plateau": 163.0
+      },
+      "beats": [
+        {
+          "t": 15.5,
+          "w": "Turn",
+          "word": "turn",
+          "kind": "action",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 29.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 43.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 52.0,
+          "w": "around:",
+          "word": "around",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 66.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 80.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 89.0,
+          "w": "back,",
+          "word": "back",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 103.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 117.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 131.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 144.0,
+          "w": "camera",
+          "word": "camera",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 162.0,
+          "w": "plateau.",
+          "word": "plateau",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 176.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 190.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from": 770,
+      "to": 1101,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 17.0,
+        "w:push": 17.0,
+        "i:1": 30.5,
+        "w:in": 30.5,
+        "i:2": 44.0,
+        "w:on": 44.0,
+        "i:3": 57.5,
+        "w:the": 57.5,
+        "i:4": 71.0,
+        "w:lenses": 71.0,
+        "i:5": 84.5,
+        "w:with": 84.5,
+        "i:6": 98.0,
+        "w:real": 98.0,
+        "i:7": 111.5,
+        "w:depth": 111.5,
+        "i:8": 125.0,
+        "w:of": 125.0,
+        "i:9": 138.5,
+        "w:field": 138.5
+      },
+      "beats": [
+        {
+          "t": 16.0,
+          "w": "Push",
+          "word": "push",
+          "kind": "action",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 30.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 44.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 58.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.0,
+          "w": "lenses,",
+          "word": "lenses",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 84.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 97.0,
+          "w": "real",
+          "word": "real",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 110.5,
+          "w": "depth",
+          "word": "depth",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 124.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 137.5,
+          "w": "field.",
+          "word": "field",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 151.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from": 1101,
+      "to": 1491,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 16.5,
+        "w:the": 16.5,
+        "i:1": 31.5,
+        "w:back": 31.5,
+        "i:2": 46.5,
+        "w:turns": 46.5,
+        "i:3": 61.5,
+        "w:to": 61.5,
+        "i:4": 76.5,
+        "w:glass": 76.5,
+        "i:5": 91.5,
+        "i:6": 106.5,
+        "w:a": 106.5,
+        "i:7": 121.5,
+        "w:twenty": 121.5,
+        "i:8": 136.5,
+        "w:pro": 136.5,
+        "i:9": 151.5,
+        "w:sits": 151.5,
+        "i:10": 166.5,
+        "w:here": 166.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 30.5,
+          "w": "back",
+          "word": "back",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 45.5,
+          "w": "turns",
+          "word": "turns",
+          "kind": "action",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 59.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 75.5,
+          "w": "glass:",
+          "word": "glass",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 89.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 103.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 120.5,
+          "w": "twenty",
+          "word": "twenty",
+          "kind": "number",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 135.5,
+          "w": "Pro",
+          "word": "pro",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 150.5,
+          "w": "sits",
+          "word": "sits",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 164.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 178.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "from": 1491,
+      "to": 1881,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 16.5,
+        "w:lift": 16.5,
+        "i:1": 33.0,
+        "w:the": 33.0,
+        "i:2": 49.5,
+        "w:back": 49.5,
+        "i:3": 66.0,
+        "w:away": 66.0,
+        "i:4": 82.5,
+        "w:and": 82.5,
+        "i:5": 99.0,
+        "w:move": 99.0,
+        "i:6": 115.5,
+        "w:in": 115.5,
+        "i:7": 132.0,
+        "w:on": 132.0,
+        "i:8": 148.5,
+        "i:9": 165.0,
+        "w:board": 165.0
+      },
+      "beats": [
+        {
+          "t": 15.5,
+          "w": "Lift",
+          "word": "lift",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 29.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 43.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 48.5,
+          "w": "back",
+          "word": "back",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 65.0,
+          "w": "away",
+          "word": "away",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 79.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 93.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 98.0,
+          "w": "move",
+          "word": "move",
+          "kind": "action",
+          "s": 2,
+          "i": 5
+        },
+        {
+          "t": 112.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 126.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 140.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 154.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 164.0,
+          "w": "board.",
+          "word": "board",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 178.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "from": 1881,
+      "to": 2239,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 16.5,
+        "w:inside": 16.5,
+        "i:1": 41.5,
+        "w:that": 41.5,
+        "i:2": 66.5,
+        "w:chip": 66.5,
+        "i:3": 91.5,
+        "w:one": 91.5,
+        "i:4": 116.5,
+        "w:nanosheet": 116.5,
+        "i:5": 141.5,
+        "w:transistor": 141.5
+      },
+      "beats": [
+        {
+          "t": 15.5,
+          "w": "Inside",
+          "word": "inside",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 29.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 43.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 57.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 65.5,
+          "w": "chip:",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 2
+        },
+        {
+          "t": 79.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 90.5,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 104.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 115.5,
+          "w": "nanosheet",
+          "word": "nanosheet",
+          "kind": "object",
+          "s": 2,
+          "i": 4
+        },
+        {
+          "t": 129.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 140.5,
+          "w": "transistor.",
+          "word": "transistor",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 154.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 168.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "from": 2239,
+      "to": 2660,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 17.5,
+        "w:the": 17.5,
+        "i:1": 35.5,
+        "w:gate": 35.5,
+        "i:2": 53.5,
+        "w:switches": 53.5,
+        "i:3": 71.5,
+        "w:on": 71.5,
+        "i:4": 89.5,
+        "w:and": 89.5,
+        "i:5": 107.5,
+        "w:electrons": 107.5,
+        "i:6": 125.5,
+        "w:stream": 125.5,
+        "i:7": 143.5,
+        "w:through": 143.5,
+        "i:8": 161.5,
+        "w:every": 161.5,
+        "i:9": 179.5,
+        "w:sheet": 179.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 28.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 34.5,
+          "w": "gate",
+          "word": "gate",
+          "kind": "object",
+          "s": 3,
+          "i": 1
+        },
+        {
+          "t": 52.5,
+          "w": "switches",
+          "word": "switches",
+          "kind": "object",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 66.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 80.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 94.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 106.5,
+          "w": "electrons",
+          "word": "electrons",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 124.5,
+          "w": "stream",
+          "word": "stream",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 142.5,
+          "w": "through",
+          "word": "through",
+          "kind": "object",
+          "s": 2,
+          "i": 7
+        },
+        {
+          "t": 160.5,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 178.5,
+          "w": "sheet.",
+          "word": "sheet",
+          "kind": "object",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 192.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "from": 2660,
+      "to": 3050,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 17.0,
+        "w:pull": 17.0,
+        "i:1": 37.5,
+        "w:back": 37.5,
+        "i:2": 58.0,
+        "w:billions": 58.0,
+        "i:3": 79.0,
+        "w:of": 79.0,
+        "i:4": 99.5,
+        "w:them": 99.5,
+        "i:5": 120.0,
+        "w:side": 120.0,
+        "i:6": 141.0,
+        "w:by": 141.0,
+        "i:7": 161.5
+      },
+      "beats": [
+        {
+          "t": 16.0,
+          "w": "Pull",
+          "word": "pull",
+          "kind": "action",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 30.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 36.5,
+          "w": "back:",
+          "word": "back",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 50.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 57.0,
+          "w": "billions",
+          "word": "billions",
+          "kind": "number",
+          "s": 3,
+          "i": 2
+        },
+        {
+          "t": 71.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 85.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 99.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 113.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 119.0,
+          "w": "side",
+          "word": "side",
+          "kind": "object",
+          "s": 1,
+          "i": 5
+        },
+        {
+          "t": 133.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 147.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 160.5,
+          "w": "side.",
+          "word": "side",
+          "kind": "object",
+          "s": 3,
+          "i": 7
+        },
+        {
+          "t": 174.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 188.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "from": 3050,
+      "to": 3381,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 17.0,
+        "w:the": 17.0,
+        "i:1": 32.0,
+        "w:same": 32.0,
+        "i:2": 47.0,
+        "w:transistor": 47.0,
+        "i:3": 62.0,
+        "w:through": 62.0,
+        "i:4": 77.0,
+        "w:a": 77.0,
+        "i:5": 92.0,
+        "w:lens": 92.0,
+        "i:6": 107.0,
+        "w:over": 107.0,
+        "i:7": 122.0,
+        "i:8": 137.0,
+        "w:package": 137.0
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 31.0,
+          "w": "same",
+          "word": "same",
+          "kind": "state",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 46.0,
+          "w": "transistor,",
+          "word": "transistor",
+          "kind": "object",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 61.0,
+          "w": "through",
+          "word": "through",
+          "kind": "object",
+          "s": 2,
+          "i": 3
+        },
+        {
+          "t": 75.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 91.0,
+          "w": "lens",
+          "word": "lens",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 105.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 119.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 136.0,
+          "w": "package.",
+          "word": "package",
+          "kind": "object",
+          "s": 3,
+          "i": 8
+        },
+        {
+          "t": 150.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "from": 3381,
+      "to": 3810,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 20,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 16.5,
+        "w:cut": 16.5,
+        "i:1": 30.0,
+        "w:it": 30.0,
+        "i:2": 44.0,
+        "w:open": 44.0,
+        "i:3": 57.5,
+        "w:every": 57.5,
+        "i:4": 71.5,
+        "w:layer": 71.5,
+        "i:5": 85.5,
+        "w:of": 85.5,
+        "i:6": 99.0,
+        "w:the": 99.0,
+        "i:7": 112.5,
+        "w:gate": 112.5,
+        "i:8": 126.5,
+        "w:wrapped": 126.5,
+        "i:9": 140.5,
+        "w:round": 140.5,
+        "i:10": 154.0,
+        "w:each": 154.0,
+        "i:11": 168.0,
+        "w:sheet": 168.0
+      },
+      "beats": [
+        {
+          "t": 15.5,
+          "w": "Cut",
+          "word": "cut",
+          "kind": "action",
+          "s": 2,
+          "i": 0
+        },
+        {
+          "t": 29.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 43.0,
+          "w": "open:",
+          "word": "open",
+          "kind": "action",
+          "s": 2,
+          "i": 2
+        },
+        {
+          "t": 56.5,
+          "w": "every",
+          "word": "every",
+          "kind": "state",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 70.5,
+          "w": "layer",
+          "word": "layer",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 84.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 98.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 111.5,
+          "w": "gate,",
+          "word": "gate",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 125.5,
+          "w": "wrapped",
+          "word": "wrapped",
+          "kind": "object",
+          "s": 2,
+          "i": 8
+        },
+        {
+          "t": 139.5,
+          "w": "round",
+          "word": "round",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 153.0,
+          "w": "each",
+          "word": "each",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 167.0,
+          "w": "sheet.",
+          "word": "sheet",
+          "kind": "object",
+          "s": 3,
+          "i": 11
+        },
+        {
+          "t": 181.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 195.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 209.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    }
+  ],
+  "style": "explainer",
+  "safe": {
+    "focusY": 0.5,
+    "zoom": 1,
+    "fadeTo": 0
+  },
+  "beats": {
+    "count": 130,
+    "words": 59,
+    "per_s": 2.05
+  },
+  "gl": "angle"
+}

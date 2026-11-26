@@ -1,0 +1,442 @@
+{
+ "_about": "Project sound palette for ios-smooth-act1 (sound redesign, 26 Nov 2026). Real-action / foley designs only - every role is a thing that visibly happens on screen (glass, counter wheels, stamps, chips seating, a cartridge on a rail, air for camera travel). No chimes, bells, zaps, game bleeps or boom-on-everything. earshot ranks the candidates against `want`; `real_weight` adds earshot's realness score so recorded-sounding designs win; `pick` = chosen after listening to describe/match. `post` trims and filters the take (soft tops, short tails).",
+ "real_weight": 2.0,
+ "roles": {
+  "glass_tap": {
+   "want": "a fingertip tapping softly on the glass screen of a phone",
+   "candidates": [
+    "tap/glass",
+    "pro_tap/glass",
+    "glass/tap",
+    "tap/fingertip",
+    "hover/fingertip",
+    "tap/finger",
+    "tap/soft"
+   ],
+   "takes": 3,
+   "level_db": -17,
+   "post": {
+    "lp": 6500
+   },
+   "pick": "tap/glass",
+   "why": "a fingertip on a phone is a dull soft touch, not a UI click"
+  },
+  "glass_swipe": {
+   "want": "a finger swiping across a glass phone screen, soft and short",
+   "candidates": [
+    "swipe/glide",
+    "swipe/hand",
+    "swipe/velvet",
+    "swipe/cloth",
+    "slide/paper",
+    "swipe/flick"
+   ],
+   "takes": 3,
+   "level_db": -19,
+   "post": {
+    "lp": 6500,
+    "hp": 300,
+    "trim": 0.6,
+    "fade_out": 0.2
+   },
+   "pick": "swipe/velvet",
+   "why": "skin dragging over glass: soft cloth-like friction, no whoosh"
+  },
+  "peel": {
+   "want": "a few cards fanned apart with a quick soft flutter of paper",
+   "candidates": [
+    "flick/paper",
+    "cards/shuffle",
+    "page/turn",
+    "flick/thin",
+    "paper/page",
+    "next/page"
+   ],
+   "takes": 2,
+   "level_db": -19,
+   "post": {
+    "lp": 8000,
+    "hp": 300
+   },
+   "why": "thin frames fanning out = paper flutter, light and dry"
+  },
+  "ratchet": {
+   "want": "one small dry mechanical click of a counter wheel turning one notch",
+   "candidates": [
+    "dial/click",
+    "clock/mechanical",
+    "stopwatch/tick",
+    "tick/switch",
+    "tick/metal",
+    "hover_tick/detent",
+    "click/thock",
+    "tick/wood"
+   ],
+   "takes": 5,
+   "level_db": -20,
+   "post": {
+    "lp": 5500,
+    "trim": 0.09,
+    "fade_out": 0.04
+   },
+   "pick": "dial/click",
+   "why": "the counters are drawn as mechanical drum odometers, so they click like one: small dry notches that slow as the number lands"
+  },
+  "lock": {
+   "want": "a number wheel locking into place with a short soft low clunk",
+   "candidates": [
+    "lock/latch",
+    "toggle/latch",
+    "switch/industrial",
+    "click/thock",
+    "knock/desk",
+    "lock/key",
+    "microwave/close"
+   ],
+   "takes": 3,
+   "level_db": -16,
+   "post": {
+    "lp": 4500
+   },
+   "pick": "lock/latch",
+   "why": "the last wheel stopping: one short low latch closes the count (also used, pitched up and quieter, for small things clicking into place)"
+  },
+  "stamp": {
+   "want": "a rubber stamp pressed down onto paper on a desk, a muted thud",
+   "candidates": [
+    "stamp/press",
+    "thump/book",
+    "book/place",
+    "book/shut",
+    "thump/door",
+    "stapler/desk"
+   ],
+   "takes": 3,
+   "level_db": -12,
+   "post": {
+    "lp": 5500
+   },
+   "why": "rubber stamp on paper: a muted thud, the film's few true accents (LATE, HITCH, the signed deal)"
+  },
+  "seat": {
+   "want": "a chip pressed into its socket: a short soft low thud with a small click",
+   "candidates": [
+    "dumbbell/place",
+    "book/place",
+    "thump/soft",
+    "knock/desk",
+    "land/soft",
+    "cupboard/shut",
+    "thump/appear",
+    "drawer/slide"
+   ],
+   "takes": 3,
+   "level_db": -11,
+   "post": {
+    "lp": 3500
+   },
+   "pick": "thump/door",
+   "why": "a chip pressed into its socket: one low soft thud - low end only on real impacts"
+  },
+  "set": {
+   "want": "a small object set down gently on a stand, soft and low",
+   "candidates": [
+    "glass/set",
+    "book/place",
+    "thump/appear",
+    "knock/soft",
+    "pot_lid/set",
+    "cup/set",
+    "plate/set"
+   ],
+   "takes": 3,
+   "level_db": -17,
+   "post": {
+    "lp": 4500
+   },
+   "pick": "book/place",
+   "why": "a small object put down on a stand: a flat quiet thud, sized to the object"
+  },
+  "pulse": {
+   "want": "a single low soft heartbeat thump, felt more than heard",
+   "candidates": [
+    "heartbeat/pulse",
+    "heart/beat",
+    "kick/soft",
+    "thump/soft",
+    "cajon/bass",
+    "frame_drum/deep"
+   ],
+   "takes": 1,
+   "level_db": -12,
+   "post": {
+    "lp": 900,
+    "trim": 0.7,
+    "fade_out": 0.25
+   },
+   "why": "\"your thumb can feel it\": a single heartbeat-like thump, felt more than heard"
+  },
+  "air_short": {
+   "want": "a short soft breath of air as a camera moves past",
+   "candidates": [
+    "whoosh/airy",
+    "whoosh/soft",
+    "swipe/hand",
+    "swish/soft",
+    "blow/puff",
+    "dash/air"
+   ],
+   "takes": 3,
+   "level_db": -18,
+   "post": {
+    "lp": 6000,
+    "hp": 180
+   },
+   "pick": "swipe/hand",
+   "why": "small camera / lid movement: a breath of air, not a designed whoosh"
+  },
+  "air_long": {
+   "want": "a long soft rush of air passing as the camera dives forward",
+   "candidates": [
+    "whoosh/long",
+    "pass/air",
+    "whoosh/low",
+    "whoosh/deep",
+    "whoosh/sweep",
+    "pro_whoosh_big/windy",
+    "whoosh_big/gust"
+   ],
+   "takes": 2,
+   "level_db": -15,
+   "post": {
+    "lp": 5000,
+    "hp": 90
+   },
+   "why": "long camera travel (dive, tunnel, hero push): one soft low rush of air shaped to the move"
+  },
+  "hum_on": {
+   "want": "a soft low electrical hum fading in as a circuit powers on",
+   "candidates": [
+    "space_hum/ship",
+    "fridge/hum",
+    "sub/swell",
+    "hard_drive/spin",
+    "drone/dark",
+    "pad/warm"
+   ],
+   "takes": 2,
+   "level_db": -14,
+   "make": {
+    "dur": 3.0
+   },
+   "post": {
+    "lp": 1400,
+    "hp": 60,
+    "trim": 1.5,
+    "fade_in": 0.7,
+    "fade_out": 0.6
+   },
+   "pick": "fridge/hum",
+   "why": "current starting to flow: a soft mains-like hum fading in (no zap, no power-up chime)"
+  },
+  "switch": {
+   "want": "a small soft switch click",
+   "candidates": [
+    "switch/small",
+    "switch/electronic",
+    "toggle/on",
+    "tick/switch",
+    "switch/light",
+    "toggle/micro",
+    "switch/push"
+   ],
+   "takes": 3,
+   "level_db": -20,
+   "post": {
+    "lp": 6500,
+    "trim": 0.2,
+    "fade_out": 0.06
+   },
+   "why": "the instant something turns on: one small real switch click"
+  },
+  "slide": {
+   "want": "a small cartridge sliding along a rail and stopping softly",
+   "candidates": [
+    "slide/panel",
+    "drawer/slide",
+    "door/slide",
+    "ice_skate/glide",
+    "office_chair/roll",
+    "zipper/pull",
+    "curtain/draw"
+   ],
+   "takes": 4,
+   "level_db": -19,
+   "post": {
+    "lp": 5500,
+    "hp": 150
+   },
+   "pick": "slide/panel",
+   "why": "the glass cartridge riding its rail: a short low slide ending in a soft stop"
+  },
+  "stack": {
+   "want": "thin tiles stacked quickly, a few soft clacks",
+   "candidates": [
+    "chips/stack",
+    "paper/card",
+    "cards/shuffle",
+    "coin/cup"
+   ],
+   "takes": 2,
+   "level_db": -22,
+   "post": {
+    "lp": 6000,
+    "trim": 0.8,
+    "fade_out": 0.2
+   },
+   "why": "(spare) thin tiles stacking"
+  },
+  "knock_dull": {
+   "want": "a dull muted knock, something stuck",
+   "candidates": [
+    "knock/soft",
+    "error/knock",
+    "knock/double",
+    "warning/knock",
+    "thump/door",
+    "knock/table",
+    "knock/hollow"
+   ],
+   "takes": 2,
+   "level_db": -15,
+   "post": {
+    "lp": 2500
+   },
+   "pick": "knock/soft",
+   "why": "something stuck or shut: a dull wooden knock, no error buzzer"
+  },
+  "clock_tick": {
+   "want": "one small dry tick of a clock",
+   "candidates": [
+    "clock/tick",
+    "stopwatch/tick",
+    "clock/mechanical",
+    "tick/soft",
+    "tick/wood",
+    "turn_signal/tick"
+   ],
+   "takes": 3,
+   "level_db": -19,
+   "post": {
+    "lp": 7000,
+    "trim": 0.12,
+    "fade_out": 0.04
+   },
+   "why": "\"on the very next tick\": a real stopwatch tick; three in a row = the server keeps time"
+  },
+  "hollow": {
+   "want": "a soft hollow knock on an empty box",
+   "candidates": [
+    "knock/hollow",
+    "knock/soft",
+    "tock/wood",
+    "knock/wood",
+    "bongo/low"
+   ],
+   "takes": 2,
+   "level_db": -16,
+   "post": {
+    "lp": 4000
+   },
+   "why": "the empty socket: a hollow knock - there is nothing inside"
+  },
+  "paper_slide": {
+   "want": "a card sliding across a desk into place",
+   "candidates": [
+    "slide/paper",
+    "paper/card",
+    "swipe/paper",
+    "paper/page"
+   ],
+   "takes": 2,
+   "level_db": -20,
+   "post": {
+    "lp": 7000,
+    "hp": 250
+   },
+   "why": "(spare) a card sliding on a desk"
+  },
+  "node_ticks": {
+   "want": "a quick run of tiny soft ticks, like small lights switching on one by one",
+   "candidates": [
+    "pro_typing_run/soft",
+    "pro_typing_run/tick",
+    "pro_typing_run/glass",
+    "type/run",
+    "fingers/drumming"
+   ],
+   "takes": 2,
+   "level_db": -21,
+   "post": {
+    "lp": 6500,
+    "trim": 0.9,
+    "fade_out": 0.3
+   },
+   "why": "many tiny things lighting one after another: a faint run of ticks under the voice"
+  },
+  "glass_lift": {
+   "want": "a glass panel lifted off a phone with a soft release of air",
+   "candidates": [
+    "door/slide",
+    "slide/panel",
+    "window/open",
+    "microwave/open",
+    "bottle/open",
+    "tape/peel",
+    "blow/puff"
+   ],
+   "takes": 2,
+   "level_db": -18,
+   "post": {
+    "lp": 4500,
+    "hp": 200
+   },
+   "pick": "blow/puff",
+   "why": "the back glass coming off: a soft puff of released air"
+  },
+  "air_pass": {
+   "want": "a soft rush of air passing from one side to the other as the camera travels",
+   "candidates": [
+    "pass/air",
+    "whoosh/long",
+    "whoosh/sweep"
+   ],
+   "pick": "pass/air",
+   "takes": 2,
+   "level_db": -17,
+   "post": {
+    "lp": 4500,
+    "hp": 120
+   },
+   "why": "camera travelling sideways along the set: air passing from one side to the other"
+  },
+  "film_shutter": {
+   "want": "a soft film camera shutter click",
+   "candidates": [
+    "shutter/film",
+    "camera/shutter",
+    "shutter/mirror",
+    "shutter/quick",
+    "shutter/dslr"
+   ],
+   "takes": 2,
+   "level_db": -19,
+   "post": {
+    "lp": 8000
+   },
+   "pick": "camera/shutter",
+   "why": "the cut to a REAL photograph: a film camera shutter"
+  }
+ },
+ "aliases": {}
+}
