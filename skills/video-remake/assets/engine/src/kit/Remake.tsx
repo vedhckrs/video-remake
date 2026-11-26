@@ -9,6 +9,8 @@ import {GridBackdrop, ProgressRail} from './explainer/stage';
 import {Presenter} from './explainer/presenter';
 import {ExplainerCaptions} from './explainer/captions';
 import {SafeFrame} from './explainer/world';
+import {SourceCredit} from './explainer/media';
+import {setFrame} from './explainer/tokens';
 
 /** How many frames a scene is drawn before its nominal start / after its end (transition overlap). */
 const half = (frames: number) => Math.ceil(frames / 2);
@@ -87,7 +89,19 @@ export const Remake: React.FC<{project: Project; scenes: Record<string, React.FC
   const base = project.baseFps ?? fps;
   const k = fps / base; // output frames per design frame (2 at 60 fps output, 30 fps design)
 
-  const safe = {focusY: project.safe?.focusY ?? 0.53, zoom: project.safe?.zoom ?? 1, fadeTo: project.safe?.fadeTo ?? 0.30};
+  // Landscape 16:9 (26 Nov 2026): kit sizes scale from the short side (unit), the world is centred (focusY 0.5,
+  // zoom 1) and has no dark top fade; captions become a lower third (explainer/captions.tsx).
+  const land = W > H;
+  setFrame(W, H);
+  const safe = {focusY: project.safe?.focusY ?? (land ? 0.5 : 0.53), zoom: project.safe?.zoom ?? 1, fadeTo: project.safe?.fadeTo ?? (land ? 0 : 0.30), landscape: land};
+  // scene "credit" lines: one screen-locked SourceCredit per run of scenes sharing the same text
+  const credits: {text: string; from: number; to: number}[] = [];
+  for (const s of list) {
+    if (!s.credit) continue;
+    const last = credits[credits.length - 1];
+    if (last && last.text === s.credit && last.to === s.from) last.to = s.to;
+    else credits.push({text: s.credit, from: s.from, to: s.to});
+  }
 
   return (
     <SafeFrame.Provider value={safe}>
@@ -123,6 +137,9 @@ export const Remake: React.FC<{project: Project; scenes: Record<string, React.FC
         <ProgressRail t={frame / k} total={project.durationInFrames / k} chapters={project.rail.chapters} W={W} H={H}
                       mode={(list.find((x) => frame >= x.from && frame < x.to) ?? list[0]).bg} />
       ) : null}
+      {credits.map((c, i) => (
+        <SourceCredit key={`credit${i}`} text={c.text} t={frame / k} from={c.from / k + 4} to={c.to / k - 2} W={W} H={H} />
+      ))}
       {project.captions.mode === 'explainer' ? <ExplainerCaptions project={project} /> : <Captions project={project} />}
       {project.handle ? <Handle project={project} /> : null}
       {project.audio.vo ? <Audio src={staticFile(project.audio.vo)} volume={project.audio.voVolume ?? 1} /> : null}

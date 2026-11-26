@@ -42,7 +42,8 @@ No reference video is needed: the style library replaces steps 1-2 of the main l
    (entry 3-7 s at the end of the first sentence, keyword poses, explain-pose cycle, max hold 3.7 s,
    lip timing from the words) and the rail.
 3. Scenes (`scenes.tsx`): compose each stage from the kit (below). Design frames are @30; the engine
-   samples at 60. Draw everything for 1080x1920 (`u = unit(W)` = 1).
+   samples at 60. Draw everything for 1080x1920 (`u = unit(W)` = 1) - or 1920x1080 for a landscape video
+   ("Landscape 16:9 long-form" below).
 4. `rm/render <id> stills` -> LOOK; motion strips of every scene; fix.
 5. Render, `sound_design.py cues/music/mix/listen` (music defaults to -18 dB under the voice here), then
    `rm/qa_explainer <id>` - all hard gates must pass; tick the manual list on the contact sheet.
@@ -57,7 +58,8 @@ No reference video is needed: the style library replaces steps 1-2 of the main l
 | `hardware.tsx` | detail layer for reference-level hardware: `MAT` materials (epoxy, pcb, gold, metal, ceramic, tin), `SmdCap`/`SmdArray`, `GoldFingers`, `EpoxyChip` (glossy, laser-etched, `xray` + `xrayNode`), `Silk`, `TracePattern`, `MountHole`, `CellField` (glowing flash cells), `Beam`, `StageLight`, `DepthBands` (fake depth of field), `StageBand` (crop full-bleed art to the stage band) |
 | `premium.tsx` | physical versions of the templates: `DrumCounter` (mechanical odometer with carry + motion blur), `HeroNumber`, `GlassCard` (3D swing-in, layered shadows, glass sweep), `IsoTileField` (quantity as rising/glowing tiles), `IsoBarChart` (3D glossy bars), `Pedestal` (lit stand for compare), `PhoneFrame` (titanium phone, screen = children), `MacroDie` (extreme close-up chip package), `MetalTitle` |
 | `presenter.tsx` + `juno_art.tsx` (`juno_head.tsx`, `juno_arms.tsx`) | `Presenter` rig (IK arms, 37 poses in 14 groups, sprung changes with anticipation, blink, breath, lip motion, eye-line, pop entrance, re-anchor `shift`), `POSES`, `autoPose(word)`. The artwork is code drawn by Claude Fable 5.2 against `references/example-explainer/juno_art_brief.md` (geometry contract + API); to restyle, re-run that brief and keep the API |
-| `captions.tsx` | `ExplainerCaptions`: phrases, bold active / grey spoken words, corner-bracket keyword box that springs between keywords |
+| `captions.tsx` | `ExplainerCaptions`: phrases, bold active / grey spoken words, corner-bracket keyword box that springs between keywords (top band in 9:16, lower third in 16:9) |
+| `media.tsx` | `Photo` (a real photograph, full-bleed or framed, slow eased Ken-Burns push) and `SourceCredit` ("Source: ..." line, bottom-right in 16:9) - see "Landscape 16:9 long-form" |
 | `templates.tsx` | `CompareSplit` (pedestals + drum counters), `EvidenceDoc` (glass browser card), `Terminal` (dark glass), `RecapList` (glass rows), `SocialCTA` (phone + fingertip press), `ChapterCard` (metal title), `Cursor` (`finger` option) |
 The engine adds backdrop, presenter, rail and captions automatically for `"style": "explainer"` projects;
 scenes draw only the stage. Callouts, numbers and labels live OUTSIDE `StageCamera` (screen-locked) and
@@ -195,6 +197,43 @@ right action column (x 86-98 %, y 50-86 %: like, comment, share, remix).
   pulled decorative tiles into the bottom zone once. (Projects planned before 25 Nov keep their own `project.json`
   framing; only a new plan_timeline run applies the new defaults - pin the old values in script.json if a re-plan
   must not move anything. The engine's own fallback without `project.safe.fadeTo` stays 0.30.)
+
+### Landscape 16:9 long-form (26 Nov 2026)
+For long-form YouTube: `"style": "explainer"` + `"output": {"width": 1920, "height": 1080, "fps": 60}` in script.json.
+Landscape = output wider than tall; everything below is automatic and portrait output stays pixel-identical.
+- **Canvas** 1920x1080 @ 60 (design frames still @30), `render.py` scale 1. `unit(W)` scales from the SHORT side, so
+  `u` = 1 and kit text/labels are the same px size as on a 1080x1920 frame (`unit(W, H)` when you have both).
+- **Worlds** are designed 1920x1080: world px 1:1 on the frame at anchor zoom 1, world centre (960, 540), e.g.
+  `home: {x: 960, y: 540, zoom: 1}`. Defaults `project.safe = {focusY: 0.5, zoom: 1, fadeTo: 0}`: the camera lands
+  its anchor on the frame centre, no Shorts shift, no dark top fade. Particles, bokeh and light shafts follow the
+  wide frame. NanoZoom levels: centred px, visible frame x -960..960 / y -540..540, dive centre = the frame centre.
+  Portal / iris origins default to `[0.5, 0.5]`.
+- **Captions = lower third**: Poppins 46 px, centred, x 14-86 %; `captions.y` 0.875 is the top of the LAST line
+  (`anchor: "bottom"`): one line 87.5-92.8 %, two lines 82.2-92.8 % of the height. Same phrases and travelling keyword
+  box; a soft gradient scrim (from ~72 % down, strength 0.75) is always on so they read on any world or photo.
+  Override in script.json: `"caption_size"`, `"caption_y"`, `"caption_scrim"` (0 = off), `"safe"`, and
+  `"caption_anchor": "top"` (then also `"caption_y": 0.07`, `"safe": {"fadeTo": 0.2}`).
+- **Usable area for world artists** (% of the frame): key content - text, numbers, hero objects - in **x 4-96 %,
+  y 5-80 %** (hero centre ~43-50 %). y 80-94 % is the caption band (art may continue under it, it is dimmed by the
+  scrim; nothing readable there); y 94-99 % right side is the Source credit. No app UI covers a 16:9 video.
+- **`SourceCredit`** (`media.tsx`): `<SourceCredit text="Apple Newsroom" t={t} from={0} to={dur} W={W} H={H} />` ->
+  "Source: Apple Newsroom", right-aligned at 96 % of the width, centred on 96.5 % of the height, 21 px, 80 % white with
+  a soft shadow, 8-frame fades; `from`/`to` in design frames; options `x y align size color fade label`. Screen
+  space only (not inside a World's `Draw`). Without code: `"credit": "Apple Newsroom"` on a scene in script.json ->
+  plan_timeline writes `spec.credit` and the engine shows it for the whole scene (scenes in a row with the same
+  credit share one line). Credit every real photograph or screenshot with its true source.
+- **`Photo`** (`media.tsx`) for real photographs under `public/<id>/img/`:
+  `<Photo src="<id>/img/keynote.jpg" t={t} W={W} H={H} dur={dur} from={{scale: 1.03, x: 0.6, y: 0.4}} to={{scale: 1.14}} />`
+  = full-bleed, slow sine-eased Ken-Burns push (log-space zoom about the image point x/y, always covering its box);
+  `mode="framed"` = rounded, bordered, shadowed print that rises in at `enterAt` (box `x y w h` or `w` + `aspect`;
+  default 50 % wide, 16:9, centred on 43 % of the height); `dim` darkens it for text; `children` draw on top. HTML
+  element: inside a World use a div-based `Draw` (box in world px) or the `Overlay`. Web-page captures keep using
+  `Shot` (fx.tsx).
+- **Checks**: `qa_explainer.py` expects the project's 16:9 size @ 60 and measures on 240x135 frames (thresholds are
+  the 9:16 ones, not yet re-calibrated on a real landscape video); `camera_motion.py` is aspect-aware;
+  `safe_check.py` and `safe_overlay.py` are Shorts-only and skip landscape with a message; `render.py stills` makes a
+  3-across sheet. Not adapted to landscape: the presenter, `upload_package.py` (9:16 cover / Shorts guides).
+- Worked example: `landscape-demo` in the engine (board world + NanoZoom + Photo with a scene credit).
 
 ### Hook (Ved, 25 Nov 2026: "start 6 second no visual change, no powerful hook")
 In the first ~6 s the picture must change BIG at least every 0.5-0.7 s - a full-screen hero per word, then a build,

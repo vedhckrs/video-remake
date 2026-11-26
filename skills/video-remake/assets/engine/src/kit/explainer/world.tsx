@@ -20,7 +20,8 @@ export type WorldDrawProps = {
 
 export type WorldDef = {
   id: string;
-  /** named spots in world px; `zoom` = scale that frames the spot nicely (1 = world px shown 1:1 on a 1080 frame) */
+  /** named spots in world px; `zoom` = scale that frames the spot nicely (1 = world px shown 1:1 on a 1080x1920
+   *  frame, or on a 1920x1080 frame in landscape - design the world 1920x1080 with its centre at (960, 540)) */
   anchors: Record<string, Anchor>;
   /** word -> anchor (lowercase, punctuation stripped). Anchor names match themselves and their plural. */
   aliases?: Record<string, string>;
@@ -153,10 +154,12 @@ export const beatStep = (t: number, beats: Beat[], withDrift = false) => {
 // ---- atmosphere ------------------------------------------------------------------------------------------------
 
 const Atmosphere: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Required<NonNullable<WorldDef['palette']>>; u: number; pulse: number}> = ({W, H, cam, t, pal, u, pulse}) => {
+  const land = W > H;
+  const [wcx, wcy] = worldCentre(W, H);
   const far = Array.from({length: 46}).map((_, i) => {
     const depth = 0.15 + rnd(i * 2.1) * 0.35;
-    const px = ((rnd(i) * 1.6 - 0.3) * W - (cam.x - 540) * depth * cam.s * 0.4 + t * (rnd(i * 9) - 0.5) * 0.6) % (W * 1.3);
-    const py = ((rnd(i * 4.4) * 1.4 - 0.2) * H - (cam.y - 960) * depth * cam.s * 0.4 - t * depth * 0.8) % (H * 1.2);
+    const px = ((rnd(i) * 1.6 - 0.3) * W - (cam.x - wcx) * depth * cam.s * 0.4 + t * (rnd(i * 9) - 0.5) * 0.6) % (W * 1.3);
+    const py = ((rnd(i * 4.4) * 1.4 - 0.2) * H - (cam.y - wcy) * depth * cam.s * 0.4 - t * depth * 0.8) % (H * 1.2);
     return <circle key={i} cx={(px + W * 1.3) % (W * 1.3) - W * 0.15} cy={(py + H * 1.2) % (H * 1.2) - H * 0.1} r={(1 + rnd(i * 7) * 2.4) * u}
                    fill={pal.particles} opacity={0.18 + 0.4 * rnd(i * 3)} />;
   });
@@ -174,7 +177,8 @@ const Atmosphere: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Requ
       <g style={{mixBlendMode: 'screen'}} opacity={0.75}>
         {[-1, 0, 1, 2].map((k) => {
           const a = (k * 13 - 8 + Math.sin(t / 140 + k) * 3) * (Math.PI / 180);
-          const ox = W * (0.35 + k * 0.12), len = H * 1.25, wdt = W * (0.12 + 0.05 * (k % 2));
+          // landscape: the shafts spread across the wider frame and keep their portrait proportions (width from the short side)
+          const ox = land ? W * (0.26 + k * 0.16) : W * (0.35 + k * 0.12), len = H * 1.25, wdt = (land ? H : W) * (0.12 + 0.05 * (k % 2));
           const x2 = ox + Math.sin(a) * len, y2 = Math.cos(a) * len;
           return <polygon key={k} points={`${ox - 6},-20 ${ox + 6},-20 ${x2 + wdt},${y2} ${x2 - wdt},${y2}`} fill="url(#atm-ray)" />;
         })}
@@ -185,29 +189,35 @@ const Atmosphere: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Requ
   );
 };
 
-const Foreground: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Required<NonNullable<WorldDef['palette']>>; u: number}> = ({W, H, cam, t, pal, u}) => (
+const Foreground: React.FC<{W: number; H: number; cam: Cam; t: number; pal: Required<NonNullable<WorldDef['palette']>>; u: number}> = ({W, H, cam, t, pal, u}) => {
+  const [wcx, wcy] = worldCentre(W, H);
+  return (
   <svg width={W} height={H} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
     <defs><filter id="fg-bokeh"><feGaussianBlur stdDeviation={14 * u} /></filter></defs>
     <g filter="url(#fg-bokeh)">
       {Array.from({length: 7}).map((_, i) => {
         const par = 1.6 + rnd(i * 5) * 0.8;
-        const x = ((rnd(i * 3.1) * W * 1.6 - (cam.x - 540) * par * cam.s * 0.5 + t * (i % 2 ? 0.9 : -0.7)) % (W * 1.6) + W * 1.6) % (W * 1.6) - W * 0.3;
-        const y = ((rnd(i * 6.7) * H * 1.3 - (cam.y - 960) * par * cam.s * 0.5) % (H * 1.3) + H * 1.3) % (H * 1.3) - H * 0.15;
+        const x = ((rnd(i * 3.1) * W * 1.6 - (cam.x - wcx) * par * cam.s * 0.5 + t * (i % 2 ? 0.9 : -0.7)) % (W * 1.6) + W * 1.6) % (W * 1.6) - W * 0.3;
+        const y = ((rnd(i * 6.7) * H * 1.3 - (cam.y - wcy) * par * cam.s * 0.5) % (H * 1.3) + H * 1.3) % (H * 1.3) - H * 0.15;
         return <circle key={i} cx={x} cy={y} r={(40 + rnd(i * 2) * 70) * u} fill={pal.glow} opacity={0.05 + rnd(i) * 0.06} />;
       })}
     </g>
   </svg>
-);
+  );
+};
 
 // ---- Shorts/Reels safe area (project.safe, provided by Remake.tsx) -------------------------------------------------
 /** Where the camera lands its anchor (fraction of the height) and an extra zoom-out of the whole world layer.
  *  The defaults keep the original framing (anchor at 53 %, zoom 1). */
-export const SafeFrame = React.createContext<{focusY: number; zoom: number; fadeTo?: number}>({focusY: 0.53, zoom: 1, fadeTo: 0.30});
+export const SafeFrame = React.createContext<{focusY: number; zoom: number; fadeTo?: number; landscape?: boolean}>({focusY: 0.53, zoom: 1, fadeTo: 0.30});
+
+/** Centre of the designed world in world px: (540, 960) for 9:16 worlds, (960, 540) for 16:9 landscape worlds. */
+export const worldCentre = (W: number, H: number): [number, number] => (W > H ? [960, 540] : [540, 960]);
 
 // ---- the World component ------------------------------------------------------------------------------------------
 
 export const World: React.FC<{def: WorldDef; t: number; dur: number; beats: Beat[]; W: number; H: number}> = ({def, t, dur, beats, W, H}) => {
-  const u = unit(W);
+  const u = unit(W, H);
   const safe = React.useContext(SafeFrame);
   const keys = React.useMemo(() => {
     const segs = direct(beats, def);
@@ -248,9 +258,12 @@ export const World: React.FC<{def: WorldDef; t: number; dur: number; beats: Beat
       </div>
       <Foreground W={W} H={H} cam={cam} t={t} pal={pal} u={u} />
       {O ? <O {...props} toScreen={toScreen} /> : null}
-      {/* caption readability + vignette */}
+      {/* caption readability + vignette. Landscape: the captions are a lower third with their own scrim (captions.tsx),
+          so there is no dark top fade unless project.safe.fadeTo asks for one (captions moved back to the top). */}
+      {W > H && !((safe.fadeTo ?? 0) > 0) ? null : (
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none',
                    background: `linear-gradient(180deg, ${pal.bg0}E6 0%, ${pal.bg0}99 ${((safe.fadeTo ?? 0.3) * 53.3).toFixed(1)}%, ${pal.bg0}00 ${((safe.fadeTo ?? 0.3) * 100).toFixed(1)}%, ${pal.bg0}00 82%, ${pal.bg0}AA 100%)`}} />
+      )}
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none',
                    background: `radial-gradient(ellipse 75% 60% at 50% 55%, transparent 55%, ${light ? 'rgba(40,50,70,0.10)' : 'rgba(0,0,0,0.55)'} 100%)`}} />
     </div>

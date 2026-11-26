@@ -1,8 +1,16 @@
 // Explainer style tokens (keyframes-explainer style system, D:\VideoBlueprint\jobs\kf_style\style_system.md).
-// All pixel values are for a 1080-wide frame: multiply by u = W / 1080 (see `unit`).
+// All pixel values are for a frame whose SHORT side is 1080 (1080x1920 or 1920x1080): multiply by u (see `unit`).
 import {spring} from 'remotion';
 
-export const unit = (W: number) => W / 1080;
+// Landscape 16:9 (26 Nov 2026): sizes scale from the frame's SHORT side, so text is the same size on a 1920x1080
+// frame as on a 1080x1920 one (u = 1 on both). Remake.tsx calls setFrame(W, H) for the composition being drawn;
+// unit(W) then returns W / 1080 in portrait (unchanged) and W / 1920 on a 16:9 frame. Pass H to be explicit.
+let FRAME_K = 1; // short side / width of the current composition (1 in portrait and square)
+export const setFrame = (W: number, H: number) => {
+  FRAME_K = Math.min(1, H / W);
+};
+export const isLandscape = (W: number, H: number) => W > H;
+export const unit = (W: number, H?: number) => (H ? Math.min(W, H) : W * FRAME_K) / 1080;
 
 export const C = {
   bgDark: '#0E0F11',

@@ -8,6 +8,8 @@ Samples frames, finds text with PaddleOCR 3.x (same setup as video-blueprint's o
   FAIL  top:    any part above --top (back / search / menu icons)
   info  right:  in the action-button column (x > 86 %, y 50-86 %), listed but not failed
 Exit code 1 when a FAIL zone has text. Text that is meant to be there (none in our videos) would need --bottom/--top.
+Landscape 16:9 videos (26 Nov 2026) have no permanent app overlay and carry their captions in the lower third on
+purpose: the Shorts/Reels gates do not apply and the check is SKIPPED with exit code 0 (--force runs it anyway).
 """
 import argparse
 import json
@@ -37,7 +39,19 @@ def main():
     ap.add_argument("--min-samples", type=int, default=2, help="text must be seen this often in a zone to count")
     ap.add_argument("--max-h", type=float, default=0.10, help="taller boxes are texture, not text")
     ap.add_argument("--json")
+    ap.add_argument("--force", action="store_true", help="run the 9:16 zone gates on a landscape video too")
     a = ap.parse_args()
+    probe = cv2.VideoCapture(a.video)
+    vw, vh = probe.get(cv2.CAP_PROP_FRAME_WIDTH), probe.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    probe.release()
+    if vw > vh and not a.force:
+        print(f"SKIP  landscape video ({int(vw)}x{int(vh)}): the Shorts/Reels safe-area gates (top 8 %, bottom 15 %, right "
+              f"button column) only apply to 9:16 - nothing checked. Lower-third captions and the Source credit are meant to "
+              f"sit at the bottom. Use --force to run the 9:16 zones anyway.")
+        print("[video-remake] safe-area check: SKIPPED (landscape)")
+        if a.json:
+            open(a.json, "w", encoding="utf-8").write(json.dumps({"skipped": "landscape", "size": [int(vw), int(vh)], "pass": True}, indent=1))
+        sys.exit(0)
     from paddleocr import PaddleOCR
     kw = dict(lang="en", use_doc_orientation_classify=False, use_doc_unwarping=False, use_textline_orientation=False)
     try:

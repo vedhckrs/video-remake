@@ -71,7 +71,7 @@ Quick health check:
 | `scripts/tts.py` | ElevenLabs voice with timestamps (`--estimate` free, `--yes` paid, `--redo` one sentence spliced in) |
 | `scripts/plan_timeline.py` | script + voice + recipe → `project.json` (60 fps output, 30 fps design units) |
 | `scripts/capture.py` | Playwright screenshots (2x, dark/light, selector/clip) |
-| `scripts/render.py` | `stills` sheet · `video` (Remotion, 1.5x scale → 1080p) · `master` fallback |
+| `scripts/render.py` | `stills` sheet · `video` (Remotion, 1.5x scale → 1080p; 1920x1080 landscape designs at scale 1) · `master` fallback |
 | `scripts/sound_design.py` | earshot: `palette` · `cues` · `music` · `mix` · `listen` · `all` |
 | `scripts/musiclib.py` | music engine (earshot instruments; from meta-ads-video) |
 | `scripts/sound.py` | old numpy SFX/music synth — fallback only when earshot is missing |
@@ -151,6 +151,11 @@ python compare.py <project>            (explainer: python qa_explainer.py <proje
   earshot takes `<role>_1.wav` - a missing file made Remotion fail with a 404; at most one keyword box per phrase).
 - 24 Nov — step 10 upload package: `upload_package.py`, `references/upload-package.md`, examples; covers with
   GPT Image 2.6 Flare 9:16 (Magnific); the master chain moved to `rmcommon.MASTER_AF` (shared with sound_design).
+- 26 Nov — landscape 16:9 mode for long-form (`"output": 1920x1080 @ 60`): plan_timeline + engine detect width > height
+  (1920x1080 canvas, `unit` from the short side, centred worlds, no Shorts shift / top fade, NanoZoom + atmosphere
+  fixed), lower-third captions with scrim, new kit `Photo` + `SourceCredit` and scene `"credit"` in script.json;
+  QA / render / camera scripts landscape-aware, safe-area tools skip 16:9. Portrait regression: 15 stills (six-agents,
+  fps-explainer) pixel-identical, plan_timeline output byte-identical. Demo project `landscape-demo`.
 
 ---
 
