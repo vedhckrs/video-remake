@@ -145,3 +145,11 @@ after a NanoZoom): tilt-shift blur toward the top / bottom edges, vignette, film
 - NanoZoom: size each level so the next lands exactly (`depth = log10(next px / this px)`); the package level is a
   `SiScene tilt={0}` with `soc.xray` driven by the level `scale`; the die level draws its own surroundings.
 - Fine patterns shimmer when their pitch drops under ~2 px: use `detail={1}` for small dies and keep `SiLens` blur on the far band.
+
+## PhotoStage (`src/kit/explainer/photostage.tsx`, 26 Nov 2026)
+The way to show ONE real photograph (Ved rejected a plain framed photo over a dark band as "cheap"): an editorial
+spread - the photo as a lit, slightly turned glass print on one side, big typography on the other, studio backdrop.
+`<PhotoStage src="<id>/img/a4.jpg" t W H dur at={0} aspect={1} side="left" eyebrow="Real photo · 2010" title="Apple A4"
+lines={[...]} reveal={[cue frames]} accent="#F2B56B" />`. Nothing is drawn over the photo and it is not recoloured
+(share-alike photos stay unaltered). Give the scene a `credit` in script.json. Plain `Photo` stays for full-bleed use.
+The landscape caption scrim is now a long soft fade (strength 0.5), never a solid band.
