@@ -59,6 +59,7 @@ No reference video is needed: the style library replaces steps 1-2 of the main l
 | `premium.tsx` | physical versions of the templates: `DrumCounter` (mechanical odometer with carry + motion blur), `HeroNumber`, `GlassCard` (3D swing-in, layered shadows, glass sweep), `IsoTileField` (quantity as rising/glowing tiles), `IsoBarChart` (3D glossy bars), `Pedestal` (lit stand for compare), `PhoneFrame` (titanium phone, screen = children), `MacroDie` (extreme close-up chip package), `MetalTitle` |
 | `presenter.tsx` + `juno_art.tsx` (`juno_head.tsx`, `juno_arms.tsx`) | `Presenter` rig (IK arms, 37 poses in 14 groups, sprung changes with anticipation, blink, breath, lip motion, eye-line, pop entrance, re-anchor `shift`), `POSES`, `autoPose(word)`. The artwork is code drawn by Claude Fable 5.2 against `references/example-explainer/juno_art_brief.md` (geometry contract + API); to restyle, re-run that brief and keep the API |
 | `captions.tsx` | `ExplainerCaptions`: phrases, bold active / grey spoken words, corner-bracket keyword box that springs between keywords (top band in 9:16, lower third in 16:9) |
+| `silicon.tsx` (+ `silicon_core` / `_chips` / `_board` / `_die.tsx`) | **Silicon kit (26 Nov 2026) - use it for every chip / board / die / transistor shot**; for new work it replaces `IsoChip`, `EpoxyChip`, `IsoBoard`, `MacroDie` (Ved rejected those as "flat and poor, not detailed"). `SiScene` (projection + light + sweep), `LogicBoard` + `SiChassis`, `SiChip` / `PackageStack`, `DieFloorplan`, `CellFabric`, `NanosheetFET` / `NanosheetField`, `SiLens` (depth of field, grain, dust). API: `references/kit.md` "Silicon kit"; worked example: engine project `silicon-demo` |
 | `media.tsx` | `Photo` (a real photograph, full-bleed or framed, slow eased Ken-Burns push) and `SourceCredit` ("Source: ..." line, bottom-right in 16:9) - see "Landscape 16:9 long-form" |
 | `templates.tsx` | `CompareSplit` (pedestals + drum counters), `EvidenceDoc` (glass browser card), `Terminal` (dark glass), `RecapList` (glass rows), `SocialCTA` (phone + fingertip press), `ChapterCard` (metal title), `Cursor` (`finger` option) |
 The engine adds backdrop, presenter, rail and captions automatically for `"style": "explainer"` projects;
@@ -208,16 +209,17 @@ Landscape = output wider than tall; everything below is automatic and portrait o
   its anchor on the frame centre, no Shorts shift, no dark top fade. Particles, bokeh and light shafts follow the
   wide frame. NanoZoom levels: centred px, visible frame x -960..960 / y -540..540, dive centre = the frame centre.
   Portal / iris origins default to `[0.5, 0.5]`.
-- **Captions = lower third**: Poppins 46 px, centred, x 14-86 %; `captions.y` 0.875 is the top of the LAST line
-  (`anchor: "bottom"`): one line 87.5-92.8 %, two lines 82.2-92.8 % of the height. Same phrases and travelling keyword
+- **Captions = lower third**: Poppins 36 px, centred, x 14-86 %; `captions.y` 0.84 is the top of the LAST line
+  (`anchor: "bottom"`): one line 84-88.1 %, two lines 79.9-88.1 % of the height (Ved, 26 Nov 2026: smaller, and above the YouTube player's control bar = bottom ~10 %). Same phrases and travelling keyword
   box; a soft gradient scrim (from ~72 % down, strength 0.75) is always on so they read on any world or photo.
   Override in script.json: `"caption_size"`, `"caption_y"`, `"caption_scrim"` (0 = off), `"safe"`, and
   `"caption_anchor": "top"` (then also `"caption_y": 0.07`, `"safe": {"fadeTo": 0.2}`).
 - **Usable area for world artists** (% of the frame): key content - text, numbers, hero objects - in **x 4-96 %,
-  y 5-80 %** (hero centre ~43-50 %). y 80-94 % is the caption band (art may continue under it, it is dimmed by the
-  scrim; nothing readable there); y 94-99 % right side is the Source credit. No app UI covers a 16:9 video.
+  y 5-77 %** (hero centre ~41-48 %). y ~79-89 % is the caption band (art may continue under it, it is dimmed by the
+  scrim; nothing readable there); y 96.5-99 % right side is the Source credit. A NanoZoom dive that must keep a whole
+  labelled subject above the captions wraps itself in `<SafeFrame.Provider value={{focusY: 0.41, zoom: 1, fadeTo: 0, landscape: true}}>`. No app UI covers a 16:9 video.
 - **`SourceCredit`** (`media.tsx`): `<SourceCredit text="Apple Newsroom" t={t} from={0} to={dur} W={W} H={H} />` ->
-  "Source: Apple Newsroom", right-aligned at 96 % of the width, centred on 96.5 % of the height, 21 px, 80 % white with
+  "Source: Apple Newsroom", right-aligned at 98.5 % of the width, centred on 97.8 % of the height, 15 px (Ved, 26 Nov 2026: smaller, in the corner), 72 % white with
   a soft shadow, 8-frame fades; `from`/`to` in design frames; options `x y align size color fade label`. Screen
   space only (not inside a World's `Draw`). Without code: `"credit": "Apple Newsroom"` on a scene in script.json ->
   plan_timeline writes `spec.credit` and the engine shows it for the whole scene (scenes in a row with the same

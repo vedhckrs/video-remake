@@ -47,10 +47,15 @@ check previews with `rm/safe_overlay` and pass `safe_check.py` (OCR env) before 
 **Landscape 16:9 (26 Nov 2026, long-form):** `"output": {"width": 1920, "height": 1080, "fps": 60}` in script.json switches
 plan_timeline and the engine to landscape: a 1920x1080 design canvas (worlds drawn 1920x1080, centre 960,540; `unit` = 1,
 render scale 1), no Shorts safe-area shift (`safe` focusY 0.5 / zoom 1 / no top fade), captions as a centred lower third
-(46 px, 82-93 % of the height, on a soft scrim) - keep key content in x 4-96 %, y 5-80 %. Real photographs use the kit
+(36 px, 80-88 % of the height, above the YouTube control bar, on a soft scrim) - keep key content in x 4-96 %, y 5-77 %. Real photographs use the kit
 `Photo` (full-bleed or framed, slow Ken-Burns); every scene showing one carries `"credit": "<source>"` in script.json,
 which draws "Source: <source>" bottom-right (`SourceCredit`). `safe_check` / `safe_overlay` are 9:16-only and skip.
 Style guide: "Landscape 16:9 long-form". Portrait output is unchanged.
+
+**World and kit agents run on Ved's API since 26 Nov 2026:** `rm/api_agent run --act <video-act id> --cap 25 --name <agent>
+--brief <brief.md> --root <VB>\remakes\sbx-<x> --read <skill> --read <project public folder>` (Claude Fable 5.2, effort
+high, hard $25 cap per act; `status --act <id>` shows the spend). Run agents in parallel as background commands, one
+sandbox each; read each `_api_agent/<name>.report.md`, then check the stills yourself. Cap reached = finish that act on plan subagents (no API), never raise the cap; say so in the status.
 
 ## The loop
 

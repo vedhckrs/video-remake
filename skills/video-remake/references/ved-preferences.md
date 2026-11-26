@@ -89,6 +89,8 @@ Quotes are Ved's words. Apply them every time without asking again.
 - Phase A analysis ran on **Ved's own Anthropic API** with **Claude Fable 5.2** ("use my API for Fable 5.2
   model each"): `ant auth login` profile, org Onealphamend Pvt. Ltd (user "Anu"), $96 promotional API credit
   valid to 13 Dec 2026. Cost $36.28 for 12 videos + merge. Always show a free `estimate` first and keep a hard cap.
+  Console on 26 Nov 2026 (Ved's screenshot): organization credits $197.71; spend this month $54.50 of a $100 monthly
+  limit (resets 1 Dec), so about $45.50 usable before the reset whatever the credit balance says.
 - Presenter: an **original character** ("Juno": pink hoodie, headphones round the neck, curly hair,
   freckles) - never the reference creator's mascot, name or handle. Pink is the presenter's colour only.
 - Length 75-100 s; 1080x1920 @ 60; English; first proof topic "How does an SSD store your files?".
@@ -100,6 +102,14 @@ Quotes are Ved's words. Apply them every time without asking again.
   "I want nanoscopic zoom continue inside the chip world and make visual more powerful" → `NanoZoom` dives.
 - **Fable 5.2 for drawing worlds: as Claude Code subagents (`model: "fable"`), not Ved's API** ("Fable 5.2 no
   api use, use in our plan"). Ved's API (above) was only for the Phase A analysis.
+- **26 Nov 2026 - this is reversed for the work from now on (Ved): "upcoming work agent use Fable 5.2 high effort agent
+  from API credit, each Act make API cap 25$ max".** World-drawing and kit-building agents now run on Ved's Anthropic
+  API with `scripts/api_agent.py` (`claude-fable-5-2`, effort high), one ledger per act and a hard **$25 cap per act**
+  (`--act <id> --cap 25`; the runner stops an agent before a request that could cross the cap). When the cap is
+  reached: SWITCH TO PLAN subagents (Claude Code Fable agents, no API) for the rest of that act and tell Ved in the status - never raise the cap (Ved, later on 26 Nov: "if Act cap hit 25$ switch to plan, no API; each Act hard cap only 25$").
+  Mind the Console's monthly spend limit too ($100; $54.50 used on 26 Nov, resets 1 Dec). Orchestration, review and
+  small fixes by the main Claude session stay on the plan. Agents already running on the plan when he said this
+  (chip kit, reference pack) were left to finish.
 
 ## Upload packages - decided 24 Nov 2026
 - After approval Ved wants: "final render file 1080p 60 fps with proper YouTube and Instagram upload package
