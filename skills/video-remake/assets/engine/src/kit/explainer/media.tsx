@@ -29,18 +29,18 @@ export const SourceCredit: React.FC<{
   fade?: number;
   /** anchor as fractions of the frame: x = right edge (align right) or left edge (align left), y = text centre */
   x?: number; y?: number; align?: 'right' | 'left';
-  /** px on a 1080-high (landscape) / 1080-wide (portrait) frame; default 21 */
+  /** px on a 1080-high (landscape) / 1080-wide (portrait) frame; default 15 */
   size?: number;
   color?: string;
   /** prefix; `null` shows `text` alone. Skipped when `text` already starts with Source / Credit / Photo / Image. */
   label?: string | null;
-}> = ({text, t, W, H, from = 0, to = Infinity, fade = 8, x, y, align, size = 21, color = 'rgba(255,255,255,0.8)', label = 'Source'}) => {
+}> = ({text, t, W, H, from = 0, to = Infinity, fade = 8, x, y, align, size = 15, color = 'rgba(255,255,255,0.72)', label = 'Source'}) => {
   const o = smooth(clamp01((t - from) / Math.max(0.001, fade))) * smooth(clamp01((to - t) / Math.max(0.001, fade)));
   if (o <= 0 || !text) return null;
   const land = W > H;
   const u = unit(W, H);
   const al = align ?? (land ? 'right' : 'left');
-  const ax = x ?? (land ? 0.96 : 0.06), ay = y ?? (land ? 0.965 : 0.835);
+  const ax = x ?? (land ? 0.985 : 0.06), ay = y ?? (land ? 0.978 : 0.835);
   const fs = size * u;
   const line = label && !/^(source|credit|photo|image)\b/i.test(text) ? `${label}: ${text}` : text;
   return (

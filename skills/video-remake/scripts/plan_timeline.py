@@ -21,7 +21,7 @@ references/styles/keyframes-explainer/recipe.json when the project has none.
 
 Landscape 16:9 (26 Nov 2026): an explainer script whose "output" is wider than tall (e.g. 1920x1080 @ 60) is planned
 on a 1920x1080 design canvas (the recipe's canvas turned on its side, so render.py renders it at scale 1): captions
-become a lower third (46 px, anchor "bottom", y 0.875), the world sits centred with no Shorts safe-area shift
+become a lower third (36 px, anchor "bottom", y 0.84), the world sits centred with no Shorts safe-area shift
 (safe focusY 0.5 / zoom 1 / fadeTo 0) and transition origins default to the frame centre. Portrait is unchanged.
 Any scene may carry "credit": "<source>" - passed through as spec.credit, the engine draws "Source: <source>"
 bottom-right for that scene (kit SourceCredit).
@@ -96,15 +96,15 @@ def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps, land=F
 
 def _landscape_frame(project, script):
     """Landscape 16:9 long-form (26 Nov 2026): no Shorts/Reels UI to dodge. Captions are a centred lower third -
-    `y` is the top of the LAST line (one line 87.5-92.8 %, two lines 82.2-92.8 % of the height at 46 px on a 1080-high
-    frame) - and the world is shown 1:1 around the frame centre with no dark top fade. Same override keys as portrait:
+    `y` is the top of the LAST line (one line 84-88.1 %, two lines 79.9-88.1 % of the height at 36 px on a 1080-high
+    frame; Ved 26 Nov 2026: smaller and above the YouTube player's control bar, which covers the bottom ~10 %) - and the world is shown 1:1 around the frame centre with no dark top fade. Same override keys as portrait:
     "caption_size", "caption_y", "safe" (partial dicts merge), plus "caption_anchor" ("top" puts the phrases back in a
     top band: then also give "safe": {"fadeTo": 0.2}) and "caption_scrim" (0..1 lower-third gradient, default 0.75)."""
     H = project["canvas"]["height"]
     cap = project["captions"]
-    cap["size"] = int(round(script.get("caption_size") or 46 * H / 1080))
+    cap["size"] = int(round(script.get("caption_size") or 36 * H / 1080))
     cap["anchor"] = script.get("caption_anchor", "bottom")
-    cap["y"] = script.get("caption_y", 0.875 if cap["anchor"] == "bottom" else 0.07)
+    cap["y"] = script.get("caption_y", 0.84 if cap["anchor"] == "bottom" else 0.07)
     if script.get("caption_scrim") is not None:
         cap["scrim"] = script["caption_scrim"]
     project["safe"] = {"focusY": 0.5, "zoom": 1, "fadeTo": 0, **(script.get("safe") or {})}

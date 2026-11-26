@@ -83,6 +83,7 @@ Quick health check:
 | `scripts/upload_package.py` | step 10: `master` · `frames` · `cover` · `build` → one verified `<Name>_Final_Upload.zip` (video + thumbnail, `YouTube/`, `Instagram/`, README); `--layout split` for two zips |
 | `references/upload-package.md` | step 10 guide: cover prompt (GPT 2.6 Flare 9:16), guide checklists, platform facts |
 | `references/example-upload/` | the four upload guides + cover prompts/previews from the SSD and reanimate videos |
+| `scripts/api_agent.py` | world / kit agents on Ved's Anthropic API: Fable 5.2 effort high, bash + editor + `view_image` tools, per-act ledger with a hard $ cap (`run --act <id> --cap 25 --name .. --brief .. --root <sandbox> --read <dir>`, `status --act <id>`) |
 | `scripts/rmcommon.py` | paths (VB_HOME, engine, earshot, core python) |
 | `assets/engine/` | the Remotion 4.0.544 template (kit: Remake, Captions, Backdrop, ui, fx, motion, fonts) |
 | `assets/sfx_palette_ui.json` | sound roles → candidate earshot designs + plain-words `want` + level |

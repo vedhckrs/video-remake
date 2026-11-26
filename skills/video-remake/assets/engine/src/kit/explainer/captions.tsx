@@ -73,7 +73,7 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
   const k = canvas.fps / (project.baseFps ?? canvas.fps);
   const size = captions.size;
   // Landscape 16:9 (26 Nov 2026): a centred lower third. `captions.y` is then the top of the last line (default
-  // 0.875 -> one line 87.5-92.8 %, two lines 82.2-92.8 % of the height at 46 px), on a soft gradient scrim that is
+  // 0.84 -> one line 84-88.1 %, two lines 79.9-88.1 % of the height at 36 px, above the YouTube control bar), on a soft gradient scrim that is
   // always there (it does not blink between phrases) so the words read on any world or photograph.
   const land = W > H;
   const bottom = (captions.anchor ?? (land ? 'bottom' : 'top')) === 'bottom';
