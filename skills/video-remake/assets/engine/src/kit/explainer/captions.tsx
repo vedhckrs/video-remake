@@ -81,11 +81,11 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
   const pages = captions.pages;
   const scene = project.scenes.find((s) => frame >= s.from && frame < s.to) ?? project.scenes[0];
   const P = pal(scene.bg);
-  const scrimA = bottom ? Math.max(0, Math.min(1, captions.scrim ?? 0.75)) : 0;
+  const scrimA = bottom ? Math.max(0, Math.min(1, captions.scrim ?? 0.5)) : 0;
   const scrimC = scene.bg === 'dark' ? '#05070B' : '#F6F7F9';
   const scrim = scrimA > 0 ? (
-    <div style={{position: 'absolute', left: 0, right: 0, top: top - size * 3.6, bottom: 0, zIndex: 999, pointerEvents: 'none',
-                 background: `linear-gradient(180deg, ${alpha(scrimC, 0)} 0%, ${alpha(scrimC, scrimA * 0.8)} 42%, ${alpha(scrimC, scrimA)} 100%)`}} />
+    <div style={{position: 'absolute', left: 0, right: 0, top: top - size * 5.5, bottom: 0, zIndex: 999, pointerEvents: 'none',
+                 background: `linear-gradient(180deg, ${alpha(scrimC, 0)} 0%, ${alpha(scrimC, scrimA * 0.45)} 38%, ${alpha(scrimC, scrimA * 0.85)} 70%, ${alpha(scrimC, scrimA)} 100%)`}} />
   ) : null;
   const pi = pages.findIndex((p) => frame >= p.from - 1 && frame < p.to + 2.5 * k);
   if (pi < 0) return scrim;
