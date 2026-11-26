@@ -55,7 +55,7 @@ Style guide: "Landscape 16:9 long-form". Portrait output is unchanged.
 **World and kit agents run on Ved's API since 26 Nov 2026:** `rm/api_agent run --act <video-act id> --cap 25 --name <agent>
 --brief <brief.md> --root <VB>\remakes\sbx-<x> --read <skill> --read <project public folder>` (Claude Fable 5.2, effort
 high, hard $25 cap per act; `status --act <id>` shows the spend). Run agents in parallel as background commands, one
-sandbox each; read each `_api_agent/<name>.report.md`, then check the stills yourself. Cap reached = stop and ask Ved.
+sandbox each; read each `_api_agent/<name>.report.md`, then check the stills yourself. Cap reached = finish that act on plan subagents (no API), never raise the cap; say so in the status.
 
 ## The loop
 

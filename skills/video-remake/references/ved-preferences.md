@@ -106,7 +106,7 @@ Quotes are Ved's words. Apply them every time without asking again.
   from API credit, each Act make API cap 25$ max".** World-drawing and kit-building agents now run on Ved's Anthropic
   API with `scripts/api_agent.py` (`claude-fable-5-2`, effort high), one ledger per act and a hard **$25 cap per act**
   (`--act <id> --cap 25`; the runner stops an agent before a request that could cross the cap). When the cap is
-  reached: stop, tell Ved what is unfinished, and ask - do not quietly continue on plan subagents or raise the cap.
+  reached: SWITCH TO PLAN subagents (Claude Code Fable agents, no API) for the rest of that act and tell Ved in the status - never raise the cap (Ved, later on 26 Nov: "if Act cap hit 25$ switch to plan, no API; each Act hard cap only 25$").
   Mind the Console's monthly spend limit too ($100; $54.50 used on 26 Nov, resets 1 Dec). Orchestration, review and
   small fixes by the main Claude session stay on the plan. Agents already running on the plan when he said this
   (chip kit, reference pack) were left to finish.
