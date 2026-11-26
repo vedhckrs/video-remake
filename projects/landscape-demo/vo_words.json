@@ -1,0 +1,166 @@
+{
+ "text": "This board runs your whole phone, and one chip does all the thinking. Dive inside the package and billions of transistors appear. Apple showed its first one on stage in twenty ten.",
+ "fake": true,
+ "words": [
+  {
+   "w": "This",
+   "start": 0.25,
+   "end": 0.59
+  },
+  {
+   "w": "board",
+   "start": 0.67,
+   "end": 1.045
+  },
+  {
+   "w": "runs",
+   "start": 1.125,
+   "end": 1.465
+  },
+  {
+   "w": "your",
+   "start": 1.545,
+   "end": 1.885
+  },
+  {
+   "w": "whole",
+   "start": 1.965,
+   "end": 2.34
+  },
+  {
+   "w": "phone,",
+   "start": 2.42,
+   "end": 2.795
+  },
+  {
+   "w": "and",
+   "start": 3.095,
+   "end": 3.4
+  },
+  {
+   "w": "one",
+   "start": 3.48,
+   "end": 3.785
+  },
+  {
+   "w": "chip",
+   "start": 3.865,
+   "end": 4.205
+  },
+  {
+   "w": "does",
+   "start": 4.285,
+   "end": 4.625
+  },
+  {
+   "w": "all",
+   "start": 4.705,
+   "end": 5.01
+  },
+  {
+   "w": "the",
+   "start": 5.09,
+   "end": 5.395
+  },
+  {
+   "w": "thinking.",
+   "start": 5.475,
+   "end": 5.955
+  },
+  {
+   "w": "Dive",
+   "start": 6.705,
+   "end": 7.045
+  },
+  {
+   "w": "inside",
+   "start": 7.125,
+   "end": 7.535
+  },
+  {
+   "w": "the",
+   "start": 7.615,
+   "end": 7.92
+  },
+  {
+   "w": "package",
+   "start": 8.0,
+   "end": 8.445
+  },
+  {
+   "w": "and",
+   "start": 8.525,
+   "end": 8.83
+  },
+  {
+   "w": "billions",
+   "start": 8.91,
+   "end": 9.39
+  },
+  {
+   "w": "of",
+   "start": 9.47,
+   "end": 9.74
+  },
+  {
+   "w": "transistors",
+   "start": 9.82,
+   "end": 10.405
+  },
+  {
+   "w": "appear.",
+   "start": 10.485,
+   "end": 10.895
+  },
+  {
+   "w": "Apple",
+   "start": 11.645,
+   "end": 12.02
+  },
+  {
+   "w": "showed",
+   "start": 12.1,
+   "end": 12.51
+  },
+  {
+   "w": "its",
+   "start": 12.59,
+   "end": 12.895
+  },
+  {
+   "w": "first",
+   "start": 12.975,
+   "end": 13.35
+  },
+  {
+   "w": "one",
+   "start": 13.43,
+   "end": 13.735
+  },
+  {
+   "w": "on",
+   "start": 13.815,
+   "end": 14.085
+  },
+  {
+   "w": "stage",
+   "start": 14.165,
+   "end": 14.54
+  },
+  {
+   "w": "in",
+   "start": 14.62,
+   "end": 14.89
+  },
+  {
+   "w": "twenty",
+   "start": 14.97,
+   "end": 15.38
+  },
+  {
+   "w": "ten.",
+   "start": 15.46,
+   "end": 15.765
+  }
+ ]
+}

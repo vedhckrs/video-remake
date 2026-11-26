@@ -1,0 +1,133 @@
+{
+ "project": "landscape-demo",
+ "passed": 10,
+ "total": 16,
+ "hard_failures": 5,
+ "gates": [
+  {
+   "gate": "Narration pace",
+   "pass": false,
+   "value": "124 wpm",
+   "target": "195-205 wpm (185-215 ok)",
+   "hard": false
+  },
+  {
+   "gate": "Caption phrases <= 4 words",
+   "pass": true,
+   "value": "0 over",
+   "target": "0",
+   "hard": true
+  },
+  {
+   "gate": "At most one keyword box per phrase",
+   "pass": true,
+   "value": "0 over",
+   "target": "0",
+   "hard": true
+  },
+  {
+   "gate": "Keyword boxes ~ one per sentence",
+   "pass": true,
+   "value": "4 boxes / 3 sentences",
+   "target": ">= 0.5 per sentence",
+   "hard": false
+  },
+  {
+   "gate": "Caption lead before the voice",
+   "pass": true,
+   "value": "51 ms median",
+   "target": "2-5 frames @60 (33-83 ms)",
+   "hard": false
+  },
+  {
+   "gate": "SFX cue sheet present",
+   "pass": false,
+   "value": "missing",
+   "target": "run sound_design.py",
+   "hard": true
+  },
+  {
+   "gate": "Render 1920x1080 @ 60",
+   "pass": true,
+   "value": "1920x1080 @ 60",
+   "target": "1920x1080 @ 60",
+   "hard": true
+  },
+  {
+   "gate": "No span > 1.5 s without visible change",
+   "pass": true,
+   "value": "longest 0.62 s at 2.2 s",
+   "target": "<= 1.5 s",
+   "hard": true
+  },
+  {
+   "gate": "Something moves on frame 0",
+   "pass": false,
+   "value": "0.11",
+   "target": "> 0.35",
+   "hard": true
+  },
+  {
+   "gate": ">= 3 visual states in the first 3 s",
+   "pass": true,
+   "value": "4 big changes",
+   "target": ">= 3",
+   "hard": true
+  },
+  {
+   "gate": "Visual beat rate (info)",
+   "pass": true,
+   "value": "3.36 big changes / s",
+   "target": "world mode: every word",
+   "hard": false
+  },
+  {
+   "gate": "Visual change on every spoken word",
+   "pass": true,
+   "value": "21/21 words (100 %)",
+   "target": ">= 90 %",
+   "hard": true
+  },
+  {
+   "gate": "Never still > 1.0 s (15 fps)",
+   "pass": false,
+   "value": "longest 1.40 s",
+   "target": "<= 1.0 s",
+   "hard": true
+  },
+  {
+   "gate": "Camera smooth: jiggle",
+   "pass": true,
+   "value": "rms 0.721 (86.3 frames/min)",
+   "target": "rms <= 0.9",
+   "hard": true
+  },
+  {
+   "gate": "Camera smooth: direction reversals",
+   "pass": false,
+   "value": "23.5 / min",
+   "target": "<= 6 / min (v2 was 43)",
+   "hard": true
+  },
+  {
+   "gate": "Loudness -14 LUFS integrated",
+   "pass": false,
+   "value": "-70.0 LUFS",
+   "target": "-14 +- 1",
+   "hard": true
+  }
+ ],
+ "manual": [
+  "One ISO angle for every 3D object; flat modes only PLAN / ELEVATION / CARD",
+  "No outline strokes on solid objects (strokes only on annotations, wires, x-ray shells)",
+  "Every 3D box uses the theme's three face tones, light from the top-left",
+  "Each accent colour has one meaning (accentMap); state = colour + icon + motion",
+  "The presenter's pink is not used for any state or data element",
+  "Every spoken number has an animated readout landing on the word, with a unit (and a footnote if sourced)",
+  "Labels >= 30 px, footnotes >= 22 px held >= 1.5 s; never more than caption + two labels at once",
+  "The hook's claim is shown visually before 7 s; the payoff reuses the hook object or composition",
+  "At least one honesty element (illustration disclaimer, stated limit or caveat)",
+  "Every zoom-through swaps artwork at the blur peak; no L0 art scaled above 1.5x",
+  "Every scene change keeps at least 2 of the 3 bands continuous"
+ ]
+}

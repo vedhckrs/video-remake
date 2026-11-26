@@ -1,0 +1,936 @@
+{
+ "id": "ios-smooth-act1",
+ "title": "Why iOS feels so smooth - Act 1: The feeling",
+ "style": "explainer",
+ "handle": null,
+ "output": {
+  "width": 1920,
+  "height": 1080,
+  "fps": 60
+ },
+ "voice": {
+  "name": "Liam",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "model": "eleven_multilingual_v2",
+  "stability": 0.4,
+  "similarity": 0.8,
+  "style": 0.35,
+  "speed": 1.1
+ },
+ "music": {
+  "style": "tech_film",
+  "key": "E",
+  "bpm": 93,
+  "note": "restrained tech-film score (sound_design.py music_tech_film); the old bed was 'E major' corporate pop"
+ },
+ "facts_checked_2026_11_26": {
+  "render_loop": "Apple tech talk 10855 'Explore UI animation hitches and the render loop' (developer.apple.com/videos/play/tech-talks/10855): event -> commit (app process) -> render prepare + render execute (render server process, GPU) -> display; every phase's deadline is the next VSYNC; a hitch = a frame that is not ready in time. 120 Hz -> 1000/120 = 8.33 ms per frame; 120 x 60 = 7,200 frames a minute.",
+  "promotion": "apple.com iPhone 18 Pro tech specs: ProMotion with adaptive refresh rates up to 120Hz, Always-On display. Apple publishes no refresh floor - the script says 'slows right down', no number.",
+  "rd": "Apple Q4 FY2026 results (fiscal year ended 26 Sep 2026): research and development $45,765 million, up from $34,550 million (MacRumors 3 Nov 2026, MacDailyNews 3 Nov 2026). 45.77 bn / 365 = $125 million a day.",
+  "history": "P.A. Semi bought April 2008 for $278 million (Wikipedia 'Mac transition to Apple silicon', AppleInsider history of Apple silicon). A4: 2010, first Apple-designed system on a chip (iPad, then iPhone 4), made by Samsung at 45 nm. A7: Sept 2013, first 64-bit chip in a smartphone (iPhone 5s). A11 Bionic: Sept 2017, first Neural Engine. M1: Nov 2020, first Apple silicon Macs. C1 modem: Feb 2025 (iPhone 16e). N1 wireless chip: Sept 2025 (iPhone 17 line). A20 Pro: Sept 2026, iPhone 18 Pro, first iPhone chip on TSMC 2 nm (Wikipedia 'Apple A20 Pro'; TechInsights teardown via TechTimes 23 Sep 2026). 2008 -> 2026 = 18 years."
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "section": "hook",
+   "bg": "dark",
+   "text": "Watch this scroll. One frame just arrived 8 milliseconds late. You can't see it. But your thumb can feel it. On an iPhone, that almost never happens.",
+   "keywords": {
+    "8": "select",
+    "feel": "select",
+    "never": "select"
+   },
+   "hits": [
+    {
+     "frame": 10.5,
+     "sfx": "glass_tap",
+     "pan": -0.05,
+     "db": -1,
+     "note": "thumb lands on the glass of the real phone"
+    },
+    {
+     "frame": 13.65,
+     "sfx": "glass_swipe",
+     "pan": -0.05,
+     "note": "first flick: the feed scrolls"
+    },
+    {
+     "frame": 30.0,
+     "sfx": "glass_swipe",
+     "pan": -0.05,
+     "db": -3,
+     "rate": 1.06,
+     "note": "second flick"
+    },
+    {
+     "frame": 47.7,
+     "sfx": "peel",
+     "pan": -0.15,
+     "db": -1,
+     "note": "frames peel off the screen into a film strip"
+    },
+    {
+     "frame": 84.0,
+     "sfx": "ratchet",
+     "pan": -0.55,
+     "run": {
+      "n": 5,
+      "dur": 0.3,
+      "ease": "out",
+      "db_end": -2
+     },
+     "note": "frame-time drum counter rolls to 8 ms"
+    },
+    {
+     "frame": 108.99,
+     "sfx": "stamp",
+     "pan": 0.2,
+     "note": "LATE stamp lands on the red spike (hero)"
+    },
+    {
+     "frame": 186.0,
+     "sfx": "glass_tap",
+     "pan": 0.1,
+     "db": 1,
+     "take": 2,
+     "note": "macro: fingertip touches the glass"
+    },
+    {
+     "frame": 200.01,
+     "sfx": "pulse",
+     "pan": 0.0,
+     "note": "red ripple runs from the glass into the finger: felt, not heard"
+    }
+   ],
+   "visual": "HOOK, a big picture change every 0.5 s. Frame 0: a giant thumb flicks a feed on a phone that fills the screen, already moving. 'One frame': time freezes, the feed splits into a film strip of frames flying past; one frame turns red and lags behind. '8 milliseconds': a frame-time graph slams in across the full width, green bars with one tall red spike, a drum counter rolls to 8 ms. 'can't see it': extreme macro of an eye, the red frame reflected, gone in a blink. 'thumb can feel it': macro of the fingertip on glass, a red shock ripple runs from the glass into the finger. 'On an iPhone': the graph flattens to a perfect green line and the phone redraws in titanium. 'never happens': the green line runs off screen like a heartbeat."
+  },
+  {
+   "id": "S02",
+   "section": "promise",
+   "bg": "dark",
+   "transition": "cut",
+   "text": "That is not luck. To make a scroll this smooth, Apple designed its own chips, its own modem and its own software, and spent 125 million dollars a day on research last year. So let's open it up, layer by layer, all the way down to a single transistor.",
+   "keywords": {
+    "luck.": "select",
+    "125": "select",
+    "transistor.": "select"
+   },
+   "hits": [
+    {
+     "frame": 11.0,
+     "sfx": "hum_on",
+     "pan": 0.0,
+     "db": -1,
+     "note": "logic board wakes: gold ring lights round the chip"
+    },
+    {
+     "frame": 143.0,
+     "sfx": "set",
+     "pan": -0.42,
+     "rate": 0.94,
+     "note": "A20 Pro settles on the first pedestal"
+    },
+    {
+     "frame": 169.4,
+     "sfx": "set",
+     "pan": 0.0,
+     "rate": 1.0,
+     "db": -1,
+     "note": "modem settles on the second pedestal"
+    },
+    {
+     "frame": 200.9,
+     "sfx": "set",
+     "pan": 0.42,
+     "rate": 1.1,
+     "db": -2,
+     "note": "glass software stack settles on the third pedestal"
+    },
+    {
+     "frame": 233.0,
+     "sfx": "ratchet",
+     "pan": -0.35,
+     "run": {
+      "n": 16,
+      "dur": 1.4,
+      "ease": "out",
+      "db_end": -3,
+      "rate_end": -0.06
+     },
+     "note": "$125,000,000 drum counter rolls, slowing"
+    },
+    {
+     "frame": 278.9,
+     "sfx": "lock",
+     "pan": -0.3,
+     "note": "counter wheels lock"
+    },
+    {
+     "frame": 282.2,
+     "sfx": "seat",
+     "pan": 0.3,
+     "db": -5,
+     "note": "/ DAY drops in under the calendar"
+    },
+    {
+     "frame": 366.5,
+     "sfx": "glass_lift",
+     "pan": -0.3,
+     "note": "back glass ghosts and lifts off the phone"
+    },
+    {
+     "frame": 423.5,
+     "sfx": "air_long",
+     "pan": 0.0,
+     "at": "peak",
+     "take": 2,
+     "note": "one continuous dive: board -> package -> die -> cells"
+    },
+    {
+     "frame": 452.0,
+     "sfx": "hum_on",
+     "pan": 0.1,
+     "take": 2,
+     "note": "the transistor's gate charges"
+    },
+    {
+     "frame": 460.1,
+     "sfx": "switch",
+     "pan": 0.1,
+     "note": "transistor switches ON"
+    }
+   ],
+   "visual": "The green line becomes a trace on a circuit board. 'chips / modem / software': three hero objects rise on lit pedestals one per word (A20 Pro package, C2 modem, a glass iOS layer stack). '125 million dollars a day': a mechanical drum counter rolls to $125,000,000 / DAY with a calendar flipping behind it; footnote 'Apple FY2026 R&D: $45.77 billion'. 'open it up, layer by layer': the phone explodes into its layers (glass, display, board, battery) on a spring. 'single transistor': continuous nano dive preview, board -> chip -> die -> one glowing transistor, then pulls back. Source credit on the counter shot."
+  },
+  {
+   "id": "S03",
+   "section": "basics",
+   "bg": "dark",
+   "transition": "portal",
+   "text": "Start with the screen. It can redraw 120 times a second. So every frame has a deadline: about 8.3 milliseconds. Miss it, and the old picture stays on screen for one more beat. Engineers call that a hitch.",
+   "keywords": {
+    "120": "select",
+    "8.3": "select",
+    "hitch.": "select"
+   },
+   "hits": [
+    {
+     "frame": 74.0,
+     "sfx": "ratchet",
+     "pan": -0.6,
+     "run": {
+      "n": 8,
+      "dur": 0.7,
+      "ease": "out",
+      "db_end": -2
+     },
+     "note": "120 Hz drum counter rolls"
+    },
+    {
+     "frame": 96.5,
+     "sfx": "lock",
+     "pan": -0.6,
+     "db": -3,
+     "note": "120 locks"
+    },
+    {
+     "frame": 212.9,
+     "sfx": "stamp",
+     "pan": -0.1,
+     "db": -5,
+     "rate": 1.12,
+     "note": "ON TIME stamp on the first frame"
+    },
+    {
+     "frame": 260.6,
+     "sfx": "knock_dull",
+     "pan": -0.25,
+     "note": "the gate shuts: no new frame"
+    },
+    {
+     "frame": 267.8,
+     "sfx": "stamp",
+     "pan": -0.3,
+     "db": -2,
+     "take": 2,
+     "note": "LATE stamp"
+    },
+    {
+     "frame": 405.2,
+     "sfx": "stamp",
+     "pan": -0.3,
+     "db": 1,
+     "rate": 0.92,
+     "take": 3,
+     "note": "HITCH stamp (hero of the scene)"
+    }
+   ],
+   "visual": "World 'The deadline'. Macro of the OLED panel: red, green and blue sub-pixels in rows, lighting in waves. '120 times a second': a refresh scan line sweeps down again and again while a counter spins to 120 Hz. 'deadline': a long timeline with VSYNC gates every 8.3 ms, like finish lines; a frame card races to each gate and gets stamped ON TIME. 'Miss it': one frame card arrives late, the gate closes, the previous picture is copied into the slot (ghost duplicate) in red. 'hitch': the red slot gets a HITCH stamp and the scroll above visibly jerks once."
+  },
+  {
+   "id": "S04",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "Here is the race. Your finger moves, and the touch goes to the app. The app works out what should change, then hands it over. A separate system process, the render server, prepares the frame. The graphics chip paints it. And the display shows it on the very next tick.",
+   "keywords": {
+    "race.": "select",
+    "app.": "select",
+    "render": "select",
+    "paints": "select",
+    "tick.": "select"
+   },
+   "hits": [
+    {
+     "frame": 60.4,
+     "sfx": "glass_tap",
+     "pan": -0.4,
+     "take": 3,
+     "note": "finger touches the real phone at the first station"
+    },
+    {
+     "frame": 105.1,
+     "sfx": "slide",
+     "pan": -0.3,
+     "rate": 1.0,
+     "note": "cartridge travels the rail: touch -> app"
+    },
+    {
+     "frame": 115.3,
+     "sfx": "lock",
+     "pan": -0.05,
+     "db": -5,
+     "rate": 1.25,
+     "take": 2,
+     "note": "cartridge docks at the app, window lights"
+    },
+    {
+     "frame": 225.1,
+     "sfx": "slide",
+     "pan": -0.1,
+     "rate": 0.95,
+     "db": -1,
+     "note": "hands it over: cartridge travels app -> render server"
+    },
+    {
+     "frame": 235.9,
+     "sfx": "lock",
+     "pan": 0.15,
+     "db": -6,
+     "rate": 1.2,
+     "take": 3,
+     "note": "cartridge docks at the render server"
+    },
+    {
+     "frame": 379.0,
+     "sfx": "node_ticks",
+     "pan": 0.1,
+     "note": "GPU die paints the frame tile by tile"
+    },
+    {
+     "frame": 407.5,
+     "sfx": "slide",
+     "pan": 0.15,
+     "rate": 0.9,
+     "db": -1,
+     "note": "cartridge travels GPU -> display"
+    },
+    {
+     "frame": 422.5,
+     "sfx": "switch",
+     "pan": 0.3,
+     "note": "display phone lights up"
+    },
+    {
+     "frame": 464.2,
+     "sfx": "clock_tick",
+     "pan": 0.0,
+     "db": 2,
+     "note": "the very next tick"
+    },
+    {
+     "frame": 467.5,
+     "sfx": "stamp",
+     "pan": -0.35,
+     "db": -6,
+     "rate": 1.15,
+     "note": "ON TIME"
+    }
+   ],
+   "visual": "World 'The render loop', one wide machine laid out left to right across the 16:9 frame, five stations joined by a glowing track: TOUCH (finger on glass, capacitive grid lights up) -> APP (a glass app window, layout boxes rearranging) -> RENDER SERVER (a separate dark tower, layer tree becomes a stack of tiles) -> GPU (a chip die, tiles painted into pixels) -> DISPLAY (panel lights). One frame packet travels the track; the camera follows it station by station as each is named, while an 8.3 ms deadline bar drains along the bottom of the machine. The packet lands at the display with time to spare: ON TIME. Labels follow Apple's own names: Event, Commit, Render prepare, Render execute, Display."
+  },
+  {
+   "id": "S05",
+   "section": "mechanism",
+   "bg": "dark",
+   "text": "And here is the clever part. Animations run inside that render server, outside the app. So even when an app is busy, the motion on screen can keep going. And when nothing moves, ProMotion slows the screen right down to save battery.",
+   "keywords": {
+    "clever": "select",
+    "outside": "select",
+    "busy,": "select",
+    "ProMotion": "select"
+   },
+   "hits": [
+    {
+     "frame": 87.0,
+     "sfx": "glass_swipe",
+     "pan": -0.15,
+     "rate": 0.85,
+     "take": 2,
+     "note": "the animation card lifts out of the app and crosses the glass wall"
+    },
+    {
+     "frame": 118.5,
+     "sfx": "set",
+     "pan": 0.15,
+     "db": -3,
+     "rate": 1.05,
+     "note": "card lands inside the render server"
+    },
+    {
+     "frame": 213.3,
+     "sfx": "knock_dull",
+     "pan": -0.3,
+     "db": -1,
+     "take": 2,
+     "note": "app goes amber: BUSY"
+    },
+    {
+     "frame": 219.0,
+     "sfx": "knock_dull",
+     "pan": -0.3,
+     "db": -5,
+     "rate": 0.94,
+     "note": "(second half of the stuck double knock)"
+    },
+    {
+     "frame": 261.0,
+     "sfx": "clock_tick",
+     "pan": 0.2,
+     "db": -1,
+     "note": "the server keeps landing frames on time"
+    },
+    {
+     "frame": 271.5,
+     "sfx": "clock_tick",
+     "pan": 0.2,
+     "db": -1,
+     "note": "..."
+    },
+    {
+     "frame": 282.0,
+     "sfx": "clock_tick",
+     "pan": 0.2,
+     "db": -1,
+     "note": "..."
+    },
+    {
+     "frame": 300.0,
+     "sfx": "air_pass",
+     "pan": 0.0,
+     "at": "peak",
+     "db": -2,
+     "note": "camera whips along the machine to the display"
+    },
+    {
+     "frame": 356.1,
+     "sfx": "ratchet",
+     "pan": 0.2,
+     "db": 1,
+     "run": {
+      "n": 6,
+      "dur": 0.55,
+      "ease": "out",
+      "db_end": -4,
+      "rate_end": -0.28
+     },
+     "note": "ProMotion dial needle winds down"
+    }
+   ],
+   "visual": "Same machine, pulled back into a split: the APP window on the left, the RENDER SERVER tower on the right, a glass wall between them. 'outside the app': an animation (a card springing open) is lifted out of the app and keeps playing inside the tower. 'app is busy': the app side goes amber, a spinner and a jammed gear, while the right side keeps animating smoothly, green frame ticks landing on time. 'ProMotion': a refresh dial; it swings to 120 Hz while a feed scrolls, then drops low as the feed stops and a battery fills. No floor number shown (Apple publishes none): the dial is labelled 'up to 120 Hz'."
+  },
+  {
+   "id": "S06",
+   "section": "turn",
+   "bg": "dark",
+   "transition": "portal",
+   "text": "But software alone cannot win that race 7,200 times a minute. It needs a chip built for exactly this software. And in 2008, Apple did not design a single one.",
+   "keywords": {
+    "7,200": "select",
+    "chip": "select",
+    "2008,": "select"
+   },
+   "hits": [
+    {
+     "frame": 0.5,
+     "sfx": "air_long",
+     "pan": 0.0,
+     "at": "peak",
+     "db": -1,
+     "note": "portal into the tunnel of gates"
+    },
+    {
+     "frame": 67.1,
+     "sfx": "ratchet",
+     "pan": 0.0,
+     "run": {
+      "n": 13,
+      "dur": 1.1,
+      "ease": "out",
+      "db_end": -3,
+      "rate_end": -0.06
+     },
+     "note": "7,200 / MIN drum counter rolls"
+    },
+    {
+     "frame": 101.3,
+     "sfx": "lock",
+     "pan": 0.0,
+     "db": -1,
+     "note": "7,200 locks"
+    },
+    {
+     "frame": 188.6,
+     "sfx": "set",
+     "pan": 0.0,
+     "rate": 0.88,
+     "note": "glass iOS layers seat on the chip"
+    },
+    {
+     "frame": 189.5,
+     "sfx": "hum_on",
+     "pan": 0.0,
+     "db": -3,
+     "note": "pins light where they meet"
+    },
+    {
+     "frame": 219.5,
+     "sfx": "film_shutter",
+     "pan": -0.3,
+     "note": "real photo of the first iPhone"
+    },
+    {
+     "frame": 292.4,
+     "sfx": "hollow",
+     "pan": 0.2,
+     "note": "the empty socket: a question mark"
+    }
+   ],
+   "visual": "The deadline gates multiply into a tunnel of gates rushing at the camera, counter racing to 7,200 / MIN. 'a chip built for exactly this software': the glass iOS layer stack lowers onto a chip like a key into a lock, pins light up where they meet. '2008': hard change of world: the first iPhone era, an older rounded phone opens to show a board whose main chip is blank, an empty socket with a dashed outline and a question mark where Apple's own chip would be."
+  },
+  {
+   "id": "S07",
+   "section": "history",
+   "bg": "dark",
+   "transition": "push",
+   "text": "So it bought a small chip company, P.A. Semi, for 278 million dollars. Two years later came the A4, the first chip Apple designed itself. In 2013, the A7 became the first 64-bit chip in a phone. In 2017, the A11 added a Neural Engine for machine learning. And in 2020, the same idea, scaled up, became the M1, and replaced Intel inside the Mac.",
+   "keywords": {
+    "278": "select",
+    "A4,": "select",
+    "64-bit": "select",
+    "Neural": "select",
+    "M1,": "select"
+   },
+   "hits": [
+    {
+     "frame": 1.6,
+     "sfx": "air_pass",
+     "pan": 0.0,
+     "at": "peak",
+     "db": -2,
+     "take": 2,
+     "note": "push onto the chip road"
+    },
+    {
+     "frame": 61.0,
+     "sfx": "ratchet",
+     "pan": -0.2,
+     "run": {
+      "n": 11,
+      "dur": 0.88,
+      "ease": "out",
+      "db_end": -3,
+      "rate_end": -0.06
+     },
+     "note": "$278,000,000 drum counter rolls"
+    },
+    {
+     "frame": 87.4,
+     "sfx": "lock",
+     "pan": -0.2,
+     "note": "$278,000,000 locks"
+    },
+    {
+     "frame": 138.7,
+     "sfx": "stamp",
+     "pan": -0.25,
+     "db": 1,
+     "rate": 0.96,
+     "note": "seal stamp on the P.A. Semi deal card (hero)"
+    },
+    {
+     "frame": 205.9,
+     "sfx": "seat",
+     "pan": 0.0,
+     "db": 1,
+     "note": "A4 drops into the empty socket (hero)"
+    },
+    {
+     "frame": 361.6,
+     "sfx": "ratchet",
+     "pan": 0.25,
+     "run": {
+      "n": 7,
+      "dur": 0.6,
+      "ease": "out",
+      "db_end": -2
+     },
+     "note": "32 -> 64 counter rolls as the lanes widen"
+    },
+    {
+     "frame": 381.4,
+     "sfx": "lock",
+     "pan": 0.25,
+     "db": -2,
+     "note": "64-BIT locks"
+    },
+    {
+     "frame": 505.0,
+     "sfx": "node_ticks",
+     "pan": 0.3,
+     "rate": 1.12,
+     "take": 2,
+     "note": "neural net nodes light up one by one"
+    },
+    {
+     "frame": 655.0,
+     "sfx": "air_long",
+     "pan": 0.0,
+     "at": "peak",
+     "db": -4,
+     "take": 2,
+     "note": "the die scales up into the M1"
+    },
+    {
+     "frame": 706.6,
+     "sfx": "slide",
+     "pan": 0.2,
+     "rate": 0.72,
+     "take": 4,
+     "note": "x86 chip pushed out of the frame"
+    },
+    {
+     "frame": 754.6,
+     "sfx": "air_short",
+     "pan": 0.0,
+     "rate": 0.8,
+     "db": -1,
+     "note": "MacBook lid swings open"
+    },
+    {
+     "frame": 760.6,
+     "sfx": "switch",
+     "pan": 0.1,
+     "db": -3,
+     "take": 2,
+     "note": "MacBook screen lights"
+    }
+   ],
+   "visual": "World 'The chip road': a long horizontal road of year markers 2008 -> 2020 that the camera travels along, one stop per sentence, each chip redrawn in code from real package photos and growing in size and detail. 2008: a signed deal card, drum counter $278,000,000. 2010: the A4 package drops into the empty socket from S06, the board lights. 2013: A7, its die x-rays to show registers widening from 32 to 64 lanes. 2017: A11, a new block on the die lights up as a small neural net, a face outline is recognised. 2020: the die scales up into the M1, a laptop opens around it and a blue chip is pushed out of the frame. Real photos on glass cards beside the redrawn chips where a licence allows (A4 package, M1 press image), each with a bottom-right source credit."
+  },
+  {
+   "id": "S08",
+   "section": "history",
+   "bg": "dark",
+   "text": "Then Apple went after the chips around it. Its own modem, the C1, in 2025. Its own wireless chip, the N1, the same year. And now, in the iPhone 18 Pro, the A20 Pro: Apple's first 2 nanometer chip.",
+   "keywords": {
+    "C1,": "select",
+    "N1,": "select",
+    "A20": "select",
+    "2": "select"
+   },
+   "hits": [
+    {
+     "frame": 107.3,
+     "sfx": "seat",
+     "pan": 0.3,
+     "db": -2,
+     "rate": 1.08,
+     "take": 3,
+     "note": "C1 modem drops into its place"
+    },
+    {
+     "frame": 205.1,
+     "sfx": "seat",
+     "pan": 0.1,
+     "db": -3,
+     "rate": 1.14,
+     "note": "N1 drops in"
+    },
+    {
+     "frame": 221.9,
+     "sfx": "lock",
+     "pan": 0.5,
+     "db": -6,
+     "rate": 1.3,
+     "take": 1,
+     "note": "Wi-Fi 7"
+    },
+    {
+     "frame": 237.5,
+     "sfx": "lock",
+     "pan": 0.5,
+     "db": -7,
+     "rate": 1.38,
+     "take": 2,
+     "note": "Bluetooth 6"
+    },
+    {
+     "frame": 245.6,
+     "sfx": "lock",
+     "pan": 0.5,
+     "db": -8,
+     "rate": 1.46,
+     "take": 3,
+     "note": "Thread"
+    },
+    {
+     "frame": 288.5,
+     "sfx": "slide",
+     "pan": 0.0,
+     "rate": 0.75,
+     "take": 2,
+     "note": "board slides into the real phone"
+    },
+    {
+     "frame": 360.5,
+     "sfx": "air_long",
+     "pan": 0.0,
+     "at": "peak",
+     "db": -1,
+     "note": "push into the A20 Pro hero"
+    },
+    {
+     "frame": 387.5,
+     "sfx": "hum_on",
+     "pan": 0.6,
+     "db": -1,
+     "note": "transistor lens: gate charges"
+    },
+    {
+     "frame": 395.0,
+     "sfx": "switch",
+     "pan": 0.6,
+     "note": "transistor lens switches on"
+    }
+   ],
+   "visual": "Same road, 2025 -> 2026, now on a modern logic board. Around the main chip two neighbouring chips with other makers' blank labels lift out and Apple-designed ones drop in: C1 (radio waves pulse out to a cell tower), N1 (Wi-Fi, Bluetooth and Thread rings). 'iPhone 18 Pro': the board slides into a titanium phone. 'A20 Pro': hero shot, the package fills the frame, laser-etched, light sweep; a short nano dive to a 2 nm nanosheet transistor and the label 'TSMC 2 nm'."
+  },
+  {
+   "id": "S09",
+   "section": "handoff",
+   "bg": "dark",
+   "text": "Eighteen years of work, for one feeling under your thumb. So where does all of it actually sit? Let's open the phone.",
+   "keywords": {
+    "Eighteen": "select",
+    "feeling": "select",
+    "open": "select"
+   },
+   "hits": [
+    {
+     "frame": 1.6,
+     "sfx": "ratchet",
+     "pan": -0.75,
+     "run": {
+      "n": 4,
+      "dur": 0.2,
+      "ease": "out",
+      "db_end": -2
+     },
+     "note": "18 YEARS counter rolls"
+    },
+    {
+     "frame": 92.5,
+     "sfx": "glass_swipe",
+     "pan": 0.0,
+     "db": -1,
+     "take": 3,
+     "note": "thumb scrolls the phone again: every frame on time"
+    },
+    {
+     "frame": 208.9,
+     "sfx": "glass_lift",
+     "pan": -0.25,
+     "take": 2,
+     "note": "back glass lifts"
+    },
+    {
+     "frame": 221.5,
+     "sfx": "air_long",
+     "pan": 0.0,
+     "at": "onset",
+     "db": -2,
+     "take": 2,
+     "note": "camera pushes inside the phone (hand-off to Act 2)"
+    }
+   ],
+   "visual": "The whole road 2008 -> 2026 folds up into the phone from the hook; the thumb returns and scrolls, the green frame line perfectly flat. 'where does it sit': an x-ray pass sweeps over the phone showing the board glowing inside. 'open the phone': the back glass lifts, screws spin out, and the camera pushes into the opening. End of Act 1 on the dive (Act 2 starts inside)."
+  }
+ ],
+ "gl": "angle",
+ "sound": {
+  "palette": "sfx_palette.json",
+  "auto_transitions": false,
+  "hit_sub": false,
+  "jitter_db": 0.8,
+  "jitter_rate": 0.04,
+  "mix": {
+   "music_db": -15.0,
+   "duck_voice_db": 6.5,
+   "duck_fx_db": 2.0,
+   "duck_window_s": 0.3,
+   "duck_smooth_s": 0.35,
+   "music_width": 1.5,
+   "music_eq": "equalizer=f=2600:t=q:w=1.0:g=-3,highshelf=f=9000:g=1.5",
+   "fx_room": 0.22,
+   "fx_eq": "highshelf=f=7000:g=-2",
+   "master_af": "highpass=f=28,equalizer=f=2200:t=q:w=1.2:g=-1.5",
+   "lufs": -14.0,
+   "tp_db": -1.0,
+   "stems": true
+  }
+ },
+ "sound_silent_beats": [
+  {
+   "t": 2.37,
+   "note": "the red frame lags behind the strip - the LATE stamp a second later is the one accent"
+  },
+  {
+   "t": 4.45,
+   "note": "two film frames slide in, the scan finds nothing, NO VISIBLE DIFFERENCE banner: 'you can't see it' = you hear nothing"
+  },
+  {
+   "t": 7.4,
+   "note": "second red ripple on the glass"
+  },
+  {
+   "t": 8.0,
+   "note": "graph flattens to even green bars, the phone redraws and scrolls - left to the music's release"
+  },
+  {
+   "t": 9.4,
+   "note": "logic board rises out of the phone (music lifts into S02 instead)"
+  },
+  {
+   "t": 13.95,
+   "note": "camera glides down to the pedestals; pedestal rings light"
+  },
+  {
+   "t": 17.8,
+   "note": "calendar pages flip behind the counter (16 flips - would be clutter under the ratchet)"
+  },
+  {
+   "t": 23.05,
+   "note": "layer cards light one by one (back glass, logic board, battery, A20 Pro)"
+  },
+  {
+   "t": 26.78,
+   "note": "zoom-through into the OLED sub-pixels (the dive's air tail covers it)"
+  },
+  {
+   "t": 28.75,
+   "note": "refresh scan line sweeps the panel again and again"
+  },
+  {
+   "t": 32.1,
+   "note": "pull-back from the sub-pixels to the VSYNC timeline"
+  },
+  {
+   "t": 33.4,
+   "note": "8.3 ms counter; second ON TIME stamp at 34.5; green gates passing"
+  },
+  {
+   "t": 37.0,
+   "note": "REPEAT: the old picture is copied into the slot"
+  },
+  {
+   "t": 38.25,
+   "note": "the next gate goes green ('one more beat')"
+  },
+  {
+   "t": 41.6,
+   "note": "wide reveal of the render machine, deadline bar appears"
+  },
+  {
+   "t": 46.0,
+   "note": "app window re-lays out its boxes"
+  },
+  {
+   "t": 49.3,
+   "note": "glass enclosure draws round the render server, SEPARATE PROCESS tag; layer tiles stack"
+  },
+  {
+   "t": 52.3,
+   "note": "cartridge travels render server -> GPU (the fourth rail move; three are enough)"
+  },
+  {
+   "t": 57.9,
+   "note": "camera pulls back, glass wall rises between app and server"
+  },
+  {
+   "t": 70.45,
+   "note": "battery fills"
+  },
+  {
+   "t": 75.75,
+   "note": "cut from the tunnel to the chip"
+  },
+  {
+   "t": 80.2,
+   "note": "the photo opens into the 2008 board"
+  },
+  {
+   "t": 82.1,
+   "note": "deal card slides in, signature draws"
+  },
+  {
+   "t": 104.0,
+   "note": "the M1 floats in over the x86 chip (no contact on screen, so no impact)"
+  },
+  {
+   "t": 87.5,
+   "note": "road moves 2008 -> 2010; and every later year move (2013, 2017, 2020) - the score steps up instead"
+  },
+  {
+   "t": 89.5,
+   "note": "real A4 photo"
+  },
+  {
+   "t": 95.0,
+   "note": "phone with 64 pops beside the die"
+  },
+  {
+   "t": 99.5,
+   "note": "face outline recognised, check mark"
+  },
+  {
+   "t": 108.75,
+   "note": "push onto the 2025 board, neighbouring chips highlight"
+  },
+  {
+   "t": 111.13,
+   "note": "the pulse out to the cell tower and its reply (a radio 'ping' read as a cheap synth beep - earshot match +3.1 - so the wave stays silent)"
+  },
+  {
+   "t": 118.5,
+   "note": "A20 Pro callout on the back of the phone"
+  },
+  {
+   "t": 123.5,
+   "note": "18-year ribbon folds into the phone; green bars spread"
+  },
+  {
+   "t": 125.9,
+   "note": "phone turns to its back; A20 Pro callout card"
+  }
+ ]
+}

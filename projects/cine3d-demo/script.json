@@ -1,0 +1,172 @@
+{
+  "id": "cine3d-demo",
+  "title": "cine3d demo: real 3D phone + transistor (engine test, no voice)",
+  "handle": null,
+  "style": "explainer",
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "gl": "angle",
+  "_note": "Hand-made test for the cine3d kit (26 Nov 2026): fake word timings in vo_words.json, silent vo.mp3. The phone is Apple's own AR model (public/models, never in git).",
+  "scenes": [
+    {
+      "id": "S01",
+      "section": "hook",
+      "bg": "dark",
+      "text": "The real iPhone eighteen Pro, with a live feed on its screen.",
+      "keywords": {
+        "real": "select",
+        "feed": "select"
+      },
+      "visual": "Real 3D phone, 3/4 front, slow orbit, scrolling feed mapped on the display."
+    },
+    {
+      "id": "S02",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "Turn it around: the back, and the camera plateau.",
+      "keywords": {
+        "plateau.": "select"
+      },
+      "visual": "The phone turns from its edge to a 3/4 back hero.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S03",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "Push in on the lenses, with real depth of field.",
+      "keywords": {
+        "lenses,": "select"
+      },
+      "visual": "Macro on the plateau and lenses.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S04",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "The back turns to glass: the A twenty Pro sits here.",
+      "keywords": {
+        "glass:": "select",
+        "here.": "select"
+      },
+      "visual": "X-ray: ghost glass back, code-drawn logic board aligned inside, callout via anchors.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S05",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "Lift the back away and move in on the board.",
+      "keywords": {
+        "board.": "select"
+      },
+      "visual": "Back glass lifts off, camera pushes in on the board.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S06",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "Inside that chip: one nanosheet transistor.",
+      "keywords": {
+        "transistor.": "select"
+      },
+      "visual": "Transistor3D hero.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S07",
+      "section": "mechanism",
+      "bg": "dark",
+      "text": "The gate switches on, and electrons stream through every sheet.",
+      "keywords": {
+        "gate": "select",
+        "electrons": "select"
+      },
+      "visual": "Gate on/off, channels glow, electrons stream.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S08",
+      "section": "proof",
+      "bg": "dark",
+      "text": "Pull back: billions of them, side by side.",
+      "keywords": {
+        "billions": "select"
+      },
+      "visual": "Pull-back over a field of transistors.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S09",
+      "section": "proof",
+      "bg": "dark",
+      "text": "The same transistor, through a lens over the package.",
+      "keywords": {
+        "lens": "select"
+      },
+      "visual": "Lite inset in a round lens over the 2D A20 Pro package.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "S10",
+      "section": "proof",
+      "bg": "dark",
+      "text": "Cut it open: every layer of the gate, wrapped round each sheet.",
+      "keywords": {
+        "layer": "select"
+      },
+      "visual": "Deep cut-away of the transistor, low three-quarter macro.",
+      "transition": "dissolve",
+      "transition_frames": 10,
+      "origin": [
+        0.5,
+        0.5
+      ]
+    }
+  ]
+}

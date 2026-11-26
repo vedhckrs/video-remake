@@ -1,0 +1,1257 @@
+{
+  "id": "silicon-demo",
+  "title": "Silicon kit demo (engine test, no voice)",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "baseFps": 30,
+  "output": {
+    "width": 1920,
+    "height": 1080
+  },
+  "durationInFrames": 2242,
+  "theme": {
+    "dark": {
+      "bg": "#0E0F11",
+      "fg": "#FFFFFF",
+      "mute": "#8E9196",
+      "grid": "rgba(255,255,255,0.045)",
+      "card": "#1A1C21",
+      "cardBorder": "rgba(255,255,255,0.08)"
+    },
+    "light": {
+      "bg": "#F6F7F9",
+      "fg": "#0E0F11",
+      "mute": "#6B6E73",
+      "grid": "rgba(14,15,17,0.06)",
+      "card": "#FFFFFF",
+      "cardBorder": "rgba(14,15,17,0.08)"
+    },
+    "accent": "#3B8CFF",
+    "accent2": "#DC1E30",
+    "select": {
+      "fill": "rgba(59,140,255,0.16)",
+      "border": "#3B8CFF"
+    },
+    "fontSans": "Poppins",
+    "fontSerif": "Instrument Serif",
+    "fontMono": "JetBrains Mono"
+  },
+  "audio": {
+    "vo": "silicon-demo/vo.mp3",
+    "voVolume": 1.0,
+    "sfx": []
+  },
+  "captions": {
+    "y": 0.84,
+    "size": 36,
+    "pages": [
+      {
+        "from": 15,
+        "to": 118,
+        "words": [
+          {
+            "w": "This",
+            "frame": 15,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 41,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 67,
+            "style": "normal"
+          },
+          {
+            "w": "logic",
+            "frame": 93,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 119,
+        "to": 222,
+        "words": [
+          {
+            "w": "board",
+            "frame": 119,
+            "style": "select"
+          },
+          {
+            "w": "of",
+            "frame": 145,
+            "style": "normal"
+          },
+          {
+            "w": "an",
+            "frame": 171,
+            "style": "normal"
+          },
+          {
+            "w": "iPhone,",
+            "frame": 197,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 223,
+        "to": 326,
+        "words": [
+          {
+            "w": "and",
+            "frame": 223,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 249,
+            "style": "normal"
+          },
+          {
+            "w": "chip",
+            "frame": 275,
+            "style": "select"
+          },
+          {
+            "w": "does",
+            "frame": 301,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 327,
+        "to": 431,
+        "words": [
+          {
+            "w": "all",
+            "frame": 327,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 353,
+            "style": "normal"
+          },
+          {
+            "w": "thinking.",
+            "frame": 379,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 459,
+        "to": 579,
+        "words": [
+          {
+            "w": "The",
+            "frame": 459,
+            "style": "normal"
+          },
+          {
+            "w": "processor",
+            "frame": 489,
+            "style": "normal"
+          },
+          {
+            "w": "is",
+            "frame": 520,
+            "style": "normal"
+          },
+          {
+            "w": "a",
+            "frame": 550,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 580,
+        "to": 610,
+        "words": [
+          {
+            "w": "package:",
+            "frame": 580,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 611,
+        "to": 731,
+        "words": [
+          {
+            "w": "memory",
+            "frame": 611,
+            "style": "select"
+          },
+          {
+            "w": "stacked",
+            "frame": 641,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 672,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 702,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 732,
+        "to": 762,
+        "words": [
+          {
+            "w": "silicon,",
+            "frame": 732,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 763,
+        "to": 883,
+        "words": [
+          {
+            "w": "sitting",
+            "frame": 763,
+            "style": "normal"
+          },
+          {
+            "w": "on",
+            "frame": 793,
+            "style": "normal"
+          },
+          {
+            "w": "hundreds",
+            "frame": 824,
+            "style": "normal"
+          },
+          {
+            "w": "of",
+            "frame": 854,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 884,
+        "to": 971,
+        "words": [
+          {
+            "w": "solder",
+            "frame": 884,
+            "style": "normal"
+          },
+          {
+            "w": "balls.",
+            "frame": 915,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 999,
+        "to": 1200,
+        "words": [
+          {
+            "w": "Dive",
+            "frame": 999,
+            "style": "normal"
+          },
+          {
+            "w": "into",
+            "frame": 1049,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1100,
+            "style": "normal"
+          },
+          {
+            "w": "die,",
+            "frame": 1150,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1201,
+        "to": 1401,
+        "words": [
+          {
+            "w": "past",
+            "frame": 1201,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1251,
+            "style": "normal"
+          },
+          {
+            "w": "cores",
+            "frame": 1301,
+            "style": "normal"
+          },
+          {
+            "w": "and",
+            "frame": 1352,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1402,
+        "to": 1502,
+        "words": [
+          {
+            "w": "the",
+            "frame": 1402,
+            "style": "normal"
+          },
+          {
+            "w": "cache,",
+            "frame": 1453,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1503,
+        "to": 1704,
+        "words": [
+          {
+            "w": "down",
+            "frame": 1503,
+            "style": "normal"
+          },
+          {
+            "w": "to",
+            "frame": 1553,
+            "style": "normal"
+          },
+          {
+            "w": "one",
+            "frame": 1604,
+            "style": "normal"
+          },
+          {
+            "w": "transistor",
+            "frame": 1654,
+            "style": "select"
+          }
+        ]
+      },
+      {
+        "from": 1705,
+        "to": 1771,
+        "words": [
+          {
+            "w": "switching.",
+            "frame": 1705,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1809,
+        "to": 1875,
+        "words": [
+          {
+            "w": "Next",
+            "frame": 1809,
+            "style": "normal"
+          },
+          {
+            "w": "door,",
+            "frame": 1842,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 1876,
+        "to": 2008,
+        "words": [
+          {
+            "w": "the",
+            "frame": 1876,
+            "style": "normal"
+          },
+          {
+            "w": "modem",
+            "frame": 1909,
+            "style": "select"
+          },
+          {
+            "w": "and",
+            "frame": 1942,
+            "style": "normal"
+          },
+          {
+            "w": "the",
+            "frame": 1975,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2009,
+        "to": 2141,
+        "words": [
+          {
+            "w": "wireless",
+            "frame": 2009,
+            "style": "select"
+          },
+          {
+            "w": "chip",
+            "frame": 2042,
+            "style": "normal"
+          },
+          {
+            "w": "keep",
+            "frame": 2075,
+            "style": "normal"
+          },
+          {
+            "w": "it",
+            "frame": 2108,
+            "style": "normal"
+          }
+        ]
+      },
+      {
+        "from": 2142,
+        "to": 2241,
+        "words": [
+          {
+            "w": "connected.",
+            "frame": 2142,
+            "style": "normal"
+          }
+        ]
+      }
+    ],
+    "mode": "explainer",
+    "anchor": "bottom"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "from": 0,
+      "to": 432,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "cut",
+        "frames": 0,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 9.0,
+        "w:this": 9.0,
+        "i:1": 22.0,
+        "w:is": 22.0,
+        "i:2": 35.0,
+        "w:the": 35.0,
+        "i:3": 48.0,
+        "w:logic": 48.0,
+        "i:4": 61.0,
+        "w:board": 61.0,
+        "i:5": 74.0,
+        "w:of": 74.0,
+        "i:6": 87.0,
+        "w:an": 87.0,
+        "i:7": 100.0,
+        "w:iphone": 100.0,
+        "i:8": 113.0,
+        "w:and": 113.0,
+        "i:9": 126.0,
+        "w:one": 126.0,
+        "i:10": 139.0,
+        "w:chip": 139.0,
+        "i:11": 152.0,
+        "w:does": 152.0,
+        "i:12": 165.0,
+        "w:all": 165.0,
+        "i:13": 178.0,
+        "i:14": 191.0,
+        "w:thinking": 191.0
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 28.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 42.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 47.0,
+          "w": "logic",
+          "word": "logic",
+          "kind": "object",
+          "s": 1,
+          "i": 3
+        },
+        {
+          "t": 60.0,
+          "w": "board",
+          "word": "board",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 74.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 88.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 99.0,
+          "w": "iPhone,",
+          "word": "iphone",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 113.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 125.0,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 9
+        },
+        {
+          "t": 138.0,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 152.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 164.0,
+          "w": "all",
+          "word": "all",
+          "kind": "object",
+          "s": 1,
+          "i": 12
+        },
+        {
+          "t": 178.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 190.0,
+          "w": "thinking.",
+          "word": "thinking",
+          "kind": "object",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 204.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from": 432,
+      "to": 972,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "dissolve",
+        "frames": 24,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 15.0,
+        "w:the": 15.0,
+        "i:1": 30.0,
+        "w:processor": 30.0,
+        "i:2": 45.5,
+        "w:is": 45.5,
+        "i:3": 60.5,
+        "w:a": 60.5,
+        "i:4": 76.0,
+        "w:package": 76.0,
+        "i:5": 91.0,
+        "w:memory": 91.0,
+        "i:6": 106.0,
+        "w:stacked": 106.0,
+        "i:7": 121.5,
+        "w:on": 121.5,
+        "i:8": 136.5,
+        "i:9": 151.5,
+        "w:silicon": 151.5,
+        "i:10": 167.0,
+        "w:sitting": 167.0,
+        "i:11": 182.0,
+        "i:12": 197.0,
+        "w:hundreds": 197.0,
+        "i:13": 212.5,
+        "w:of": 212.5,
+        "i:14": 227.5,
+        "w:solder": 227.5,
+        "i:15": 243.0,
+        "w:balls": 243.0
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 29.0,
+          "w": "processor",
+          "word": "processor",
+          "kind": "object",
+          "s": 2,
+          "i": 1
+        },
+        {
+          "t": 43.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 57.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 75.0,
+          "w": "package:",
+          "word": "package",
+          "kind": "object",
+          "s": 3,
+          "i": 4
+        },
+        {
+          "t": 90.0,
+          "w": "memory",
+          "word": "memory",
+          "kind": "object",
+          "s": 3,
+          "i": 5
+        },
+        {
+          "t": 105.0,
+          "w": "stacked",
+          "word": "stacked",
+          "kind": "object",
+          "s": 2,
+          "i": 6
+        },
+        {
+          "t": 119.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 133.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 150.5,
+          "w": "silicon,",
+          "word": "silicon",
+          "kind": "object",
+          "s": 2,
+          "i": 9
+        },
+        {
+          "t": 166.0,
+          "w": "sitting",
+          "word": "sitting",
+          "kind": "object",
+          "s": 2,
+          "i": 10
+        },
+        {
+          "t": 180.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 196.0,
+          "w": "hundreds",
+          "word": "hundreds",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 210.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 226.5,
+          "w": "solder",
+          "word": "solder",
+          "kind": "object",
+          "s": 1,
+          "i": 14
+        },
+        {
+          "t": 242.0,
+          "w": "balls.",
+          "word": "balls",
+          "kind": "object",
+          "s": 3,
+          "i": 15
+        },
+        {
+          "t": 256.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from": 972,
+      "to": 1772,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 24,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 15.0,
+        "w:dive": 15.0,
+        "i:1": 40.0,
+        "w:into": 40.0,
+        "i:2": 65.5,
+        "w:the": 65.5,
+        "i:3": 90.5,
+        "w:die": 90.5,
+        "i:4": 116.0,
+        "w:past": 116.0,
+        "i:5": 141.0,
+        "i:6": 166.0,
+        "w:cores": 166.0,
+        "i:7": 191.5,
+        "w:and": 191.5,
+        "i:8": 216.5,
+        "i:9": 242.0,
+        "w:cache": 242.0,
+        "i:10": 267.0,
+        "w:down": 267.0,
+        "i:11": 292.0,
+        "w:to": 292.0,
+        "i:12": 317.5,
+        "w:one": 317.5,
+        "i:13": 342.5,
+        "w:transistor": 342.5,
+        "i:14": 368.0,
+        "w:switching": 368.0
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "Dive",
+          "word": "dive",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 28.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 42.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 56.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 70.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 84.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 89.5,
+          "w": "die,",
+          "word": "die",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 103.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 115.0,
+          "w": "past",
+          "word": "past",
+          "kind": "object",
+          "s": 1,
+          "i": 4
+        },
+        {
+          "t": 129.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 143.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 157.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 165.0,
+          "w": "cores",
+          "word": "cores",
+          "kind": "object",
+          "s": 1,
+          "i": 6
+        },
+        {
+          "t": 179.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 193.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 207.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 221.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 235.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 241.0,
+          "w": "cache,",
+          "word": "cache",
+          "kind": "object",
+          "s": 1,
+          "i": 9
+        },
+        {
+          "t": 255.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 266.0,
+          "w": "down",
+          "word": "down",
+          "kind": "object",
+          "s": 1,
+          "i": 10
+        },
+        {
+          "t": 280.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 294.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 308.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 316.5,
+          "w": "one",
+          "word": "one",
+          "kind": "number",
+          "s": 3,
+          "i": 12
+        },
+        {
+          "t": 330.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 341.5,
+          "w": "transistor",
+          "word": "transistor",
+          "kind": "object",
+          "s": 3,
+          "i": 13
+        },
+        {
+          "t": 355.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 367.0,
+          "w": "switching.",
+          "word": "switching",
+          "kind": "object",
+          "s": 3,
+          "i": 14
+        },
+        {
+          "t": 381.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 395.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from": 1772,
+      "to": 2242,
+      "bg": "dark",
+      "transitionIn": {
+        "type": "portal",
+        "frames": 24,
+        "origin": [
+          0.5,
+          0.5
+        ]
+      },
+      "props": {},
+      "cues": {
+        "i:0": 20.0,
+        "w:next": 20.0,
+        "i:1": 36.5,
+        "w:door": 36.5,
+        "i:2": 53.5,
+        "w:the": 53.5,
+        "i:3": 70.0,
+        "w:modem": 70.0,
+        "i:4": 86.5,
+        "w:and": 86.5,
+        "i:5": 103.0,
+        "i:6": 120.0,
+        "w:wireless": 120.0,
+        "i:7": 136.5,
+        "w:chip": 136.5,
+        "i:8": 153.0,
+        "w:keep": 153.0,
+        "i:9": 169.5,
+        "w:it": 169.5,
+        "i:10": 186.5,
+        "w:connected": 186.5
+      },
+      "beats": [
+        {
+          "t": 14.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 19.0,
+          "w": "Next",
+          "word": "next",
+          "kind": "object",
+          "s": 1,
+          "i": 0
+        },
+        {
+          "t": 35.5,
+          "w": "door,",
+          "word": "door",
+          "kind": "object",
+          "s": 1,
+          "i": 1
+        },
+        {
+          "t": 49.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 63.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 69.0,
+          "w": "modem",
+          "word": "modem",
+          "kind": "object",
+          "s": 3,
+          "i": 3
+        },
+        {
+          "t": 83.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 97.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 111.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 119.0,
+          "w": "wireless",
+          "word": "wireless",
+          "kind": "object",
+          "s": 3,
+          "i": 6
+        },
+        {
+          "t": 135.5,
+          "w": "chip",
+          "word": "chip",
+          "kind": "object",
+          "s": 1,
+          "i": 7
+        },
+        {
+          "t": 152.0,
+          "w": "keep",
+          "word": "keep",
+          "kind": "object",
+          "s": 1,
+          "i": 8
+        },
+        {
+          "t": 166.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 180.0,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 185.5,
+          "w": "connected.",
+          "word": "connected",
+          "kind": "object",
+          "s": 3,
+          "i": 10
+        },
+        {
+          "t": 199.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 213.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        },
+        {
+          "t": 227.5,
+          "w": "",
+          "word": "",
+          "kind": "drift",
+          "s": 1
+        }
+      ]
+    }
+  ],
+  "style": "explainer",
+  "safe": {
+    "focusY": 0.5,
+    "zoom": 1,
+    "fadeTo": 0
+  },
+  "beats": {
+    "count": 82,
+    "words": 32,
+    "per_s": 2.19
+  }
+}
