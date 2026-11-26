@@ -3,7 +3,8 @@
 // array -> 3D NAND string -> one cell -> electrons, with no cuts.
 //
 // Geometry: every level is drawn in its own CENTRED coordinates (0,0 = screen centre at native scale; the visible
-// frame at native scale is x -540..540, y -960..960 on a 1080x1920 canvas). Level i+1 lives inside level i at
+// frame at native scale is x -540..540, y -960..960 on a 1080x1920 canvas; x -960..960, y -540..540 on a landscape
+// 1920x1080 canvas, where the dive centre is the frame centre). Level i+1 lives inside level i at
 // `portal` (level-i px) and is `factor` times smaller there (default 10 = one decade). A single depth value D (log10)
 // drives the camera: between depth_i and depth_i+1 the camera zooms level i by 10^(D - depth_i) while gliding
 // towards its portal; level i+1 is drawn on top at exactly the matching scale/position and fades in over the last
@@ -53,11 +54,13 @@ export const NanoZoom: React.FC<{
   /** caption-band darkening colour */
   top?: string;
 }> = ({levels, keys, t, beats, W, H, step = -1, fade = 0.35, top = '#03060C'}) => {
-  const u = unit(W);
+  const u = unit(W, H);
   const safe = React.useContext(SafeFrame);
   const D = depthAt(t, keys);
   // Shorts/Reels safe area: the dive's centre follows the world cameras' focus (default 0.53 -> centre 0.50)
-  const C: [number, number] = [W / 2, H * (safe.focusY - 0.03)];
+  // Landscape 16:9: the centre is focusY itself (default 0.5 = the frame centre), no Shorts offset.
+  const land = W > H;
+  const C: [number, number] = [W / 2, H * (land ? safe.focusY : safe.focusY - 0.03)];
   // which segment
   let i = 0;
   while (i < levels.length - 1 && D >= levels[i + 1].depth) i++;
@@ -101,9 +104,11 @@ export const NanoZoom: React.FC<{
           </div>
         ) : null}
       </div>
-      {/* caption readability + vignette */}
+      {/* caption readability + vignette (landscape: no top fade - the lower-third captions bring their own scrim) */}
+      {land ? null : (
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none',
                    background: `linear-gradient(180deg, ${top}E6 0%, ${top}99 16%, ${top}00 30%, ${top}00 84%, ${top}99 100%)`}} />
+      )}
       <div style={{position: 'absolute', inset: 0, pointerEvents: 'none', background: 'radial-gradient(ellipse 75% 60% at 50% 52%, transparent 55%, rgba(0,0,0,0.5) 100%)'}} />
     </div>
   );

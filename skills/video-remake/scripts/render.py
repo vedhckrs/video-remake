@@ -73,7 +73,8 @@ def main():
         from PIL import Image, ImageDraw
         ims = [Image.open(d / f"{n}.png") for n, _ in frames]
         w, h = ims[0].size
-        cols = min(6, len(ims))
+        # 9:16 stills: 6 across; 16:9 landscape stills are 3.2x wider: 3 across keeps the sheet readable
+        cols = min(3 if w > h else 6, len(ims))
         rows = (len(ims) + cols - 1) // cols
         sheet = Image.new("RGB", (cols * w, rows * h), "#222")
         for i, (im, (n, f)) in enumerate(zip(ims, frames)):

@@ -18,6 +18,13 @@ explainer caption mode, the presenter track (entry 3-7 s, a pose on every phrase
 scene "poses" overrides and an explain-pose cycle so no pose holds > 4 s, mouth timing from the voice), the
 progress rail from scene "chapter" labels (videos > 60 s) and the explainer theme. recipe.json defaults to
 references/styles/keyframes-explainer/recipe.json when the project has none.
+
+Landscape 16:9 (26 Nov 2026): an explainer script whose "output" is wider than tall (e.g. 1920x1080 @ 60) is planned
+on a 1920x1080 design canvas (the recipe's canvas turned on its side, so render.py renders it at scale 1): captions
+become a lower third (46 px, anchor "bottom", y 0.875), the world sits centred with no Shorts safe-area shift
+(safe focusY 0.5 / zoom 1 / fadeTo 0) and transition origins default to the frame centre. Portrait is unchanged.
+Any scene may carry "credit": "<source>" - passed through as spec.credit, the engine draws "Source: <source>"
+bottom-right for that scene (kit SourceCredit).
 """
 import argparse
 import json
@@ -74,12 +81,36 @@ def _norm(w):
     return re.sub(r"[^\w]", "", w.lower())
 
 
-def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps):
+def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps, land=False):
     """Presenter track, explainer captions, rail and theme (all presenter times in DESIGN frames)."""
     D = lambda f: round(f / TS, 2)  # noqa: E731  output frame -> design frame
     project["style"] = "explainer"
     project["theme"] = json.loads(json.dumps(EXPLAINER_THEME))
     project["captions"]["mode"] = "explainer"
+    if land:
+        _landscape_frame(project, script)
+    else:
+        _portrait_frame(project, script, W)
+    _explainer_tracks(project, script, scenes_w, pages, F, TS, total, fps, D)
+
+
+def _landscape_frame(project, script):
+    """Landscape 16:9 long-form (26 Nov 2026): no Shorts/Reels UI to dodge. Captions are a centred lower third -
+    `y` is the top of the LAST line (one line 87.5-92.8 %, two lines 82.2-92.8 % of the height at 46 px on a 1080-high
+    frame) - and the world is shown 1:1 around the frame centre with no dark top fade. Same override keys as portrait:
+    "caption_size", "caption_y", "safe" (partial dicts merge), plus "caption_anchor" ("top" puts the phrases back in a
+    top band: then also give "safe": {"fadeTo": 0.2}) and "caption_scrim" (0..1 lower-third gradient, default 0.75)."""
+    H = project["canvas"]["height"]
+    cap = project["captions"]
+    cap["size"] = int(round(script.get("caption_size") or 46 * H / 1080))
+    cap["anchor"] = script.get("caption_anchor", "bottom")
+    cap["y"] = script.get("caption_y", 0.875 if cap["anchor"] == "bottom" else 0.07)
+    if script.get("caption_scrim") is not None:
+        cap["scrim"] = script["caption_scrim"]
+    project["safe"] = {"focusY": 0.5, "zoom": 1, "fadeTo": 0, **(script.get("safe") or {})}
+
+
+def _portrait_frame(project, script, W):
     # Shorts/Reels safe area (Ved, 25 Nov 2026): captions 20 % smaller than the original 68 px (54 px on 1080 wide) and
     # world framing lifted + zoomed out so key content sits between the captions and 85 % of the height (the bottom
     # 15 % carries the app's username / description / music). Override in script.json: "caption_size", "safe".
@@ -91,6 +122,9 @@ def add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps):
     # "safe" - partial dicts are merged over these defaults).
     project["captions"]["y"] = script.get("caption_y", 0.115)
     project["safe"] = {"focusY": 0.44, "zoom": 0.86, "fadeTo": 0.21, **(script.get("safe") or {})}
+
+
+def _explainer_tracks(project, script, scenes_w, pages, F, TS, total, fps, D):
     project.pop("handle", None)
     words = [w for ws in scenes_w for w in ws]
     add_beats(project, script, scenes_w, F, TS)
@@ -256,6 +290,11 @@ def main():
     W, H = rec["canvas"]["width"], rec["canvas"]["height"]
     out = script.get("output") or {}
     fps = int(out.get("fps") or base)                 # render fps (e.g. 60 for fluid motion)
+    # Landscape 16:9 (26 Nov 2026): output wider than tall. The explainer library's recipe canvas is 9:16, so the
+    # design canvas is turned on its side (1080x1920 -> 1920x1080: same px density, text sizes come from the short side).
+    land = (int(out.get("width") or W) > int(out.get("height") or H)) if out.get("width") else W > H
+    if explainer and land and W < H:
+        W, H = H, W
     TS = fps / base  # output frames per design frame
     lead = rec["captions"].get("lead_ms", 50) / 1000
     F = lambda s: int(round(s * fps))  # noqa: E731
@@ -306,8 +345,10 @@ def main():
             cues[f"i:{j}"] = rel
             cues.setdefault(f"w:{clean(w['w'])}", rel)
         spec = {"id": s["id"], "from": fr, "to": to, "bg": s["bg"],
-                "transitionIn": {"type": ttype, "frames": frames, "origin": s.get("origin", [0.5, 0.42])},
+                "transitionIn": {"type": ttype, "frames": frames, "origin": s.get("origin", [0.5, 0.5] if explainer and land else [0.5, 0.42])},
                 "props": s.get("props", {}), "cues": cues}
+        if s.get("credit"):   # "Source: <credit>" bottom-right for this scene (engine: kit SourceCredit)
+            spec["credit"] = str(s["credit"])
         scenes.append(spec)
 
         # captions
@@ -376,13 +417,13 @@ def main():
     if project["audio"]["music"] is None:
         del project["audio"]["music"]
     if explainer:
-        add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps)
+        add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps, land=land)
     (P.proj / "project.json").write_text(json.dumps(project, indent=2, ensure_ascii=False), encoding="utf-8")
     lens = [(s["to"] - s["from"]) / fps for s in scenes]
     tr = {}
     for s in scenes[1:]:
         tr[s["transitionIn"]["type"]] = tr.get(s["transitionIn"]["type"], 0) + 1
-    print(f"[video-remake] timeline @ {fps} fps (design {base}): {total / fps:.2f} s, {len(scenes)} scenes (avg {sum(lens) / len(lens):.2f} s), "
+    print(f"[video-remake] timeline {W}x{H}{' landscape' if land else ''} @ {fps} fps (design {base}): {total / fps:.2f} s, {len(scenes)} scenes (avg {sum(lens) / len(lens):.2f} s), "
           f"transitions {tr}, {len(pages)} caption pages, {len(sfx)} sfx -> {P.proj / 'project.json'}")
 
 

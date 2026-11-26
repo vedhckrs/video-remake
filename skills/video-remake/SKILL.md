@@ -44,6 +44,13 @@ Default framing = the higher one Ved made default on 25 Nov: captions 54 px at 1
 `project.safe` focusY 0.44 / zoom 0.86 (top fade ends at 21 %), no progress rail - visuals ~20-84 % of the height;
 check previews with `rm/safe_overlay` and pass `safe_check.py` (OCR env) before delivery (style guide: "Shorts/Reels safe area").
 **Hook:** in the first ~6 s a BIG picture change every 0.5-0.7 s and every voice pause filled (style guide: "Hook").
+**Landscape 16:9 (26 Nov 2026, long-form):** `"output": {"width": 1920, "height": 1080, "fps": 60}` in script.json switches
+plan_timeline and the engine to landscape: a 1920x1080 design canvas (worlds drawn 1920x1080, centre 960,540; `unit` = 1,
+render scale 1), no Shorts safe-area shift (`safe` focusY 0.5 / zoom 1 / no top fade), captions as a centred lower third
+(46 px, 82-93 % of the height, on a soft scrim) - keep key content in x 4-96 %, y 5-80 %. Real photographs use the kit
+`Photo` (full-bleed or framed, slow Ken-Burns); every scene showing one carries `"credit": "<source>"` in script.json,
+which draws "Source: <source>" bottom-right (`SourceCredit`). `safe_check` / `safe_overlay` are 9:16-only and skip.
+Style guide: "Landscape 16:9 long-form". Portrait output is unchanged.
 
 ## The loop
 

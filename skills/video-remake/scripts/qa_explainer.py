@@ -2,7 +2,7 @@
 
 usage: qa_explainer.py <project dir> [--video out/<id>.mp4]
 Measures what can be measured on project.json + vo_words.json + sfx_cues.json + the rendered MP4:
-  format (1080x1920 @ 60), pace (wpm), caption phrase size / keyword boxes / lead, presenter entry + coverage +
+  format (1080x1920 @ 60; landscape projects: their 16:9 output size, e.g. 1920x1080 @ 60), pace (wpm), caption phrase size / keyword boxes / lead, presenter entry + coverage +
   pose cadence, SFX density + longest silence, static spans (frame-difference, > 1.5 s fails), motion on frame 0
   and >= 3 visual states in the first 3 s, loudness (-14 LUFS integrated, true peak <= -1 dBTP).
   World mode (24 Nov 2026) adds: a visible change on >= 90 % of spoken words (spec.beats), never still > 1.0 s
@@ -47,8 +47,10 @@ def ffprobe(path):
     return int(st["width"]), int(st["height"]), float(n) / float(d), float(j["format"]["duration"])
 
 
-def frames_small(path, fps=8, w=135):
+def frames_small(path, fps=8, w=135, land=False):
     h = int(w * 16 / 9)
+    if land:   # 16:9 landscape: same pixel count, long side across
+        w, h = h, w
     r = subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-i", str(path), "-vf", f"fps={fps},scale={w}:{h},format=gray", "-f", "rawvideo", "-"],
                        capture_output=True, stdin=subprocess.DEVNULL)
     a = np.frombuffer(r.stdout, dtype=np.uint8)
@@ -137,8 +139,15 @@ def main():
     vid = Path(a.video) if a.video else P.out / f"{P.id}.mp4"
     if vid.exists():
         w, h, vfps, vdur = ffprobe(vid)
-        gate("Render 1080x1920 @ 60", (w, h) == (1080, 1920) and abs(vfps - 60) < 0.5, f"{w}x{h} @ {vfps:.0f}", "1080x1920 @ 60")
-        fr = frames_small(vid)
+        # portrait: Ved's standard 1080x1920 @ 60 (unchanged). Landscape long-form (26 Nov 2026): the project's own
+        # 16:9 output size (1920x1080) @ 60.
+        land = pj["canvas"]["width"] > pj["canvas"]["height"]
+        ew, eh = ((pj.get("output") or {}).get("width", 1920), (pj.get("output") or {}).get("height", 1080)) if land else (1080, 1920)
+        gate(f"Render {ew}x{eh} @ 60", (w, h) == (ew, eh) and abs(vfps - 60) < 0.5, f"{w}x{h} @ {vfps:.0f}", f"{ew}x{eh} @ 60")
+        if land:
+            print("[video-remake] landscape 16:9: picture gates run on 240x135 frames with the thresholds calibrated on 9:16 "
+                  "videos (same pixel count); no presenter / Shorts safe-area gates apply")
+        fr = frames_small(vid, land=land)
         diff = np.abs(np.diff(fr, axis=0)).mean(axis=(1, 2))   # per 1/8 s
         moving = diff > 0.35
         # longest static run (seconds)
@@ -159,7 +168,7 @@ def main():
         else:   # world mode: a change on every word is the point - report only
             rows.append({"gate": "Visual beat rate (info)", "pass": True, "value": f"{beats:.2f} big changes / s", "target": "world mode: every word", "hard": False})
         # word beats: a visible change within ~0.2 s of every content word (Ved: "each word spoken a visual change")
-        fr15 = frames_small(vid, fps=15)
+        fr15 = frames_small(vid, fps=15, land=land)
         bts = [b for sc in pj["scenes"] for b in (sc.get("beats") or []) if b.get("kind") != "drift"]
         hit = 0
         for sc in pj["scenes"]:

@@ -27,6 +27,8 @@ export type SceneSpec = {
   transitionIn: {type: TransitionType; frames: number; origin?: [number, number]; color?: string};
   props?: Record<string, unknown>;
   cues?: Record<string, number>; // named frames inside the scene, relative to `from` (word hits etc.)
+  /** "Source: <credit>" line drawn by the engine for the whole scene (script.json scene "credit"; kit SourceCredit) */
+  credit?: string;
   /** word beats from plan_timeline (design frames relative to `from`): drive the World camera director */
   beats?: {t: number; w: string; word: string; kind: 'number' | 'action' | 'state' | 'object' | 'drift'; s: number; camera?: string; action?: string; target?: string}[];
 };
@@ -50,7 +52,12 @@ export type Project = {
     sfx: {src: string; frame: number; volume: number; type?: string}[];
   };
   /** 'line' = the original remake caption line; 'explainer' = kit/explainer/captions (phrases + travelling keyword box). */
-  captions: {y: number; size: number; pages: CaptionPage[]; mode?: 'line' | 'explainer'};
+  captions: {y: number; size: number; pages: CaptionPage[]; mode?: 'line' | 'explainer';
+    /** explainer captions: 'top' = `y` is the top of the first line (portrait default); 'bottom' = lower third,
+     *  `y` is the top of the LAST line and a second line grows upwards (default on landscape canvases) */
+    anchor?: 'top' | 'bottom';
+    /** lower-third readability gradient strength 0..1 (default 0.75 with anchor 'bottom', 0 = off) */
+    scrim?: number};
   /** 'explainer' = keyframes-explainer style: grid backdrop, screen-locked presenter, explainer captions, rail. */
   style?: 'remake' | 'explainer';
   /** Presenter track, all times in DESIGN frames (baseFps). Poses: kit/explainer/presenter.tsx POSES. */
@@ -68,6 +75,8 @@ export type Project = {
   /** Shorts/Reels safe area (Ved, 25 Nov 2026): world cameras land their anchor at `focusY` of the height (default
    *  0.53; NanoZoom centre = focusY - 0.03) and draw everything `zoom` x smaller (default 1), so key content stays
    *  clear of the app's bottom overlay (username, description, music) and below the captions. */
+  // Landscape canvases (width > height, e.g. 1920x1080 long-form): the engine defaults are focusY 0.5, zoom 1 and
+  // fadeTo 0 (no dark top fade - the captions are a lower third); NanoZoom dives centre on focusY itself.
   safe?: {focusY?: number; zoom?: number; fadeTo?: number};
   scenes: SceneSpec[];
 };

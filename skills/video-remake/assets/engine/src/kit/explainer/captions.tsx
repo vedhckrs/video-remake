@@ -1,4 +1,5 @@
 // Explainer captions (style_system 7): 2-4-word phrases in the top band (y 15-25 %, x 18-82 %), max 2 lines.
+// Landscape 16:9: the same phrases as a centred LOWER THIRD (bottom-anchored, x 14-86 %, on a gradient scrim).
 // Active word = bold, full contrast; spoken words = regular grey; upcoming words are not shown.
 // Word in: blur 12 -> 0, opacity, scale 0.96 -> 1 over 3.5 design frames. Phrase out: 2.5-frame blur.
 // Keyword box (style 'select'): original corner-bracket skin, drawn in 4.5 frames, and it SPRINGS from the
@@ -30,8 +31,9 @@ type Placed = {rect: Rect; text: string; frame: number; select: boolean};
 
 const layoutCache = new Map<string, Placed[]>();
 
-const layoutPage = (page: CaptionPage, size: number, left: number, maxW: number, top: number): Placed[] => {
-  const key = `${page.from}|${size}|${maxW}|${top}`;
+/** `bottom`: lower-third layout - `top` is the top of the LAST line, extra lines stack upwards. */
+const layoutPage = (page: CaptionPage, size: number, left: number, maxW: number, top: number, bottom = false): Placed[] => {
+  const key = `${page.from}|${size}|${maxW}|${top}|${bottom ? 'b' : 't'}`;
   const hit = layoutCache.get(key);
   if (hit) return hit;
   const gap = size * 0.28;
@@ -54,7 +56,7 @@ const layoutPage = (page: CaptionPage, size: number, left: number, maxW: number,
     const total = line.reduce((a, i, k) => a + ws[i] + (k ? gap : 0), 0);
     let x = left + (maxW - total) / 2;
     for (const i of line) {
-      out[i] = {rect: {x, y: top + li * lh, w: ws[i], h: lh}, text: page.words[i].w, frame: page.words[i].frame, select: page.words[i].style === 'select'};
+      out[i] = {rect: {x, y: top + (bottom ? li - (lines.length - 1) : li) * lh, w: ws[i], h: lh}, text: page.words[i].w, frame: page.words[i].frame, select: page.words[i].style === 'select'};
       x += ws[i] + gap;
     }
   });
@@ -70,14 +72,26 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
   const W = canvas.width, H = canvas.height;
   const k = canvas.fps / (project.baseFps ?? canvas.fps);
   const size = captions.size;
-  const left = W * 0.18, maxW = W * 0.64, top = H * captions.y;
+  // Landscape 16:9 (26 Nov 2026): a centred lower third. `captions.y` is then the top of the last line (default
+  // 0.875 -> one line 87.5-92.8 %, two lines 82.2-92.8 % of the height at 46 px), on a soft gradient scrim that is
+  // always there (it does not blink between phrases) so the words read on any world or photograph.
+  const land = W > H;
+  const bottom = (captions.anchor ?? (land ? 'bottom' : 'top')) === 'bottom';
+  const left = bottom ? W * 0.14 : W * 0.18, maxW = bottom ? W * 0.72 : W * 0.64, top = H * captions.y;
   const pages = captions.pages;
-  const pi = pages.findIndex((p) => frame >= p.from - 1 && frame < p.to + 2.5 * k);
-  if (pi < 0) return null;
-  const page = pages[pi];
-  const placed = layoutPage(page, size, left, maxW, top);
   const scene = project.scenes.find((s) => frame >= s.from && frame < s.to) ?? project.scenes[0];
   const P = pal(scene.bg);
+  const scrimA = bottom ? Math.max(0, Math.min(1, captions.scrim ?? 0.75)) : 0;
+  const scrimC = scene.bg === 'dark' ? '#05070B' : '#F6F7F9';
+  const scrim = scrimA > 0 ? (
+    <div style={{position: 'absolute', left: 0, right: 0, top: top - size * 3.6, bottom: 0, zIndex: 999, pointerEvents: 'none',
+                 background: `linear-gradient(180deg, ${alpha(scrimC, 0)} 0%, ${alpha(scrimC, scrimA * 0.8)} 42%, ${alpha(scrimC, scrimA)} 100%)`}} />
+  ) : null;
+  const pi = pages.findIndex((p) => frame >= p.from - 1 && frame < p.to + 2.5 * k);
+  if (pi < 0) return scrim;
+  const page = pages[pi];
+  const placed = layoutPage(page, size, left, maxW, top, bottom);
+  const shadow = bottom && scene.bg === 'dark' ? `0 ${size * 0.04}px ${size * 0.22}px rgba(0,0,0,0.75)` : undefined;
   const out = Math.max(0, Math.min(1, (frame - page.to) / (2.5 * k)));
   const visible = placed.filter((w) => frame >= w.frame);
   const active = visible.length - 1;
@@ -89,7 +103,7 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
     // previous keyword (this page or earlier pages) for the travelling spring
     let prev: Placed | null = null;
     for (let j = pi; j >= 0 && !prev; j--) {
-      const pl = j === pi ? placed : layoutPage(pages[j], size, left, maxW, top);
+      const pl = j === pi ? placed : layoutPage(pages[j], size, left, maxW, top, bottom);
       const cands = pl.filter((w) => w.select && w.frame < kw.frame);
       if (cands.length) prev = cands[cands.length - 1];
       if (j < pi && pages[j].to < kw.frame - 45 * k) break;
@@ -121,6 +135,8 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
     );
   }
   return (
+    <>
+    {scrim}
     <div style={{position: 'absolute', inset: 0, zIndex: 1000, opacity: 1 - out, filter: out > 0 ? `blur(${out * 10}px)` : undefined, pointerEvents: 'none'}}>
       {box}
       {visible.map((w, i) => {
@@ -132,11 +148,12 @@ export const ExplainerCaptions: React.FC<{project: Project}> = ({project}) => {
           <div key={i} style={{position: 'absolute', left: w.rect.x, top: w.rect.y, width: w.rect.w, height: w.rect.h, textAlign: 'center',
                                fontFamily: FAMILY, fontSize: size, lineHeight: `${w.rect.h}px`, fontWeight: bold ? 700 : 400,
                                color: bold ? P.fg : P.mute, opacity: e, filter: e < 1 ? `blur(${(1 - e) * 12}px)` : undefined,
-                               transform: `scale(${0.96 + 0.04 * e})`, whiteSpace: 'nowrap', letterSpacing: bold ? '0' : '0.005em'}}>
+                               transform: `scale(${0.96 + 0.04 * e})`, whiteSpace: 'nowrap', letterSpacing: bold ? '0' : '0.005em', textShadow: shadow}}>
             {w.text}
           </div>
         );
       })}
     </div>
+    </>
   );
 };

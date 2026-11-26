@@ -2,6 +2,8 @@
 
 > Explainer-style projects (`"style": "explainer"`) use `src/kit/explainer/` instead - see
 > `references/styles/keyframes-explainer.md` (kit table + recipes) and `references/example-explainer/`.
+> That kit also has `media.tsx`: `Photo` (real photograph, full-bleed or framed, Ken-Burns) and `SourceCredit`
+> ("Source: ..." line; or scene `"credit"` in script.json) - usable in any project, portrait or landscape 16:9.
 
 ## A scene file
 

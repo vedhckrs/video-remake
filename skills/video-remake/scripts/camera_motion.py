@@ -18,8 +18,22 @@ import cv2
 import numpy as np
 
 
+def _landscape(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0",
+                        str(path)], capture_output=True, text=True, stdin=subprocess.DEVNULL)
+    try:
+        vw, vh = (int(x) for x in r.stdout.strip().split(",")[:2])
+        return vw > vh
+    except ValueError:
+        return False
+
+
 def frames(path, fps=30, w=180):
+    """Grey frames with the SHORT side = w: w x 16w/9 for 9:16 videos, 16w/9 x w for 16:9 landscape (26 Nov 2026) -
+    so px-per-frame speeds mean the same share of the short side in both and the gates keep their thresholds."""
     h = int(w * 16 / 9)
+    if _landscape(path):
+        w, h = h, w
     r = subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-i", str(path), "-vf", f"fps={fps},scale={w}:{h},format=gray", "-f", "rawvideo", "-"],
                        capture_output=True, stdin=subprocess.DEVNULL)
     return np.frombuffer(r.stdout, dtype=np.uint8).reshape(-1, h, w)

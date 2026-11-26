@@ -69,6 +69,10 @@ def main():
     ap.add_argument("--labels", nargs="*")
     ap.add_argument("--width", type=int, default=540)
     a = ap.parse_args()
+    wide = [f for f in a.frames if (lambda s: s[0] > s[1])(Image.open(f).size)]
+    if wide:   # 26 Nov 2026: landscape 16:9 long-form has no Shorts/Reels UI over the picture
+        raise SystemExit(f"[video-remake] safe_overlay: {len(wide)} landscape frame(s) - the Shorts/Reels UI overlay is 9:16 only; "
+                         "nothing drawn (16:9 videos have no permanent app overlay).")
     W = a.width
     H = int(W * 16 / 9)
     pad, top = 16, 46 if a.labels else 0
