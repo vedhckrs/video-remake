@@ -47,6 +47,10 @@ def main():
     new_project.register()
     pj = json.loads((P.proj / "project.json").read_text(encoding="utf-8"))
     P.out.mkdir(exist_ok=True)
+    # project.json "gl" (set from script.json "gl": "angle" by plan_timeline): a project with cine3d scenes (three.js)
+    # must render on the GPU - headless Chrome's default GL is software, about 20x slower for 3D. 2D-only projects
+    # carry no "gl" and keep Chrome's default, so their pixels do not change.
+    gl = [f"--gl={pj['gl']}"] if pj.get("gl") else []
     if a.what in ("video", "master"):
         out = P.out / f"{P.id}.mp4"
         raw = P.out / f"{P.id}_raw.mp4"
@@ -54,7 +58,7 @@ def main():
             # --scale renders the design canvas at a higher device scale: vectors, text and 2x screenshots stay sharp
             scale = a.scale or round((pj.get("output") or {}).get("width", pj["canvas"]["width"]) / pj["canvas"]["width"], 4)
             npx(["render", "src/index.ts", P.id, str(raw), "--codec=h264", "--audio-codec=aac", f"--scale={scale}",
-                 "--crf=16", "--x264-preset=slow", "--color-space=bt709", "--concurrency=50%"])
+                 "--crf=16", "--x264-preset=slow", "--color-space=bt709", "--concurrency=50%", *gl])
         master(raw, out, a.lufs)
         print(f"[video-remake] rendered + mastered to {a.lufs} LUFS -> {out}")
         return
@@ -68,7 +72,7 @@ def main():
             f = {"start": s["from"] + 2, "mid": (s["from"] + s["to"]) // 2, "end": s["to"] - 3}[a.at]
             frames.append((s["id"], f))
     for name, f in frames:
-        npx(["still", "src/index.ts", P.id, str(d / f"{name}.png"), f"--frame={f}", "--scale=0.5"])
+        npx(["still", "src/index.ts", P.id, str(d / f"{name}.png"), f"--frame={f}", "--scale=0.5", *gl])
     try:  # contact sheet for one look
         from PIL import Image, ImageDraw
         ims = [Image.open(d / f"{n}.png") for n, _ in frames]

@@ -153,3 +153,123 @@ spread - the photo as a lit, slightly turned glass print on one side, big typogr
 lines={[...]} reveal={[cue frames]} accent="#F2B56B" />`. Nothing is drawn over the photo and it is not recoloured
 (share-alike photos stay unaltered). Give the scene a `credit` in script.json. Plain `Photo` stays for full-bleed use.
 The landscape caption scrim is now a long soft fade (strength 0.5), never a solid band.
+
+## cine3d (real 3D) (`src/kit/cine3d/`, 26 Nov 2026)
+**The rule: real 3D (three.js) is ONLY for the real iPhone 18 Pro model and the hero transistor.** Boards, chips,
+dies, packages, diagrams and everything else stay 2D code (silicon kit, iso kit). Ved approved this as the one
+exception to "no three.js" after rejecting the code-drawn phones and the flat transistor.
+
+Files: `core.tsx` (camera keys, projection, canvas, studio light), `phone.tsx` (PhoneShot, phoneView), `innards.tsx`
+(the 2D inside of the phone), `transistor.tsx` (Transistor3D, fetView), `index.ts`. Import from `src/kit/cine3d`.
+Everything is a pure function of the design frame `t` (fractional at 60 fps). The GLB / HDRI load is held with
+delayRender by `<ThreeCanvas>`. There are no clocks, timers or `Math.random`.
+
+**Apple's model never leaves the engine.** `public/models/iphone-18-pro.glb` (and `public/hdri/*.hdr`) exist only in
+`D:\VideoBlueprint\remakes\engine\public\`. Never copy them into this repo, a skill zip or an upload package
+(`.gitignore` blocks `*.glb`, `*.usdz`, `*.hdr`, `models/`, `hdri/`). A fresh engine needs the two folders copied in
+by hand from `D:\VideoBlueprint\remakes\incoming\iphone-18-pro-3d-model\`, plus the npm packages in `package.json`
+(`three`, `@remotion/three`, `@react-three/fiber`, `@react-three/drei`, `postprocessing`).
+
+**Render flag (needed):** a project that uses cine3d sets `"gl": "angle"` in `script.json` (plan_timeline copies it
+to `project.json`; `render.py` then passes `--gl=angle` for stills and video). Without it headless Chrome draws
+three.js in software: about 22 s per 1080p frame instead of about 1 s. It is NOT set globally in
+`remotion.config.ts`, because ANGLE anti-aliases thin 2D lines slightly differently (0.37 % of the pixels of a test
+frame changed), so 2D-only projects keep Chrome's default and render bit-identically. In a Node script use
+`openBrowser('chrome', {chromiumOptions: {gl: 'angle'}})` and the same `chromiumOptions` on `selectComposition` and
+`renderStill` (pattern: `projects/cine3d-demo/stills.mjs`, which also bundles only that one project).
+
+### Camera, effects, light (core.tsx)
+- Keys are in design frames and joined by a non-uniform Catmull-Rom curve: the move starts and ends at rest and has no
+  corners (`hold: true` = a full stop). Use all `OrbitKey` `{t, yaw, pitch, dist, tgt?, fov?, focus?, roll?}` (yaw 0
+  looks at the phone's BACK, 180 at the screen; pitch above 0 looks down) or all `CamKey`
+  `{t, pos, tgt, fov?, focus?, roll?}`. `focus` = the point that is sharp (default: the target).
+- `<Stage3D clipping>` turns on per-material clipping planes (off by default; the transistor's cut needs it).
+- `fx={{dof: {range, blur, taps} | false, bloom: {threshold, intensity, radius} | false, exposure, contrast,
+  saturation, tint, msaa}}`. `range` = depth in world units that stays sharp, `blur` = largest blur radius in px of a
+  1080-high frame. The depth of field and the grade are our own alpha-aware passes (the stock DepthOfField keeps its
+  blur radius in the alpha channel, which turns a transparent canvas opaque).
+- `light={{main, lamp, rim, fill, top, env, hdri, hdriLevel, warm, cool, keyFrom, castShadow}}` (`<Studio>`): a warm
+  key softbox from the upper left and a cool blue rim from the right, like the 2D kit. **The key light is `main`, not
+  `key`** (React keeps `key` for itself, so it never arrives). `lamp` strengthens only the shadow-casting lamp.
+  `hdri: HDRI.studioSmall | HDRI.photoStudio` lays a real studio under the softboxes.
+- The canvas is transparent, so it sits over any 2D world. `quadMatrix3d(w, h, [tl, tr, br, bl])` gives the CSS
+  `matrix3d` that lays a 2D box on four projected points.
+
+### PhoneShot
+```tsx
+const CAM: OrbitKey[] = [{t: -10, yaw: 144, pitch: 5, dist: 39, fov: 22, tgt: [0, -1.6, 0]},
+                         {t: 200, yaw: 161, pitch: 7, dist: 36, fov: 22, tgt: [0, -1.6, 0]}];
+<PhoneShot t={t} W={W} H={H} cam={CAM} pose={POSE} shell={xrayShell(x, open)} screen={<Feed t={t} />}
+           interior={<PhoneInnards />} floor={{y: -5.02, shadow: 0.7, reflect: 0.3}} light={{}} fx={{}} />
+const v = phoneView({t, cam: CAM, pose: POSE, W, H});   // pure maths for the 2D layers, no canvas
+v.point('chip')          // {x, y, depth, behind}: px of a named point or of any [x, y, z]; 2nd argument = lift
+v.interior.point(ix, iy) // px of a point given in inside-plane px;  v.backFacing > 0 = the back faces the camera
+```
+- Model space: the phone is 10 units tall (1 unit = 15 mm), y up, **the back faces +z**, the screen is the plane
+  z -0.455. Named points (`PHONE_POINTS`): backCentre, logo, lensMain, lens2, lens3, flash, mic, lidar,
+  plateauCentre, screenCentre, screenTL / TR / BR / BL, island, chip, top, bottom, usb.
+- `pose` = keys for the phone itself `{t, yaw?, pitch?, roll?, pos?}`. The lights stay put, so a turning phone drags
+  real reflections across its faces.
+- **Screen content** (`screen`): any React / HTML drawn in a `screenPx` box (default 402 x 874). Method: the four
+  corners of the display are projected with the shot's camera and the box is mapped onto them with CSS `matrix3d`
+  (perspective-correct, exact on every frame, text stays crisp). The layer lies UNDER the canvas: the screen glass is
+  drawn as a hole in the canvas alpha plus an additive mirror of the studio, so the real bezel cuts the rounded
+  corners, the body hides the screen as the phone turns away, and reflections ride on the glass. The depth of field
+  does not blur this layer, so keep the focus near the screen while it shows.
+- **Shell** (`shell`): per group `{opacity, glass, lift}`. Groups found in the GLB (94 meshes with hashed names,
+  sorted by position, size and material in `classify`):
+  `display` (screen glass with Apple's wallpaper, black border, Dynamic Island, front camera),
+  `frame` (the burgundy unibody - sides, plateau and the back round the glass are ONE mesh - buttons, Camera Control,
+  USB-C, grilles), `backGlass` (the inset glass panel 4.28 x 6.50 with its coloured under-layer, and the Apple logo),
+  `camera` (three lens stacks, flash, microphone, LiDAR), `inner` (two black filler blocks).
+  The unibody has a real window behind the glass panel, so the x-ray is `xrayShell(x, open, lift)`: the panel turns
+  to ghost glass with bright edges (`glass`), and `open` lifts it off along the phone's normal, while the unibody,
+  plateau and lenses stay real. Add `frame: {glass: 1}` for a whole-body ghost.
+- **Inside view** (`interior`): 2D content on a plane inside the body (`PHONE.interior`, 1356 x 2916 px), mapped the
+  same way and seen through the glass. `<PhoneInnards parts focus dim sweep light />` draws the tray, the battery and
+  the silicon kit `LogicBoard` from straight above; `innardsPoint('soc' | 'modem' | ...)` gives a part's phone-space
+  point and `PHONE_POINTS.chip` is the SoC. While an inside view shows, the display and filler blocks are not drawn.
+- Changes to Apple's materials (three.js draws black transmission glass as a black disc): lens covers are dark
+  see-through glass, the lens elements a coated violet, a code-drawn deep disc and coated dome sit under each cover,
+  the logo is polished metal under clear glass, other transmission glass is plain alpha glass. The finish in the file
+  is burgundy; other finishes are not built.
+
+### Transistor3D (v2, 26 Nov 2026: a technical cut model of one device in a row)
+```tsx
+<Transistor3D t={t} W={W} H={H} cam={CAM} gate={fetSwitch(t, [36, 96])} cut={0.52} sheets={3} metal={1}
+              context={{x: 3, back: 1}} haze={0.5} />
+<Transistor3D ... field={{cols: 41, rows: 25, activity: 0.5}} background="#04070E" fog={['#04070E', 60, 300]} />
+<Transistor3D ... W={470} H={470} lite />                      // small inset; wrap in a round div for a lens
+const v = fetView({t, cam: CAM, W, H, cut: 0.52});            // pass the same `cut` (some points sit on the cut face)
+v.point('gate')
+```
+- Axes: x = source to drain, y up, z along the gate. The cut-away opens the +z side, so film it from +z, from a
+  three-quarter angle (yaw 12-44, pitch 8-27, distance 10-20 worked in the demo).
+- What is built: bulk silicon with a cut front face (layer stack), sub-fin, trench oxide; rounded nanosheets that
+  run through the gate into source and drain; the gate stack (high-k sleeve, work-function metal, tungsten fill,
+  nitride cap); frosted-glass sidewall spacers with ceramic inner spacers between the sheets; faceted, seeded
+  epitaxial source / drain crystals; tapered trench contacts with a liner; vias; two levels of copper lines with a
+  barrier liner at right angles; micro-roughness on every face, baked contact shading, a warm kicker light, fog.
+- `gate`: 0 off, 1 on. **Use `fetSwitch(t, [frames...], dur = 12)`** for the value: each frame in the list toggles
+  the gate, eased over `dur` design frames with a short overshoot of the glow (never a hard pop). On: the sheets glow
+  from inside (strongest under the gate), fine carrier streaks run source to drain, the gate metal on the cut face
+  warms, the high-k lining brightens and faint rings shimmer round each sheet.
+- `cut` 0..1: one slice through the gate stack of the hero AND its neighbours along the fin. The cut face shows the
+  layers as a clean cross-section with a thin bright edge. About 0.5 = sheets leaving the cut face (hero frames),
+  0.8 = deep cut (macro frames), 0 = closed.
+- `context={{x, back}}` (default `{x: 3, back: 1}`, `false` = a lone device): neighbours along the fin and rows
+  behind, darker, falling into fog and the depth of field, so the hero reads as one device in a fabric.
+  `field` replaces it with a large instanced grid for a pull-back (give it `background` and `fog`; only the hero is
+  cut there and there is one metal level). `lite`: no neighbours, one metal level, fewer carriers - reads at 300 px.
+- `metal` 0..1 lifts contacts, vias and lines away; `haze` 0..1 is a faint light cone; `fog={false | [colour, near,
+  far]}` (default: a dark haze starting just behind the hero).
+- Anchors (`fetView(...).point(name)`): centre, gate, gateCap, cutFace, tungsten, workFunction, highK, spacer,
+  innerSpacer, sheets, sheet0..n, source, drain, contactSource, contactDrain, via, metal1, metal2, oxide, subFin,
+  substrate, and **pitchA / pitchB** = two points exactly one gate pitch apart on the oxide in front of the row:
+  draw the scale tick between them in 2D ("one gate pitch", with a number only if the script has a sourced one).
+- No labels are drawn in 3D: add `Callout`s at the anchors and always an "illustration" tag.
+- A custom shot with `TransistorModel` needs `<Stage3D clipping>` (the cut uses a clipping plane).
+- `TransistorModel`, `PhoneModel`, `PhoneFloor`, `Stage3D` and `Studio` are exported for a custom shot.
+
+Proof project: `projects/cine3d-demo` (10 scenes, previews in `previews/cine3d-demo/`). Render cost: see the cine3d
+entry in `ved-preferences.md`.

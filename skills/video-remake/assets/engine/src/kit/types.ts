@@ -43,6 +43,9 @@ export type Project = {
   /** Final output size; render.py renders the canvas with --scale = output.width / canvas.width. */
   output?: {width: number; height: number};
   durationInFrames: number;
+  /** 'angle' when the project has cine3d (three.js) scenes: render.py then renders it on the GPU (--gl=angle).
+   *  Leave out for 2D-only projects (they keep Chrome's default GL and render exactly as before). */
+  gl?: string;
   theme: Theme;
   handle?: string;
   audio: {

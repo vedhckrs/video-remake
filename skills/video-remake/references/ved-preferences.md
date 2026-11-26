@@ -153,3 +153,34 @@ Quotes are Ved's words. Apply them every time without asking again.
   the plan_timeline default since 25 Nov 2026 (no need to set it per video; the rail is opt-in now).
 - A whip-cut hero montage reads as "jiggle" to `camera_motion.py` (1.54 rms with it, 0.47 without); it is allowed
   in the first ~2 s - say so in the hand-over rather than hiding it.
+
+## Real 3D for the phone and the transistor only (cine3d) - decided 26 Nov 2026
+- Ved rejected the code-drawn phones ("cheap", "poor and fake") and the flat transistor in the 16:9 iOS explainer,
+  supplied the real iPhone 18 Pro 3D model (Apple's own AR model, GLB) with his 3D film kit, and asked to use it.
+  He approved three.js **for the real phone and the hero transistor only**. This is the one exception to
+  "no threejs, only 2d code look 3d": boards, chips, dies, packages and diagrams stay 2D code.
+- **The Apple model never goes into Git or any zip** (not this repo, not a skill zip, not an upload package). It
+  lives only in `D:\VideoBlueprint\remakes\engine\public\models\` (HDRIs in `public\hdri\`); `.gitignore` blocks
+  `*.glb`, `*.usdz`, `*.hdr`, `models/`, `hdri/`. Source package: `D:\VideoBlueprint\remakes\incoming\iphone-18-pro-3d-model\`.
+- Kit: `src/kit/cine3d` (kit.md "cine3d (real 3D)"). Proof: `projects/cine3d-demo`, previews in
+  `C:\Users\VED\Documents\Local\Reverse\previews\cine3d-demo\` (9 stills + 2 motion strips). **Ved has not approved
+  the previews yet - no film scene is changed until he does.**
+- A project with 3D sets `"gl": "angle"` in script.json (GPU). Measured on this PC (RTX 3050, 1920x1080, render.py
+  flags, concurrency 50 %, start-up included): phone shot 360 frames in 78 s (0.22 s a frame), phone x-ray with the
+  2D board inside 100 s (0.28), transistor 67 s (0.19), 1,024-transistor field about 0.5 s a frame (120 frames in 84 s). A single still is
+  0.7-1.5 s (2.5 s for the first one). Software GL (no flag) needs about 22 s per 3D frame - never render 3D without
+  the flag. One 120-frame transistor run took 166 s for no visible reason (not reproduced): if a 3D render stalls,
+  run it again before changing code.
+- Side effect to know: with `--gl=angle` the 2D scenes of the same project also draw on the GPU. In a test
+  (ios-smooth-act1 frames 2000-2359) that was 23 s instead of 121 s, but thin 2D lines are anti-aliased slightly
+  differently (0.37 % of pixels changed, PSNR 44 dB, not visible at normal size). 2D-only projects carry no flag and
+  render exactly as before (checked: 0 pixels changed).
+- The model's finish is burgundy (Apple's 2026 colour); no other finish is built. The transistor is an illustration
+  with stretched proportions - the scene must show an "illustration" tag.
+- Transistor round 2 (same day): Ved approved nothing on the first transistor ("blocky", low-poly next to the real
+  phone) and asked for a premium macro render before any scene is fixed. `Transistor3D` was rebuilt as a technical
+  cut model of one device in a row (layered gate stack with a clean cut face, faceted epitaxial crystals, trench
+  contacts, two copper levels, neighbours fading into fog and depth of field, eased on/off with `fetSwitch`).
+  Previews `06`-`10` replaced; the first versions are kept as `06_v1.png` / `07_v1.png`. Still waiting for his OK.
+  New times (1920x1080, same flags): transistor switching 360 frames in 58 s (0.16 s a frame), deep cut-away 360 in
+  77 s (0.21), field 120 in 56 s, single still 0.8-0.9 s.
