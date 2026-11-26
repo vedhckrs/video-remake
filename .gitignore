@@ -29,3 +29,12 @@ frames/
 api_key
 token
 .claude/settings.local.json
+
+# cine3d: the Apple iPhone model and the studio HDRIs live ONLY in the engine public/ folder - never in Git
+*.glb
+*.gltf
+*.usdz
+*.hdr
+*.exr
+models/
+hdri/

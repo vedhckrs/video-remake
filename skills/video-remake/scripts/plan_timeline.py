@@ -418,6 +418,10 @@ def main():
         del project["audio"]["music"]
     if explainer:
         add_explainer(project, script, scenes_w, pages, F, TS, W, total, fps, land=land)
+    # cine3d (real 3D: the phone model / the hero transistor): script.json "gl": "angle" makes render.py render this
+    # project on the GPU. Left out for 2D-only projects, so they render exactly as before.
+    if script.get("gl"):
+        project["gl"] = script["gl"]
     (P.proj / "project.json").write_text(json.dumps(project, indent=2, ensure_ascii=False), encoding="utf-8")
     lens = [(s["to"] - s["from"]) / fps for s in scenes]
     tr = {}

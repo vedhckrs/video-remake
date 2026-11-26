@@ -7,7 +7,8 @@ Sources: `D:\VideoBlueprint\jobs\kf01..kf12\style_dossier.md`, merged `keyframes
 tokens, sound, script formula) and `style_system.json` (scene_templates, motion_tokens, sound_profile,
 37 quality_gates). Read the .md once per session before scripting.
 Everything is drawn in code: flat SVG/CSS that reads as 3D. No 3D engine, no three.js, no WebGL, no
-footage, no AI images. Our video uses its own original presenter ("Juno") and never the reference
+footage, no AI images. One exception (Ved, 26 Nov 2026): the real iPhone 18 Pro model and the hero
+transistor may be real 3D through the cine3d kit (kit.md "cine3d (real 3D)") - nothing else. Our video uses its own original presenter ("Juno") and never the reference
 creator's name, handle, mascot or look.
 
 ## The formula (why it works)
