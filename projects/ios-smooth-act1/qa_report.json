@@ -105,14 +105,14 @@
   {
    "gate": "Camera smooth: jiggle",
    "pass": true,
-   "value": "rms 0.658 (72.5 frames/min)",
+   "value": "rms 0.636 (73.0 frames/min)",
    "target": "rms <= 0.9",
    "hard": true
   },
   {
    "gate": "Camera smooth: direction reversals",
    "pass": true,
-   "value": "1.0 / min",
+   "value": "1.9 / min",
    "target": "<= 6 / min (v2 was 43)",
    "hard": true
   },
