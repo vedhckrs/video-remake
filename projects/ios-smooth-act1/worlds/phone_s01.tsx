@@ -147,51 +147,75 @@ const Bars: React.FC<{id: string; h: number[]; glow?: number}> = ({id, h, glow =
 };
 
 // ---- C: "8 milliseconds late" ----------------------------------------------------------------------------------------
-// three pictures: (1) the full-width graph slams in, the red spike rises on "8" and the drum rolls to 8 ms; (2) the camera
-// pushes in on the spike and its +8 ms bracket; (3) on "late" the graph swings into steep
-// perspective, the camera runs down the bars and the red spike punches out toward the lens under the LATE stamp
+// a clean data-viz picture, no stamp and no overlaps: the late frame's spike is the only red bar in a calm green row; on
+// "milliseconds" a dimension marker runs from the dashed deadline to the spike's top with its value "+8 ms" beside it; on
+// "late" a glass plate (THIS FRAME / LATE) slides in above-right of the spike with one short leader and the counter's
+// lamp turns red. The labels are placed in screen space from the graph's projected points, so they keep their own clear
+// space through the whole camera move.
 const ShotC: React.FC<{t: number}> = ({t}) => {
-  const late = sp(t, 109, 'bouncy'), ms = sp(t, 91, 'pop'), flash = t >= 109 ? Math.exp(-(t - 109) / 5) : 0;
-  const h = BARH.map((v, i) => {
-    const wave = t >= 109 ? Math.exp(-Math.pow(Math.abs(i - SPIKE) - (t - 109) * 1.5, 2) / 5) * 46 * Math.exp(-(t - 109) / 14) : 0;
-    return v * sp(t, 78.5 + (i === SPIKE ? 6 : i * 0.07), 'bouncy') + (i === SPIKE ? 0 : wave);
-  });
-  const slam = 1, swing = q5(seg(t, 85, 136)), p1 = swing, punch = sp(t, 109, 'bouncy');
-  const sx = 22 + SPIKE * BP + BW / 2, top = BASE - h[SPIKE];
+  const late = sp(t, 109, 'settle'), ms = sp(t, 91, 'pop'), draw = out3(seg(t, 90, 99));
+  const ripple = (i: number, at: number) => (t >= at ? Math.exp(-Math.pow(Math.abs(i - SPIKE) - (t - at) * 1.5, 2) / 5) * 40 * Math.exp(-(t - at) / 14) : 0);
+  const h = BARH.map((v, i) => v * sp(t, 78.5 + (i === SPIKE ? 6 : i * 0.07), 'bouncy') + (i === SPIKE ? 0 : ripple(i, 109) + 0.7 * ripple(i, 123)));
+  const swing = q5(seg(t, 85, 136));
+  const sx = 22 + SPIKE * BP + BW / 2, top = BASE - h[SPIKE], TOP = BASE - BARH[SPIKE], MX = sx + 50, DY = BASE - DEAD;
   const v8 = 8 * out3(seg(t, 84, 94)), p8 = 8 * out3(seg(t - 0.6, 84, 94));
+  // the graph's camera (one eased move) and the same projection in numbers, so the labels can sit in clear screen space
+  const cam = {x: lerp(960, 900, swing), y: lerp(560, 690, swing), s: lerp(1, 1.16, swing), a: lerp(7, 13, swing), b: lerp(-9, -45, swing), tx: -300 * swing, p: 2400};
+  const proj = (gx: number, gy: number): [number, number] => {
+    const a = (cam.a * Math.PI) / 180, b = (cam.b * Math.PI) / 180, x = gx - 930 + cam.tx, y = gy - 470;
+    const x2 = x * Math.cos(b), z2 = -x * Math.sin(b), y3 = y * Math.cos(a) - z2 * Math.sin(a), z3 = y * Math.sin(a) + z2 * Math.cos(a), f = cam.p / (cam.p - z3);
+    return [cam.x + cam.s * x2 * f, cam.y + cam.s * y3 * f];
+  };
+  const S = proj(sx, TOP), M0 = proj(MX, TOP), M1 = proj(MX, DY), mid: [number, number] = [(M0[0] + M1[0]) / 2, (M0[1] + M1[1]) / 2];
+  const PW = 306, PH = 124, plate: [number, number] = [S[0] + 42, S[1] - 26 - PH];      // LATE plate: above and to the right of the spike's top
+  const red = late > 0.5;
   return (
     <>
-      <Studio t={t} glow={RED} glowA={0.1 + 0.25 * flash + 0.1 * swing} gx={62} gy={40} floor={0.74} />
-      <Persp x={lerp(960, 900, swing)} y={lerp(560, 690, swing)} s={lerp(1, 1.16, swing)} p={2400}>
-        <div style={{position: 'absolute', width: 0, height: 0, transformStyle: 'preserve-3d', transform: `rotateX(${lerp(7, 13, swing)}deg) rotateY(${lerp(-9, -45, swing)}deg) translateX(${-300 * swing}px)`}}>
+      <Studio t={t} glow="#3B8CFF" glowA={0.16} gx={58} gy={42} floor={0.74} />
+      <Persp x={cam.x} y={cam.y} s={cam.s} p={cam.p}>
+        <div style={{position: 'absolute', width: 0, height: 0, transformStyle: 'preserve-3d', transform: `rotateX(${cam.a}deg) rotateY(${cam.b}deg) translateX(${cam.tx}px)`}}>
           <svg width={1860} height={900} style={{position: 'absolute', left: -930, top: -470, overflow: 'visible'}}>
             {[100, 200, 300, 400, 500, 600].map((g) => <line key={g} x1={-1400} x2={2060} y1={BASE - g} y2={BASE - g} stroke="#9CC3FF" strokeOpacity={g === 300 ? 0 : 0.09} strokeWidth={2} />)}
             {Array.from({length: 36}).map((_, i) => <line key={i} x1={-1400 + i * 100} x2={-1400 + i * 100} y1={0} y2={BASE} stroke="#9CC3FF" strokeOpacity={0.05} strokeWidth={2} />)}
             <line x1={-1400} x2={2060} y1={BASE} y2={BASE} stroke="#CFE0FF" strokeOpacity={0.5} strokeWidth={3} />
-            <Bars id="s01c" h={h} glow={0.8 + 0.5 * flash} />
-            <line x1={-1400} x2={2060} y1={BASE - DEAD} y2={BASE - DEAD} stroke="#fff" strokeOpacity={0.85} strokeWidth={3} strokeDasharray="18 12" />
-            <text x={30} y={BASE - DEAD - 18} fontFamily={FONT} fontWeight={600} fontSize={30} fill="#fff" letterSpacing="0.12em" opacity={1 - sm(seg(swing, 0.15, 0.5))}>DEADLINE · 8.3 ms</text>
-            <g opacity={ms}>
-              <path d={`M${sx + 44} ${BASE - DEAD}h22M${sx + 55} ${BASE - DEAD}V${top}M${sx + 44} ${top}h22`} stroke={RED} strokeWidth={5} fill="none" />
-              <text x={sx + 84} y={BASE - DEAD - 24} fontFamily={FONT} fontWeight={700} fontSize={46} fill={RED}>+8 ms</text>
-            </g>
-            {t >= 87 && t < 110 ? <ellipse cx={sx} cy={top} rx={(t - 87) * 22} ry={(t - 87) * 7} fill="none" stroke={RED} strokeWidth={6 * cl(1 - (t - 87) / 20)} opacity={cl(1 - (t - 87) / 20)} /> : null}
+            <Bars id="s01c" h={h} glow={0.8} />
+            {/* the deadline, with a small tidy tag hanging under its left end (in the graph's plane, so it can never cross the line;
+                under the line it is clear of the counter above and of the bar tops below) */}
+            <line x1={-1400} x2={2060} y1={DY} y2={DY} stroke="#fff" strokeOpacity={0.85} strokeWidth={3} strokeDasharray="18 12" />
+            <rect x={22} y={DY + 14} width={372} height={46} rx={9} fill="#0A0F1A" fillOpacity={0.9} stroke="#fff" strokeOpacity={0.35} strokeWidth={1.5} />
+            <text x={40} y={DY + 46} fontFamily={MONO} fontWeight={600} fontSize={27} fill="#E6ECF6" letterSpacing="0.12em">DEADLINE · 8.3 ms</text>
+            {/* dimension marker: from the deadline up to the top of the late frame */}
+            {draw > 0.01 ? (
+              <g stroke="#E6ECF6" strokeWidth={4} strokeLinecap="round" fill="none">
+                <path d={`M${MX} ${DY - 8}V${lerp(DY - 8, TOP + 4, draw)}`} />
+                <path d={`M${MX - 13} ${DY - 8}h26`} />
+                <path d={`M${MX - 13} ${lerp(DY - 8, TOP + 4, draw)}h26`} />
+              </g>
+            ) : null}
           </svg>
-          {/* the late frame punches out of the graph plane */}
-          {punch > 0.01 ? Array.from({length: 9}).map((_, i) => (
-            <div key={i} style={{position: 'absolute', left: sx - 930 - BW / 2 - (i === 8 ? 3 : 0), top: -470 + top - (i === 8 ? 3 : 0), width: BW + (i === 8 ? 6 : 0), height: h[SPIKE] + (i === 8 ? 3 : 0), transform: `translateZ(${150 * punch * ((i + 1) / 9)}px)`,
-                                 background: i === 8 ? 'linear-gradient(180deg,#FFD0D5 0%,#FF3B4E 12%,#C2182B 100%)' : i % 2 ? '#A3122A' : '#C2182B', boxShadow: i === 8 ? `0 0 ${70 + 60 * flash}px ${RED}` : undefined, borderRadius: 3}} />
-          )) : null}
-          {late > 0 ? <div style={{position: 'absolute', left: sx - 930 + 70, top: -470 + 40 + 150 * swing, transform: `translateZ(${60 + 100 * swing}px) rotateY(${34 * swing}deg) rotate(-9deg) scale(${2.6 - 1.6 * late})`, opacity: Math.min(1, late * 2), padding: '0px 34px', border: `9px solid ${RED}`, borderRadius: 22,
-                                    color: RED, fontFamily: FONT, fontWeight: 800, fontSize: 132, lineHeight: '160px', letterSpacing: '0.08em', background: 'rgba(255,59,78,0.14)', boxShadow: `0 0 80px ${RED}66`}}>LATE</div> : null}
         </div>
       </Persp>
-      <div style={{position: 'absolute', left: 0, top: 0, width: 760, height: 400, background: 'radial-gradient(ellipse 60% 60% at 30% 35%, rgba(3,5,10,0.85) 30%, rgba(3,5,10,0) 100%)', opacity: swing}} />
+      {/* "+8 ms": the value of the marker, set beside it in clear space */}
+      <div style={{position: 'absolute', left: mid[0] + 30, top: mid[1] - 48, opacity: ms, transform: `translateX(${-18 * (1 - ms)}px)`, fontFamily: FONT, fontWeight: 800, fontSize: 76, lineHeight: '96px', color: RED, whiteSpace: 'nowrap', letterSpacing: '-0.01em'}}>+8 ms</div>
+      {/* "late": a glass plate beside the spike's top, one short leader */}
+      {late > 0.01 ? (
+        <>
+          <svg width={1920} height={1080} style={{position: 'absolute', inset: 0, opacity: late}}>
+            <path d={`M${S[0] + 6} ${S[1] - 8}L${plate[0]} ${plate[1] + PH - 22}`} stroke="#E6ECF6" strokeWidth={2.5} fill="none" />
+            <circle cx={S[0] + 4} cy={S[1] - 6} r={6} fill="#E6ECF6" />
+          </svg>
+          <div style={{position: 'absolute', left: plate[0], top: plate[1], width: PW, height: PH, boxSizing: 'border-box', borderRadius: 18, opacity: Math.min(1, late * 1.5), transform: `translateX(${46 * (1 - late)}px)`,
+                       background: 'linear-gradient(135deg, rgba(34,42,60,0.94) 0%, rgba(12,15,24,0.94) 70%)', border: '2px solid rgba(255,255,255,0.3)', boxShadow: '0 22px 50px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.22)'}}>
+            <div style={{position: 'absolute', left: 26, top: 14, fontFamily: MONO, fontWeight: 600, fontSize: 26, letterSpacing: '0.16em', color: '#AEB9CC', whiteSpace: 'nowrap'}}>THIS FRAME</div>
+            <div style={{position: 'absolute', left: 24, top: 46, fontFamily: FONT, fontWeight: 800, fontSize: 62, lineHeight: '70px', letterSpacing: '0.06em', color: RED, whiteSpace: 'nowrap'}}>LATE</div>
+          </div>
+        </>
+      ) : null}
+      <div style={{position: 'absolute', left: 0, top: 0, width: 760, height: 430, background: 'radial-gradient(ellipse 60% 60% at 30% 35%, rgba(3,5,10,0.85) 30%, rgba(3,5,10,0) 100%)', opacity: swing}} />
       <div style={{position: 'absolute', left: 96, top: 70, transformOrigin: '0 0'}}>
         <Tag size={28} color="#C9D3E4" style={{marginBottom: 16}}>one frame arrived</Tag>
-        <Drums pos={[0, v8]} prev={[0, p8]} dim={[true, false]} size={170} accent={RED} lit={Math.max(ms * 0.6, flash)} suffix="ms" />
+        <Drums pos={[0, v8]} prev={[0, p8]} dim={[true, false]} size={170} accent={red ? RED : '#9CC8FF'} lit={0.35} suffix="ms" />
       </div>
-      <div style={{position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 60% 40%, ${RED}00 30%, ${RED} 100%)`, opacity: 0.4 * flash}} />
     </>
   );
 };

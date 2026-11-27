@@ -1,3 +1,7 @@
+# UPDATE 27 Nov 2026, ~12:30 - v4 rendered: v3 + the redesigned '8 milliseconds late' shot (no stamp, no overlaps).
+File: out/ios-smooth-act1.mp4 (copy: Reverse/deliverables/ios-smooth/ios-smooth_act1_v4.mp4). QA 17/18, 0 hard fails; jiggle 0.636.
+Waiting for Ved's verdict on v4.
+
 # UPDATE 27 Nov 2026, ~11:15 - v3 rendered on Ved's word ("Start Render Full Power")
 v3 = camera fix round + redesigned sound. `out/ios-smooth-act1.mp4` (copy: Reverse\deliverables\ios-smooth\ios-smooth_act1_v3.mp4).
 QA 17/18, 0 hard fails (only the narration-pace warning). Camera per scene all <= 0.87 (film gate 0.658). 0:10 join checked frame by frame.

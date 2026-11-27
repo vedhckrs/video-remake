@@ -18,8 +18,8 @@
 | Visual beat rate (info) | PASS | 5.80 big changes / s | world mode: every word |
 | Visual change on every spoken word | PASS | 219/220 words (100 %) | >= 90 % |
 | Never still > 1.0 s (15 fps) | PASS | longest 0.53 s | <= 1.0 s |
-| Camera smooth: jiggle | PASS | rms 0.658 (72.5 frames/min) | rms <= 0.9 |
-| Camera smooth: direction reversals | PASS | 1.0 / min | <= 6 / min (v2 was 43) |
+| Camera smooth: jiggle | PASS | rms 0.636 (73.0 frames/min) | rms <= 0.9 |
+| Camera smooth: direction reversals | PASS | 1.9 / min | <= 6 / min (v2 was 43) |
 | Loudness -14 LUFS integrated | PASS | -14.1 LUFS | -14 +- 1 |
 | True peak <= -1 dBTP | PASS | -1.0 dBTP | <= -1 |
 
