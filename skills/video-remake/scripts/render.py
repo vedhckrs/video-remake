@@ -41,6 +41,7 @@ def main():
     ap.add_argument("--lufs", type=float, default=-14.0)
     ap.add_argument("--at", default="mid", choices=["start", "mid", "end"])
     ap.add_argument("--scale", type=float, default=None, help="default: project.output.width / canvas.width")
+    ap.add_argument("--concurrency", default="50%", help="Remotion render concurrency (tabs): a number or a share of the CPU threads, default 50%%")
     ap.add_argument("--frames", help="comma list of frames for stills instead of one per scene")
     a = ap.parse_args()
     P = project_paths(a.project)
@@ -58,7 +59,7 @@ def main():
             # --scale renders the design canvas at a higher device scale: vectors, text and 2x screenshots stay sharp
             scale = a.scale or round((pj.get("output") or {}).get("width", pj["canvas"]["width"]) / pj["canvas"]["width"], 4)
             npx(["render", "src/index.ts", P.id, str(raw), "--codec=h264", "--audio-codec=aac", f"--scale={scale}",
-                 "--crf=16", "--x264-preset=slow", "--color-space=bt709", "--concurrency=50%", *gl])
+                 "--crf=16", "--x264-preset=slow", "--color-space=bt709", f"--concurrency={a.concurrency}", *gl])
         master(raw, out, a.lufs)
         print(f"[video-remake] rendered + mastered to {a.lufs} LUFS -> {out}")
         return

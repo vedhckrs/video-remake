@@ -1,3 +1,9 @@
+# UPDATE 27 Nov 2026, ~11:15 - v3 rendered on Ved's word ("Start Render Full Power")
+v3 = camera fix round + redesigned sound. `out/ios-smooth-act1.mp4` (copy: Reverse\deliverables\ios-smooth\ios-smooth_act1_v3.mp4).
+QA 17/18, 0 hard fails (only the narration-pace warning). Camera per scene all <= 0.87 (film gate 0.658). 0:10 join checked frame by frame.
+Sound: 56 events, new score, -14.1 LUFS; rerun = `sound_design.py . mix` then `listen` (recipe at the end of out/sound_spotting.md).
+Waiting for Ved's verdict on v3. The notes below describe the state before this render.
+
 # "Why iOS feels so smooth" - Act 1 - where things stand (saved 26 Nov 2026, ~20:40)
 
 Ved stopped for the night: "don't render, just save all things ... we render after I come and tell you to render".

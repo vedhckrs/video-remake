@@ -1,6 +1,6 @@
 # QA - ios-smooth-act1
 
-16/18 measured gates pass, 1 hard failures.
+17/18 measured gates pass, 0 hard failures.
 
 | Gate | Result | Value | Target |
 |---|---|---|---|
@@ -9,19 +9,19 @@
 | At most one keyword box per phrase | PASS | 0 over | 0 |
 | Keyword boxes ~ one per sentence | PASS | 34 boxes / 39 sentences | >= 0.5 per sentence |
 | Caption lead before the voice | PASS | 49 ms median | 2-5 frames @60 (33-83 ms) |
-| SFX density | PASS | 6.5 per 10 s | 4-6 per 10 s |
-| No silent stretch (SFX) > 8 s | PASS | longest 4.0 s | <= 8 s |
+| SFX density | PASS | 6.9 per 10 s | 4-6 per 10 s |
+| No silent stretch (SFX) > 8 s | PASS | longest 6.3 s | <= 8 s |
 | Render 1920x1080 @ 60 | PASS | 1920x1080 @ 60 | 1920x1080 @ 60 |
 | No span > 1.5 s without visible change | PASS | longest 0.38 s at 62.5 s | <= 1.5 s |
-| Something moves on frame 0 | PASS | 6.93 | > 0.35 |
+| Something moves on frame 0 | PASS | 4.76 | > 0.35 |
 | >= 3 visual states in the first 3 s | PASS | 24 big changes | >= 3 |
 | Visual beat rate (info) | PASS | 5.80 big changes / s | world mode: every word |
 | Visual change on every spoken word | PASS | 219/220 words (100 %) | >= 90 % |
 | Never still > 1.0 s (15 fps) | PASS | longest 0.53 s | <= 1.0 s |
-| Camera smooth: jiggle | FAIL | rms 1.214 (149.4 frames/min) | rms <= 0.9 |
-| Camera smooth: direction reversals | PASS | 4.4 / min | <= 6 / min (v2 was 43) |
-| Loudness -14 LUFS integrated | PASS | -14.6 LUFS | -14 +- 1 |
-| True peak <= -1 dBTP | PASS | -1.7 dBTP | <= -1 |
+| Camera smooth: jiggle | PASS | rms 0.658 (72.5 frames/min) | rms <= 0.9 |
+| Camera smooth: direction reversals | PASS | 1.0 / min | <= 6 / min (v2 was 43) |
+| Loudness -14 LUFS integrated | PASS | -14.1 LUFS | -14 +- 1 |
+| True peak <= -1 dBTP | PASS | -1.0 dBTP | <= -1 |
 
 ## Check by eye (contact sheet)
 

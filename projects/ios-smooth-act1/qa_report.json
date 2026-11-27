@@ -1,8 +1,8 @@
 {
  "project": "ios-smooth-act1",
- "passed": 16,
+ "passed": 17,
  "total": 18,
- "hard_failures": 1,
+ "hard_failures": 0,
  "gates": [
   {
    "gate": "Narration pace",
@@ -42,14 +42,14 @@
   {
    "gate": "SFX density",
    "pass": true,
-   "value": "6.5 per 10 s",
+   "value": "6.9 per 10 s",
    "target": "4-6 per 10 s",
    "hard": true
   },
   {
    "gate": "No silent stretch (SFX) > 8 s",
    "pass": true,
-   "value": "longest 4.0 s",
+   "value": "longest 6.3 s",
    "target": "<= 8 s",
    "hard": true
   },
@@ -70,7 +70,7 @@
   {
    "gate": "Something moves on frame 0",
    "pass": true,
-   "value": "6.93",
+   "value": "4.76",
    "target": "> 0.35",
    "hard": true
   },
@@ -104,29 +104,29 @@
   },
   {
    "gate": "Camera smooth: jiggle",
-   "pass": false,
-   "value": "rms 1.214 (149.4 frames/min)",
+   "pass": true,
+   "value": "rms 0.658 (72.5 frames/min)",
    "target": "rms <= 0.9",
    "hard": true
   },
   {
    "gate": "Camera smooth: direction reversals",
    "pass": true,
-   "value": "4.4 / min",
+   "value": "1.0 / min",
    "target": "<= 6 / min (v2 was 43)",
    "hard": true
   },
   {
    "gate": "Loudness -14 LUFS integrated",
    "pass": true,
-   "value": "-14.6 LUFS",
+   "value": "-14.1 LUFS",
    "target": "-14 +- 1",
    "hard": true
   },
   {
    "gate": "True peak <= -1 dBTP",
    "pass": true,
-   "value": "-1.7 dBTP",
+   "value": "-1.0 dBTP",
    "target": "<= -1",
    "hard": true
   }
