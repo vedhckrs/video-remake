@@ -42,32 +42,18 @@
    },
    "hits": [
     {
-     "frame": 10.5,
-     "sfx": "glass_tap",
-     "pan": -0.05,
-     "db": -1,
-     "note": "thumb lands on the glass of the real phone"
-    },
-    {
      "frame": 13.65,
      "sfx": "glass_swipe",
      "pan": -0.05,
-     "note": "first flick: the feed scrolls"
+     "db": 1,
+     "note": "thumb flicks the feed on the real phone"
     },
     {
-     "frame": 30.0,
-     "sfx": "glass_swipe",
-     "pan": -0.05,
-     "db": -3,
-     "rate": 1.06,
-     "note": "second flick"
-    },
-    {
-     "frame": 47.7,
+     "frame": 48.6,
      "sfx": "peel",
      "pan": -0.15,
      "db": -1,
-     "note": "frames peel off the screen into a film strip"
+     "note": "hard cut: the screen's frames fanned out as a film strip"
     },
     {
      "frame": 84.0,
@@ -79,10 +65,10 @@
       "ease": "out",
       "db_end": -2
      },
-     "note": "frame-time drum counter rolls to 8 ms"
+     "note": "hard cut to the frame-time graph: drum counter rolls to 8 ms"
     },
     {
-     "frame": 108.99,
+     "frame": 109.35,
      "sfx": "stamp",
      "pan": 0.2,
      "note": "LATE stamp lands on the red spike (hero)"
@@ -93,13 +79,22 @@
      "pan": 0.1,
      "db": 1,
      "take": 2,
-     "note": "macro: fingertip touches the glass"
+     "note": "hard cut to the macro: the fingertip is on the glass"
     },
     {
      "frame": 200.01,
      "sfx": "pulse",
      "pan": 0.0,
      "note": "red ripple runs from the glass into the finger: felt, not heard"
+    },
+    {
+     "frame": 265.5,
+     "sfx": "glass_swipe",
+     "pan": 0.0,
+     "db": -3,
+     "rate": 1.05,
+     "take": 2,
+     "note": "on an iPhone: the thumb scrolls again, every frame on time"
     }
    ],
    "visual": "HOOK, a big picture change every 0.5 s. Frame 0: a giant thumb flicks a feed on a phone that fills the screen, already moving. 'One frame': time freezes, the feed splits into a film strip of frames flying past; one frame turns red and lags behind. '8 milliseconds': a frame-time graph slams in across the full width, green bars with one tall red spike, a drum counter rolls to 8 ms. 'can't see it': extreme macro of an eye, the red frame reflected, gone in a blink. 'thumb can feel it': macro of the fingertip on glass, a red shock ripple runs from the glass into the finger. 'On an iPhone': the graph flattens to a perfect green line and the phone redraws in titanium. 'never happens': the green line runs off screen like a heartbeat."
@@ -116,13 +111,6 @@
     "transistor.": "select"
    },
    "hits": [
-    {
-     "frame": 11.0,
-     "sfx": "hum_on",
-     "pan": 0.0,
-     "db": -1,
-     "note": "logic board wakes: gold ring lights round the chip"
-    },
     {
      "frame": 143.0,
      "sfx": "set",
@@ -166,13 +154,6 @@
      "note": "counter wheels lock"
     },
     {
-     "frame": 282.2,
-     "sfx": "seat",
-     "pan": 0.3,
-     "db": -5,
-     "note": "/ DAY drops in under the calendar"
-    },
-    {
      "frame": 366.5,
      "sfx": "glass_lift",
      "pan": -0.3,
@@ -184,20 +165,21 @@
      "pan": 0.0,
      "at": "peak",
      "take": 2,
+     "db": -2,
      "note": "one continuous dive: board -> package -> die -> cells"
     },
     {
-     "frame": 452.0,
+     "frame": 453.5,
      "sfx": "hum_on",
      "pan": 0.1,
      "take": 2,
      "note": "the transistor's gate charges"
     },
     {
-     "frame": 460.1,
+     "frame": 467.6,
      "sfx": "switch",
      "pan": 0.1,
-     "note": "transistor switches ON"
+     "note": "transistor switches ON: the channels light up"
     }
    ],
    "visual": "The green line becomes a trace on a circuit board. 'chips / modem / software': three hero objects rise on lit pedestals one per word (A20 Pro package, C2 modem, a glass iOS layer stack). '125 million dollars a day': a mechanical drum counter rolls to $125,000,000 / DAY with a calendar flipping behind it; footnote 'Apple FY2026 R&D: $45.77 billion'. 'open it up, layer by layer': the phone explodes into its layers (glass, display, board, battery) on a spring. 'single transistor': continuous nano dive preview, board -> chip -> die -> one glowing transistor, then pulls back. Source credit on the counter shot."
@@ -225,21 +207,6 @@
       "db_end": -2
      },
      "note": "120 Hz drum counter rolls"
-    },
-    {
-     "frame": 96.5,
-     "sfx": "lock",
-     "pan": -0.6,
-     "db": -3,
-     "note": "120 locks"
-    },
-    {
-     "frame": 212.9,
-     "sfx": "stamp",
-     "pan": -0.1,
-     "db": -5,
-     "rate": 1.12,
-     "note": "ON TIME stamp on the first frame"
     },
     {
      "frame": 260.6,
@@ -295,30 +262,12 @@
      "note": "cartridge travels the rail: touch -> app"
     },
     {
-     "frame": 115.3,
-     "sfx": "lock",
-     "pan": -0.05,
-     "db": -5,
-     "rate": 1.25,
-     "take": 2,
-     "note": "cartridge docks at the app, window lights"
-    },
-    {
      "frame": 225.1,
      "sfx": "slide",
      "pan": -0.1,
      "rate": 0.95,
      "db": -1,
      "note": "hands it over: cartridge travels app -> render server"
-    },
-    {
-     "frame": 235.9,
-     "sfx": "lock",
-     "pan": 0.15,
-     "db": -6,
-     "rate": 1.2,
-     "take": 3,
-     "note": "cartridge docks at the render server"
     },
     {
      "frame": 379.0,
@@ -335,25 +284,11 @@
      "note": "cartridge travels GPU -> display"
     },
     {
-     "frame": 422.5,
-     "sfx": "switch",
-     "pan": 0.3,
-     "note": "display phone lights up"
-    },
-    {
      "frame": 464.2,
      "sfx": "clock_tick",
      "pan": 0.0,
      "db": 2,
      "note": "the very next tick"
-    },
-    {
-     "frame": 467.5,
-     "sfx": "stamp",
-     "pan": -0.35,
-     "db": -6,
-     "rate": 1.15,
-     "note": "ON TIME"
     }
    ],
    "visual": "World 'The render loop', one wide machine laid out left to right across the 16:9 frame, five stations joined by a glowing track: TOUCH (finger on glass, capacitive grid lights up) -> APP (a glass app window, layout boxes rearranging) -> RENDER SERVER (a separate dark tower, layer tree becomes a stack of tiles) -> GPU (a chip die, tiles painted into pixels) -> DISPLAY (panel lights). One frame packet travels the track; the camera follows it station by station as each is named, while an 8.3 ms deadline bar drains along the bottom of the machine. The packet lands at the display with time to spare: ON TIME. Labels follow Apple's own names: Event, Commit, Render prepare, Render execute, Display."
@@ -379,49 +314,26 @@
      "note": "the animation card lifts out of the app and crosses the glass wall"
     },
     {
-     "frame": 118.5,
-     "sfx": "set",
-     "pan": 0.15,
-     "db": -3,
-     "rate": 1.05,
-     "note": "card lands inside the render server"
-    },
-    {
-     "frame": 213.3,
+     "frame": 214.5,
      "sfx": "knock_dull",
      "pan": -0.3,
-     "db": -1,
      "take": 2,
-     "note": "app goes amber: BUSY"
-    },
-    {
-     "frame": 219.0,
-     "sfx": "knock_dull",
-     "pan": -0.3,
-     "db": -5,
-     "rate": 0.94,
-     "note": "(second half of the stuck double knock)"
-    },
-    {
-     "frame": 261.0,
-     "sfx": "clock_tick",
-     "pan": 0.2,
-     "db": -1,
-     "note": "the server keeps landing frames on time"
+     "note": "app goes amber: BUSY - stuck"
     },
     {
      "frame": 271.5,
      "sfx": "clock_tick",
      "pan": 0.2,
      "db": -1,
-     "note": "..."
+     "note": "the server keeps landing frames on time"
     },
     {
      "frame": 282.0,
      "sfx": "clock_tick",
      "pan": 0.2,
-     "db": -1,
-     "note": "..."
+     "db": -2,
+     "rate": 1.03,
+     "note": "... and the next"
     },
     {
      "frame": 300.0,
@@ -469,12 +381,12 @@
      "note": "portal into the tunnel of gates"
     },
     {
-     "frame": 67.1,
+     "frame": 69.5,
      "sfx": "ratchet",
      "pan": 0.0,
      "run": {
-      "n": 13,
-      "dur": 1.1,
+      "n": 12,
+      "dur": 1.02,
       "ease": "out",
       "db_end": -3,
       "rate_end": -0.06
@@ -482,31 +394,11 @@
      "note": "7,200 / MIN drum counter rolls"
     },
     {
-     "frame": 101.3,
-     "sfx": "lock",
-     "pan": 0.0,
-     "db": -1,
-     "note": "7,200 locks"
-    },
-    {
      "frame": 188.6,
      "sfx": "set",
      "pan": 0.0,
      "rate": 0.88,
      "note": "glass iOS layers seat on the chip"
-    },
-    {
-     "frame": 189.5,
-     "sfx": "hum_on",
-     "pan": 0.0,
-     "db": -3,
-     "note": "pins light where they meet"
-    },
-    {
-     "frame": 219.5,
-     "sfx": "film_shutter",
-     "pan": -0.3,
-     "note": "real photo of the first iPhone"
     },
     {
      "frame": 292.4,
@@ -532,21 +424,12 @@
    },
    "hits": [
     {
-     "frame": 1.6,
-     "sfx": "air_pass",
-     "pan": 0.0,
-     "at": "peak",
-     "db": -2,
-     "take": 2,
-     "note": "push onto the chip road"
-    },
-    {
-     "frame": 61.0,
+     "frame": 65.5,
      "sfx": "ratchet",
      "pan": -0.2,
      "run": {
-      "n": 11,
-      "dur": 0.88,
+      "n": 10,
+      "dur": 0.74,
       "ease": "out",
       "db_end": -3,
       "rate_end": -0.06
@@ -554,13 +437,13 @@
      "note": "$278,000,000 drum counter rolls"
     },
     {
-     "frame": 87.4,
+     "frame": 88.0,
      "sfx": "lock",
      "pan": -0.2,
      "note": "$278,000,000 locks"
     },
     {
-     "frame": 138.7,
+     "frame": 139.6,
      "sfx": "stamp",
      "pan": -0.25,
      "db": 1,
@@ -575,23 +458,16 @@
      "note": "A4 drops into the empty socket (hero)"
     },
     {
-     "frame": 361.6,
+     "frame": 367.0,
      "sfx": "ratchet",
      "pan": 0.25,
      "run": {
-      "n": 7,
-      "dur": 0.6,
+      "n": 6,
+      "dur": 0.45,
       "ease": "out",
       "db_end": -2
      },
      "note": "32 -> 64 counter rolls as the lanes widen"
-    },
-    {
-     "frame": 381.4,
-     "sfx": "lock",
-     "pan": 0.25,
-     "db": -2,
-     "note": "64-BIT locks"
     },
     {
      "frame": 505.0,
@@ -616,6 +492,7 @@
      "pan": 0.2,
      "rate": 0.72,
      "take": 4,
+     "db": -2,
      "note": "x86 chip pushed out of the frame"
     },
     {
@@ -625,14 +502,6 @@
      "rate": 0.8,
      "db": -1,
      "note": "MacBook lid swings open"
-    },
-    {
-     "frame": 760.6,
-     "sfx": "switch",
-     "pan": 0.1,
-     "db": -3,
-     "take": 2,
-     "note": "MacBook screen lights"
     }
    ],
    "visual": "World 'The chip road': a long horizontal road of year markers 2008 -> 2020 that the camera travels along, one stop per sentence, each chip redrawn in code from real package photos and growing in size and detail. 2008: a signed deal card, drum counter $278,000,000. 2010: the A4 package drops into the empty socket from S06, the board lights. 2013: A7, its die x-rays to show registers widening from 32 to 64 lanes. 2017: A11, a new block on the die lights up as a small neural net, a face outline is recognised. 2020: the die scales up into the M1, a laptop opens around it and a blue chip is pushed out of the frame. Real photos on glass cards beside the redrawn chips where a licence allows (A4 package, M1 press image), each with a bottom-right source credit."
@@ -694,14 +563,6 @@
      "note": "Thread"
     },
     {
-     "frame": 288.5,
-     "sfx": "slide",
-     "pan": 0.0,
-     "rate": 0.75,
-     "take": 2,
-     "note": "board slides into the real phone"
-    },
-    {
      "frame": 360.5,
      "sfx": "air_long",
      "pan": 0.0,
@@ -710,14 +571,7 @@
      "note": "push into the A20 Pro hero"
     },
     {
-     "frame": 387.5,
-     "sfx": "hum_on",
-     "pan": 0.6,
-     "db": -1,
-     "note": "transistor lens: gate charges"
-    },
-    {
-     "frame": 395.0,
+     "frame": 390.5,
      "sfx": "switch",
      "pan": 0.6,
      "note": "transistor lens switches on"
@@ -749,7 +603,7 @@
      "note": "18 YEARS counter rolls"
     },
     {
-     "frame": 92.5,
+     "frame": 91.0,
      "sfx": "glass_swipe",
      "pan": 0.0,
      "db": -1,
@@ -784,12 +638,12 @@
   "jitter_db": 0.8,
   "jitter_rate": 0.04,
   "mix": {
-   "music_db": -15.0,
+   "music_db": -15.5,
    "duck_voice_db": 6.5,
    "duck_fx_db": 2.0,
    "duck_window_s": 0.3,
    "duck_smooth_s": 0.35,
-   "music_width": 1.5,
+   "music_width": 1.7,
    "music_eq": "equalizer=f=2600:t=q:w=1.0:g=-3,highshelf=f=9000:g=1.5",
    "fx_room": 0.22,
    "fx_eq": "highshelf=f=7000:g=-2",
@@ -800,6 +654,10 @@
   }
  },
  "sound_silent_beats": [
+  {
+   "t": 0.35,
+   "note": "the thumb landing (the flick right after it is the first sound)"
+  },
   {
    "t": 2.37,
    "note": "the red frame lags behind the strip - the LATE stamp a second later is the one accent"
@@ -814,11 +672,15 @@
   },
   {
    "t": 8.0,
-   "note": "graph flattens to even green bars, the phone redraws and scrolls - left to the music's release"
+   "note": "graph flattens to even green bars and the phone redraws - left to the music's release"
   },
   {
    "t": 9.4,
    "note": "logic board rises out of the phone (music lifts into S02 instead)"
+  },
+  {
+   "t": 10.38,
+   "note": "S01 -> S02 join: an invisible cut on one continuous board move - no transition sound; the board waking is left to the score's lift"
   },
   {
    "t": 13.95,
@@ -827,6 +689,10 @@
   {
    "t": 17.8,
    "note": "calendar pages flip behind the counter (16 flips - would be clutter under the ratchet)"
+  },
+  {
+   "t": 19.79,
+   "note": "/ DAY drops in under the calendar (the counter's lock is the accent)"
   },
   {
    "t": 23.05,
@@ -849,6 +715,10 @@
    "note": "8.3 ms counter; second ON TIME stamp at 34.5; green gates passing"
   },
   {
+   "t": 33.88,
+   "note": "ON TIME stamps on the first frames - kept silent so LATE and HITCH land by contrast"
+  },
+  {
    "t": 37.0,
    "note": "REPEAT: the old picture is copied into the slot"
   },
@@ -859,6 +729,10 @@
   {
    "t": 41.6,
    "note": "wide reveal of the render machine, deadline bar appears"
+  },
+  {
+   "t": 44.76,
+   "note": "cartridge docking at each station (the slide ends in its own soft stop)"
   },
   {
    "t": 46.0,
@@ -873,8 +747,16 @@
    "note": "cartridge travels render server -> GPU (the fourth rail move; three are enough)"
   },
   {
+   "t": 55.0,
+   "note": "display phone lights up; ON TIME stamp at 56.5 (the stopwatch tick on 'tick' is the accent)"
+  },
+  {
    "t": 57.9,
    "note": "camera pulls back, glass wall rises between app and server"
+  },
+  {
+   "t": 61.0,
+   "note": "animation card lands inside the server"
   },
   {
    "t": 70.45,
@@ -885,16 +767,24 @@
    "note": "cut from the tunnel to the chip"
   },
   {
+   "t": 77.5,
+   "note": "pins light under the seated layers"
+  },
+  {
+   "t": 78.5,
+   "note": "cut to the real photo of the first iPhone (a camera shutter was tried: in the mix earshot heard it as a zipper / zap, so the cut stays quiet and the score's low piano marks it)"
+  },
+  {
    "t": 80.2,
    "note": "the photo opens into the 2008 board"
   },
   {
-   "t": 82.1,
-   "note": "deal card slides in, signature draws"
+   "t": 81.6,
+   "note": "push onto the chip road (the score's downbeat carries it)"
   },
   {
-   "t": 104.0,
-   "note": "the M1 floats in over the x86 chip (no contact on screen, so no impact)"
+   "t": 82.1,
+   "note": "deal card slides in, signature draws"
   },
   {
    "t": 87.5,
@@ -913,12 +803,24 @@
    "note": "face outline recognised, check mark"
   },
   {
+   "t": 104.0,
+   "note": "the M1 floats in over the x86 chip (no contact on screen, so no impact)"
+  },
+  {
+   "t": 106.92,
+   "note": "MacBook screen lights"
+  },
+  {
    "t": 108.75,
    "note": "push onto the 2025 board, neighbouring chips highlight"
   },
   {
    "t": 111.13,
    "note": "the pulse out to the cell tower and its reply (a radio 'ping' read as a cheap synth beep - earshot match +3.1 - so the wave stays silent)"
+  },
+  {
+   "t": 116.9,
+   "note": "board slides into the real phone"
   },
   {
    "t": 118.5,

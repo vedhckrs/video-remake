@@ -207,10 +207,10 @@
     "whoosh_big/gust"
    ],
    "takes": 2,
-   "level_db": -15,
+   "level_db": -18,
    "post": {
-    "lp": 5000,
-    "hp": 90
+    "lp": 4500,
+    "hp": 140
    },
    "why": "long camera travel (dive, tunnel, hero push): one soft low rush of air shaped to the move"
   },
@@ -279,23 +279,6 @@
    "pick": "slide/panel",
    "why": "the glass cartridge riding its rail: a short low slide ending in a soft stop"
   },
-  "stack": {
-   "want": "thin tiles stacked quickly, a few soft clacks",
-   "candidates": [
-    "chips/stack",
-    "paper/card",
-    "cards/shuffle",
-    "coin/cup"
-   ],
-   "takes": 2,
-   "level_db": -22,
-   "post": {
-    "lp": 6000,
-    "trim": 0.8,
-    "fade_out": 0.2
-   },
-   "why": "(spare) thin tiles stacking"
-  },
   "knock_dull": {
    "want": "a dull muted knock, something stuck",
    "candidates": [
@@ -350,22 +333,6 @@
    },
    "why": "the empty socket: a hollow knock - there is nothing inside"
   },
-  "paper_slide": {
-   "want": "a card sliding across a desk into place",
-   "candidates": [
-    "slide/paper",
-    "paper/card",
-    "swipe/paper",
-    "paper/page"
-   ],
-   "takes": 2,
-   "level_db": -20,
-   "post": {
-    "lp": 7000,
-    "hp": 250
-   },
-   "why": "(spare) a card sliding on a desk"
-  },
   "node_ticks": {
    "want": "a quick run of tiny soft ticks, like small lights switching on one by one",
    "candidates": [
@@ -413,29 +380,12 @@
    ],
    "pick": "pass/air",
    "takes": 2,
-   "level_db": -17,
+   "level_db": -19,
    "post": {
     "lp": 4500,
     "hp": 120
    },
    "why": "camera travelling sideways along the set: air passing from one side to the other"
-  },
-  "film_shutter": {
-   "want": "a soft film camera shutter click",
-   "candidates": [
-    "shutter/film",
-    "camera/shutter",
-    "shutter/mirror",
-    "shutter/quick",
-    "shutter/dslr"
-   ],
-   "takes": 2,
-   "level_db": -19,
-   "post": {
-    "lp": 8000
-   },
-   "pick": "camera/shutter",
-   "why": "the cut to a REAL photograph: a film camera shutter"
   }
  },
  "aliases": {}

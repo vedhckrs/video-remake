@@ -2,48 +2,26 @@
   "fps": 60,
   "cues": [
     {
-      "t": 0.35,
-      "role": "glass_tap",
-      "file": "glass_tap_1.wav",
-      "at": "onset",
-      "why": "S01 10.5",
-      "db": -17.74,
-      "pan": -0.05,
-      "rate": 1.012,
-      "note": "thumb lands on the glass of the real phone"
-    },
-    {
       "t": 0.455,
       "role": "glass_swipe",
       "file": "glass_swipe_1.wav",
       "at": "onset",
       "why": "S01 13.65",
-      "db": -19.32,
+      "db": -17.74,
       "pan": -0.05,
       "rate": 1.012,
-      "note": "first flick: the feed scrolls"
+      "note": "thumb flicks the feed on the real phone"
     },
     {
-      "t": 1.0,
-      "role": "glass_swipe",
-      "file": "glass_swipe_2.wav",
-      "at": "onset",
-      "why": "S01 30.0",
-      "db": -21.92,
-      "pan": -0.05,
-      "rate": 1.044,
-      "note": "second flick"
-    },
-    {
-      "t": 1.59,
+      "t": 1.62,
       "role": "peel",
       "file": "peel_1.wav",
       "at": "onset",
-      "why": "S01 47.7",
-      "db": -19.9,
+      "why": "S01 48.6",
+      "db": -20.32,
       "pan": -0.15,
       "rate": 1.012,
-      "note": "frames peel off the screen into a film strip"
+      "note": "hard cut: the screen's frames fanned out as a film strip"
     },
     {
       "t": 2.8,
@@ -51,10 +29,10 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S01 84.0 (run 1/5)",
-      "db": -19.78,
+      "db": -19.76,
       "pan": -0.55,
       "rate": 1.012,
-      "note": "frame-time drum counter rolls to 8 ms"
+      "note": "hard cut to the frame-time graph: drum counter rolls to 8 ms"
     },
     {
       "t": 2.9312,
@@ -62,7 +40,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S01 84.0 (run 2/5)",
-      "db": -20.33,
+      "db": -20.25,
       "pan": -0.55,
       "rate": 0.985
     },
@@ -72,7 +50,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S01 84.0 (run 3/5)",
-      "db": -21.31,
+      "db": -20.93,
       "pan": -0.55,
       "rate": 0.995
     },
@@ -82,7 +60,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S01 84.0 (run 4/5)",
-      "db": -21.52,
+      "db": -21.25,
       "pan": -0.55,
       "rate": 0.98
     },
@@ -92,17 +70,17 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S01 84.0 (run 5/5)",
-      "db": -21.61,
+      "db": -21.6,
       "pan": -0.55,
       "rate": 1.006
     },
     {
-      "t": 3.633,
+      "t": 3.645,
       "role": "stamp",
       "file": "stamp_1.wav",
       "at": "onset",
-      "why": "S01 108.99",
-      "db": -11.64,
+      "why": "S01 109.35",
+      "db": -11.67,
       "pan": 0.2,
       "rate": 1.012,
       "note": "LATE stamp lands on the red spike (hero)"
@@ -113,10 +91,10 @@
       "file": "glass_tap_2.wav",
       "at": "onset",
       "why": "S01 186.0",
-      "db": -15.65,
+      "db": -15.74,
       "pan": 0.1,
-      "rate": 0.985,
-      "note": "macro: fingertip touches the glass"
+      "rate": 1.012,
+      "note": "hard cut to the macro: the fingertip is on the glass"
     },
     {
       "t": 6.667,
@@ -124,21 +102,21 @@
       "file": "pulse_1.wav",
       "at": "onset",
       "why": "S01 200.01",
-      "db": -11.88,
+      "db": -11.64,
       "pan": 0.0,
       "rate": 1.012,
       "note": "red ripple runs from the glass into the finger: felt, not heard"
     },
     {
-      "t": 10.75,
-      "role": "hum_on",
-      "file": "hum_on_1.wav",
+      "t": 8.85,
+      "role": "glass_swipe",
+      "file": "glass_swipe_2.wav",
       "at": "onset",
-      "why": "S02 11.0",
-      "db": -15.24,
+      "why": "S01 265.5",
+      "db": -21.65,
       "pan": 0.0,
-      "rate": 1.012,
-      "note": "logic board wakes: gold ring lights round the chip"
+      "rate": 1.034,
+      "note": "on an iPhone: the thumb scrolls again, every frame on time"
     },
     {
       "t": 15.15,
@@ -146,7 +124,7 @@
       "file": "set_1.wav",
       "at": "onset",
       "why": "S02 143.0",
-      "db": -16.65,
+      "db": -16.88,
       "pan": -0.42,
       "rate": 0.951,
       "note": "A20 Pro settles on the first pedestal"
@@ -157,7 +135,7 @@
       "file": "set_2.wav",
       "at": "onset",
       "why": "S02 169.4",
-      "db": -18.33,
+      "db": -18.34,
       "pan": 0.0,
       "rate": 0.985,
       "note": "modem settles on the second pedestal"
@@ -168,7 +146,7 @@
       "file": "set_3.wav",
       "at": "onset",
       "why": "S02 200.9",
-      "db": -19.27,
+      "db": -19.04,
       "pan": 0.42,
       "rate": 1.094,
       "note": "glass software stack settles on the third pedestal"
@@ -179,7 +157,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S02 233.0 (run 1/16)",
-      "db": -20.2,
+      "db": -20.06,
       "pan": -0.35,
       "rate": 1.009,
       "note": "$125,000,000 drum counter rolls, slowing"
@@ -190,7 +168,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S02 233.0 (run 2/16)",
-      "db": -19.85,
+      "db": -20.39,
       "pan": -0.35,
       "rate": 0.979
     },
@@ -200,7 +178,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S02 233.0 (run 3/16)",
-      "db": -20.57,
+      "db": -20.08,
       "pan": -0.35,
       "rate": 1.008
     },
@@ -210,7 +188,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S02 233.0 (run 4/16)",
-      "db": -20.84,
+      "db": -20.2,
       "pan": -0.35,
       "rate": 0.993
     },
@@ -220,7 +198,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S02 233.0 (run 5/16)",
-      "db": -21.07,
+      "db": -20.83,
       "pan": -0.35,
       "rate": 0.979
     },
@@ -230,7 +208,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S02 233.0 (run 6/16)",
-      "db": -21.39,
+      "db": -21.35,
       "pan": -0.35,
       "rate": 0.968
     },
@@ -240,7 +218,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S02 233.0 (run 7/16)",
-      "db": -21.08,
+      "db": -21.47,
       "pan": -0.35,
       "rate": 0.987
     },
@@ -250,7 +228,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S02 233.0 (run 8/16)",
-      "db": -21.43,
+      "db": -21.21,
       "pan": -0.35,
       "rate": 0.966
     },
@@ -260,7 +238,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S02 233.0 (run 9/16)",
-      "db": -21.78,
+      "db": -21.57,
       "pan": -0.35,
       "rate": 0.976
     },
@@ -270,7 +248,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S02 233.0 (run 10/16)",
-      "db": -22.02,
+      "db": -21.71,
       "pan": -0.35,
       "rate": 0.945
     },
@@ -280,7 +258,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S02 233.0 (run 11/16)",
-      "db": -22.33,
+      "db": -22.1,
       "pan": -0.35,
       "rate": 0.943
     },
@@ -290,7 +268,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S02 233.0 (run 12/16)",
-      "db": -22.2,
+      "db": -21.93,
       "pan": -0.35,
       "rate": 0.96
     },
@@ -300,7 +278,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S02 233.0 (run 13/16)",
-      "db": -22.19,
+      "db": -22.14,
       "pan": -0.35,
       "rate": 0.955
     },
@@ -310,7 +288,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S02 233.0 (run 14/16)",
-      "db": -22.4,
+      "db": -22.56,
       "pan": -0.35,
       "rate": 0.936
     },
@@ -320,7 +298,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S02 233.0 (run 15/16)",
-      "db": -22.99,
+      "db": -22.51,
       "pan": -0.35,
       "rate": 0.937
     },
@@ -330,7 +308,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S02 233.0 (run 16/16)",
-      "db": -22.8,
+      "db": -23.01,
       "pan": -0.35,
       "rate": 0.95
     },
@@ -340,21 +318,10 @@
       "file": "lock_1.wav",
       "at": "onset",
       "why": "S02 278.9",
-      "db": -16.37,
+      "db": -16.17,
       "pan": -0.3,
       "rate": 1.012,
       "note": "counter wheels lock"
-    },
-    {
-      "t": 19.79,
-      "role": "seat",
-      "file": "seat_1.wav",
-      "at": "onset",
-      "why": "S02 282.2",
-      "db": -16.11,
-      "pan": 0.3,
-      "rate": 1.012,
-      "note": "/ DAY drops in under the calendar"
     },
     {
       "t": 22.6,
@@ -362,7 +329,7 @@
       "file": "glass_lift_1.wav",
       "at": "onset",
       "why": "S02 366.5",
-      "db": -17.8,
+      "db": -17.89,
       "pan": -0.3,
       "rate": 1.012,
       "note": "back glass ghosts and lifts off the phone"
@@ -373,32 +340,32 @@
       "file": "air_long_2.wav",
       "at": "peak",
       "why": "S02 423.5",
-      "db": -15.37,
+      "db": -20.37,
       "pan": 0.0,
       "rate": 1.012,
       "note": "one continuous dive: board -> package -> die -> cells"
     },
     {
-      "t": 25.45,
+      "t": 25.5,
       "role": "hum_on",
       "file": "hum_on_2.wav",
       "at": "onset",
-      "why": "S02 452.0",
-      "db": -13.67,
+      "why": "S02 453.5",
+      "db": -14.11,
       "pan": 0.1,
-      "rate": 0.985,
+      "rate": 1.012,
       "note": "the transistor's gate charges"
     },
     {
-      "t": 25.72,
+      "t": 25.97,
       "role": "switch",
       "file": "switch_1.wav",
       "at": "onset",
-      "why": "S02 460.1",
-      "db": -20.36,
+      "why": "S02 467.6",
+      "db": -19.8,
       "pan": 0.1,
       "rate": 1.012,
-      "note": "transistor switches ON"
+      "note": "transistor switches ON: the channels light up"
     },
     {
       "t": 29.25,
@@ -406,7 +373,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S03 74.0 (run 1/8)",
-      "db": -20.25,
+      "db": -20.35,
       "pan": -0.6,
       "rate": 1.017,
       "note": "120 Hz drum counter rolls"
@@ -417,7 +384,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S03 74.0 (run 2/8)",
-      "db": -20.29,
+      "db": -20.65,
       "pan": -0.6,
       "rate": 0.984
     },
@@ -427,7 +394,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S03 74.0 (run 3/8)",
-      "db": -20.78,
+      "db": -20.25,
       "pan": -0.6,
       "rate": 1.017
     },
@@ -437,7 +404,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S03 74.0 (run 4/8)",
-      "db": -20.65,
+      "db": -21.1,
       "pan": -0.6,
       "rate": 1.015
     },
@@ -447,7 +414,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S03 74.0 (run 5/8)",
-      "db": -21.18,
+      "db": -21.43,
       "pan": -0.6,
       "rate": 1.002
     },
@@ -457,7 +424,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S03 74.0 (run 6/8)",
-      "db": -21.27,
+      "db": -21.14,
       "pan": -0.6,
       "rate": 1.016
     },
@@ -467,7 +434,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S03 74.0 (run 7/8)",
-      "db": -21.79,
+      "db": -21.51,
       "pan": -0.6,
       "rate": 0.982
     },
@@ -477,31 +444,9 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S03 74.0 (run 8/8)",
-      "db": -22.28,
+      "db": -21.67,
       "pan": -0.6,
       "rate": 0.995
-    },
-    {
-      "t": 30.0,
-      "role": "lock",
-      "file": "lock_2.wav",
-      "at": "onset",
-      "why": "S03 96.5",
-      "db": -19.1,
-      "pan": -0.6,
-      "rate": 0.985,
-      "note": "120 locks"
-    },
-    {
-      "t": 33.88,
-      "role": "stamp",
-      "file": "stamp_2.wav",
-      "at": "onset",
-      "why": "S03 212.9",
-      "db": -17.31,
-      "pan": -0.1,
-      "rate": 1.103,
-      "note": "ON TIME stamp on the first frame"
     },
     {
       "t": 35.47,
@@ -509,7 +454,7 @@
       "file": "knock_dull_1.wav",
       "at": "onset",
       "why": "S03 260.6",
-      "db": -15.22,
+      "db": -14.96,
       "pan": -0.25,
       "rate": 1.012,
       "note": "the gate shuts: no new frame"
@@ -520,9 +465,9 @@
       "file": "stamp_2.wav",
       "at": "onset",
       "why": "S03 267.8",
-      "db": -14.24,
+      "db": -14.35,
       "pan": -0.3,
-      "rate": 0.995,
+      "rate": 0.985,
       "note": "LATE stamp"
     },
     {
@@ -531,9 +476,9 @@
       "file": "stamp_3.wav",
       "at": "onset",
       "why": "S03 405.2",
-      "db": -11.35,
+      "db": -11.28,
       "pan": -0.3,
-      "rate": 0.902,
+      "rate": 0.915,
       "note": "HITCH stamp (hero of the scene)"
     },
     {
@@ -542,9 +487,9 @@
       "file": "glass_tap_3.wav",
       "at": "onset",
       "why": "S04 60.4",
-      "db": -16.66,
+      "db": -17.1,
       "pan": -0.4,
-      "rate": 0.995,
+      "rate": 0.985,
       "note": "finger touches the real phone at the first station"
     },
     {
@@ -553,21 +498,10 @@
       "file": "slide_1.wav",
       "at": "onset",
       "why": "S04 105.1",
-      "db": -19.39,
+      "db": -19.04,
       "pan": -0.3,
       "rate": 1.012,
       "note": "cartridge travels the rail: touch -> app"
-    },
-    {
-      "t": 44.76,
-      "role": "lock",
-      "file": "lock_2.wav",
-      "at": "onset",
-      "why": "S04 115.3",
-      "db": -21.22,
-      "pan": -0.05,
-      "rate": 1.243,
-      "note": "cartridge docks at the app, window lights"
     },
     {
       "t": 48.42,
@@ -575,21 +509,10 @@
       "file": "slide_2.wav",
       "at": "onset",
       "why": "S04 225.1",
-      "db": -20.14,
+      "db": -20.05,
       "pan": -0.1,
       "rate": 0.936,
       "note": "hands it over: cartridge travels app -> render server"
-    },
-    {
-      "t": 48.78,
-      "role": "lock",
-      "file": "lock_3.wav",
-      "at": "onset",
-      "why": "S04 235.9",
-      "db": -22.18,
-      "pan": 0.15,
-      "rate": 1.177,
-      "note": "cartridge docks at the render server"
     },
     {
       "t": 53.55,
@@ -597,7 +520,7 @@
       "file": "node_ticks_1.wav",
       "at": "onset",
       "why": "S04 379.0",
-      "db": -21.34,
+      "db": -20.92,
       "pan": 0.1,
       "rate": 1.012,
       "note": "GPU die paints the frame tile by tile"
@@ -608,21 +531,10 @@
       "file": "slide_3.wav",
       "at": "onset",
       "why": "S04 407.5",
-      "db": -20.32,
+      "db": -20.16,
       "pan": 0.15,
       "rate": 0.895,
       "note": "cartridge travels GPU -> display"
-    },
-    {
-      "t": 55.0,
-      "role": "switch",
-      "file": "switch_2.wav",
-      "at": "onset",
-      "why": "S04 422.5",
-      "db": -20.13,
-      "pan": 0.3,
-      "rate": 0.985,
-      "note": "display phone lights up"
     },
     {
       "t": 56.39,
@@ -630,21 +542,10 @@
       "file": "clock_tick_1.wav",
       "at": "onset",
       "why": "S04 464.2",
-      "db": -16.7,
+      "db": -17.03,
       "pan": 0.0,
       "rate": 1.012,
       "note": "the very next tick"
-    },
-    {
-      "t": 56.5,
-      "role": "stamp",
-      "file": "stamp_2.wav",
-      "at": "onset",
-      "why": "S04 467.5",
-      "db": -18.39,
-      "pan": -0.35,
-      "rate": 1.157,
-      "note": "ON TIME"
     },
     {
       "t": 59.95,
@@ -652,76 +553,43 @@
       "file": "glass_swipe_2.wav",
       "at": "onset",
       "why": "S05 87.0",
-      "db": -18.95,
+      "db": -18.81,
       "pan": -0.15,
       "rate": 0.846,
       "note": "the animation card lifts out of the app and crosses the glass wall"
     },
     {
-      "t": 61.0,
-      "role": "set",
-      "file": "set_1.wav",
-      "at": "onset",
-      "why": "S05 118.5",
-      "db": -19.89,
-      "pan": 0.15,
-      "rate": 1.03,
-      "note": "card lands inside the render server"
-    },
-    {
-      "t": 64.16,
+      "t": 64.2,
       "role": "knock_dull",
       "file": "knock_dull_2.wav",
       "at": "onset",
-      "why": "S05 213.3",
-      "db": -15.8,
+      "why": "S05 214.5",
+      "db": -14.88,
       "pan": -0.3,
       "rate": 0.985,
-      "note": "app goes amber: BUSY"
+      "note": "app goes amber: BUSY - stuck"
     },
     {
-      "t": 64.35,
-      "role": "knock_dull",
-      "file": "knock_dull_1.wav",
-      "at": "onset",
-      "why": "S05 219.0",
-      "db": -20.1,
-      "pan": -0.3,
-      "rate": 0.935,
-      "note": "(second half of the stuck double knock)"
-    },
-    {
-      "t": 65.75,
+      "t": 66.1,
       "role": "clock_tick",
       "file": "clock_tick_2.wav",
       "at": "onset",
-      "why": "S05 261.0",
-      "db": -20.26,
+      "why": "S05 271.5",
+      "db": -20.14,
       "pan": 0.2,
       "rate": 0.985,
       "note": "the server keeps landing frames on time"
     },
     {
-      "t": 66.1,
+      "t": 66.45,
       "role": "clock_tick",
       "file": "clock_tick_3.wav",
       "at": "onset",
-      "why": "S05 271.5",
-      "db": -20.02,
-      "pan": 0.2,
-      "rate": 0.995,
-      "note": "..."
-    },
-    {
-      "t": 66.45,
-      "role": "clock_tick",
-      "file": "clock_tick_1.wav",
-      "at": "onset",
       "why": "S05 282.0",
-      "db": -19.89,
+      "db": -21.13,
       "pan": 0.2,
-      "rate": 0.98,
-      "note": "..."
+      "rate": 1.025,
+      "note": "... and the next"
     },
     {
       "t": 67.05,
@@ -729,7 +597,7 @@
       "file": "air_pass_1.wav",
       "at": "peak",
       "why": "S05 300.0",
-      "db": -19.29,
+      "db": -21.34,
       "pan": 0.0,
       "rate": 1.012,
       "note": "camera whips along the machine to the display"
@@ -740,7 +608,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S05 356.1 (run 1/6)",
-      "db": -19.39,
+      "db": -19.27,
       "pan": 0.2,
       "rate": 1.012,
       "note": "ProMotion dial needle winds down"
@@ -751,7 +619,7 @@
       "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S05 356.1 (run 2/6)",
-      "db": -19.69,
+      "db": -19.93,
       "pan": 0.2,
       "rate": 0.953
     },
@@ -761,7 +629,7 @@
       "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S05 356.1 (run 3/6)",
-      "db": -20.29,
+      "db": -20.26,
       "pan": 0.2,
       "rate": 0.885
     },
@@ -771,7 +639,7 @@
       "file": "ratchet_3.wav",
       "at": "onset",
       "why": "S05 356.1 (run 4/6)",
-      "db": -21.76,
+      "db": -21.78,
       "pan": 0.2,
       "rate": 0.824
     },
@@ -781,7 +649,7 @@
       "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S05 356.1 (run 5/6)",
-      "db": -22.34,
+      "db": -21.84,
       "pan": 0.2,
       "rate": 0.765
     },
@@ -791,7 +659,7 @@
       "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S05 356.1 (run 6/6)",
-      "db": -23.2,
+      "db": -23.27,
       "pan": 0.2,
       "rate": 0.712
     },
@@ -801,185 +669,142 @@
       "file": "air_long_2.wav",
       "at": "peak",
       "why": "S06 0.5",
-      "db": -15.61,
+      "db": -18.8,
       "pan": 0.0,
       "rate": 0.985,
       "note": "portal into the tunnel of gates"
     },
     {
-      "t": 73.42,
+      "t": 73.5,
       "role": "ratchet",
       "file": "ratchet_1.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 1/13)",
-      "db": -20.17,
+      "why": "S06 69.5 (run 1/12)",
+      "db": -19.65,
       "pan": 0.0,
       "rate": 1.002,
       "note": "7,200 / MIN drum counter rolls"
     },
     {
-      "t": 73.5957,
+      "t": 73.677,
       "role": "ratchet",
       "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 2/13)",
-      "db": -20.1,
+      "why": "S06 69.5 (run 2/12)",
+      "db": -19.95,
       "pan": 0.0,
-      "rate": 0.987
+      "rate": 0.986
     },
     {
-      "t": 73.7561,
+      "t": 73.8372,
       "role": "ratchet",
       "file": "ratchet_3.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 3/13)",
-      "db": -20.64,
+      "why": "S06 69.5 (run 3/12)",
+      "db": -20.46,
       "pan": 0.0,
-      "rate": 1.007
+      "rate": 1.006
     },
     {
-      "t": 73.9013,
+      "t": 73.9805,
       "role": "ratchet",
       "file": "ratchet_4.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 4/13)",
-      "db": -20.66,
+      "why": "S06 69.5 (run 4/12)",
+      "db": -20.67,
       "pan": 0.0,
-      "rate": 0.998
+      "rate": 0.996
     },
     {
-      "t": 74.0311,
+      "t": 74.1069,
       "role": "ratchet",
       "file": "ratchet_5.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 5/13)",
-      "db": -21.16,
+      "why": "S06 69.5 (run 5/12)",
+      "db": -20.76,
       "pan": 0.0,
-      "rate": 0.978
+      "rate": 0.976
     },
     {
-      "t": 74.1457,
+      "t": 74.2165,
       "role": "ratchet",
       "file": "ratchet_1.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 6/13)",
-      "db": -21.39,
+      "why": "S06 69.5 (run 6/12)",
+      "db": -21.14,
       "pan": 0.0,
-      "rate": 0.985
+      "rate": 0.983
     },
     {
-      "t": 74.245,
+      "t": 74.3093,
       "role": "ratchet",
       "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 7/13)",
-      "db": -21.57,
+      "why": "S06 69.5 (run 7/12)",
+      "db": -21.66,
+      "pan": 0.0,
+      "rate": 0.95
+    },
+    {
+      "t": 74.3851,
+      "role": "ratchet",
+      "file": "ratchet_3.wav",
+      "at": "onset",
+      "why": "S06 69.5 (run 8/12)",
+      "db": -22.01,
+      "pan": 0.0,
+      "rate": 0.952
+    },
+    {
+      "t": 74.4441,
+      "role": "ratchet",
+      "file": "ratchet_4.wav",
+      "at": "onset",
+      "why": "S06 69.5 (run 9/12)",
+      "db": -22.34,
+      "pan": 0.0,
+      "rate": 0.952
+    },
+    {
+      "t": 74.4863,
+      "role": "ratchet",
+      "file": "ratchet_5.wav",
+      "at": "onset",
+      "why": "S06 69.5 (run 10/12)",
+      "db": -22.36,
+      "pan": 0.0,
+      "rate": 0.95
+    },
+    {
+      "t": 74.5116,
+      "role": "ratchet",
+      "file": "ratchet_1.wav",
+      "at": "onset",
+      "why": "S06 69.5 (run 11/12)",
+      "db": -22.52,
       "pan": 0.0,
       "rate": 0.953
     },
     {
-      "t": 74.329,
-      "role": "ratchet",
-      "file": "ratchet_3.wav",
-      "at": "onset",
-      "why": "S06 67.1 (run 8/13)",
-      "db": -22.01,
-      "pan": 0.0,
-      "rate": 0.955
-    },
-    {
-      "t": 74.3978,
-      "role": "ratchet",
-      "file": "ratchet_4.wav",
-      "at": "onset",
-      "why": "S06 67.1 (run 9/13)",
-      "db": -21.74,
-      "pan": 0.0,
-      "rate": 0.955
-    },
-    {
-      "t": 74.4513,
-      "role": "ratchet",
-      "file": "ratchet_5.wav",
-      "at": "onset",
-      "why": "S06 67.1 (run 10/13)",
-      "db": -22.01,
-      "pan": 0.0,
-      "rate": 0.954
-    },
-    {
-      "t": 74.4894,
-      "role": "ratchet",
-      "file": "ratchet_1.wav",
-      "at": "onset",
-      "why": "S06 67.1 (run 11/13)",
-      "db": -22.61,
-      "pan": 0.0,
-      "rate": 0.957
-    },
-    {
-      "t": 74.5124,
+      "t": 74.52,
       "role": "ratchet",
       "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S06 67.1 (run 12/13)",
-      "db": -22.43,
+      "why": "S06 69.5 (run 12/12)",
+      "db": -22.64,
       "pan": 0.0,
-      "rate": 0.94
-    },
-    {
-      "t": 74.52,
-      "role": "ratchet",
-      "file": "ratchet_3.wav",
-      "at": "onset",
-      "why": "S06 67.1 (run 13/13)",
-      "db": -22.69,
-      "pan": 0.0,
-      "rate": 0.954
-    },
-    {
-      "t": 74.56,
-      "role": "lock",
-      "file": "lock_2.wav",
-      "at": "onset",
-      "why": "S06 101.3",
-      "db": -16.79,
-      "pan": 0.0,
-      "rate": 1.006,
-      "note": "7,200 locks"
+      "rate": 0.935
     },
     {
       "t": 77.47,
       "role": "set",
-      "file": "set_2.wav",
+      "file": "set_1.wav",
       "at": "onset",
       "why": "S06 188.6",
-      "db": -17.32,
+      "db": -17.02,
       "pan": 0.0,
-      "rate": 0.886,
+      "rate": 0.863,
       "note": "glass iOS layers seat on the chip"
-    },
-    {
-      "t": 77.5,
-      "role": "hum_on",
-      "file": "hum_on_1.wav",
-      "at": "onset",
-      "why": "S06 189.5",
-      "db": -17.17,
-      "pan": 0.0,
-      "rate": 0.995,
-      "note": "pins light where they meet"
-    },
-    {
-      "t": 78.5,
-      "role": "film_shutter",
-      "file": "film_shutter_1.wav",
-      "at": "onset",
-      "why": "S06 219.5",
-      "db": -19.19,
-      "pan": -0.3,
-      "rate": 1.012,
-      "note": "real photo of the first iPhone"
     },
     {
       "t": 80.93,
@@ -987,247 +812,205 @@
       "file": "hollow_1.wav",
       "at": "onset",
       "why": "S06 292.4",
-      "db": -15.8,
+      "db": -15.85,
       "pan": 0.2,
       "rate": 1.012,
       "note": "the empty socket: a question mark"
     },
     {
-      "t": 81.62,
-      "role": "air_pass",
-      "file": "air_pass_2.wav",
-      "at": "peak",
-      "why": "S07 1.6",
-      "db": -18.91,
-      "pan": 0.0,
-      "rate": 0.985,
-      "note": "push onto the chip road"
-    },
-    {
-      "t": 83.6,
-      "role": "ratchet",
-      "file": "ratchet_4.wav",
-      "at": "onset",
-      "why": "S07 61.0 (run 1/11)",
-      "db": -20.12,
-      "pan": -0.2,
-      "rate": 1.011,
-      "note": "$278,000,000 drum counter rolls"
-    },
-    {
-      "t": 83.7672,
-      "role": "ratchet",
-      "file": "ratchet_5.wav",
-      "at": "onset",
-      "why": "S07 61.0 (run 2/11)",
-      "db": -20.26,
-      "pan": -0.2,
-      "rate": 0.976
-    },
-    {
-      "t": 83.9168,
-      "role": "ratchet",
-      "file": "ratchet_1.wav",
-      "at": "onset",
-      "why": "S07 61.0 (run 3/11)",
-      "db": -20.22,
-      "pan": -0.2,
-      "rate": 0.97
-    },
-    {
-      "t": 84.0488,
-      "role": "ratchet",
-      "file": "ratchet_2.wav",
-      "at": "onset",
-      "why": "S07 61.0 (run 4/11)",
-      "db": -21.03,
-      "pan": -0.2,
-      "rate": 1.001
-    },
-    {
-      "t": 84.1632,
+      "t": 83.75,
       "role": "ratchet",
       "file": "ratchet_3.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 5/11)",
-      "db": -21.08,
+      "why": "S07 65.5 (run 1/10)",
+      "db": -19.73,
       "pan": -0.2,
-      "rate": 0.972
+      "rate": 1.015,
+      "note": "$278,000,000 drum counter rolls"
     },
     {
-      "t": 84.26,
+      "t": 83.9053,
       "role": "ratchet",
       "file": "ratchet_4.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 6/11)",
-      "db": -21.52,
+      "why": "S07 65.5 (run 2/10)",
+      "db": -19.99,
       "pan": -0.2,
-      "rate": 0.979
+      "rate": 1.005
     },
     {
-      "t": 84.3392,
+      "t": 84.0423,
       "role": "ratchet",
       "file": "ratchet_5.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 7/11)",
-      "db": -22.08,
+      "why": "S07 65.5 (run 3/10)",
+      "db": -20.4,
       "pan": -0.2,
-      "rate": 0.979
+      "rate": 0.969
     },
     {
-      "t": 84.4008,
+      "t": 84.1611,
       "role": "ratchet",
       "file": "ratchet_1.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 8/11)",
-      "db": -22.13,
+      "why": "S07 65.5 (run 4/10)",
+      "db": -21.06,
       "pan": -0.2,
-      "rate": 0.956
+      "rate": 0.962
     },
     {
-      "t": 84.4448,
+      "t": 84.2616,
       "role": "ratchet",
       "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 9/11)",
-      "db": -22.19,
+      "why": "S07 65.5 (run 5/10)",
+      "db": -21.37,
+      "pan": -0.2,
+      "rate": 0.992
+    },
+    {
+      "t": 84.3438,
+      "role": "ratchet",
+      "file": "ratchet_3.wav",
+      "at": "onset",
+      "why": "S07 65.5 (run 6/10)",
+      "db": -21.68,
+      "pan": -0.2,
+      "rate": 0.963
+    },
+    {
+      "t": 84.4078,
+      "role": "ratchet",
+      "file": "ratchet_4.wav",
+      "at": "onset",
+      "why": "S07 65.5 (run 7/10)",
+      "db": -22.4,
+      "pan": -0.2,
+      "rate": 0.969
+    },
+    {
+      "t": 84.4535,
+      "role": "ratchet",
+      "file": "ratchet_5.wav",
+      "at": "onset",
+      "why": "S07 65.5 (run 8/10)",
+      "db": -22.42,
       "pan": -0.2,
       "rate": 0.968
     },
     {
-      "t": 84.4712,
+      "t": 84.4809,
       "role": "ratchet",
-      "file": "ratchet_3.wav",
+      "file": "ratchet_1.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 10/11)",
-      "db": -22.73,
+      "why": "S07 65.5 (run 9/10)",
+      "db": -22.76,
       "pan": -0.2,
-      "rate": 0.942
+      "rate": 0.944
     },
     {
-      "t": 84.48,
+      "t": 84.49,
       "role": "ratchet",
-      "file": "ratchet_4.wav",
+      "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S07 61.0 (run 11/11)",
-      "db": -22.98,
+      "why": "S07 65.5 (run 10/10)",
+      "db": -23.36,
       "pan": -0.2,
-      "rate": 0.936
+      "rate": 0.955
     },
     {
-      "t": 84.48,
+      "t": 84.5,
       "role": "lock",
-      "file": "lock_3.wav",
+      "file": "lock_2.wav",
       "at": "onset",
-      "why": "S07 87.4",
-      "db": -15.68,
+      "why": "S07 88.0",
+      "db": -15.75,
       "pan": -0.2,
-      "rate": 1.009,
+      "rate": 0.985,
       "note": "$278,000,000 locks"
     },
     {
-      "t": 86.19,
+      "t": 86.22,
       "role": "stamp",
-      "file": "stamp_3.wav",
+      "file": "stamp_1.wav",
       "at": "onset",
-      "why": "S07 138.7",
-      "db": -10.68,
+      "why": "S07 139.6",
+      "db": -11.13,
       "pan": -0.25,
-      "rate": 0.969,
+      "rate": 0.941,
       "note": "seal stamp on the P.A. Semi deal card (hero)"
     },
     {
       "t": 88.43,
       "role": "seat",
-      "file": "seat_2.wav",
+      "file": "seat_1.wav",
       "at": "onset",
       "why": "S07 205.9",
-      "db": -10.36,
+      "db": -9.8,
       "pan": 0.0,
-      "rate": 0.985,
+      "rate": 1.012,
       "note": "A4 drops into the empty socket (hero)"
     },
     {
-      "t": 93.62,
+      "t": 93.8,
       "role": "ratchet",
-      "file": "ratchet_5.wav",
+      "file": "ratchet_3.wav",
       "at": "onset",
-      "why": "S07 361.6 (run 1/7)",
-      "db": -19.63,
+      "why": "S07 367.0 (run 1/6)",
+      "db": -19.91,
       "pan": 0.25,
-      "rate": 1.012,
+      "rate": 0.996,
       "note": "32 -> 64 counter rolls as the lanes widen"
     },
     {
-      "t": 93.8033,
+      "t": 93.962,
+      "role": "ratchet",
+      "file": "ratchet_4.wav",
+      "at": "onset",
+      "why": "S07 367.0 (run 2/6)",
+      "db": -20.31,
+      "pan": 0.25,
+      "rate": 0.995
+    },
+    {
+      "t": 94.088,
+      "role": "ratchet",
+      "file": "ratchet_5.wav",
+      "at": "onset",
+      "why": "S07 367.0 (run 3/6)",
+      "db": -20.99,
+      "pan": 0.25,
+      "rate": 1.012
+    },
+    {
+      "t": 94.178,
       "role": "ratchet",
       "file": "ratchet_1.wav",
       "at": "onset",
-      "why": "S07 361.6 (run 2/7)",
-      "db": -20.39,
+      "why": "S07 367.0 (run 4/6)",
+      "db": -21.04,
       "pan": 0.25,
       "rate": 1.019
     },
     {
-      "t": 93.9533,
+      "t": 94.232,
       "role": "ratchet",
       "file": "ratchet_2.wav",
       "at": "onset",
-      "why": "S07 361.6 (run 3/7)",
-      "db": -20.34,
+      "why": "S07 367.0 (run 5/6)",
+      "db": -21.33,
       "pan": 0.25,
       "rate": 1.002
     },
     {
-      "t": 94.07,
+      "t": 94.25,
       "role": "ratchet",
       "file": "ratchet_3.wav",
       "at": "onset",
-      "why": "S07 361.6 (run 4/7)",
-      "db": -21.29,
+      "why": "S07 367.0 (run 6/6)",
+      "db": -21.7,
       "pan": 0.25,
       "rate": 0.987
-    },
-    {
-      "t": 94.1533,
-      "role": "ratchet",
-      "file": "ratchet_4.wav",
-      "at": "onset",
-      "why": "S07 361.6 (run 5/7)",
-      "db": -21.69,
-      "pan": 0.25,
-      "rate": 0.993
-    },
-    {
-      "t": 94.2033,
-      "role": "ratchet",
-      "file": "ratchet_5.wav",
-      "at": "onset",
-      "why": "S07 361.6 (run 6/7)",
-      "db": -21.95,
-      "pan": 0.25,
-      "rate": 0.982
-    },
-    {
-      "t": 94.22,
-      "role": "ratchet",
-      "file": "ratchet_1.wav",
-      "at": "onset",
-      "why": "S07 361.6 (run 7/7)",
-      "db": -21.76,
-      "pan": 0.25,
-      "rate": 0.997
-    },
-    {
-      "t": 94.28,
-      "role": "lock",
-      "file": "lock_1.wav",
-      "at": "onset",
-      "why": "S07 381.4",
-      "db": -17.96,
-      "pan": 0.25,
-      "rate": 0.983,
-      "note": "64-BIT locks"
     },
     {
       "t": 98.4,
@@ -1235,7 +1018,7 @@
       "file": "node_ticks_2.wav",
       "at": "onset",
       "why": "S07 505.0",
-      "db": -21.37,
+      "db": -21.35,
       "pan": 0.3,
       "rate": 1.103,
       "note": "neural net nodes light up one by one"
@@ -1246,7 +1029,7 @@
       "file": "air_long_2.wav",
       "at": "peak",
       "why": "S07 655.0",
-      "db": -18.7,
+      "db": -22.37,
       "pan": 0.0,
       "rate": 0.995,
       "note": "the die scales up into the M1"
@@ -1257,7 +1040,7 @@
       "file": "slide_4.wav",
       "at": "onset",
       "why": "S07 706.6",
-      "db": -18.76,
+      "db": -20.68,
       "pan": 0.2,
       "rate": 0.706,
       "note": "x86 chip pushed out of the frame"
@@ -1268,21 +1051,10 @@
       "file": "air_short_1.wav",
       "at": "onset",
       "why": "S07 754.6",
-      "db": -18.77,
+      "db": -18.67,
       "pan": 0.0,
       "rate": 0.81,
       "note": "MacBook lid swings open"
-    },
-    {
-      "t": 106.92,
-      "role": "switch",
-      "file": "switch_2.wav",
-      "at": "onset",
-      "why": "S07 760.6",
-      "db": -22.8,
-      "pan": 0.1,
-      "rate": 0.995,
-      "note": "MacBook screen lights"
     },
     {
       "t": 110.86,
@@ -1290,20 +1062,20 @@
       "file": "seat_3.wav",
       "at": "onset",
       "why": "S08 107.3",
-      "db": -13.04,
+      "db": -12.82,
       "pan": 0.3,
-      "rate": 1.074,
+      "rate": 1.064,
       "note": "C1 modem drops into its place"
     },
     {
       "t": 114.12,
       "role": "seat",
-      "file": "seat_1.wav",
+      "file": "seat_3.wav",
       "at": "onset",
       "why": "S08 205.1",
-      "db": -14.31,
+      "db": -13.82,
       "pan": 0.1,
-      "rate": 1.118,
+      "rate": 1.134,
       "note": "N1 drops in"
     },
     {
@@ -1312,9 +1084,9 @@
       "file": "lock_1.wav",
       "at": "onset",
       "why": "S08 221.9",
-      "db": -21.83,
+      "db": -21.64,
       "pan": 0.5,
-      "rate": 1.321,
+      "rate": 1.293,
       "note": "Wi-Fi 7"
     },
     {
@@ -1323,9 +1095,9 @@
       "file": "lock_2.wav",
       "at": "onset",
       "why": "S08 237.5",
-      "db": -22.79,
+      "db": -22.66,
       "pan": 0.5,
-      "rate": 1.387,
+      "rate": 1.353,
       "note": "Bluetooth 6"
     },
     {
@@ -1334,21 +1106,10 @@
       "file": "lock_3.wav",
       "at": "onset",
       "why": "S08 245.6",
-      "db": -24.14,
+      "db": -24.06,
       "pan": 0.5,
-      "rate": 1.452,
+      "rate": 1.469,
       "note": "Thread"
-    },
-    {
-      "t": 116.9,
-      "role": "slide",
-      "file": "slide_2.wav",
-      "at": "onset",
-      "why": "S08 288.5",
-      "db": -18.72,
-      "pan": 0.0,
-      "rate": 0.755,
-      "note": "board slides into the real phone"
     },
     {
       "t": 119.3,
@@ -1356,81 +1117,70 @@
       "file": "air_long_2.wav",
       "at": "peak",
       "why": "S08 360.5",
-      "db": -15.81,
+      "db": -18.94,
       "pan": 0.0,
       "rate": 0.98,
       "note": "push into the A20 Pro hero"
     },
     {
-      "t": 120.2,
-      "role": "hum_on",
-      "file": "hum_on_2.wav",
-      "at": "onset",
-      "why": "S08 387.5",
-      "db": -15.05,
-      "pan": 0.6,
-      "rate": 0.98,
-      "note": "transistor lens: gate charges"
-    },
-    {
-      "t": 120.45,
+      "t": 120.3,
       "role": "switch",
-      "file": "switch_1.wav",
+      "file": "switch_2.wav",
       "at": "onset",
-      "why": "S08 395.0",
-      "db": -20.28,
+      "why": "S08 390.5",
+      "db": -20.05,
       "pan": 0.6,
-      "rate": 0.98,
+      "rate": 0.985,
       "note": "transistor lens switches on"
     },
     {
       "t": 121.87,
       "role": "ratchet",
-      "file": "ratchet_2.wav",
+      "file": "ratchet_4.wav",
       "at": "onset",
       "why": "S09 1.6 (run 1/4)",
-      "db": -19.72,
+      "db": -20.12,
       "pan": -0.75,
-      "rate": 0.998,
+      "rate": 0.993,
       "note": "18 YEARS counter rolls"
     },
     {
       "t": 121.9811,
       "role": "ratchet",
-      "file": "ratchet_3.wav",
+      "file": "ratchet_5.wav",
       "at": "onset",
       "why": "S09 1.6 (run 2/4)",
-      "db": -20.44,
+      "db": -20.56,
       "pan": -0.75,
-      "rate": 1.012
+      "rate": 0.982
     },
     {
       "t": 122.0478,
       "role": "ratchet",
-      "file": "ratchet_4.wav",
+      "file": "ratchet_1.wav",
       "at": "onset",
       "why": "S09 1.6 (run 3/4)",
-      "db": -21.19,
+      "db": -21.71,
       "pan": -0.75,
-      "rate": 1.016
+      "rate": 0.997
     },
     {
       "t": 122.07,
       "role": "ratchet",
-      "file": "ratchet_5.wav",
+      "file": "ratchet_2.wav",
       "at": "onset",
       "why": "S09 1.6 (run 4/4)",
-      "db": -21.74,
+      "db": -22.05,
       "pan": -0.75,
-      "rate": 1.008
+      "rate": 0.998
     },
     {
-      "t": 124.9,
+      "t": 124.85,
       "role": "glass_swipe",
       "file": "glass_swipe_3.wav",
       "at": "onset",
-      "why": "S09 92.5",
-      "db": -20.29,
+      "why": "S09 91.0",
+      "db": -19.77,
       "pan": 0.0,
       "rate": 0.98,
       "note": "thumb scrolls the phone again: every frame on time"
@@ -1441,7 +1191,7 @@
       "file": "glass_lift_2.wav",
       "at": "onset",
       "why": "S09 208.9",
-      "db": -17.99,
+      "db": -18.08,
       "pan": -0.25,
       "rate": 0.985,
       "note": "back glass lifts"
@@ -1452,7 +1202,7 @@
       "file": "air_long_2.wav",
       "at": "onset",
       "why": "S09 221.5",
-      "db": -17.09,
+      "db": -20.08,
       "pan": 0.0,
       "rate": 1.006,
       "note": "camera pushes inside the phone (hand-off to Act 2)"
